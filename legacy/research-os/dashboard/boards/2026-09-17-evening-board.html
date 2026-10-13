@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research OS Daily Board｜2026-09-17 Evening / 晚间</title>
+<style>
+  :root {
+    --bg-deep:#0a0e17; --bg-card:#151d2e; --border:#243049;
+    --accent:#3b82f6; --cyan:#22d3ee; --green:#34d399; --red:#f87171;
+    --amber:#fbbf24; --purple:#a78bfa; --text:#e8edf5; --text-sec:#94a3b8; --text-muted:#64748b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Segoe UI","PingFang SC","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;background:var(--bg-deep);color:var(--text);line-height:1.45;
+    background-image:radial-gradient(ellipse 80% 50% at 50% -20%,rgba(59,130,246,.08),transparent)}
+  .board{max-width:1400px;margin:0 auto;padding:20px 24px 28px;display:flex;flex-direction:column;gap:14px}
+  .header,.card{background:linear-gradient(135deg,var(--bg-card),#121a2c);border:1px solid var(--border);border-radius:12px;padding:16px 18px;position:relative}
+  .header::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--cyan),var(--purple))}
+  .brand{font-size:1.25rem;font-weight:700;background:linear-gradient(90deg,#e8edf5,var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+  .sub{font-size:.78rem;color:var(--text-muted);margin-top:4px}
+  .mood{margin-top:10px;font-size:.95rem;color:var(--amber)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+  h2{font-size:.85rem;letter-spacing:.04em;color:var(--cyan);text-transform:uppercase;margin-bottom:10px}
+  table{width:100%;border-collapse:collapse;font-size:.82rem}
+  th,td{padding:6px 8px;border-bottom:1px solid #1c2740;text-align:left}
+  th{color:var(--text-muted);font-weight:600}
+  .up{color:var(--green)} .down{color:var(--red)} .flat{color:var(--text-sec)}
+  .tag{display:inline-block;font-size:.65rem;padding:2px 6px;border-radius:4px;margin-left:6px;border:1px solid var(--border);color:var(--text-muted)}
+  .tag.confirmed{color:var(--green);border-color:rgba(52,211,153,.35)}
+  .tag.tentative{color:var(--amber);border-color:rgba(251,191,36,.35)}
+  .tag.rumor{color:var(--red);border-color:rgba(248,113,113,.35)}
+  .caption{margin-top:10px;font-size:.78rem;color:var(--text-sec)}
+  .claim{font-size:.7rem;color:var(--text-muted);margin-top:6px}
+  ul{padding-left:18px;font-size:.85rem;color:var(--text-sec)}
+  li{margin:4px 0}
+  .mermaid-box{background:#0c1220;border:1px solid #1c2740;border-radius:8px;padding:12px;font-family:ui-monospace,monospace;font-size:.72rem;white-space:pre-wrap;color:#cbd5e1;overflow:auto}
+  .footer{font-size:.7rem;color:var(--text-muted);text-align:center;padding:8px}
+  .warn{color:var(--amber);font-weight:600}
+</style>
+</head>
+<body>
+<div class="board">
+  <header class="header">
+    <div>
+      <div class="brand">Research OS Daily Board｜AI Factory</div>
+      <div class="sub">2026-09-17 · Evening / 晚间 · As-of ~21:20 MYT (Asia/Kuala_Lumpur)</div>
+      <div class="mood">Extended Globex repair + WTI &lt;$100 · still conditional · Overnight veto: Thu cash + BOJ Fri<br/>期货修复加深 + 油价跌破100 · 仍有条件 · 隔夜否决：周四现金 + 周五日银</div>
+    </div>
+    <div class="sub" style="text-align:right">Sources: Yahoo chart API, BOJ schedule, Apple Newsroom<br/>No invented prices · SPCX = Nasdaq-listed SpaceX<br/><span class="warn">Session stage: pre-open / Globex late</span></div>
+  </header>
+
+  <section class="card">
+    <h2>Index Strip / 指数条 · US last cash = Wed · Futures = Thu Globex evening</h2>
+    <table>
+      <tr><th>Asset</th><th>Last</th><th>1D% / vs Wed</th><th>Note</th></tr>
+      <tr><td>Dow (Wed)</td><td>51,461.90</td><td class="down">−1.21%</td><td>Thu cash N/A pre-open</td></tr>
+      <tr><td>S&amp;P 500 (Wed)</td><td>7,551.81</td><td class="down">−0.45%</td><td>Wed close</td></tr>
+      <tr><td>Nasdaq (Wed)</td><td>25,978.43</td><td class="flat">−0.01%</td><td>Wed close</td></tr>
+      <tr><td>SOX (Wed)</td><td>11,246.11</td><td class="up">+0.63%</td><td>Relative resilience</td></tr>
+      <tr><td>ES futures</td><td>~7,718</td><td class="up">+2.14% vs Wed</td><td>Extends vs Afternoon ~7,684</td></tr>
+      <tr><td>NQ futures</td><td>~29,729</td><td class="up">+2.64% vs Wed</td><td>Tech-led deeper repair</td></tr>
+      <tr><td>Nikkei (Thu)</td><td>64,136.25</td><td class="up">+0.33%</td><td>Thu close locked</td></tr>
+      <tr><td>KOSPI (Thu)</td><td>6,715.41</td><td class="flat">−0.04%</td><td>Thu close</td></tr>
+      <tr><td>Hang Seng (Thu)</td><td>24,604.29</td><td class="down">−0.44%</td><td>Thu close</td></tr>
+      <tr><td>SSE (Thu)</td><td>3,875.60</td><td class="down">−0.41%</td><td>Thu close</td></tr>
+      <tr><td>TWSE (Thu)</td><td>46,288</td><td class="up">+0.96%</td><td>Thu close</td></tr>
+      <tr><td>FBM KLCI (Thu)</td><td>1,674.74</td><td class="down">−0.27%</td><td>vs Tue; reopen</td></tr>
+    </table>
+    <div class="claim">Claim: RELIABLE (Yahoo). US Thu cash not open at stamp (~21:20 MYT).</div>
+  </section>
+
+  <div class="grid">
+    <section class="card">
+      <h2>Rates / FX / Oil / VIX</h2>
+      <table>
+        <tr><td>10Y</td><td>~4.955% (Thu ind.; below Wed 5.006%)</td></tr>
+        <tr><td>5Y</td><td>~4.799% (Thu ind.)</td></tr>
+        <tr><td>30Y</td><td>~5.312% (Thu ind.)</td></tr>
+        <tr><td>2Y</td><td>Wed Reuters 4.738% · Thu exact N/A</td></tr>
+        <tr><td>DXY</td><td>~100.08</td></tr>
+        <tr><td>USD/JPY</td><td>~155.69</td></tr>
+        <tr><td>WTI</td><td>~99.83 (−2.5% vs Wed) — under $100</td></tr>
+        <tr><td>Brent</td><td>Yahoo BZ ~102.1 — dual-source care</td></tr>
+        <tr><td>VIX</td><td>~15.45 Thu ind. (Wed 17.71)</td></tr>
+      </table>
+      <div class="claim">Claim: RELIABLE Yahoo Globex/indications; 2Y Thu exact unverified.</div>
+    </section>
+
+    <section class="card">
+      <h2>Watchlist Movers (Wed cash)</h2>
+      <table>
+        <tr><th>Ticker</th><th>Last</th><th>1D%</th></tr>
+        <tr><td>LITE</td><td>919.40</td><td class="up">+9.59%</td></tr>
+        <tr><td>SPCX</td><td>150.88</td><td class="up">+5.15%</td></tr>
+        <tr><td>UMC</td><td>22.53</td><td class="up">+4.26%</td></tr>
+        <tr><td>INTC</td><td>101.05</td><td class="up">+4.03%</td></tr>
+        <tr><td>MRVL</td><td>229.71</td><td class="up">+3.61%</td></tr>
+        <tr><td>CRWV</td><td>83.35</td><td class="up">+3.00%</td></tr>
+        <tr><td>NVDA</td><td>213.90</td><td class="up">+0.82%</td></tr>
+        <tr><td>QCOM</td><td>184.84</td><td class="down">−1.58%</td></tr>
+        <tr><td>MU</td><td>926.55</td><td class="down">−0.11%</td></tr>
+        <tr><td>AVGO</td><td>339.51</td><td class="flat">+0.07%</td></tr>
+      </table>
+      <div class="claim">Claim: RELIABLE Yahoo Wed bars. Thu cash N/A. SPCX public Nasdaq (CONFIRMED).</div>
+    </section>
+  </div>
+
+  <section class="card">
+    <h2>Overnight-Break Stack / 隔夜破坏栈</h2>
+    <ul>
+      <li><b>1.</b> Thu US cash open ~21:30 MYT → full session overnight <span class="tag confirmed">CONFIRMED</span> — PRIMARY</li>
+      <li><b>2.</b> USD/JPY speed into BOJ — carry/Asia tech</li>
+      <li><b>3.</b> Fri Sep 18 — BOJ Statement <span class="tag confirmed">CONFIRMED</span> · hike-to-1.25% <span class="tag rumor">RUMOR</span></li>
+      <li><b>4.</b> Oil / Mid-East re-spike risk</li>
+      <li>Fri Sep 18 — AAPL iPhone 18 Pro retail <span class="tag confirmed">CONFIRMED</span></li>
+      <li>~Sep 22 — Starship Flight 14 window <span class="tag tentative">TENTATIVE</span></li>
+      <li>Wed Sep 30 — MU FY2026 Q4 call 2:30pm Mountain <span class="tag confirmed">CONFIRMED</span></li>
+      <li>Ongoing — TSLA NHTSA AQ26002 <span class="tag confirmed">CONFIRMED</span></li>
+    </ul>
+    <div class="caption">Thinking: Cash overnight tests extended repair; BOJ owns weekend FX veto; watch JPY <i>speed</i>.</div>
+  </section>
+
+  <section class="card">
+    <h2>Transmission (text) / 传导链</h2>
+    <div class="mermaid-box">FOMC +25bp + SEP 4.1/4.1 (CONFIRMED)
+  → Real yields / 10Y ~4.955% (RELIABLE Thu)
+  → WACC still elevated vs cut-cycle (INFERENCE)
+  → AI beta sorting: LITE/SPCX > GPU > MU
+  → Thu Globex repair EXTENDS ES/NQ ~+2%/+2.6% (RELIABLE)
+  → WTI ~$99.8 under $100 (RELIABLE)
+  → Thu US cash open→overnight session ══╗
+BOJ Statement Fri (CONFIRMED) → JPY speed/carry → weekend FX veto ╝
+  → Path absorbed? or fade?</div>
+    <div class="claim">Claim class: ILLUSTRATIVE chain · Chart pack: research-os/charts/exports/2026-09-17-evening/</div>
+  </section>
+
+  <section class="card">
+    <h2>Expectation Gap / 预期差</h2>
+    <ul>
+      <li><b>FOMC:</b> Binary hike gap closed (HIT); SEP 4.1/4.1 path gap still OPEN (hawkish).</li>
+      <li><b>BOJ:</b> Calendar CONFIRMED; clock undecided; decision size = RUMOR until statement print.</li>
+      <li><b>Oil cooler:</b> Narrows inflation scare optics — does <b>not</b> close path gap.</li>
+      <li><b>Falsifier:</b> Thu cash fade through Wed lows OR disorderly JPY move.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Thinking Tutorial 7-step / 思维教程</h2>
+    <ul>
+      <li>1 Fact — FOMC hiked; SEP 4.1/4.1 CONFIRMED; Asia Thu locked</li>
+      <li>2 Expectation broken — soft-landing / deep cuts narrative</li>
+      <li>3 What priced — hike; what not — terminal path</li>
+      <li>4 Inference — extended green futures = deeper repair ≠ absolution</li>
+      <li>5 Transmission — path → yields → WACC → AI multiples; BOJ → JPY → carry</li>
+      <li>6 Falsifier — Thu cash fail or BOJ JPY shock</li>
+      <li>7 Next watch — overnight cash; Fri BOJ; MU Sep 30</li>
+    </ul>
+  </section>
+
+  <div class="footer">Research / education only — not investment advice. Report: /home/box/investment/reports/2026-09-17-2100-evening.md</div>
+</div>
+</body>
+</html>

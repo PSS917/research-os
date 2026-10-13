@@ -1,0 +1,32 @@
+{
+ "pdf": {
+  "ok": 65,
+  "fail": 0,
+  "ex": []
+ },
+ "docx": {
+  "ok": 64,
+  "fail": 0,
+  "ex": []
+ },
+ "zip": {
+  "ok": 41,
+  "fail": 0,
+  "ex": []
+ },
+ "html_links": {
+  "ok": 2235,
+  "fail": 0,
+  "ex": []
+ },
+ "xlsx_recalc_match": {
+  "ok": 27,
+  "fail": 0,
+  "ex": []
+ },
+ "png_hd>=2000px": {
+  "ok": 145,
+  "fail": 0,
+  "ex": []
+ }
+}
