@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title> </title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<style>body{font-family:'Noto Sans CJK SC','Noto Sans',sans-serif;max-width:1100px;margin:auto;padding:24px;line-height:1.6;color:#1b1b1b}table{border-collapse:collapse;font-size:13px;margin:8px 0}td,th{border:1px solid #ccd;padding:4px 8px}th{background:#1F3A5F;color:#fff}img{max-width:100%;border:1px solid #ddd}h1{color:#1F3A5F}h2{border-bottom:2px solid #1F3A5F}blockquote{background:#f3f6fa;border-left:4px solid #2E86C1;margin:0;padding:6px 12px}</style></head>
+<body>
+<header id="title-block-header">
+<h1 class="title"> </h1>
+</header>
+<h1
+id="glw-corning-incorporated-个股深度研究-专业中文版-v20261013-1622">GLW
+Corning Incorporated — 个股深度研究 (专业中文版) v20261013-1622</h1>
+<blockquote>
+<p>数据截至 2026-10-13 16:22 SGT｜价格 $147.28｜市值 126.9 bn
+USD｜财报货币
+USD｜非投资建议。事实=CONFIRMED/DATA；推断=INFERENCE；假设=ASSUMPTION/HYPOTHESIS。</p>
+</blockquote>
+<h2 id="投资论点-investment-thesis-hypothesis">1. 投资论点 Investment
+Thesis (HYPOTHESIS)</h2>
+<p>AI数据中心内部与之间的光纤密度大幅提升，使康宁光通信成为AI基建的’铜→光’受益者；Springboard计划强调利润率提升。</p>
+<ul>
+<li><strong>多头驱动</strong>: Hyperscaler fiber contracts scale; CPO
+raises fiber-attach; solar/specialty
+recover｜云厂光纤合约放量；CPO提升光纤连接量；光伏/特材复苏</li>
+<li><strong>空头驱动</strong>: Display weakness, fiber pricing from
+Chinese competition, capex
+digestion｜显示疲弱、中国光纤价格竞争、Capex消化</li>
+<li><strong>证伪条件 Falsifiers</strong>: Optical Comms growth
+decelerates below enterprise market; Springboard margin targets
+missed｜光通信增速回落；Springboard利润率目标落空</li>
+</ul>
+<h2 id="产品客户与收入模式">2. 产品、客户与收入模式</h2>
+<ul>
+<li>主题 Theme: Optical fiber / specialty glass 光纤/特种玻璃</li>
+<li>业务分部 Segments: Optical Communications 光通信；Display
+显示；Specialty Materials 特种材料(Gorilla)；Environmental/Life
+Sci/Solar 其他</li>
+<li>公司描述 (DATA, Yahoo/公司申报): Corning Incorporated operates in
+optical communications, display, specialty materials, automotive, and
+life sciences businesses in the United States, Canada, Mexico, Japan,
+Taiwan, China, South Korea, Germany, and internationally. The company
+provides optical fibers and cables; and hardware and equipment products,
+such as cable assemblies, fiber optic hardware and connectors, optical
+components and couplers, closures, network interface devices, and other
+accessories for the telecommunications industry, businesses,
+governments, and individuals. It also offers glass substrates for flat
+panel displays, including liquid crystal displays and organic
+light-emitting diodes that are used in televisions, notebook computers,
+desktop monitors, tablets, and handheld devices. In addition, it
+manufactures products that offer material formulations for glass, glass
+ceramics, crystals, precision metrolog</li>
+<li>主要客户: Hyperscalers &amp; carriers (fiber/connectivity),
+Samsung/LG/BOE (display), Apple (cover
+glass)｜云厂与电信商、面板厂、苹果</li>
+</ul>
+<h2 id="行业竞争监管与供应链-analyst-framework">3.
+行业、竞争、监管与供应链 (ANALYST FRAMEWORK)</h2>
+<ul>
+<li>供应商/上游: Raw materials (silica, germanium), energy; in-house
+glass tech｜原材料(硅、锗)、能源；自有玻璃工艺</li>
+<li>竞争者 (含业外): Prysmian, Fujikura, Sumitomo, YOFC (fiber); AGC,
+NEG (glass)｜普睿司曼、藤仓、住友、长飞；旭硝子、日本电气硝子</li>
+<li>瓶颈/监管: High-density fiber/cable capacity for AI data centers;
+preform capacity｜AI数据中心高密度光纤/光缆产能、预制棒产能</li>
+<li>关键KPI: Optical Comms sales, core op margin, enterprise network
+growth｜光通信销售、核心营业利润率、企业网络增速</li>
+<li>零部件现货/合约价:
+本版未接入付费价格源(TrendForce/DRAMeXchange等)——标注
+<strong>UNAVAILABLE</strong>，在KPI监控中以定性方式跟踪。</li>
+</ul>
+<h2 id="历史财务与现金流-confirmed-季度-usd">4. 历史财务与现金流
+(CONFIRMED, 季度, USD)</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>季度</th>
+<th>收入</th>
+<th>毛利</th>
+<th>营业利润</th>
+<th>净利润</th>
+<th>FCF</th>
+<th>营业利润率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-06-30</td>
+<td>4.5 bn USD</td>
+<td>1.6 bn USD</td>
+<td>0.7 bn USD</td>
+<td>0.6 bn USD</td>
+<td>1.3 bn USD</td>
+<td>15.5%</td>
+</tr>
+<tr>
+<td>2026-03-31</td>
+<td>4.1 bn USD</td>
+<td>1.5 bn USD</td>
+<td>0.6 bn USD</td>
+<td>0.4 bn USD</td>
+<td>30.0 mn USD</td>
+<td>15.4%</td>
+</tr>
+<tr>
+<td>2025-12-31</td>
+<td>4.2 bn USD</td>
+<td>1.5 bn USD</td>
+<td>0.7 bn USD</td>
+<td>0.5 bn USD</td>
+<td>0.6 bn USD</td>
+<td>15.9%</td>
+</tr>
+<tr>
+<td>2025-09-30</td>
+<td>4.1 bn USD</td>
+<td>1.5 bn USD</td>
+<td>0.6 bn USD</td>
+<td>0.4 bn USD</td>
+<td>0.5 bn USD</td>
+<td>14.4%</td>
+</tr>
+<tr>
+<td>2025-06-30</td>
+<td>3.9 bn USD</td>
+<td>1.4 bn USD</td>
+<td>0.6 bn USD</td>
+<td>0.5 bn USD</td>
+<td>0.4 bn USD</td>
+<td>14.8%</td>
+</tr>
+</tbody>
+</table>
+<p>资产负债: 现金 2.5 bn USD；总负债 9.4 bn USD；净现金 -6.9 bn USD。TTM
+FCF 2.4 bn USD（FCF率 14.1%）。</p>
+<h2 id="最新财报-实际-vs-一致预期-vs-指引">5. 最新财报: 实际 vs 一致预期
+vs 指引</h2>
+<table>
+<thead>
+<tr>
+<th>季度</th>
+<th>EPS实际</th>
+<th>EPS一致预期</th>
+<th>超预期%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-09-30</td>
+<td>0.67</td>
+<td>0.66471</td>
+<td>0.008</td>
+</tr>
+<tr>
+<td>2025-12-31</td>
+<td>0.72</td>
+<td>0.70535</td>
+<td>0.0208</td>
+</tr>
+<tr>
+<td>2026-03-31</td>
+<td>0.7</td>
+<td>0.6916</td>
+<td>0.0121</td>
+</tr>
+<tr>
+<td>2026-06-30</td>
+<td>0.78</td>
+<td>0.75378</td>
+<td>0.0348</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>管理层指引 Guidance:
+自动数据源不含指引——<strong>UNAVAILABLE（待从公司IR新闻稿录入）</strong>。</li>
+<li>下次财报日 (Yahoo, TENTATIVE 直至公司确认):
+<strong>2026-10-27</strong>；本季EPS一致预期
+0.87717（13位分析师）；收入一致预期 5.0 bn USD。</li>
+</ul>
+<h2 id="未来2468季度驱动与价格合理性">6.
+未来2/4/6/8季度驱动与价格合理性</h2>
+<table>
+<thead>
+<tr>
+<th>期限</th>
+<th>情景</th>
+<th>期限价格现值</th>
+<th>相对现价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2Q</td>
+<td>Bear</td>
+<td>$35.80</td>
+<td>-75.7%</td>
+</tr>
+<tr>
+<td>2Q</td>
+<td>Base</td>
+<td>$80.44</td>
+<td>-45.4%</td>
+</tr>
+<tr>
+<td>2Q</td>
+<td>Bull</td>
+<td>$131.37</td>
+<td>-10.8%</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>Bear</td>
+<td>$35.14</td>
+<td>-76.1%</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>Base</td>
+<td>$84.81</td>
+<td>-42.4%</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>Bull</td>
+<td>$144.08</td>
+<td>-2.2%</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>Bear</td>
+<td>$34.48</td>
+<td>-76.6%</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>Base</td>
+<td>$89.34</td>
+<td>-39.3%</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>Bull</td>
+<td>$157.81</td>
+<td>7.1%</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>Bear</td>
+<td>$33.81</td>
+<td>-77.0%</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>Base</td>
+<td>$94.03</td>
+<td>-36.2%</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>Bull</td>
+<td>$172.62</td>
+<td>17.2%</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>现价隐含的 EV/NTM-FCF (Base 路径):</th>
+<th>期限</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2Q</td>
+<td>41.9x</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>38.1x</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>34.6x</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>31.4x</td>
+</tr>
+</tbody>
+</table>
+<p>解读:
+如果8季度后Base情景所需倍数仍远高于25x，说明价格依赖更远期的增长。</p>
+<h2 id="三情景-bear-base-bull-hypothesis">7. 三情景 Bear / Base / Bull
+(HYPOTHESIS)</h2>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr>
+<th>情景</th>
+<th>Y1增速</th>
+<th>长期FCF率</th>
+<th>WACC</th>
+<th>永续g</th>
+<th>概率</th>
+<th>每股价值</th>
+<th>相对现价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bear</td>
+<td>9.8%</td>
+<td>12.0%</td>
+<td>11.8%</td>
+<td>2.5%</td>
+<td>25.0%</td>
+<td>$27.32</td>
+<td>-81.5%</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>19.6%</td>
+<td>15.0%</td>
+<td>10.8%</td>
+<td>3.0%</td>
+<td>50.0%</td>
+<td>$66.29</td>
+<td>-55.0%</td>
+</tr>
+<tr>
+<td>Bull</td>
+<td>25.5%</td>
+<td>17.2%</td>
+<td>10.3%</td>
+<td>3.5%</td>
+<td>25.0%</td>
+<td>$113.18</td>
+<td>-23.2%</td>
+</tr>
+</tbody>
+</table>
+<p>概率加权价值 <strong>$68.27</strong>（相对现价 -53.6%）。</p>
+<h2 id="估值-dcf-reverse-dcf-roic-wacc-同业-敏感度">8. 估值: DCF /
+Reverse DCF / ROIC-WACC / 同业 / 敏感度</h2>
+<ul>
+<li><p>DCF Base: EV 64.0 bn USD；终值占比 54.0%。</p></li>
+<li><p><strong>Reverse DCF 反向DCF</strong>:
+在Base利润率与WACC下，现价隐含Y1收入增速 ≈
+<strong>39.7%</strong>；一致预期FY+1增速 19.6%。</p></li>
+<li><p>WACC (CAPM) = rf 5.2% + β 1.12 × ERP 5.0% = 10.8%。</p></li>
+<li><p>SOTP segments 分部: Optical Communications 光通信; Display 显示;
+Specialty Materials 特种材料(Gorilla); Environmental/Life Sci/Solar
+其他. <strong>Status: framework only</strong> — segment revenues are
+INPUT REQUIRED from the latest 10-K/10-Q segment note (not auto-fed,
+left blank to avoid
+fabrication)｜分部收入需按最新财报手动录入，未自动填充以避免编造。</p></li>
+<li><p>同业比较 Comps (DATA): | Ticker | 市值 | EV/Sales | Fwd P/E |
+收入增速 | 毛利率 | FCF收益率 | |—|—|—|—|—|—|—| | GLW | 126.9 bn USD |
+7.9x | 33.7x | 16.6% | 36.4% | 1.9% | | COHR | 56.7 bn USD | 8.2x |
+20.5x | 33.7% | 37.5% | -1.1% | | LITE | 90.2 bn USD | 29.3x | 28.0x |
+109.3% | 44.2% | 0.2% | | CIEN | 57.4 bn USD | 9.6x | 34.2x | 37.0% |
+44.1% | 1.1% | | APH | 212.5 bn USD | 7.8x | 25.9x | 55.0% | 39.0% |
+1.8% |</p></li>
+<li><p>敏感度: 见Excel <code>Sensitivity</code> 表 (WACC ×
+永续增长率)。</p></li>
+</ul>
+<h2 id="风险反方论证与证伪">9. 风险、反方论证与证伪</h2>
+<ul>
+<li>反方观点 Counter-thesis: Display weakness, fiber pricing from
+Chinese competition, capex
+digestion｜显示疲弱、中国光纤价格竞争、Capex消化</li>
+<li>证伪指标: Optical Comms growth decelerates below enterprise market;
+Springboard margin targets
+missed｜光通信增速回落；Springboard利润率目标落空</li>
+<li>模型风险:
+长期利润率与WACC为假设；终值占比高时估值对假设极敏感。</li>
+</ul>
+<h2 id="source-ledger-来源账本">10. Source Ledger 来源账本</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+<th>Source/time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Price 股价</td>
+<td>147.3</td>
+<td>Yahoo Finance quote, fetched 2026-10-13T16:22 SGT</td>
+</tr>
+<tr>
+<td>Market cap 市值</td>
+<td>1.269e+11</td>
+<td>Yahoo info.marketCap 2026-10-13T16:22</td>
+</tr>
+<tr>
+<td>Cash 现金</td>
+<td>2.504e+09</td>
+<td>Yahoo info.totalCash (latest filing) 2026-10-13T16:22</td>
+</tr>
+<tr>
+<td>Debt 负债</td>
+<td>9.379e+09</td>
+<td>Yahoo info.totalDebt (latest filing) 2026-10-13T16:22</td>
+</tr>
+<tr>
+<td>Revenue TTM 收入</td>
+<td>1.696e+10</td>
+<td>Yahoo info.totalRevenue (TTM, USD) 2026-10-13T16:22</td>
+</tr>
+<tr>
+<td>FCF TTM 自由现金流</td>
+<td>2.395e+09</td>
+<td>Sum of last 4 quarterly FCF (q_cash); quarters [‘2026-06-30’,
+‘2026-03-31’, ‘2025-12-31’, ‘2025-09-30’] (USD)</td>
+</tr>
+<tr>
+<td>Beta</td>
+<td>1.123</td>
+<td>Yahoo info.beta (5Y monthly)</td>
+</tr>
+<tr>
+<td>Risk-free 10Y 无风险利率</td>
+<td>0.0522</td>
+<td>FRED DGS10 2026-10-08</td>
+</tr>
+<tr>
+<td>FX USD per USD</td>
+<td>1</td>
+<td>n/a (USD)</td>
+</tr>
+<tr>
+<td>Consensus rev growth FY0</td>
+<td>0.1767</td>
+<td>Yahoo revenue_estimate 0y</td>
+</tr>
+<tr>
+<td>Consensus rev growth FY+1</td>
+<td>0.1964</td>
+<td>Yahoo revenue_estimate +1y</td>
+</tr>
+</tbody>
+</table>
+<h2 id="assumption-register-假设登记表">11. Assumption Register
+假设登记表</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Assumption</th>
+<th>Value</th>
+<th>Rationale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ERP 股权风险溢价</td>
+<td>0.05</td>
+<td>ASSUMPTION: 5.0% house mature-market ERP</td>
+</tr>
+<tr>
+<td>Beta clamp</td>
+<td>[0.8,1.6] → 1.12</td>
+<td>ASSUMPTION: limit extreme betas</td>
+</tr>
+<tr>
+<td>Tax rate (ROIC)</td>
+<td>0.18</td>
+<td>ASSUMPTION: blended cash tax 18%</td>
+</tr>
+<tr>
+<td>Year-1 growth (Base)</td>
+<td>0.1964</td>
+<td>Consensus FY+1 revenue growth (Yahoo revenue_estimate ‘+1y’); capped
+at 100%</td>
+</tr>
+<tr>
+<td>Growth fade</td>
+<td>linear Y1→terminal by Y10</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>Starting FCF margin</td>
+<td>0.1412</td>
+<td>DATA: FCF TTM / Revenue TTM, floored -50%</td>
+</tr>
+<tr>
+<td>Long-run FCF margin (Base)</td>
+<td>0.15</td>
+<td>ASSUMPTION (analyst framework, reached by Y5; see profile)</td>
+</tr>
+<tr>
+<td>Bear/Bull Y1 growth multiplier</td>
+<td>0.5x / 1.3x</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>Bear/Bull margin multiplier</td>
+<td>0.8x / 1.15x</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>WACC adj Bear/Bull</td>
+<td>+1.0pp / -0.5pp</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>Terminal g Bear/Base/Bull</td>
+<td>2.5% / 3.0% / 3.5%</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>Scenario probabilities</td>
+<td>25% / 50% / 25%</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>Horizon exit EV/NTM-FCF Bear/Base/Bull</td>
+<td>15x / 25x / 35x</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>Per-share conversion</td>
+<td>value × fx ÷ market cap × price</td>
+<td>METHOD: avoids ADR/share-class mismatch</td>
+</tr>
+</tbody>
+</table>
+<h2 id="model-provenance-模型溯源">12. Model Provenance 模型溯源</h2>
+<ul>
+<li>Model file: <code>GLW_model_v20261013-1622.xlsx</code> (live
+formulas; sheets
+Inputs→Scenarios→DCF→ReverseDCF→Sensitivity→Horizons→SOTP→Comps→ROIC_WACC→History→Sources→Assumptions)</li>
+<li>Engine: <code>production/pipeline/model.py</code> (Python mirror;
+values in this report = Python mirror, verified against LibreOffice
+recalculation of the xlsx)</li>
+<li>Data snapshot: <code>data/snapshots/20261013-1622</code> (immutable)
+| Fetched 2026-10-13 16:22 SGT | Generated 2026-10-13 16:23 SGT</li>
+<li>Version: v20261013-1622. Prior versions are never overwritten (see
+company history page).</li>
+</ul>
+<h2 id="版本与事件时间轴">13. 版本与事件时间轴</h2>
+<ul>
+<li>v20261013-1622: 首版生产系统报告 (27家同步)。下一事件: 财报
+2026-10-27 (TENTATIVE)。</li>
+</ul>
+<h2 id="图片报告-image-report">图片报告 Image Report</h2>
+<figure>
+<img src="images/GLW_1_price_vs_value.png" alt="1_price_vs_value" />
+<figcaption aria-hidden="true">1_price_vs_value</figcaption>
+</figure>
+<p><em>股价vs三情景价值 Price vs scenario values</em></p>
+<figure>
+<img src="images/GLW_2_financials.png" alt="2_financials" />
+<figcaption aria-hidden="true">2_financials</figcaption>
+</figure>
+<p><em>季度财务 Quarterly financials</em></p>
+<figure>
+<img src="images/GLW_3_scenarios.png" alt="3_scenarios" />
+<figcaption aria-hidden="true">3_scenarios</figcaption>
+</figure>
+<p><em>三情景 Scenarios</em></p>
+<figure>
+<img src="images/GLW_4_horizons.png" alt="4_horizons" />
+<figcaption aria-hidden="true">4_horizons</figcaption>
+</figure>
+<p><em>2/4/6/8季度检验 Horizon check</em></p>
+<figure>
+<img src="images/GLW_5_logic_map.png" alt="5_logic_map" />
+<figcaption aria-hidden="true">5_logic_map</figcaption>
+</figure>
+<p><em>研究逻辑图 Logic map</em></p>
+<hr />
+<h1
+id="glw-corning-incorporated-equity-deep-dive-professional-english-v20261013-1622">GLW
+Corning Incorporated — Equity Deep Dive (Professional English)
+v20261013-1622</h1>
+<blockquote>
+<p>Data as of 2026-10-13 16:22 SGT | Price $147.28 | Mkt cap 126.9 bn
+USD | Reporting currency USD | Not investment advice.</p>
+</blockquote>
+<h2 id="investment-thesis-hypothesis">1. Investment thesis
+(HYPOTHESIS)</h2>
+<p>AI clusters massively raise fiber density inside and between data
+centers, making Corning Optical a ‘copper-to-optics’ beneficiary; its
+Springboard plan targets margin expansion.</p>
+<ul>
+<li><strong>Bull drivers</strong>: Hyperscaler fiber contracts scale;
+CPO raises fiber-attach; solar/specialty
+recover｜云厂光纤合约放量；CPO提升光纤连接量；光伏/特材复苏</li>
+<li><strong>Bear drivers</strong>: Display weakness, fiber pricing from
+Chinese competition, capex
+digestion｜显示疲弱、中国光纤价格竞争、Capex消化</li>
+<li><strong>Falsifiers</strong>: Optical Comms growth decelerates below
+enterprise market; Springboard margin targets
+missed｜光通信增速回落；Springboard利润率目标落空</li>
+</ul>
+<h2 id="products-customers-revenue-model">2. Products, customers,
+revenue model</h2>
+<ul>
+<li>Theme: Optical fiber / specialty glass 光纤/特种玻璃 | Segments:
+Optical Communications 光通信; Display 显示; Specialty Materials
+特种材料(Gorilla); Environmental/Life Sci/Solar 其他</li>
+<li>Business description (DATA): Corning Incorporated operates in
+optical communications, display, specialty materials, automotive, and
+life sciences businesses in the United States, Canada, Mexico, Japan,
+Taiwan, China, South Korea, Germany, and internationally. The company
+provides optical fibers and cables; and hardware and equipment products,
+such as cable assemblies, fiber optic hardware and connectors, optical
+components and couplers, closures, network interface devices, and other
+accessories for the telecommunications industry, businesses,
+governments, and individuals. It also offers glass substrates for flat
+panel displays, including liquid crystal displays and organic
+light-emitting diodes that are used in televisions, notebook computers,
+desktop monitors, tablets, and handheld devices. In addition, it
+manufactures products that offer material formulations for glass, glass
+ceramics, crystals, precision metrolog</li>
+<li>Customers: Hyperscalers &amp; carriers (fiber/connectivity),
+Samsung/LG/BOE (display), Apple (cover
+glass)｜云厂与电信商、面板厂、苹果</li>
+</ul>
+<h2
+id="industry-competition-regulation-supply-chain-analyst-framework">3.
+Industry, competition, regulation, supply chain (ANALYST FRAMEWORK)</h2>
+<ul>
+<li>Suppliers: Raw materials (silica, germanium), energy; in-house glass
+tech｜原材料(硅、锗)、能源；自有玻璃工艺</li>
+<li>Competitors: Prysmian, Fujikura, Sumitomo, YOFC (fiber); AGC, NEG
+(glass)｜普睿司曼、藤仓、住友、长飞；旭硝子、日本电气硝子</li>
+<li>Bottlenecks/regulation: High-density fiber/cable capacity for AI
+data centers; preform
+capacity｜AI数据中心高密度光纤/光缆产能、预制棒产能</li>
+<li>KPIs: Optical Comms sales, core op margin, enterprise network
+growth｜光通信销售、核心营业利润率、企业网络增速</li>
+<li>Component spot/contract prices: paid feeds not connected —
+<strong>UNAVAILABLE</strong>, tracked qualitatively.</li>
+</ul>
+<h2 id="historical-financials-cash-flow-confirmed-quarterly-usd">4.
+Historical financials &amp; cash flow (CONFIRMED, quarterly, USD)</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Quarter</th>
+<th>Revenue</th>
+<th>Gross profit</th>
+<th>Op income</th>
+<th>Net income</th>
+<th>FCF</th>
+<th>Op margin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-06-30</td>
+<td>4.5 bn USD</td>
+<td>1.6 bn USD</td>
+<td>0.7 bn USD</td>
+<td>0.6 bn USD</td>
+<td>1.3 bn USD</td>
+<td>15.5%</td>
+</tr>
+<tr>
+<td>2026-03-31</td>
+<td>4.1 bn USD</td>
+<td>1.5 bn USD</td>
+<td>0.6 bn USD</td>
+<td>0.4 bn USD</td>
+<td>30.0 mn USD</td>
+<td>15.4%</td>
+</tr>
+<tr>
+<td>2025-12-31</td>
+<td>4.2 bn USD</td>
+<td>1.5 bn USD</td>
+<td>0.7 bn USD</td>
+<td>0.5 bn USD</td>
+<td>0.6 bn USD</td>
+<td>15.9%</td>
+</tr>
+<tr>
+<td>2025-09-30</td>
+<td>4.1 bn USD</td>
+<td>1.5 bn USD</td>
+<td>0.6 bn USD</td>
+<td>0.4 bn USD</td>
+<td>0.5 bn USD</td>
+<td>14.4%</td>
+</tr>
+<tr>
+<td>2025-06-30</td>
+<td>3.9 bn USD</td>
+<td>1.4 bn USD</td>
+<td>0.6 bn USD</td>
+<td>0.5 bn USD</td>
+<td>0.4 bn USD</td>
+<td>14.8%</td>
+</tr>
+</tbody>
+</table>
+<p>Cash 2.5 bn USD; debt 9.4 bn USD; TTM FCF 2.4 bn USD (FCF margin
+14.1%).</p>
+<h2 id="latest-earnings-actual-vs-consensus-vs-guidance">5. Latest
+earnings: actual vs consensus vs guidance</h2>
+<table>
+<thead>
+<tr>
+<th>Quarter</th>
+<th>EPS actual</th>
+<th>EPS consensus</th>
+<th>Surprise</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-09-30</td>
+<td>0.67</td>
+<td>0.66471</td>
+<td>0.008</td>
+</tr>
+<tr>
+<td>2025-12-31</td>
+<td>0.72</td>
+<td>0.70535</td>
+<td>0.0208</td>
+</tr>
+<tr>
+<td>2026-03-31</td>
+<td>0.7</td>
+<td>0.6916</td>
+<td>0.0121</td>
+</tr>
+<tr>
+<td>2026-06-30</td>
+<td>0.78</td>
+<td>0.75378</td>
+<td>0.0348</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Management guidance: not in automated feed — <strong>UNAVAILABLE (to
+be entered from IR release)</strong>.</li>
+<li>Next earnings (Yahoo; TENTATIVE until company-confirmed):
+<strong>2026-10-27</strong>; current-quarter EPS consensus 0.87717 (13
+analysts); revenue consensus 5.0 bn USD.</li>
+</ul>
+<h2 id="quarter-drivers-price-reasonableness">6. 2/4/6/8-quarter drivers
+&amp; price reasonableness</h2>
+<table>
+<thead>
+<tr>
+<th>Horizon</th>
+<th>Scenario</th>
+<th>PV of horizon price</th>
+<th>vs current</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2Q</td>
+<td>Bear</td>
+<td>$35.80</td>
+<td>-75.7%</td>
+</tr>
+<tr>
+<td>2Q</td>
+<td>Base</td>
+<td>$80.44</td>
+<td>-45.4%</td>
+</tr>
+<tr>
+<td>2Q</td>
+<td>Bull</td>
+<td>$131.37</td>
+<td>-10.8%</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>Bear</td>
+<td>$35.14</td>
+<td>-76.1%</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>Base</td>
+<td>$84.81</td>
+<td>-42.4%</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>Bull</td>
+<td>$144.08</td>
+<td>-2.2%</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>Bear</td>
+<td>$34.48</td>
+<td>-76.6%</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>Base</td>
+<td>$89.34</td>
+<td>-39.3%</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>Bull</td>
+<td>$157.81</td>
+<td>7.1%</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>Bear</td>
+<td>$33.81</td>
+<td>-77.0%</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>Base</td>
+<td>$94.03</td>
+<td>-36.2%</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>Bull</td>
+<td>$172.62</td>
+<td>17.2%</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Current-price implied EV/NTM-FCF on Base path:</th>
+<th>Horizon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2Q</td>
+<td>41.9x</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>38.1x</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>34.6x</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>31.4x</td>
+</tr>
+</tbody>
+</table>
+<h2 id="bear-base-bull-hypothesis">7. Bear / Base / Bull
+(HYPOTHESIS)</h2>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Y1 growth</th>
+<th>LR FCF margin</th>
+<th>WACC</th>
+<th>Terminal g</th>
+<th>Prob.</th>
+<th>Value/share</th>
+<th>vs price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bear</td>
+<td>9.8%</td>
+<td>12.0%</td>
+<td>11.8%</td>
+<td>2.5%</td>
+<td>25.0%</td>
+<td>$27.32</td>
+<td>-81.5%</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>19.6%</td>
+<td>15.0%</td>
+<td>10.8%</td>
+<td>3.0%</td>
+<td>50.0%</td>
+<td>$66.29</td>
+<td>-55.0%</td>
+</tr>
+<tr>
+<td>Bull</td>
+<td>25.5%</td>
+<td>17.2%</td>
+<td>10.3%</td>
+<td>3.5%</td>
+<td>25.0%</td>
+<td>$113.18</td>
+<td>-23.2%</td>
+</tr>
+</tbody>
+</table>
+<p>Probability-weighted value <strong>$68.27</strong> (-53.6% vs
+price).</p>
+<h2 id="valuation-dcf-reverse-dcf-roic-wacc-comps-sensitivity">8.
+Valuation: DCF / Reverse DCF / ROIC-WACC / comps / sensitivity</h2>
+<ul>
+<li>Base DCF EV 64.0 bn USD; terminal share 54.0%.</li>
+<li><strong>Reverse DCF</strong>: at Base margin/WACC the price implies
+Y1 revenue growth ≈ <strong>39.7%</strong> vs consensus FY+1 19.6%.</li>
+<li>WACC (CAPM) = rf 5.2% + β 1.12 × ERP 5.0% = 10.8%.</li>
+<li>SOTP segments: Optical Communications 光通信; Display 显示;
+Specialty Materials 特种材料(Gorilla); Environmental/Life Sci/Solar 其他
+— framework only; segment revenue inputs pending from filings.</li>
+<li>Comps (DATA): see table in Chinese section / Excel
+<code>Comps</code>.</li>
+<li>Sensitivity: Excel <code>Sensitivity</code> (WACC × terminal
+g).</li>
+</ul>
+<h2 id="risks-counterarguments-falsifiers">9. Risks, counterarguments,
+falsifiers</h2>
+<p>Display weakness, fiber pricing from Chinese competition, capex
+digestion｜显示疲弱、中国光纤价格竞争、Capex消化 | Falsifiers: Optical
+Comms growth decelerates below enterprise market; Springboard margin
+targets missed｜光通信增速回落；Springboard利润率目标落空</p>
+<h2 id="source-ledger-assumption-register-model-provenance">10–12.
+Source Ledger / Assumption Register / Model Provenance</h2>
+<p>See tables above (shared, bilingual). - Model file:
+<code>GLW_model_v20261013-1622.xlsx</code> (live formulas; sheets
+Inputs→Scenarios→DCF→ReverseDCF→Sensitivity→Horizons→SOTP→Comps→ROIC_WACC→History→Sources→Assumptions)
+- Engine: <code>production/pipeline/model.py</code> (Python mirror;
+values in this report = Python mirror, verified against LibreOffice
+recalculation of the xlsx) - Data snapshot:
+<code>data/snapshots/20261013-1622</code> (immutable) | Fetched
+2026-10-13 16:22 SGT | Generated 2026-10-13 16:23 SGT - Version:
+v20261013-1622. Prior versions are never overwritten (see company
+history page).</p>
+</body>
+</html>

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title> </title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<style>body{font-family:'Noto Sans CJK SC','Noto Sans',sans-serif;max-width:1100px;margin:auto;padding:24px;line-height:1.6;color:#1b1b1b}table{border-collapse:collapse;font-size:13px;margin:8px 0}td,th{border:1px solid #ccd;padding:4px 8px}th{background:#1F3A5F;color:#fff}img{max-width:100%;border:1px solid #ddd}h1{color:#1F3A5F}h2{border-bottom:2px solid #1F3A5F}blockquote{background:#f3f6fa;border-left:4px solid #2E86C1;margin:0;padding:6px 12px}</style></head>
+<body>
+<header id="title-block-header">
+<h1 class="title"> </h1>
+</header>
+<h1 id="每日总览-daily-os-overview-2026-10-13-v20261013-1812">每日总览
+Daily OS Overview — 2026-10-13 (v20261013-1812)</h1>
+<blockquote>
+<p>非投资建议。所有数字带来源；推断已标注。</p>
+</blockquote>
+<h2 id="a.-今日要点-headlines-inference">A. 今日要点 Headlines
+(INFERENCE)</h2>
+<ol type="1">
+<li>宏观: 核心PCE同比 +3.0%；套息压力 CALM；VIX 15.3。</li>
+<li>题材最强: KR Battery 电池, JP Test 测试, TW PCB/ABF Substrate
+载板；最弱: KR Defense/Space 国防航天, KR Power Grid 电网, JP Memory
+存储。</li>
+<li>未来7天: 2026-10-14 US CPI (Sep 2026)｜美国CPI; 2026-10-15 US PPI
+(Sep 2026)｜美国PPI; 2026-10-15 TSM earnings + call｜财报与电话会;
+2026-10-16 US Import/Export Prices (Sep)。</li>
+</ol>
+<h2
+id="b.-宏观利率汇率流动性-见-macro-专题-researchmacrov20261013-1812">B.
+宏观/利率/汇率/流动性 → 见 Macro 专题
+(research/macro/v20261013-1812)</h2>
+<h2 id="c.-台日韩雷达-见-radar-researchradarv20261013-1812">C.
+台日韩雷达 → 见 Radar (research/radar/v20261013-1812)</h2>
+<h2 id="d.-观察名单-27家-估值快照">D. 观察名单 27家 估值快照</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Ticker</th>
+<th>价格</th>
+<th>1D</th>
+<th>Bear/Base/Bull</th>
+<th>价格隐含Y1增速</th>
+<th>一致预期FY+1</th>
+<th>下次财报</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AAPL</td>
+<td>$340.97</td>
+<td>+1.3%</td>
+<td>$87/$154/$226</td>
+<td>+31.4%</td>
+<td>+10.6%</td>
+<td>2026-11-03</td>
+</tr>
+<tr>
+<td>AMAT</td>
+<td>$497.53</td>
+<td>-1.9%</td>
+<td>$120/$316/$580</td>
+<td>+48.4%</td>
+<td>+35.2%</td>
+<td>2026-11-13</td>
+</tr>
+<tr>
+<td>AMD</td>
+<td>$594.24</td>
+<td>-2.3%</td>
+<td>$160/$751/$1,870</td>
+<td>+67.0%</td>
+<td>+74.6%</td>
+<td>2026-11-04</td>
+</tr>
+<tr>
+<td>ARM</td>
+<td>$255.24</td>
+<td>-4.1%</td>
+<td>$27/$67/$123</td>
+<td>+78.1%</td>
+<td>+36.2%</td>
+<td>2026-11-05</td>
+</tr>
+<tr>
+<td>AVGO</td>
+<td>$354.73</td>
+<td>-1.9%</td>
+<td>$179/$774/$1,827</td>
+<td>+40.9%</td>
+<td>+64.1%</td>
+<td>2026-12-10</td>
+</tr>
+<tr>
+<td>CCL</td>
+<td>$26.48</td>
+<td>+0.5%</td>
+<td>$-3/$4/$9</td>
+<td>+22.9%</td>
+<td>+3.1%</td>
+<td>2026-12-18</td>
+</tr>
+<tr>
+<td>CIEN</td>
+<td>$405.01</td>
+<td>-10.0%</td>
+<td>$81/$211/$384</td>
+<td>+49.1%</td>
+<td>+30.8%</td>
+<td>2026-09-03</td>
+</tr>
+<tr>
+<td>COHR</td>
+<td>$288.02</td>
+<td>-7.9%</td>
+<td>$42/$163/$337</td>
+<td>+53.8%</td>
+<td>+38.8%</td>
+<td>2026-11-05</td>
+</tr>
+<tr>
+<td>CRWD</td>
+<td>$263.01</td>
+<td>-4.4%</td>
+<td>$24/$49/$79</td>
+<td>+73.7%</td>
+<td>+22.6%</td>
+<td>2026-12-02</td>
+</tr>
+<tr>
+<td>CRWV</td>
+<td>$80.26</td>
+<td>-2.2%</td>
+<td>$-21/$497/$1,736</td>
+<td>+61.6%</td>
+<td>+100.0%</td>
+<td>2026-11-12</td>
+</tr>
+<tr>
+<td>EME</td>
+<td>$779.16</td>
+<td>-1.3%</td>
+<td>$265/$450/$648</td>
+<td>+24.4%</td>
+<td>+9.9%</td>
+<td>2026-10-29</td>
+</tr>
+<tr>
+<td>GLW</td>
+<td>$147.28</td>
+<td>-6.0%</td>
+<td>$27/$66/$113</td>
+<td>+39.7%</td>
+<td>+19.6%</td>
+<td>2026-10-27</td>
+</tr>
+<tr>
+<td>INTC</td>
+<td>$101.35</td>
+<td>-3.2%</td>
+<td>$5/$12/$20</td>
+<td>+68.9%</td>
+<td>+14.9%</td>
+<td>2026-10-30</td>
+</tr>
+<tr>
+<td>KLAC</td>
+<td>$190.12</td>
+<td>-2.8%</td>
+<td>$30/$61/$96</td>
+<td>+50.8%</td>
+<td>+18.9%</td>
+<td>2026-10-29</td>
+</tr>
+<tr>
+<td>LITE</td>
+<td>$995.41</td>
+<td>-9.8%</td>
+<td>$157/$575/$1,270</td>
+<td>+73.8%</td>
+<td>+56.4%</td>
+<td>2026-11-06</td>
+</tr>
+<tr>
+<td>MRVL</td>
+<td>$265.86</td>
+<td>-3.4%</td>
+<td>$60/$256/$597</td>
+<td>+64.3%</td>
+<td>+63.1%</td>
+<td>2026-12-02</td>
+</tr>
+<tr>
+<td>MU</td>
+<td>$989.04</td>
+<td>-3.9%</td>
+<td>$327/$585/$865</td>
+<td>+30.6%</td>
+<td>+15.7%</td>
+<td>2026-12-24</td>
+</tr>
+<tr>
+<td>MXL</td>
+<td>$88.99</td>
+<td>-7.5%</td>
+<td>$8/$22/$41</td>
+<td>+69.0%</td>
+<td>+29.9%</td>
+<td>2026-10-23</td>
+</tr>
+<tr>
+<td>NVDA</td>
+<td>$226.32</td>
+<td>-1.3%</td>
+<td>$126/$549/$1,312</td>
+<td>+41.0%</td>
+<td>+68.2%</td>
+<td>2026-11-18</td>
+</tr>
+<tr>
+<td>PLTR</td>
+<td>$209.00</td>
+<td>-0.0%</td>
+<td>$23/$68/$136</td>
+<td>+87.9%</td>
+<td>+50.1%</td>
+<td>2026-11-03</td>
+</tr>
+<tr>
+<td>PWR</td>
+<td>$694.79</td>
+<td>-1.6%</td>
+<td>$100/$222/$359</td>
+<td>+44.0%</td>
+<td>+15.5%</td>
+<td>2026-10-29</td>
+</tr>
+<tr>
+<td>QCOM</td>
+<td>$174.43</td>
+<td>-0.6%</td>
+<td>$68/$104/$138</td>
+<td>+17.9%</td>
+<td>+4.8%</td>
+<td>2026-11-05</td>
+</tr>
+<tr>
+<td>RKLB</td>
+<td>$65.71</td>
+<td>-3.7%</td>
+<td>$4/$8/$15</td>
+<td>+115.2%</td>
+<td>+41.3%</td>
+<td>2026-11-10</td>
+</tr>
+<tr>
+<td>SIMO</td>
+<td>$246.95</td>
+<td>-6.4%</td>
+<td>$59/$162/$295</td>
+<td>+40.8%</td>
+<td>+29.6%</td>
+<td>2026-10-29</td>
+</tr>
+<tr>
+<td>SPCX</td>
+<td>$163.42</td>
+<td>+0.5%</td>
+<td>$20/$131/$395</td>
+<td>+107.8%</td>
+<td>+100.0%</td>
+<td>2026-11-04</td>
+</tr>
+<tr>
+<td>TSLA</td>
+<td>$378.03</td>
+<td>-1.2%</td>
+<td>$27/$44/$62</td>
+<td>+80.9%</td>
+<td>+13.6%</td>
+<td>2026-10-22</td>
+</tr>
+<tr>
+<td>TSM</td>
+<td>$444.35</td>
+<td>-2.0%</td>
+<td>$134/$350/$655</td>
+<td>+42.9%</td>
+<td>+35.9%</td>
+<td>2026-10-15</td>
+</tr>
+</tbody>
+</table>
+<h2 id="e.-事件生命周期状态">E. 事件生命周期状态</h2>
+<ul>
+<li>US CPI 10/14: <strong>Pre-release book ready</strong>
+(events/v20261013-1812)；发布时/发布后部分待事件发生后生成。 ## F.
+今日教学 Teaching corner “价格隐含增速 &gt; 一致预期” =
+市场比分析师更乐观 → 需要超预期才能维持股价。English: price-implied
+growth above consensus means the stock needs beats to hold.</li>
+</ul>
+<figure>
+<img src="images/daily_movers.png" alt="movers" />
+<figcaption aria-hidden="true">movers</figcaption>
+</figure>
+<figure>
+<img src="images/daily_valuation.png" alt="valuation" />
+<figcaption aria-hidden="true">valuation</figcaption>
+</figure>
+</body>
+</html>
