@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title> </title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<style>body{font-family:'Noto Sans CJK SC','Noto Sans',sans-serif;max-width:1100px;margin:auto;padding:24px;line-height:1.6;color:#1b1b1b}table{border-collapse:collapse;font-size:13px;margin:8px 0}td,th{border:1px solid #ccd;padding:4px 8px}th{background:#1F3A5F;color:#fff}img{max-width:100%;border:1px solid #ddd}h1{color:#1F3A5F}h2{border-bottom:2px solid #1F3A5F}abbr{text-decoration:underline dotted #2E86C1;cursor:help}.box30{background:linear-gradient(135deg,#eaf2ff,#f5ecff);border:2px solid #5b8cff;border-radius:14px;padding:6px 18px;margin:14px 0;font-size:16px}.readmap{background:#f6f8fb;border:1px solid #d5dbe6;border-radius:12px;padding:4px 16px;margin:12px 0}.howto{background:#fff8e6;border-left:5px solid #f59e0b;border-radius:8px;padding:2px 14px;margin:6px 0 22px}.quiz{background:#effaf3;border:1px solid #9bd8b1;border-radius:12px;padding:4px 16px}details{margin:8px 0}details.l3{background:#f7f7f9;border:1px dashed #b8c0cc;border-radius:10px;padding:6px 14px}summary{cursor:pointer;font-weight:600;color:#1F3A5F}body{font-size:15.5px}blockquote{background:#f3f6fa;border-left:4px solid #2E86C1;margin:0;padding:6px 12px}</style></head>
+<body>
+<header id="title-block-header">
+<h1 class="title"> </h1>
+</header>
+<h1
+id="台积电-tsm-q3-2026-发布前事件书tsmc-earnings-pre-event-book">台积电
+TSM Q3 2026 发布前事件书｜TSMC Earnings Pre-Event Book</h1>
+<blockquote>
+<p><strong>电话会：2026-10-15（周四）14:00 台湾时间 = 14:00 新加坡时间
+(SGT) = 02:00 ET</strong>｜状态 <strong>CONFIRMED</strong>（<a
+href="https://investor.tsmc.com/english/quarterly-results/2026/q3">TSMC
+IR Q3 2026</a>） 静默期 Quiet
+period：10/5–10/14（电话会前结束）。快照锁定 <strong>2026-10-14 18:06
+SGT</strong>（v20261014-1806）。非投资建议。</p>
+</blockquote>
+<div class="box30">
+<p><strong>⏱ 30秒看懂</strong></p>
+<ol type="1">
+<li><strong>发生什么：</strong>明天下午 14:00 SGT
+台积电开季报电话会（已确认，不再是 Yahoo 上的待定）。</li>
+<li><strong>和我的股票有什么关系：</strong>数字看收入/毛利率是否落在指引内；更重要的是
+CoWoS/N2 与 2027 资本开支口径——会牵动 NVDA、AVGO、AMAT、KLAC、MU
+等观察名单。</li>
+<li><strong>该看什么/做什么：</strong>对照：指引收入
+$44.6–45.8bn、毛利率 65–67%；共识 EPS 约 $4.52、收入约合
+$45.6bn。先填清单再听点评。</li>
+</ol>
+</div>
+<div class="readmap">
+<p><strong>🗺 阅读地图</strong></p>
+<table>
+<thead>
+<tr>
+<th>你有多少时间</th>
+<th>读哪里</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2 分钟</td>
+<td>30秒 + 情景表 + 第4节清单。</td>
+</tr>
+<tr>
+<td>10 分钟</td>
+<td>第1–3、5节 + 图01/02。</td>
+</tr>
+<tr>
+<td>30 分钟</td>
+<td>全文教学 + 证伪 + 同伴归因。</td>
+</tr>
+</tbody>
+</table>
+<p>层级说明：<strong>L1 故事</strong>（人人能懂）→ <strong>L2
+关键数字</strong>（带解释）→ <strong>L3
+专业细节</strong>（网页可折叠，默认收起）。</p>
+</div>
+<h2 id="执行摘要">1. 执行摘要</h2>
+<ol type="1">
+<li><strong>公司指引 (FACT / Management Guidance)</strong>：Q3 收入
+<strong>US$44.6–45.8bn</strong>（FX 假设 USD/NTD
+<strong>32.0</strong>），毛利率 <strong>65.0–67.0%</strong>，营业利率
+<strong>56.0–58.0%</strong>。Q2 实际：收入 40.20bn、GM 67.7%、OM
+60.3%。</li>
+<li><strong>共识 (MARKET EXP, Yahoo <code>co_TSM.json</code>
+2026-10-14)</strong>：EPS ADR 均 <strong>$4.524</strong>（低 4.26 / 高
+4.85，9 位）；收入均 <strong>TWD 1.460T</strong>（28 位）≈
+<strong>US$45.6bn @ 32</strong>（指引中枢附近）；同比增速约
+<strong>47.5%</strong>。Year-ago EPS 2.92。现价约
+<strong>$445.12</strong>。</li>
+<li><strong>交叉核对</strong>：MarketBeat/Yahoo 量级 EPS
+~4.45–4.52、收入 ~$45.3–45.7bn（MARKET EXP cross-check）。</li>
+<li><strong>我们 (HYPOTHESIS)</strong>：收入
+<strong>$45.2bn</strong>（略低于中枢）、GM <strong>66%</strong>、OM
+<strong>57%</strong>、EPS <strong>$4.50</strong>；概率 Beat 30% / Inline
+45% / Miss
+25%。UNCERTAINTY：无内部订单簿；信心来自指引与共识重合度。</li>
+<li><strong>为何重要</strong>：AI 晶圆与先进封装定价锚；读穿至
+GPU/ASIC、设备、HBM。叠加同日 PPI（20:30 SGT）情绪。</li>
+</ol>
+<h2 id="预期差-expectation-gap">2. 预期差 Expectation Gap</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>Q2 实际</th>
+<th>公司指引</th>
+<th>共识</th>
+<th>我们</th>
+<th>差（我们−共识/中枢）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>收入 USD bn</td>
+<td>40.20</td>
+<td>44.6–45.8</td>
+<td>~45.6</td>
+<td><strong>45.2</strong></td>
+<td>略低</td>
+</tr>
+<tr>
+<td>毛利率 %</td>
+<td>67.7</td>
+<td>65–67</td>
+<td>—</td>
+<td><strong>66</strong></td>
+<td>中位</td>
+</tr>
+<tr>
+<td>营业利率 %</td>
+<td>60.3</td>
+<td>56–58</td>
+<td>—</td>
+<td><strong>57</strong></td>
+<td>中位</td>
+</tr>
+<tr>
+<td>EPS ADR $</td>
+<td>—</td>
+<td>—</td>
+<td><strong>4.52</strong></td>
+<td><strong>4.50</strong></td>
+<td>≈0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="情景与反应路径-hypothesis">3. 情景与反应路径 (HYPOTHESIS)</h2>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr>
+<th>情景</th>
+<th>阈值</th>
+<th>概率</th>
+<th>TSM</th>
+<th>NVDA/AVGO</th>
+<th>AMAT/KLAC</th>
+<th>MU</th>
+<th>SOX</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beat</td>
+<td>Rev≥45.8 或 GM≥67 + 强点评</td>
+<td>30%</td>
+<td>+3~+7%</td>
+<td>+2~+5%</td>
+<td>+2~+4%</td>
+<td>+1~+3%</td>
+<td>+2~+4%</td>
+</tr>
+<tr>
+<td>Inline</td>
+<td>指引内 + EPS~共识</td>
+<td>45%</td>
+<td>±2%</td>
+<td>随 CoWoS/N2</td>
+<td>随 capex</td>
+<td>中性</td>
+<td>±1.5%</td>
+</tr>
+<tr>
+<td>Miss</td>
+<td>Rev&lt;44.6 或 GM&lt;65 或指引下修</td>
+<td>25%</td>
+<td>−4~−9%</td>
+<td>−2~−5%</td>
+<td>−2~−5%</td>
+<td>−1~−3%</td>
+<td>−2~−4%</td>
+</tr>
+</tbody>
+</table>
+<p>INTC/QCOM/MRVL/ARM：叙事依赖「客户组合与竞争」点评，方向可能与 SOX
+不完全一致。</p>
+<h2 id="电话会观察清单-live-call-checklist1400-sgt">4. 电话会观察清单
+Live Call Checklist（14:00 SGT）</h2>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>#</th>
+<th>看什么</th>
+<th>Beat/强</th>
+<th>Miss/弱</th>
+<th>初学者注释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>收入 USD</td>
+<td>≥45.8</td>
+<td>&lt;44.6</td>
+<td>先看是否在指引内，再看中上沿</td>
+</tr>
+<tr>
+<td>2</td>
+<td>毛利率</td>
+<td>≥67</td>
+<td>&lt;65</td>
+<td>Q2 67.7%→指引下移，守住 65 是底线叙事</td>
+</tr>
+<tr>
+<td>3</td>
+<td>营业利率</td>
+<td>上沿</td>
+<td>下破 56</td>
+<td>费用与折旧</td>
+</tr>
+<tr>
+<td>4</td>
+<td>EPS ADR</td>
+<td>&gt;4.60</td>
+<td>&lt;4.35</td>
+<td>共识 4.52；区间 4.26–4.85</td>
+</tr>
+<tr>
+<td>5</td>
+<td>CoWoS/先进封装</td>
+<td>产能紧、涨价</td>
+<td>松动/推迟</td>
+<td>常比 EPS 更能带动同伴</td>
+</tr>
+<tr>
+<td>6</td>
+<td>N2 进度</td>
+<td>客户/放量明确</td>
+<td>推迟</td>
+<td>长期倍数故事</td>
+</tr>
+<tr>
+<td>7</td>
+<td>2027 Capex</td>
+<td>上调或结构偏 AI</td>
+<td>下调</td>
+<td>设备链 AMAT/KLAC</td>
+</tr>
+<tr>
+<td>8</td>
+<td>AI vs 手机/PC</td>
+<td>AI 强且手机稳</td>
+<td>双弱</td>
+<td>组合质量</td>
+</tr>
+<tr>
+<td>9</td>
+<td>中国占比</td>
+<td>稳定可解释</td>
+<td>突然变化</td>
+<td>政策敏感</td>
+</tr>
+<tr>
+<td>10</td>
+<td>同伴背离</td>
+<td>—</td>
+<td>数字好但 SOX 跌</td>
+<td>仓位/PPI 情绪抢戏</td>
+</tr>
+</tbody>
+</table>
+<h2 id="受影响观察名单-affected-watchlist">5. 受影响观察名单 Affected
+Watchlist</h2>
+<ul>
+<li><strong>主驱动</strong>：TSM（ADR）。</li>
+<li><strong>AI 需求读穿</strong>：NVDA、AVGO、ARM、MRVL、QCOM。</li>
+<li><strong>设备</strong>：AMAT、KLAC（+ ASML
+同伴，非名单但相关）。</li>
+<li><strong>存储/HBM</strong>：MU。</li>
+<li><strong>竞争叙事</strong>：INTC。</li>
+<li><strong>宏观叠油</strong>：同日 PPI 20:30 SGT；若 Miss + PPI
+Hot，SOX 压力非对称放大（INFERENCE）。</li>
+</ul>
+<h2 id="证伪-falsifiers">6. 证伪 Falsifiers</h2>
+<ol type="1">
+<li>Rev/GM Beat 但股价跌 &gt;3% → 指引或 CoWoS
+口径才是定价锚；上调「点评权重」。</li>
+<li>Miss 但 SOX 涨 → 市场交易「坏消息出尽」或 PPI/宏观主导。</li>
+<li>Capex 上调但 AMAT/KLAC 跌 → 市场解读为回报率担忧而非量增。</li>
+<li>我们的 $45.2bn / 66% GM 落在情景外 → Fundamental Forecast
+误差。</li>
+<li>中国占比表述引发独立抛售而基本面数字正常 → 政治溢价主导，模型需加
+geopolitics 项。</li>
+</ol>
+<h2 id="思维教程">7. 思维教程</h2>
+<p>看什么（Rev/GM + CoWoS/N2/Capex）→ 为什么（AI 链锚）→
+证据（指引区间与共识重合）→ 传导（同伴读穿）→
+其他解释（PPI、仓位、汇率）→ 证伪 → 下一步（会后模型更新、FOMC
+前风险偏好）。</p>
+<h2 id="最终自我质疑">8. 最终自我质疑</h2>
+<ul>
+<li>共识已在指引中枢，Beat 空间是否被高估？</li>
+<li>GM 指引低于
+Q2，是保守还是结构恶化？若只是折旧节奏，市场可能过度惩罚。</li>
+<li>静默期刚结束，信息真空后的首个口径波动可能被放大（ΔPositioning）。</li>
+</ul>
+<h2 id="source-ledger">9. Source Ledger</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>来源</th>
+<th>日期</th>
+<th>用途</th>
+<th>类</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>investor.tsmc.com/…/2026/q3</td>
+<td>确认 2026-10-14</td>
+<td>时间 CONFIRMED；指引</td>
+<td>FACT</td>
+</tr>
+<tr>
+<td>Yahoo co_TSM.json</td>
+<td>2026-10-14</td>
+<td>EPS/Rev 共识、现价</td>
+<td>MARKET EXP / DATA</td>
+</tr>
+<tr>
+<td>MarketBeat/Yahoo cross-check</td>
+<td>任务说明</td>
+<td>EPS/Rev 量级</td>
+<td>MARKET EXP</td>
+</tr>
+<tr>
+<td>OS CPI/PPI books</td>
+<td>同日</td>
+<td>宏观叠油</td>
+<td>Link</td>
+</tr>
+</tbody>
+</table>
+<h2 id="assumption-register">10. Assumption Register</h2>
+<ol type="1">
+<li>USD 收入用指引 FX 32 换算共识 TWD（ASSUMPTION）。</li>
+<li>Beat/Miss 阈值锚定公司指引上下沿（HYPOTHESIS）。</li>
+<li>反应路径为示意，非交易指令。</li>
+<li>CoWoS 点评对同伴的弹性高于 EPS 意外（INFERENCE）。</li>
+</ol>
+<h2 id="图表">图表</h2>
+<p><img src="images/01_transmission_chain.png" alt="传导" /> <img
+src="images/02_expectation_gap.png" alt="预期差" /> <img
+src="images/03_scenarios_reaction_paths.png" alt="情景" /> <img
+src="images/04_kpi_scorecard.png" alt="KPI" /> <img
+src="images/05_live_timeline_checklist.png" alt="清单" /></p>
+</body>
+</html>

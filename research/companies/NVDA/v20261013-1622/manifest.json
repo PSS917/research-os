@@ -1,0 +1,106 @@
+{
+ "release": "NVDA_v20261013-1622",
+ "generated": "2026-10-13T16:23:35.749770",
+ "files": [
+  {
+   "path": "NVDA_model_v20261013-1622.xlsx",
+   "bytes": 35967,
+   "sha256": "e47117ff0f33e0c8"
+  },
+  {
+   "path": "NVDA_report_v20261013-1622.docx",
+   "bytes": 792690,
+   "sha256": "24a2d74f5e0801f6"
+  },
+  {
+   "path": "NVDA_report_v20261013-1622.html",
+   "bytes": 30264,
+   "sha256": "b0c42f5164099b8c"
+  },
+  {
+   "path": "NVDA_report_v20261013-1622.md",
+   "bytes": 17912,
+   "sha256": "fe691ef1c37b2ba5"
+  },
+  {
+   "path": "NVDA_report_v20261013-1622.pdf",
+   "bytes": 1117514,
+   "sha256": "5abede283ad0d791"
+  },
+  {
+   "path": "NVDA_teaching_v20261013-1622.docx",
+   "bytes": 196138,
+   "sha256": "d74668d603411bfe"
+  },
+  {
+   "path": "NVDA_teaching_v20261013-1622.html",
+   "bytes": 9794,
+   "sha256": "84999ce0700c00e4"
+  },
+  {
+   "path": "NVDA_teaching_v20261013-1622.md",
+   "bytes": 4695,
+   "sha256": "8bdb8d221ff84dee"
+  },
+  {
+   "path": "NVDA_teaching_v20261013-1622.pdf",
+   "bytes": 251709,
+   "sha256": "15961545c44c6f1f"
+  },
+  {
+   "path": "images/NVDA_1_price_vs_value.jpg",
+   "bytes": 280801,
+   "sha256": "c591cfee0de91adb"
+  },
+  {
+   "path": "images/NVDA_1_price_vs_value.png",
+   "bytes": 182318,
+   "sha256": "2e71880f8330d6cf"
+  },
+  {
+   "path": "images/NVDA_2_financials.jpg",
+   "bytes": 239759,
+   "sha256": "c8fa6688504d6a50"
+  },
+  {
+   "path": "images/NVDA_2_financials.png",
+   "bytes": 180161,
+   "sha256": "01e1cdd4464233cc"
+  },
+  {
+   "path": "images/NVDA_3_scenarios.jpg",
+   "bytes": 260442,
+   "sha256": "8fee75acb2d89beb"
+  },
+  {
+   "path": "images/NVDA_3_scenarios.png",
+   "bytes": 168479,
+   "sha256": "3cf27bb57ab14a79"
+  },
+  {
+   "path": "images/NVDA_4_horizons.jpg",
+   "bytes": 229279,
+   "sha256": "7d817562f709f686"
+  },
+  {
+   "path": "images/NVDA_4_horizons.png",
+   "bytes": 174046,
+   "sha256": "24e0ca4f5ae29255"
+  },
+  {
+   "path": "images/NVDA_5_logic_map.jpg",
+   "bytes": 241897,
+   "sha256": "794e563b3e2f26d0"
+  },
+  {
+   "path": "images/NVDA_5_logic_map.png",
+   "bytes": 211846,
+   "sha256": "403df0e24128335b"
+  },
+  {
+   "path": "summary.json",
+   "bytes": 487,
+   "sha256": "8d7b6f0c6dafa44c"
+  }
+ ]
+}

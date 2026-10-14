@@ -1,0 +1,298 @@
+[
+ {
+  "date": "2026-10-14",
+  "time": "08:30 ET",
+  "event": "US CPI (Sep 2026)｜美国CPI",
+  "status": "CONFIRMED",
+  "source": "bls.gov/schedule/2026",
+  "lifecycle": "Pre/Live/Post"
+ },
+ {
+  "date": "2026-10-15",
+  "time": "08:30 ET",
+  "event": "US PPI (Sep 2026)｜美国PPI",
+  "status": "CONFIRMED",
+  "source": "bls.gov/schedule/2026",
+  "lifecycle": "Pre/Live/Post"
+ },
+ {
+  "date": "2026-10-15",
+  "time": "14:00 Taiwan = 14:00 SGT = 02:00 ET",
+  "event": "TSM earnings + call｜台积电财报与电话会",
+  "status": "CONFIRMED",
+  "source": "investor.tsmc.com/english/quarterly-results/2026/q3",
+  "lifecycle": "Pre/Live/Post + model update"
+ },
+ {
+  "date": "2026-10-16",
+  "time": "08:30 ET",
+  "event": "US Import/Export Prices (Sep)",
+  "status": "CONFIRMED",
+  "source": "bls.gov/schedule/2026",
+  "lifecycle": "Post only"
+ },
+ {
+  "date": "2026-10-22",
+  "time": "—",
+  "event": "TSLA earnings + call｜财报与电话会",
+  "status": "TENTATIVE (Yahoo; confirm on IR)",
+  "source": "Yahoo calendar 2026-10-14",
+  "lifecycle": "Pre/Live/Post + model update"
+ },
+ {
+  "date": "2026-10-23",
+  "time": "—",
+  "event": "MXL earnings + call｜财报与电话会",
+  "status": "TENTATIVE (Yahoo; confirm on IR)",
+  "source": "Yahoo calendar 2026-10-14",
+  "lifecycle": "Pre/Live/Post + model update"
+ },
+ {
+  "date": "2026-10-27",
+  "time": "—",
+  "event": "GLW earnings + call｜财报与电话会",
+  "status": "TENTATIVE (Yahoo; confirm on IR)",
+  "source": "Yahoo calendar 2026-10-14",
+  "lifecycle": "Pre/Live/Post + model update"
+ },
+ {
+  "date": "2026-10-27/28",
+  "time": "2:00 PM ET (28th)",
+  "event": "FOMC decision + Powell presser｜FOMC利率决议",
+  "status": "CONFIRMED",
+  "source": "federalreserve.gov FOMC calendar (Oct 27–28)",
+  "lifecycle": "Pre/Live/Post"
+ },
+ {
+  "date": "2026-10-29",
+  "time": "08:30 ET",
+  "event": "US GDP Q3 advance + Sep PCE (BEA)",
+  "status": "TENTATIVE",
+  "source": "OS master monitor 2026-10-02 (conflicting Oct 27 note) — verify bea.gov",
+  "lifecycle": "Pre/Live/Post"
+ },
+ {
+  "date": "2026-10-29",
+  "time": "—",
+  "event": "EME earnings + call｜财报与电话会",
+  "status": "TENTATIVE (Yahoo; confirm on IR)",
+  "source": "Yahoo calendar 2026-10-14",
+  "lifecycle": "Pre/Live/Post + model update"
+ },
+ {
+  "date": "2026-10-29",
+  "time": "—",
+  "event": "KLAC earnings + call｜财报与电话会",
+  "status": "TENTATIVE (Yahoo; confirm on IR)",
+  "source": "Yahoo calendar 2026-10-14",
+  "lifecycle": "Pre/Live/Post + model update"
+ },
+ {
+  "date": "2026-10-29",
+  "time": "—",
+  "event": "PWR earnings + call｜财报与电话会",
+  "status": "TENTATIVE (Yahoo; confirm on IR)",
+  "source": "Yahoo calendar 2026-10-14",
+  "lifecycle": "Pre/Live/Post + model update"
+ },
+ {
+  "date": "2026-10-29",
+  "time": "—",
+  "event": "SIMO earnings + call｜财报与电话会",
+  "status": "TENTATIVE (Yahoo; confirm on IR)",
+  "source": "Yahoo calendar 2026-10-14",
+  "lifecycle": "Pre/Live/Post + model update"
+ },
+ {
+  "date": "2026-10-29/30",
+  "time": "JST (30th)",
+  "event": "BOJ MPM + Outlook Report｜日本央行会议",
+  "status": "CONFIRMED",
+  "source": "boj.or.jp (per OS calendar 2026-10-02)",
+  "lifecycle": "Pre/Live/Post"
+ },
+ {
+  "date": "2026-10-30",
+  "time": "08:30 ET",
+  "event": "Employment Cost Index Q3｜就业成本指数",
+  "status": "CONFIRMED",
+  "source": "bls.gov/schedule/2026",
+  "lifecycle": "Post"
+ },
+ {
+  "date": "2026-10-30",
+  "time": "—",
+  "event": "INTC earnings + call｜财报与电话会",
+  "status": "TENTATIVE (Yahoo; confirm on IR)",
+  "source": "Yahoo calendar 2026-10-14",
+  "lifecycle": "Pre/Live/Post + model update"
+ },
+ {
+  "date": "2026-11-03",
+  "time": "10:00 ET",
+  "event": "JOLTS (Sep)",
+  "status": "CONFIRMED",
+  "source": "bls.gov/schedule/2026",
+  "lifecycle": "Post"
+ },
+ {
+  "date": "2026-11-03",
+  "time": "—",
+  "event": "AAPL earnings + call｜财报与电话会",
+  "status": "TENTATIVE (Yahoo; confirm on IR)",
+  "source": "Yahoo calendar 2026-10-14",
+  "lifecycle": "Pre/Live/Post + model update"
+ },
+ {
+  "date": "2026-11-03",
+  "time": "—",
+  "event": "PLTR earnings + call｜财报与电话会",
+  "status": "TENTATIVE (Yahoo; confirm on IR)",
+  "source": "Yahoo calendar 2026-10-14",
+  "lifecycle": "Pre/Live/Post + model update"
+ },
+ {
+  "date": "2026-11-04",
+  "time": "—",
+  "event": "AMD earnings + call｜财报与电话会",
+  "status": "TENTATIVE (Yahoo; confirm on IR)",
+  "source": "Yahoo calendar 2026-10-14",
+  "lifecycle": "Pre/Live/Post + model update"
+ },
+ {
+  "date": "2026-11-04",
+  "time": "—",
+  "event": "SPCX earnings + call｜财报与电话会",
+  "status": "TENTATIVE (Yahoo; confirm on IR)",
+  "source": "Yahoo calendar 2026-10-14",
+  "lifecycle": "Pre/Live/Post + model update"
+ },
+ {
+  "date": "2026-11-05",
+  "time": "08:30 ET",
+  "event": "Productivity & Costs Q3 (P)｜生产率与单位劳动成本",
+  "status": "CONFIRMED",
+  "source": "bls.gov/schedule/2026",
+  "lifecycle": "Post (AI productivity module)"
+ },
+ {
+  "date": "2026-11-05",
+  "time": "—",
+  "event": "ARM earnings + call｜财报与电话会",
+  "status": "TENTATIVE (Yahoo; confirm on IR)",
+  "source": "Yahoo calendar 2026-10-14",
+  "lifecycle": "Pre/Live/Post + model update"
+ },
+ {
+  "date": "2026-11-05",
+  "time": "—",
+  "event": "COHR earnings + call｜财报与电话会",
+  "status": "TENTATIVE (Yahoo; confirm on IR)",
+  "source": "Yahoo calendar 2026-10-14",
+  "lifecycle": "Pre/Live/Post + model update"
+ },
+ {
+  "date": "2026-11-05",
+  "time": "—",
+  "event": "QCOM earnings + call｜财报与电话会",
+  "status": "TENTATIVE (Yahoo; confirm on IR)",
+  "source": "Yahoo calendar 2026-10-14",
+  "lifecycle": "Pre/Live/Post + model update"
+ },
+ {
+  "date": "2026-11-06",
+  "time": "08:30 ET",
+  "event": "Employment Situation (Oct)｜非农就业",
+  "status": "CONFIRMED",
+  "source": "bls.gov/schedule/2026",
+  "lifecycle": "Pre/Live/Post"
+ },
+ {
+  "date": "2026-11-06",
+  "time": "—",
+  "event": "LITE earnings + call｜财报与电话会",
+  "status": "TENTATIVE (Yahoo; confirm on IR)",
+  "source": "Yahoo calendar 2026-10-14",
+  "lifecycle": "Pre/Live/Post + model update"
+ },
+ {
+  "date": "2026-11-10",
+  "time": "08:30 ET",
+  "event": "US CPI (Oct 2026)",
+  "status": "CONFIRMED",
+  "source": "bls.gov/schedule/2026",
+  "lifecycle": "Pre/Live/Post"
+ },
+ {
+  "date": "2026-11-10",
+  "time": "—",
+  "event": "RKLB earnings + call｜财报与电话会",
+  "status": "TENTATIVE (Yahoo; confirm on IR)",
+  "source": "Yahoo calendar 2026-10-14",
+  "lifecycle": "Pre/Live/Post + model update"
+ },
+ {
+  "date": "2026-11-12",
+  "time": "—",
+  "event": "CRWV earnings + call｜财报与电话会",
+  "status": "TENTATIVE (Yahoo; confirm on IR)",
+  "source": "Yahoo calendar 2026-10-14",
+  "lifecycle": "Pre/Live/Post + model update"
+ },
+ {
+  "date": "2026-11-13",
+  "time": "—",
+  "event": "AMAT earnings + call｜财报与电话会",
+  "status": "TENTATIVE (Yahoo; confirm on IR)",
+  "source": "Yahoo calendar 2026-10-14",
+  "lifecycle": "Pre/Live/Post + model update"
+ },
+ {
+  "date": "2026-11-18",
+  "time": "—",
+  "event": "NVDA earnings + call｜财报与电话会",
+  "status": "TENTATIVE (Yahoo; confirm on IR)",
+  "source": "Yahoo calendar 2026-10-14",
+  "lifecycle": "Pre/Live/Post + model update"
+ },
+ {
+  "date": "2026-12-02",
+  "time": "—",
+  "event": "CRWD earnings + call｜财报与电话会",
+  "status": "TENTATIVE (Yahoo; confirm on IR)",
+  "source": "Yahoo calendar 2026-10-14",
+  "lifecycle": "Pre/Live/Post + model update"
+ },
+ {
+  "date": "2026-12-02",
+  "time": "—",
+  "event": "MRVL earnings + call｜财报与电话会",
+  "status": "TENTATIVE (Yahoo; confirm on IR)",
+  "source": "Yahoo calendar 2026-10-14",
+  "lifecycle": "Pre/Live/Post + model update"
+ },
+ {
+  "date": "2026-12-10",
+  "time": "—",
+  "event": "AVGO earnings + call｜财报与电话会",
+  "status": "TENTATIVE (Yahoo; confirm on IR)",
+  "source": "Yahoo calendar 2026-10-14",
+  "lifecycle": "Pre/Live/Post + model update"
+ },
+ {
+  "date": "2026-12-18",
+  "time": "—",
+  "event": "CCL earnings + call｜财报与电话会",
+  "status": "TENTATIVE (Yahoo; confirm on IR)",
+  "source": "Yahoo calendar 2026-10-14",
+  "lifecycle": "Pre/Live/Post + model update"
+ },
+ {
+  "date": "2026-12-24",
+  "time": "—",
+  "event": "MU earnings + call｜财报与电话会",
+  "status": "TENTATIVE (Yahoo; confirm on IR)",
+  "source": "Yahoo calendar 2026-10-14",
+  "lifecycle": "Pre/Live/Post + model update"
+ }
+]
