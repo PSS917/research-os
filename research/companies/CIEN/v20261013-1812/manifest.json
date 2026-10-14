@@ -1,0 +1,106 @@
+{
+ "release": "CIEN_v20261013-1812",
+ "generated": "2026-10-13T18:14:04.168779",
+ "files": [
+  {
+   "path": "CIEN_model_v20261013-1812.xlsx",
+   "bytes": 35970,
+   "sha256": "8087b4b01e973449"
+  },
+  {
+   "path": "CIEN_report_v20261013-1812.docx",
+   "bytes": 805241,
+   "sha256": "d59f004c8103a195"
+  },
+  {
+   "path": "CIEN_report_v20261013-1812.html",
+   "bytes": 29181,
+   "sha256": "bf14229d26abcda1"
+  },
+  {
+   "path": "CIEN_report_v20261013-1812.md",
+   "bytes": 16621,
+   "sha256": "f3ec4193475614b7"
+  },
+  {
+   "path": "CIEN_report_v20261013-1812.pdf",
+   "bytes": 1134012,
+   "sha256": "7d7f35d342d27871"
+  },
+  {
+   "path": "CIEN_teaching_v20261013-1812.docx",
+   "bytes": 194331,
+   "sha256": "4dd2189b0d15fac3"
+  },
+  {
+   "path": "CIEN_teaching_v20261013-1812.html",
+   "bytes": 9531,
+   "sha256": "c0dc2ffdf0bd8e90"
+  },
+  {
+   "path": "CIEN_teaching_v20261013-1812.md",
+   "bytes": 4444,
+   "sha256": "26ef0473466da3a8"
+  },
+  {
+   "path": "CIEN_teaching_v20261013-1812.pdf",
+   "bytes": 250627,
+   "sha256": "a3181b34aeb6e6d2"
+  },
+  {
+   "path": "images/CIEN_1_price_vs_value.jpg",
+   "bytes": 285449,
+   "sha256": "4777c271cff33a90"
+  },
+  {
+   "path": "images/CIEN_1_price_vs_value.png",
+   "bytes": 200938,
+   "sha256": "0590e2f7371f5b63"
+  },
+  {
+   "path": "images/CIEN_2_financials.jpg",
+   "bytes": 268621,
+   "sha256": "6f48d0274167f135"
+  },
+  {
+   "path": "images/CIEN_2_financials.png",
+   "bytes": 189471,
+   "sha256": "3bbb02aaa1312d28"
+  },
+  {
+   "path": "images/CIEN_3_scenarios.jpg",
+   "bytes": 259481,
+   "sha256": "54dedd1dc395ad9e"
+  },
+  {
+   "path": "images/CIEN_3_scenarios.png",
+   "bytes": 166507,
+   "sha256": "1ddeb9a10b88c6e5"
+  },
+  {
+   "path": "images/CIEN_4_horizons.jpg",
+   "bytes": 228827,
+   "sha256": "027a9314f9f8d629"
+  },
+  {
+   "path": "images/CIEN_4_horizons.png",
+   "bytes": 160883,
+   "sha256": "18839f4d897f9a40"
+  },
+  {
+   "path": "images/CIEN_5_logic_map.jpg",
+   "bytes": 243297,
+   "sha256": "cfac64400ab67d42"
+  },
+  {
+   "path": "images/CIEN_5_logic_map.png",
+   "bytes": 208939,
+   "sha256": "64dd9715b6233019"
+  },
+  {
+   "path": "summary.json",
+   "bytes": 525,
+   "sha256": "b59ae60f953d376f"
+  }
+ ]
+}

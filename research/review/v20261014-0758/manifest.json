@@ -1,0 +1,26 @@
+{
+ "release": "review_v20261014-0758",
+ "generated": "2026-10-14T08:03:30.840944",
+ "files": [
+  {
+   "path": "system_review_v20261014-0758.docx",
+   "bytes": 15771,
+   "sha256": "01888aa57559bb86"
+  },
+  {
+   "path": "system_review_v20261014-0758.html",
+   "bytes": 12626,
+   "sha256": "de55b1c31a524ee3"
+  },
+  {
+   "path": "system_review_v20261014-0758.md",
+   "bytes": 5859,
+   "sha256": "5fa8036744b776a0"
+  },
+  {
+   "path": "system_review_v20261014-0758.pdf",
+   "bytes": 307734,
+   "sha256": "c44668cf7e14a449"
+  }
+ ]
+}

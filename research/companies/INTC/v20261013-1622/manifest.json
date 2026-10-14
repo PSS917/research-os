@@ -1,0 +1,106 @@
+{
+ "release": "INTC_v20261013-1622",
+ "generated": "2026-10-13T16:24:12.963997",
+ "files": [
+  {
+   "path": "INTC_model_v20261013-1622.xlsx",
+   "bytes": 35924,
+   "sha256": "0cefe6f62f9e0209"
+  },
+  {
+   "path": "INTC_report_v20261013-1622.docx",
+   "bytes": 792107,
+   "sha256": "49684f9743119d81"
+  },
+  {
+   "path": "INTC_report_v20261013-1622.html",
+   "bytes": 29540,
+   "sha256": "7eacedada3e6c98d"
+  },
+  {
+   "path": "INTC_report_v20261013-1622.md",
+   "bytes": 17188,
+   "sha256": "b5c158bffb9148d4"
+  },
+  {
+   "path": "INTC_report_v20261013-1622.pdf",
+   "bytes": 1099602,
+   "sha256": "326bdc9ba1d15b9f"
+  },
+  {
+   "path": "INTC_teaching_v20261013-1622.docx",
+   "bytes": 191835,
+   "sha256": "2c7c20558ef93b6a"
+  },
+  {
+   "path": "INTC_teaching_v20261013-1622.html",
+   "bytes": 9689,
+   "sha256": "f31c6c57af89bc66"
+  },
+  {
+   "path": "INTC_teaching_v20261013-1622.md",
+   "bytes": 4590,
+   "sha256": "7b500de377ccc172"
+  },
+  {
+   "path": "INTC_teaching_v20261013-1622.pdf",
+   "bytes": 249517,
+   "sha256": "b093f018916e30f0"
+  },
+  {
+   "path": "images/INTC_1_price_vs_value.jpg",
+   "bytes": 291136,
+   "sha256": "c590bcf35ca3ebf7"
+  },
+  {
+   "path": "images/INTC_1_price_vs_value.png",
+   "bytes": 211887,
+   "sha256": "d3f4ed042abbec32"
+  },
+  {
+   "path": "images/INTC_2_financials.jpg",
+   "bytes": 254502,
+   "sha256": "a4cf4e3d67b6da7a"
+  },
+  {
+   "path": "images/INTC_2_financials.png",
+   "bytes": 180463,
+   "sha256": "436caf7565706f4c"
+  },
+  {
+   "path": "images/INTC_3_scenarios.jpg",
+   "bytes": 237864,
+   "sha256": "227ddc9b5a56ecda"
+  },
+  {
+   "path": "images/INTC_3_scenarios.png",
+   "bytes": 162174,
+   "sha256": "e7011b76ccc73641"
+  },
+  {
+   "path": "images/INTC_4_horizons.jpg",
+   "bytes": 220986,
+   "sha256": "e1eb99ffabc11d0b"
+  },
+  {
+   "path": "images/INTC_4_horizons.png",
+   "bytes": 153314,
+   "sha256": "314b30322b7f786f"
+  },
+  {
+   "path": "images/INTC_5_logic_map.jpg",
+   "bytes": 241562,
+   "sha256": "7887aefc754f0fe2"
+  },
+  {
+   "path": "images/INTC_5_logic_map.png",
+   "bytes": 206235,
+   "sha256": "f9b8bbc7c7970d20"
+  },
+  {
+   "path": "summary.json",
+   "bytes": 518,
+   "sha256": "30220514c037d17e"
+  }
+ ]
+}

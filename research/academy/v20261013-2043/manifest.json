@@ -1,0 +1,26 @@
+{
+ "release": "HowToRead_v20261013-2043",
+ "generated": "2026-10-13T20:43:57.684534",
+ "files": [
+  {
+   "path": "HowToRead_Guide_v20261013-2043.docx",
+   "bytes": 16919,
+   "sha256": "c3a7e4980e8ed2f7"
+  },
+  {
+   "path": "HowToRead_Guide_v20261013-2043.html",
+   "bytes": 17954,
+   "sha256": "f31716e69722d1a9"
+  },
+  {
+   "path": "HowToRead_Guide_v20261013-2043.md",
+   "bytes": 9871,
+   "sha256": "78cac23391c9cbd5"
+  },
+  {
+   "path": "HowToRead_Guide_v20261013-2043.pdf",
+   "bytes": 359496,
+   "sha256": "4a6073202d944a03"
+  }
+ ]
+}

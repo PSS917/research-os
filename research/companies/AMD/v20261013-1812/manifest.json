@@ -1,0 +1,106 @@
+{
+ "release": "AMD_v20261013-1812",
+ "generated": "2026-10-13T18:14:20.189892",
+ "files": [
+  {
+   "path": "AMD_model_v20261013-1812.xlsx",
+   "bytes": 35909,
+   "sha256": "44069bf2f8f36ddb"
+  },
+  {
+   "path": "AMD_report_v20261013-1812.docx",
+   "bytes": 807476,
+   "sha256": "75c3860408b6d93c"
+  },
+  {
+   "path": "AMD_report_v20261013-1812.html",
+   "bytes": 28945,
+   "sha256": "95b2aea8151b6f85"
+  },
+  {
+   "path": "AMD_report_v20261013-1812.md",
+   "bytes": 16617,
+   "sha256": "6a6ea7d2bf10b2c1"
+  },
+  {
+   "path": "AMD_report_v20261013-1812.pdf",
+   "bytes": 1109480,
+   "sha256": "03e278ae644229a2"
+  },
+  {
+   "path": "AMD_teaching_v20261013-1812.docx",
+   "bytes": 194137,
+   "sha256": "b0e8025d945521ac"
+  },
+  {
+   "path": "AMD_teaching_v20261013-1812.html",
+   "bytes": 9602,
+   "sha256": "8848345176ca3e4f"
+  },
+  {
+   "path": "AMD_teaching_v20261013-1812.md",
+   "bytes": 4515,
+   "sha256": "49da476f27c12398"
+  },
+  {
+   "path": "AMD_teaching_v20261013-1812.pdf",
+   "bytes": 247603,
+   "sha256": "0143f1c670038a42"
+  },
+  {
+   "path": "images/AMD_1_price_vs_value.jpg",
+   "bytes": 276609,
+   "sha256": "fb5951b86415a2f3"
+  },
+  {
+   "path": "images/AMD_1_price_vs_value.png",
+   "bytes": 187147,
+   "sha256": "9900466999f46cd1"
+  },
+  {
+   "path": "images/AMD_2_financials.jpg",
+   "bytes": 247405,
+   "sha256": "5e52801b572a7e82"
+  },
+  {
+   "path": "images/AMD_2_financials.png",
+   "bytes": 184710,
+   "sha256": "8d5029f1bf0cffbd"
+  },
+  {
+   "path": "images/AMD_3_scenarios.jpg",
+   "bytes": 251456,
+   "sha256": "3d4e29f9848ad803"
+  },
+  {
+   "path": "images/AMD_3_scenarios.png",
+   "bytes": 171039,
+   "sha256": "9024869ae42a7911"
+  },
+  {
+   "path": "images/AMD_4_horizons.jpg",
+   "bytes": 235057,
+   "sha256": "07c4811cda3b8895"
+  },
+  {
+   "path": "images/AMD_4_horizons.png",
+   "bytes": 177443,
+   "sha256": "17f29c2fada31121"
+  },
+  {
+   "path": "images/AMD_5_logic_map.jpg",
+   "bytes": 241868,
+   "sha256": "90f1db3bb147fca6"
+  },
+  {
+   "path": "images/AMD_5_logic_map.png",
+   "bytes": 208893,
+   "sha256": "3739c924de75c973"
+  },
+  {
+   "path": "summary.json",
+   "bytes": 500,
+   "sha256": "3d83563c58b84792"
+  }
+ ]
+}

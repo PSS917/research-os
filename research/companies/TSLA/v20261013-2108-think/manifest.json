@@ -1,0 +1,111 @@
+{
+ "release": "TSLA_v20261013-2108-think",
+ "generated": "2026-10-13T21:08:55.376432",
+ "files": [
+  {
+   "path": "TSLA_Thinking_v20261013-2108-think.docx",
+   "bytes": 385392,
+   "sha256": "c99726382c0eb4fc"
+  },
+  {
+   "path": "TSLA_Thinking_v20261013-2108-think.html",
+   "bytes": 19670,
+   "sha256": "0e7581c4a8623d15"
+  },
+  {
+   "path": "TSLA_Thinking_v20261013-2108-think.md",
+   "bytes": 11256,
+   "sha256": "22b87f892452fccd"
+  },
+  {
+   "path": "TSLA_Thinking_v20261013-2108-think.pdf",
+   "bytes": 717586,
+   "sha256": "4087cac400292338"
+  },
+  {
+   "path": "TSLA_model_v20261013-2108-think.xlsx",
+   "bytes": 35988,
+   "sha256": "613b10dfa8282f56"
+  },
+  {
+   "path": "images/T1_\u5229\u6da6\u7387\u5468\u671f_annotated.jpg",
+   "bytes": 157319,
+   "sha256": "76f008d893bfe28d"
+  },
+  {
+   "path": "images/T1_\u5229\u6da6\u7387\u5468\u671f_annotated.png",
+   "bytes": 124983,
+   "sha256": "55048844c612b070"
+  },
+  {
+   "path": "images/T2_\u53cd\u5411DCF_annotated.jpg",
+   "bytes": 178765,
+   "sha256": "274a7dc68142e3ed"
+  },
+  {
+   "path": "images/T2_\u53cd\u5411DCF_annotated.png",
+   "bytes": 126425,
+   "sha256": "32af4f22cb887ddd"
+  },
+  {
+   "path": "images/T3_\u5386\u53f2\u56de\u64a4_annotated.jpg",
+   "bytes": 182443,
+   "sha256": "b66eaab057ddc56d"
+  },
+  {
+   "path": "images/T3_\u5386\u53f2\u56de\u64a4_annotated.png",
+   "bytes": 169046,
+   "sha256": "130d2fc417094a4a"
+  },
+  {
+   "path": "images/TSLA_1_price_vs_value.jpg",
+   "bytes": 311960,
+   "sha256": "0959ee8f8dbc8bf3"
+  },
+  {
+   "path": "images/TSLA_1_price_vs_value.png",
+   "bytes": 234221,
+   "sha256": "3c8ff875a7925f38"
+  },
+  {
+   "path": "images/TSLA_2_financials.jpg",
+   "bytes": 252386,
+   "sha256": "b48573617f708ccf"
+  },
+  {
+   "path": "images/TSLA_2_financials.png",
+   "bytes": 189157,
+   "sha256": "a6d52dc7dc7893a8"
+  },
+  {
+   "path": "images/TSLA_3_scenarios.jpg",
+   "bytes": 249546,
+   "sha256": "b7d6221b4c79ff0f"
+  },
+  {
+   "path": "images/TSLA_3_scenarios.png",
+   "bytes": 167568,
+   "sha256": "a445f772d58ce11d"
+  },
+  {
+   "path": "images/TSLA_4_horizons.jpg",
+   "bytes": 228193,
+   "sha256": "ca8ec2b12af48b54"
+  },
+  {
+   "path": "images/TSLA_4_horizons.png",
+   "bytes": 154188,
+   "sha256": "eabf116ec43a100b"
+  },
+  {
+   "path": "images/TSLA_5_logic_map.jpg",
+   "bytes": 241502,
+   "sha256": "0a4b3cf9aee07574"
+  },
+  {
+   "path": "images/TSLA_5_logic_map.png",
+   "bytes": 207889,
+   "sha256": "d3e3e4bae1d4aced"
+  }
+ ]
+}

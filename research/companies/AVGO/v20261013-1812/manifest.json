@@ -1,0 +1,106 @@
+{
+ "release": "AVGO_v20261013-1812",
+ "generated": "2026-10-13T18:13:31.132599",
+ "files": [
+  {
+   "path": "AVGO_model_v20261013-1812.xlsx",
+   "bytes": 35961,
+   "sha256": "037db3670d333c5b"
+  },
+  {
+   "path": "AVGO_report_v20261013-1812.docx",
+   "bytes": 807876,
+   "sha256": "e5a366a52bf1673d"
+  },
+  {
+   "path": "AVGO_report_v20261013-1812.html",
+   "bytes": 30331,
+   "sha256": "450f2078da7f5a49"
+  },
+  {
+   "path": "AVGO_report_v20261013-1812.md",
+   "bytes": 17769,
+   "sha256": "2ce54fb2ffc415bf"
+  },
+  {
+   "path": "AVGO_report_v20261013-1812.pdf",
+   "bytes": 1140364,
+   "sha256": "8761c44d341e322d"
+  },
+  {
+   "path": "AVGO_teaching_v20261013-1812.docx",
+   "bytes": 195098,
+   "sha256": "dc1e872f99296288"
+  },
+  {
+   "path": "AVGO_teaching_v20261013-1812.html",
+   "bytes": 9895,
+   "sha256": "b8ea6c65fab30f8f"
+  },
+  {
+   "path": "AVGO_teaching_v20261013-1812.md",
+   "bytes": 4806,
+   "sha256": "98de360b8e5c0470"
+  },
+  {
+   "path": "AVGO_teaching_v20261013-1812.pdf",
+   "bytes": 254501,
+   "sha256": "73aa84b3730824c7"
+  },
+  {
+   "path": "images/AVGO_1_price_vs_value.jpg",
+   "bytes": 281730,
+   "sha256": "376584f096ca3ce3"
+  },
+  {
+   "path": "images/AVGO_1_price_vs_value.png",
+   "bytes": 190308,
+   "sha256": "0cfb4648380ec28e"
+  },
+  {
+   "path": "images/AVGO_2_financials.jpg",
+   "bytes": 255109,
+   "sha256": "75f8a58a1f6f2e0a"
+  },
+  {
+   "path": "images/AVGO_2_financials.png",
+   "bytes": 181651,
+   "sha256": "cf9d8c581c8af6bc"
+  },
+  {
+   "path": "images/AVGO_3_scenarios.jpg",
+   "bytes": 264963,
+   "sha256": "56c0ba145b3bd5a5"
+  },
+  {
+   "path": "images/AVGO_3_scenarios.png",
+   "bytes": 172217,
+   "sha256": "c5bf44aa0b75a0be"
+  },
+  {
+   "path": "images/AVGO_4_horizons.jpg",
+   "bytes": 244328,
+   "sha256": "f9af6dbfd0c43e85"
+  },
+  {
+   "path": "images/AVGO_4_horizons.png",
+   "bytes": 178414,
+   "sha256": "e0a40dfcc034f5db"
+  },
+  {
+   "path": "images/AVGO_5_logic_map.jpg",
+   "bytes": 242776,
+   "sha256": "c8e6732049503a71"
+  },
+  {
+   "path": "images/AVGO_5_logic_map.png",
+   "bytes": 210613,
+   "sha256": "c1ab4f212702f8af"
+  },
+  {
+   "path": "summary.json",
+   "bytes": 563,
+   "sha256": "0326bef31847ecc3"
+  }
+ ]
+}
