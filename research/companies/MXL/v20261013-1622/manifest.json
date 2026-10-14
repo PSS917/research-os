@@ -1,0 +1,106 @@
+{
+ "release": "MXL_v20261013-1622",
+ "generated": "2026-10-13T16:25:13.280673",
+ "files": [
+  {
+   "path": "MXL_model_v20261013-1622.xlsx",
+   "bytes": 35916,
+   "sha256": "02ca93f11211bddb"
+  },
+  {
+   "path": "MXL_report_v20261013-1622.docx",
+   "bytes": 823683,
+   "sha256": "4c37fbe5a232e3a9"
+  },
+  {
+   "path": "MXL_report_v20261013-1622.html",
+   "bytes": 29251,
+   "sha256": "d816f9db92427b88"
+  },
+  {
+   "path": "MXL_report_v20261013-1622.md",
+   "bytes": 16825,
+   "sha256": "2a8d4a95bed90d9c"
+  },
+  {
+   "path": "MXL_report_v20261013-1622.pdf",
+   "bytes": 1105533,
+   "sha256": "bd434ddd235e6a53"
+  },
+  {
+   "path": "MXL_teaching_v20261013-1622.docx",
+   "bytes": 194843,
+   "sha256": "118010f56fcda960"
+  },
+  {
+   "path": "MXL_teaching_v20261013-1622.html",
+   "bytes": 9648,
+   "sha256": "9d74a68df081401f"
+  },
+  {
+   "path": "MXL_teaching_v20261013-1622.md",
+   "bytes": 4557,
+   "sha256": "8354d108bf622e00"
+  },
+  {
+   "path": "MXL_teaching_v20261013-1622.pdf",
+   "bytes": 253134,
+   "sha256": "83df075bb424f278"
+  },
+  {
+   "path": "images/MXL_1_price_vs_value.jpg",
+   "bytes": 292680,
+   "sha256": "ddd75e65aca85a4b"
+  },
+  {
+   "path": "images/MXL_1_price_vs_value.png",
+   "bytes": 208105,
+   "sha256": "7287e021fe2cf8fd"
+  },
+  {
+   "path": "images/MXL_2_financials.jpg",
+   "bytes": 265073,
+   "sha256": "f25edd994a0c95ab"
+  },
+  {
+   "path": "images/MXL_2_financials.png",
+   "bytes": 198848,
+   "sha256": "7dd78dd1d89df5ad"
+  },
+  {
+   "path": "images/MXL_3_scenarios.jpg",
+   "bytes": 235833,
+   "sha256": "b89f8a258c9c6a84"
+  },
+  {
+   "path": "images/MXL_3_scenarios.png",
+   "bytes": 160200,
+   "sha256": "896ca5bc63901e8e"
+  },
+  {
+   "path": "images/MXL_4_horizons.jpg",
+   "bytes": 224835,
+   "sha256": "8179f27bb87c3898"
+  },
+  {
+   "path": "images/MXL_4_horizons.png",
+   "bytes": 165769,
+   "sha256": "100166b2e4607593"
+  },
+  {
+   "path": "images/MXL_5_logic_map.jpg",
+   "bytes": 241297,
+   "sha256": "f8e877f85ab85244"
+  },
+  {
+   "path": "images/MXL_5_logic_map.png",
+   "bytes": 210152,
+   "sha256": "33e8b5228f67d040"
+  },
+  {
+   "path": "summary.json",
+   "bytes": 516,
+   "sha256": "a123ce1b7c845577"
+  }
+ ]
+}

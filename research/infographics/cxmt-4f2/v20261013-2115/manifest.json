@@ -1,0 +1,52 @@
+{
+ "release": "cxmt-4f2_v20261013-2115",
+ "generated": "2026-10-13T21:07:37.180242",
+ "kind": "news-explainer",
+ "files": [
+  {
+   "path": "cxmt-4f2_news-explainer-v2.pdf",
+   "bytes": 1872218,
+   "sha256": "f9cb5dde45c14b36"
+  },
+  {
+   "path": "cxmt-4f2_news-explainer-v2_p1.html",
+   "bytes": 43654,
+   "sha256": "0bc505ba45498f45"
+  },
+  {
+   "path": "cxmt-4f2_news-explainer-v2_p1.jpg",
+   "bytes": 2246066,
+   "sha256": "a698e225cc442a13"
+  },
+  {
+   "path": "cxmt-4f2_news-explainer-v2_p1.png",
+   "bytes": 2291894,
+   "sha256": "ea67b7477618fc84"
+  },
+  {
+   "path": "cxmt-4f2_news-explainer-v2_p2.html",
+   "bytes": 26421,
+   "sha256": "2beb320dab653fd9"
+  },
+  {
+   "path": "cxmt-4f2_news-explainer-v2_p2.jpg",
+   "bytes": 2333472,
+   "sha256": "49f915264dacdc07"
+  },
+  {
+   "path": "cxmt-4f2_news-explainer-v2_p2.png",
+   "bytes": 2513200,
+   "sha256": "1ed9920729f53d6d"
+  },
+  {
+   "path": "meta.json",
+   "bytes": 433,
+   "sha256": "188db05f9b8e1a19"
+  },
+  {
+   "path": "cxmt-4f2_v20261013-2115.zip",
+   "bytes": 9259087,
+   "sha256": "163d71efbac69689"
+  }
+ ]
+}

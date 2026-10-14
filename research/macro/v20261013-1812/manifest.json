@@ -1,0 +1,96 @@
+{
+ "release": "macro_v20261013-1812",
+ "generated": "2026-10-13T18:14:50.536301",
+ "files": [
+  {
+   "path": "images/macro_1_rates.jpg",
+   "bytes": 269049,
+   "sha256": "2016f2dcd3c30992"
+  },
+  {
+   "path": "images/macro_1_rates.png",
+   "bytes": 252131,
+   "sha256": "44ac5e6b177989b3"
+  },
+  {
+   "path": "images/macro_2_carry.jpg",
+   "bytes": 303020,
+   "sha256": "02dc79c9a34a7afd"
+  },
+  {
+   "path": "images/macro_2_carry.png",
+   "bytes": 316378,
+   "sha256": "e21e9716d1a85476"
+  },
+  {
+   "path": "images/macro_3_inflation.jpg",
+   "bytes": 242902,
+   "sha256": "b4fd38a6fc4043f0"
+  },
+  {
+   "path": "images/macro_3_inflation.png",
+   "bytes": 212477,
+   "sha256": "860a55139703cec3"
+  },
+  {
+   "path": "images/macro_4_liquidity.jpg",
+   "bytes": 229648,
+   "sha256": "90e59b1f577da2c2"
+  },
+  {
+   "path": "images/macro_4_liquidity.png",
+   "bytes": 181299,
+   "sha256": "5f7e6ec0c878ff92"
+  },
+  {
+   "path": "images/macro_5_crossasset.jpg",
+   "bytes": 360656,
+   "sha256": "77b50c25ee6916f7"
+  },
+  {
+   "path": "images/macro_5_crossasset.png",
+   "bytes": 237784,
+   "sha256": "86767258e3d08893"
+  },
+  {
+   "path": "macro_report_v20261013-1812.docx",
+   "bytes": 1086836,
+   "sha256": "0f5fe44aaf1eab1a"
+  },
+  {
+   "path": "macro_report_v20261013-1812.html",
+   "bytes": 13885,
+   "sha256": "7ddc8eb0a59f16e6"
+  },
+  {
+   "path": "macro_report_v20261013-1812.md",
+   "bytes": 5835,
+   "sha256": "373f601602d82315"
+  },
+  {
+   "path": "macro_report_v20261013-1812.pdf",
+   "bytes": 967078,
+   "sha256": "cd01fd825eefd502"
+  },
+  {
+   "path": "macro_teaching_v20261013-1812.docx",
+   "bytes": 11924,
+   "sha256": "1f5cae0f1e11ff15"
+  },
+  {
+   "path": "macro_teaching_v20261013-1812.html",
+   "bytes": 6204,
+   "sha256": "640fc0eee07032bf"
+  },
+  {
+   "path": "macro_teaching_v20261013-1812.md",
+   "bytes": 1577,
+   "sha256": "df54f2980ebe17c1"
+  },
+  {
+   "path": "macro_teaching_v20261013-1812.pdf",
+   "bytes": 89273,
+   "sha256": "c5a614d35cecc496"
+  }
+ ]
+}

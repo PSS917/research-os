@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title> </title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<style>body{font-family:'Noto Sans CJK SC','Noto Sans',sans-serif;max-width:1100px;margin:auto;padding:24px;line-height:1.6;color:#1b1b1b}table{border-collapse:collapse;font-size:13px;margin:8px 0}td,th{border:1px solid #ccd;padding:4px 8px}th{background:#1F3A5F;color:#fff}img{max-width:100%;border:1px solid #ddd}h1{color:#1F3A5F}h2{border-bottom:2px solid #1F3A5F}blockquote{background:#f3f6fa;border-left:4px solid #2E86C1;margin:0;padding:6px 12px}</style></head>
+<body><div style="background:#fff7ed;border:1px solid #fdba74;padding:8px 12px;margin:8px 0;font-size:13px">历史版本：PDF/Word/图片已归档至 GitHub Release（下载：<a href="https://github.com/PSS917/research-os/releases/download/archive-v20261013-1812/TSM_v20261013-1812.zip">ZIP</a>）。Archived version — heavy files live in Release assets.</div>
+<header id="title-block-header">
+<h1 class="title"> </h1>
+</header>
+<h1 id="tsm-初学者教学版-中文-v20261013-1812">TSM 初学者教学版 (中文)
+v20261013-1812</h1>
+<h2 id="一句话">① 一句话</h2>
+<p>Taiwan Semiconductor Manufacturing Company Limited 是一家 Foundry /
+Advanced packaging 晶圆代工/先进封装 公司。现在股价
+$444.35。我们的Base模型认为每股价值约 $350（-21.2%）。</p>
+<h2 id="发生了什么">② 发生了什么</h2>
+<p>最近一季财报EPS实际 vs 预期: [‘2026-06-30’, ‘4.31’, ‘3.88658’,
+‘0.1089’]（实际、预期、超预期%）。下次财报约 2026-10-15。</p>
+<h2 id="术语-glossary">③ 术语 Glossary</h2>
+<ul>
+<li>DCF (Discounted Cash Flow｜现金流折现):
+把未来每年能拿到的现金，按”时间成本”折回今天加总。</li>
+<li>FCF (Free Cash Flow｜自由现金流) = 经营现金流 − 资本开支。</li>
+<li>WACC (Weighted Average Cost of Capital｜加权平均资本成本):
+投资人要求的年回报率，用作折现率。</li>
+<li>Reverse DCF (反向DCF): 反过来问”现价要求公司增长多快”。</li>
+<li>Consensus (一致预期): 分析师预测的平均值。</li>
+<li>Falsifier (证伪指标): 一旦出现就说明论点错了的信号。</li>
+</ul>
+<h2 id="生活比喻">④ 生活比喻</h2>
+<p>买这家公司股票≈买一棵果树。DCF就是估算果树未来每年结多少果(FCF)，再考虑”明年的一斤果不如今天的一斤果值钱”(WACC折现)。</p>
+<h2 id="因果箭头">⑤ 因果箭头</h2>
+<p>Foundry / Advanced packaging 晶圆代工/先进封装 需求 → 收入增长 (g) →
+自由现金流 (FCF = 收入 × FCF率) → 折现 (÷(1+WACC)^t) → 每股价值 →
+与股价比较 → 预期差</p>
+<h2 id="数字例题符号定义">⑥ 数字例题（符号定义）</h2>
+<p>设 R₀ = 过去12个月收入 = 4,440.5 bn TWD；g₁ = 第一年增速 = 35.9%；m =
+长期FCF率 = 30.0%；W = WACC = 11.4%。 第一年收入 R₁ = R₀ × (1+g₁) =
+6,034.6 bn TWD。 若第5年FCF率达到 m，则第1年FCF ≈ R₁ × m₁（m₁ 由当前
+25.3% 向 30.0% 线性过渡）= 1,584.8 bn TWD； 折现到今天: FCF₁ ÷ (1+W)¹ =
+1,422.4 bn TWD。十年加总 + 终值 = EV 55,920.6 bn TWD。</p>
+<h2 id="事实-预测-市场预期">⑦ 事实 / 预测 / 市场预期</h2>
+<ul>
+<li>事实: 过去财务数据(第4节)、现价。</li>
+<li>预测(我们的假设): 长期FCF率 30.0%、三情景。</li>
+<li>市场预期: 一致预期增速 35.9%；价格隐含增速 42.9%。</li>
+</ul>
+<h2 id="三情景">⑧ 三情景</h2>
+<p>Bear $134 / Base $350 / Bull $655；概率加权 $372。</p>
+<h2 id="反方观点与失效条件">⑨ 反方观点与失效条件</h2>
+<p>反方: Geopolitical shock, US tariffs on chips, Intel/Samsung regain
+share｜地缘冲击、美国芯片关税、英特尔/三星夺回份额 失效条件: GM falls
+below long-term target band; monthly revenue y/y decelerates sharply;
+capex cut｜毛利率跌破长期目标区间；月营收同比骤降；Capex下修</p>
+<h2 id="自我检验题">自我检验题</h2>
+<ol type="1">
+<li>如果WACC上升1个百分点，价值会升还是降？为什么？（提示：分母变大）</li>
+<li>反向DCF隐含增速高于一致预期意味着什么？</li>
+</ol>
+<hr />
+<h1 id="tsm-beginner-teaching-edition-english-v20261013-1812">TSM
+Beginner Teaching Edition (English) v20261013-1812</h1>
+<h2 id="in-one-line">① In one line</h2>
+<p>Taiwan Semiconductor Manufacturing Company Limited is a Foundry /
+Advanced packaging 晶圆代工/先进封装 company. Price $444.35; our Base
+model value ≈ $350 (-21.2%). ## ② What happened Last quarter EPS actual
+vs consensus: [‘2026-06-30’, ‘4.31’, ‘3.88658’, ‘0.1089’]. Next earnings
+≈ 2026-10-15 (TENTATIVE). ## ③ Glossary DCF (Discounted Cash
+Flow｜现金流折现); FCF (Free Cash Flow｜自由现金流) = operating cash
+flow − capex; WACC (Weighted Average Cost of Capital｜加权平均资本成本)
+= the yearly return investors demand; Reverse DCF (反向DCF) = what
+growth the price requires; Consensus (一致预期); Falsifier (证伪指标).
+## ④ Analogy Owning the stock ≈ owning a fruit tree: DCF estimates
+future fruit (FCF) and discounts it because fruit next year is worth
+less than fruit today. ## ⑤ Causal arrows Demand → revenue growth (g) →
+FCF (= revenue × FCF margin) → discounting ÷(1+WACC)^t → value/share →
+compare with price → expectation gap ## ⑥ Worked example (symbols) R₀ =
+TTM revenue = 4,440.5 bn TWD; g₁ = 35.9%; m = long-run FCF margin =
+30.0%; W = 11.4%. R₁ = R₀×(1+g₁) = 6,034.6 bn TWD; FCF₁ = 1,584.8 bn
+TWD; PV = FCF₁/(1+W) = 1,422.4 bn TWD; 10 years + terminal → EV 55,920.6
+bn TWD. ## ⑦ Fact vs forecast vs market expectation Facts: reported
+financials, price. Forecast: our margin/scenario assumptions. Market:
+consensus growth 35.9%; price-implied growth 42.9%. ## ⑧ Three scenarios
+Bear $134 / Base $350 / Bull $655; weighted $372. ## ⑨ Counterview &amp;
+failure conditions Geopolitical shock, US tariffs on chips,
+Intel/Samsung regain share｜地缘冲击、美国芯片关税、英特尔/三星夺回份额
+— Falsifiers: GM falls below long-term target band; monthly revenue y/y
+decelerates sharply; capex
+cut｜毛利率跌破长期目标区间；月营收同比骤降；Capex下修 ## Self-check 1.
+WACC +1pp → value up or down? 2. What does price-implied growth &gt;
+consensus mean?</p>
+<figure>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261013-1812/TSM_v20261013-1812.zip" alt="logic" />
+<figcaption aria-hidden="true">logic</figcaption>
+</figure>
+</body>
+</html>

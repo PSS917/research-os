@@ -1,0 +1,39 @@
+{
+ "slug": "ai-chip-selloff-20261013",
+ "title": "AI 芯片/存储抛售：交易在转向吗？| AI chip selloff — is the trade turning?",
+ "date": "2026-10-13",
+ "trigger": "material session: KOSPI −5.46%, SK hynix −10.09%, memory/AI credit stress",
+ "tickers": [
+  "MU",
+  "NVDA",
+  "CRWV",
+  "AMAT",
+  "KLAC",
+  "LITE",
+  "CIEN",
+  "AVGO",
+  "AMD",
+  "TSM",
+  "PWR",
+  "GLW",
+  "000660.KS",
+  "005930.KS"
+ ],
+ "watchlist": [
+  "MU",
+  "NVDA",
+  "CRWV",
+  "AMAT",
+  "KLAC",
+  "LITE",
+  "AVGO",
+  "AMD",
+  "TSM",
+  "PWR"
+ ],
+ "base": "ai-chip-selloff-20261013_news-explainer",
+ "pages": 2,
+ "related": [
+  "cxmt-4f2"
+ ]
+}
