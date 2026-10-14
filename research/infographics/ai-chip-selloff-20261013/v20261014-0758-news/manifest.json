@@ -1,0 +1,52 @@
+{
+ "release": "ai-chip-selloff-20261013_v20261014-0758-news",
+ "generated": "2026-10-14T08:06:53.524772",
+ "kind": "news-explainer",
+ "files": [
+  {
+   "path": "ai-chip-selloff-20261013_news-explainer.pdf",
+   "bytes": 1862361,
+   "sha256": "e0ee73cf22343cf7"
+  },
+  {
+   "path": "ai-chip-selloff-20261013_news-explainer_p1.html",
+   "bytes": 26008,
+   "sha256": "f2048c8f16fbb233"
+  },
+  {
+   "path": "ai-chip-selloff-20261013_news-explainer_p1.jpg",
+   "bytes": 2299114,
+   "sha256": "30b8dbd479248e1d"
+  },
+  {
+   "path": "ai-chip-selloff-20261013_news-explainer_p1.png",
+   "bytes": 2435217,
+   "sha256": "51e9e1d80214dbf5"
+  },
+  {
+   "path": "ai-chip-selloff-20261013_news-explainer_p2.html",
+   "bytes": 20581,
+   "sha256": "bb09d56727f634d5"
+  },
+  {
+   "path": "ai-chip-selloff-20261013_news-explainer_p2.jpg",
+   "bytes": 1969332,
+   "sha256": "f0aa765d08e2a648"
+  },
+  {
+   "path": "ai-chip-selloff-20261013_news-explainer_p2.png",
+   "bytes": 2289851,
+   "sha256": "1e92731cb3bc9961"
+  },
+  {
+   "path": "meta.json",
+   "bytes": 629,
+   "sha256": "374c325aa3e6d9d1"
+  },
+  {
+   "path": "ai-chip-selloff-20261013_v20261014-0758-news.zip",
+   "bytes": 8976236,
+   "sha256": "c99cacf31f006b1c"
+  }
+ ]
+}

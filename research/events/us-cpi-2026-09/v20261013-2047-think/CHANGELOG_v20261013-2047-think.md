@@ -1,0 +1,3 @@
+# Changelog v20261013-2047-think
+- Re-centred teaching pilot on visible reasoning (user course-correction): 7-step thinking walkthrough, 7-tool questioning toolkit each worked on CPI with real numbers + 'your turn', steelman + evidence judging table, reasoning quiz, chain-by-chain post-mortem. 30-second box dropped. New charts T4 (causal chain & break points), T5 (base rates, FRED). T1–T3 carried from v20261013-2043-teach. Locked v20261013-1803 and prior pilot v20261013-2043-teach unchanged.
+- Base-rate finding: last 36 comparable months core CPI ≥0.25% in 19 (53%); locked hot probability 25% flagged for calibration review (not rewritten).
