@@ -1,0 +1,106 @@
+{
+ "release": "AAPL_v20261014-0758",
+ "generated": "2026-10-14T07:59:38.767578",
+ "files": [
+  {
+   "path": "AAPL_model_v20261014-0758.xlsx",
+   "bytes": 35878,
+   "sha256": "4754dca66e5691e7"
+  },
+  {
+   "path": "AAPL_report_v20261014-0758.docx",
+   "bytes": 821978,
+   "sha256": "e0534de7f40bea64"
+  },
+  {
+   "path": "AAPL_report_v20261014-0758.html",
+   "bytes": 30398,
+   "sha256": "a2838a8e143864de"
+  },
+  {
+   "path": "AAPL_report_v20261014-0758.md",
+   "bytes": 17386,
+   "sha256": "a5ed38cbed431a46"
+  },
+  {
+   "path": "AAPL_report_v20261014-0758.pdf",
+   "bytes": 1118548,
+   "sha256": "4a64512a38daf35b"
+  },
+  {
+   "path": "AAPL_teaching_v20261014-0758.docx",
+   "bytes": 194657,
+   "sha256": "97272701ad7454b5"
+  },
+  {
+   "path": "AAPL_teaching_v20261014-0758.html",
+   "bytes": 10525,
+   "sha256": "d860486bb133282d"
+  },
+  {
+   "path": "AAPL_teaching_v20261014-0758.md",
+   "bytes": 4732,
+   "sha256": "3ff7cf7a6ffdb209"
+  },
+  {
+   "path": "AAPL_teaching_v20261014-0758.pdf",
+   "bytes": 253197,
+   "sha256": "db0c98ae25d9a5e2"
+  },
+  {
+   "path": "images/AAPL_1_price_vs_value.jpg",
+   "bytes": 293864,
+   "sha256": "98d8c010afdae407"
+  },
+  {
+   "path": "images/AAPL_1_price_vs_value.png",
+   "bytes": 217892,
+   "sha256": "e32eb2474e7ce114"
+  },
+  {
+   "path": "images/AAPL_2_financials.jpg",
+   "bytes": 253208,
+   "sha256": "3bd6efc7ecd02ee6"
+  },
+  {
+   "path": "images/AAPL_2_financials.png",
+   "bytes": 190052,
+   "sha256": "421cafc6a513e2d4"
+  },
+  {
+   "path": "images/AAPL_3_scenarios.jpg",
+   "bytes": 257474,
+   "sha256": "de3212c47c1b5f86"
+  },
+  {
+   "path": "images/AAPL_3_scenarios.png",
+   "bytes": 168488,
+   "sha256": "628d93a8525aa82c"
+  },
+  {
+   "path": "images/AAPL_4_horizons.jpg",
+   "bytes": 226523,
+   "sha256": "6ce1841419eebeb6"
+  },
+  {
+   "path": "images/AAPL_4_horizons.png",
+   "bytes": 155340,
+   "sha256": "7cfcb6691d1e29a3"
+  },
+  {
+   "path": "images/AAPL_5_logic_map.jpg",
+   "bytes": 242561,
+   "sha256": "2e84bae2ffd6c950"
+  },
+  {
+   "path": "images/AAPL_5_logic_map.png",
+   "bytes": 209238,
+   "sha256": "826277d7f442463e"
+  },
+  {
+   "path": "summary.json",
+   "bytes": 547,
+   "sha256": "645f6ca4dee2d5a2"
+  }
+ ]
+}
