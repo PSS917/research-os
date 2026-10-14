@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research OS Daily Board｜2026-09-25 Afternoon / 午后</title>
+<style>
+  :root {
+    --bg-deep:#0a0e17; --bg-card:#151d2e; --border:#243049;
+    --accent:#3b82f6; --cyan:#22d3ee; --green:#34d399; --red:#f87171;
+    --amber:#fbbf24; --purple:#a78bfa; --text:#e8edf5; --text-sec:#94a3b8; --text-muted:#64748b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Segoe UI","PingFang SC","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;background:var(--bg-deep);color:var(--text);line-height:1.45;
+    background-image:radial-gradient(ellipse 80% 50% at 50% -20%,rgba(59,130,246,.08),transparent)}
+  .board{max-width:1400px;margin:0 auto;padding:20px 24px 28px;display:flex;flex-direction:column;gap:14px}
+  .header,.card{background:linear-gradient(135deg,var(--bg-card),#121a2c);border:1px solid var(--border);border-radius:12px;padding:16px 18px;position:relative}
+  .header::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--cyan),var(--purple))}
+  .brand{font-size:1.25rem;font-weight:700;background:linear-gradient(90deg,#e8edf5,var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+  .sub{font-size:.78rem;color:var(--text-muted);margin-top:4px}
+  .mood{margin-top:10px;font-size:.95rem;color:var(--amber)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+  h2{font-size:.85rem;letter-spacing:.04em;color:var(--cyan);text-transform:uppercase;margin-bottom:10px}
+  table{width:100%;border-collapse:collapse;font-size:.82rem}
+  th,td{padding:6px 8px;border-bottom:1px solid #1c2740;text-align:left}
+  th{color:var(--text-muted);font-weight:600}
+  .up{color:var(--green)} .down{color:var(--red)} .flat{color:var(--text-sec)}
+  .tag{display:inline-block;font-size:.65rem;padding:2px 6px;border-radius:4px;margin-left:6px;border:1px solid var(--border);color:var(--text-muted)}
+  .tag.confirmed{color:var(--green);border-color:rgba(52,211,153,.35)}
+  .tag.tentative{color:var(--amber);border-color:rgba(251,191,36,.35)}
+  .tag.open{color:var(--red);border-color:rgba(248,113,113,.35)}
+  .caption{margin-top:10px;font-size:.78rem;color:var(--text-sec)}
+  .claim{font-size:.7rem;color:var(--text-muted);margin-top:6px}
+  ul{padding-left:18px;font-size:.85rem;color:var(--text-sec)}
+  li{margin:4px 0}
+  .footer{font-size:.7rem;color:var(--text-muted);text-align:center;padding:8px}
+  .warn{color:var(--amber);font-weight:600}
+</style>
+</head>
+<body>
+<div class="board">
+  <header class="header">
+    <div>
+      <div class="brand">Research OS Daily Board｜AI Factory</div>
+      <div class="sub">2026-09-25 · Afternoon / 午后 · As-of ~17:25 MYT (Asia/Kuala_Lumpur)</div>
+      <div class="mood">Fri Asia FULL <b>JP EXTEND + HSI SOFT / GLOBEX RECLAIM + OIL DROP</b>: Nikkei <b>66,364.20 (+1.30%)</b> · HSI <b>24,510.09 (−1.01%)</b> · KLCI <b>1,671.62 (−0.04%)</b> · <b>CN/KR/TW CLOSED</b> · Globex ES <b>7,791 (+0.31%)</b> / NQ <b>30,952 (+0.60%)</b> (vs morning soft ~7,756/~30,720) · VIX <b>15.30</b> · WTI <b>92.39 (−2.35%)</b> / Brent <b>98.12 (−2.10%)</b> · DAX <b>25,511.63 (+0.97%)</b> · Thu US FULL held · truce→Jan10 <span class="tag confirmed">CONFIRMED</span> · RE <span class="tag open">OPEN</span> · Durable Goods <span class="tag tentative">PENDING 20:30</span><br/>周五亚洲完整 <b>日经延伸 + 恒生偏弱 / 期货收复 + 油价回落</b>：日经 +1.30% · 恒生 −1.01% · 马股近乎持平 · 中韩台休市 · 期货收复早盘偏软 · VIX回落 · 油价回落 · 特习停火→1/10已确认 · <b>稀土仍未解</b> · 耐用品待发</div>
+    </div>
+    <div class="sub" style="text-align:right">Sources: Yahoo Fri FULL/LIVE ~17:10–17:22 MYT; Kyodo/Sankei Nikkei; CNBC/Bloomberg yields secondary; Morning continuity<br/>No invented prices · SPCX = Nasdaq-listed SpaceX<br/><span class="warn">US cash NOT open · Next veto = Durable Goods 20:30 MYT → US cash ~21:30 MYT</span></div>
+  </header>
+
+  <section class="card">
+    <h2>Index Strip / 指数条 · Thu US FULL · Fri Asia FULL · Globex LIVE</h2>
+    <table>
+      <tr><th>Asset</th><th>Last</th><th>1D% / note</th><th>Session label</th></tr>
+      <tr><td>Dow</td><td>51,349.98</td><td class="down">−0.31%</td><td><b>Thu FULL</b> — Fri cash pre-open</td></tr>
+      <tr><td>S&amp;P 500</td><td>7,704.13</td><td class="down">−0.02%</td><td><b>Thu FULL</b></td></tr>
+      <tr><td>Nasdaq</td><td>26,939.37</td><td class="up">+0.01%</td><td><b>Thu FULL</b></td></tr>
+      <tr><td>SOX</td><td>12,492.54</td><td class="down">−0.33%</td><td><b>Thu FULL</b> — untested Fri</td></tr>
+      <tr><td>QQQ</td><td>741.10</td><td class="flat">~flat vs Wed</td><td>Thu FULL</td></tr>
+      <tr><td>Russell 2000</td><td>2,835.57</td><td class="down">−0.11%</td><td>Thu FULL</td></tr>
+      <tr><td>VIX</td><td>15.30</td><td class="down">−2.36% vs Thu 15.67</td><td><b>Fri LIVE</b> Yahoo</td></tr>
+      <tr><td>ES futures</td><td>7,791</td><td class="up">+0.31%</td><td><b>Globex LIVE reclaim</b> vs morning ~7,756</td></tr>
+      <tr><td>NQ futures</td><td>30,952</td><td class="up">+0.60%</td><td><b>Globex LIVE reclaim</b> vs morning ~30,720</td></tr>
+      <tr><td>YM futures</td><td>51,895</td><td class="up">+0.34%</td><td>Globex LIVE vs morning ~51,664</td></tr>
+      <tr><td>RTY futures</td><td>2,865.80</td><td class="up">+0.32%</td><td>Globex LIVE</td></tr>
+      <tr><td>Nikkei</td><td>66,364.20</td><td class="up"><b>+1.30%</b></td><td><b>Fri CLOSE EXTEND</b> vs morning LIVE +0.49%</td></tr>
+      <tr><td>TOPIX</td><td>4,128.59</td><td class="up">+1.31%</td><td>Fri CLOSE Sankei/Kyodo</td></tr>
+      <tr><td>Hang Seng</td><td>24,510.09</td><td class="down"><b>−1.01%</b></td><td><b>Fri CLOSE</b> — Connect dark</td></tr>
+      <tr><td>FBM KLCI</td><td>1,671.62</td><td class="down">−0.04%</td><td><b>Fri CLOSE</b> vs Thu 1,672.31</td></tr>
+      <tr><td>KOSPI</td><td>7,080.92</td><td class="flat">Wed lock</td><td><b>HOLIDAY — Chuseok CLOSED</b></td></tr>
+      <tr><td>SSE</td><td>3,888.37</td><td class="down">−1.22% Thu</td><td><b>HOLIDAY — Mid-Autumn CLOSED</b></td></tr>
+      <tr><td>CSI 300</td><td>4,439.14</td><td class="down">−1.73% Thu</td><td><b>HOLIDAY CLOSED</b></td></tr>
+      <tr><td>TWSE</td><td>48,024.60</td><td class="down">−0.28% Thu</td><td><b>HOLIDAY CLOSED</b></td></tr>
+      <tr><td>DAX</td><td>25,511.63</td><td class="up">+0.97%</td><td><b>Fri Europe LIVE</b></td></tr>
+    </table>
+    <div class="claim">Claim: Asia FULL CONFIRMED Yahoo/Kyodo; Globex RELIABLE Yahoo ~17:10 MYT; US FULL CONFIRMED AP Thu; holidays CONFIRMED calendars.</div>
+  </section>
+
+  <div class="grid">
+    <section class="card">
+      <h2>Macro Strip / 宏观条</h2>
+      <table>
+        <tr><th>Item</th><th>Level</th><th>Note</th></tr>
+        <tr><td>US 10Y</td><td>5.16 Thu / ~5.17–5.19% Fri</td><td>Yahoo Thu; CNBC/BBG Fri secondary</td></tr>
+        <tr><td>US 5Y</td><td>5.03</td><td>Yahoo Thu close</td></tr>
+        <tr><td>US 30Y</td><td>5.46 / ~5.463%</td><td>Yahoo Thu; CNBC Fri</td></tr>
+        <tr><td>US 2Y</td><td>~4.899%</td><td>CNBC Fri secondary</td></tr>
+        <tr><td>DXY</td><td>101.08 (−0.20%)</td><td>Yahoo LIVE vs morning ~101.29</td></tr>
+        <tr><td>WTI LIVE</td><td>92.39 (−2.35%)</td><td>Yahoo — DROP vs settle 94.74</td></tr>
+        <tr><td>Brent LIVE</td><td>98.12 (−2.10%)</td><td>Yahoo — continuous-roll caution</td></tr>
+        <tr><td>Gold GC</td><td>4,332.40 (+0.80%)</td><td>Yahoo LIVE vs morning ~4,305</td></tr>
+        <tr><td>Silver SI</td><td>64.96 (+1.50%)</td><td>Yahoo LIVE</td></tr>
+        <tr><td>USD/JPY</td><td>157.91 (−0.55%)</td><td>Yen firmer vs morning ~158.72</td></tr>
+        <tr><td>BTC</td><td>~84,562</td><td>Yahoo LIVE</td></tr>
+      </table>
+      <div class="claim">Williams residual CONFIRMED · Durable Goods PENDING 20:30 MYT · Oil drop on Hormuz talk (RELIABLE)</div>
+    </section>
+
+    <section class="card">
+      <h2>Watchlist Movers / 观察名单（Thu FULL）</h2>
+      <table>
+        <tr><th>Ticker</th><th>Last</th><th>1D%</th></tr>
+        <tr><td>ARM</td><td>306.34</td><td class="down"><b>−7.88%</b></td></tr>
+        <tr><td>INTC</td><td>127.39</td><td class="up"><b>+3.91%</b></td></tr>
+        <tr><td>CRWV</td><td>90.13</td><td class="up"><b>+3.72%</b></td></tr>
+        <tr><td>MU</td><td>1,080.53</td><td class="up">+0.81%</td></tr>
+        <tr><td>PLTR</td><td>192.59</td><td class="up">+0.42%</td></tr>
+        <tr><td>NVDA</td><td>224.58</td><td class="down">−0.41%</td></tr>
+        <tr><td>SPCX</td><td>148.03</td><td class="down">−0.22%</td></tr>
+        <tr><td>AAPL</td><td>335.92</td><td class="down">−0.33%</td></tr>
+        <tr><td>TSLA</td><td>377.94</td><td class="down">−0.57%</td></tr>
+        <tr><td>MRVL</td><td>258.95</td><td class="down">−0.75%</td></tr>
+        <tr><td>LITE</td><td>929.04</td><td class="down">−0.85%</td></tr>
+        <tr><td>AVGO</td><td>350.36</td><td class="down">−1.30%</td></tr>
+        <tr><td>QCOM</td><td>194.26</td><td class="down">−1.51%</td></tr>
+        <tr><td>UMC</td><td>24.10</td><td class="down">−2.35%</td></tr>
+      </table>
+      <div class="claim">Thu FULL only — Fri US cash not open · Volume/MA/RSI N/A · SPCX = Nasdaq SpaceX</div>
+    </section>
+
+    <section class="card">
+      <h2>Expectation Gap / 预期差 · Trump–Xi/RE</h2>
+      <ul>
+        <li><b>Truce floor IN</b> → Jan 10 2027 <span class="tag confirmed">CONFIRMED</span></li>
+        <li><b>RE / tariffs</b> package <span class="tag open">OPEN</span> — unchanged</li>
+        <li>Asia confirm <b>SPLIT</b>: JP +1.30% / HSI −1.01% / CN·KR·TW dark</li>
+        <li>Globex reclaim = <b>oil-driven</b>, not RE-closed</li>
+        <li>Fri US cash still untested</li>
+      </ul>
+      <div class="caption">Gap = time bought, certainty not bought. / 预期差=买到时间，未买到确定性。</div>
+    </section>
+
+    <section class="card">
+      <h2>Catalyst Timeline / 催化时间线</h2>
+      <ul>
+        <li><span class="tag confirmed">DONE</span> Thu FULL repair + Trump–Xi main day</li>
+        <li><span class="tag confirmed">DONE</span> Fri Asia FULL: JP extend / HSI soft / KLCI flat</li>
+        <li><span class="tag confirmed">NOW</span> Globex reclaim + oil drop + Europe green</li>
+        <li><span class="tag tentative">PENDING</span> Durable Goods Aug <b>20:30 MYT</b></li>
+        <li><span class="tag confirmed">NEXT</span> US cash open ~21:30 MYT</li>
+        <li><span class="tag tentative">T</span> AAPL 2nd-wave ~Sep 25 · Starship NET Sep 28</li>
+        <li><span class="tag confirmed">C</span> MU Q4 + Aug PCE Sep 30</li>
+        <li><span class="tag open">OPEN</span> RE overhang → Jan 10 cliff</li>
+      </ul>
+      <div class="caption">Primary veto: Durable Goods → US cash. / 主否决权：耐用品→美股现金。</div>
+    </section>
+  </div>
+
+  <section class="card">
+    <h2>Thinking Tutorial / 思维教程（7-step strip）</h2>
+    <ul>
+      <li><b>1 Observe:</b> Morning soft Globex → afternoon RECLAIM; JP EXTENDED (not faded); HSI soft.</li>
+      <li><b>2 Decompose:</b> Asia split (JP green ≠ Greater-China green under Connect dark).</li>
+      <li><b>3 Macro bind:</b> Oil drop eased inflation optics; 10Y ~5.17–5.19% still taxes multiples.</li>
+      <li><b>4 Policy gap:</b> Truce→Jan10 in; RE still OPEN — do not mis-read futures reclaim as RE close.</li>
+      <li><b>5 Liquidity:</b> CN/KR/TW dark → JP/HK/MY + Globex are reaction channels.</li>
+      <li><b>6 Next veto:</b> Durable Goods 20:30 MYT → US cash ~21:30 MYT (ARM residual).</li>
+      <li><b>7 Falsifier:</b> Hot Durable Goods + Globex fade + toxic RE <b>or</b> soft print + yields ease + constructive RE.</li>
+    </ul>
+    <div class="caption">观察→分解→宏观绑定→政策预期差→流动性渠道→下一否决权→证伪条件。</div>
+  </section>
+
+  <div class="footer">Research OS · AI Factory Afternoon Board · 2026-09-25 ~17:25 MYT · Not investment advice · No invented prices</div>
+</div>
+</body>
+</html>

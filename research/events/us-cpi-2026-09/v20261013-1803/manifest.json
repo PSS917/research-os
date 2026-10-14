@@ -1,0 +1,186 @@
+{
+ "release": "US_CPI_Sep2026_PreEvent_v20261013-1803",
+ "generated": "2026-10-13T18:09:08.480340",
+ "files": [
+  {
+   "path": "CHANGELOG_v20261013-1803.docx",
+   "bytes": 11198,
+   "sha256": "e2f1c9605086a119"
+  },
+  {
+   "path": "CHANGELOG_v20261013-1803.html",
+   "bytes": 5210,
+   "sha256": "adfab01f12f02e2d"
+  },
+  {
+   "path": "CHANGELOG_v20261013-1803.md",
+   "bytes": 769,
+   "sha256": "d6c9ed56c4c6f78f"
+  },
+  {
+   "path": "CHANGELOG_v20261013-1803.pdf",
+   "bytes": 27172,
+   "sha256": "be2af20b339cccb6"
+  },
+  {
+   "path": "PRE_EVENT_SNAPSHOT_v20261013-1803.json",
+   "bytes": 4746,
+   "sha256": "3a9cf16b253fe34e"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.docx",
+   "bytes": 31981,
+   "sha256": "2df01a8869bf37d7"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.html",
+   "bytes": 44567,
+   "sha256": "e1140c489b02e962"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.md",
+   "bytes": 32938,
+   "sha256": "331d9c656fd7a736"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.pdf",
+   "bytes": 414149,
+   "sha256": "4e8cb9d1fb475fee"
+  },
+  {
+   "path": "US_CPI_Sep2026_PreEvent_EN_v20261013-1803.docx",
+   "bytes": 1294027,
+   "sha256": "8f0364282b85bb56"
+  },
+  {
+   "path": "US_CPI_Sep2026_PreEvent_EN_v20261013-1803.html",
+   "bytes": 19285,
+   "sha256": "3194e089c1e8b0a7"
+  },
+  {
+   "path": "US_CPI_Sep2026_PreEvent_EN_v20261013-1803.md",
+   "bytes": 10908,
+   "sha256": "deff7ebdf6773435"
+  },
+  {
+   "path": "US_CPI_Sep2026_PreEvent_EN_v20261013-1803.pdf",
+   "bytes": 1136582,
+   "sha256": "d491e594c7a3d04e"
+  },
+  {
+   "path": "US_CPI_Sep2026_PreEvent_ZH_v20261013-1803.docx",
+   "bytes": 1296387,
+   "sha256": "ea766b53dc34c106"
+  },
+  {
+   "path": "US_CPI_Sep2026_PreEvent_ZH_v20261013-1803.html",
+   "bytes": 20199,
+   "sha256": "58f2b3b3a54f3e3f"
+  },
+  {
+   "path": "US_CPI_Sep2026_PreEvent_ZH_v20261013-1803.md",
+   "bytes": 11618,
+   "sha256": "a91a1db7522a03ba"
+  },
+  {
+   "path": "US_CPI_Sep2026_PreEvent_ZH_v20261013-1803.pdf",
+   "bytes": 1383657,
+   "sha256": "479db9518f48835b"
+  },
+  {
+   "path": "US_CPI_Sep2026_PreEvent_model_v20261013-1803.xlsx",
+   "bytes": 21111,
+   "sha256": "301cc48f064f7baf"
+  },
+  {
+   "path": "US_CPI_Sep2026_teaching_EN_v20261013-1803.docx",
+   "bytes": 523995,
+   "sha256": "b72642611c2a37e0"
+  },
+  {
+   "path": "US_CPI_Sep2026_teaching_EN_v20261013-1803.html",
+   "bytes": 10377,
+   "sha256": "a87a5cca2452f7c7"
+  },
+  {
+   "path": "US_CPI_Sep2026_teaching_EN_v20261013-1803.md",
+   "bytes": 4469,
+   "sha256": "1677d1c2d8cc3153"
+  },
+  {
+   "path": "US_CPI_Sep2026_teaching_EN_v20261013-1803.pdf",
+   "bytes": 468250,
+   "sha256": "8e3a95a555abea5d"
+  },
+  {
+   "path": "US_CPI_Sep2026_teaching_ZH_v20261013-1803.docx",
+   "bytes": 524335,
+   "sha256": "a37789130ee465ab"
+  },
+  {
+   "path": "US_CPI_Sep2026_teaching_ZH_v20261013-1803.html",
+   "bytes": 10250,
+   "sha256": "be7c2e223fb5efe4"
+  },
+  {
+   "path": "US_CPI_Sep2026_teaching_ZH_v20261013-1803.md",
+   "bytes": 4349,
+   "sha256": "38f80c9721b0ee7a"
+  },
+  {
+   "path": "US_CPI_Sep2026_teaching_ZH_v20261013-1803.pdf",
+   "bytes": 550859,
+   "sha256": "bca1616cc84a5af1"
+  },
+  {
+   "path": "images/01_transmission_chain.jpg",
+   "bytes": 355873,
+   "sha256": "82e89c361a2dc113"
+  },
+  {
+   "path": "images/01_transmission_chain.png",
+   "bytes": 321235,
+   "sha256": "b5ef467244829137"
+  },
+  {
+   "path": "images/02_expectation_gap.jpg",
+   "bytes": 408743,
+   "sha256": "cd2a9cf51925a1ef"
+  },
+  {
+   "path": "images/02_expectation_gap.png",
+   "bytes": 320109,
+   "sha256": "69a54d528f607e4a"
+  },
+  {
+   "path": "images/03_scenarios_reaction_paths.jpg",
+   "bytes": 297789,
+   "sha256": "c34f0126973c83d4"
+  },
+  {
+   "path": "images/03_scenarios_reaction_paths.png",
+   "bytes": 261994,
+   "sha256": "9c678c42228a81b1"
+  },
+  {
+   "path": "images/04_watchlist_rate_sensitivity.jpg",
+   "bytes": 400932,
+   "sha256": "ee8726f896190ff8"
+  },
+  {
+   "path": "images/04_watchlist_rate_sensitivity.png",
+   "bytes": 264980,
+   "sha256": "f1d431cccb08ca4f"
+  },
+  {
+   "path": "images/05_live_timeline_checklist.jpg",
+   "bytes": 312268,
+   "sha256": "3d2ea418b8644628"
+  },
+  {
+   "path": "images/05_live_timeline_checklist.png",
+   "bytes": 310726,
+   "sha256": "120d543e48f6f7df"
+  }
+ ]
+}

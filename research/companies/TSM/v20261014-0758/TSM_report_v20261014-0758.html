@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title> </title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<style>body{font-family:'Noto Sans CJK SC','Noto Sans',sans-serif;max-width:1100px;margin:auto;padding:24px;line-height:1.6;color:#1b1b1b}table{border-collapse:collapse;font-size:13px;margin:8px 0}td,th{border:1px solid #ccd;padding:4px 8px}th{background:#1F3A5F;color:#fff}img{max-width:100%;border:1px solid #ddd}h1{color:#1F3A5F}h2{border-bottom:2px solid #1F3A5F}abbr{text-decoration:underline dotted #2E86C1;cursor:help}.box30{background:linear-gradient(135deg,#eaf2ff,#f5ecff);border:2px solid #5b8cff;border-radius:14px;padding:6px 18px;margin:14px 0;font-size:16px}.readmap{background:#f6f8fb;border:1px solid #d5dbe6;border-radius:12px;padding:4px 16px;margin:12px 0}.howto{background:#fff8e6;border-left:5px solid #f59e0b;border-radius:8px;padding:2px 14px;margin:6px 0 22px}.quiz{background:#effaf3;border:1px solid #9bd8b1;border-radius:12px;padding:4px 16px}details{margin:8px 0}details.l3{background:#f7f7f9;border:1px dashed #b8c0cc;border-radius:10px;padding:6px 14px}summary{cursor:pointer;font-weight:600;color:#1F3A5F}body{font-size:15.5px}blockquote{background:#f3f6fa;border-left:4px solid #2E86C1;margin:0;padding:6px 12px}</style></head>
+<body>
+<header id="title-block-header">
+<h1 class="title"> </h1>
+</header>
+<h1
+id="tsm-taiwan-semiconductor-manufacturing-company-limited-个股深度研究-专业中文版-v20261014-0758">TSM
+Taiwan Semiconductor Manufacturing Company Limited — 个股深度研究
+(专业中文版) v20261014-0758</h1>
+<blockquote>
+<p>数据截至 2026-10-14 07:58 SGT｜价格 $445.12｜市值 2,308.6 bn
+USD｜财报货币
+TWD｜非投资建议。事实=CONFIRMED/DATA；推断=INFERENCE；假设=ASSUMPTION/HYPOTHESIS。</p>
+</blockquote>
+<h2 id="投资论点-investment-thesis-hypothesis">1. 投资论点 Investment
+Thesis (HYPOTHESIS)</h2>
+<p>台积电是AI芯片无可替代的制造瓶颈，拥有定价权；主要风险是地缘政治与海外厂毛利稀释。财报以新台币计。</p>
+<ul>
+<li><strong>多头驱动</strong>: N2 ramp + price increases; CoWoS
+doubling; AI accelerators &gt;30%
+revenue｜N2爬坡+涨价；CoWoS倍增；AI加速器占比超30%</li>
+<li><strong>空头驱动</strong>: Geopolitical shock, US tariffs on chips,
+Intel/Samsung regain
+share｜地缘冲击、美国芯片关税、英特尔/三星夺回份额</li>
+<li><strong>证伪条件 Falsifiers</strong>: GM falls below long-term
+target band; monthly revenue y/y decelerates sharply; capex
+cut｜毛利率跌破长期目标区间；月营收同比骤降；Capex下修</li>
+</ul>
+<h2 id="产品客户与收入模式">2. 产品、客户与收入模式</h2>
+<ul>
+<li>主题 Theme: Foundry / Advanced packaging 晶圆代工/先进封装</li>
+<li>业务分部 Segments: HPC/AI 高性能计算；Smartphone
+智能手机；IoT/Auto/DCE 其他</li>
+<li>公司描述 (DATA, Yahoo/公司申报): Taiwan Semiconductor Manufacturing
+Company Limited, together with its subsidiaries, manufactures, packages,
+tests, and sells integrated circuits and other semiconductor devices in
+Taiwan, China, Europe, the Middle East, Africa, Japan, the United
+States, and internationally. It provides various wafer fabrication
+processes, such as processes to manufacture complementary metal-
+oxide-semiconductor (CMOS) logic, mixed-signal, radio frequency,
+embedded memory, bipolar CMOS mixed-signal, and others. The company also
+involved in providing customer and engineering support services;
+manufacturing of masks; investment in technology start-up companies;
+research, designing, developing, manufacturing, packaging, testing, and
+sale of color filters; and investment activities. Its products are used
+in high performance computing, smartphones, Internet of things,
+automotive, and digital consumer electroni</li>
+<li>主要客户: NVDA, Apple, AMD, Broadcom, Qualcomm, MediaTek, Marvell,
+hyperscaler
+ASICs｜NVDA、苹果、AMD、博通、高通、联发科、Marvell、云厂ASIC</li>
+</ul>
+<h2 id="行业竞争监管与供应链-analyst-framework">3.
+行业、竞争、监管与供应链 (ANALYST FRAMEWORK)</h2>
+<ul>
+<li>供应商/上游: ASML (EUV), AMAT/LRCX/TEL/KLAC, Shin-Etsu/SUMCO
+(wafers), chemicals｜ASML、设备商、硅片、化学品</li>
+<li>竞争者 (含业外): Samsung Foundry, Intel Foundry (18A/14A),
+SMIC｜三星代工、英特尔代工、中芯国际</li>
+<li>瓶颈/监管: CoWoS/SoIC capacity, N2/A16 ramp, overseas fab cost
+(Arizona/Japan), Taiwan geopolitics,
+power/water｜CoWoS/SoIC产能、N2/A16爬坡、海外厂成本、台海地缘、电力水资源</li>
+<li>关键KPI: Monthly revenue, GM%, HPC mix, N3/N2 mix, capex, CoWoS
+capacity｜月营收、毛利率、HPC占比、先进制程占比、Capex、CoWoS产能</li>
+<li>零部件现货/合约价:
+本版未接入付费价格源(TrendForce/DRAMeXchange等)——标注
+<strong>UNAVAILABLE</strong>，在KPI监控中以定性方式跟踪。</li>
+</ul>
+<h2 id="历史财务与现金流-confirmed-季度-twd">4. 历史财务与现金流
+(CONFIRMED, 季度, TWD)</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>季度</th>
+<th>收入</th>
+<th>毛利</th>
+<th>营业利润</th>
+<th>净利润</th>
+<th>FCF</th>
+<th>营业利润率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-06-30</td>
+<td>1,270.4 bn TWD</td>
+<td>860.3 bn TWD</td>
+<td>766.6 bn TWD</td>
+<td>706.6 bn TWD</td>
+<td>275.0 bn TWD</td>
+<td>60.3%</td>
+</tr>
+<tr>
+<td>2026-03-31</td>
+<td>1,134.1 bn TWD</td>
+<td>751.3 bn TWD</td>
+<td>658.9 bn TWD</td>
+<td>572.5 bn TWD</td>
+<td>347.3 bn TWD</td>
+<td>58.1%</td>
+</tr>
+<tr>
+<td>2025-12-31</td>
+<td>1,046.1 bn TWD</td>
+<td>652.0 bn TWD</td>
+<td>564.9 bn TWD</td>
+<td>485.5 bn TWD</td>
+<td>364.0 bn TWD</td>
+<td>54.0%</td>
+</tr>
+<tr>
+<td>2025-09-30</td>
+<td>989.9 bn TWD</td>
+<td>588.5 bn TWD</td>
+<td>500.7 bn TWD</td>
+<td>452.3 bn TWD</td>
+<td>138.4 bn TWD</td>
+<td>50.6%</td>
+</tr>
+<tr>
+<td>2025-06-30</td>
+<td>933.8 bn TWD</td>
+<td>547.4 bn TWD</td>
+<td>463.4 bn TWD</td>
+<td>398.3 bn TWD</td>
+<td>199.8 bn TWD</td>
+<td>49.6%</td>
+</tr>
+<tr>
+<td>2025-03-31</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<p>资产负债: 现金 3,518.0 bn TWD；总负债 1,068.6 bn TWD；净现金 2,449.5
+bn TWD。TTM FCF 1,124.7 bn TWD（FCF率 25.3%）。</p>
+<h2 id="最新财报-实际-vs-一致预期-vs-指引">5. 最新财报: 实际 vs 一致预期
+vs 指引</h2>
+<table>
+<thead>
+<tr>
+<th>季度</th>
+<th>EPS实际</th>
+<th>EPS一致预期</th>
+<th>超预期%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-09-30</td>
+<td>2.92</td>
+<td>2.62516</td>
+<td>0.11229999</td>
+</tr>
+<tr>
+<td>2025-12-31</td>
+<td>3.14</td>
+<td>2.97556</td>
+<td>0.0553</td>
+</tr>
+<tr>
+<td>2026-03-31</td>
+<td>3.49</td>
+<td>3.33393</td>
+<td>0.0468</td>
+</tr>
+<tr>
+<td>2026-06-30</td>
+<td>4.31</td>
+<td>3.88658</td>
+<td>0.1089</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>管理层指引 Guidance:
+自动数据源不含指引——<strong>UNAVAILABLE（待从公司IR新闻稿录入）</strong>。</li>
+<li>下次财报日 (Yahoo, TENTATIVE 直至公司确认):
+<strong>2026-10-15</strong>；本季EPS一致预期
+4.52449（9位分析师）；收入一致预期 1,460.4 bn TWD。</li>
+</ul>
+<h2 id="未来2468季度驱动与价格合理性">6.
+未来2/4/6/8季度驱动与价格合理性</h2>
+<table>
+<thead>
+<tr>
+<th>期限</th>
+<th>情景</th>
+<th>期限价格现值</th>
+<th>相对现价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2Q</td>
+<td>Bear</td>
+<td>$134.34</td>
+<td>-69.8%</td>
+</tr>
+<tr>
+<td>2Q</td>
+<td>Base</td>
+<td>$281.38</td>
+<td>-36.8%</td>
+</tr>
+<tr>
+<td>2Q</td>
+<td>Bull</td>
+<td>$455.96</td>
+<td>2.4%</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>Bear</td>
+<td>$135.82</td>
+<td>-69.5%</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>Base</td>
+<td>$313.71</td>
+<td>-29.5%</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>Bull</td>
+<td>$538.08</td>
+<td>20.9%</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>Bear</td>
+<td>$137.37</td>
+<td>-69.1%</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>Base</td>
+<td>$350.07</td>
+<td>-21.4%</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>Bull</td>
+<td>$635.14</td>
+<td>42.7%</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>Bear</td>
+<td>$139.01</td>
+<td>-68.8%</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>Base</td>
+<td>$390.92</td>
+<td>-12.2%</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>Bull</td>
+<td>$749.74</td>
+<td>68.4%</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>现价隐含的 EV/NTM-FCF (Base 路径):</th>
+<th>期限</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2Q</td>
+<td>38.1x</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>32.1x</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>27.1x</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>22.9x</td>
+</tr>
+</tbody>
+</table>
+<p>解读:
+如果8季度后Base情景所需倍数仍远高于25x，说明价格依赖更远期的增长。</p>
+<h2 id="三情景-bear-base-bull-hypothesis">7. 三情景 Bear / Base / Bull
+(HYPOTHESIS)</h2>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr>
+<th>情景</th>
+<th>Y1增速</th>
+<th>长期FCF率</th>
+<th>WACC</th>
+<th>永续g</th>
+<th>概率</th>
+<th>每股价值</th>
+<th>相对现价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bear</td>
+<td>18.0%</td>
+<td>24.0%</td>
+<td>12.4%</td>
+<td>2.5%</td>
+<td>25.0%</td>
+<td>$134.28</td>
+<td>-69.8%</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>35.9%</td>
+<td>30.0%</td>
+<td>11.4%</td>
+<td>3.0%</td>
+<td>50.0%</td>
+<td>$349.60</td>
+<td>-21.5%</td>
+</tr>
+<tr>
+<td>Bull</td>
+<td>46.7%</td>
+<td>34.5%</td>
+<td>10.9%</td>
+<td>3.5%</td>
+<td>25.0%</td>
+<td>$653.91</td>
+<td>46.9%</td>
+</tr>
+</tbody>
+</table>
+<p>概率加权价值 <strong>$371.85</strong>（相对现价 -16.5%）。</p>
+<h2 id="估值-dcf-reverse-dcf-roic-wacc-同业-敏感度">8. 估值: DCF /
+Reverse DCF / ROIC-WACC / 同业 / 敏感度</h2>
+<ul>
+<li><p>DCF Base: EV 55,763.5 bn TWD；终值占比 56.2%。</p></li>
+<li><p><strong>Reverse DCF 反向DCF</strong>:
+在Base利润率与WACC下，现价隐含Y1收入增速 ≈
+<strong>43.0%</strong>；一致预期FY+1增速 35.9%。</p></li>
+<li><p>WACC (CAPM) = rf 5.2% + β 1.24 × ERP 5.0% = 11.4%。</p></li>
+<li><p>SOTP segments 分部: HPC/AI 高性能计算; Smartphone 智能手机;
+IoT/Auto/DCE 其他. <strong>Status: framework only</strong> — segment
+revenues are INPUT REQUIRED from the latest 10-K/10-Q segment note (not
+auto-fed, left blank to avoid
+fabrication)｜分部收入需按最新财报手动录入，未自动填充以避免编造。</p></li>
+<li><p>同业比较 Comps (DATA): | Ticker | 市值 | EV/Sales | Fwd P/E |
+收入增速 | 毛利率 | FCF收益率 | |—|—|—|—|—|—|—| | TSM | 2,308.6 bn USD |
+3.6x | 19.9x | 36.0% | 64.2% | 1.5% | | INTC | 543.5 bn USD | 9.7x |
+49.2x | 25.4% | 38.9% | 0.9% | | 005930.KS | 1,510,766.0 bn USD | 2.8x |
+3.2x | 130.0% | 57.5% | 4.6% | | UMC | 56.2 bn USD | -0.1x | 25.5x |
+17.0% | 30.6% | 65.7% | | GFS | 26.0 bn USD | 3.6x | 17.8x | 5.8% |
+27.1% | 2.9% |</p></li>
+<li><p>敏感度: 见Excel <code>Sensitivity</code> 表 (WACC ×
+永续增长率)。</p></li>
+</ul>
+<h2 id="风险反方论证与证伪">9. 风险、反方论证与证伪</h2>
+<ul>
+<li>反方观点 Counter-thesis: Geopolitical shock, US tariffs on chips,
+Intel/Samsung regain
+share｜地缘冲击、美国芯片关税、英特尔/三星夺回份额</li>
+<li>证伪指标: GM falls below long-term target band; monthly revenue y/y
+decelerates sharply; capex
+cut｜毛利率跌破长期目标区间；月营收同比骤降；Capex下修</li>
+<li>模型风险:
+长期利润率与WACC为假设；终值占比高时估值对假设极敏感。</li>
+</ul>
+<h2 id="source-ledger-来源账本">10. Source Ledger 来源账本</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+<th>Source/time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Price 股价</td>
+<td>445.1</td>
+<td>Yahoo Finance quote, fetched 2026-10-14T07:58 SGT</td>
+</tr>
+<tr>
+<td>Market cap 市值</td>
+<td>2.309e+12</td>
+<td>Yahoo info.marketCap 2026-10-14T07:58</td>
+</tr>
+<tr>
+<td>Cash 现金</td>
+<td>3.518e+12</td>
+<td>Yahoo info.totalCash (latest filing) 2026-10-14T07:58</td>
+</tr>
+<tr>
+<td>Debt 负债</td>
+<td>1.069e+12</td>
+<td>Yahoo info.totalDebt (latest filing) 2026-10-14T07:58</td>
+</tr>
+<tr>
+<td>Revenue TTM 收入</td>
+<td>4.44e+12</td>
+<td>Yahoo info.totalRevenue (TTM, TWD) 2026-10-14T07:58</td>
+</tr>
+<tr>
+<td>FCF TTM 自由现金流</td>
+<td>1.125e+12</td>
+<td>Sum of last 4 quarterly FCF (q_cash); quarters [‘2026-06-30’,
+‘2026-03-31’, ‘2025-12-31’, ‘2025-09-30’] (TWD)</td>
+</tr>
+<tr>
+<td>Beta</td>
+<td>1.239</td>
+<td>Yahoo info.beta (5Y monthly)</td>
+</tr>
+<tr>
+<td>Risk-free 10Y 无风险利率</td>
+<td>0.0524</td>
+<td>FRED DGS10 2026-10-09</td>
+</tr>
+<tr>
+<td>FX USD per TWD</td>
+<td>0.03115</td>
+<td>Yahoo FX quote</td>
+</tr>
+<tr>
+<td>Consensus rev growth FY0</td>
+<td>0.4351</td>
+<td>Yahoo revenue_estimate 0y</td>
+</tr>
+<tr>
+<td>Consensus rev growth FY+1</td>
+<td>0.359</td>
+<td>Yahoo revenue_estimate +1y</td>
+</tr>
+</tbody>
+</table>
+<h2 id="assumption-register-假设登记表">11. Assumption Register
+假设登记表</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Assumption</th>
+<th>Value</th>
+<th>Rationale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ERP 股权风险溢价</td>
+<td>0.05</td>
+<td>ASSUMPTION: 5.0% house mature-market ERP</td>
+</tr>
+<tr>
+<td>Beta clamp</td>
+<td>[0.8,1.6] → 1.24</td>
+<td>ASSUMPTION: limit extreme betas</td>
+</tr>
+<tr>
+<td>Tax rate (ROIC)</td>
+<td>0.18</td>
+<td>ASSUMPTION: blended cash tax 18%</td>
+</tr>
+<tr>
+<td>Year-1 growth (Base)</td>
+<td>0.359</td>
+<td>Consensus FY+1 revenue growth (Yahoo revenue_estimate ‘+1y’); capped
+at 100%</td>
+</tr>
+<tr>
+<td>Growth fade</td>
+<td>linear Y1→terminal by Y10</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>Starting FCF margin</td>
+<td>0.2533</td>
+<td>DATA: FCF TTM / Revenue TTM, floored -50%</td>
+</tr>
+<tr>
+<td>Long-run FCF margin (Base)</td>
+<td>0.3</td>
+<td>ASSUMPTION (analyst framework, reached by Y5; see profile)</td>
+</tr>
+<tr>
+<td>Bear/Bull Y1 growth multiplier</td>
+<td>0.5x / 1.3x</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>Bear/Bull margin multiplier</td>
+<td>0.8x / 1.15x</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>WACC adj Bear/Bull</td>
+<td>+1.0pp / -0.5pp</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>Terminal g Bear/Base/Bull</td>
+<td>2.5% / 3.0% / 3.5%</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>Scenario probabilities</td>
+<td>25% / 50% / 25%</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>Horizon exit EV/NTM-FCF Bear/Base/Bull</td>
+<td>15x / 25x / 35x</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>Per-share conversion</td>
+<td>value × fx ÷ market cap × price</td>
+<td>METHOD: avoids ADR/share-class mismatch</td>
+</tr>
+</tbody>
+</table>
+<h2 id="model-provenance-模型溯源">12. Model Provenance 模型溯源</h2>
+<ul>
+<li>Model file: <code>TSM_model_v20261014-0758.xlsx</code> (live
+formulas; sheets
+Inputs→Scenarios→DCF→ReverseDCF→Sensitivity→Horizons→SOTP→Comps→ROIC_WACC→History→Sources→Assumptions)</li>
+<li>Engine: <code>production/pipeline/model.py</code> (Python mirror;
+values in this report = Python mirror, verified against LibreOffice
+recalculation of the xlsx)</li>
+<li>Data snapshot: <code>data/snapshots/20261014-0758</code> (immutable)
+| Fetched 2026-10-14 07:58 SGT | Generated 2026-10-14 07:59 SGT</li>
+<li>Version: v20261014-0758. Prior versions are never overwritten (see
+company history page).</li>
+</ul>
+<h2 id="版本与事件时间轴">13. 版本与事件时间轴</h2>
+<ul>
+<li>v20261014-0758: 首版生产系统报告 (27家同步)。下一事件: 财报
+2026-10-15 (TENTATIVE)。</li>
+</ul>
+<h2 id="图片报告-image-report">图片报告 Image Report</h2>
+<figure>
+<img src="images/TSM_1_price_vs_value.png" alt="1_price_vs_value" />
+<figcaption aria-hidden="true">1_price_vs_value</figcaption>
+</figure>
+<p><em>股价vs三情景价值 Price vs scenario values</em></p>
+<figure>
+<img src="images/TSM_2_financials.png" alt="2_financials" />
+<figcaption aria-hidden="true">2_financials</figcaption>
+</figure>
+<p><em>季度财务 Quarterly financials</em></p>
+<figure>
+<img src="images/TSM_3_scenarios.png" alt="3_scenarios" />
+<figcaption aria-hidden="true">3_scenarios</figcaption>
+</figure>
+<p><em>三情景 Scenarios</em></p>
+<figure>
+<img src="images/TSM_4_horizons.png" alt="4_horizons" />
+<figcaption aria-hidden="true">4_horizons</figcaption>
+</figure>
+<p><em>2/4/6/8季度检验 Horizon check</em></p>
+<figure>
+<img src="images/TSM_5_logic_map.png" alt="5_logic_map" />
+<figcaption aria-hidden="true">5_logic_map</figcaption>
+</figure>
+<p><em>研究逻辑图 Logic map</em></p>
+<hr />
+<h1
+id="tsm-taiwan-semiconductor-manufacturing-company-limited-equity-deep-dive-professional-english-v20261014-0758">TSM
+Taiwan Semiconductor Manufacturing Company Limited — Equity Deep Dive
+(Professional English) v20261014-0758</h1>
+<blockquote>
+<p>Data as of 2026-10-14 07:58 SGT | Price $445.12 | Mkt cap 2,308.6 bn
+USD | Reporting currency TWD | Not investment advice.</p>
+</blockquote>
+<h2 id="investment-thesis-hypothesis">1. Investment thesis
+(HYPOTHESIS)</h2>
+<p>TSMC is the irreplaceable manufacturing bottleneck for AI chips with
+pricing power; key risks are geopolitics and overseas-fab margin
+dilution. Financials are reported in TWD.</p>
+<ul>
+<li><strong>Bull drivers</strong>: N2 ramp + price increases; CoWoS
+doubling; AI accelerators &gt;30%
+revenue｜N2爬坡+涨价；CoWoS倍增；AI加速器占比超30%</li>
+<li><strong>Bear drivers</strong>: Geopolitical shock, US tariffs on
+chips, Intel/Samsung regain
+share｜地缘冲击、美国芯片关税、英特尔/三星夺回份额</li>
+<li><strong>Falsifiers</strong>: GM falls below long-term target band;
+monthly revenue y/y decelerates sharply; capex
+cut｜毛利率跌破长期目标区间；月营收同比骤降；Capex下修</li>
+</ul>
+<h2 id="products-customers-revenue-model">2. Products, customers,
+revenue model</h2>
+<ul>
+<li>Theme: Foundry / Advanced packaging 晶圆代工/先进封装 | Segments:
+HPC/AI 高性能计算; Smartphone 智能手机; IoT/Auto/DCE 其他</li>
+<li>Business description (DATA): Taiwan Semiconductor Manufacturing
+Company Limited, together with its subsidiaries, manufactures, packages,
+tests, and sells integrated circuits and other semiconductor devices in
+Taiwan, China, Europe, the Middle East, Africa, Japan, the United
+States, and internationally. It provides various wafer fabrication
+processes, such as processes to manufacture complementary metal-
+oxide-semiconductor (CMOS) logic, mixed-signal, radio frequency,
+embedded memory, bipolar CMOS mixed-signal, and others. The company also
+involved in providing customer and engineering support services;
+manufacturing of masks; investment in technology start-up companies;
+research, designing, developing, manufacturing, packaging, testing, and
+sale of color filters; and investment activities. Its products are used
+in high performance computing, smartphones, Internet of things,
+automotive, and digital consumer electroni</li>
+<li>Customers: NVDA, Apple, AMD, Broadcom, Qualcomm, MediaTek, Marvell,
+hyperscaler
+ASICs｜NVDA、苹果、AMD、博通、高通、联发科、Marvell、云厂ASIC</li>
+</ul>
+<h2
+id="industry-competition-regulation-supply-chain-analyst-framework">3.
+Industry, competition, regulation, supply chain (ANALYST FRAMEWORK)</h2>
+<ul>
+<li>Suppliers: ASML (EUV), AMAT/LRCX/TEL/KLAC, Shin-Etsu/SUMCO (wafers),
+chemicals｜ASML、设备商、硅片、化学品</li>
+<li>Competitors: Samsung Foundry, Intel Foundry (18A/14A),
+SMIC｜三星代工、英特尔代工、中芯国际</li>
+<li>Bottlenecks/regulation: CoWoS/SoIC capacity, N2/A16 ramp, overseas
+fab cost (Arizona/Japan), Taiwan geopolitics,
+power/water｜CoWoS/SoIC产能、N2/A16爬坡、海外厂成本、台海地缘、电力水资源</li>
+<li>KPIs: Monthly revenue, GM%, HPC mix, N3/N2 mix, capex, CoWoS
+capacity｜月营收、毛利率、HPC占比、先进制程占比、Capex、CoWoS产能</li>
+<li>Component spot/contract prices: paid feeds not connected —
+<strong>UNAVAILABLE</strong>, tracked qualitatively.</li>
+</ul>
+<h2 id="historical-financials-cash-flow-confirmed-quarterly-twd">4.
+Historical financials &amp; cash flow (CONFIRMED, quarterly, TWD)</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Quarter</th>
+<th>Revenue</th>
+<th>Gross profit</th>
+<th>Op income</th>
+<th>Net income</th>
+<th>FCF</th>
+<th>Op margin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-06-30</td>
+<td>1,270.4 bn TWD</td>
+<td>860.3 bn TWD</td>
+<td>766.6 bn TWD</td>
+<td>706.6 bn TWD</td>
+<td>275.0 bn TWD</td>
+<td>60.3%</td>
+</tr>
+<tr>
+<td>2026-03-31</td>
+<td>1,134.1 bn TWD</td>
+<td>751.3 bn TWD</td>
+<td>658.9 bn TWD</td>
+<td>572.5 bn TWD</td>
+<td>347.3 bn TWD</td>
+<td>58.1%</td>
+</tr>
+<tr>
+<td>2025-12-31</td>
+<td>1,046.1 bn TWD</td>
+<td>652.0 bn TWD</td>
+<td>564.9 bn TWD</td>
+<td>485.5 bn TWD</td>
+<td>364.0 bn TWD</td>
+<td>54.0%</td>
+</tr>
+<tr>
+<td>2025-09-30</td>
+<td>989.9 bn TWD</td>
+<td>588.5 bn TWD</td>
+<td>500.7 bn TWD</td>
+<td>452.3 bn TWD</td>
+<td>138.4 bn TWD</td>
+<td>50.6%</td>
+</tr>
+<tr>
+<td>2025-06-30</td>
+<td>933.8 bn TWD</td>
+<td>547.4 bn TWD</td>
+<td>463.4 bn TWD</td>
+<td>398.3 bn TWD</td>
+<td>199.8 bn TWD</td>
+<td>49.6%</td>
+</tr>
+<tr>
+<td>2025-03-31</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<p>Cash 3,518.0 bn TWD; debt 1,068.6 bn TWD; TTM FCF 1,124.7 bn TWD (FCF
+margin 25.3%).</p>
+<h2 id="latest-earnings-actual-vs-consensus-vs-guidance">5. Latest
+earnings: actual vs consensus vs guidance</h2>
+<table>
+<thead>
+<tr>
+<th>Quarter</th>
+<th>EPS actual</th>
+<th>EPS consensus</th>
+<th>Surprise</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-09-30</td>
+<td>2.92</td>
+<td>2.62516</td>
+<td>0.11229999</td>
+</tr>
+<tr>
+<td>2025-12-31</td>
+<td>3.14</td>
+<td>2.97556</td>
+<td>0.0553</td>
+</tr>
+<tr>
+<td>2026-03-31</td>
+<td>3.49</td>
+<td>3.33393</td>
+<td>0.0468</td>
+</tr>
+<tr>
+<td>2026-06-30</td>
+<td>4.31</td>
+<td>3.88658</td>
+<td>0.1089</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Management guidance: not in automated feed — <strong>UNAVAILABLE (to
+be entered from IR release)</strong>.</li>
+<li>Next earnings (Yahoo; TENTATIVE until company-confirmed):
+<strong>2026-10-15</strong>; current-quarter EPS consensus 4.52449 (9
+analysts); revenue consensus 1,460.4 bn TWD.</li>
+</ul>
+<h2 id="quarter-drivers-price-reasonableness">6. 2/4/6/8-quarter drivers
+&amp; price reasonableness</h2>
+<table>
+<thead>
+<tr>
+<th>Horizon</th>
+<th>Scenario</th>
+<th>PV of horizon price</th>
+<th>vs current</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2Q</td>
+<td>Bear</td>
+<td>$134.34</td>
+<td>-69.8%</td>
+</tr>
+<tr>
+<td>2Q</td>
+<td>Base</td>
+<td>$281.38</td>
+<td>-36.8%</td>
+</tr>
+<tr>
+<td>2Q</td>
+<td>Bull</td>
+<td>$455.96</td>
+<td>2.4%</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>Bear</td>
+<td>$135.82</td>
+<td>-69.5%</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>Base</td>
+<td>$313.71</td>
+<td>-29.5%</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>Bull</td>
+<td>$538.08</td>
+<td>20.9%</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>Bear</td>
+<td>$137.37</td>
+<td>-69.1%</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>Base</td>
+<td>$350.07</td>
+<td>-21.4%</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>Bull</td>
+<td>$635.14</td>
+<td>42.7%</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>Bear</td>
+<td>$139.01</td>
+<td>-68.8%</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>Base</td>
+<td>$390.92</td>
+<td>-12.2%</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>Bull</td>
+<td>$749.74</td>
+<td>68.4%</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Current-price implied EV/NTM-FCF on Base path:</th>
+<th>Horizon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2Q</td>
+<td>38.1x</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>32.1x</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>27.1x</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>22.9x</td>
+</tr>
+</tbody>
+</table>
+<h2 id="bear-base-bull-hypothesis">7. Bear / Base / Bull
+(HYPOTHESIS)</h2>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Y1 growth</th>
+<th>LR FCF margin</th>
+<th>WACC</th>
+<th>Terminal g</th>
+<th>Prob.</th>
+<th>Value/share</th>
+<th>vs price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bear</td>
+<td>18.0%</td>
+<td>24.0%</td>
+<td>12.4%</td>
+<td>2.5%</td>
+<td>25.0%</td>
+<td>$134.28</td>
+<td>-69.8%</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>35.9%</td>
+<td>30.0%</td>
+<td>11.4%</td>
+<td>3.0%</td>
+<td>50.0%</td>
+<td>$349.60</td>
+<td>-21.5%</td>
+</tr>
+<tr>
+<td>Bull</td>
+<td>46.7%</td>
+<td>34.5%</td>
+<td>10.9%</td>
+<td>3.5%</td>
+<td>25.0%</td>
+<td>$653.91</td>
+<td>46.9%</td>
+</tr>
+</tbody>
+</table>
+<p>Probability-weighted value <strong>$371.85</strong> (-16.5% vs
+price).</p>
+<h2 id="valuation-dcf-reverse-dcf-roic-wacc-comps-sensitivity">8.
+Valuation: DCF / Reverse DCF / ROIC-WACC / comps / sensitivity</h2>
+<ul>
+<li>Base DCF EV 55,763.5 bn TWD; terminal share 56.2%.</li>
+<li><strong>Reverse DCF</strong>: at Base margin/WACC the price implies
+Y1 revenue growth ≈ <strong>43.0%</strong> vs consensus FY+1 35.9%.</li>
+<li>WACC (CAPM) = rf 5.2% + β 1.24 × ERP 5.0% = 11.4%.</li>
+<li>SOTP segments: HPC/AI 高性能计算; Smartphone 智能手机; IoT/Auto/DCE
+其他 — framework only; segment revenue inputs pending from filings.</li>
+<li>Comps (DATA): see table in Chinese section / Excel
+<code>Comps</code>.</li>
+<li>Sensitivity: Excel <code>Sensitivity</code> (WACC × terminal
+g).</li>
+</ul>
+<h2 id="risks-counterarguments-falsifiers">9. Risks, counterarguments,
+falsifiers</h2>
+<p>Geopolitical shock, US tariffs on chips, Intel/Samsung regain
+share｜地缘冲击、美国芯片关税、英特尔/三星夺回份额 | Falsifiers: GM
+falls below long-term target band; monthly revenue y/y decelerates
+sharply; capex
+cut｜毛利率跌破长期目标区间；月营收同比骤降；Capex下修</p>
+<h2 id="source-ledger-assumption-register-model-provenance">10–12.
+Source Ledger / Assumption Register / Model Provenance</h2>
+<p>See tables above (shared, bilingual). - Model file:
+<code>TSM_model_v20261014-0758.xlsx</code> (live formulas; sheets
+Inputs→Scenarios→DCF→ReverseDCF→Sensitivity→Horizons→SOTP→Comps→ROIC_WACC→History→Sources→Assumptions)
+- Engine: <code>production/pipeline/model.py</code> (Python mirror;
+values in this report = Python mirror, verified against LibreOffice
+recalculation of the xlsx) - Data snapshot:
+<code>data/snapshots/20261014-0758</code> (immutable) | Fetched
+2026-10-14 07:58 SGT | Generated 2026-10-14 07:59 SGT - Version:
+v20261014-0758. Prior versions are never overwritten (see company
+history page).</p>
+</body>
+</html>

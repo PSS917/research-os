@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="posterTitle posterDesc">
+  <title id="posterTitle">FOMC Sep 2026 Transmission｜美联储2026年9月传导链</title>
+  <desc id="posterDesc">Research OS Event Book poster: oil/inflation narrative to FOMC +25bp, SEP path, yields, WACC, AI duration watchlist. Verified archive only. As-of 2026-09-17.</desc>
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="45%" stop-color="#0f1623"/>
+      <stop offset="100%" stop-color="#0c1220"/>
+    </linearGradient>
+    <radialGradient id="glowBlue" cx="20%" cy="0%" r="55%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowCyan" cx="85%" cy="70%" r="40%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="headerLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="50%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="nodeConfirmed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a2f28"/>
+      <stop offset="100%" stop-color="#13241f"/>
+    </linearGradient>
+    <linearGradient id="nodeReliable" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#132a36"/>
+      <stop offset="100%" stop-color="#0f222c"/>
+    </linearGradient>
+    <linearGradient id="nodeInference" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#241a38"/>
+      <stop offset="100%" stop-color="#1a1430"/>
+    </linearGradient>
+    <linearGradient id="nodeNeutral" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a2438"/>
+      <stop offset="100%" stop-color="#151d2e"/>
+    </linearGradient>
+    <linearGradient id="calloutGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a2a1f"/>
+      <stop offset="100%" stop-color="#121c18"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <marker id="arrBlue" markerWidth="10" markerHeight="10" refX="9" refY="3.5" orient="auto">
+      <path d="M0,0 L9,3.5 L0,7 Z" fill="#3b82f6"/>
+    </marker>
+    <marker id="arrCyan" markerWidth="10" markerHeight="10" refX="9" refY="3.5" orient="auto">
+      <path d="M0,0 L9,3.5 L0,7 Z" fill="#22d3ee"/>
+    </marker>
+    <marker id="arrMuted" markerWidth="10" markerHeight="10" refX="9" refY="3.5" orient="auto">
+      <path d="M0,0 L9,3.5 L0,7 Z" fill="#64748b"/>
+    </marker>
+    <marker id="arrAmber" markerWidth="10" markerHeight="10" refX="9" refY="3.5" orient="auto">
+      <path d="M0,0 L9,3.5 L0,7 Z" fill="#fbbf24"/>
+    </marker>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="1920" height="1080" fill="url(#bgGrad)"/>
+  <rect width="1920" height="1080" fill="url(#glowBlue)"/>
+  <rect width="1920" height="1080" fill="url(#glowCyan)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.04" stroke="#94a3b8" stroke-width="1">
+    <path d="M0,180 H1920 M0,360 H1920 M0,540 H1920 M0,720 H1920 M0,900 H1920"/>
+    <path d="M240,0 V1080 M480,0 V1080 M720,0 V1080 M960,0 V1080 M1200,0 V1080 M1440,0 V1080 M1680,0 V1080"/>
+  </g>
+
+  <!-- ===== HEADER ===== -->
+  <rect x="40" y="28" width="1840" height="88" rx="14" fill="#151d2e" stroke="#243049" stroke-width="1" filter="url(#softShadow)"/>
+  <rect x="40" y="28" width="1840" height="3" rx="1.5" fill="url(#headerLine)"/>
+
+  <text x="64" y="62" font-family="Segoe UI, PingFang SC, Microsoft YaHei, Noto Sans SC, system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="0.12em" fill="#64748b">RESEARCH OS  ·  EVENT BOOK POSTER  ·  EXTERNAL PRESENTATION</text>
+  <text x="64" y="96" font-family="Segoe UI, PingFang SC, Microsoft YaHei, Noto Sans SC, system-ui, sans-serif" font-size="28" font-weight="700" fill="#e8edf5">FOMC Sep 2026 Transmission｜美联储2026年9月传导链</text>
+
+  <g transform="translate(1480,48)">
+    <rect x="0" y="0" width="110" height="24" rx="5" fill="rgba(52,211,153,0.12)" stroke="rgba(52,211,153,0.35)" stroke-width="1"/>
+    <text x="55" y="16" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="11" font-weight="700" fill="#34d399">CONFIRMED</text>
+    <rect x="120" y="0" width="100" height="24" rx="5" fill="rgba(34,211,238,0.12)" stroke="rgba(34,211,238,0.35)" stroke-width="1"/>
+    <text x="170" y="16" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="11" font-weight="700" fill="#22d3ee">RELIABLE</text>
+    <rect x="230" y="0" width="110" height="24" rx="5" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.35)" stroke-width="1"/>
+    <text x="285" y="16" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="11" font-weight="700" fill="#a78bfa">INFERENCE</text>
+    <text x="0" y="52" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="12" fill="#94a3b8">As-of 2026-09-17 SGT｜研究逻辑 · 非荐股</text>
+  </g>
+
+  <!-- ===== SIDE CALLOUT (right) ===== -->
+  <g filter="url(#softShadow)">
+    <rect x="1520" y="140" width="360" height="280" rx="12" fill="url(#calloutGrad)" stroke="rgba(52,211,153,0.4)" stroke-width="1.5"/>
+    <rect x="1520" y="140" width="6" height="280" rx="3" fill="#34d399"/>
+    <text x="1548" y="172" font-family="Segoe UI, system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="0.1em" fill="#64748b">EXPECTATION GAP｜预期差</text>
+    <text x="1548" y="208" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="18" font-weight="700" fill="#e8edf5">Pre Base 55%</text>
+    <text x="1548" y="234" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="15" fill="#94a3b8">会前基准 55%</text>
+
+    <rect x="1548" y="252" width="140" height="36" rx="8" fill="rgba(52,211,153,0.18)" stroke="rgba(52,211,153,0.5)" stroke-width="1"/>
+    <text x="1618" y="275" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="15" font-weight="700" fill="#34d399">BINARY HIT</text>
+
+    <text x="1548" y="318" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="13" font-weight="600" fill="#fbbf24">Residual｜残差风险</text>
+    <text x="1548" y="344" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="14" fill="#e8edf5">= path / WACC / BOJ Fri</text>
+    <text x="1548" y="368" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="12" fill="#94a3b8">路径 / 资本成本 / 周五日银</text>
+    <text x="1548" y="398" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="11" fill="#64748b">Binary ~92–93% priced; hinge is path.</text>
+  </g>
+
+  <!-- ===== WARSH TONE CALLOUT (upper mid-right branch) ===== -->
+  <g filter="url(#softShadow)">
+    <rect x="520" y="140" width="420" height="100" rx="10" fill="url(#nodeReliable)" stroke="rgba(34,211,238,0.4)" stroke-width="1.2"/>
+    <text x="540" y="168" font-family="Segoe UI, system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="0.08em" fill="#22d3ee">WARSH TONE · RELIABLE</text>
+    <text x="540" y="194" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="14" font-weight="600" fill="#e8edf5">Financial conditions “not restrictive”</text>
+    <text x="540" y="216" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="13" fill="#94a3b8">金融条件“并不紧缩” → bid then fade｜先涨后回落</text>
+  </g>
+
+  <!-- Connector from FOMC area up to Warsh -->
+  <path d="M430,340 V250 H520" fill="none" stroke="#22d3ee" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arrCyan)" opacity="0.85"/>
+
+  <!-- ===== MAIN TRANSMISSION FLOW ===== -->
+  <!-- Row label -->
+  <text x="64" y="280" font-family="Segoe UI, system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="0.14em" fill="#64748b">TRANSMISSION CHAIN｜传导主链</text>
+
+  <!-- Node 1: Oil / inflation -->
+  <g filter="url(#softShadow)">
+    <rect x="48" y="300" width="168" height="118" rx="10" fill="url(#nodeReliable)" stroke="rgba(34,211,238,0.35)" stroke-width="1.2"/>
+    <circle cx="68" cy="322" r="5" fill="#22d3ee"/>
+    <text x="82" y="327" font-family="Segoe UI, system-ui, sans-serif" font-size="10" font-weight="700" fill="#22d3ee">RELIABLE</text>
+    <text x="64" y="358" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="15" font-weight="700" fill="#e8edf5">Oil / Mid-East</text>
+    <text x="64" y="382" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="13" fill="#94a3b8">油价 / 中东</text>
+    <text x="64" y="404" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="12" fill="#64748b">→ Inflation narrative</text>
+  </g>
+
+  <path d="M216,359 H248" fill="none" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrBlue)"/>
+
+  <!-- Node 2: FOMC decision -->
+  <g filter="url(#softShadow)">
+    <rect x="250" y="292" width="200" height="134" rx="10" fill="url(#nodeConfirmed)" stroke="rgba(52,211,153,0.45)" stroke-width="1.5"/>
+    <circle cx="270" cy="314" r="5" fill="#34d399"/>
+    <text x="284" y="319" font-family="Segoe UI, system-ui, sans-serif" font-size="10" font-weight="700" fill="#34d399">CONFIRMED</text>
+    <text x="268" y="352" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="16" font-weight="700" fill="#e8edf5">FOMC +25 bp</text>
+    <text x="268" y="378" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="14" fill="#34d399">3.75–4.00%</text>
+    <text x="268" y="402" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="13" fill="#94a3b8">12–0 unanimous｜全票</text>
+  </g>
+
+  <path d="M450,359 H482" fill="none" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrBlue)"/>
+
+  <!-- Node 3: SEP -->
+  <g filter="url(#softShadow)">
+    <rect x="484" y="292" width="200" height="134" rx="10" fill="url(#nodeConfirmed)" stroke="rgba(52,211,153,0.45)" stroke-width="1.5"/>
+    <circle cx="504" cy="314" r="5" fill="#34d399"/>
+    <text x="518" y="319" font-family="Segoe UI, system-ui, sans-serif" font-size="10" font-weight="700" fill="#34d399">CONFIRMED</text>
+    <text x="502" y="352" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="15" font-weight="700" fill="#e8edf5">SEP FF 4.1% / 4.1%</text>
+    <text x="502" y="378" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="13" fill="#fbbf24">Higher-for-longer</text>
+    <text x="502" y="402" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="12" fill="#94a3b8">更高更久 · 16/18 ≥1 more</text>
+  </g>
+
+  <path d="M684,359 H716" fill="none" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrBlue)"/>
+
+  <!-- Node 4: Path > decision -->
+  <g filter="url(#softShadow)">
+    <rect x="718" y="300" width="168" height="118" rx="10" fill="url(#nodeNeutral)" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="736" y="340" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="15" font-weight="700" fill="#3b82f6">Path &gt; decision</text>
+    <text x="736" y="368" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="14" fill="#e8edf5">路径 &gt; 决议</text>
+    <text x="736" y="394" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="11" fill="#64748b">Live hinge｜活铰链</text>
+  </g>
+
+  <path d="M886,359 H918" fill="none" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrBlue)"/>
+
+  <!-- Node 5: 10Y / real yields -->
+  <g filter="url(#softShadow)">
+    <rect x="920" y="300" width="168" height="118" rx="10" fill="url(#nodeReliable)" stroke="rgba(34,211,238,0.35)" stroke-width="1.2"/>
+    <circle cx="940" cy="322" r="5" fill="#22d3ee"/>
+    <text x="954" y="327" font-family="Segoe UI, system-ui, sans-serif" font-size="10" font-weight="700" fill="#22d3ee">RELIABLE</text>
+    <text x="938" y="358" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="15" font-weight="700" fill="#e8edf5">10Y ~5%</text>
+    <text x="938" y="382" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="13" fill="#94a3b8">Real yields firm</text>
+    <text x="938" y="404" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="12" fill="#64748b">长端 / 实际利率</text>
+  </g>
+
+  <path d="M1088,359 H1120" fill="none" stroke="#a78bfa" stroke-width="2" marker-end="url(#arrMuted)"/>
+
+  <!-- Node 6: WACC -->
+  <g filter="url(#softShadow)">
+    <rect x="1122" y="300" width="158" height="118" rx="10" fill="url(#nodeInference)" stroke="rgba(167,139,250,0.4)" stroke-width="1.2"/>
+    <circle cx="1142" cy="322" r="5" fill="#a78bfa"/>
+    <text x="1156" y="327" font-family="Segoe UI, system-ui, sans-serif" font-size="10" font-weight="700" fill="#a78bfa">INFERENCE</text>
+    <text x="1140" y="358" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="16" font-weight="700" fill="#e8edf5">WACC ↑</text>
+    <text x="1140" y="382" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="12" fill="#94a3b8">Discount rate</text>
+    <text x="1140" y="404" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="12" fill="#64748b">加权平均资本成本</text>
+  </g>
+
+  <path d="M1280,359 H1312" fill="none" stroke="#a78bfa" stroke-width="2" marker-end="url(#arrMuted)"/>
+
+  <!-- Node 7: Multiples + Watchlist -->
+  <g filter="url(#softShadow)">
+    <rect x="1314" y="280" width="186" height="158" rx="10" fill="url(#nodeInference)" stroke="rgba(167,139,250,0.45)" stroke-width="1.5"/>
+    <circle cx="1334" cy="302" r="5" fill="#a78bfa"/>
+    <text x="1348" y="307" font-family="Segoe UI, system-ui, sans-serif" font-size="10" font-weight="700" fill="#a78bfa">INFERENCE</text>
+    <text x="1332" y="336" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="13" font-weight="700" fill="#e8edf5">Long-duration AI</text>
+    <text x="1332" y="356" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="12" fill="#94a3b8">multiples｜久期倍数</text>
+    <text x="1332" y="384" font-family="Segoe UI, system-ui, sans-serif" font-size="12" font-weight="600" fill="#d4a574">NVDA MU ARM LITE</text>
+    <text x="1332" y="404" font-family="Segoe UI, system-ui, sans-serif" font-size="12" font-weight="600" fill="#d4a574">MRVL AVGO CRWV</text>
+    <text x="1332" y="424" font-family="Segoe UI, system-ui, sans-serif" font-size="12" font-weight="600" fill="#d4a574">TSLA SPCX</text>
+  </g>
+
+  <!-- SPCX note -->
+  <text x="1314" y="458" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="11" fill="#64748b">SPCX Nasdaq-listed since 2026-06-12｜纳斯达克上市（报价本图不列）</text>
+
+  <!-- ===== THINKING CAPTION STRIP ===== -->
+  <text x="64" y="500" font-family="Segoe UI, system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="0.14em" fill="#64748b">THINKING TUTORIAL｜思维教程流</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="48" y="514" width="1824" height="168" rx="12" fill="#151d2e" stroke="#243049" stroke-width="1"/>
+  </g>
+
+  <!-- 7 thinking steps -->
+  <!-- 1 Observe -->
+  <g>
+    <rect x="64" y="532" width="240" height="132" rx="8" fill="#121a2c" stroke="#243049"/>
+    <rect x="64" y="532" width="240" height="4" rx="2" fill="#3b82f6"/>
+    <text x="80" y="560" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="13" font-weight="700" fill="#3b82f6">1 看什么｜Observe</text>
+    <text x="80" y="586" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="12" fill="#e8edf5">Path/SEP/dots — not</text>
+    <text x="80" y="606" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="12" fill="#e8edf5">only the +25 bp binary.</text>
+    <text x="80" y="630" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="11" fill="#94a3b8">盯路径与点阵，不只盯加息。</text>
+  </g>
+
+  <path d="M304,598 H320" fill="none" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrBlue)"/>
+
+  <!-- 2 Why -->
+  <g>
+    <rect x="322" y="532" width="240" height="132" rx="8" fill="#121a2c" stroke="#243049"/>
+    <rect x="322" y="532" width="240" height="4" rx="2" fill="#22d3ee"/>
+    <text x="338" y="560" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="13" font-weight="700" fill="#22d3ee">2 为什么｜Why</text>
+    <text x="338" y="586" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="12" fill="#e8edf5">Binary ~92–93% priced;</text>
+    <text x="338" y="606" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="12" fill="#e8edf5">residual = HFL WACC.</text>
+    <text x="338" y="630" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="11" fill="#94a3b8">二元已定价；残差是更高更久。</text>
+  </g>
+
+  <path d="M562,598 H578" fill="none" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrBlue)"/>
+
+  <!-- 3 Evidence -->
+  <g>
+    <rect x="580" y="532" width="240" height="132" rx="8" fill="#121a2c" stroke="#243049"/>
+    <rect x="580" y="532" width="240" height="4" rx="2" fill="#34d399"/>
+    <text x="596" y="560" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="13" font-weight="700" fill="#34d399">3 证据｜Evidence</text>
+    <text x="596" y="586" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="12" fill="#e8edf5">12–0; SEP 4.1/4.1;</text>
+    <text x="596" y="606" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="12" fill="#e8edf5">Warsh FC not restrictive.</text>
+    <text x="596" y="630" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="11" fill="#94a3b8">全票；点阵；条件并不紧缩。</text>
+  </g>
+
+  <path d="M820,598 H836" fill="none" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrBlue)"/>
+
+  <!-- 4 Transmission -->
+  <g>
+    <rect x="838" y="532" width="240" height="132" rx="8" fill="#121a2c" stroke="#243049"/>
+    <rect x="838" y="532" width="240" height="4" rx="2" fill="#a78bfa"/>
+    <text x="854" y="560" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="13" font-weight="700" fill="#a78bfa">4 传导｜Transmission</text>
+    <text x="854" y="586" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="12" fill="#e8edf5">Rates↑ → WACC → AI</text>
+    <text x="854" y="606" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="12" fill="#e8edf5">duration multiples.</text>
+    <text x="854" y="630" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="11" fill="#94a3b8">利率→资本成本→久期倍数。</text>
+  </g>
+
+  <path d="M1078,598 H1094" fill="none" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrBlue)"/>
+
+  <!-- 5 Alt explanation -->
+  <g>
+    <rect x="1096" y="532" width="240" height="132" rx="8" fill="#121a2c" stroke="#243049"/>
+    <rect x="1096" y="532" width="240" height="4" rx="2" fill="#fbbf24"/>
+    <text x="1112" y="560" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="13" font-weight="700" fill="#fbbf24">5 其他解释｜Alt</text>
+    <text x="1112" y="586" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="12" fill="#e8edf5">Oil / term-premium alone</text>
+    <text x="1112" y="606" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="12" fill="#e8edf5">can move 10Y w/o hawk SEP.</text>
+    <text x="1112" y="630" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="11" fill="#94a3b8">油价/期限溢价亦可推高10Y。</text>
+  </g>
+
+  <path d="M1336,598 H1352" fill="none" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrBlue)"/>
+
+  <!-- 6 Falsifier -->
+  <g>
+    <rect x="1354" y="532" width="240" height="132" rx="8" fill="#121a2c" stroke="#243049"/>
+    <rect x="1354" y="532" width="240" height="4" rx="2" fill="#f87171"/>
+    <text x="1370" y="560" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="13" font-weight="700" fill="#f87171">6 证伪｜Falsifier</text>
+    <text x="1370" y="586" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="12" fill="#e8edf5">10Y falls &amp; AI multiples</text>
+    <text x="1370" y="606" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="12" fill="#e8edf5">expand while SEP sticky.</text>
+    <text x="1370" y="630" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="11" fill="#94a3b8">SEP仍紧但10Y下行且倍数扩张。</text>
+  </g>
+
+  <path d="M1594,598 H1610" fill="none" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrBlue)"/>
+
+  <!-- 7 Next -->
+  <g>
+    <rect x="1612" y="532" width="240" height="132" rx="8" fill="#121a2c" stroke="#243049"/>
+    <rect x="1612" y="532" width="240" height="4" rx="2" fill="#d4a574"/>
+    <text x="1628" y="560" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="13" font-weight="700" fill="#d4a574">7 下一步｜Next</text>
+    <text x="1628" y="586" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="12" fill="#e8edf5">BOJ Fri Sep 18;</text>
+    <text x="1628" y="606" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="12" fill="#e8edf5">MU Sep 30; track 10Y~5%.</text>
+    <text x="1628" y="630" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="11" fill="#94a3b8">周五日银；美光9/30；盯10Y。</text>
+  </g>
+
+  <!-- ===== FOOTER ===== -->
+  <rect x="40" y="710" width="1840" height="330" rx="14" fill="#0f1623" stroke="#243049" stroke-width="1"/>
+  <rect x="40" y="710" width="1840" height="3" fill="url(#headerLine)" opacity="0.6"/>
+
+  <!-- Legend / claim classes -->
+  <text x="64" y="748" font-family="Segoe UI, system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="0.1em" fill="#64748b">CLAIM CLASSES｜主张等级</text>
+
+  <g transform="translate(64,768)">
+    <rect width="14" height="14" rx="3" fill="#34d399"/>
+    <text x="24" y="12" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="13" fill="#e8edf5">CONFIRMED — FOMC +25 bp to 3.75–4.00% (12–0); SEP FF median 4.1%/4.1%; dots 16/18 ≥ one more 2026 hike</text>
+    <text x="24" y="32" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="12" fill="#94a3b8">已确认 — 加息25bp至3.75–4.00%（12–0）；联邦基金中位数2026/2027均为4.1%；18点中16点≥再加一次</text>
+
+    <rect y="52" width="14" height="14" rx="3" fill="#22d3ee"/>
+    <text x="24" y="64" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="13" fill="#e8edf5">RELIABLE — Oil/Mid-East inflation narrative; 10Y ~5% / real yields; Warsh “not restrictive” → bid then fade</text>
+    <text x="24" y="84" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="12" fill="#94a3b8">可靠 — 油价/中东通胀叙事；10年期约5%/实际利率；沃什“并不紧缩”→先涨后回落</text>
+
+    <rect y="104" width="14" height="14" rx="3" fill="#a78bfa"/>
+    <text x="24" y="116" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="13" fill="#e8edf5">INFERENCE — Path &gt; decision → WACC ↑ → long-duration AI multiples (watchlist transmission)</text>
+    <text x="24" y="136" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="12" fill="#94a3b8">推断 — 路径大于决议 → 加权平均资本成本上升 → 长久期AI倍数（观察名单传导）</text>
+
+    <rect y="156" width="14" height="14" rx="3" fill="#fbbf24"/>
+    <text x="24" y="168" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="13" fill="#e8edf5">HYPOTHESIS (pre) → HIT — Pre-event Base 55% binary; residual = path / WACC / BOJ Fri</text>
+    <text x="24" y="188" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="12" fill="#94a3b8">事前假设→命中 — 会前基准55%二元；残差＝路径/资本成本/周五日银</text>
+  </g>
+
+  <!-- Sources block -->
+  <g transform="translate(64,980)">
+    <text y="0" font-family="Segoe UI, system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="0.08em" fill="#64748b">SOURCES｜来源</text>
+    <text y="22" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="12" fill="#94a3b8">Fed statement / SEP (CONFIRMED); Warsh press PDF FOMCpresconf20260916.pdf (CONFIRMED); Event Book path: events/fomc-2026-09/ (Post-Mortem, Decision Analysis, Pre-Event Snapshot)</text>
+    <text y="44" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="12" fill="#64748b">Abbrev: FOMC (Federal Open Market Committee｜联邦公开市场委员会) · SEP (Summary of Economic Projections｜经济预测摘要) · WACC (Weighted Average Cost of Capital｜加权平均资本成本) · FF (federal funds｜联邦基金) · HFL = higher-for-longer｜更高更久</text>
+  </g>
+
+  <!-- Bottom brand bar -->
+  <rect x="40" y="1040" width="1840" height="28" fill="#0a0e17"/>
+  <text x="64" y="1059" font-family="Segoe UI, PingFang SC, Microsoft YaHei, system-ui, sans-serif" font-size="12" fill="#64748b">Research OS · FOMC-2026-09 Transmission Poster · As-of 2026-09-17 (Asia/Singapore) · Research logic for Event Book / presentation — not investment advice｜研究逻辑，非投资建议 · No invented prices</text>
+  <text x="1860" y="1059" text-anchor="end" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#3b82f6">1920 × 1080</text>
+</svg>

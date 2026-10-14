@@ -1,0 +1,37 @@
+{
+ "release": "cxmt-4f2_v20261013-2058",
+ "generated": "2026-10-13T20:56:26.103670",
+ "kind": "news-explainer",
+ "files": [
+  {
+   "path": "cxmt-4f2_news-explainer.html",
+   "bytes": 22025,
+   "sha256": "a23e63381ff7d696"
+  },
+  {
+   "path": "cxmt-4f2_news-explainer.jpg",
+   "bytes": 1825036,
+   "sha256": "b24c1053df270aed"
+  },
+  {
+   "path": "cxmt-4f2_news-explainer.pdf",
+   "bytes": 890731,
+   "sha256": "11e85c6ab2c043f1"
+  },
+  {
+   "path": "cxmt-4f2_news-explainer.png",
+   "bytes": 2298570,
+   "sha256": "a3c61ac7dd31b7e0"
+  },
+  {
+   "path": "meta.json",
+   "bytes": 334,
+   "sha256": "e024032275d9f1d7"
+  },
+  {
+   "path": "cxmt-4f2_v20261013-2058.zip",
+   "bytes": 4171733,
+   "sha256": "4af57dcf6f7d260b"
+  }
+ ]
+}

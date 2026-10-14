@@ -1,0 +1,75 @@
+{
+ "event": "US CPI Sep 2026",
+ "release_et": "2026-10-14 08:30 ET",
+ "release_sgt": "2026-10-14 20:30 SGT",
+ "snapshot_locked": "2026-10-13T18:03:00+08:00",
+ "built": "2026-10-13T18:09:08.470185",
+ "consensus": {
+  "headline_mom": 0.6,
+  "headline_yoy": 3.6,
+  "core_mom": 0.2,
+  "core_yoy": 2.5,
+  "alt_factset": {
+   "headline_mom": 0.5,
+   "core_yoy": 2.4
+  }
+ },
+ "os_hypothesis": {
+  "headline_mom": 0.58,
+  "headline_yoy": 3.6,
+  "core_mom": 0.22,
+  "core_yoy": 2.4,
+  "probs": {
+   "cool": 0.25,
+   "inline": 0.5,
+   "hot": 0.25
+  }
+ },
+ "market": {
+  "fed_upper": 4.0,
+  "y2": 4.75,
+  "y10": 5.24,
+  "usdjpy": 158.18,
+  "vix": 15.48,
+  "kalshi_oct_hike": 0.2,
+  "kalshi_dec_hike": 0.73
+ },
+ "files": {
+  "CHANGELOG_v20261013-1803.docx": "e2f1c9605086a119d94a9c7c7225e1050ada43b525087af5da52029c61070657",
+  "CHANGELOG_v20261013-1803.html": "adfab01f12f02e2df0485caa144687bfa3e254bd304d84932606a5b253344c45",
+  "CHANGELOG_v20261013-1803.md": "d6c9ed56c4c6f78f44ca92fb34e8d525ba71d047b8b4857f19f25f2e32272b6a",
+  "CHANGELOG_v20261013-1803.pdf": "be2af20b339cccb69cf55c5fe8f17c1e137ff990f5fe6ce79662b869755080e8",
+  "RESEARCH_OS_MASTER_PROMPT.docx": "2df01a8869bf37d791b3d03efdd5505f4d556fb65b034d571cf8175c07beaefb",
+  "RESEARCH_OS_MASTER_PROMPT.html": "e1140c489b02e9625f118139ca0d5453f577ca77b19a3af3c3e9e53f63f41733",
+  "RESEARCH_OS_MASTER_PROMPT.md": "331d9c656fd7a73646316c2d9450c6a8c89282d05099e2ddef711d73112bccc5",
+  "RESEARCH_OS_MASTER_PROMPT.pdf": "4e8cb9d1fb475feed6d1b72a0e64d7ef442f130bfd0affca656c8b601cce3b8f",
+  "US_CPI_Sep2026_PreEvent_EN_v20261013-1803.docx": "8f0364282b85bb56a43fbe916b0c40095dedf83cd25b22d19a1a082ee56fc580",
+  "US_CPI_Sep2026_PreEvent_EN_v20261013-1803.html": "3194e089c1e8b0a799d6c82a1976bb417a13f19c1d532646516e2ff4ad198af1",
+  "US_CPI_Sep2026_PreEvent_EN_v20261013-1803.md": "deff7ebdf6773435a7c2cd474c1cb339cc810fb469cafe71b815dd1fc493c4a1",
+  "US_CPI_Sep2026_PreEvent_EN_v20261013-1803.pdf": "d491e594c7a3d04e7c79b5a929a74f0a7a87b84ddc1368f6d343fc974e0d7451",
+  "US_CPI_Sep2026_PreEvent_ZH_v20261013-1803.docx": "ea766b53dc34c106eb0ad12fdbad0077d4c893e312d9fc1309e8a82be26e7a54",
+  "US_CPI_Sep2026_PreEvent_ZH_v20261013-1803.html": "58f2b3b3a54f3e3f15d8883229c5d9e47ebda47fdd99dc49d954390ee2bf6b52",
+  "US_CPI_Sep2026_PreEvent_ZH_v20261013-1803.md": "a91a1db7522a03ba590849c79e34e4b1e6bd80c00abfcc9e0715678614007a2a",
+  "US_CPI_Sep2026_PreEvent_ZH_v20261013-1803.pdf": "479db9518f48835b169c735559b806d483ef168aafb8bf999199d764b4391f77",
+  "US_CPI_Sep2026_PreEvent_model_v20261013-1803.xlsx": "301cc48f064f7baf36d5aae06a796bdc6a935640e3c70df0ed8c5e1dc75537f5",
+  "US_CPI_Sep2026_teaching_EN_v20261013-1803.docx": "b72642611c2a37e0626d840c6554c579ca162ebfdfe01bf980d9675b96a1410a",
+  "US_CPI_Sep2026_teaching_EN_v20261013-1803.html": "a87a5cca2452f7c7c206e257c85fa4d1c47bedb5842b92407d7bbbee21caac5c",
+  "US_CPI_Sep2026_teaching_EN_v20261013-1803.md": "1677d1c2d8cc3153684f4751af71dbe1dcfcc4bcfc5fb6e28eb1a764de533b7f",
+  "US_CPI_Sep2026_teaching_EN_v20261013-1803.pdf": "8e3a95a555abea5d2d7226e028b9d84dffe8be482eb07bd4d0e969441944116a",
+  "US_CPI_Sep2026_teaching_ZH_v20261013-1803.docx": "a37789130ee465ab60fb6f78077d7ff3148ea43407047ee2bb794eac4582c8bf",
+  "US_CPI_Sep2026_teaching_ZH_v20261013-1803.html": "be7c2e223fb5efe4d0410a2f576c4aa3f1dfc2ec937805a908da5a73c47e5e7c",
+  "US_CPI_Sep2026_teaching_ZH_v20261013-1803.md": "38f80c9721b0ee7a678c5278e5ac553bc5f7449f9f4caae848edb41f16483e06",
+  "US_CPI_Sep2026_teaching_ZH_v20261013-1803.pdf": "bca1616cc84a5af1ac1f328590ec59e07a702365bf41546b3968d92b13e68b4c",
+  "images/01_transmission_chain.jpg": "82e89c361a2dc1139fc2fbcdff938dd6634b620a41bd639ec99aae678d01652d",
+  "images/01_transmission_chain.png": "b5ef467244829137924c46a68c211e4daedff47b1a2b576fb7a90bd59a4a8540",
+  "images/02_expectation_gap.jpg": "cd2a9cf51925a1efc6c8ff9fe03eb469475624c7d6109a30a4d434e659ec2e9c",
+  "images/02_expectation_gap.png": "69a54d528f607e4a5c94730269ffb689f93e0d3dd4e4b33dc41ccac248728bfe",
+  "images/03_scenarios_reaction_paths.jpg": "c34f0126973c83d4da6ff23c82fabdf30180ec8a2bda34e4b013dfbd50ddc041",
+  "images/03_scenarios_reaction_paths.png": "9c678c42228a81b1d635344c5bbf22946a9b165898d1b2d6385612c2a48310a4",
+  "images/04_watchlist_rate_sensitivity.jpg": "ee8726f896190ff8361ca30abcda764fcf296489b0a921c31a5aadf91cc2e52b",
+  "images/04_watchlist_rate_sensitivity.png": "f1d431cccb08ca4f0b7245bb3175f147e08034d144386881f4b682be5505744d",
+  "images/05_live_timeline_checklist.jpg": "3d2ea418b8644628ea18b5e5476af2b92ac76e7a30d4d110c456fed6cb56bc33",
+  "images/05_live_timeline_checklist.png": "120d543e48f6f7df031a1a587e05254a903bb6ca2c760255067f07f304de25b0",
+  "manifest.json": "00bcf912eb6e9c5f167d0b1f4ceefa8086a82d528a8cbdedb19cc61501e12d7f"
+ }
+}
