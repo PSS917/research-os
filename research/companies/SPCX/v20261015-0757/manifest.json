@@ -1,0 +1,106 @@
+{
+ "release": "SPCX_v20261015-0757",
+ "generated": "2026-10-15T07:58:24.928144",
+ "files": [
+  {
+   "path": "SPCX_model_v20261015-0757.xlsx",
+   "bytes": 35785,
+   "sha256": "56dca4018a7c9227"
+  },
+  {
+   "path": "SPCX_report_v20261015-0757.docx",
+   "bytes": 791780,
+   "sha256": "1d777c586e00aa9f"
+  },
+  {
+   "path": "SPCX_report_v20261015-0757.html",
+   "bytes": 30526,
+   "sha256": "10d46ac30402b2ff"
+  },
+  {
+   "path": "SPCX_report_v20261015-0757.md",
+   "bytes": 17738,
+   "sha256": "7654ddf335f3f937"
+  },
+  {
+   "path": "SPCX_report_v20261015-0757.pdf",
+   "bytes": 1093112,
+   "sha256": "5ce0beb392d2a6f1"
+  },
+  {
+   "path": "SPCX_teaching_v20261015-0757.docx",
+   "bytes": 197525,
+   "sha256": "5225396cfdd8c76a"
+  },
+  {
+   "path": "SPCX_teaching_v20261015-0757.html",
+   "bytes": 10649,
+   "sha256": "1803ac5836569d5e"
+  },
+  {
+   "path": "SPCX_teaching_v20261015-0757.md",
+   "bytes": 4868,
+   "sha256": "b2157e47a3c68cd3"
+  },
+  {
+   "path": "SPCX_teaching_v20261015-0757.pdf",
+   "bytes": 256945,
+   "sha256": "95887c4e73bfe75f"
+  },
+  {
+   "path": "images/SPCX_1_price_vs_value.jpg",
+   "bytes": 275482,
+   "sha256": "7346253b47d4cf6a"
+  },
+  {
+   "path": "images/SPCX_1_price_vs_value.png",
+   "bytes": 185868,
+   "sha256": "855a4224d542844a"
+  },
+  {
+   "path": "images/SPCX_2_financials.jpg",
+   "bytes": 233995,
+   "sha256": "dc747f6ab63616af"
+  },
+  {
+   "path": "images/SPCX_2_financials.png",
+   "bytes": 185289,
+   "sha256": "7bb92f72204ebf9b"
+  },
+  {
+   "path": "images/SPCX_3_scenarios.jpg",
+   "bytes": 257513,
+   "sha256": "c2f0037a84339538"
+  },
+  {
+   "path": "images/SPCX_3_scenarios.png",
+   "bytes": 172569,
+   "sha256": "e891bd6d8a8f0e7e"
+  },
+  {
+   "path": "images/SPCX_4_horizons.jpg",
+   "bytes": 238952,
+   "sha256": "0d0c24fd7cd4309f"
+  },
+  {
+   "path": "images/SPCX_4_horizons.png",
+   "bytes": 163392,
+   "sha256": "f9d6e6d911df3584"
+  },
+  {
+   "path": "images/SPCX_5_logic_map.jpg",
+   "bytes": 244296,
+   "sha256": "cffe1adaf0f9fc9d"
+  },
+  {
+   "path": "images/SPCX_5_logic_map.png",
+   "bytes": 212942,
+   "sha256": "8f176659f09f0dd1"
+  },
+  {
+   "path": "summary.json",
+   "bytes": 551,
+   "sha256": "ef3f1a0fa79bb84f"
+  }
+ ]
+}

@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title> </title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<style>body{font-family:'Noto Sans CJK SC','Noto Sans',sans-serif;max-width:1100px;margin:auto;padding:24px;line-height:1.6;color:#1b1b1b}table{border-collapse:collapse;font-size:13px;margin:8px 0}td,th{border:1px solid #ccd;padding:4px 8px}th{background:#1F3A5F;color:#fff}img{max-width:100%;border:1px solid #ddd}h1{color:#1F3A5F}h2{border-bottom:2px solid #1F3A5F}abbr{text-decoration:underline dotted #2E86C1;cursor:help}.box30{background:linear-gradient(135deg,#eaf2ff,#f5ecff);border:2px solid #5b8cff;border-radius:14px;padding:6px 18px;margin:14px 0;font-size:16px}.readmap{background:#f6f8fb;border:1px solid #d5dbe6;border-radius:12px;padding:4px 16px;margin:12px 0}.howto{background:#fff8e6;border-left:5px solid #f59e0b;border-radius:8px;padding:2px 14px;margin:6px 0 22px}.quiz{background:#effaf3;border:1px solid #9bd8b1;border-radius:12px;padding:4px 16px}details{margin:8px 0}details.l3{background:#f7f7f9;border:1px dashed #b8c0cc;border-radius:10px;padding:6px 14px}summary{cursor:pointer;font-weight:600;color:#1F3A5F}body{font-size:15.5px}blockquote{background:#f3f6fa;border-left:4px solid #2E86C1;margin:0;padding:6px 12px}</style></head>
+<body><div style="background:#fff7ed;border:1px solid #fdba74;padding:8px 12px;margin:8px 0;font-size:13px">历史版本：PDF/Word/图片已归档至 GitHub Release（下载：<a href="https://github.com/PSS917/research-os/releases/download/archive-v20261014-0758/COHR_v20261014-0758.zip">ZIP</a>）。Archived version — heavy files live in Release assets.</div>
+<header id="title-block-header">
+<h1 class="title"> </h1>
+</header>
+<h1 id="cohr-coherent-corp.-个股深度研究-专业中文版-v20261014-0758">COHR
+Coherent Corp. — 个股深度研究 (专业中文版) v20261014-0758</h1>
+<blockquote>
+<p>数据截至 2026-10-14 07:58 SGT｜价格 $289.98｜市值 57.1 bn
+USD｜财报货币
+USD｜非投资建议。事实=CONFIRMED/DATA；推断=INFERENCE；假设=ASSUMPTION/HYPOTHESIS。</p>
+</blockquote>
+<h2 id="投资论点-investment-thesis-hypothesis">1. 投资论点 Investment
+Thesis (HYPOTHESIS)</h2>
+<p>Coherent是垂直整合的光模块+激光器厂，受益于800G/1.6T与CPO；重整资产(剥离非核心)与提升毛利是重估关键。注意：最新FCF为负(数据期间)。</p>
+<ul>
+<li><strong>多头驱动</strong>: 1.6T share gains; InP capacity doubles;
+GM &gt;40%｜1.6T份额提升；InP产能倍增；毛利率&gt;40%</li>
+<li><strong>空头驱动</strong>: Chinese module price competition;
+industrial weakness; debt｜中国模块价格战；工业疲弱；负债</li>
+<li><strong>证伪条件 Falsifiers</strong>: Datacom growth below peers; GM
+stalls｜数通增速落后同业；毛利停滞</li>
+</ul>
+<h2 id="产品客户与收入模式">2. 产品、客户与收入模式</h2>
+<ul>
+<li>主题 Theme: Optical transceivers / lasers / materials
+光模块/激光/材料</li>
+<li>业务分部 Segments: Datacom transceivers 数通光模块；Telecom
+电信；Industrial lasers &amp; materials (SiC) 工业激光与材料</li>
+<li>公司描述 (DATA, Yahoo/公司申报): Coherent Corp. develops,
+manufactures, and markets lasers, transceivers, other optical and
+optoelectronic devices, modules, and systems worldwide. Its products
+include critical components consisting of detectors, passive optics,
+thermal solutions, and PICS; silicon photonics and other advanced
+optical technologies; and coherent transmission components, transport
+products, optical amplifiers, passive optical components, optical line
+systems, and multi-rail platform. The company’s Datacenter and
+Communications segment offers transceivers, co-packaged optics, and
+optical circuit switches, as well as other systems, such as subsystems,
+modules, and semiconductor devices for datacenter and communications
+applications; and VCSELS, EELS, pump lasers, and other components,
+optics, and ICs for datacenter and communication applications. Its
+Industrial segment offers excimer lasers, solid-state lase</li>
+<li>主要客户: NVDA, hyperscalers, telecom OEMs, industrial
+users｜NVDA、云厂、电信设备商、工业客户</li>
+</ul>
+<h2 id="行业竞争监管与供应链-analyst-framework">3.
+行业、竞争、监管与供应链 (ANALYST FRAMEWORK)</h2>
+<ul>
+<li>供应商/上游: InP/GaAs epi (in-house), DSPs
+(MRVL/AVGO)｜自有磷化铟/砷化镓外延、DSP(MRVL/AVGO)</li>
+<li>竞争者 (含业外): Innolight, Eoptolink, Lumentum, Fabrinet-built
+modules｜中际旭创、新易盛、Lumentum</li>
+<li>瓶颈/监管: 6-inch InP capacity, DSP supply, 1.6T
+ramp｜6寸InP产能、DSP供应、1.6T爬坡</li>
+<li>关键KPI: Datacom revenue, GM%, InP capacity, net
+debt｜数通收入、毛利率、InP产能、净负债</li>
+<li>零部件现货/合约价:
+本版未接入付费价格源(TrendForce/DRAMeXchange等)——标注
+<strong>UNAVAILABLE</strong>，在KPI监控中以定性方式跟踪。</li>
+</ul>
+<h2 id="历史财务与现金流-confirmed-季度-usd">4. 历史财务与现金流
+(CONFIRMED, 季度, USD)</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>季度</th>
+<th>收入</th>
+<th>毛利</th>
+<th>营业利润</th>
+<th>净利润</th>
+<th>FCF</th>
+<th>营业利润率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-06-30</td>
+<td>2.0 bn USD</td>
+<td>0.8 bn USD</td>
+<td>0.3 bn USD</td>
+<td>0.2 bn USD</td>
+<td>-0.5 bn USD</td>
+<td>14.9%</td>
+</tr>
+<tr>
+<td>2026-03-31</td>
+<td>1.8 bn USD</td>
+<td>0.7 bn USD</td>
+<td>0.2 bn USD</td>
+<td>0.2 bn USD</td>
+<td>-0.4 bn USD</td>
+<td>12.5%</td>
+</tr>
+<tr>
+<td>2025-12-31</td>
+<td>1.7 bn USD</td>
+<td>0.6 bn USD</td>
+<td>0.2 bn USD</td>
+<td>0.1 bn USD</td>
+<td>-95.7 mn USD</td>
+<td>11.8%</td>
+</tr>
+<tr>
+<td>2025-09-30</td>
+<td>1.6 bn USD</td>
+<td>0.6 bn USD</td>
+<td>0.2 bn USD</td>
+<td>0.2 bn USD</td>
+<td>-58.0 mn USD</td>
+<td>10.9%</td>
+</tr>
+<tr>
+<td>2025-06-30</td>
+<td>1.5 bn USD</td>
+<td>0.5 bn USD</td>
+<td>0.1 bn USD</td>
+<td>-95.6 mn USD</td>
+<td>-1.1 mn USD</td>
+<td>9.5%</td>
+</tr>
+<tr>
+<td>2025-03-31</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<p>资产负债: 现金 2.0 bn USD；总负债 3.6 bn USD；净现金 -1.6 bn USD。TTM
+FCF -1.0 bn USD（FCF率 -14.5%）。</p>
+<h2 id="最新财报-实际-vs-一致预期-vs-指引">5. 最新财报: 实际 vs 一致预期
+vs 指引</h2>
+<table>
+<thead>
+<tr>
+<th>季度</th>
+<th>EPS实际</th>
+<th>EPS一致预期</th>
+<th>超预期%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-09-30</td>
+<td>1.16</td>
+<td>1.04249</td>
+<td>0.11270001</td>
+</tr>
+<tr>
+<td>2025-12-31</td>
+<td>1.29</td>
+<td>1.20766</td>
+<td>0.0682</td>
+</tr>
+<tr>
+<td>2026-03-31</td>
+<td>1.41</td>
+<td>1.39433</td>
+<td>0.0112</td>
+</tr>
+<tr>
+<td>2026-06-30</td>
+<td>1.74</td>
+<td>1.61709</td>
+<td>0.076</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>管理层指引 Guidance:
+自动数据源不含指引——<strong>UNAVAILABLE（待从公司IR新闻稿录入）</strong>。</li>
+<li>下次财报日 (Yahoo, TENTATIVE 直至公司确认):
+<strong>2026-11-05</strong>；本季EPS一致预期
+1.96331（20位分析师）；收入一致预期 2.3 bn USD。</li>
+</ul>
+<h2 id="未来2468季度驱动与价格合理性">6.
+未来2/4/6/8季度驱动与价格合理性</h2>
+<table>
+<thead>
+<tr>
+<th>期限</th>
+<th>情景</th>
+<th>期限价格现值</th>
+<th>相对现价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2Q</td>
+<td>Bear</td>
+<td>$-50.68</td>
+<td>-117.5%</td>
+</tr>
+<tr>
+<td>2Q</td>
+<td>Base</td>
+<td>$-85.73</td>
+<td>-129.6%</td>
+</tr>
+<tr>
+<td>2Q</td>
+<td>Bull</td>
+<td>$-116.57</td>
+<td>-140.2%</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>Bear</td>
+<td>$-33.25</td>
+<td>-111.5%</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>Base</td>
+<td>$-48.34</td>
+<td>-116.7%</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>Bull</td>
+<td>$-52.45</td>
+<td>-118.1%</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>Bear</td>
+<td>$-15.07</td>
+<td>-105.2%</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>Base</td>
+<td>$-2.14</td>
+<td>-100.7%</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>Bull</td>
+<td>$34.07</td>
+<td>-88.3%</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>Bear</td>
+<td>$3.89</td>
+<td>-98.7%</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>Base</td>
+<td>$54.33</td>
+<td>-81.3%</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>Bull</td>
+<td>$148.41</td>
+<td>-48.8%</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>现价隐含的 EV/NTM-FCF (Base 路径):</th>
+<th>期限</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2Q</td>
+<td>n/m (neg FCF)</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>n/m (neg FCF)</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>1390.3x</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>96.0x</td>
+</tr>
+</tbody>
+</table>
+<p>解读:
+如果8季度后Base情景所需倍数仍远高于25x，说明价格依赖更远期的增长。</p>
+<h2 id="三情景-bear-base-bull-hypothesis">7. 三情景 Bear / Base / Bull
+(HYPOTHESIS)</h2>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr>
+<th>情景</th>
+<th>Y1增速</th>
+<th>长期FCF率</th>
+<th>WACC</th>
+<th>永续g</th>
+<th>概率</th>
+<th>每股价值</th>
+<th>相对现价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bear</td>
+<td>19.4%</td>
+<td>12.0%</td>
+<td>14.2%</td>
+<td>2.5%</td>
+<td>25.0%</td>
+<td>$42.16</td>
+<td>-85.5%</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>38.8%</td>
+<td>15.0%</td>
+<td>13.2%</td>
+<td>3.0%</td>
+<td>50.0%</td>
+<td>$162.78</td>
+<td>-43.9%</td>
+</tr>
+<tr>
+<td>Bull</td>
+<td>50.5%</td>
+<td>17.2%</td>
+<td>12.7%</td>
+<td>3.5%</td>
+<td>25.0%</td>
+<td>$336.10</td>
+<td>15.9%</td>
+</tr>
+</tbody>
+</table>
+<p>概率加权价值 <strong>$175.95</strong>（相对现价 -39.3%）。</p>
+<h2 id="估值-dcf-reverse-dcf-roic-wacc-同业-敏感度">8. 估值: DCF /
+Reverse DCF / ROIC-WACC / 同业 / 敏感度</h2>
+<ul>
+<li><p>DCF Base: EV 33.6 bn USD；终值占比 58.9%。</p></li>
+<li><p><strong>Reverse DCF 反向DCF</strong>:
+在Base利润率与WACC下，现价隐含Y1收入增速 ≈
+<strong>54.1%</strong>；一致预期FY+1增速 38.8%。</p></li>
+<li><p>WACC (CAPM) = rf 5.2% + β 1.60 × ERP 5.0% = 13.2%。</p></li>
+<li><p>SOTP segments 分部: Datacom transceivers 数通光模块; Telecom
+电信; Industrial lasers &amp; materials (SiC) 工业激光与材料.
+<strong>Status: framework only</strong> — segment revenues are INPUT
+REQUIRED from the latest 10-K/10-Q segment note (not auto-fed, left
+blank to avoid
+fabrication)｜分部收入需按最新财报手动录入，未自动填充以避免编造。</p></li>
+<li><p>同业比较 Comps (DATA): | Ticker | 市值 | EV/Sales | Fwd P/E |
+收入增速 | 毛利率 | FCF收益率 | |—|—|—|—|—|—|—| | COHR | 57.1 bn USD |
+8.2x | 20.6x | 33.7% | 37.5% | -1.8% | | LITE | 89.5 bn USD | 29.1x |
+27.5x | 109.3% | 44.2% | 0.3% | | CIEN | 56.8 bn USD | 9.5x | 33.9x |
+37.0% | 44.1% | 1.1% | | FN | 15.3 bn USD | 3.1x | 19.6x | 44.6% | 12.0%
+| -0.4% | | AAOI | 8.3 bn USD | 13.5x | 21.2x | 86.4% | 28.9% | -10.7%
+|</p></li>
+<li><p>敏感度: 见Excel <code>Sensitivity</code> 表 (WACC ×
+永续增长率)。</p></li>
+</ul>
+<h2 id="风险反方论证与证伪">9. 风险、反方论证与证伪</h2>
+<ul>
+<li>反方观点 Counter-thesis: Chinese module price competition;
+industrial weakness; debt｜中国模块价格战；工业疲弱；负债</li>
+<li>证伪指标: Datacom growth below peers; GM
+stalls｜数通增速落后同业；毛利停滞</li>
+<li>模型风险:
+长期利润率与WACC为假设；终值占比高时估值对假设极敏感。</li>
+</ul>
+<h2 id="source-ledger-来源账本">10. Source Ledger 来源账本</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+<th>Source/time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Price 股价</td>
+<td>290</td>
+<td>Yahoo Finance quote, fetched 2026-10-14T07:58 SGT</td>
+</tr>
+<tr>
+<td>Market cap 市值</td>
+<td>5.711e+10</td>
+<td>Yahoo info.marketCap 2026-10-14T07:58</td>
+</tr>
+<tr>
+<td>Cash 现金</td>
+<td>1.99e+09</td>
+<td>Yahoo info.totalCash (latest filing) 2026-10-14T07:58</td>
+</tr>
+<tr>
+<td>Debt 负债</td>
+<td>3.553e+09</td>
+<td>Yahoo info.totalDebt (latest filing) 2026-10-14T07:58</td>
+</tr>
+<tr>
+<td>Revenue TTM 收入</td>
+<td>7.118e+09</td>
+<td>Yahoo info.totalRevenue (TTM, USD) 2026-10-14T07:58</td>
+</tr>
+<tr>
+<td>FCF TTM 自由现金流</td>
+<td>-1.031e+09</td>
+<td>Sum of last 4 quarterly FCF (q_cash); quarters [‘2026-06-30’,
+‘2026-03-31’, ‘2025-12-31’, ‘2025-09-30’] (USD)</td>
+</tr>
+<tr>
+<td>Beta</td>
+<td>2.113</td>
+<td>Yahoo info.beta (5Y monthly)</td>
+</tr>
+<tr>
+<td>Risk-free 10Y 无风险利率</td>
+<td>0.0524</td>
+<td>FRED DGS10 2026-10-09</td>
+</tr>
+<tr>
+<td>FX USD per USD</td>
+<td>1</td>
+<td>n/a (USD)</td>
+</tr>
+<tr>
+<td>Consensus rev growth FY0</td>
+<td>0.4933</td>
+<td>Yahoo revenue_estimate 0y</td>
+</tr>
+<tr>
+<td>Consensus rev growth FY+1</td>
+<td>0.3884</td>
+<td>Yahoo revenue_estimate +1y</td>
+</tr>
+</tbody>
+</table>
+<h2 id="assumption-register-假设登记表">11. Assumption Register
+假设登记表</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Assumption</th>
+<th>Value</th>
+<th>Rationale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ERP 股权风险溢价</td>
+<td>0.05</td>
+<td>ASSUMPTION: 5.0% house mature-market ERP</td>
+</tr>
+<tr>
+<td>Beta clamp</td>
+<td>[0.8,1.6] → 1.60</td>
+<td>ASSUMPTION: limit extreme betas</td>
+</tr>
+<tr>
+<td>Tax rate (ROIC)</td>
+<td>0.18</td>
+<td>ASSUMPTION: blended cash tax 18%</td>
+</tr>
+<tr>
+<td>Year-1 growth (Base)</td>
+<td>0.3884</td>
+<td>Consensus FY+1 revenue growth (Yahoo revenue_estimate ‘+1y’); capped
+at 100%</td>
+</tr>
+<tr>
+<td>Growth fade</td>
+<td>linear Y1→terminal by Y10</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>Starting FCF margin</td>
+<td>-0.1448</td>
+<td>DATA: FCF TTM / Revenue TTM, floored -50%</td>
+</tr>
+<tr>
+<td>Long-run FCF margin (Base)</td>
+<td>0.15</td>
+<td>ASSUMPTION (analyst framework, reached by Y5; see profile)</td>
+</tr>
+<tr>
+<td>Bear/Bull Y1 growth multiplier</td>
+<td>0.5x / 1.3x</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>Bear/Bull margin multiplier</td>
+<td>0.8x / 1.15x</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>WACC adj Bear/Bull</td>
+<td>+1.0pp / -0.5pp</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>Terminal g Bear/Base/Bull</td>
+<td>2.5% / 3.0% / 3.5%</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>Scenario probabilities</td>
+<td>25% / 50% / 25%</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>Horizon exit EV/NTM-FCF Bear/Base/Bull</td>
+<td>15x / 25x / 35x</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>Per-share conversion</td>
+<td>value × fx ÷ market cap × price</td>
+<td>METHOD: avoids ADR/share-class mismatch</td>
+</tr>
+</tbody>
+</table>
+<h2 id="model-provenance-模型溯源">12. Model Provenance 模型溯源</h2>
+<ul>
+<li>Model file: <code>COHR_model_v20261014-0758.xlsx</code> (live
+formulas; sheets
+Inputs→Scenarios→DCF→ReverseDCF→Sensitivity→Horizons→SOTP→Comps→ROIC_WACC→History→Sources→Assumptions)</li>
+<li>Engine: <code>production/pipeline/model.py</code> (Python mirror;
+values in this report = Python mirror, verified against LibreOffice
+recalculation of the xlsx)</li>
+<li>Data snapshot: <code>data/snapshots/20261014-0758</code> (immutable)
+| Fetched 2026-10-14 07:58 SGT | Generated 2026-10-14 07:59 SGT</li>
+<li>Version: v20261014-0758. Prior versions are never overwritten (see
+company history page).</li>
+</ul>
+<h2 id="版本与事件时间轴">13. 版本与事件时间轴</h2>
+<ul>
+<li>v20261014-0758: 首版生产系统报告 (27家同步)。下一事件: 财报
+2026-11-05 (TENTATIVE)。</li>
+</ul>
+<h2 id="图片报告-image-report">图片报告 Image Report</h2>
+<figure>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261014-0758/COHR_v20261014-0758.zip" alt="1_price_vs_value" />
+<figcaption aria-hidden="true">1_price_vs_value</figcaption>
+</figure>
+<p><em>股价vs三情景价值 Price vs scenario values</em></p>
+<figure>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261014-0758/COHR_v20261014-0758.zip" alt="2_financials" />
+<figcaption aria-hidden="true">2_financials</figcaption>
+</figure>
+<p><em>季度财务 Quarterly financials</em></p>
+<figure>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261014-0758/COHR_v20261014-0758.zip" alt="3_scenarios" />
+<figcaption aria-hidden="true">3_scenarios</figcaption>
+</figure>
+<p><em>三情景 Scenarios</em></p>
+<figure>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261014-0758/COHR_v20261014-0758.zip" alt="4_horizons" />
+<figcaption aria-hidden="true">4_horizons</figcaption>
+</figure>
+<p><em>2/4/6/8季度检验 Horizon check</em></p>
+<figure>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261014-0758/COHR_v20261014-0758.zip" alt="5_logic_map" />
+<figcaption aria-hidden="true">5_logic_map</figcaption>
+</figure>
+<p><em>研究逻辑图 Logic map</em></p>
+<hr />
+<h1
+id="cohr-coherent-corp.-equity-deep-dive-professional-english-v20261014-0758">COHR
+Coherent Corp. — Equity Deep Dive (Professional English)
+v20261014-0758</h1>
+<blockquote>
+<p>Data as of 2026-10-14 07:58 SGT | Price $289.98 | Mkt cap 57.1 bn USD
+| Reporting currency USD | Not investment advice.</p>
+</blockquote>
+<h2 id="investment-thesis-hypothesis">1. Investment thesis
+(HYPOTHESIS)</h2>
+<p>Coherent is a vertically integrated transceiver + laser maker
+benefiting from 800G/1.6T and CPO; portfolio pruning and gross-margin
+expansion are the rerating keys. Note: latest FCF is negative (data
+period).</p>
+<ul>
+<li><strong>Bull drivers</strong>: 1.6T share gains; InP capacity
+doubles; GM &gt;40%｜1.6T份额提升；InP产能倍增；毛利率&gt;40%</li>
+<li><strong>Bear drivers</strong>: Chinese module price competition;
+industrial weakness; debt｜中国模块价格战；工业疲弱；负债</li>
+<li><strong>Falsifiers</strong>: Datacom growth below peers; GM
+stalls｜数通增速落后同业；毛利停滞</li>
+</ul>
+<h2 id="products-customers-revenue-model">2. Products, customers,
+revenue model</h2>
+<ul>
+<li>Theme: Optical transceivers / lasers / materials 光模块/激光/材料 |
+Segments: Datacom transceivers 数通光模块; Telecom 电信; Industrial
+lasers &amp; materials (SiC) 工业激光与材料</li>
+<li>Business description (DATA): Coherent Corp. develops, manufactures,
+and markets lasers, transceivers, other optical and optoelectronic
+devices, modules, and systems worldwide. Its products include critical
+components consisting of detectors, passive optics, thermal solutions,
+and PICS; silicon photonics and other advanced optical technologies; and
+coherent transmission components, transport products, optical
+amplifiers, passive optical components, optical line systems, and
+multi-rail platform. The company’s Datacenter and Communications segment
+offers transceivers, co-packaged optics, and optical circuit switches,
+as well as other systems, such as subsystems, modules, and semiconductor
+devices for datacenter and communications applications; and VCSELS,
+EELS, pump lasers, and other components, optics, and ICs for datacenter
+and communication applications. Its Industrial segment offers excimer
+lasers, solid-state lase</li>
+<li>Customers: NVDA, hyperscalers, telecom OEMs, industrial
+users｜NVDA、云厂、电信设备商、工业客户</li>
+</ul>
+<h2
+id="industry-competition-regulation-supply-chain-analyst-framework">3.
+Industry, competition, regulation, supply chain (ANALYST FRAMEWORK)</h2>
+<ul>
+<li>Suppliers: InP/GaAs epi (in-house), DSPs
+(MRVL/AVGO)｜自有磷化铟/砷化镓外延、DSP(MRVL/AVGO)</li>
+<li>Competitors: Innolight, Eoptolink, Lumentum, Fabrinet-built
+modules｜中际旭创、新易盛、Lumentum</li>
+<li>Bottlenecks/regulation: 6-inch InP capacity, DSP supply, 1.6T
+ramp｜6寸InP产能、DSP供应、1.6T爬坡</li>
+<li>KPIs: Datacom revenue, GM%, InP capacity, net
+debt｜数通收入、毛利率、InP产能、净负债</li>
+<li>Component spot/contract prices: paid feeds not connected —
+<strong>UNAVAILABLE</strong>, tracked qualitatively.</li>
+</ul>
+<h2 id="historical-financials-cash-flow-confirmed-quarterly-usd">4.
+Historical financials &amp; cash flow (CONFIRMED, quarterly, USD)</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Quarter</th>
+<th>Revenue</th>
+<th>Gross profit</th>
+<th>Op income</th>
+<th>Net income</th>
+<th>FCF</th>
+<th>Op margin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-06-30</td>
+<td>2.0 bn USD</td>
+<td>0.8 bn USD</td>
+<td>0.3 bn USD</td>
+<td>0.2 bn USD</td>
+<td>-0.5 bn USD</td>
+<td>14.9%</td>
+</tr>
+<tr>
+<td>2026-03-31</td>
+<td>1.8 bn USD</td>
+<td>0.7 bn USD</td>
+<td>0.2 bn USD</td>
+<td>0.2 bn USD</td>
+<td>-0.4 bn USD</td>
+<td>12.5%</td>
+</tr>
+<tr>
+<td>2025-12-31</td>
+<td>1.7 bn USD</td>
+<td>0.6 bn USD</td>
+<td>0.2 bn USD</td>
+<td>0.1 bn USD</td>
+<td>-95.7 mn USD</td>
+<td>11.8%</td>
+</tr>
+<tr>
+<td>2025-09-30</td>
+<td>1.6 bn USD</td>
+<td>0.6 bn USD</td>
+<td>0.2 bn USD</td>
+<td>0.2 bn USD</td>
+<td>-58.0 mn USD</td>
+<td>10.9%</td>
+</tr>
+<tr>
+<td>2025-06-30</td>
+<td>1.5 bn USD</td>
+<td>0.5 bn USD</td>
+<td>0.1 bn USD</td>
+<td>-95.6 mn USD</td>
+<td>-1.1 mn USD</td>
+<td>9.5%</td>
+</tr>
+<tr>
+<td>2025-03-31</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<p>Cash 2.0 bn USD; debt 3.6 bn USD; TTM FCF -1.0 bn USD (FCF margin
+-14.5%).</p>
+<h2 id="latest-earnings-actual-vs-consensus-vs-guidance">5. Latest
+earnings: actual vs consensus vs guidance</h2>
+<table>
+<thead>
+<tr>
+<th>Quarter</th>
+<th>EPS actual</th>
+<th>EPS consensus</th>
+<th>Surprise</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-09-30</td>
+<td>1.16</td>
+<td>1.04249</td>
+<td>0.11270001</td>
+</tr>
+<tr>
+<td>2025-12-31</td>
+<td>1.29</td>
+<td>1.20766</td>
+<td>0.0682</td>
+</tr>
+<tr>
+<td>2026-03-31</td>
+<td>1.41</td>
+<td>1.39433</td>
+<td>0.0112</td>
+</tr>
+<tr>
+<td>2026-06-30</td>
+<td>1.74</td>
+<td>1.61709</td>
+<td>0.076</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Management guidance: not in automated feed — <strong>UNAVAILABLE (to
+be entered from IR release)</strong>.</li>
+<li>Next earnings (Yahoo; TENTATIVE until company-confirmed):
+<strong>2026-11-05</strong>; current-quarter EPS consensus 1.96331 (20
+analysts); revenue consensus 2.3 bn USD.</li>
+</ul>
+<h2 id="quarter-drivers-price-reasonableness">6. 2/4/6/8-quarter drivers
+&amp; price reasonableness</h2>
+<table>
+<thead>
+<tr>
+<th>Horizon</th>
+<th>Scenario</th>
+<th>PV of horizon price</th>
+<th>vs current</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2Q</td>
+<td>Bear</td>
+<td>$-50.68</td>
+<td>-117.5%</td>
+</tr>
+<tr>
+<td>2Q</td>
+<td>Base</td>
+<td>$-85.73</td>
+<td>-129.6%</td>
+</tr>
+<tr>
+<td>2Q</td>
+<td>Bull</td>
+<td>$-116.57</td>
+<td>-140.2%</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>Bear</td>
+<td>$-33.25</td>
+<td>-111.5%</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>Base</td>
+<td>$-48.34</td>
+<td>-116.7%</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>Bull</td>
+<td>$-52.45</td>
+<td>-118.1%</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>Bear</td>
+<td>$-15.07</td>
+<td>-105.2%</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>Base</td>
+<td>$-2.14</td>
+<td>-100.7%</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>Bull</td>
+<td>$34.07</td>
+<td>-88.3%</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>Bear</td>
+<td>$3.89</td>
+<td>-98.7%</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>Base</td>
+<td>$54.33</td>
+<td>-81.3%</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>Bull</td>
+<td>$148.41</td>
+<td>-48.8%</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Current-price implied EV/NTM-FCF on Base path:</th>
+<th>Horizon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2Q</td>
+<td>n/m (neg FCF)</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>n/m (neg FCF)</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>1390.3x</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>96.0x</td>
+</tr>
+</tbody>
+</table>
+<h2 id="bear-base-bull-hypothesis">7. Bear / Base / Bull
+(HYPOTHESIS)</h2>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Y1 growth</th>
+<th>LR FCF margin</th>
+<th>WACC</th>
+<th>Terminal g</th>
+<th>Prob.</th>
+<th>Value/share</th>
+<th>vs price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bear</td>
+<td>19.4%</td>
+<td>12.0%</td>
+<td>14.2%</td>
+<td>2.5%</td>
+<td>25.0%</td>
+<td>$42.16</td>
+<td>-85.5%</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>38.8%</td>
+<td>15.0%</td>
+<td>13.2%</td>
+<td>3.0%</td>
+<td>50.0%</td>
+<td>$162.78</td>
+<td>-43.9%</td>
+</tr>
+<tr>
+<td>Bull</td>
+<td>50.5%</td>
+<td>17.2%</td>
+<td>12.7%</td>
+<td>3.5%</td>
+<td>25.0%</td>
+<td>$336.10</td>
+<td>15.9%</td>
+</tr>
+</tbody>
+</table>
+<p>Probability-weighted value <strong>$175.95</strong> (-39.3% vs
+price).</p>
+<h2 id="valuation-dcf-reverse-dcf-roic-wacc-comps-sensitivity">8.
+Valuation: DCF / Reverse DCF / ROIC-WACC / comps / sensitivity</h2>
+<ul>
+<li>Base DCF EV 33.6 bn USD; terminal share 58.9%.</li>
+<li><strong>Reverse DCF</strong>: at Base margin/WACC the price implies
+Y1 revenue growth ≈ <strong>54.1%</strong> vs consensus FY+1 38.8%.</li>
+<li>WACC (CAPM) = rf 5.2% + β 1.60 × ERP 5.0% = 13.2%.</li>
+<li>SOTP segments: Datacom transceivers 数通光模块; Telecom 电信;
+Industrial lasers &amp; materials (SiC) 工业激光与材料 — framework only;
+segment revenue inputs pending from filings.</li>
+<li>Comps (DATA): see table in Chinese section / Excel
+<code>Comps</code>.</li>
+<li>Sensitivity: Excel <code>Sensitivity</code> (WACC × terminal
+g).</li>
+</ul>
+<h2 id="risks-counterarguments-falsifiers">9. Risks, counterarguments,
+falsifiers</h2>
+<p>Chinese module price competition; industrial weakness;
+debt｜中国模块价格战；工业疲弱；负债 | Falsifiers: Datacom growth below
+peers; GM stalls｜数通增速落后同业；毛利停滞</p>
+<h2 id="source-ledger-assumption-register-model-provenance">10–12.
+Source Ledger / Assumption Register / Model Provenance</h2>
+<p>See tables above (shared, bilingual). - Model file:
+<code>COHR_model_v20261014-0758.xlsx</code> (live formulas; sheets
+Inputs→Scenarios→DCF→ReverseDCF→Sensitivity→Horizons→SOTP→Comps→ROIC_WACC→History→Sources→Assumptions)
+- Engine: <code>production/pipeline/model.py</code> (Python mirror;
+values in this report = Python mirror, verified against LibreOffice
+recalculation of the xlsx) - Data snapshot:
+<code>data/snapshots/20261014-0758</code> (immutable) | Fetched
+2026-10-14 07:58 SGT | Generated 2026-10-14 07:59 SGT - Version:
+v20261014-0758. Prior versions are never overwritten (see company
+history page).</p>
+</body>
+</html>

@@ -1,0 +1,59 @@
+{
+ "event": "US PPI Sep 2026",
+ "release_et": "2026-10-15 08:30 ET",
+ "release_sgt": "2026-10-15 20:30 SGT",
+ "status": "CONFIRMED",
+ "status_source": "bls.gov/schedule/news_release/ppi.htm",
+ "snapshot_locked": "2026-10-14T18:06:36.909092+08:00",
+ "version": "v20261014-1806",
+ "consensus": {
+  "final_demand_mom": 0.5,
+  "final_demand_yoy": 5.3,
+  "source": "Helious 2026-10-14",
+  "class": "MARKET EXP",
+  "prior_aug_mom": 0.4,
+  "prior_aug_yoy": 5.41,
+  "fred_ppifis_aug": 157.411,
+  "continuum_analyst_not_consensus": {
+   "headline_mom": 0.6,
+   "core_mom": 0.3,
+   "date": "2026-10-01"
+  }
+ },
+ "os_hypothesis": {
+  "final_demand_mom": 0.5,
+  "final_demand_yoy": 5.3,
+  "probs": {
+   "cool": 0.25,
+   "inline": 0.5,
+   "hot": 0.25
+  },
+  "note": "Near consensus; no strong independent model — explicit uncertainty"
+ },
+ "scenarios": {
+  "cool": {
+   "mom_max": 0.2,
+   "yoy_max": 5.0
+  },
+  "inline": {
+   "mom": [
+    0.3,
+    0.6
+   ],
+   "yoy": [
+    5.1,
+    5.5
+   ]
+  },
+  "hot": {
+   "mom_min": 0.7,
+   "yoy_min": 5.6
+  }
+ },
+ "cpi_link": {
+  "slug": "us-cpi-2026-09",
+  "version": "v20261013-1803",
+  "rewrite": false
+ },
+ "outdir": "/home/box/investment/production/site/research/events/us-ppi-2026-09/v20261014-1806"
+}

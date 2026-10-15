@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title> </title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<style>body{font-family:'Noto Sans CJK SC','Noto Sans',sans-serif;max-width:1100px;margin:auto;padding:24px;line-height:1.6;color:#1b1b1b}table{border-collapse:collapse;font-size:13px;margin:8px 0}td,th{border:1px solid #ccd;padding:4px 8px}th{background:#1F3A5F;color:#fff}img{max-width:100%;border:1px solid #ddd}h1{color:#1F3A5F}h2{border-bottom:2px solid #1F3A5F}abbr{text-decoration:underline dotted #2E86C1;cursor:help}.box30{background:linear-gradient(135deg,#eaf2ff,#f5ecff);border:2px solid #5b8cff;border-radius:14px;padding:6px 18px;margin:14px 0;font-size:16px}.readmap{background:#f6f8fb;border:1px solid #d5dbe6;border-radius:12px;padding:4px 16px;margin:12px 0}.howto{background:#fff8e6;border-left:5px solid #f59e0b;border-radius:8px;padding:2px 14px;margin:6px 0 22px}.quiz{background:#effaf3;border:1px solid #9bd8b1;border-radius:12px;padding:4px 16px}details{margin:8px 0}details.l3{background:#f7f7f9;border:1px dashed #b8c0cc;border-radius:10px;padding:6px 14px}summary{cursor:pointer;font-weight:600;color:#1F3A5F}body{font-size:15.5px}blockquote{background:#f3f6fa;border-left:4px solid #2E86C1;margin:0;padding:6px 12px}</style></head>
+<body><div style="background:#fff7ed;border:1px solid #fdba74;padding:8px 12px;margin:8px 0;font-size:13px">历史版本：PDF/Word/图片已归档至 GitHub Release（下载：<a href="https://github.com/PSS917/research-os/releases/download/archive-v20261014-0758/daily_v20261014-0758.zip">ZIP</a>）。Archived version — heavy files live in Release assets.</div>
+<header id="title-block-header">
+<h1 class="title"> </h1>
+</header>
+<h1 id="每日总览-daily-os-overview-2026-10-14-v20261014-0758">每日总览
+Daily OS Overview — 2026-10-14 (v20261014-0758)</h1>
+<blockquote>
+<p>非投资建议。所有数字带来源；推断已标注。</p>
+</blockquote>
+<div class="box30">
+<p><strong>⏱ 30秒看懂</strong></p>
+<ol type="1">
+<li><strong>发生什么：</strong>今天美国通胀(核心PCE同比
+3.0%)仍高于2%目标，套息压力为 CALM，亚洲最强题材是 KR Battery
+电池。</li>
+<li><strong>和我的股票有什么关系：</strong>通胀和利率决定高估值成长股的「折现率」；题材强弱告诉你资金正在流向哪条产业链。</li>
+<li><strong>该看什么/做什么：</strong>接下来最重要的事件：2026-10-14 US
+CPI (Sep 2026)｜美国CPI——事件前请读对应的发布前教学版。</li>
+</ol>
+</div>
+<div class="readmap">
+<p><strong>🗺 阅读地图</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>你有多少时间</th>
+<th>读哪里</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2 分钟</td>
+<td>只读「30秒看懂」。</td>
+</tr>
+<tr>
+<td>10 分钟</td>
+<td>加读 A 今日要点和 D
+估值快照表（看「价格隐含增速」vs「一致预期」）。</td>
+</tr>
+<tr>
+<td>30 分钟</td>
+<td>全部，并点进宏观/雷达专题与事件书。</td>
+</tr>
+</tbody>
+</table>
+<p>层级说明：<strong>L1 故事</strong>（人人能懂）→ <strong>L2
+关键数字</strong>（带解释）→ <strong>L3
+专业细节</strong>（网页可折叠，默认收起）。</p>
+</div>
+<p><strong>🧠 今日思考题（反向思考）：</strong>今天最强的题材是 KR
+Battery
+电池。如果它明天反转，最可能的原因是什么？你会先看哪个数据？（方法见
+Academy「投研思维方法」）</p>
+<h2 id="a.-今日要点-headlines-inference">A. 今日要点 Headlines
+(INFERENCE)</h2>
+<ol type="1">
+<li>宏观: 核心PCE同比 +3.0%；套息压力 CALM；VIX 15.3。</li>
+<li>题材最强: KR Battery 电池, JP Test 测试, JP Power Grid 电网；最弱:
+KR Memory 存储, KR Defense/Space 国防航天, JP Memory 存储。</li>
+<li>未来7天: 2026-10-14 US CPI (Sep 2026)｜美国CPI; 2026-10-15 US PPI
+(Sep 2026)｜美国PPI; 2026-10-15 TSM earnings + call｜财报与电话会;
+2026-10-16 US Import/Export Prices (Sep)。</li>
+</ol>
+<h2
+id="b.-宏观利率汇率流动性-见-macro-专题-researchmacrov20261014-0758">B.
+宏观/利率/汇率/流动性 → 见 Macro 专题
+(research/macro/v20261014-0758)</h2>
+<h2 id="c.-台日韩雷达-见-radar-researchradarv20261014-0758">C.
+台日韩雷达 → 见 Radar (research/radar/v20261014-0758)</h2>
+<h2 id="d.-观察名单-27家-估值快照">D. 观察名单 27家 估值快照</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Ticker</th>
+<th>价格</th>
+<th>1D</th>
+<th>Bear/Base/Bull</th>
+<th>价格隐含Y1增速</th>
+<th>一致预期FY+1</th>
+<th>下次财报</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AAPL</td>
+<td>$341.27</td>
+<td>+0.1%</td>
+<td>$87/$153/$225</td>
+<td>+31.5%</td>
+<td>+10.5%</td>
+<td>2026-11-03</td>
+</tr>
+<tr>
+<td>AMAT</td>
+<td>$464.24</td>
+<td>-6.7%</td>
+<td>$120/$315/$578</td>
+<td>+46.4%</td>
+<td>+35.2%</td>
+<td>2026-11-13</td>
+</tr>
+<tr>
+<td>AMD</td>
+<td>$605.53</td>
+<td>+1.9%</td>
+<td>$159/$749/$1,865</td>
+<td>+67.7%</td>
+<td>+74.6%</td>
+<td>2026-11-04</td>
+</tr>
+<tr>
+<td>ARM</td>
+<td>$255.39</td>
+<td>+0.1%</td>
+<td>$27/$67/$122</td>
+<td>+78.2%</td>
+<td>+36.2%</td>
+<td>2026-11-05</td>
+</tr>
+<tr>
+<td>AVGO</td>
+<td>$357.31</td>
+<td>+0.7%</td>
+<td>$179/$772/$1,821</td>
+<td>+41.2%</td>
+<td>+64.1%</td>
+<td>2026-12-10</td>
+</tr>
+<tr>
+<td>CCL</td>
+<td>$26.73</td>
+<td>+0.9%</td>
+<td>$-3/$3/$9</td>
+<td>+23.1%</td>
+<td>+3.1%</td>
+<td>2026-12-18</td>
+</tr>
+<tr>
+<td>CIEN</td>
+<td>$400.40</td>
+<td>-1.1%</td>
+<td>$80/$210/$383</td>
+<td>+48.8%</td>
+<td>+30.8%</td>
+<td>2026-09-03</td>
+</tr>
+<tr>
+<td>COHR</td>
+<td>$289.98</td>
+<td>+0.7%</td>
+<td>$42/$163/$336</td>
+<td>+54.1%</td>
+<td>+38.8%</td>
+<td>2026-11-05</td>
+</tr>
+<tr>
+<td>CRWD</td>
+<td>$261.21</td>
+<td>-0.7%</td>
+<td>$24/$49/$79</td>
+<td>+73.6%</td>
+<td>+22.6%</td>
+<td>2026-12-02</td>
+</tr>
+<tr>
+<td>CRWV</td>
+<td>$77.81</td>
+<td>-3.1%</td>
+<td>$-22/$495/$1,730</td>
+<td>+61.3%</td>
+<td>+100.0%</td>
+<td>2026-11-12</td>
+</tr>
+<tr>
+<td>EME</td>
+<td>$776.05</td>
+<td>-0.4%</td>
+<td>$269/$467/$680</td>
+<td>+24.4%</td>
+<td>+10.9%</td>
+<td>2026-10-29</td>
+</tr>
+<tr>
+<td>GLW</td>
+<td>$148.54</td>
+<td>+0.9%</td>
+<td>$27/$66/$113</td>
+<td>+40.0%</td>
+<td>+19.6%</td>
+<td>2026-10-27</td>
+</tr>
+<tr>
+<td>INTC</td>
+<td>$102.81</td>
+<td>+1.4%</td>
+<td>$5/$12/$20</td>
+<td>+69.5%</td>
+<td>+14.9%</td>
+<td>2026-10-30</td>
+</tr>
+<tr>
+<td>KLAC</td>
+<td>$184.00</td>
+<td>-3.2%</td>
+<td>$30/$61/$96</td>
+<td>+49.9%</td>
+<td>+18.9%</td>
+<td>2026-10-29</td>
+</tr>
+<tr>
+<td>LITE</td>
+<td>$987.99</td>
+<td>-0.7%</td>
+<td>$156/$573/$1,266</td>
+<td>+73.7%</td>
+<td>+56.4%</td>
+<td>2026-11-06</td>
+</tr>
+<tr>
+<td>MRVL</td>
+<td>$268.73</td>
+<td>+1.1%</td>
+<td>$60/$255/$595</td>
+<td>+64.7%</td>
+<td>+63.1%</td>
+<td>2026-12-02</td>
+</tr>
+<tr>
+<td>MU</td>
+<td>$953.19</td>
+<td>-3.6%</td>
+<td>$326/$584/$863</td>
+<td>+29.6%</td>
+<td>+15.7%</td>
+<td>2026-12-24</td>
+</tr>
+<tr>
+<td>MXL</td>
+<td>$88.64</td>
+<td>-0.4%</td>
+<td>$8/$22/$41</td>
+<td>+68.9%</td>
+<td>+29.9%</td>
+<td>2026-10-23</td>
+</tr>
+<tr>
+<td>NVDA</td>
+<td>$228.52</td>
+<td>+1.0%</td>
+<td>$126/$548/$1,308</td>
+<td>+41.3%</td>
+<td>+68.2%</td>
+<td>2026-11-18</td>
+</tr>
+<tr>
+<td>PLTR</td>
+<td>$208.67</td>
+<td>-0.2%</td>
+<td>$23/$67/$136</td>
+<td>+88.0%</td>
+<td>+50.1%</td>
+<td>2026-11-03</td>
+</tr>
+<tr>
+<td>PWR</td>
+<td>$688.88</td>
+<td>-0.9%</td>
+<td>$101/$225/$363</td>
+<td>+43.9%</td>
+<td>+15.8%</td>
+<td>2026-10-29</td>
+</tr>
+<tr>
+<td>QCOM</td>
+<td>$176.86</td>
+<td>+1.4%</td>
+<td>$68/$104/$137</td>
+<td>+18.3%</td>
+<td>+4.8%</td>
+<td>2026-11-05</td>
+</tr>
+<tr>
+<td>RKLB</td>
+<td>$64.22</td>
+<td>-2.3%</td>
+<td>$4/$8/$15</td>
+<td>+114.4%</td>
+<td>+41.3%</td>
+<td>2026-11-10</td>
+</tr>
+<tr>
+<td>SIMO</td>
+<td>$246.63</td>
+<td>-0.1%</td>
+<td>$59/$161/$294</td>
+<td>+40.9%</td>
+<td>+29.6%</td>
+<td>2026-10-29</td>
+</tr>
+<tr>
+<td>SPCX</td>
+<td>$156.54</td>
+<td>-4.2%</td>
+<td>$20/$131/$394</td>
+<td>+106.4%</td>
+<td>+100.0%</td>
+<td>2026-11-04</td>
+</tr>
+<tr>
+<td>TSLA</td>
+<td>$375.23</td>
+<td>-0.7%</td>
+<td>$27/$44/$62</td>
+<td>+80.8%</td>
+<td>+13.6%</td>
+<td>2026-10-22</td>
+</tr>
+<tr>
+<td>TSM</td>
+<td>$445.12</td>
+<td>+0.2%</td>
+<td>$134/$350/$654</td>
+<td>+43.0%</td>
+<td>+35.9%</td>
+<td>2026-10-15</td>
+</tr>
+</tbody>
+</table>
+<h2 id="e.-事件生命周期状态">E. 事件生命周期状态</h2>
+<ul>
+<li>US CPI 10/14: <strong>Pre-release book ready</strong>
+(events/v20261014-0758)；发布时/发布后部分待事件发生后生成。 ## F.
+今日教学 Teaching corner “价格隐含增速 &gt; 一致预期” =
+市场比分析师更乐观 → 需要超预期才能维持股价。English: price-implied
+growth above consensus means the stock needs beats to hold.</li>
+</ul>
+<figure>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261014-0758/daily_v20261014-0758.zip" alt="movers" />
+<figcaption aria-hidden="true">movers</figcaption>
+</figure>
+<figure>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261014-0758/daily_v20261014-0758.zip" alt="valuation" />
+<figcaption aria-hidden="true">valuation</figcaption>
+</figure>
+</body>
+</html>

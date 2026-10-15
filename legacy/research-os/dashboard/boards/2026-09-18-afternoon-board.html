@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research OS Daily Board｜2026-09-18 Afternoon / 午后</title>
+<style>
+  :root {
+    --bg-deep:#0a0e17; --bg-card:#151d2e; --border:#243049;
+    --accent:#3b82f6; --cyan:#22d3ee; --green:#34d399; --red:#f87171;
+    --amber:#fbbf24; --purple:#a78bfa; --text:#e8edf5; --text-sec:#94a3b8; --text-muted:#64748b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Segoe UI","PingFang SC","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;background:var(--bg-deep);color:var(--text);line-height:1.45;
+    background-image:radial-gradient(ellipse 80% 50% at 50% -20%,rgba(59,130,246,.08),transparent)}
+  .board{max-width:1400px;margin:0 auto;padding:20px 24px 28px;display:flex;flex-direction:column;gap:14px}
+  .header,.card{background:linear-gradient(135deg,var(--bg-card),#121a2c);border:1px solid var(--border);border-radius:12px;padding:16px 18px;position:relative}
+  .header::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--cyan),var(--purple))}
+  .brand{font-size:1.25rem;font-weight:700;background:linear-gradient(90deg,#e8edf5,var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+  .sub{font-size:.78rem;color:var(--text-muted);margin-top:4px}
+  .mood{margin-top:10px;font-size:.95rem;color:var(--amber)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+  h2{font-size:.85rem;letter-spacing:.04em;color:var(--cyan);text-transform:uppercase;margin-bottom:10px}
+  table{width:100%;border-collapse:collapse;font-size:.82rem}
+  th,td{padding:6px 8px;border-bottom:1px solid #1c2740;text-align:left}
+  th{color:var(--text-muted);font-weight:600}
+  .up{color:var(--green)} .down{color:var(--red)} .flat{color:var(--text-sec)}
+  .tag{display:inline-block;font-size:.65rem;padding:2px 6px;border-radius:4px;margin-left:6px;border:1px solid var(--border);color:var(--text-muted)}
+  .tag.confirmed{color:var(--green);border-color:rgba(52,211,153,.35)}
+  .tag.tentative{color:var(--amber);border-color:rgba(251,191,36,.35)}
+  .tag.rumor{color:var(--red);border-color:rgba(248,113,113,.35)}
+  .caption{margin-top:10px;font-size:.78rem;color:var(--text-sec)}
+  .claim{font-size:.7rem;color:var(--text-muted);margin-top:6px}
+  ul{padding-left:18px;font-size:.85rem;color:var(--text-sec)}
+  li{margin:4px 0}
+  .mermaid-box{background:#0c1220;border:1px solid #1c2740;border-radius:8px;padding:12px;font-family:ui-monospace,monospace;font-size:.72rem;white-space:pre-wrap;color:#cbd5e1;overflow:auto}
+  .footer{font-size:.7rem;color:var(--text-muted);text-align:center;padding:8px}
+  .warn{color:var(--amber);font-weight:600}
+</style>
+</head>
+<body>
+<div class="board">
+  <header class="header">
+    <div>
+      <div class="brand">Research OS Daily Board｜AI Factory</div>
+      <div class="sub">2026-09-18 · Afternoon / 午后 · As-of ~17:45 MYT (Asia/Kuala_Lumpur)</div>
+      <div class="mood">BOJ hiked +25bp to ~1.25% (7–2) CONFIRMED · JPY sold (USD/JPY ~157.97) · Asia tech bid · oil &lt;$100 · US futures extend into pre-open<br/>日银加息至约1.25%（7–2）已确认 · 日元走弱 · 亚洲科技偏多 · 油价跌破100 · 美股期货延伸迎盘前</div>
+    </div>
+    <div class="sub" style="text-align:right">Sources: boj.or.jp PDF k260918a, Yahoo ~17:40 MYT, Reuters Ueda/FX<br/>No invented prices · SPCX = Nasdaq-listed SpaceX<br/><span class="warn">Session stage: Fri Asia close / BOJ POST-ACTUAL / US pre-open</span></div>
+  </header>
+
+  <section class="card">
+    <h2>Index Strip / 指数条 · US last cash = Thu · Futures = Fri Globex · Asia = Fri close</h2>
+    <table>
+      <tr><th>Asset</th><th>Last</th><th>1D% / note</th><th>Session label</th></tr>
+      <tr><td>Dow (Thu)</td><td>51,778.04</td><td class="up">+0.614%</td><td>Thu close</td></tr>
+      <tr><td>S&amp;P 500 (Thu)</td><td>7,637.76</td><td class="up">+1.138%</td><td>Thu close</td></tr>
+      <tr><td>Nasdaq (Thu)</td><td>26,418.30</td><td class="up">+1.693%</td><td>Thu close</td></tr>
+      <tr><td>SOX (Thu)</td><td>11,599.49</td><td class="up">+3.142%</td><td>Thu close</td></tr>
+      <tr><td>QQQ (Thu)</td><td>716.92</td><td class="up">+1.731%</td><td>Thu close</td></tr>
+      <tr><td>VIX</td><td>15.23 Fri ind. / 15.44 Thu</td><td class="up">Fri ~−1.36% vs Thu</td><td>Soft until cash</td></tr>
+      <tr><td>ES futures</td><td>7,722.75</td><td class="up">+1.083% vs Thu bar</td><td>Fri Globex</td></tr>
+      <tr><td>NQ futures</td><td>29,868.5</td><td class="up">+1.432% vs Thu bar</td><td>Fri Globex</td></tr>
+      <tr><td>YM futures</td><td>52,283</td><td class="up">+0.919%</td><td>Fri Globex</td></tr>
+      <tr><td>RTY futures</td><td>2,898</td><td class="up">+0.768%</td><td>Fri Globex</td></tr>
+      <tr><td>Nikkei</td><td>65,018.95</td><td class="up">+1.376%</td><td><b>Fri close</b></td></tr>
+      <tr><td>KOSPI</td><td>6,894.23</td><td class="up">+2.663%</td><td><b>Fri close</b></td></tr>
+      <tr><td>Hang Seng</td><td>24,750.78</td><td class="up">+0.595%</td><td><b>Fri close</b></td></tr>
+      <tr><td>SSE</td><td>3,911.87</td><td class="up">+0.936%</td><td><b>Fri close</b></td></tr>
+      <tr><td>CSI 300</td><td>4,507.39</td><td class="up">+1.059%</td><td><b>Fri close</b></td></tr>
+      <tr><td>TWSE</td><td>47,180.75</td><td class="up">+1.929%</td><td><b>Fri close</b></td></tr>
+      <tr><td>FBM KLCI</td><td>1,665.56</td><td class="down">−0.548%</td><td><b>Fri close</b></td></tr>
+      <tr><td>DAX</td><td>25,595.42</td><td class="down">−0.472%</td><td>Fri Europe</td></tr>
+    </table>
+    <div class="claim">Claim: RELIABLE (Yahoo). US Fri cash not open at stamp (~21:30 MYT).</div>
+  </section>
+
+  <div class="grid">
+    <section class="card">
+      <h2>BOJ Print / 日银打印 <span class="tag confirmed">CONFIRMED</span></h2>
+      <table>
+        <tr><td>Policy rate</td><td>~1.25% (+25 bp from 1.0%)</td></tr>
+        <tr><td>Vote</td><td>7–2 (Asada, Sato dissent)</td></tr>
+        <tr><td>Deposit facility</td><td>1.25% from Sep 24</td></tr>
+        <tr><td>Basic loan rate</td><td>1.5% from Sep 24</td></tr>
+        <tr><td>Next MPM</td><td>Oct 29–30, 2026</td></tr>
+        <tr><td>USD/JPY</td><td>~157.97 (+1.25%) — JPY weak</td></tr>
+        <tr><td>Street size</td><td>HIT (was RUMOR/pricing)</td></tr>
+        <tr><td>Tone optics</td><td>“Dovish hike” — not hawkish surprise</td></tr>
+      </table>
+      <div class="claim">Primary: boj.or.jp k260918a PDF. FX: Yahoo. Ueda color: Reuters RELIABLE.</div>
+    </section>
+
+    <section class="card">
+      <h2>Rates / FX / Oil / VIX</h2>
+      <table>
+        <tr><td>10Y</td><td>4.947% Thu (below 5%) — Fri live N/A</td></tr>
+        <tr><td>5Y</td><td>4.801% Thu</td></tr>
+        <tr><td>30Y</td><td>5.296% Thu</td></tr>
+        <tr><td>2Y</td><td>~4.67% Sep 17 secondary — Fri exact N/A</td></tr>
+        <tr><td>20Y</td><td>N/A (unverified)</td></tr>
+        <tr><td>DXY</td><td>100.353 (+0.13%)</td></tr>
+        <tr><td>USD/JPY</td><td>157.97 — post-BOJ weak JPY</td></tr>
+        <tr><td>WTI</td><td>95.91 (−5.89%) — broke $100</td></tr>
+        <tr><td>Brent</td><td>98.62 (−5.92%)</td></tr>
+        <tr><td>Gold GC</td><td>4,428 (+0.64%)</td></tr>
+        <tr><td>Silver SI</td><td>67.715 (+3.43%)</td></tr>
+        <tr><td>VIX</td><td>15.23 Fri ind.</td></tr>
+      </table>
+      <div class="claim">Claim: RELIABLE Yahoo; yields Thu last; 20Y/exact 2Y Fri N/A.</div>
+    </section>
+
+    <section class="card">
+      <h2>Watchlist Movers (Thu cash)</h2>
+      <table>
+        <tr><th>Ticker</th><th>Last</th><th>1D%</th></tr>
+        <tr><td>UMC</td><td>24.47</td><td class="up">+8.61%</td></tr>
+        <tr><td>ARM</td><td>264.90</td><td class="up">+8.57%</td></tr>
+        <tr><td>INTC</td><td>108.80</td><td class="up">+7.67%</td></tr>
+        <tr><td>MU</td><td>977.50</td><td class="up">+5.50%</td></tr>
+        <tr><td>MRVL</td><td>240.76</td><td class="up">+4.81%</td></tr>
+        <tr><td>SPCX</td><td>154.81</td><td class="up">+2.61%</td></tr>
+        <tr><td>NVDA</td><td>219.34</td><td class="up">+2.54%</td></tr>
+        <tr><td>AVGO</td><td>347.30</td><td class="up">+2.29%</td></tr>
+        <tr><td>TSLA</td><td>366.20</td><td class="up">+2.27%</td></tr>
+        <tr><td>QCOM</td><td>188.71</td><td class="up">+2.09%</td></tr>
+        <tr><td>AAPL</td><td>337.00</td><td class="up">+1.38%</td></tr>
+        <tr><td>PLTR</td><td>176.24</td><td class="up">+1.09%</td></tr>
+        <tr><td>LITE</td><td>893.61</td><td class="down">−2.81%</td></tr>
+        <tr><td>CRWV</td><td>79.88</td><td class="down">−4.16%</td></tr>
+      </table>
+      <div class="claim">Thu US cash (Yahoo). Fri US premarket individual prints N/A at stamp.</div>
+    </section>
+  </div>
+
+  <section class="card">
+    <h2>Transmission (post-BOJ) / 传导（日银后）</h2>
+    <div class="mermaid-box">BOJ print HIT (1.25%, 7–2)
+  → guidance/split optics (“dovish hike”)
+  → JPY weaker (USD/JPY ~157.97)
+  → Asia tech Fri bid (Nikkei/KOSPI/TWSE/CSI300)
+  → US futures extend (ES/NQ green)
+  → ? US cash open ~21:30 MYT
+Parallel: Oil &lt;$100 eases inflation optics · Fed SEP 4.1/4.1 still binds WACC</div>
+    <div class="caption">Falsifier: cash fade · USD/JPY→160 scare · oil re-spike &gt;$105</div>
+  </section>
+
+  <div class="grid">
+    <section class="card">
+      <h2>Catalysts (7-day) / 七日催化</h2>
+      <ul>
+        <li><span class="tag confirmed">CONFIRMED</span> BOJ printed Sep 18 — done</li>
+        <li><span class="tag confirmed">CONFIRMED</span> AAPL retail day LIVE</li>
+        <li><span class="tag confirmed">CONFIRMED</span> US cash open ~21:30 MYT tonight</li>
+        <li><span class="tag tentative">TENTATIVE</span> Starship Flight 14 NET Mon Sep 28</li>
+        <li><span class="tag confirmed">CONFIRMED</span> MU FY2026 Q4 Wed Sep 30</li>
+        <li><span class="tag confirmed">CONFIRMED</span> TSLA AQ26002 response due ~Sep 30</li>
+        <li><span class="tag confirmed">CONFIRMED</span> Next BOJ MPM Oct 29–30</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>Board notes / 看板要点</h2>
+      <ul>
+        <li>Hike size HIT; JPY reaction opposite carry-unwind script</li>
+        <li>Asia tech risk-on into weekend; KLCI lag</li>
+        <li>CRWV convert $3B + ATM 35M overhang (Thu −4.16%)</li>
+        <li>Next primary veto = US cash open</li>
+        <li>Full report: reports/2026-09-18-1730-afternoon.md</li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="footer">Research OS · AI Factory Afternoon Board · 2026-09-18 ~17:45 MYT · Not investment advice · No invented prices</div>
+</div>
+</body>
+</html>

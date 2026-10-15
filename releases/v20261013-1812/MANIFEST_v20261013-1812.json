@@ -1,0 +1,2561 @@
+{
+ "release": "v20261013-1812",
+ "files": [
+  {
+   "path": "research/companies/TSLA/v20261013-1812/TSLA_model_v20261013-1812.xlsx",
+   "bytes": 35988
+  },
+  {
+   "path": "research/companies/TSLA/v20261013-1812/TSLA_report_v20261013-1812.md",
+   "bytes": 18186
+  },
+  {
+   "path": "research/companies/TSLA/v20261013-1812/TSLA_teaching_v20261013-1812.md",
+   "bytes": 4884
+  },
+  {
+   "path": "research/companies/TSLA/v20261013-1812/summary.json",
+   "bytes": 568
+  },
+  {
+   "path": "research/companies/TSLA/v20261013-1812/TSLA_report_v20261013-1812.html",
+   "bytes": 30614
+  },
+  {
+   "path": "research/companies/TSLA/v20261013-1812/TSLA_report_v20261013-1812.docx",
+   "bytes": 832242
+  },
+  {
+   "path": "research/companies/TSLA/v20261013-1812/TSLA_teaching_v20261013-1812.html",
+   "bytes": 9973
+  },
+  {
+   "path": "research/companies/TSLA/v20261013-1812/TSLA_teaching_v20261013-1812.docx",
+   "bytes": 193639
+  },
+  {
+   "path": "research/companies/TSLA/v20261013-1812/manifest.json",
+   "bytes": 2179
+  },
+  {
+   "path": "research/companies/TSLA/v20261013-1812/TSLA_report_v20261013-1812.pdf",
+   "bytes": 1134268
+  },
+  {
+   "path": "research/companies/TSLA/v20261013-1812/TSLA_teaching_v20261013-1812.pdf",
+   "bytes": 259100
+  },
+  {
+   "path": "research/companies/TSLA/v20261013-1812/images/TSLA_1_price_vs_value.png",
+   "bytes": 234221
+  },
+  {
+   "path": "research/companies/TSLA/v20261013-1812/images/TSLA_2_financials.png",
+   "bytes": 189157
+  },
+  {
+   "path": "research/companies/TSLA/v20261013-1812/images/TSLA_3_scenarios.png",
+   "bytes": 167568
+  },
+  {
+   "path": "research/companies/TSLA/v20261013-1812/images/TSLA_4_horizons.png",
+   "bytes": 154188
+  },
+  {
+   "path": "research/companies/TSLA/v20261013-1812/images/TSLA_5_logic_map.png",
+   "bytes": 207889
+  },
+  {
+   "path": "research/companies/TSLA/v20261013-1812/images/TSLA_1_price_vs_value.jpg",
+   "bytes": 311960
+  },
+  {
+   "path": "research/companies/TSLA/v20261013-1812/images/TSLA_2_financials.jpg",
+   "bytes": 252386
+  },
+  {
+   "path": "research/companies/TSLA/v20261013-1812/images/TSLA_3_scenarios.jpg",
+   "bytes": 249546
+  },
+  {
+   "path": "research/companies/TSLA/v20261013-1812/images/TSLA_4_horizons.jpg",
+   "bytes": 228193
+  },
+  {
+   "path": "research/companies/TSLA/v20261013-1812/images/TSLA_5_logic_map.jpg",
+   "bytes": 241502
+  },
+  {
+   "path": "research/companies/SPCX/v20261013-1812/SPCX_model_v20261013-1812.xlsx",
+   "bytes": 35786
+  },
+  {
+   "path": "research/companies/SPCX/v20261013-1812/SPCX_report_v20261013-1812.md",
+   "bytes": 17736
+  },
+  {
+   "path": "research/companies/SPCX/v20261013-1812/SPCX_teaching_v20261013-1812.md",
+   "bytes": 4868
+  },
+  {
+   "path": "research/companies/SPCX/v20261013-1812/summary.json",
+   "bytes": 535
+  },
+  {
+   "path": "research/companies/SPCX/v20261013-1812/SPCX_report_v20261013-1812.html",
+   "bytes": 29832
+  },
+  {
+   "path": "research/companies/SPCX/v20261013-1812/SPCX_report_v20261013-1812.docx",
+   "bytes": 787965
+  },
+  {
+   "path": "research/companies/SPCX/v20261013-1812/SPCX_teaching_v20261013-1812.html",
+   "bytes": 9957
+  },
+  {
+   "path": "research/companies/SPCX/v20261013-1812/SPCX_teaching_v20261013-1812.docx",
+   "bytes": 197664
+  },
+  {
+   "path": "research/companies/SPCX/v20261013-1812/manifest.json",
+   "bytes": 2179
+  },
+  {
+   "path": "research/companies/SPCX/v20261013-1812/SPCX_report_v20261013-1812.pdf",
+   "bytes": 1091337
+  },
+  {
+   "path": "research/companies/SPCX/v20261013-1812/SPCX_teaching_v20261013-1812.pdf",
+   "bytes": 256918
+  },
+  {
+   "path": "research/companies/SPCX/v20261013-1812/images/SPCX_1_price_vs_value.png",
+   "bytes": 186376
+  },
+  {
+   "path": "research/companies/SPCX/v20261013-1812/images/SPCX_2_financials.png",
+   "bytes": 185289
+  },
+  {
+   "path": "research/companies/SPCX/v20261013-1812/images/SPCX_3_scenarios.png",
+   "bytes": 172986
+  },
+  {
+   "path": "research/companies/SPCX/v20261013-1812/images/SPCX_4_horizons.png",
+   "bytes": 157858
+  },
+  {
+   "path": "research/companies/SPCX/v20261013-1812/images/SPCX_5_logic_map.png",
+   "bytes": 213036
+  },
+  {
+   "path": "research/companies/SPCX/v20261013-1812/images/SPCX_1_price_vs_value.jpg",
+   "bytes": 272668
+  },
+  {
+   "path": "research/companies/SPCX/v20261013-1812/images/SPCX_2_financials.jpg",
+   "bytes": 233995
+  },
+  {
+   "path": "research/companies/SPCX/v20261013-1812/images/SPCX_3_scenarios.jpg",
+   "bytes": 262491
+  },
+  {
+   "path": "research/companies/SPCX/v20261013-1812/images/SPCX_4_horizons.jpg",
+   "bytes": 220395
+  },
+  {
+   "path": "research/companies/SPCX/v20261013-1812/images/SPCX_5_logic_map.jpg",
+   "bytes": 244352
+  },
+  {
+   "path": "research/companies/NVDA/v20261013-1812/NVDA_model_v20261013-1812.xlsx",
+   "bytes": 35966
+  },
+  {
+   "path": "research/companies/NVDA/v20261013-1812/NVDA_report_v20261013-1812.md",
+   "bytes": 17912
+  },
+  {
+   "path": "research/companies/NVDA/v20261013-1812/NVDA_teaching_v20261013-1812.md",
+   "bytes": 4695
+  },
+  {
+   "path": "research/companies/NVDA/v20261013-1812/summary.json",
+   "bytes": 487
+  },
+  {
+   "path": "research/companies/NVDA/v20261013-1812/NVDA_report_v20261013-1812.html",
+   "bytes": 30264
+  },
+  {
+   "path": "research/companies/NVDA/v20261013-1812/NVDA_report_v20261013-1812.docx",
+   "bytes": 792672
+  },
+  {
+   "path": "research/companies/NVDA/v20261013-1812/NVDA_teaching_v20261013-1812.html",
+   "bytes": 9794
+  },
+  {
+   "path": "research/companies/NVDA/v20261013-1812/NVDA_teaching_v20261013-1812.docx",
+   "bytes": 196137
+  },
+  {
+   "path": "research/companies/NVDA/v20261013-1812/manifest.json",
+   "bytes": 2179
+  },
+  {
+   "path": "research/companies/NVDA/v20261013-1812/NVDA_report_v20261013-1812.pdf",
+   "bytes": 1120096
+  },
+  {
+   "path": "research/companies/NVDA/v20261013-1812/NVDA_teaching_v20261013-1812.pdf",
+   "bytes": 251707
+  },
+  {
+   "path": "research/companies/NVDA/v20261013-1812/images/NVDA_1_price_vs_value.png",
+   "bytes": 182314
+  },
+  {
+   "path": "research/companies/NVDA/v20261013-1812/images/NVDA_2_financials.png",
+   "bytes": 180161
+  },
+  {
+   "path": "research/companies/NVDA/v20261013-1812/images/NVDA_3_scenarios.png",
+   "bytes": 168479
+  },
+  {
+   "path": "research/companies/NVDA/v20261013-1812/images/NVDA_4_horizons.png",
+   "bytes": 174046
+  },
+  {
+   "path": "research/companies/NVDA/v20261013-1812/images/NVDA_5_logic_map.png",
+   "bytes": 211846
+  },
+  {
+   "path": "research/companies/NVDA/v20261013-1812/images/NVDA_1_price_vs_value.jpg",
+   "bytes": 280801
+  },
+  {
+   "path": "research/companies/NVDA/v20261013-1812/images/NVDA_2_financials.jpg",
+   "bytes": 239759
+  },
+  {
+   "path": "research/companies/NVDA/v20261013-1812/images/NVDA_3_scenarios.jpg",
+   "bytes": 260442
+  },
+  {
+   "path": "research/companies/NVDA/v20261013-1812/images/NVDA_4_horizons.jpg",
+   "bytes": 229279
+  },
+  {
+   "path": "research/companies/NVDA/v20261013-1812/images/NVDA_5_logic_map.jpg",
+   "bytes": 241897
+  },
+  {
+   "path": "research/companies/ARM/v20261013-1812/ARM_model_v20261013-1812.xlsx",
+   "bytes": 35789
+  },
+  {
+   "path": "research/companies/ARM/v20261013-1812/ARM_report_v20261013-1812.md",
+   "bytes": 17146
+  },
+  {
+   "path": "research/companies/ARM/v20261013-1812/ARM_teaching_v20261013-1812.md",
+   "bytes": 4563
+  },
+  {
+   "path": "research/companies/ARM/v20261013-1812/summary.json",
+   "bytes": 496
+  },
+  {
+   "path": "research/companies/ARM/v20261013-1812/ARM_report_v20261013-1812.html",
+   "bytes": 29564
+  },
+  {
+   "path": "research/companies/ARM/v20261013-1812/ARM_report_v20261013-1812.docx",
+   "bytes": 827893
+  },
+  {
+   "path": "research/companies/ARM/v20261013-1812/ARM_teaching_v20261013-1812.html",
+   "bytes": 9648
+  },
+  {
+   "path": "research/companies/ARM/v20261013-1812/ARM_teaching_v20261013-1812.docx",
+   "bytes": 196588
+  },
+  {
+   "path": "research/companies/ARM/v20261013-1812/manifest.json",
+   "bytes": 2159
+  },
+  {
+   "path": "research/companies/ARM/v20261013-1812/ARM_report_v20261013-1812.pdf",
+   "bytes": 1123012
+  },
+  {
+   "path": "research/companies/ARM/v20261013-1812/ARM_teaching_v20261013-1812.pdf",
+   "bytes": 250294
+  },
+  {
+   "path": "research/companies/ARM/v20261013-1812/images/ARM_1_price_vs_value.png",
+   "bytes": 218638
+  },
+  {
+   "path": "research/companies/ARM/v20261013-1812/images/ARM_2_financials.png",
+   "bytes": 193365
+  },
+  {
+   "path": "research/companies/ARM/v20261013-1812/images/ARM_3_scenarios.png",
+   "bytes": 163409
+  },
+  {
+   "path": "research/companies/ARM/v20261013-1812/images/ARM_4_horizons.png",
+   "bytes": 161517
+  },
+  {
+   "path": "research/companies/ARM/v20261013-1812/images/ARM_5_logic_map.png",
+   "bytes": 211649
+  },
+  {
+   "path": "research/companies/ARM/v20261013-1812/images/ARM_1_price_vs_value.jpg",
+   "bytes": 287566
+  },
+  {
+   "path": "research/companies/ARM/v20261013-1812/images/ARM_2_financials.jpg",
+   "bytes": 261076
+  },
+  {
+   "path": "research/companies/ARM/v20261013-1812/images/ARM_3_scenarios.jpg",
+   "bytes": 237946
+  },
+  {
+   "path": "research/companies/ARM/v20261013-1812/images/ARM_4_horizons.jpg",
+   "bytes": 226547
+  },
+  {
+   "path": "research/companies/ARM/v20261013-1812/images/ARM_5_logic_map.jpg",
+   "bytes": 243396
+  },
+  {
+   "path": "research/companies/GLW/v20261013-1812/GLW_model_v20261013-1812.xlsx",
+   "bytes": 35908
+  },
+  {
+   "path": "research/companies/GLW/v20261013-1812/GLW_report_v20261013-1812.md",
+   "bytes": 17504
+  },
+  {
+   "path": "research/companies/GLW/v20261013-1812/GLW_teaching_v20261013-1812.md",
+   "bytes": 4674
+  },
+  {
+   "path": "research/companies/GLW/v20261013-1812/summary.json",
+   "bytes": 529
+  },
+  {
+   "path": "research/companies/GLW/v20261013-1812/GLW_report_v20261013-1812.html",
+   "bytes": 29830
+  },
+  {
+   "path": "research/companies/GLW/v20261013-1812/GLW_report_v20261013-1812.docx",
+   "bytes": 808877
+  },
+  {
+   "path": "research/companies/GLW/v20261013-1812/GLW_teaching_v20261013-1812.html",
+   "bytes": 9759
+  },
+  {
+   "path": "research/companies/GLW/v20261013-1812/GLW_teaching_v20261013-1812.docx",
+   "bytes": 195096
+  },
+  {
+   "path": "research/companies/GLW/v20261013-1812/manifest.json",
+   "bytes": 2159
+  },
+  {
+   "path": "research/companies/GLW/v20261013-1812/GLW_report_v20261013-1812.pdf",
+   "bytes": 1117903
+  },
+  {
+   "path": "research/companies/GLW/v20261013-1812/GLW_teaching_v20261013-1812.pdf",
+   "bytes": 250840
+  },
+  {
+   "path": "research/companies/GLW/v20261013-1812/images/GLW_1_price_vs_value.png",
+   "bytes": 201946
+  },
+  {
+   "path": "research/companies/GLW/v20261013-1812/images/GLW_2_financials.png",
+   "bytes": 185951
+  },
+  {
+   "path": "research/companies/GLW/v20261013-1812/images/GLW_3_scenarios.png",
+   "bytes": 167974
+  },
+  {
+   "path": "research/companies/GLW/v20261013-1812/images/GLW_4_horizons.png",
+   "bytes": 161805
+  },
+  {
+   "path": "research/companies/GLW/v20261013-1812/images/GLW_5_logic_map.png",
+   "bytes": 210161
+  },
+  {
+   "path": "research/companies/GLW/v20261013-1812/images/GLW_1_price_vs_value.jpg",
+   "bytes": 284230
+  },
+  {
+   "path": "research/companies/GLW/v20261013-1812/images/GLW_2_financials.jpg",
+   "bytes": 251331
+  },
+  {
+   "path": "research/companies/GLW/v20261013-1812/images/GLW_3_scenarios.jpg",
+   "bytes": 246289
+  },
+  {
+   "path": "research/companies/GLW/v20261013-1812/images/GLW_4_horizons.jpg",
+   "bytes": 229135
+  },
+  {
+   "path": "research/companies/GLW/v20261013-1812/images/GLW_5_logic_map.jpg",
+   "bytes": 241485
+  },
+  {
+   "path": "research/companies/MU/v20261013-1812/MU_model_v20261013-1812.xlsx",
+   "bytes": 35852
+  },
+  {
+   "path": "research/companies/MU/v20261013-1812/MU_report_v20261013-1812.md",
+   "bytes": 17444
+  },
+  {
+   "path": "research/companies/MU/v20261013-1812/MU_teaching_v20261013-1812.md",
+   "bytes": 4715
+  },
+  {
+   "path": "research/companies/MU/v20261013-1812/summary.json",
+   "bytes": 490
+  },
+  {
+   "path": "research/companies/MU/v20261013-1812/MU_report_v20261013-1812.html",
+   "bytes": 29766
+  },
+  {
+   "path": "research/companies/MU/v20261013-1812/MU_report_v20261013-1812.docx",
+   "bytes": 803192
+  },
+  {
+   "path": "research/companies/MU/v20261013-1812/MU_teaching_v20261013-1812.html",
+   "bytes": 9800
+  },
+  {
+   "path": "research/companies/MU/v20261013-1812/MU_teaching_v20261013-1812.docx",
+   "bytes": 194928
+  },
+  {
+   "path": "research/companies/MU/v20261013-1812/manifest.json",
+   "bytes": 2139
+  },
+  {
+   "path": "research/companies/MU/v20261013-1812/MU_report_v20261013-1812.pdf",
+   "bytes": 1121154
+  },
+  {
+   "path": "research/companies/MU/v20261013-1812/MU_teaching_v20261013-1812.pdf",
+   "bytes": 250565
+  },
+  {
+   "path": "research/companies/MU/v20261013-1812/images/MU_1_price_vs_value.png",
+   "bytes": 201212
+  },
+  {
+   "path": "research/companies/MU/v20261013-1812/images/MU_2_financials.png",
+   "bytes": 182078
+  },
+  {
+   "path": "research/companies/MU/v20261013-1812/images/MU_3_scenarios.png",
+   "bytes": 167585
+  },
+  {
+   "path": "research/companies/MU/v20261013-1812/images/MU_4_horizons.png",
+   "bytes": 161387
+  },
+  {
+   "path": "research/companies/MU/v20261013-1812/images/MU_5_logic_map.png",
+   "bytes": 210057
+  },
+  {
+   "path": "research/companies/MU/v20261013-1812/images/MU_1_price_vs_value.jpg",
+   "bytes": 291698
+  },
+  {
+   "path": "research/companies/MU/v20261013-1812/images/MU_2_financials.jpg",
+   "bytes": 254110
+  },
+  {
+   "path": "research/companies/MU/v20261013-1812/images/MU_3_scenarios.jpg",
+   "bytes": 246732
+  },
+  {
+   "path": "research/companies/MU/v20261013-1812/images/MU_4_horizons.jpg",
+   "bytes": 230168
+  },
+  {
+   "path": "research/companies/MU/v20261013-1812/images/MU_5_logic_map.jpg",
+   "bytes": 242607
+  },
+  {
+   "path": "research/companies/AAPL/v20261013-1812/AAPL_model_v20261013-1812.xlsx",
+   "bytes": 35880
+  },
+  {
+   "path": "research/companies/AAPL/v20261013-1812/AAPL_report_v20261013-1812.md",
+   "bytes": 17384
+  },
+  {
+   "path": "research/companies/AAPL/v20261013-1812/AAPL_teaching_v20261013-1812.md",
+   "bytes": 4732
+  },
+  {
+   "path": "research/companies/AAPL/v20261013-1812/summary.json",
+   "bytes": 542
+  },
+  {
+   "path": "research/companies/AAPL/v20261013-1812/AAPL_report_v20261013-1812.html",
+   "bytes": 29704
+  },
+  {
+   "path": "research/companies/AAPL/v20261013-1812/AAPL_report_v20261013-1812.docx",
+   "bytes": 823218
+  },
+  {
+   "path": "research/companies/AAPL/v20261013-1812/AAPL_teaching_v20261013-1812.html",
+   "bytes": 9833
+  },
+  {
+   "path": "research/companies/AAPL/v20261013-1812/AAPL_teaching_v20261013-1812.docx",
+   "bytes": 193836
+  },
+  {
+   "path": "research/companies/AAPL/v20261013-1812/manifest.json",
+   "bytes": 2179
+  },
+  {
+   "path": "research/companies/AAPL/v20261013-1812/AAPL_report_v20261013-1812.pdf",
+   "bytes": 1121420
+  },
+  {
+   "path": "research/companies/AAPL/v20261013-1812/AAPL_teaching_v20261013-1812.pdf",
+   "bytes": 253124
+  },
+  {
+   "path": "research/companies/AAPL/v20261013-1812/images/AAPL_1_price_vs_value.png",
+   "bytes": 218527
+  },
+  {
+   "path": "research/companies/AAPL/v20261013-1812/images/AAPL_2_financials.png",
+   "bytes": 190052
+  },
+  {
+   "path": "research/companies/AAPL/v20261013-1812/images/AAPL_3_scenarios.png",
+   "bytes": 168942
+  },
+  {
+   "path": "research/companies/AAPL/v20261013-1812/images/AAPL_4_horizons.png",
+   "bytes": 156072
+  },
+  {
+   "path": "research/companies/AAPL/v20261013-1812/images/AAPL_5_logic_map.png",
+   "bytes": 208565
+  },
+  {
+   "path": "research/companies/AAPL/v20261013-1812/images/AAPL_1_price_vs_value.jpg",
+   "bytes": 291680
+  },
+  {
+   "path": "research/companies/AAPL/v20261013-1812/images/AAPL_2_financials.jpg",
+   "bytes": 253208
+  },
+  {
+   "path": "research/companies/AAPL/v20261013-1812/images/AAPL_3_scenarios.jpg",
+   "bytes": 260286
+  },
+  {
+   "path": "research/companies/AAPL/v20261013-1812/images/AAPL_4_horizons.jpg",
+   "bytes": 225010
+  },
+  {
+   "path": "research/companies/AAPL/v20261013-1812/images/AAPL_5_logic_map.jpg",
+   "bytes": 242450
+  },
+  {
+   "path": "research/companies/TSM/v20261013-1812/TSM_model_v20261013-1812.xlsx",
+   "bytes": 36057
+  },
+  {
+   "path": "research/companies/TSM/v20261013-1812/TSM_report_v20261013-1812.md",
+   "bytes": 17700
+  },
+  {
+   "path": "research/companies/TSM/v20261013-1812/TSM_teaching_v20261013-1812.md",
+   "bytes": 4821
+  },
+  {
+   "path": "research/companies/TSM/v20261013-1812/summary.json",
+   "bytes": 572
+  },
+  {
+   "path": "research/companies/TSM/v20261013-1812/TSM_report_v20261013-1812.html",
+   "bytes": 30192
+  },
+  {
+   "path": "research/companies/TSM/v20261013-1812/TSM_report_v20261013-1812.docx",
+   "bytes": 808643
+  },
+  {
+   "path": "research/companies/TSM/v20261013-1812/TSM_teaching_v20261013-1812.html",
+   "bytes": 9906
+  },
+  {
+   "path": "research/companies/TSM/v20261013-1812/TSM_teaching_v20261013-1812.docx",
+   "bytes": 195844
+  },
+  {
+   "path": "research/companies/TSM/v20261013-1812/manifest.json",
+   "bytes": 2159
+  },
+  {
+   "path": "research/companies/TSM/v20261013-1812/TSM_report_v20261013-1812.pdf",
+   "bytes": 1131262
+  },
+  {
+   "path": "research/companies/TSM/v20261013-1812/TSM_teaching_v20261013-1812.pdf",
+   "bytes": 257259
+  },
+  {
+   "path": "research/companies/TSM/v20261013-1812/images/TSM_1_price_vs_value.png",
+   "bytes": 205905
+  },
+  {
+   "path": "research/companies/TSM/v20261013-1812/images/TSM_2_financials.png",
+   "bytes": 179137
+  },
+  {
+   "path": "research/companies/TSM/v20261013-1812/images/TSM_3_scenarios.png",
+   "bytes": 164655
+  },
+  {
+   "path": "research/companies/TSM/v20261013-1812/images/TSM_4_horizons.png",
+   "bytes": 168966
+  },
+  {
+   "path": "research/companies/TSM/v20261013-1812/images/TSM_5_logic_map.png",
+   "bytes": 211170
+  },
+  {
+   "path": "research/companies/TSM/v20261013-1812/images/TSM_1_price_vs_value.jpg",
+   "bytes": 283641
+  },
+  {
+   "path": "research/companies/TSM/v20261013-1812/images/TSM_2_financials.jpg",
+   "bytes": 253175
+  },
+  {
+   "path": "research/companies/TSM/v20261013-1812/images/TSM_3_scenarios.jpg",
+   "bytes": 253161
+  },
+  {
+   "path": "research/companies/TSM/v20261013-1812/images/TSM_4_horizons.jpg",
+   "bytes": 221056
+  },
+  {
+   "path": "research/companies/TSM/v20261013-1812/images/TSM_5_logic_map.jpg",
+   "bytes": 241755
+  },
+  {
+   "path": "research/companies/AVGO/v20261013-1812/AVGO_model_v20261013-1812.xlsx",
+   "bytes": 35961
+  },
+  {
+   "path": "research/companies/AVGO/v20261013-1812/AVGO_report_v20261013-1812.md",
+   "bytes": 17769
+  },
+  {
+   "path": "research/companies/AVGO/v20261013-1812/AVGO_teaching_v20261013-1812.md",
+   "bytes": 4806
+  },
+  {
+   "path": "research/companies/AVGO/v20261013-1812/summary.json",
+   "bytes": 563
+  },
+  {
+   "path": "research/companies/AVGO/v20261013-1812/AVGO_report_v20261013-1812.html",
+   "bytes": 30331
+  },
+  {
+   "path": "research/companies/AVGO/v20261013-1812/AVGO_report_v20261013-1812.docx",
+   "bytes": 807876
+  },
+  {
+   "path": "research/companies/AVGO/v20261013-1812/AVGO_teaching_v20261013-1812.html",
+   "bytes": 9895
+  },
+  {
+   "path": "research/companies/AVGO/v20261013-1812/AVGO_teaching_v20261013-1812.docx",
+   "bytes": 195098
+  },
+  {
+   "path": "research/companies/AVGO/v20261013-1812/manifest.json",
+   "bytes": 2179
+  },
+  {
+   "path": "research/companies/AVGO/v20261013-1812/AVGO_report_v20261013-1812.pdf",
+   "bytes": 1140364
+  },
+  {
+   "path": "research/companies/AVGO/v20261013-1812/AVGO_teaching_v20261013-1812.pdf",
+   "bytes": 254501
+  },
+  {
+   "path": "research/companies/AVGO/v20261013-1812/images/AVGO_1_price_vs_value.png",
+   "bytes": 190308
+  },
+  {
+   "path": "research/companies/AVGO/v20261013-1812/images/AVGO_2_financials.png",
+   "bytes": 181651
+  },
+  {
+   "path": "research/companies/AVGO/v20261013-1812/images/AVGO_3_scenarios.png",
+   "bytes": 172217
+  },
+  {
+   "path": "research/companies/AVGO/v20261013-1812/images/AVGO_4_horizons.png",
+   "bytes": 178414
+  },
+  {
+   "path": "research/companies/AVGO/v20261013-1812/images/AVGO_5_logic_map.png",
+   "bytes": 210613
+  },
+  {
+   "path": "research/companies/AVGO/v20261013-1812/images/AVGO_1_price_vs_value.jpg",
+   "bytes": 281730
+  },
+  {
+   "path": "research/companies/AVGO/v20261013-1812/images/AVGO_2_financials.jpg",
+   "bytes": 255109
+  },
+  {
+   "path": "research/companies/AVGO/v20261013-1812/images/AVGO_3_scenarios.jpg",
+   "bytes": 264963
+  },
+  {
+   "path": "research/companies/AVGO/v20261013-1812/images/AVGO_4_horizons.jpg",
+   "bytes": 244328
+  },
+  {
+   "path": "research/companies/AVGO/v20261013-1812/images/AVGO_5_logic_map.jpg",
+   "bytes": 242776
+  },
+  {
+   "path": "research/companies/INTC/v20261013-1812/INTC_model_v20261013-1812.xlsx",
+   "bytes": 35924
+  },
+  {
+   "path": "research/companies/INTC/v20261013-1812/INTC_report_v20261013-1812.md",
+   "bytes": 17188
+  },
+  {
+   "path": "research/companies/INTC/v20261013-1812/INTC_teaching_v20261013-1812.md",
+   "bytes": 4590
+  },
+  {
+   "path": "research/companies/INTC/v20261013-1812/summary.json",
+   "bytes": 518
+  },
+  {
+   "path": "research/companies/INTC/v20261013-1812/INTC_report_v20261013-1812.html",
+   "bytes": 29540
+  },
+  {
+   "path": "research/companies/INTC/v20261013-1812/INTC_report_v20261013-1812.docx",
+   "bytes": 791951
+  },
+  {
+   "path": "research/companies/INTC/v20261013-1812/INTC_teaching_v20261013-1812.html",
+   "bytes": 9689
+  },
+  {
+   "path": "research/companies/INTC/v20261013-1812/INTC_teaching_v20261013-1812.docx",
+   "bytes": 191838
+  },
+  {
+   "path": "research/companies/INTC/v20261013-1812/manifest.json",
+   "bytes": 2179
+  },
+  {
+   "path": "research/companies/INTC/v20261013-1812/INTC_report_v20261013-1812.pdf",
+   "bytes": 1102332
+  },
+  {
+   "path": "research/companies/INTC/v20261013-1812/INTC_teaching_v20261013-1812.pdf",
+   "bytes": 249512
+  },
+  {
+   "path": "research/companies/INTC/v20261013-1812/images/INTC_1_price_vs_value.png",
+   "bytes": 211890
+  },
+  {
+   "path": "research/companies/INTC/v20261013-1812/images/INTC_2_financials.png",
+   "bytes": 180463
+  },
+  {
+   "path": "research/companies/INTC/v20261013-1812/images/INTC_3_scenarios.png",
+   "bytes": 162174
+  },
+  {
+   "path": "research/companies/INTC/v20261013-1812/images/INTC_4_horizons.png",
+   "bytes": 153314
+  },
+  {
+   "path": "research/companies/INTC/v20261013-1812/images/INTC_5_logic_map.png",
+   "bytes": 206235
+  },
+  {
+   "path": "research/companies/INTC/v20261013-1812/images/INTC_1_price_vs_value.jpg",
+   "bytes": 291107
+  },
+  {
+   "path": "research/companies/INTC/v20261013-1812/images/INTC_2_financials.jpg",
+   "bytes": 254502
+  },
+  {
+   "path": "research/companies/INTC/v20261013-1812/images/INTC_3_scenarios.jpg",
+   "bytes": 237864
+  },
+  {
+   "path": "research/companies/INTC/v20261013-1812/images/INTC_4_horizons.jpg",
+   "bytes": 220986
+  },
+  {
+   "path": "research/companies/INTC/v20261013-1812/images/INTC_5_logic_map.jpg",
+   "bytes": 241562
+  },
+  {
+   "path": "research/companies/QCOM/v20261013-1812/QCOM_model_v20261013-1812.xlsx",
+   "bytes": 35904
+  },
+  {
+   "path": "research/companies/QCOM/v20261013-1812/QCOM_report_v20261013-1812.md",
+   "bytes": 17193
+  },
+  {
+   "path": "research/companies/QCOM/v20261013-1812/QCOM_teaching_v20261013-1812.md",
+   "bytes": 4704
+  },
+  {
+   "path": "research/companies/QCOM/v20261013-1812/summary.json",
+   "bytes": 540
+  },
+  {
+   "path": "research/companies/QCOM/v20261013-1812/QCOM_report_v20261013-1812.html",
+   "bytes": 29649
+  },
+  {
+   "path": "research/companies/QCOM/v20261013-1812/QCOM_report_v20261013-1812.docx",
+   "bytes": 837237
+  },
+  {
+   "path": "research/companies/QCOM/v20261013-1812/QCOM_teaching_v20261013-1812.html",
+   "bytes": 9803
+  },
+  {
+   "path": "research/companies/QCOM/v20261013-1812/QCOM_teaching_v20261013-1812.docx",
+   "bytes": 196364
+  },
+  {
+   "path": "research/companies/QCOM/v20261013-1812/manifest.json",
+   "bytes": 2179
+  },
+  {
+   "path": "research/companies/QCOM/v20261013-1812/QCOM_report_v20261013-1812.pdf",
+   "bytes": 1135235
+  },
+  {
+   "path": "research/companies/QCOM/v20261013-1812/QCOM_teaching_v20261013-1812.pdf",
+   "bytes": 250670
+  },
+  {
+   "path": "research/companies/QCOM/v20261013-1812/images/QCOM_1_price_vs_value.png",
+   "bytes": 239750
+  },
+  {
+   "path": "research/companies/QCOM/v20261013-1812/images/QCOM_2_financials.png",
+   "bytes": 178754
+  },
+  {
+   "path": "research/companies/QCOM/v20261013-1812/images/QCOM_3_scenarios.png",
+   "bytes": 167783
+  },
+  {
+   "path": "research/companies/QCOM/v20261013-1812/images/QCOM_4_horizons.png",
+   "bytes": 158108
+  },
+  {
+   "path": "research/companies/QCOM/v20261013-1812/images/QCOM_5_logic_map.png",
+   "bytes": 211588
+  },
+  {
+   "path": "research/companies/QCOM/v20261013-1812/images/QCOM_1_price_vs_value.jpg",
+   "bytes": 311387
+  },
+  {
+   "path": "research/companies/QCOM/v20261013-1812/images/QCOM_2_financials.jpg",
+   "bytes": 255105
+  },
+  {
+   "path": "research/companies/QCOM/v20261013-1812/images/QCOM_3_scenarios.jpg",
+   "bytes": 245900
+  },
+  {
+   "path": "research/companies/QCOM/v20261013-1812/images/QCOM_4_horizons.jpg",
+   "bytes": 228344
+  },
+  {
+   "path": "research/companies/QCOM/v20261013-1812/images/QCOM_5_logic_map.jpg",
+   "bytes": 242222
+  },
+  {
+   "path": "research/companies/MRVL/v20261013-1812/MRVL_model_v20261013-1812.xlsx",
+   "bytes": 35919
+  },
+  {
+   "path": "research/companies/MRVL/v20261013-1812/MRVL_report_v20261013-1812.md",
+   "bytes": 16889
+  },
+  {
+   "path": "research/companies/MRVL/v20261013-1812/MRVL_teaching_v20261013-1812.md",
+   "bytes": 4575
+  },
+  {
+   "path": "research/companies/MRVL/v20261013-1812/summary.json",
+   "bytes": 522
+  },
+  {
+   "path": "research/companies/MRVL/v20261013-1812/MRVL_report_v20261013-1812.html",
+   "bytes": 29325
+  },
+  {
+   "path": "research/companies/MRVL/v20261013-1812/MRVL_report_v20261013-1812.docx",
+   "bytes": 808768
+  },
+  {
+   "path": "research/companies/MRVL/v20261013-1812/MRVL_teaching_v20261013-1812.html",
+   "bytes": 9664
+  },
+  {
+   "path": "research/companies/MRVL/v20261013-1812/MRVL_teaching_v20261013-1812.docx",
+   "bytes": 195809
+  },
+  {
+   "path": "research/companies/MRVL/v20261013-1812/manifest.json",
+   "bytes": 2179
+  },
+  {
+   "path": "research/companies/MRVL/v20261013-1812/MRVL_report_v20261013-1812.pdf",
+   "bytes": 1116583
+  },
+  {
+   "path": "research/companies/MRVL/v20261013-1812/MRVL_teaching_v20261013-1812.pdf",
+   "bytes": 251570
+  },
+  {
+   "path": "research/companies/MRVL/v20261013-1812/images/MRVL_1_price_vs_value.png",
+   "bytes": 197360
+  },
+  {
+   "path": "research/companies/MRVL/v20261013-1812/images/MRVL_2_financials.png",
+   "bytes": 188135
+  },
+  {
+   "path": "research/companies/MRVL/v20261013-1812/images/MRVL_3_scenarios.png",
+   "bytes": 165060
+  },
+  {
+   "path": "research/companies/MRVL/v20261013-1812/images/MRVL_4_horizons.png",
+   "bytes": 168910
+  },
+  {
+   "path": "research/companies/MRVL/v20261013-1812/images/MRVL_5_logic_map.png",
+   "bytes": 211145
+  },
+  {
+   "path": "research/companies/MRVL/v20261013-1812/images/MRVL_1_price_vs_value.jpg",
+   "bytes": 272808
+  },
+  {
+   "path": "research/companies/MRVL/v20261013-1812/images/MRVL_2_financials.jpg",
+   "bytes": 250089
+  },
+  {
+   "path": "research/companies/MRVL/v20261013-1812/images/MRVL_3_scenarios.jpg",
+   "bytes": 236216
+  },
+  {
+   "path": "research/companies/MRVL/v20261013-1812/images/MRVL_4_horizons.jpg",
+   "bytes": 231461
+  },
+  {
+   "path": "research/companies/MRVL/v20261013-1812/images/MRVL_5_logic_map.jpg",
+   "bytes": 241986
+  },
+  {
+   "path": "research/companies/LITE/v20261013-1812/LITE_model_v20261013-1812.xlsx",
+   "bytes": 35829
+  },
+  {
+   "path": "research/companies/LITE/v20261013-1812/LITE_report_v20261013-1812.md",
+   "bytes": 16519
+  },
+  {
+   "path": "research/companies/LITE/v20261013-1812/LITE_teaching_v20261013-1812.md",
+   "bytes": 4558
+  },
+  {
+   "path": "research/companies/LITE/v20261013-1812/summary.json",
+   "bytes": 530
+  },
+  {
+   "path": "research/companies/LITE/v20261013-1812/LITE_report_v20261013-1812.html",
+   "bytes": 28963
+  },
+  {
+   "path": "research/companies/LITE/v20261013-1812/LITE_report_v20261013-1812.docx",
+   "bytes": 807190
+  },
+  {
+   "path": "research/companies/LITE/v20261013-1812/LITE_teaching_v20261013-1812.html",
+   "bytes": 9647
+  },
+  {
+   "path": "research/companies/LITE/v20261013-1812/LITE_teaching_v20261013-1812.docx",
+   "bytes": 193558
+  },
+  {
+   "path": "research/companies/LITE/v20261013-1812/manifest.json",
+   "bytes": 2179
+  },
+  {
+   "path": "research/companies/LITE/v20261013-1812/LITE_report_v20261013-1812.pdf",
+   "bytes": 1114631
+  },
+  {
+   "path": "research/companies/LITE/v20261013-1812/LITE_teaching_v20261013-1812.pdf",
+   "bytes": 250503
+  },
+  {
+   "path": "research/companies/LITE/v20261013-1812/images/LITE_1_price_vs_value.png",
+   "bytes": 199972
+  },
+  {
+   "path": "research/companies/LITE/v20261013-1812/images/LITE_2_financials.png",
+   "bytes": 179692
+  },
+  {
+   "path": "research/companies/LITE/v20261013-1812/images/LITE_3_scenarios.png",
+   "bytes": 164244
+  },
+  {
+   "path": "research/companies/LITE/v20261013-1812/images/LITE_4_horizons.png",
+   "bytes": 175608
+  },
+  {
+   "path": "research/companies/LITE/v20261013-1812/images/LITE_5_logic_map.png",
+   "bytes": 207924
+  },
+  {
+   "path": "research/companies/LITE/v20261013-1812/images/LITE_1_price_vs_value.jpg",
+   "bytes": 295835
+  },
+  {
+   "path": "research/companies/LITE/v20261013-1812/images/LITE_2_financials.jpg",
+   "bytes": 245566
+  },
+  {
+   "path": "research/companies/LITE/v20261013-1812/images/LITE_3_scenarios.jpg",
+   "bytes": 240089
+  },
+  {
+   "path": "research/companies/LITE/v20261013-1812/images/LITE_4_horizons.jpg",
+   "bytes": 227755
+  },
+  {
+   "path": "research/companies/LITE/v20261013-1812/images/LITE_5_logic_map.jpg",
+   "bytes": 242061
+  },
+  {
+   "path": "research/companies/PLTR/v20261013-1812/PLTR_model_v20261013-1812.xlsx",
+   "bytes": 35882
+  },
+  {
+   "path": "research/companies/PLTR/v20261013-1812/PLTR_report_v20261013-1812.md",
+   "bytes": 16912
+  },
+  {
+   "path": "research/companies/PLTR/v20261013-1812/PLTR_teaching_v20261013-1812.md",
+   "bytes": 4583
+  },
+  {
+   "path": "research/companies/PLTR/v20261013-1812/summary.json",
+   "bytes": 516
+  },
+  {
+   "path": "research/companies/PLTR/v20261013-1812/PLTR_report_v20261013-1812.html",
+   "bytes": 29248
+  },
+  {
+   "path": "research/companies/PLTR/v20261013-1812/PLTR_report_v20261013-1812.docx",
+   "bytes": 848204
+  },
+  {
+   "path": "research/companies/PLTR/v20261013-1812/PLTR_teaching_v20261013-1812.html",
+   "bytes": 9672
+  },
+  {
+   "path": "research/companies/PLTR/v20261013-1812/PLTR_teaching_v20261013-1812.docx",
+   "bytes": 195950
+  },
+  {
+   "path": "research/companies/PLTR/v20261013-1812/manifest.json",
+   "bytes": 2179
+  },
+  {
+   "path": "research/companies/PLTR/v20261013-1812/PLTR_report_v20261013-1812.pdf",
+   "bytes": 1133024
+  },
+  {
+   "path": "research/companies/PLTR/v20261013-1812/PLTR_teaching_v20261013-1812.pdf",
+   "bytes": 251054
+  },
+  {
+   "path": "research/companies/PLTR/v20261013-1812/images/PLTR_1_price_vs_value.png",
+   "bytes": 227588
+  },
+  {
+   "path": "research/companies/PLTR/v20261013-1812/images/PLTR_2_financials.png",
+   "bytes": 192137
+  },
+  {
+   "path": "research/companies/PLTR/v20261013-1812/images/PLTR_3_scenarios.png",
+   "bytes": 168894
+  },
+  {
+   "path": "research/companies/PLTR/v20261013-1812/images/PLTR_4_horizons.png",
+   "bytes": 166481
+  },
+  {
+   "path": "research/companies/PLTR/v20261013-1812/images/PLTR_5_logic_map.png",
+   "bytes": 210788
+  },
+  {
+   "path": "research/companies/PLTR/v20261013-1812/images/PLTR_1_price_vs_value.jpg",
+   "bytes": 305377
+  },
+  {
+   "path": "research/companies/PLTR/v20261013-1812/images/PLTR_2_financials.jpg",
+   "bytes": 271812
+  },
+  {
+   "path": "research/companies/PLTR/v20261013-1812/images/PLTR_3_scenarios.jpg",
+   "bytes": 246907
+  },
+  {
+   "path": "research/companies/PLTR/v20261013-1812/images/PLTR_4_horizons.jpg",
+   "bytes": 241376
+  },
+  {
+   "path": "research/companies/PLTR/v20261013-1812/images/PLTR_5_logic_map.jpg",
+   "bytes": 241170
+  },
+  {
+   "path": "research/companies/CIEN/v20261013-1812/CIEN_model_v20261013-1812.xlsx",
+   "bytes": 35970
+  },
+  {
+   "path": "research/companies/CIEN/v20261013-1812/CIEN_report_v20261013-1812.md",
+   "bytes": 16621
+  },
+  {
+   "path": "research/companies/CIEN/v20261013-1812/CIEN_teaching_v20261013-1812.md",
+   "bytes": 4444
+  },
+  {
+   "path": "research/companies/CIEN/v20261013-1812/summary.json",
+   "bytes": 525
+  },
+  {
+   "path": "research/companies/CIEN/v20261013-1812/CIEN_report_v20261013-1812.html",
+   "bytes": 29181
+  },
+  {
+   "path": "research/companies/CIEN/v20261013-1812/CIEN_report_v20261013-1812.docx",
+   "bytes": 805241
+  },
+  {
+   "path": "research/companies/CIEN/v20261013-1812/CIEN_teaching_v20261013-1812.html",
+   "bytes": 9531
+  },
+  {
+   "path": "research/companies/CIEN/v20261013-1812/CIEN_teaching_v20261013-1812.docx",
+   "bytes": 194331
+  },
+  {
+   "path": "research/companies/CIEN/v20261013-1812/manifest.json",
+   "bytes": 2179
+  },
+  {
+   "path": "research/companies/CIEN/v20261013-1812/CIEN_report_v20261013-1812.pdf",
+   "bytes": 1134012
+  },
+  {
+   "path": "research/companies/CIEN/v20261013-1812/CIEN_teaching_v20261013-1812.pdf",
+   "bytes": 250627
+  },
+  {
+   "path": "research/companies/CIEN/v20261013-1812/images/CIEN_1_price_vs_value.png",
+   "bytes": 200938
+  },
+  {
+   "path": "research/companies/CIEN/v20261013-1812/images/CIEN_2_financials.png",
+   "bytes": 189471
+  },
+  {
+   "path": "research/companies/CIEN/v20261013-1812/images/CIEN_3_scenarios.png",
+   "bytes": 166507
+  },
+  {
+   "path": "research/companies/CIEN/v20261013-1812/images/CIEN_4_horizons.png",
+   "bytes": 160883
+  },
+  {
+   "path": "research/companies/CIEN/v20261013-1812/images/CIEN_5_logic_map.png",
+   "bytes": 208939
+  },
+  {
+   "path": "research/companies/CIEN/v20261013-1812/images/CIEN_1_price_vs_value.jpg",
+   "bytes": 285449
+  },
+  {
+   "path": "research/companies/CIEN/v20261013-1812/images/CIEN_2_financials.jpg",
+   "bytes": 268621
+  },
+  {
+   "path": "research/companies/CIEN/v20261013-1812/images/CIEN_3_scenarios.jpg",
+   "bytes": 259481
+  },
+  {
+   "path": "research/companies/CIEN/v20261013-1812/images/CIEN_4_horizons.jpg",
+   "bytes": 228827
+  },
+  {
+   "path": "research/companies/CIEN/v20261013-1812/images/CIEN_5_logic_map.jpg",
+   "bytes": 243297
+  },
+  {
+   "path": "research/companies/CRWV/v20261013-1812/CRWV_model_v20261013-1812.xlsx",
+   "bytes": 35737
+  },
+  {
+   "path": "research/companies/CRWV/v20261013-1812/CRWV_report_v20261013-1812.md",
+   "bytes": 17272
+  },
+  {
+   "path": "research/companies/CRWV/v20261013-1812/CRWV_teaching_v20261013-1812.md",
+   "bytes": 4677
+  },
+  {
+   "path": "research/companies/CRWV/v20261013-1812/summary.json",
+   "bytes": 485
+  },
+  {
+   "path": "research/companies/CRWV/v20261013-1812/CRWV_report_v20261013-1812.html",
+   "bytes": 29700
+  },
+  {
+   "path": "research/companies/CRWV/v20261013-1812/CRWV_report_v20261013-1812.docx",
+   "bytes": 796361
+  },
+  {
+   "path": "research/companies/CRWV/v20261013-1812/CRWV_teaching_v20261013-1812.html",
+   "bytes": 9766
+  },
+  {
+   "path": "research/companies/CRWV/v20261013-1812/CRWV_teaching_v20261013-1812.docx",
+   "bytes": 196028
+  },
+  {
+   "path": "research/companies/CRWV/v20261013-1812/manifest.json",
+   "bytes": 2179
+  },
+  {
+   "path": "research/companies/CRWV/v20261013-1812/CRWV_report_v20261013-1812.pdf",
+   "bytes": 1109699
+  },
+  {
+   "path": "research/companies/CRWV/v20261013-1812/CRWV_teaching_v20261013-1812.pdf",
+   "bytes": 251552
+  },
+  {
+   "path": "research/companies/CRWV/v20261013-1812/images/CRWV_1_price_vs_value.png",
+   "bytes": 182281
+  },
+  {
+   "path": "research/companies/CRWV/v20261013-1812/images/CRWV_2_financials.png",
+   "bytes": 189592
+  },
+  {
+   "path": "research/companies/CRWV/v20261013-1812/images/CRWV_3_scenarios.png",
+   "bytes": 174237
+  },
+  {
+   "path": "research/companies/CRWV/v20261013-1812/images/CRWV_4_horizons.png",
+   "bytes": 166753
+  },
+  {
+   "path": "research/companies/CRWV/v20261013-1812/images/CRWV_5_logic_map.png",
+   "bytes": 211660
+  },
+  {
+   "path": "research/companies/CRWV/v20261013-1812/images/CRWV_1_price_vs_value.jpg",
+   "bytes": 278738
+  },
+  {
+   "path": "research/companies/CRWV/v20261013-1812/images/CRWV_2_financials.jpg",
+   "bytes": 242104
+  },
+  {
+   "path": "research/companies/CRWV/v20261013-1812/images/CRWV_3_scenarios.jpg",
+   "bytes": 252847
+  },
+  {
+   "path": "research/companies/CRWV/v20261013-1812/images/CRWV_4_horizons.jpg",
+   "bytes": 231959
+  },
+  {
+   "path": "research/companies/CRWV/v20261013-1812/images/CRWV_5_logic_map.jpg",
+   "bytes": 243313
+  },
+  {
+   "path": "research/companies/CRWD/v20261013-1812/CRWD_model_v20261013-1812.xlsx",
+   "bytes": 35848
+  },
+  {
+   "path": "research/companies/CRWD/v20261013-1812/CRWD_report_v20261013-1812.md",
+   "bytes": 16322
+  },
+  {
+   "path": "research/companies/CRWD/v20261013-1812/CRWD_teaching_v20261013-1812.md",
+   "bytes": 4515
+  },
+  {
+   "path": "research/companies/CRWD/v20261013-1812/summary.json",
+   "bytes": 541
+  },
+  {
+   "path": "research/companies/CRWD/v20261013-1812/CRWD_report_v20261013-1812.html",
+   "bytes": 28660
+  },
+  {
+   "path": "research/companies/CRWD/v20261013-1812/CRWD_report_v20261013-1812.docx",
+   "bytes": 807249
+  },
+  {
+   "path": "research/companies/CRWD/v20261013-1812/CRWD_teaching_v20261013-1812.html",
+   "bytes": 9604
+  },
+  {
+   "path": "research/companies/CRWD/v20261013-1812/CRWD_teaching_v20261013-1812.docx",
+   "bytes": 199756
+  },
+  {
+   "path": "research/companies/CRWD/v20261013-1812/manifest.json",
+   "bytes": 2179
+  },
+  {
+   "path": "research/companies/CRWD/v20261013-1812/CRWD_report_v20261013-1812.pdf",
+   "bytes": 1097241
+  },
+  {
+   "path": "research/companies/CRWD/v20261013-1812/CRWD_teaching_v20261013-1812.pdf",
+   "bytes": 251525
+  },
+  {
+   "path": "research/companies/CRWD/v20261013-1812/images/CRWD_1_price_vs_value.png",
+   "bytes": 213229
+  },
+  {
+   "path": "research/companies/CRWD/v20261013-1812/images/CRWD_2_financials.png",
+   "bytes": 182704
+  },
+  {
+   "path": "research/companies/CRWD/v20261013-1812/images/CRWD_3_scenarios.png",
+   "bytes": 165894
+  },
+  {
+   "path": "research/companies/CRWD/v20261013-1812/images/CRWD_4_horizons.png",
+   "bytes": 154956
+  },
+  {
+   "path": "research/companies/CRWD/v20261013-1812/images/CRWD_5_logic_map.png",
+   "bytes": 213995
+  },
+  {
+   "path": "research/companies/CRWD/v20261013-1812/images/CRWD_1_price_vs_value.jpg",
+   "bytes": 282247
+  },
+  {
+   "path": "research/companies/CRWD/v20261013-1812/images/CRWD_2_financials.jpg",
+   "bytes": 255703
+  },
+  {
+   "path": "research/companies/CRWD/v20261013-1812/images/CRWD_3_scenarios.jpg",
+   "bytes": 238621
+  },
+  {
+   "path": "research/companies/CRWD/v20261013-1812/images/CRWD_4_horizons.jpg",
+   "bytes": 227440
+  },
+  {
+   "path": "research/companies/CRWD/v20261013-1812/images/CRWD_5_logic_map.jpg",
+   "bytes": 243460
+  },
+  {
+   "path": "research/companies/COHR/v20261013-1812/COHR_model_v20261013-1812.xlsx",
+   "bytes": 35972
+  },
+  {
+   "path": "research/companies/COHR/v20261013-1812/COHR_report_v20261013-1812.md",
+   "bytes": 16863
+  },
+  {
+   "path": "research/companies/COHR/v20261013-1812/COHR_teaching_v20261013-1812.md",
+   "bytes": 4526
+  },
+  {
+   "path": "research/companies/COHR/v20261013-1812/summary.json",
+   "bytes": 538
+  },
+  {
+   "path": "research/companies/COHR/v20261013-1812/COHR_report_v20261013-1812.html",
+   "bytes": 29315
+  },
+  {
+   "path": "research/companies/COHR/v20261013-1812/COHR_report_v20261013-1812.docx",
+   "bytes": 844502
+  },
+  {
+   "path": "research/companies/COHR/v20261013-1812/COHR_teaching_v20261013-1812.html",
+   "bytes": 9615
+  },
+  {
+   "path": "research/companies/COHR/v20261013-1812/COHR_teaching_v20261013-1812.docx",
+   "bytes": 194968
+  },
+  {
+   "path": "research/companies/COHR/v20261013-1812/manifest.json",
+   "bytes": 2179
+  },
+  {
+   "path": "research/companies/COHR/v20261013-1812/COHR_report_v20261013-1812.pdf",
+   "bytes": 1139270
+  },
+  {
+   "path": "research/companies/COHR/v20261013-1812/COHR_teaching_v20261013-1812.pdf",
+   "bytes": 251320
+  },
+  {
+   "path": "research/companies/COHR/v20261013-1812/images/COHR_1_price_vs_value.png",
+   "bytes": 223623
+  },
+  {
+   "path": "research/companies/COHR/v20261013-1812/images/COHR_2_financials.png",
+   "bytes": 179027
+  },
+  {
+   "path": "research/companies/COHR/v20261013-1812/images/COHR_3_scenarios.png",
+   "bytes": 168405
+  },
+  {
+   "path": "research/companies/COHR/v20261013-1812/images/COHR_4_horizons.png",
+   "bytes": 185116
+  },
+  {
+   "path": "research/companies/COHR/v20261013-1812/images/COHR_5_logic_map.png",
+   "bytes": 210458
+  },
+  {
+   "path": "research/companies/COHR/v20261013-1812/images/COHR_1_price_vs_value.jpg",
+   "bytes": 308410
+  },
+  {
+   "path": "research/companies/COHR/v20261013-1812/images/COHR_2_financials.jpg",
+   "bytes": 245221
+  },
+  {
+   "path": "research/companies/COHR/v20261013-1812/images/COHR_3_scenarios.jpg",
+   "bytes": 252188
+  },
+  {
+   "path": "research/companies/COHR/v20261013-1812/images/COHR_4_horizons.jpg",
+   "bytes": 248239
+  },
+  {
+   "path": "research/companies/COHR/v20261013-1812/images/COHR_5_logic_map.jpg",
+   "bytes": 243302
+  },
+  {
+   "path": "research/companies/KLAC/v20261013-1812/KLAC_model_v20261013-1812.xlsx",
+   "bytes": 35997
+  },
+  {
+   "path": "research/companies/KLAC/v20261013-1812/KLAC_report_v20261013-1812.md",
+   "bytes": 16631
+  },
+  {
+   "path": "research/companies/KLAC/v20261013-1812/KLAC_teaching_v20261013-1812.md",
+   "bytes": 4379
+  },
+  {
+   "path": "research/companies/KLAC/v20261013-1812/summary.json",
+   "bytes": 521
+  },
+  {
+   "path": "research/companies/KLAC/v20261013-1812/KLAC_report_v20261013-1812.html",
+   "bytes": 29065
+  },
+  {
+   "path": "research/companies/KLAC/v20261013-1812/KLAC_report_v20261013-1812.docx",
+   "bytes": 804978
+  },
+  {
+   "path": "research/companies/KLAC/v20261013-1812/KLAC_teaching_v20261013-1812.html",
+   "bytes": 9466
+  },
+  {
+   "path": "research/companies/KLAC/v20261013-1812/KLAC_teaching_v20261013-1812.docx",
+   "bytes": 192617
+  },
+  {
+   "path": "research/companies/KLAC/v20261013-1812/manifest.json",
+   "bytes": 2179
+  },
+  {
+   "path": "research/companies/KLAC/v20261013-1812/KLAC_report_v20261013-1812.pdf",
+   "bytes": 1119639
+  },
+  {
+   "path": "research/companies/KLAC/v20261013-1812/KLAC_teaching_v20261013-1812.pdf",
+   "bytes": 246800
+  },
+  {
+   "path": "research/companies/KLAC/v20261013-1812/images/KLAC_1_price_vs_value.png",
+   "bytes": 210136
+  },
+  {
+   "path": "research/companies/KLAC/v20261013-1812/images/KLAC_2_financials.png",
+   "bytes": 176514
+  },
+  {
+   "path": "research/companies/KLAC/v20261013-1812/images/KLAC_3_scenarios.png",
+   "bytes": 169714
+  },
+  {
+   "path": "research/companies/KLAC/v20261013-1812/images/KLAC_4_horizons.png",
+   "bytes": 163802
+  },
+  {
+   "path": "research/companies/KLAC/v20261013-1812/images/KLAC_5_logic_map.png",
+   "bytes": 207257
+  },
+  {
+   "path": "research/companies/KLAC/v20261013-1812/images/KLAC_1_price_vs_value.jpg",
+   "bytes": 285581
+  },
+  {
+   "path": "research/companies/KLAC/v20261013-1812/images/KLAC_2_financials.jpg",
+   "bytes": 257991
+  },
+  {
+   "path": "research/companies/KLAC/v20261013-1812/images/KLAC_3_scenarios.jpg",
+   "bytes": 242238
+  },
+  {
+   "path": "research/companies/KLAC/v20261013-1812/images/KLAC_4_horizons.jpg",
+   "bytes": 235507
+  },
+  {
+   "path": "research/companies/KLAC/v20261013-1812/images/KLAC_5_logic_map.jpg",
+   "bytes": 241964
+  },
+  {
+   "path": "research/companies/AMAT/v20261013-1812/AMAT_model_v20261013-1812.xlsx",
+   "bytes": 35901
+  },
+  {
+   "path": "research/companies/AMAT/v20261013-1812/AMAT_report_v20261013-1812.md",
+   "bytes": 16710
+  },
+  {
+   "path": "research/companies/AMAT/v20261013-1812/AMAT_teaching_v20261013-1812.md",
+   "bytes": 4487
+  },
+  {
+   "path": "research/companies/AMAT/v20261013-1812/summary.json",
+   "bytes": 523
+  },
+  {
+   "path": "research/companies/AMAT/v20261013-1812/AMAT_report_v20261013-1812.html",
+   "bytes": 29146
+  },
+  {
+   "path": "research/companies/AMAT/v20261013-1812/AMAT_report_v20261013-1812.docx",
+   "bytes": 820349
+  },
+  {
+   "path": "research/companies/AMAT/v20261013-1812/AMAT_teaching_v20261013-1812.html",
+   "bytes": 9576
+  },
+  {
+   "path": "research/companies/AMAT/v20261013-1812/AMAT_teaching_v20261013-1812.docx",
+   "bytes": 195516
+  },
+  {
+   "path": "research/companies/AMAT/v20261013-1812/manifest.json",
+   "bytes": 2179
+  },
+  {
+   "path": "research/companies/AMAT/v20261013-1812/AMAT_report_v20261013-1812.pdf",
+   "bytes": 1122523
+  },
+  {
+   "path": "research/companies/AMAT/v20261013-1812/AMAT_teaching_v20261013-1812.pdf",
+   "bytes": 249212
+  },
+  {
+   "path": "research/companies/AMAT/v20261013-1812/images/AMAT_1_price_vs_value.png",
+   "bytes": 215590
+  },
+  {
+   "path": "research/companies/AMAT/v20261013-1812/images/AMAT_2_financials.png",
+   "bytes": 178549
+  },
+  {
+   "path": "research/companies/AMAT/v20261013-1812/images/AMAT_3_scenarios.png",
+   "bytes": 165205
+  },
+  {
+   "path": "research/companies/AMAT/v20261013-1812/images/AMAT_4_horizons.png",
+   "bytes": 171318
+  },
+  {
+   "path": "research/companies/AMAT/v20261013-1812/images/AMAT_5_logic_map.png",
+   "bytes": 210927
+  },
+  {
+   "path": "research/companies/AMAT/v20261013-1812/images/AMAT_1_price_vs_value.jpg",
+   "bytes": 301220
+  },
+  {
+   "path": "research/companies/AMAT/v20261013-1812/images/AMAT_2_financials.jpg",
+   "bytes": 243856
+  },
+  {
+   "path": "research/companies/AMAT/v20261013-1812/images/AMAT_3_scenarios.jpg",
+   "bytes": 250603
+  },
+  {
+   "path": "research/companies/AMAT/v20261013-1812/images/AMAT_4_horizons.jpg",
+   "bytes": 234835
+  },
+  {
+   "path": "research/companies/AMAT/v20261013-1812/images/AMAT_5_logic_map.jpg",
+   "bytes": 243416
+  },
+  {
+   "path": "research/companies/AMD/v20261013-1812/AMD_model_v20261013-1812.xlsx",
+   "bytes": 35909
+  },
+  {
+   "path": "research/companies/AMD/v20261013-1812/AMD_report_v20261013-1812.md",
+   "bytes": 16617
+  },
+  {
+   "path": "research/companies/AMD/v20261013-1812/AMD_teaching_v20261013-1812.md",
+   "bytes": 4515
+  },
+  {
+   "path": "research/companies/AMD/v20261013-1812/summary.json",
+   "bytes": 500
+  },
+  {
+   "path": "research/companies/AMD/v20261013-1812/AMD_report_v20261013-1812.html",
+   "bytes": 28945
+  },
+  {
+   "path": "research/companies/AMD/v20261013-1812/AMD_report_v20261013-1812.docx",
+   "bytes": 807476
+  },
+  {
+   "path": "research/companies/AMD/v20261013-1812/AMD_teaching_v20261013-1812.html",
+   "bytes": 9602
+  },
+  {
+   "path": "research/companies/AMD/v20261013-1812/AMD_teaching_v20261013-1812.docx",
+   "bytes": 194137
+  },
+  {
+   "path": "research/companies/AMD/v20261013-1812/manifest.json",
+   "bytes": 2159
+  },
+  {
+   "path": "research/companies/AMD/v20261013-1812/AMD_report_v20261013-1812.pdf",
+   "bytes": 1109480
+  },
+  {
+   "path": "research/companies/AMD/v20261013-1812/AMD_teaching_v20261013-1812.pdf",
+   "bytes": 247603
+  },
+  {
+   "path": "research/companies/AMD/v20261013-1812/images/AMD_1_price_vs_value.png",
+   "bytes": 187147
+  },
+  {
+   "path": "research/companies/AMD/v20261013-1812/images/AMD_2_financials.png",
+   "bytes": 184710
+  },
+  {
+   "path": "research/companies/AMD/v20261013-1812/images/AMD_3_scenarios.png",
+   "bytes": 171039
+  },
+  {
+   "path": "research/companies/AMD/v20261013-1812/images/AMD_4_horizons.png",
+   "bytes": 177443
+  },
+  {
+   "path": "research/companies/AMD/v20261013-1812/images/AMD_5_logic_map.png",
+   "bytes": 208893
+  },
+  {
+   "path": "research/companies/AMD/v20261013-1812/images/AMD_1_price_vs_value.jpg",
+   "bytes": 276609
+  },
+  {
+   "path": "research/companies/AMD/v20261013-1812/images/AMD_2_financials.jpg",
+   "bytes": 247405
+  },
+  {
+   "path": "research/companies/AMD/v20261013-1812/images/AMD_3_scenarios.jpg",
+   "bytes": 251456
+  },
+  {
+   "path": "research/companies/AMD/v20261013-1812/images/AMD_4_horizons.jpg",
+   "bytes": 235057
+  },
+  {
+   "path": "research/companies/AMD/v20261013-1812/images/AMD_5_logic_map.jpg",
+   "bytes": 241868
+  },
+  {
+   "path": "research/companies/EME/v20261013-1812/EME_model_v20261013-1812.xlsx",
+   "bytes": 35963
+  },
+  {
+   "path": "research/companies/EME/v20261013-1812/EME_report_v20261013-1812.md",
+   "bytes": 16554
+  },
+  {
+   "path": "research/companies/EME/v20261013-1812/EME_teaching_v20261013-1812.md",
+   "bytes": 4484
+  },
+  {
+   "path": "research/companies/EME/v20261013-1812/summary.json",
+   "bytes": 562
+  },
+  {
+   "path": "research/companies/EME/v20261013-1812/EME_report_v20261013-1812.html",
+   "bytes": 29008
+  },
+  {
+   "path": "research/companies/EME/v20261013-1812/EME_report_v20261013-1812.docx",
+   "bytes": 802881
+  },
+  {
+   "path": "research/companies/EME/v20261013-1812/EME_teaching_v20261013-1812.html",
+   "bytes": 9583
+  },
+  {
+   "path": "research/companies/EME/v20261013-1812/EME_teaching_v20261013-1812.docx",
+   "bytes": 190848
+  },
+  {
+   "path": "research/companies/EME/v20261013-1812/manifest.json",
+   "bytes": 2159
+  },
+  {
+   "path": "research/companies/EME/v20261013-1812/EME_report_v20261013-1812.pdf",
+   "bytes": 1115650
+  },
+  {
+   "path": "research/companies/EME/v20261013-1812/EME_teaching_v20261013-1812.pdf",
+   "bytes": 247200
+  },
+  {
+   "path": "research/companies/EME/v20261013-1812/images/EME_1_price_vs_value.png",
+   "bytes": 222128
+  },
+  {
+   "path": "research/companies/EME/v20261013-1812/images/EME_2_financials.png",
+   "bytes": 172113
+  },
+  {
+   "path": "research/companies/EME/v20261013-1812/images/EME_3_scenarios.png",
+   "bytes": 169949
+  },
+  {
+   "path": "research/companies/EME/v20261013-1812/images/EME_4_horizons.png",
+   "bytes": 152440
+  },
+  {
+   "path": "research/companies/EME/v20261013-1812/images/EME_5_logic_map.png",
+   "bytes": 204877
+  },
+  {
+   "path": "research/companies/EME/v20261013-1812/images/EME_1_price_vs_value.jpg",
+   "bytes": 305731
+  },
+  {
+   "path": "research/companies/EME/v20261013-1812/images/EME_2_financials.jpg",
+   "bytes": 245778
+  },
+  {
+   "path": "research/companies/EME/v20261013-1812/images/EME_3_scenarios.jpg",
+   "bytes": 259866
+  },
+  {
+   "path": "research/companies/EME/v20261013-1812/images/EME_4_horizons.jpg",
+   "bytes": 217131
+  },
+  {
+   "path": "research/companies/EME/v20261013-1812/images/EME_5_logic_map.jpg",
+   "bytes": 240630
+  },
+  {
+   "path": "research/companies/PWR/v20261013-1812/PWR_model_v20261013-1812.xlsx",
+   "bytes": 35953
+  },
+  {
+   "path": "research/companies/PWR/v20261013-1812/PWR_report_v20261013-1812.md",
+   "bytes": 16450
+  },
+  {
+   "path": "research/companies/PWR/v20261013-1812/PWR_teaching_v20261013-1812.md",
+   "bytes": 4428
+  },
+  {
+   "path": "research/companies/PWR/v20261013-1812/summary.json",
+   "bytes": 520
+  },
+  {
+   "path": "research/companies/PWR/v20261013-1812/PWR_report_v20261013-1812.html",
+   "bytes": 28776
+  },
+  {
+   "path": "research/companies/PWR/v20261013-1812/PWR_report_v20261013-1812.docx",
+   "bytes": 815621
+  },
+  {
+   "path": "research/companies/PWR/v20261013-1812/PWR_teaching_v20261013-1812.html",
+   "bytes": 9515
+  },
+  {
+   "path": "research/companies/PWR/v20261013-1812/PWR_teaching_v20261013-1812.docx",
+   "bytes": 192791
+  },
+  {
+   "path": "research/companies/PWR/v20261013-1812/manifest.json",
+   "bytes": 2159
+  },
+  {
+   "path": "research/companies/PWR/v20261013-1812/PWR_report_v20261013-1812.pdf",
+   "bytes": 1107774
+  },
+  {
+   "path": "research/companies/PWR/v20261013-1812/PWR_teaching_v20261013-1812.pdf",
+   "bytes": 249273
+  },
+  {
+   "path": "research/companies/PWR/v20261013-1812/images/PWR_1_price_vs_value.png",
+   "bytes": 213274
+  },
+  {
+   "path": "research/companies/PWR/v20261013-1812/images/PWR_2_financials.png",
+   "bytes": 193032
+  },
+  {
+   "path": "research/companies/PWR/v20261013-1812/images/PWR_3_scenarios.png",
+   "bytes": 168542
+  },
+  {
+   "path": "research/companies/PWR/v20261013-1812/images/PWR_4_horizons.png",
+   "bytes": 153959
+  },
+  {
+   "path": "research/companies/PWR/v20261013-1812/images/PWR_5_logic_map.png",
+   "bytes": 207063
+  },
+  {
+   "path": "research/companies/PWR/v20261013-1812/images/PWR_1_price_vs_value.jpg",
+   "bytes": 292169
+  },
+  {
+   "path": "research/companies/PWR/v20261013-1812/images/PWR_2_financials.jpg",
+   "bytes": 246892
+  },
+  {
+   "path": "research/companies/PWR/v20261013-1812/images/PWR_3_scenarios.jpg",
+   "bytes": 240444
+  },
+  {
+   "path": "research/companies/PWR/v20261013-1812/images/PWR_4_horizons.jpg",
+   "bytes": 220696
+  },
+  {
+   "path": "research/companies/PWR/v20261013-1812/images/PWR_5_logic_map.jpg",
+   "bytes": 241357
+  },
+  {
+   "path": "research/companies/CCL/v20261013-1812/CCL_model_v20261013-1812.xlsx",
+   "bytes": 35723
+  },
+  {
+   "path": "research/companies/CCL/v20261013-1812/CCL_report_v20261013-1812.md",
+   "bytes": 16028
+  },
+  {
+   "path": "research/companies/CCL/v20261013-1812/CCL_teaching_v20261013-1812.md",
+   "bytes": 4437
+  },
+  {
+   "path": "research/companies/CCL/v20261013-1812/summary.json",
+   "bytes": 524
+  },
+  {
+   "path": "research/companies/CCL/v20261013-1812/CCL_report_v20261013-1812.html",
+   "bytes": 28500
+  },
+  {
+   "path": "research/companies/CCL/v20261013-1812/CCL_report_v20261013-1812.docx",
+   "bytes": 827361
+  },
+  {
+   "path": "research/companies/CCL/v20261013-1812/CCL_teaching_v20261013-1812.html",
+   "bytes": 9524
+  },
+  {
+   "path": "research/companies/CCL/v20261013-1812/CCL_teaching_v20261013-1812.docx",
+   "bytes": 192536
+  },
+  {
+   "path": "research/companies/CCL/v20261013-1812/manifest.json",
+   "bytes": 2159
+  },
+  {
+   "path": "research/companies/CCL/v20261013-1812/CCL_report_v20261013-1812.pdf",
+   "bytes": 1111372
+  },
+  {
+   "path": "research/companies/CCL/v20261013-1812/CCL_teaching_v20261013-1812.pdf",
+   "bytes": 250431
+  },
+  {
+   "path": "research/companies/CCL/v20261013-1812/images/CCL_1_price_vs_value.png",
+   "bytes": 221782
+  },
+  {
+   "path": "research/companies/CCL/v20261013-1812/images/CCL_2_financials.png",
+   "bytes": 190561
+  },
+  {
+   "path": "research/companies/CCL/v20261013-1812/images/CCL_3_scenarios.png",
+   "bytes": 160302
+  },
+  {
+   "path": "research/companies/CCL/v20261013-1812/images/CCL_4_horizons.png",
+   "bytes": 162995
+  },
+  {
+   "path": "research/companies/CCL/v20261013-1812/images/CCL_5_logic_map.png",
+   "bytes": 207162
+  },
+  {
+   "path": "research/companies/CCL/v20261013-1812/images/CCL_1_price_vs_value.jpg",
+   "bytes": 303351
+  },
+  {
+   "path": "research/companies/CCL/v20261013-1812/images/CCL_2_financials.jpg",
+   "bytes": 256237
+  },
+  {
+   "path": "research/companies/CCL/v20261013-1812/images/CCL_3_scenarios.jpg",
+   "bytes": 231708
+  },
+  {
+   "path": "research/companies/CCL/v20261013-1812/images/CCL_4_horizons.jpg",
+   "bytes": 222027
+  },
+  {
+   "path": "research/companies/CCL/v20261013-1812/images/CCL_5_logic_map.jpg",
+   "bytes": 240450
+  },
+  {
+   "path": "research/companies/SIMO/v20261013-1812/SIMO_model_v20261013-1812.xlsx",
+   "bytes": 35818
+  },
+  {
+   "path": "research/companies/SIMO/v20261013-1812/SIMO_report_v20261013-1812.md",
+   "bytes": 16435
+  },
+  {
+   "path": "research/companies/SIMO/v20261013-1812/SIMO_teaching_v20261013-1812.md",
+   "bytes": 4458
+  },
+  {
+   "path": "research/companies/SIMO/v20261013-1812/summary.json",
+   "bytes": 529
+  },
+  {
+   "path": "research/companies/SIMO/v20261013-1812/SIMO_report_v20261013-1812.html",
+   "bytes": 28929
+  },
+  {
+   "path": "research/companies/SIMO/v20261013-1812/SIMO_report_v20261013-1812.docx",
+   "bytes": 841673
+  },
+  {
+   "path": "research/companies/SIMO/v20261013-1812/SIMO_teaching_v20261013-1812.html",
+   "bytes": 9557
+  },
+  {
+   "path": "research/companies/SIMO/v20261013-1812/SIMO_teaching_v20261013-1812.docx",
+   "bytes": 197756
+  },
+  {
+   "path": "research/companies/SIMO/v20261013-1812/manifest.json",
+   "bytes": 2179
+  },
+  {
+   "path": "research/companies/SIMO/v20261013-1812/SIMO_report_v20261013-1812.pdf",
+   "bytes": 1117986
+  },
+  {
+   "path": "research/companies/SIMO/v20261013-1812/SIMO_teaching_v20261013-1812.pdf",
+   "bytes": 249342
+  },
+  {
+   "path": "research/companies/SIMO/v20261013-1812/images/SIMO_1_price_vs_value.png",
+   "bytes": 212315
+  },
+  {
+   "path": "research/companies/SIMO/v20261013-1812/images/SIMO_2_financials.png",
+   "bytes": 177785
+  },
+  {
+   "path": "research/companies/SIMO/v20261013-1812/images/SIMO_3_scenarios.png",
+   "bytes": 168690
+  },
+  {
+   "path": "research/companies/SIMO/v20261013-1812/images/SIMO_4_horizons.png",
+   "bytes": 191935
+  },
+  {
+   "path": "research/companies/SIMO/v20261013-1812/images/SIMO_5_logic_map.png",
+   "bytes": 213304
+  },
+  {
+   "path": "research/companies/SIMO/v20261013-1812/images/SIMO_1_price_vs_value.jpg",
+   "bytes": 288085
+  },
+  {
+   "path": "research/companies/SIMO/v20261013-1812/images/SIMO_2_financials.jpg",
+   "bytes": 240991
+  },
+  {
+   "path": "research/companies/SIMO/v20261013-1812/images/SIMO_3_scenarios.jpg",
+   "bytes": 250798
+  },
+  {
+   "path": "research/companies/SIMO/v20261013-1812/images/SIMO_4_horizons.jpg",
+   "bytes": 239579
+  },
+  {
+   "path": "research/companies/SIMO/v20261013-1812/images/SIMO_5_logic_map.jpg",
+   "bytes": 242961
+  },
+  {
+   "path": "research/companies/MXL/v20261013-1812/MXL_model_v20261013-1812.xlsx",
+   "bytes": 35916
+  },
+  {
+   "path": "research/companies/MXL/v20261013-1812/MXL_report_v20261013-1812.md",
+   "bytes": 16825
+  },
+  {
+   "path": "research/companies/MXL/v20261013-1812/MXL_teaching_v20261013-1812.md",
+   "bytes": 4557
+  },
+  {
+   "path": "research/companies/MXL/v20261013-1812/summary.json",
+   "bytes": 516
+  },
+  {
+   "path": "research/companies/MXL/v20261013-1812/MXL_report_v20261013-1812.html",
+   "bytes": 29251
+  },
+  {
+   "path": "research/companies/MXL/v20261013-1812/MXL_report_v20261013-1812.docx",
+   "bytes": 823674
+  },
+  {
+   "path": "research/companies/MXL/v20261013-1812/MXL_teaching_v20261013-1812.html",
+   "bytes": 9648
+  },
+  {
+   "path": "research/companies/MXL/v20261013-1812/MXL_teaching_v20261013-1812.docx",
+   "bytes": 194844
+  },
+  {
+   "path": "research/companies/MXL/v20261013-1812/manifest.json",
+   "bytes": 2159
+  },
+  {
+   "path": "research/companies/MXL/v20261013-1812/MXL_report_v20261013-1812.pdf",
+   "bytes": 1108158
+  },
+  {
+   "path": "research/companies/MXL/v20261013-1812/MXL_teaching_v20261013-1812.pdf",
+   "bytes": 253114
+  },
+  {
+   "path": "research/companies/MXL/v20261013-1812/images/MXL_1_price_vs_value.png",
+   "bytes": 208105
+  },
+  {
+   "path": "research/companies/MXL/v20261013-1812/images/MXL_2_financials.png",
+   "bytes": 198848
+  },
+  {
+   "path": "research/companies/MXL/v20261013-1812/images/MXL_3_scenarios.png",
+   "bytes": 160200
+  },
+  {
+   "path": "research/companies/MXL/v20261013-1812/images/MXL_4_horizons.png",
+   "bytes": 165769
+  },
+  {
+   "path": "research/companies/MXL/v20261013-1812/images/MXL_5_logic_map.png",
+   "bytes": 210152
+  },
+  {
+   "path": "research/companies/MXL/v20261013-1812/images/MXL_1_price_vs_value.jpg",
+   "bytes": 292680
+  },
+  {
+   "path": "research/companies/MXL/v20261013-1812/images/MXL_2_financials.jpg",
+   "bytes": 265073
+  },
+  {
+   "path": "research/companies/MXL/v20261013-1812/images/MXL_3_scenarios.jpg",
+   "bytes": 235833
+  },
+  {
+   "path": "research/companies/MXL/v20261013-1812/images/MXL_4_horizons.jpg",
+   "bytes": 224835
+  },
+  {
+   "path": "research/companies/MXL/v20261013-1812/images/MXL_5_logic_map.jpg",
+   "bytes": 241297
+  },
+  {
+   "path": "research/companies/RKLB/v20261013-1812/RKLB_model_v20261013-1812.xlsx",
+   "bytes": 35878
+  },
+  {
+   "path": "research/companies/RKLB/v20261013-1812/RKLB_report_v20261013-1812.md",
+   "bytes": 16915
+  },
+  {
+   "path": "research/companies/RKLB/v20261013-1812/RKLB_teaching_v20261013-1812.md",
+   "bytes": 4535
+  },
+  {
+   "path": "research/companies/RKLB/v20261013-1812/summary.json",
+   "bytes": 549
+  },
+  {
+   "path": "research/companies/RKLB/v20261013-1812/RKLB_report_v20261013-1812.html",
+   "bytes": 29363
+  },
+  {
+   "path": "research/companies/RKLB/v20261013-1812/RKLB_report_v20261013-1812.docx",
+   "bytes": 796446
+  },
+  {
+   "path": "research/companies/RKLB/v20261013-1812/RKLB_teaching_v20261013-1812.html",
+   "bytes": 9622
+  },
+  {
+   "path": "research/companies/RKLB/v20261013-1812/RKLB_teaching_v20261013-1812.docx",
+   "bytes": 192576
+  },
+  {
+   "path": "research/companies/RKLB/v20261013-1812/manifest.json",
+   "bytes": 2179
+  },
+  {
+   "path": "research/companies/RKLB/v20261013-1812/RKLB_report_v20261013-1812.pdf",
+   "bytes": 1118174
+  },
+  {
+   "path": "research/companies/RKLB/v20261013-1812/RKLB_teaching_v20261013-1812.pdf",
+   "bytes": 250326
+  },
+  {
+   "path": "research/companies/RKLB/v20261013-1812/images/RKLB_1_price_vs_value.png",
+   "bytes": 209828
+  },
+  {
+   "path": "research/companies/RKLB/v20261013-1812/images/RKLB_2_financials.png",
+   "bytes": 187614
+  },
+  {
+   "path": "research/companies/RKLB/v20261013-1812/images/RKLB_3_scenarios.png",
+   "bytes": 161128
+  },
+  {
+   "path": "research/companies/RKLB/v20261013-1812/images/RKLB_4_horizons.png",
+   "bytes": 154288
+  },
+  {
+   "path": "research/companies/RKLB/v20261013-1812/images/RKLB_5_logic_map.png",
+   "bytes": 207177
+  },
+  {
+   "path": "research/companies/RKLB/v20261013-1812/images/RKLB_1_price_vs_value.jpg",
+   "bytes": 291463
+  },
+  {
+   "path": "research/companies/RKLB/v20261013-1812/images/RKLB_2_financials.jpg",
+   "bytes": 253929
+  },
+  {
+   "path": "research/companies/RKLB/v20261013-1812/images/RKLB_3_scenarios.jpg",
+   "bytes": 242584
+  },
+  {
+   "path": "research/companies/RKLB/v20261013-1812/images/RKLB_4_horizons.jpg",
+   "bytes": 222997
+  },
+  {
+   "path": "research/companies/RKLB/v20261013-1812/images/RKLB_5_logic_map.jpg",
+   "bytes": 244075
+  },
+  {
+   "path": "research/macro/v20261013-1812/macro_report_v20261013-1812.md",
+   "bytes": 5835
+  },
+  {
+   "path": "research/macro/v20261013-1812/macro_teaching_v20261013-1812.md",
+   "bytes": 1577
+  },
+  {
+   "path": "research/macro/v20261013-1812/macro_report_v20261013-1812.html",
+   "bytes": 13885
+  },
+  {
+   "path": "research/macro/v20261013-1812/macro_report_v20261013-1812.docx",
+   "bytes": 1086836
+  },
+  {
+   "path": "research/macro/v20261013-1812/macro_teaching_v20261013-1812.html",
+   "bytes": 6204
+  },
+  {
+   "path": "research/macro/v20261013-1812/macro_teaching_v20261013-1812.docx",
+   "bytes": 11924
+  },
+  {
+   "path": "research/macro/v20261013-1812/manifest.json",
+   "bytes": 1981
+  },
+  {
+   "path": "research/macro/v20261013-1812/macro_report_v20261013-1812.pdf",
+   "bytes": 967078
+  },
+  {
+   "path": "research/macro/v20261013-1812/macro_teaching_v20261013-1812.pdf",
+   "bytes": 89273
+  },
+  {
+   "path": "research/macro/v20261013-1812/images/macro_1_rates.png",
+   "bytes": 252131
+  },
+  {
+   "path": "research/macro/v20261013-1812/images/macro_1_rates.jpg",
+   "bytes": 269049
+  },
+  {
+   "path": "research/macro/v20261013-1812/images/macro_2_carry.png",
+   "bytes": 316378
+  },
+  {
+   "path": "research/macro/v20261013-1812/images/macro_2_carry.jpg",
+   "bytes": 303020
+  },
+  {
+   "path": "research/macro/v20261013-1812/images/macro_3_inflation.png",
+   "bytes": 212477
+  },
+  {
+   "path": "research/macro/v20261013-1812/images/macro_3_inflation.jpg",
+   "bytes": 242902
+  },
+  {
+   "path": "research/macro/v20261013-1812/images/macro_4_liquidity.png",
+   "bytes": 181299
+  },
+  {
+   "path": "research/macro/v20261013-1812/images/macro_4_liquidity.jpg",
+   "bytes": 229648
+  },
+  {
+   "path": "research/macro/v20261013-1812/images/macro_5_crossasset.png",
+   "bytes": 237784
+  },
+  {
+   "path": "research/macro/v20261013-1812/images/macro_5_crossasset.jpg",
+   "bytes": 360656
+  },
+  {
+   "path": "research/radar/v20261013-1812/radar_report_v20261013-1812.md",
+   "bytes": 8715
+  },
+  {
+   "path": "research/radar/v20261013-1812/radar_report_v20261013-1812.html",
+   "bytes": 19552
+  },
+  {
+   "path": "research/radar/v20261013-1812/radar_report_v20261013-1812.docx",
+   "bytes": 430734
+  },
+  {
+   "path": "research/radar/v20261013-1812/manifest.json",
+   "bytes": 1093
+  },
+  {
+   "path": "research/radar/v20261013-1812/radar_report_v20261013-1812.pdf",
+   "bytes": 798018
+  },
+  {
+   "path": "research/radar/v20261013-1812/images/radar_TW.png",
+   "bytes": 183895
+  },
+  {
+   "path": "research/radar/v20261013-1812/images/radar_TW.jpg",
+   "bytes": 285773
+  },
+  {
+   "path": "research/radar/v20261013-1812/images/radar_JP.png",
+   "bytes": 171393
+  },
+  {
+   "path": "research/radar/v20261013-1812/images/radar_JP.jpg",
+   "bytes": 265387
+  },
+  {
+   "path": "research/radar/v20261013-1812/images/radar_KR.png",
+   "bytes": 167019
+  },
+  {
+   "path": "research/radar/v20261013-1812/images/radar_KR.jpg",
+   "bytes": 274953
+  },
+  {
+   "path": "research/events/v20261013-1812/event_calendar_v20261013-1812.md",
+   "bytes": 8133
+  },
+  {
+   "path": "research/events/v20261013-1812/event_calendar_v20261013-1812.html",
+   "bytes": 15047
+  },
+  {
+   "path": "research/events/v20261013-1812/event_calendar_v20261013-1812.docx",
+   "bytes": 14445
+  },
+  {
+   "path": "research/events/v20261013-1812/manifest.json",
+   "bytes": 531
+  },
+  {
+   "path": "research/events/v20261013-1812/event_calendar_v20261013-1812.pdf",
+   "bytes": 221968
+  },
+  {
+   "path": "research/daily/v20261013-1812/daily_2026-10-13_v20261013-1812.md",
+   "bytes": 3361
+  },
+  {
+   "path": "research/daily/v20261013-1812/daily_2026-10-13_v20261013-1812.html",
+   "bytes": 10230
+  },
+  {
+   "path": "research/daily/v20261013-1812/daily_2026-10-13_v20261013-1812.docx",
+   "bytes": 227600
+  },
+  {
+   "path": "research/daily/v20261013-1812/manifest.json",
+   "bytes": 941
+  },
+  {
+   "path": "research/daily/v20261013-1812/daily_2026-10-13_v20261013-1812.pdf",
+   "bytes": 482129
+  },
+  {
+   "path": "research/daily/v20261013-1812/images/daily_movers.png",
+   "bytes": 136663
+  },
+  {
+   "path": "research/daily/v20261013-1812/images/daily_movers.jpg",
+   "bytes": 325735
+  },
+  {
+   "path": "research/daily/v20261013-1812/images/daily_valuation.png",
+   "bytes": 136480
+  },
+  {
+   "path": "research/daily/v20261013-1812/images/daily_valuation.jpg",
+   "bytes": 286810
+  },
+  {
+   "path": "research/review/v20261013-1812/system_review_v20261013-1812.md",
+   "bytes": 5857
+  },
+  {
+   "path": "research/review/v20261013-1812/system_review_v20261013-1812.html",
+   "bytes": 11932
+  },
+  {
+   "path": "research/review/v20261013-1812/system_review_v20261013-1812.docx",
+   "bytes": 15765
+  },
+  {
+   "path": "research/review/v20261013-1812/manifest.json",
+   "bytes": 527
+  },
+  {
+   "path": "research/review/v20261013-1812/system_review_v20261013-1812.pdf",
+   "bytes": 307779
+  },
+  {
+   "path": "research/master-prompt/v2026-09-17b/MASTER_PROMPT_v2026-09-17b.md",
+   "bytes": 28041
+  },
+  {
+   "path": "research/master-prompt/v2026-09-17b/CHANGELOG_v2026-09-17b.md",
+   "bytes": 98
+  },
+  {
+   "path": "research/master-prompt/v2026-09-17b/MASTER_PROMPT_v2026-09-17b.html",
+   "bytes": 38117
+  },
+  {
+   "path": "research/master-prompt/v2026-09-17b/MASTER_PROMPT_v2026-09-17b.docx",
+   "bytes": 28169
+  },
+  {
+   "path": "research/master-prompt/v2026-09-17b/CHANGELOG_v2026-09-17b.html",
+   "bytes": 4511
+  },
+  {
+   "path": "research/master-prompt/v2026-09-17b/CHANGELOG_v2026-09-17b.docx",
+   "bytes": 10479
+  },
+  {
+   "path": "research/master-prompt/v2026-09-17b/manifest.json",
+   "bytes": 926
+  },
+  {
+   "path": "research/master-prompt/v2026-09-17b/MASTER_PROMPT_v2026-09-17b.pdf",
+   "bytes": 311409
+  },
+  {
+   "path": "research/master-prompt/v2026-09-17b/CHANGELOG_v2026-09-17b.pdf",
+   "bytes": 12721
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13/MASTER_PROMPT_v2026-10-13.md",
+   "bytes": 32938
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13/CHANGELOG_v2026-10-13.md",
+   "bytes": 299
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13/MASTER_PROMPT_v2026-10-13.html",
+   "bytes": 44567
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13/MASTER_PROMPT_v2026-10-13.docx",
+   "bytes": 31981
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13/CHANGELOG_v2026-10-13.html",
+   "bytes": 4711
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13/CHANGELOG_v2026-10-13.docx",
+   "bytes": 10609
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13/manifest.json",
+   "bytes": 918
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13/MASTER_PROMPT_v2026-10-13.pdf",
+   "bytes": 414149
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13/CHANGELOG_v2026-10-13.pdf",
+   "bytes": 13816
+  },
+  {
+   "path": "research/review/v20261013-1812/system_review_v20261013-1812.md",
+   "bytes": 5857
+  },
+  {
+   "path": "research/review/v20261013-1812/system_review_v20261013-1812.html",
+   "bytes": 11932
+  },
+  {
+   "path": "research/review/v20261013-1812/system_review_v20261013-1812.docx",
+   "bytes": 15765
+  },
+  {
+   "path": "research/review/v20261013-1812/manifest.json",
+   "bytes": 527
+  },
+  {
+   "path": "research/review/v20261013-1812/system_review_v20261013-1812.pdf",
+   "bytes": 307779
+  }
+ ]
+}

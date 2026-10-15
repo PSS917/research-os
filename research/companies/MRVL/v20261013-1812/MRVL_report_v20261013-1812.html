@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title> </title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<style>body{font-family:'Noto Sans CJK SC','Noto Sans',sans-serif;max-width:1100px;margin:auto;padding:24px;line-height:1.6;color:#1b1b1b}table{border-collapse:collapse;font-size:13px;margin:8px 0}td,th{border:1px solid #ccd;padding:4px 8px}th{background:#1F3A5F;color:#fff}img{max-width:100%;border:1px solid #ddd}h1{color:#1F3A5F}h2{border-bottom:2px solid #1F3A5F}blockquote{background:#f3f6fa;border-left:4px solid #2E86C1;margin:0;padding:6px 12px}</style></head>
+<body><div style="background:#fff7ed;border:1px solid #fdba74;padding:8px 12px;margin:8px 0;font-size:13px">历史版本：PDF/Word/图片已归档至 GitHub Release（下载：<a href="https://github.com/PSS917/research-os/releases/download/archive-v20261013-1812/MRVL_v20261013-1812.zip">ZIP</a>）。Archived version — heavy files live in Release assets.</div>
+<header id="title-block-header">
+<h1 class="title"> </h1>
+</header>
+<h1
+id="mrvl-marvell-technology-inc.-个股深度研究-专业中文版-v20261013-1812">MRVL
+Marvell Technology, Inc. — 个股深度研究 (专业中文版) v20261013-1812</h1>
+<blockquote>
+<p>数据截至 2026-10-13 18:12 SGT｜价格 $265.86｜市值 238.9 bn
+USD｜财报货币
+USD｜非投资建议。事实=CONFIRMED/DATA；推断=INFERENCE；假设=ASSUMPTION/HYPOTHESIS。</p>
+</blockquote>
+<h2 id="投资论点-investment-thesis-hypothesis">1. 投资论点 Investment
+Thesis (HYPOTHESIS)</h2>
+<p>Marvell受益于AI光互连(PAM4
+DSP)与定制XPU；争议点在定制项目的代际延续性及光DSP是否被CPO侵蚀。</p>
+<ul>
+<li><strong>多头驱动</strong>: Next-gen Trainium/Maia sockets retained;
+1.6T DSP ramp｜下一代Trainium/Maia留住；1.6T DSP放量</li>
+<li><strong>空头驱动</strong>: Losing socket to rival; LPO/CPO shrinks
+DSP TAM｜失去关键项目；LPO/CPO压缩DSP市场</li>
+<li><strong>证伪条件 Falsifiers</strong>: DC revenue guide flat-to-down;
+customer disclosures of competitor
+sockets｜DC收入指引持平或下降；客户披露换供应商</li>
+</ul>
+<h2 id="产品客户与收入模式">2. 产品、客户与收入模式</h2>
+<ul>
+<li>主题 Theme: Custom ASIC + electro-optics 定制ASIC+光电DSP</li>
+<li>业务分部 Segments: Data center (custom+optical DSP)
+数据中心；Enterprise/Carrier 企业/运营商；Consumer/Auto/Industrial
+其他</li>
+<li>公司描述 (DATA, Yahoo/公司申报): Marvell Technology, Inc., together
+with its subsidiaries, provides data infrastructure semiconductor
+solutions and spanning the data center core to network edge in the
+United States, Argentina, China, India, Israel, Japan, Singapore, South
+Korea, Taiwan, Vietnam, and internationally. The company develops and
+scales system-on-a-chip architectures, integrating analog, mixed-signal,
+and digital signal processing functionality. It offers a portfolio of
+ethernet solutions, including spanning controllers, network adapters,
+physical transceivers, and switches; single or multiple core processors;
+and custom application specific integrated circuits, interconnects,
+fibre channel adapters, and processors. The company also provides
+interconnect products, including pulse amplitude modulation, coherent
+and coherent-lite digital signal processors (DSPs), laser drivers,
+trans-impedance amplifiers, silic</li>
+<li>主要客户: AWS (Trainium), Microsoft (Maia), Google, hyperscaler
+optical module makers｜AWS、微软、谷歌、光模块厂</li>
+</ul>
+<h2 id="行业竞争监管与供应链-analyst-framework">3.
+行业、竞争、监管与供应链 (ANALYST FRAMEWORK)</h2>
+<ul>
+<li>供应商/上游: TSMC, substrate/packaging
+vendors｜台积电、载板/封装</li>
+<li>竞争者 (含业外): Broadcom, Alchip, MediaTek, Credo (AECs),
+Inphi-legacy rivals｜博通、世芯、联发科、Credo</li>
+<li>瓶颈/监管: Custom program wins/losses, PAM4 DSP vs LPO/CPO
+substitution｜定制项目得失、DSP被LPO/CPO替代</li>
+<li>关键KPI: DC revenue, custom revenue, optical DSP revenue,
+GM%｜DC收入、定制收入、光DSP收入、毛利率</li>
+<li>零部件现货/合约价:
+本版未接入付费价格源(TrendForce/DRAMeXchange等)——标注
+<strong>UNAVAILABLE</strong>，在KPI监控中以定性方式跟踪。</li>
+</ul>
+<h2 id="历史财务与现金流-confirmed-季度-usd">4. 历史财务与现金流
+(CONFIRMED, 季度, USD)</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>季度</th>
+<th>收入</th>
+<th>毛利</th>
+<th>营业利润</th>
+<th>净利润</th>
+<th>FCF</th>
+<th>营业利润率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-07-31</td>
+<td>2.7 bn USD</td>
+<td>1.5 bn USD</td>
+<td>0.5 bn USD</td>
+<td>0.3 bn USD</td>
+<td>0.5 bn USD</td>
+<td>16.7%</td>
+</tr>
+<tr>
+<td>2026-04-30</td>
+<td>2.4 bn USD</td>
+<td>1.3 bn USD</td>
+<td>0.4 bn USD</td>
+<td>34.5 mn USD</td>
+<td>0.5 bn USD</td>
+<td>14.5%</td>
+</tr>
+<tr>
+<td>2026-01-31</td>
+<td>2.2 bn USD</td>
+<td>1.1 bn USD</td>
+<td>0.4 bn USD</td>
+<td>0.4 bn USD</td>
+<td>0.3 bn USD</td>
+<td>18.7%</td>
+</tr>
+<tr>
+<td>2025-10-31</td>
+<td>2.1 bn USD</td>
+<td>1.1 bn USD</td>
+<td>0.4 bn USD</td>
+<td>1.9 bn USD</td>
+<td>0.5 bn USD</td>
+<td>17.7%</td>
+</tr>
+<tr>
+<td>2025-07-31</td>
+<td>2.0 bn USD</td>
+<td>1.0 bn USD</td>
+<td>0.3 bn USD</td>
+<td>0.2 bn USD</td>
+<td>0.4 bn USD</td>
+<td>14.9%</td>
+</tr>
+<tr>
+<td>2025-01-31</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<p>资产负债: 现金 3.9 bn USD；总负债 5.3 bn USD；净现金 -1.4 bn USD。TTM
+FCF 1.7 bn USD（FCF率 18.2%）。</p>
+<h2 id="最新财报-实际-vs-一致预期-vs-指引">5. 最新财报: 实际 vs 一致预期
+vs 指引</h2>
+<table>
+<thead>
+<tr>
+<th>季度</th>
+<th>EPS实际</th>
+<th>EPS一致预期</th>
+<th>超预期%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-10-31</td>
+<td>0.76</td>
+<td>0.73778</td>
+<td>0.0301</td>
+</tr>
+<tr>
+<td>2026-01-31</td>
+<td>0.8</td>
+<td>0.79165</td>
+<td>0.0105</td>
+</tr>
+<tr>
+<td>2026-04-30</td>
+<td>0.8</td>
+<td>0.79495</td>
+<td>0.0064</td>
+</tr>
+<tr>
+<td>2026-07-31</td>
+<td>0.94</td>
+<td>0.93077</td>
+<td>0.0099</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>管理层指引 Guidance:
+自动数据源不含指引——<strong>UNAVAILABLE（待从公司IR新闻稿录入）</strong>。</li>
+<li>下次财报日 (Yahoo, TENTATIVE 直至公司确认):
+<strong>2026-12-02</strong>；本季EPS一致预期
+1.10124（34位分析师）；收入一致预期 3.2 bn USD。</li>
+</ul>
+<h2 id="未来2468季度驱动与价格合理性">6.
+未来2/4/6/8季度驱动与价格合理性</h2>
+<table>
+<thead>
+<tr>
+<th>期限</th>
+<th>情景</th>
+<th>期限价格现值</th>
+<th>相对现价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2Q</td>
+<td>Bear</td>
+<td>$43.05</td>
+<td>-83.8%</td>
+</tr>
+<tr>
+<td>2Q</td>
+<td>Base</td>
+<td>$110.62</td>
+<td>-58.4%</td>
+</tr>
+<tr>
+<td>2Q</td>
+<td>Bull</td>
+<td>$195.44</td>
+<td>-26.5%</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>Bear</td>
+<td>$47.78</td>
+<td>-82.0%</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>Base</td>
+<td>$140.44</td>
+<td>-47.2%</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>Bull</td>
+<td>$266.49</td>
+<td>0.2%</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>Bear</td>
+<td>$52.95</td>
+<td>-80.1%</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>Base</td>
+<td>$177.66</td>
+<td>-33.2%</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>Bull</td>
+<td>$361.54</td>
+<td>36.0%</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>Bear</td>
+<td>$58.58</td>
+<td>-78.0%</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>Base</td>
+<td>$224.08</td>
+<td>-15.7%</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>Bull</td>
+<td>$488.39</td>
+<td>83.7%</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>现价隐含的 EV/NTM-FCF (Base 路径):</th>
+<th>期限</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2Q</td>
+<td>56.1x</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>41.6x</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>31.0x</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>23.1x</td>
+</tr>
+</tbody>
+</table>
+<p>解读:
+如果8季度后Base情景所需倍数仍远高于25x，说明价格依赖更远期的增长。</p>
+<h2 id="三情景-bear-base-bull-hypothesis">7. 三情景 Bear / Base / Bull
+(HYPOTHESIS)</h2>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr>
+<th>情景</th>
+<th>Y1增速</th>
+<th>长期FCF率</th>
+<th>WACC</th>
+<th>永续g</th>
+<th>概率</th>
+<th>每股价值</th>
+<th>相对现价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bear</td>
+<td>31.6%</td>
+<td>24.0%</td>
+<td>14.2%</td>
+<td>2.5%</td>
+<td>25.0%</td>
+<td>$60.06</td>
+<td>-77.4%</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>63.1%</td>
+<td>30.0%</td>
+<td>13.2%</td>
+<td>3.0%</td>
+<td>50.0%</td>
+<td>$256.08</td>
+<td>-3.7%</td>
+</tr>
+<tr>
+<td>Bull</td>
+<td>82.1%</td>
+<td>34.5%</td>
+<td>12.7%</td>
+<td>3.5%</td>
+<td>25.0%</td>
+<td>$597.17</td>
+<td>124.6%</td>
+</tr>
+</tbody>
+</table>
+<p>概率加权价值 <strong>$292.35</strong>（相对现价 10.0%）。</p>
+<h2 id="估值-dcf-reverse-dcf-roic-wacc-同业-敏感度">8. 估值: DCF /
+Reverse DCF / ROIC-WACC / 同业 / 敏感度</h2>
+<ul>
+<li><p>DCF Base: EV 231.5 bn USD；终值占比 55.9%。</p></li>
+<li><p><strong>Reverse DCF 反向DCF</strong>:
+在Base利润率与WACC下，现价隐含Y1收入增速 ≈
+<strong>64.3%</strong>；一致预期FY+1增速 63.1%。</p></li>
+<li><p>WACC (CAPM) = rf 5.2% + β 1.60 × ERP 5.0% = 13.2%。</p></li>
+<li><p>SOTP segments 分部: Data center (custom+optical DSP) 数据中心;
+Enterprise/Carrier 企业/运营商; Consumer/Auto/Industrial 其他.
+<strong>Status: framework only</strong> — segment revenues are INPUT
+REQUIRED from the latest 10-K/10-Q segment note (not auto-fed, left
+blank to avoid
+fabrication)｜分部收入需按最新财报手动录入，未自动填充以避免编造。</p></li>
+<li><p>同业比较 Comps (DATA): | Ticker | 市值 | EV/Sales | Fwd P/E |
+收入增速 | 毛利率 | FCF收益率 | |—|—|—|—|—|—|—| | MRVL | 238.9 bn USD |
+24.8x | 36.5x | 36.5% | 52.2% | 0.7% | | AVGO | 1,693.3 bn USD | 19.4x |
+18.3x | 85.5% | 75.5% | 1.8% | | CRDO | 37.7 bn USD | 23.3x | 20.7x |
+114.7% | 67.1% | 0.7% | | ALAB | 56.2 bn USD | 45.8x | 50.7x | 104.5% |
+75.1% | 0.2% | | AMD | 970.1 bn USD | 23.3x | 37.8x | 50.1% | 55.7% |
+0.9% |</p></li>
+<li><p>敏感度: 见Excel <code>Sensitivity</code> 表 (WACC ×
+永续增长率)。</p></li>
+</ul>
+<h2 id="风险反方论证与证伪">9. 风险、反方论证与证伪</h2>
+<ul>
+<li>反方观点 Counter-thesis: Losing socket to rival; LPO/CPO shrinks DSP
+TAM｜失去关键项目；LPO/CPO压缩DSP市场</li>
+<li>证伪指标: DC revenue guide flat-to-down; customer disclosures of
+competitor sockets｜DC收入指引持平或下降；客户披露换供应商</li>
+<li>模型风险:
+长期利润率与WACC为假设；终值占比高时估值对假设极敏感。</li>
+</ul>
+<h2 id="source-ledger-来源账本">10. Source Ledger 来源账本</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+<th>Source/time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Price 股价</td>
+<td>265.9</td>
+<td>Yahoo Finance quote, fetched 2026-10-13T18:12 SGT</td>
+</tr>
+<tr>
+<td>Market cap 市值</td>
+<td>2.389e+11</td>
+<td>Yahoo info.marketCap 2026-10-13T18:12</td>
+</tr>
+<tr>
+<td>Cash 现金</td>
+<td>3.933e+09</td>
+<td>Yahoo info.totalCash (latest filing) 2026-10-13T18:12</td>
+</tr>
+<tr>
+<td>Debt 负债</td>
+<td>5.286e+09</td>
+<td>Yahoo info.totalDebt (latest filing) 2026-10-13T18:12</td>
+</tr>
+<tr>
+<td>Revenue TTM 收入</td>
+<td>9.45e+09</td>
+<td>Yahoo info.totalRevenue (TTM, USD) 2026-10-13T18:12</td>
+</tr>
+<tr>
+<td>FCF TTM 自由现金流</td>
+<td>1.723e+09</td>
+<td>Sum of last 4 quarterly FCF (q_cash); quarters [‘2026-07-31’,
+‘2026-04-30’, ‘2026-01-31’, ‘2025-10-31’] (USD)</td>
+</tr>
+<tr>
+<td>Beta</td>
+<td>2.26</td>
+<td>Yahoo info.beta (5Y monthly)</td>
+</tr>
+<tr>
+<td>Risk-free 10Y 无风险利率</td>
+<td>0.0522</td>
+<td>FRED DGS10 2026-10-08</td>
+</tr>
+<tr>
+<td>FX USD per USD</td>
+<td>1</td>
+<td>n/a (USD)</td>
+</tr>
+<tr>
+<td>Consensus rev growth FY0</td>
+<td>0.4728</td>
+<td>Yahoo revenue_estimate 0y</td>
+</tr>
+<tr>
+<td>Consensus rev growth FY+1</td>
+<td>0.6315</td>
+<td>Yahoo revenue_estimate +1y</td>
+</tr>
+</tbody>
+</table>
+<h2 id="assumption-register-假设登记表">11. Assumption Register
+假设登记表</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Assumption</th>
+<th>Value</th>
+<th>Rationale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ERP 股权风险溢价</td>
+<td>0.05</td>
+<td>ASSUMPTION: 5.0% house mature-market ERP</td>
+</tr>
+<tr>
+<td>Beta clamp</td>
+<td>[0.8,1.6] → 1.60</td>
+<td>ASSUMPTION: limit extreme betas</td>
+</tr>
+<tr>
+<td>Tax rate (ROIC)</td>
+<td>0.18</td>
+<td>ASSUMPTION: blended cash tax 18%</td>
+</tr>
+<tr>
+<td>Year-1 growth (Base)</td>
+<td>0.6315</td>
+<td>Consensus FY+1 revenue growth (Yahoo revenue_estimate ‘+1y’); capped
+at 100%</td>
+</tr>
+<tr>
+<td>Growth fade</td>
+<td>linear Y1→terminal by Y10</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>Starting FCF margin</td>
+<td>0.1823</td>
+<td>DATA: FCF TTM / Revenue TTM, floored -50%</td>
+</tr>
+<tr>
+<td>Long-run FCF margin (Base)</td>
+<td>0.3</td>
+<td>ASSUMPTION (analyst framework, reached by Y5; see profile)</td>
+</tr>
+<tr>
+<td>Bear/Bull Y1 growth multiplier</td>
+<td>0.5x / 1.3x</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>Bear/Bull margin multiplier</td>
+<td>0.8x / 1.15x</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>WACC adj Bear/Bull</td>
+<td>+1.0pp / -0.5pp</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>Terminal g Bear/Base/Bull</td>
+<td>2.5% / 3.0% / 3.5%</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>Scenario probabilities</td>
+<td>25% / 50% / 25%</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>Horizon exit EV/NTM-FCF Bear/Base/Bull</td>
+<td>15x / 25x / 35x</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>Per-share conversion</td>
+<td>value × fx ÷ market cap × price</td>
+<td>METHOD: avoids ADR/share-class mismatch</td>
+</tr>
+</tbody>
+</table>
+<h2 id="model-provenance-模型溯源">12. Model Provenance 模型溯源</h2>
+<ul>
+<li>Model file: <code>MRVL_model_v20261013-1812.xlsx</code> (live
+formulas; sheets
+Inputs→Scenarios→DCF→ReverseDCF→Sensitivity→Horizons→SOTP→Comps→ROIC_WACC→History→Sources→Assumptions)</li>
+<li>Engine: <code>production/pipeline/model.py</code> (Python mirror;
+values in this report = Python mirror, verified against LibreOffice
+recalculation of the xlsx)</li>
+<li>Data snapshot: <code>data/snapshots/20261013-1812</code> (immutable)
+| Fetched 2026-10-13 18:12 SGT | Generated 2026-10-13 18:12 SGT</li>
+<li>Version: v20261013-1812. Prior versions are never overwritten (see
+company history page).</li>
+</ul>
+<h2 id="版本与事件时间轴">13. 版本与事件时间轴</h2>
+<ul>
+<li>v20261013-1812: 首版生产系统报告 (27家同步)。下一事件: 财报
+2026-12-02 (TENTATIVE)。</li>
+</ul>
+<h2 id="图片报告-image-report">图片报告 Image Report</h2>
+<figure>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261013-1812/MRVL_v20261013-1812.zip" alt="1_price_vs_value" />
+<figcaption aria-hidden="true">1_price_vs_value</figcaption>
+</figure>
+<p><em>股价vs三情景价值 Price vs scenario values</em></p>
+<figure>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261013-1812/MRVL_v20261013-1812.zip" alt="2_financials" />
+<figcaption aria-hidden="true">2_financials</figcaption>
+</figure>
+<p><em>季度财务 Quarterly financials</em></p>
+<figure>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261013-1812/MRVL_v20261013-1812.zip" alt="3_scenarios" />
+<figcaption aria-hidden="true">3_scenarios</figcaption>
+</figure>
+<p><em>三情景 Scenarios</em></p>
+<figure>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261013-1812/MRVL_v20261013-1812.zip" alt="4_horizons" />
+<figcaption aria-hidden="true">4_horizons</figcaption>
+</figure>
+<p><em>2/4/6/8季度检验 Horizon check</em></p>
+<figure>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261013-1812/MRVL_v20261013-1812.zip" alt="5_logic_map" />
+<figcaption aria-hidden="true">5_logic_map</figcaption>
+</figure>
+<p><em>研究逻辑图 Logic map</em></p>
+<hr />
+<h1
+id="mrvl-marvell-technology-inc.-equity-deep-dive-professional-english-v20261013-1812">MRVL
+Marvell Technology, Inc. — Equity Deep Dive (Professional English)
+v20261013-1812</h1>
+<blockquote>
+<p>Data as of 2026-10-13 18:12 SGT | Price $265.86 | Mkt cap 238.9 bn
+USD | Reporting currency USD | Not investment advice.</p>
+</blockquote>
+<h2 id="investment-thesis-hypothesis">1. Investment thesis
+(HYPOTHESIS)</h2>
+<p>Marvell benefits from AI optical interconnect (PAM4 DSPs) and custom
+XPUs; the debate is generational continuity of custom programs and
+whether CPO erodes DSP demand.</p>
+<ul>
+<li><strong>Bull drivers</strong>: Next-gen Trainium/Maia sockets
+retained; 1.6T DSP ramp｜下一代Trainium/Maia留住；1.6T DSP放量</li>
+<li><strong>Bear drivers</strong>: Losing socket to rival; LPO/CPO
+shrinks DSP TAM｜失去关键项目；LPO/CPO压缩DSP市场</li>
+<li><strong>Falsifiers</strong>: DC revenue guide flat-to-down; customer
+disclosures of competitor
+sockets｜DC收入指引持平或下降；客户披露换供应商</li>
+</ul>
+<h2 id="products-customers-revenue-model">2. Products, customers,
+revenue model</h2>
+<ul>
+<li>Theme: Custom ASIC + electro-optics 定制ASIC+光电DSP | Segments:
+Data center (custom+optical DSP) 数据中心; Enterprise/Carrier
+企业/运营商; Consumer/Auto/Industrial 其他</li>
+<li>Business description (DATA): Marvell Technology, Inc., together with
+its subsidiaries, provides data infrastructure semiconductor solutions
+and spanning the data center core to network edge in the United States,
+Argentina, China, India, Israel, Japan, Singapore, South Korea, Taiwan,
+Vietnam, and internationally. The company develops and scales
+system-on-a-chip architectures, integrating analog, mixed-signal, and
+digital signal processing functionality. It offers a portfolio of
+ethernet solutions, including spanning controllers, network adapters,
+physical transceivers, and switches; single or multiple core processors;
+and custom application specific integrated circuits, interconnects,
+fibre channel adapters, and processors. The company also provides
+interconnect products, including pulse amplitude modulation, coherent
+and coherent-lite digital signal processors (DSPs), laser drivers,
+trans-impedance amplifiers, silic</li>
+<li>Customers: AWS (Trainium), Microsoft (Maia), Google, hyperscaler
+optical module makers｜AWS、微软、谷歌、光模块厂</li>
+</ul>
+<h2
+id="industry-competition-regulation-supply-chain-analyst-framework">3.
+Industry, competition, regulation, supply chain (ANALYST FRAMEWORK)</h2>
+<ul>
+<li>Suppliers: TSMC, substrate/packaging vendors｜台积电、载板/封装</li>
+<li>Competitors: Broadcom, Alchip, MediaTek, Credo (AECs), Inphi-legacy
+rivals｜博通、世芯、联发科、Credo</li>
+<li>Bottlenecks/regulation: Custom program wins/losses, PAM4 DSP vs
+LPO/CPO substitution｜定制项目得失、DSP被LPO/CPO替代</li>
+<li>KPIs: DC revenue, custom revenue, optical DSP revenue,
+GM%｜DC收入、定制收入、光DSP收入、毛利率</li>
+<li>Component spot/contract prices: paid feeds not connected —
+<strong>UNAVAILABLE</strong>, tracked qualitatively.</li>
+</ul>
+<h2 id="historical-financials-cash-flow-confirmed-quarterly-usd">4.
+Historical financials &amp; cash flow (CONFIRMED, quarterly, USD)</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Quarter</th>
+<th>Revenue</th>
+<th>Gross profit</th>
+<th>Op income</th>
+<th>Net income</th>
+<th>FCF</th>
+<th>Op margin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-07-31</td>
+<td>2.7 bn USD</td>
+<td>1.5 bn USD</td>
+<td>0.5 bn USD</td>
+<td>0.3 bn USD</td>
+<td>0.5 bn USD</td>
+<td>16.7%</td>
+</tr>
+<tr>
+<td>2026-04-30</td>
+<td>2.4 bn USD</td>
+<td>1.3 bn USD</td>
+<td>0.4 bn USD</td>
+<td>34.5 mn USD</td>
+<td>0.5 bn USD</td>
+<td>14.5%</td>
+</tr>
+<tr>
+<td>2026-01-31</td>
+<td>2.2 bn USD</td>
+<td>1.1 bn USD</td>
+<td>0.4 bn USD</td>
+<td>0.4 bn USD</td>
+<td>0.3 bn USD</td>
+<td>18.7%</td>
+</tr>
+<tr>
+<td>2025-10-31</td>
+<td>2.1 bn USD</td>
+<td>1.1 bn USD</td>
+<td>0.4 bn USD</td>
+<td>1.9 bn USD</td>
+<td>0.5 bn USD</td>
+<td>17.7%</td>
+</tr>
+<tr>
+<td>2025-07-31</td>
+<td>2.0 bn USD</td>
+<td>1.0 bn USD</td>
+<td>0.3 bn USD</td>
+<td>0.2 bn USD</td>
+<td>0.4 bn USD</td>
+<td>14.9%</td>
+</tr>
+<tr>
+<td>2025-01-31</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<p>Cash 3.9 bn USD; debt 5.3 bn USD; TTM FCF 1.7 bn USD (FCF margin
+18.2%).</p>
+<h2 id="latest-earnings-actual-vs-consensus-vs-guidance">5. Latest
+earnings: actual vs consensus vs guidance</h2>
+<table>
+<thead>
+<tr>
+<th>Quarter</th>
+<th>EPS actual</th>
+<th>EPS consensus</th>
+<th>Surprise</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-10-31</td>
+<td>0.76</td>
+<td>0.73778</td>
+<td>0.0301</td>
+</tr>
+<tr>
+<td>2026-01-31</td>
+<td>0.8</td>
+<td>0.79165</td>
+<td>0.0105</td>
+</tr>
+<tr>
+<td>2026-04-30</td>
+<td>0.8</td>
+<td>0.79495</td>
+<td>0.0064</td>
+</tr>
+<tr>
+<td>2026-07-31</td>
+<td>0.94</td>
+<td>0.93077</td>
+<td>0.0099</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Management guidance: not in automated feed — <strong>UNAVAILABLE (to
+be entered from IR release)</strong>.</li>
+<li>Next earnings (Yahoo; TENTATIVE until company-confirmed):
+<strong>2026-12-02</strong>; current-quarter EPS consensus 1.10124 (34
+analysts); revenue consensus 3.2 bn USD.</li>
+</ul>
+<h2 id="quarter-drivers-price-reasonableness">6. 2/4/6/8-quarter drivers
+&amp; price reasonableness</h2>
+<table>
+<thead>
+<tr>
+<th>Horizon</th>
+<th>Scenario</th>
+<th>PV of horizon price</th>
+<th>vs current</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2Q</td>
+<td>Bear</td>
+<td>$43.05</td>
+<td>-83.8%</td>
+</tr>
+<tr>
+<td>2Q</td>
+<td>Base</td>
+<td>$110.62</td>
+<td>-58.4%</td>
+</tr>
+<tr>
+<td>2Q</td>
+<td>Bull</td>
+<td>$195.44</td>
+<td>-26.5%</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>Bear</td>
+<td>$47.78</td>
+<td>-82.0%</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>Base</td>
+<td>$140.44</td>
+<td>-47.2%</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>Bull</td>
+<td>$266.49</td>
+<td>0.2%</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>Bear</td>
+<td>$52.95</td>
+<td>-80.1%</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>Base</td>
+<td>$177.66</td>
+<td>-33.2%</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>Bull</td>
+<td>$361.54</td>
+<td>36.0%</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>Bear</td>
+<td>$58.58</td>
+<td>-78.0%</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>Base</td>
+<td>$224.08</td>
+<td>-15.7%</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>Bull</td>
+<td>$488.39</td>
+<td>83.7%</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Current-price implied EV/NTM-FCF on Base path:</th>
+<th>Horizon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2Q</td>
+<td>56.1x</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>41.6x</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>31.0x</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>23.1x</td>
+</tr>
+</tbody>
+</table>
+<h2 id="bear-base-bull-hypothesis">7. Bear / Base / Bull
+(HYPOTHESIS)</h2>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Y1 growth</th>
+<th>LR FCF margin</th>
+<th>WACC</th>
+<th>Terminal g</th>
+<th>Prob.</th>
+<th>Value/share</th>
+<th>vs price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bear</td>
+<td>31.6%</td>
+<td>24.0%</td>
+<td>14.2%</td>
+<td>2.5%</td>
+<td>25.0%</td>
+<td>$60.06</td>
+<td>-77.4%</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>63.1%</td>
+<td>30.0%</td>
+<td>13.2%</td>
+<td>3.0%</td>
+<td>50.0%</td>
+<td>$256.08</td>
+<td>-3.7%</td>
+</tr>
+<tr>
+<td>Bull</td>
+<td>82.1%</td>
+<td>34.5%</td>
+<td>12.7%</td>
+<td>3.5%</td>
+<td>25.0%</td>
+<td>$597.17</td>
+<td>124.6%</td>
+</tr>
+</tbody>
+</table>
+<p>Probability-weighted value <strong>$292.35</strong> (10.0% vs
+price).</p>
+<h2 id="valuation-dcf-reverse-dcf-roic-wacc-comps-sensitivity">8.
+Valuation: DCF / Reverse DCF / ROIC-WACC / comps / sensitivity</h2>
+<ul>
+<li>Base DCF EV 231.5 bn USD; terminal share 55.9%.</li>
+<li><strong>Reverse DCF</strong>: at Base margin/WACC the price implies
+Y1 revenue growth ≈ <strong>64.3%</strong> vs consensus FY+1 63.1%.</li>
+<li>WACC (CAPM) = rf 5.2% + β 1.60 × ERP 5.0% = 13.2%.</li>
+<li>SOTP segments: Data center (custom+optical DSP) 数据中心;
+Enterprise/Carrier 企业/运营商; Consumer/Auto/Industrial 其他 —
+framework only; segment revenue inputs pending from filings.</li>
+<li>Comps (DATA): see table in Chinese section / Excel
+<code>Comps</code>.</li>
+<li>Sensitivity: Excel <code>Sensitivity</code> (WACC × terminal
+g).</li>
+</ul>
+<h2 id="risks-counterarguments-falsifiers">9. Risks, counterarguments,
+falsifiers</h2>
+<p>Losing socket to rival; LPO/CPO shrinks DSP
+TAM｜失去关键项目；LPO/CPO压缩DSP市场 | Falsifiers: DC revenue guide
+flat-to-down; customer disclosures of competitor
+sockets｜DC收入指引持平或下降；客户披露换供应商</p>
+<h2 id="source-ledger-assumption-register-model-provenance">10–12.
+Source Ledger / Assumption Register / Model Provenance</h2>
+<p>See tables above (shared, bilingual). - Model file:
+<code>MRVL_model_v20261013-1812.xlsx</code> (live formulas; sheets
+Inputs→Scenarios→DCF→ReverseDCF→Sensitivity→Horizons→SOTP→Comps→ROIC_WACC→History→Sources→Assumptions)
+- Engine: <code>production/pipeline/model.py</code> (Python mirror;
+values in this report = Python mirror, verified against LibreOffice
+recalculation of the xlsx) - Data snapshot:
+<code>data/snapshots/20261013-1812</code> (immutable) | Fetched
+2026-10-13 18:12 SGT | Generated 2026-10-13 18:12 SGT - Version:
+v20261013-1812. Prior versions are never overwritten (see company
+history page).</p>
+</body>
+</html>

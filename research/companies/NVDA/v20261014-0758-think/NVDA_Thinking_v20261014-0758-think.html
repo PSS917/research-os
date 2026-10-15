@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title> </title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<style>body{font-family:'Noto Sans CJK SC','Noto Sans',sans-serif;max-width:1100px;margin:auto;padding:24px;line-height:1.6;color:#1b1b1b}table{border-collapse:collapse;font-size:13px;margin:8px 0}td,th{border:1px solid #ccd;padding:4px 8px}th{background:#1F3A5F;color:#fff}img{max-width:100%;border:1px solid #ddd}h1{color:#1F3A5F}h2{border-bottom:2px solid #1F3A5F}abbr{text-decoration:underline dotted #2E86C1;cursor:help}.box30{background:linear-gradient(135deg,#eaf2ff,#f5ecff);border:2px solid #5b8cff;border-radius:14px;padding:6px 18px;margin:14px 0;font-size:16px}.readmap{background:#f6f8fb;border:1px solid #d5dbe6;border-radius:12px;padding:4px 16px;margin:12px 0}.howto{background:#fff8e6;border-left:5px solid #f59e0b;border-radius:8px;padding:2px 14px;margin:6px 0 22px}.quiz{background:#effaf3;border:1px solid #9bd8b1;border-radius:12px;padding:4px 16px}details{margin:8px 0}details.l3{background:#f7f7f9;border:1px dashed #b8c0cc;border-radius:10px;padding:6px 14px}summary{cursor:pointer;font-weight:600;color:#1F3A5F}body{font-size:15.5px}blockquote{background:#f3f6fa;border-left:4px solid #2E86C1;margin:0;padding:6px 12px}</style></head>
+<body>
+<header id="title-block-header">
+<h1 class="title"> </h1>
+</header>
+<h1
+id="nvda-nvidia-corporation-思考过程版teaching-v2.1v20261014-0758-think">NVDA
+NVIDIA Corporation — 思考过程版（Teaching
+v2.1）v20261014-0758-think</h1>
+<blockquote>
+<p>数据：yfinance 快照 2026-10-14 07:58 SGT｜模型与数字沿用
+v20261014-0758（同一快照，未改动）｜<strong>非投资建议</strong>｜标签：事实
+DATA / 市场预期 / 我们的判断 INFERENCE｜标准：MU
+试点（用户已批准推广）</p>
+</blockquote>
+<div class="box30">
+<p><strong>⏱ 30秒看懂</strong></p>
+<ol type="1">
+<li><strong>发生什么：</strong>NVIDIA Corporation 现价 $228.52；距
+2026-10-06 高点 -5.4%。主题：AI compute GPU AI算力。</li>
+<li><strong>和我的股票有什么关系：</strong>现价隐含首年增速约
+41.3%，一致预期 68.2%；三情景价值 $126/$548/$1,308。</li>
+<li><strong>该看什么/做什么：</strong>下次财报 2026-11-18（TENTATIVE
+直至公司确认）；盯：数据中心收入、毛利率、网络收入、云厂Capex、CoWoS分配。</li>
+</ol>
+</div>
+<div class="readmap">
+<p><strong>🗺 阅读地图</strong></p>
+<table>
+<thead>
+<tr>
+<th>你有多少时间</th>
+<th>读哪里</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2 分钟</td>
+<td>30秒卡</td>
+</tr>
+<tr>
+<td>10 分钟</td>
+<td>+ 七步思考 + 反方裁判</td>
+</tr>
+<tr>
+<td>30 分钟</td>
+<td>全部 + Excel 模型 + 原 v20261014-0758 专业报告</td>
+</tr>
+</tbody>
+</table>
+<p>层级说明：<strong>L1 故事</strong>（人人能懂）→ <strong>L2
+关键数字</strong>（带解释）→ <strong>L3
+专业细节</strong>（网页可折叠，默认收起）。</p>
+</div>
+<h2 id="一七步思考过程">一、七步思考过程</h2>
+<ol type="1">
+<li><strong>先问对问题：谁在乎、为什么在乎</strong> —— 主题是 AI compute
+GPU
+AI算力。持有者在乎的是：NVDA是AI资本开支的首要受益者，系统级(GPU+NVLink+网络+CUDA)护城河使其维持高毛利；核心争议在于云厂Capex持续性与ASIC替代速度。</li>
+<li><strong>市场已经定价了什么</strong> —— 反向 DCF：现价需要首年增速 ≈
+41.3%，一致预期 68.2%——市场定价不比分析师更乐观。跑率/静态 P/E
+28.9×、前瞻 P/E 14.4×（Yahoo）。</li>
+<li><strong>搭因果链，每环配一个检验数据</strong> —— 驱动 →
+收入（检验：季度收入同比 105.9%）→ 毛利率（最新 75.0%）→ FCF →
+价值。</li>
+<li><strong>找每一环的断点</strong> —— 断点：CoWoS capacity, HBM supply,
+data-center power, export controls
+(China)｜CoWoS产能、HBM供应、数据中心电力、出口管制</li>
+<li><strong>用工具箱逐一质疑</strong> —— 见第二节。</li>
+<li><strong>给对立观点最强版本，再用证据裁判</strong> —— 见第三节。</li>
+<li><strong>写下「如果我错了，会先看到什么」</strong> —— Top-4
+hyperscaler capex guides down; DC revenue q/q growth &lt;5% two
+quarters; GM below
+mid-60s%｜四大云Capex下修；DC收入环比连续两季&lt;5%；毛利率跌破60%中段</li>
+</ol>
+<h2 id="二质疑工具箱真实数字">二、质疑工具箱（真实数字）</h2>
+<h3 id="第一性原理-first-principles">第一性原理 First principles</h3>
+<ul>
+<li><strong>是什么：</strong>拆到最基本：价格 = 未来现金流 ÷
+折现。这件事改变的是现金流还是折现率？</li>
+<li><strong>为什么用：</strong>避免被故事带走。</li>
+<li><strong>用在本事件上：</strong>价值 = 未来现金流 ÷ 折现。NVDA 的
+WACC 13.2%；最新季度毛利率 75.0%；收入同比
+105.9%。新闻多数改变的是现金流预期，而非折现率。</li>
+<li><strong>✍ 轮到你：</strong>把 Excel 里 Base 情景的利润率下调 5
+个百分点，每股价值变多少？</li>
+</ul>
+<h3 id="二阶思维-second-order">二阶思维 Second-order</h3>
+<ul>
+<li><strong>是什么：</strong>然后呢？谁会因此改变行为？二阶、三阶效果是什么？</li>
+<li><strong>为什么用：</strong>一阶看自己，二阶看竞争者和客户。</li>
+<li><strong>用在本事件上：</strong>竞争者：AMD Instinct, custom ASICs
+(Broadcom/Marvell/Google TPU/Trainium), Intel, Chinese domestic
+GPUs｜AMD、定制ASIC(TPU/Trainium等)、英特尔、中国国产GPU。客户：Hyperscalers
+(MSFT, META, GOOGL, AMZN, ORCL), neoclouds (CRWV), sovereigns,
+enterprises｜超大规模云厂、新云、主权AI、企业。若 NVDA
+继续高增长，竞争者和客户会如何改变行为？</li>
+<li><strong>✍
+轮到你：</strong>写下一个’别人会怎么反应’以及你会用什么数据看到。</li>
+</ul>
+<h3 id="反向思考-inversion">反向思考 Inversion</h3>
+<ul>
+<li><strong>是什么：</strong>什么会让我错？相反结论成立需要哪些条件同时为真？</li>
+<li><strong>为什么用：</strong>先想怎么输。</li>
+<li><strong>用在本事件上：</strong>看多会错，如果：Capex digestion in
+2027, ASIC share gains, gross-margin pressure from HBM
+costs｜2027年Capex消化、ASIC份额提升、HBM成本压毛利</li>
+<li><strong>✍ 轮到你：</strong>反过来，看空会错的条件是什么？</li>
+</ul>
+<h3 id="市场已经定价了什么-priced-in">市场已经定价了什么 Priced-in</h3>
+<ul>
+<li><strong>是什么：</strong>共识/价格隐含了什么？只有「实际−预期」推动价格。</li>
+<li><strong>为什么用：</strong>只有’实际−预期’推动价格。</li>
+<li><strong>用在本事件上：</strong>隐含 41.3% vs 共识 68.2%；近几季 EPS
+超预期：2025-10 +3% / 2026-01 +5% / 2026-04 +6% / 2026-07 +6%。</li>
+<li><strong>✍ 轮到你：</strong>超预期幅度的趋势说明了什么？</li>
+</ul>
+<h3 id="谁在对手盘-counterparty">谁在对手盘 Counterparty</h3>
+<ul>
+<li><strong>是什么：</strong>如果我对，谁错？他们为什么会错？想不出来=可能已被定价。</li>
+<li><strong>为什么用：</strong>想清楚你在和谁交易。</li>
+<li><strong>用在本事件上：</strong>买方押：Rubin cycle on time,
+inference demand broadens to enterprise/sovereign, networking attach
+rises｜Rubin按期、推理需求扩散、网络附加率提升。卖方押：Capex digestion
+in 2027, ASIC share gains, gross-margin pressure from HBM
+costs｜2027年Capex消化、ASIC份额提升、HBM成本压毛利。</li>
+<li><strong>✍ 轮到你：</strong>你更相信哪一方？他们为什么可能错？</li>
+</ul>
+<h3 id="基础概率-base-rates">基础概率 Base rates</h3>
+<ul>
+<li><strong>是什么：</strong>这类事情历史上多常发生？先用基础概率，再用本次信息调整。</li>
+<li><strong>为什么用：</strong>先用历史，再用本次信息调整。</li>
+<li><strong>用在本事件上：</strong>2008
+年以来最大的三次回撤：2008-01→2008-11 -82%；2021-11→2022-10
+-66%；2018-10→2018-12 -56%；中位数 -66%。当前距高点
+-5.4%。毛利率区间：56.9%–75.0%（本快照内）。</li>
+<li><strong>✍
+轮到你：</strong>当前回撤和历史比算大还是小？这能说明’便宜’吗？</li>
+</ul>
+<h3 id="假设清单与证伪-assumptions-falsifiers">假设清单与证伪
+Assumptions &amp; falsifiers</h3>
+<ul>
+<li><strong>是什么：</strong>逐条写出假设，并给每条一个推翻它的可观察信号。</li>
+<li><strong>为什么用：</strong>把信念变成可检验的清单。</li>
+<li><strong>用在本事件上：</strong>见第四节。</li>
+<li><strong>✍ 轮到你：</strong>给每条假设加一个你会去看的数据源。</li>
+</ul>
+<h2
+id="三给对立观点最强版本再用证据裁判">三、给对立观点最强版本，再用证据裁判</h2>
+<p><strong>我们的观点：</strong>NVDA是AI资本开支的首要受益者，系统级(GPU+NVLink+网络+CUDA)护城河使其维持高毛利；核心争议在于云厂Capex持续性与ASIC替代速度。（HYPOTHESIS）</p>
+<p><strong>对立观点最强版本：</strong> 1. Capex digestion in 2027, ASIC
+share gains, gross-margin pressure from HBM
+costs｜2027年Capex消化、ASIC份额提升、HBM成本压毛利 2. 现价 $228.52 相对
+Base 价值 $548 -58.3%，安全边际取决于假设 3. 历史上该股曾出现
+2008-01→2008-11 -82%；2021-11→2022-10 -66%；2018-10→2018-12 -56%
+的回撤</p>
+<table>
+<thead>
+<tr>
+<th>证据</th>
+<th>支持我们</th>
+<th>支持对立</th>
+<th>权重</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>现价 $228.52 vs Base 价值 $548</td>
+<td>✔</td>
+<td></td>
+<td>高</td>
+</tr>
+<tr>
+<td>现价隐含增速 41.3% vs 一致预期 68.2%</td>
+<td>✔</td>
+<td></td>
+<td>高</td>
+</tr>
+<tr>
+<td>最近 5 季毛利率 72.4% → 75.0%</td>
+<td>✔</td>
+<td></td>
+<td>中</td>
+</tr>
+<tr>
+<td>EPS 超预期 +6% → +6%</td>
+<td>✔</td>
+<td></td>
+<td>中</td>
+</tr>
+<tr>
+<td>最新季度收入同比 +105.9%</td>
+<td>✔</td>
+<td></td>
+<td>中</td>
+</tr>
+<tr>
+<td>当前回撤 -5.4% vs 历史前三大回撤中位数 -66%</td>
+<td></td>
+<td>✔</td>
+<td>低</td>
+</tr>
+</tbody>
+</table>
+<p><strong>裁判：</strong>证据偏多方（加权 12 :
+1）。这是对现有数据的机械称重，不是买卖结论；最该做的是盯住证伪清单。（我们的判断，可能出错）</p>
+<h2 id="四假设清单与证伪">四、假设清单与证伪</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>假设</th>
+<th>检验数据</th>
+<th>推翻信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>增长兑现市场隐含的 41.3%</td>
+<td>季度收入同比（现 105.9%）</td>
+<td>连续两季低于隐含增速的一半</td>
+</tr>
+<tr>
+<td>毛利率维持</td>
+<td>季报毛利率（现 75.0%）</td>
+<td>环比下降 &gt;3 个百分点</td>
+</tr>
+<tr>
+<td>论点核心驱动</td>
+<td>DC revenue, GM%, networking revenue, hyperscaler capex, CoWoS
+allocation｜数据中心收入、毛利率、网络收入、云厂Capex、CoWoS分配</td>
+<td>Top-4 hyperscaler capex guides down; DC revenue q/q growth &lt;5%
+two quarters; GM below
+mid-60s%｜四大云Capex下修；DC收入环比连续两季&lt;5%；毛利率跌破60%中段</td>
+</tr>
+<tr>
+<td>估值假设合理</td>
+<td>Excel WACC 13.2%</td>
+<td>利率/β 上升使 WACC +1pp</td>
+</tr>
+</tbody>
+</table>
+<h2 id="五怎么看这些图">五、怎么看这些图</h2>
+<figure>
+<img src="images/T1_利润率周期_annotated.png" alt="利润率周期" />
+<figcaption aria-hidden="true">利润率周期</figcaption>
+</figure>
+<div class="howto">
+<p><strong>📊 怎么看这张图</strong></p>
+<ul>
+<li><strong>坐标/颜色：</strong>横轴=财年(FY)/财季(Q)，纵轴=毛利率%</li>
+<li><strong>只记住一件事：</strong>利润率在区间中的位置决定’均值回归’风险</li>
+<li><strong>什么会改变结论：</strong>若下季继续创新高，结构性论点加强</li>
+</ul>
+</div>
+<figure>
+<img src="images/T2_反向DCF_annotated.png" alt="反向DCF" />
+<figcaption aria-hidden="true">反向DCF</figcaption>
+</figure>
+<div class="howto">
+<p><strong>📊 怎么看这张图</strong></p>
+<ul>
+<li><strong>坐标/颜色：</strong>左：灰=共识增速，红=现价隐含；右：三情景价值
+vs 现价</li>
+<li><strong>只记住一件事：</strong>红柱高于灰柱=价格依赖超预期；现价高于
+Base=安全边际薄</li>
+<li><strong>什么会改变结论：</strong>我们的假设若太保守，价值柱会升高——要检验模型本身</li>
+</ul>
+</div>
+<figure>
+<img src="images/T3_历史回撤_annotated.png" alt="历史回撤" />
+<figcaption aria-hidden="true">历史回撤</figcaption>
+</figure>
+<div class="howto">
+<p><strong>📊 怎么看这张图</strong></p>
+<ul>
+<li><strong>坐标/颜色：</strong>对数轴复权股价；紫色=历史最大回撤；红色=当前位置</li>
+<li><strong>只记住一件事：</strong>大跌在该股历史上是常态还是例外</li>
+<li><strong>什么会改变结论：</strong>若基本面恶化，历史回撤幅度是参考下限而非上限</li>
+</ul>
+</div>
+<h2 id="七推理自测考推理不考记忆">七、推理自测（考推理，不考记忆）</h2>
+<div class="quiz">
+<p><strong>✅ 自我测验 Check your understanding</strong></p>
+<details>
+<summary>
+Q1. 现价隐含 41.3%、共识
+68.2%。如果公司下季’超预期’但只超共识不超隐含，股价可能怎样？为什么？
+</summary>
+<p><strong>答案：</strong>可能下跌或横盘：价格反映的是隐含预期，超共识不等于超隐含。</p>
+</details>
+<details>
+<summary>
+Q2. 毛利率现在 75.0%，区间 56.9%–75.0%。用’第一性原理’说明利润率下降 5pp
+主要影响价值公式的哪一项？
+</summary>
+<p><strong>答案：</strong>影响分子（未来现金流），不影响分母（WACC）；对远期现金流占比高的公司影响更大。</p>
+</details>
+<details>
+<summary>
+Q3. 历史回撤中位数约 -66%，当前
+-5.4%。为什么’已经跌了很多’不能单独作为买入理由？
+</summary>
+<p><strong>答案：</strong>基础概率只告诉你跌幅常见范围；是否便宜取决于现金流预期是否也变了（价格↓但价值也↓）。</p>
+</details>
+</div>
+<h2
+id="八事后推理复盘2026-11-18-财报后填写">八、事后推理复盘（2026-11-18
+财报后填写）</h2>
+<table>
+<thead>
+<tr>
+<th>环节</th>
+<th>成立/断开</th>
+<th>证据</th>
+<th>学到什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核心驱动→收入</td>
+<td>____</td>
+<td>____</td>
+<td>____</td>
+</tr>
+<tr>
+<td>收入→利润率</td>
+<td>____</td>
+<td>____</td>
+<td>____</td>
+</tr>
+<tr>
+<td>利润率→EPS/指引</td>
+<td>____</td>
+<td>____</td>
+<td>____</td>
+</tr>
+<tr>
+<td>EPS→股价</td>
+<td>____</td>
+<td>____</td>
+<td>____</td>
+</tr>
+<tr>
+<td>我的预期 vs 市场预期</td>
+<td>____</td>
+<td>____</td>
+<td>____</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="english-summary">English summary</h2>
+<p>NVDA thinking-first edition. Price $228.52; -5.4% from 2026-10-06
+high. Reverse DCF: price implies ~41.3% Y1 growth vs consensus 68.2%.
+Scenario values $126/$548/$1,308; WACC 13.2%. Base rates: largest
+drawdowns since 2008: 2008-01→2008-11 -82%；2021-11→2022-10
+-66%；2018-10→2018-12 -56%. Evidence weighting 12:1 (bull:bear).
+Falsifiers: Top-4 hyperscaler capex guides down; DC revenue q/q growth
+&lt;5% two quarters; GM below
+mid-60s%｜四大云Capex下修；DC收入环比连续两季&lt;5%；毛利率跌破60%中段.
+Not investment advice.</p>
+</body>
+</html>
