@@ -1,0 +1,253 @@
+{
+ "release": "v20261014-2143-post",
+ "files": [
+  {
+   "path": "research/events/us-cpi-2026-09/v20261014-2143-post/POST_EVENT_RESULT_v20261014-2143-post.json",
+   "bytes": 1768
+  },
+  {
+   "path": "research/events/us-cpi-2026-09/v20261014-2143-post/US_CPI_Sep2026_PostEvent_ZH_v20261014-2143-post.docx",
+   "bytes": 3500774
+  },
+  {
+   "path": "research/events/us-cpi-2026-09/v20261014-2143-post/US_CPI_Sep2026_PostEvent_ZH_v20261014-2143-post.html",
+   "bytes": 22866
+  },
+  {
+   "path": "research/events/us-cpi-2026-09/v20261014-2143-post/US_CPI_Sep2026_PostEvent_ZH_v20261014-2143-post.md",
+   "bytes": 11826
+  },
+  {
+   "path": "research/events/us-cpi-2026-09/v20261014-2143-post/US_CPI_Sep2026_PostEvent_ZH_v20261014-2143-post.pdf",
+   "bytes": 1571639
+  },
+  {
+   "path": "research/events/us-cpi-2026-09/v20261014-2143-post/images/us-cpi-sep2026-hot_news-explainer_p1.jpg",
+   "bytes": 1938407
+  },
+  {
+   "path": "research/events/us-cpi-2026-09/v20261014-2143-post/images/us-cpi-sep2026-hot_news-explainer_p2.jpg",
+   "bytes": 2260112
+  },
+  {
+   "path": "research/events/us-cpi-2026-09/v20261014-2143-post/manifest.json",
+   "bytes": 994
+  },
+  {
+   "path": "research/infographics/us-cpi-sep2026-hot/v20261014-2140-news/manifest.json",
+   "bytes": 1157
+  },
+  {
+   "path": "research/infographics/us-cpi-sep2026-hot/v20261014-2140-news/meta.json",
+   "bytes": 738
+  },
+  {
+   "path": "research/infographics/us-cpi-sep2026-hot/v20261014-2140-news/us-cpi-sep2026-hot_news-explainer.pdf",
+   "bytes": 1664145
+  },
+  {
+   "path": "research/infographics/us-cpi-sep2026-hot/v20261014-2140-news/us-cpi-sep2026-hot_news-explainer_p1.html",
+   "bytes": 25145
+  },
+  {
+   "path": "research/infographics/us-cpi-sep2026-hot/v20261014-2140-news/us-cpi-sep2026-hot_news-explainer_p1.jpg",
+   "bytes": 1938407
+  },
+  {
+   "path": "research/infographics/us-cpi-sep2026-hot/v20261014-2140-news/us-cpi-sep2026-hot_news-explainer_p1.png",
+   "bytes": 2040304
+  },
+  {
+   "path": "research/infographics/us-cpi-sep2026-hot/v20261014-2140-news/us-cpi-sep2026-hot_news-explainer_p2.html",
+   "bytes": 18735
+  },
+  {
+   "path": "research/infographics/us-cpi-sep2026-hot/v20261014-2140-news/us-cpi-sep2026-hot_news-explainer_p2.jpg",
+   "bytes": 2260112
+  },
+  {
+   "path": "research/infographics/us-cpi-sep2026-hot/v20261014-2140-news/us-cpi-sep2026-hot_news-explainer_p2.png",
+   "bytes": 2529849
+  },
+  {
+   "path": "research/master-prompt/v2026-09-17b/CHANGELOG_v2026-09-17b.docx",
+   "bytes": 10479
+  },
+  {
+   "path": "research/master-prompt/v2026-09-17b/CHANGELOG_v2026-09-17b.html",
+   "bytes": 4511
+  },
+  {
+   "path": "research/master-prompt/v2026-09-17b/CHANGELOG_v2026-09-17b.md",
+   "bytes": 98
+  },
+  {
+   "path": "research/master-prompt/v2026-09-17b/CHANGELOG_v2026-09-17b.pdf",
+   "bytes": 12721
+  },
+  {
+   "path": "research/master-prompt/v2026-09-17b/MASTER_PROMPT_v2026-09-17b.docx",
+   "bytes": 28169
+  },
+  {
+   "path": "research/master-prompt/v2026-09-17b/MASTER_PROMPT_v2026-09-17b.html",
+   "bytes": 38117
+  },
+  {
+   "path": "research/master-prompt/v2026-09-17b/MASTER_PROMPT_v2026-09-17b.md",
+   "bytes": 28041
+  },
+  {
+   "path": "research/master-prompt/v2026-09-17b/MASTER_PROMPT_v2026-09-17b.pdf",
+   "bytes": 311409
+  },
+  {
+   "path": "research/master-prompt/v2026-09-17b/manifest.json",
+   "bytes": 926
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13/CHANGELOG_v2026-10-13.docx",
+   "bytes": 10609
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13/CHANGELOG_v2026-10-13.html",
+   "bytes": 4711
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13/CHANGELOG_v2026-10-13.md",
+   "bytes": 299
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13/CHANGELOG_v2026-10-13.pdf",
+   "bytes": 13816
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13/MASTER_PROMPT_v2026-10-13.docx",
+   "bytes": 31981
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13/MASTER_PROMPT_v2026-10-13.html",
+   "bytes": 44567
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13/MASTER_PROMPT_v2026-10-13.md",
+   "bytes": 32938
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13/MASTER_PROMPT_v2026-10-13.pdf",
+   "bytes": 414149
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13/manifest.json",
+   "bytes": 918
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13b/CHANGELOG_v2026-10-13b.docx",
+   "bytes": 10773
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13b/CHANGELOG_v2026-10-13b.html",
+   "bytes": 5521
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13b/CHANGELOG_v2026-10-13b.md",
+   "bytes": 416
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13b/CHANGELOG_v2026-10-13b.pdf",
+   "bytes": 21173
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13b/MASTER_PROMPT_v2026-10-13b.docx",
+   "bytes": 34197
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13b/MASTER_PROMPT_v2026-10-13b.html",
+   "bytes": 48817
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13b/MASTER_PROMPT_v2026-10-13b.md",
+   "bytes": 35874
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13b/MASTER_PROMPT_v2026-10-13b.pdf",
+   "bytes": 488625
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13b/manifest.json",
+   "bytes": 927
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13c/CHANGELOG_v2026-10-13c.docx",
+   "bytes": 10672
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13c/CHANGELOG_v2026-10-13c.html",
+   "bytes": 5422
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13c/CHANGELOG_v2026-10-13c.md",
+   "bytes": 317
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13c/CHANGELOG_v2026-10-13c.pdf",
+   "bytes": 18277
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13c/MASTER_PROMPT_v2026-10-13c.docx",
+   "bytes": 35393
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13c/MASTER_PROMPT_v2026-10-13c.html",
+   "bytes": 50709
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13c/MASTER_PROMPT_v2026-10-13c.md",
+   "bytes": 37601
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13c/MASTER_PROMPT_v2026-10-13c.pdf",
+   "bytes": 543938
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13c/manifest.json",
+   "bytes": 927
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13d/CHANGELOG_v2026-10-13d.docx",
+   "bytes": 10679
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13d/CHANGELOG_v2026-10-13d.html",
+   "bytes": 5430
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13d/CHANGELOG_v2026-10-13d.md",
+   "bytes": 321
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13d/CHANGELOG_v2026-10-13d.pdf",
+   "bytes": 18888
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13d/MASTER_PROMPT_v2026-10-13d.docx",
+   "bytes": 36727
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13d/MASTER_PROMPT_v2026-10-13d.html",
+   "bytes": 53064
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13d/MASTER_PROMPT_v2026-10-13d.md",
+   "bytes": 39671
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13d/MASTER_PROMPT_v2026-10-13d.pdf",
+   "bytes": 564865
+  },
+  {
+   "path": "research/master-prompt/v2026-10-13d/manifest.json",
+   "bytes": 927
+  }
+ ]
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research OS Daily Board｜2026-09-29 Morning / 早盘</title>
+<style>
+  :root {
+    --bg-deep:#0a0e17; --bg-card:#151d2e; --border:#243049;
+    --accent:#3b82f6; --cyan:#22d3ee; --green:#34d399; --red:#f87171;
+    --amber:#fbbf24; --purple:#a78bfa; --text:#e8edf5; --text-sec:#94a3b8; --text-muted:#64748b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Segoe UI","PingFang SC","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;background:var(--bg-deep);color:var(--text);line-height:1.45;
+    background-image:radial-gradient(ellipse 80% 50% at 50% -20%,rgba(59,130,246,.08),transparent)}
+  .board{max-width:1400px;margin:0 auto;padding:20px 24px 28px;display:flex;flex-direction:column;gap:14px}
+  .header,.card{background:linear-gradient(135deg,var(--bg-card),#121a2c);border:1px solid var(--border);border-radius:12px;padding:16px 18px;position:relative}
+  .header::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--cyan),var(--purple))}
+  .brand{font-size:1.25rem;font-weight:700;background:linear-gradient(90deg,#e8edf5,var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+  .sub{font-size:.78rem;color:var(--text-muted);margin-top:4px}
+  .mood{margin-top:10px;font-size:.92rem;color:var(--amber)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+  h2{font-size:.85rem;letter-spacing:.04em;color:var(--cyan);text-transform:uppercase;margin-bottom:10px}
+  table{width:100%;border-collapse:collapse;font-size:.82rem}
+  th,td{padding:6px 8px;border-bottom:1px solid #1c2740;text-align:left}
+  th{color:var(--text-muted);font-weight:600}
+  .up{color:var(--green)} .down{color:var(--red)} .flat{color:var(--text-sec)}
+  .tag{display:inline-block;font-size:.65rem;padding:2px 6px;border-radius:4px;margin-left:6px;border:1px solid var(--border);color:var(--text-muted)}
+  .tag.confirmed{color:var(--green);border-color:rgba(52,211,153,.35)}
+  .tag.tentative{color:var(--amber);border-color:rgba(251,191,36,.35)}
+  .tag.open{color:var(--red);border-color:rgba(248,113,113,.35)}
+  .tag.new{color:var(--cyan);border-color:rgba(34,211,238,.35)}
+  .caption{margin-top:10px;font-size:.78rem;color:var(--text-sec)}
+  .claim{font-size:.7rem;color:var(--text-muted);margin-top:6px}
+  ul{padding-left:18px;font-size:.85rem;color:var(--text-sec)}
+  li{margin:4px 0}
+  .footer{font-size:.7rem;color:var(--text-muted);text-align:center;padding:8px}
+  .warn{color:var(--amber);font-weight:600}
+</style>
+</head>
+<body>
+<div class="board">
+  <header class="header">
+    <div>
+      <div class="brand">Research OS Daily Board｜AI Factory</div>
+      <div class="sub">2026-09-29 · Morning / 早盘 · As-of ~08:30 MYT (Asia/Kuala_Lumpur)</div>
+      <div class="mood">Tue AM DIGEST = <b>Mon US FULL RED (S&amp;P −0.8% / SOX −1.61%) + Starship COMPLETE (26/26 V3) + NVDA +$150B buyback (+1.68%) + Globex soft + Asia LIVE soft + TW reopen PENDING + 10Y ~5.23%</b>: Dow <b>51,481.51 (−0.7%)</b> · S&amp;P <b>7,683.69 (−0.8%)</b> · Nasdaq <b>26,820.38 (−0.9%)</b> · <b>SOX 12,465.24 (−1.61%)</b> · VIX <b>16.07</b> · ES <b>~7,741</b> / NQ <b>~30,546</b> · Nikkei LIVE <b>~−0.79%</b> · KOSPI LIVE <b>~−0.17%</b> · CN PRE hard-red lock · <b>TW REOPEN</b> print pending · Starship <span class="tag new">COMPLETE</span> · NVDA buyback <span class="tag new">NEW</span> · truce→Jan10 <span class="tag confirmed">CONFIRMED</span> · RE <span class="tag open">OPEN</span><br/>周二早盘消化=<b>周一全日收红/SOX−1.61% + 星舰收官 + 英伟达回购 + 期货/亚洲偏软 + 台股复市待印</b>：道指−0.7% · 标普−0.8% · 纳指−0.9% · SOX −1.61% · VIX 16.07 · 期货ES约7,741/NQ约30,546 · 日经实时约−0.79% · 韩股约−0.17% · A股待开 · <b>台股复市</b> · 停火→1/10已确认 · <b>稀土仍未解</b></div>
+    </div>
+    <div class="sub" style="text-align:right">Sources: AP Mon FULL; CNBC SOX/NVDA/SPCX/yields; Yahoo ~08:15–08:30 MYT; Master Monitor; Spaceflight Now/Ars; GlobeNewswire NVDA; TWSE/SSE calendars<br/>No invented prices · SPCX = Nasdaq-listed SpaceX<br/><span class="warn">TW REOPEN · Next veto = TW/CN/HK/MY open → Fed speakers → US cash</span></div>
+  </header>
+
+  <section class="card">
+    <h2>Index Strip / 指数条 · Mon US FULL · Globex LIVE · Asia status</h2>
+    <table>
+      <tr><th>Asset</th><th>Last</th><th>1D% / note</th><th>Session label</th></tr>
+      <tr><td>Dow</td><td>51,481.51</td><td class="down">−0.67% (~−0.7% AP)</td><td><b>Mon FULL</b> (AP/CNBC/Yahoo)</td></tr>
+      <tr><td>S&amp;P 500</td><td>7,683.69</td><td class="down">−0.77% (~−0.8% AP)</td><td><b>Mon FULL</b> — PRE→cash red</td></tr>
+      <tr><td>Nasdaq</td><td>26,820.38</td><td class="down">−0.92% (~−0.9% AP)</td><td><b>Mon FULL</b></td></tr>
+      <tr><td>SOX</td><td>12,465.24</td><td class="down">−1.61%</td><td><b>Mon FULL — SEMI DIGEST</b> (Morning owns)</td></tr>
+      <tr><td>QQQ</td><td>736.53</td><td class="down">−1.07%</td><td>Mon FULL</td></tr>
+      <tr><td>Russell 2000</td><td>2,817.91</td><td class="down">−0.69% (~−0.7% AP)</td><td>Mon FULL</td></tr>
+      <tr><td>VIX</td><td>16.07</td><td class="up">+8.07%</td><td>Mon FULL — off Fri 14.87</td></tr>
+      <tr><td>ES futures</td><td>~7,741</td><td class="down">−0.80% vs Fri day; −0.45% vs Eve</td><td><b>Globex LIVE</b> ~08:20 MYT</td></tr>
+      <tr><td>NQ futures</td><td>~30,546</td><td class="down">−1.11% vs Fri day; −0.53% vs Eve</td><td><b>Globex LIVE</b></td></tr>
+      <tr><td>YM futures</td><td>~51,785</td><td class="down">−0.72% vs Fri day ~52,163</td><td>Globex LIVE</td></tr>
+      <tr><td>RTY futures</td><td>~2,837</td><td class="down">−0.79% vs Fri day ~2,859</td><td>Globex LIVE</td></tr>
+      <tr><td>Nikkei</td><td>~65,359</td><td class="down">−0.79% vs Mon 65,877.62</td><td><b>Tue LIVE</b></td></tr>
+      <tr><td>KOSPI</td><td>~6,878</td><td class="down">−0.17% vs Mon 6,889.74</td><td><b>Tue LIVE</b></td></tr>
+      <tr><td>Hang Seng</td><td>24,642.51</td><td class="up">+0.54% Mon</td><td><b>Mon CLOSE / Tue PRE-OPEN</b> (~09:30)</td></tr>
+      <tr><td>SSE</td><td>3,823.62</td><td class="down">−1.67% Mon</td><td><b>Mon CLOSE / Tue PRE-OPEN</b> (Evening-owned)</td></tr>
+      <tr><td>CSI 300</td><td>4,340.76</td><td class="down">−2.22% Mon</td><td><b>PRE-OPEN</b></td></tr>
+      <tr><td>ChiNext</td><td>3,139.825</td><td class="down">−4.53% Mon</td><td><b>PRE-OPEN</b></td></tr>
+      <tr><td>TWSE</td><td>48,024.60</td><td class="flat">Thu lock</td><td><b>REOPEN TODAY — PRE-OPEN ~09:00</b> <span class="tag confirmed">CONFIRMED</span></td></tr>
+      <tr><td>FBM KLCI</td><td>1,670.02</td><td class="down">−0.10% Mon</td><td><b>Mon CLOSE / Tue PRE-OPEN</b> (~09:00)</td></tr>
+      <tr><td>DAX</td><td>25,374.42</td><td class="down">−0.13%</td><td>Mon FULL dpa-AFX/CNBC</td></tr>
+    </table>
+    <div class="claim">Claim: Mon US FULL CONFIRMED AP/CNBC/Yahoo; SOX Morning-owned; Globex RELIABLE Yahoo ~08:20 MYT; Nikkei/KOSPI LIVE RELIABLE; TW reopen calendar CONFIRMED (print pending); CN Mon locks Evening-owned.</div>
+  </section>
+
+  <div class="grid">
+    <section class="card">
+      <h2>Macro Strip / 宏观条</h2>
+      <table>
+        <tr><th>Item</th><th>Level</th><th>Note</th></tr>
+        <tr><td>US 10Y</td><td>~5.23–5.24%</td><td>CNBC 5.234% / Yahoo 5.240%</td></tr>
+        <tr><td>US 2Y</td><td>4.926%</td><td>CNBC US2Y Mon</td></tr>
+        <tr><td>US 5Y</td><td>5.064% / Yahoo 5.068%</td><td>CNBC / Yahoo dual</td></tr>
+        <tr><td>US 20Y</td><td>5.605%</td><td>CNBC US20Y</td></tr>
+        <tr><td>US 30Y</td><td>~5.55% / Yahoo 5.561%</td><td>CNBC / Yahoo dual</td></tr>
+        <tr><td>DXY</td><td>~101.26</td><td>Yahoo LIVE</td></tr>
+        <tr><td>WTI LIVE</td><td>~93.41</td><td>Hold vs Eve ~94.4 fade</td></tr>
+        <tr><td>Brent</td><td>BZ=F ~98.82 / CNBC Nov 106.40</td><td>Contract-roll caution</td></tr>
+        <tr><td>Gold GC</td><td>~4,150</td><td>Soft vs Fri ~4,321</td></tr>
+        <tr><td>USD/JPY</td><td>~157.46</td><td>Yahoo LIVE</td></tr>
+        <tr><td>BTC</td><td>~83,521</td><td>Yahoo LIVE</td></tr>
+      </table>
+      <div class="claim">Fed Barr/Cook/Waller/Bowman today · PCE+MU Wed Sep 30 · RE OPEN</div>
+    </section>
+
+    <section class="card">
+      <h2>Watchlist Movers / 观察名单 · Mon FULL</h2>
+      <table>
+        <tr><th>Ticker</th><th>Last</th><th>1D%</th></tr>
+        <tr><td>NVDA</td><td>228.86</td><td class="up">+1.68%</td></tr>
+        <tr><td>IBB</td><td>210.71</td><td class="up">+0.45%</td></tr>
+        <tr><td>AAPL</td><td>338.40</td><td class="down">−0.78%</td></tr>
+        <tr><td>AVGO</td><td>349.57</td><td class="down">−0.92%</td></tr>
+        <tr><td>PLTR</td><td>187.48</td><td class="down">−1.15%</td></tr>
+        <tr><td>UMC</td><td>23.85</td><td class="down">−1.89%</td></tr>
+        <tr><td>SPCX</td><td>145.47</td><td class="down">−2.16%</td></tr>
+        <tr><td>LITE</td><td>921.32</td><td class="down">−2.16%</td></tr>
+        <tr><td>MU</td><td>1,053.98</td><td class="down">−2.61%</td></tr>
+        <tr><td>CRWV</td><td>85.07</td><td class="down">−2.88%</td></tr>
+        <tr><td>MRVL</td><td>251.90</td><td class="down">−3.83%</td></tr>
+        <tr><td>TSLA</td><td>357.45</td><td class="down">−3.94%</td></tr>
+        <tr><td>INTC</td><td>116.03</td><td class="down">−5.67%</td></tr>
+        <tr><td>QCOM</td><td>187.48</td><td class="down">−7.17%</td></tr>
+        <tr><td>ARM</td><td>283.33</td><td class="down">−8.70%</td></tr>
+      </table>
+      <div class="claim">Only NVDA green (buyback) · ARM/QCOM/INTC hardest · SPCX −2.16% despite Starship COMPLETE</div>
+    </section>
+
+    <section class="card">
+      <h2>Catalyst Timeline / 催化 · Tue focus</h2>
+      <ul>
+        <li>Starship F14 <span class="tag new">COMPLETE</span> — 26/26 V3 + Hawaii splash</li>
+        <li>NVDA +$150B buyback auth <span class="tag new">NEW</span></li>
+        <li>TWSE reopen today <span class="tag confirmed">CONFIRMED</span> — print ~09:00 MYT</li>
+        <li>CN/HK/MY open ~09:00–09:30 — Mon hard-red locks</li>
+        <li>Fed Bowman/Barr/Cook/Waller <span class="tag confirmed">CONFIRMED</span></li>
+        <li>MU Q4 + Aug PCE Wed Sep 30 <span class="tag confirmed">CONFIRMED</span></li>
+        <li>Truce→Jan10 <span class="tag confirmed">CONFIRMED</span> · RE <span class="tag open">OPEN</span></li>
+      </ul>
+      <div class="caption"><b>PRIMARY next veto:</b> TW/CN/HK/MY open → Fed speakers → US cash ~21:30 MYT<br/><b>下一主否决权：</b>台/中/港/马开盘 → 美联储讲话 → 美股现金</div>
+    </section>
+  </div>
+
+  <section class="card">
+    <h2>Thinking Tutorial strip / 思维教程条</h2>
+    <ul>
+      <li><b>Observe:</b> Mon SOX −1.61% confirmed digest · Starship COMPLETE · NVDA buyback island · SPCX −2.16% · Globex/Asia soft · TW reopen pending</li>
+      <li><b>Why:</b> Scenario upgrades (V3 / capital return) ≠ multiple expansion under 5.23% 10Y + red breadth</li>
+      <li><b>Falsifier:</b> TW/CN hard extension + 10Y disorderly · OR TW/CN bid + yields ease + SPCX/SOX catch-up</li>
+      <li><b>Watch next:</b> TW/CN/HK/MY open → Fed speakers → US cash · MU/PCE Wed</li>
+    </ul>
+    <div class="claim">Claim class: Facts (Mon FULL, Starship COMPLETE, NVDA auth, Globex, Asia LIVE) · Calendars CONFIRMED · Transmission arrows INFERENCE · As-of ~08:30 MYT 2026-09-29</div>
+  </section>
+
+  <div class="footer">Research OS Daily Board · AI Factory Morning · 2026-09-29 ~08:30 MYT · Not investment advice · Chart pack: research-os/charts/exports/2026-09-29-morning/</div>
+</div>
+</body>
+</html>

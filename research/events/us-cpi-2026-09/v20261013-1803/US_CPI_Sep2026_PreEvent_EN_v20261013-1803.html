@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title> </title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<style>body{font-family:'Noto Sans CJK SC','Noto Sans',sans-serif;max-width:1100px;margin:auto;padding:24px;line-height:1.6;color:#1b1b1b}table{border-collapse:collapse;font-size:13px;margin:8px 0}td,th{border:1px solid #ccd;padding:4px 8px}th{background:#1F3A5F;color:#fff}img{max-width:100%;border:1px solid #ddd}h1{color:#1F3A5F}h2{border-bottom:2px solid #1F3A5F}blockquote{background:#f3f6fa;border-left:4px solid #2E86C1;margin:0;padding:6px 12px}</style></head>
+<body><div style="background:#fff7ed;border:1px solid #fdba74;padding:8px 12px;margin:8px 0;font-size:13px">历史版本：PDF/Word/图片已归档至 GitHub Release（下载：<a href="https://github.com/PSS917/research-os/releases/download/archive-v20261013-1803/US_CPI_Sep2026_PreEvent_v20261013-1803.zip">ZIP</a>）。Archived version — heavy files live in Release assets.</div>
+<header id="title-block-header">
+<h1 class="title"> </h1>
+</header>
+<h1
+id="us-cpi-sep-2026-pre-event-book美国9月cpi-发布前事件书-professional-english">US
+CPI (Sep 2026) Pre-Event Book｜美国9月CPI 发布前事件书 — Professional
+English</h1>
+<blockquote>
+<p><strong>Release: Wed 2026-10-14, 08:30 ET = 20:30 SGT (Singapore
+time)</strong>. Status CONFIRMED (BLS schedule). Pre-event snapshot
+locked <strong>2026-10-13 18:03 SGT</strong> (version v20261013-1803).
+Not rewritten after the fact; actuals and the post-mortem go into the
+next Daily OS update. Not investment advice. Labels: FACT · DATA ·
+MARKET EXP (market expectation) · HYPOTHESIS (ours) · INFERENCE.</p>
+</blockquote>
+<h2 id="major-events-in-the-next-36-hours-sgt">0. Major events in the
+next ~36 hours (SGT)</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Time SGT</th>
+<th>Event</th>
+<th>Status</th>
+<th>OS link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10/14 13:00</td>
+<td>ASML Q3 results (07:00 Amsterdam); call 21:00</td>
+<td>CONFIRMED date (time via secondary sources)</td>
+<td>Not on watchlist; bellwether for AMAT/KLAC/TSM/INTC/MU</td>
+</tr>
+<tr>
+<td>10/14 17:40</td>
+<td>Fed Vice Chair for Supervision Bowman (05:40 ET)</td>
+<td>TENTATIVE time</td>
+<td>Mostly regulation</td>
+</tr>
+<tr>
+<td><strong>10/14 20:30</strong></td>
+<td><strong>US CPI (Consumer Price Index｜消费者价格指数), September +
+Real Earnings</strong></td>
+<td><strong>CONFIRMED</strong></td>
+<td><strong>Main event</strong></td>
+</tr>
+<tr>
+<td>10/15 01:30</td>
+<td>Richmond Fed’s Barkin (13:30 ET)</td>
+<td>TENTATIVE</td>
+<td>First Fed reaction after the data</td>
+</tr>
+<tr>
+<td>10/15 02:00</td>
+<td>Fed Beige Book (褐皮书)</td>
+<td>CONFIRMED</td>
+<td>Anecdotal evidence before the Oct 27–28 FOMC</td>
+</tr>
+<tr>
+<td>Watchlist earnings</td>
+<td>None in window (TSM is 10/15 14:00 SGT, covered in tomorrow’s
+run)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h2 id="executive-summary">1. Executive Summary</h2>
+<ol type="1">
+<li><strong>Consensus (MARKET EXP)</strong>: headline +0.6% m/m (FactSet
++0.5%), 3.6% y/y (prior 3.4%); core +0.2% m/m (prior +0.3%), 2.5% y/y
+(FactSet 2.4%; prior 2.4%).</li>
+<li><strong>Ours (HYPOTHESIS)</strong>: headline +0.58% / 3.6%; core
+<strong>+0.22%</strong> / 2.4%. Core y/y sits on the 2.4/2.5 rounding
+edge (≥0.2215% m/m rounds to ~2.5% on our SA approximation). <strong>The
+core expectation gap is only about +0.02pp, so the trade is in the
+components and in positioning, not the headline number.</strong></li>
+<li><strong>Why it matters</strong>: last CPI before the Oct 27–28 FOMC.
+The Fed hiked in September; the target range is 3.75–4.00% (FRED upper
+bound 4.00%). Kalshi prices about 20% for an October hike and about 73%
+for December (10/13). September payrolls were only +29k with
+unemployment at 4.2% (FRED), which already pulled October odds from
+about 70% to about 20%.</li>
+<li><strong>Fragile tape</strong>: 10Y UST at 5.24% (near multi-decade
+highs), SOX −7.4% since 10/6, KOSPI −5.46% today on CXMT memory-supply
+fears and foreign selling. Broadcom’s and Intel’s CEOs just named
+capital and the cost of capital as the binding constraint on AI
+expansion, so the AI chain’s sensitivity to rates is rising.</li>
+<li><strong>Asymmetry</strong>: a hot core print (≥0.25%) would stack
+the cost-of-capital story on top of broken semis; a cool print could
+spark a relief bounce, but memory names (MU/SIMO) are trading supply
+news, not CPI.</li>
+</ol>
+<h2 id="consensus-vs-ours-expectation-gap">2. Consensus vs Ours
+(Expectation Gap)</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th>Measure</th>
+<th>Aug prior</th>
+<th>Consensus</th>
+<th>Range</th>
+<th>Ours</th>
+<th>Gap (pp)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Headline m/m</td>
+<td>0.4%</td>
+<td>0.6% (FactSet 0.5)</td>
+<td>0.5–0.7</td>
+<td>0.58</td>
+<td>−0.02</td>
+</tr>
+<tr>
+<td>Headline y/y</td>
+<td>3.4%</td>
+<td>3.6%</td>
+<td>3.5–3.8</td>
+<td>3.6</td>
+<td>0</td>
+</tr>
+<tr>
+<td><strong>Core m/m</strong></td>
+<td>0.3% (0.29)</td>
+<td><strong>0.2%</strong></td>
+<td>0.2–0.3</td>
+<td><strong>0.22</strong></td>
+<td><strong>+0.02</strong></td>
+</tr>
+<tr>
+<td>Core y/y</td>
+<td>2.4%</td>
+<td>2.5% (FactSet 2.4)</td>
+<td>2.3–2.6</td>
+<td>2.4</td>
+<td>−0.1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Why we lean slightly above consensus</strong>: Deutsche Bank
+0.16%, Wells Fargo 0.20%, Crédit Agricole 0.20% (FinancialJuice, 10/12).
+Drags: reversal of August’s wireless-services spike and softer used
+cars. Supports: a modest shelter pickup, a medical-services rebound, and
+jet fuel feeding airfares. We think the last two are underweighted by
+0.02–0.04pp. <strong>Base effects (DATA + calculation)</strong>: at
++0.22% core, the 3-month annualised rate jumps to about 2.9% as June’s
+−0.02% drops out, so an “inflation momentum re-accelerates” headline is
+possible even on an in-line print. <strong>The Fed targets PCE</strong>:
+August core PCE was about 3.0% y/y (FRED, our calculation), above core
+CPI at 2.45%. Thursday’s PPI components (medical, airfares, portfolio
+management) matter as much as CPI for the PCE mapping.</p>
+<h2 id="scenario-tree-and-market-reaction-paths-hypothesis">3. Scenario
+Tree and Market-Reaction Paths (HYPOTHESIS)</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Core m/m</th>
+<th>Prob</th>
+<th>2Y</th>
+<th>10Y</th>
+<th>USD/JPY</th>
+<th>NDX</th>
+<th>SOX</th>
+<th>Oct hike odds</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bull, Cool</td>
+<td>≤0.15%</td>
+<td>25%</td>
+<td>−8 to −12bp</td>
+<td>−5 to −10bp</td>
+<td>−0.5 to −1.0</td>
+<td>+0.8 to +1.5%</td>
+<td>+1 to +2.5%</td>
+<td>to ~10%</td>
+</tr>
+<tr>
+<td>Base, Inline</td>
+<td>0.16–0.24%</td>
+<td>50%</td>
+<td>±3bp</td>
+<td>±4bp</td>
+<td>flat</td>
+<td>±0.5%</td>
+<td>memory/AI news</td>
+<td>15–20%</td>
+</tr>
+<tr>
+<td>Bear, Hot</td>
+<td>≥0.25%</td>
+<td>25%</td>
+<td>+8 to +15bp</td>
+<td>+5 to +10bp</td>
+<td>+0.5 to +1.0 (159–160 risk)</td>
+<td>−1.0 to −2.0%</td>
+<td>−1.5 to −3%</td>
+<td>to 30–35%</td>
+</tr>
+</tbody>
+</table>
+<p>Sub-case: <strong>headline ≥0.7% with core ≤0.2%</strong> means an
+energy shock that isn’t broadening; bonds may look through it, but a
+&gt;5bp rise in the 10Y breakeven (now 2.33%) would signal second-round
+fears. <strong>Transmission</strong>: core surprise → Fed path (Oct/Dec
+odds) → 2Y → 10Y (2.87% real yield + term premium) → USD and USD/JPY →
+WACC and multiples → NDX/SOX → watchlist (high price-implied growth
+names are most sensitive). See charts 01 and 03.</p>
+<h2 id="live-observation-checklist-from-2030-sgt">4. Live-Observation
+Checklist (from 20:30 SGT)</h2>
+<p>Write the actual next to each threshold before reading headlines; the
+Excel <code>LiveChecklist</code> sheet classifies automatically.</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>#</th>
+<th>Watch</th>
+<th>Cool</th>
+<th>Hot</th>
+<th>Why (beginner note)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Core m/m to two decimals</td>
+<td>≤0.15</td>
+<td>≥0.25</td>
+<td>0.24 and 0.25 round to 0.2 and 0.3, which produce opposite
+headlines</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Core y/y</td>
+<td>≤2.35</td>
+<td>≥2.55</td>
+<td>2.4 vs 2.5 is the headline split</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Supercore (core services ex-shelter)</td>
+<td>&lt;0.20</td>
+<td>&gt;0.35</td>
+<td>wage-linked and sticky; the Fed’s focus</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Shelter / OER (owners’ equivalent rent)</td>
+<td>≤0.25</td>
+<td>&gt;0.35</td>
+<td>about a third of CPI; slow but heavy</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Core goods</td>
+<td>≤0.0</td>
+<td>&gt;0.20</td>
+<td>tariff and supply pass-through</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Airfares, transport services</td>
+<td>—</td>
+<td>big jump</td>
+<td>energy second-round effects</td>
+</tr>
+<tr>
+<td>7</td>
+<td>2Y, first 15 minutes</td>
+<td>≤−8bp</td>
+<td>≥+8bp</td>
+<td>the market’s vote on the Fed path; &lt;3bp means priced</td>
+</tr>
+<tr>
+<td>8</td>
+<td>10Y vs 2Y direction</td>
+<td>—</td>
+<td>hot but 10Y falls</td>
+<td>growth fear, so our map fails for the day</td>
+</tr>
+<tr>
+<td>9</td>
+<td>USD/JPY</td>
+<td>≤157</td>
+<td>≥159.5</td>
+<td>Japan intervened near 160 in 2024 (FACT); verbal-intervention risk
+rises (INFERENCE)</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Oct hike odds (CME/Kalshi)</td>
+<td>≤12%</td>
+<td>≥30%</td>
+<td>above 30% makes Oct 28 “live”</td>
+</tr>
+<tr>
+<td>11</td>
+<td>First 30 min vs close</td>
+<td>—</td>
+<td>—</td>
+<td>headline reaction vs fundamental change; a reversal means
+positioning</td>
+</tr>
+</tbody>
+</table>
+<h2 id="affected-watchlist-stocks">5. Affected Watchlist Stocks</h2>
+<p><strong>Rate sensitivity (DATA: average same-day move per +10bp in
+the 10Y over the past year; R² is low, so treat as a guide)</strong>:
+CCL −2.59% (R² 0.12, the highest; also hit by fuel and real incomes),
+ARM −2.56%, SPCX −2.56% (83 trading days since IPO), MRVL −1.84%, RKLB
+−1.77%, INTC −1.53%, GLW −1.49%, KLAC −1.21%, CIEN −1.18%, QCOM −1.16%,
+AMD −1.05%; NDX −0.67%, SOX −0.89%. Low sensitivity: CRWV, CRWD, EME,
+PWR, NVDA, AAPL. SIMO, LITE and MXL show positive but noise-level betas
+(R² about 0). See chart 04. <strong>Valuation lens (OS models,
+HYPOTHESIS)</strong>: the widest gaps between price-implied Y1 growth
+and consensus are RKLB (115% vs 41%), TSLA (81% vs 14%), INTC (69% vs
+15%), CRWD (74% vs 23%), ARM (78% vs 36%), PLTR (88% vs 50%), KLAC and
+PWR. These are long-duration assets that need continued beats; a lasting
+discount-rate rise hurts their fair value most (Excel
+<code>Valuation</code>: a sustained +8bp cuts NVDA’s fair value by about
+0.8% using a duration approximation). <strong>Names on the event
+chain</strong>: TSM reports 10/15 14:00 SGT (Q3 guide US$44.6–45.8bn, GM
+65–67%), so CPI sets the mood. AMAT/KLAC/INTC read ASML at 13:00 SGT
+first. MU/SIMO fell today on CXMT, not rates; if CPI is cool and MU
+still lags, the driver is the Industry/AI multiple. CCL is exposed to
+gasoline and the Real Earnings release. EME/PWR/CRWV carry
+project-financing sensitivity to long rates.</p>
+<h2 id="falsifiers">6. Falsifiers</h2>
+<ol type="1">
+<li>Core ≥0.25% but the 10Y falls and the 2Y rises &lt;5bp: already
+priced or a growth scare; the hot → rates up → tech down map fails.</li>
+<li>Core ≤0.15% but SOX still falls &gt;1.5%: semis are trading AI cost
+of capital and memory supply; downweight the Rates term.</li>
+<li>An in-line print that moves October odds by &gt;15pp: extreme
+positioning fragility; raise the ΔPositioning weight.</li>
+<li>Headline ≥0.7%, core ≤0.2%, and the 10Y breakeven up &gt;5bp:
+second-round energy fear; the “Fed can look through energy” assumption
+fails.</li>
+<li>If actual core lands outside 0.16–0.24, log a Fundamental Forecast
+error and identify which component (shelter, medical, airfares) we
+misjudged.</li>
+</ol>
+<h2 id="beige-book-and-asml-previews">7. Beige Book and ASML
+Previews</h2>
+<ul>
+<li><strong>Beige Book (10/15 02:00 SGT)</strong>: (a) are firms passing
+energy costs through; (b) how broad is hiring softness; (c)
+AI-investment anecdotes on power, construction and hiring. “Modest price
+gains plus flat or softer employment” supports an October pause.</li>
+<li><strong>ASML (10/14 13:00 SGT)</strong>: prior guide Q3 sales
+€11–12bn, GM 55–57%, FY €43–45bn (secondary sources). Watch bookings,
+2027 visibility, China share and memory-customer capex, which matters
+more after today’s Korean memory rout.</li>
+</ul>
+<h2 id="thinking-tutorial">8. Thinking Tutorial</h2>
+<p>What to observe (core m/m to two decimals, supercore) → why (the
+Fed’s reaction function runs on sticky inflation) → evidence (components
+plus the 2Y in the first 15 minutes) → transmission (2Y → 10Y → WACC →
+multiples) → alternatives (growth fear, positioning, AI cost-of-capital,
+yen) → falsifiers (section 6) → watch next (10/15 PPI and retail sales,
+TSMC, Warsh 10/16 11:30 SGT).</p>
+<h2 id="final-self-challenge">9. Final Self-Challenge</h2>
+<ul>
+<li>Is our 0.22% lean anchored on August’s 0.29%? Bank forecasts cluster
+at 0.16–0.20%, so our tilt may be noise.</li>
+<li>A 10Y above 5.2% mostly reflects term premium and fiscal supply, not
+CPI; even a cool print may not lift the long end, so growth-stock
+valuation pressure may not ease.</li>
+<li>Today’s semis problem (CXMT, cost of capital) has nothing to do with
+CPI; attributing tomorrow night’s semis move entirely to CPI would be a
+classic misattribution.</li>
+</ul>
+<h2 id="data-conflicts-and-model-notes">10. Data Conflicts and Model
+Notes</h2>
+<ul>
+<li>Morningstar’s text says “Wednesday, Oct. 15”, which conflicts with
+the BLS schedule (Wednesday 10/14); we follow BLS. predictionauthority
+mislabels 10/14 as Tuesday.</li>
+<li>Core y/y consensus differs: 2.4% (FactSet) vs 2.5%
+(TD/FinancialJuice); headline m/m 0.5% vs 0.6%.</li>
+<li><strong>OS pipeline issue</strong>: the dashboard’s CPI y/y uses a
+12-row lag; with October 2025 missing (shutdown) it shows CPI 3.71% and
+core 2.76% instead of the correct 3.35% and 2.45% for August. This book
+uses calendar-matched y/y. Pipeline fix pending.</li>
+</ul>
+<p>Source Ledger, Assumption Register and Model Provenance are in the
+Excel workbook’s sheets of the same names; the Chinese edition and
+beginner teaching editions are in the same folder.</p>
+<h2 id="图表-charts">图表 Charts</h2>
+<figure>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261013-1803/US_CPI_Sep2026_PreEvent_v20261013-1803.zip"
+alt="传导链 Transmission chain" />
+<figcaption aria-hidden="true">传导链 Transmission chain</figcaption>
+</figure>
+<figure>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261013-1803/US_CPI_Sep2026_PreEvent_v20261013-1803.zip" alt="预期差 Expectation gap" />
+<figcaption aria-hidden="true">预期差 Expectation gap</figcaption>
+</figure>
+<figure>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261013-1803/US_CPI_Sep2026_PreEvent_v20261013-1803.zip"
+alt="情景树 Scenario tree" />
+<figcaption aria-hidden="true">情景树 Scenario tree</figcaption>
+</figure>
+<figure>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261013-1803/US_CPI_Sep2026_PreEvent_v20261013-1803.zip"
+alt="利率敏感度 Rate sensitivity" />
+<figcaption aria-hidden="true">利率敏感度 Rate sensitivity</figcaption>
+</figure>
+<figure>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261013-1803/US_CPI_Sep2026_PreEvent_v20261013-1803.zip"
+alt="盘中时间表 Live timeline" />
+<figcaption aria-hidden="true">盘中时间表 Live timeline</figcaption>
+</figure>
+</body>
+</html>

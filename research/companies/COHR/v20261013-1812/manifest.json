@@ -1,0 +1,106 @@
+{
+ "release": "COHR_v20261013-1812",
+ "generated": "2026-10-13T18:14:08.307534",
+ "files": [
+  {
+   "path": "COHR_model_v20261013-1812.xlsx",
+   "bytes": 35972,
+   "sha256": "d6939753baa6d85c"
+  },
+  {
+   "path": "COHR_report_v20261013-1812.docx",
+   "bytes": 844502,
+   "sha256": "63db4890aedb633c"
+  },
+  {
+   "path": "COHR_report_v20261013-1812.html",
+   "bytes": 29315,
+   "sha256": "cd81687bb0d1b03e"
+  },
+  {
+   "path": "COHR_report_v20261013-1812.md",
+   "bytes": 16863,
+   "sha256": "e6b4f1ee2a80f4b8"
+  },
+  {
+   "path": "COHR_report_v20261013-1812.pdf",
+   "bytes": 1139270,
+   "sha256": "f6ee555dae666944"
+  },
+  {
+   "path": "COHR_teaching_v20261013-1812.docx",
+   "bytes": 194968,
+   "sha256": "257e81c6ec681e51"
+  },
+  {
+   "path": "COHR_teaching_v20261013-1812.html",
+   "bytes": 9615,
+   "sha256": "59b69adf2c544d5f"
+  },
+  {
+   "path": "COHR_teaching_v20261013-1812.md",
+   "bytes": 4526,
+   "sha256": "8dfe0dfd7a34771e"
+  },
+  {
+   "path": "COHR_teaching_v20261013-1812.pdf",
+   "bytes": 251320,
+   "sha256": "bdec584edcd8935d"
+  },
+  {
+   "path": "images/COHR_1_price_vs_value.jpg",
+   "bytes": 308410,
+   "sha256": "c9774053be8f57c9"
+  },
+  {
+   "path": "images/COHR_1_price_vs_value.png",
+   "bytes": 223623,
+   "sha256": "36a9bee7411259f4"
+  },
+  {
+   "path": "images/COHR_2_financials.jpg",
+   "bytes": 245221,
+   "sha256": "c8ee0e1bbe3e3ff0"
+  },
+  {
+   "path": "images/COHR_2_financials.png",
+   "bytes": 179027,
+   "sha256": "01ee2132fd2f31fa"
+  },
+  {
+   "path": "images/COHR_3_scenarios.jpg",
+   "bytes": 252188,
+   "sha256": "ef8fc56c93ea4ea4"
+  },
+  {
+   "path": "images/COHR_3_scenarios.png",
+   "bytes": 168405,
+   "sha256": "f2692f758458dcf2"
+  },
+  {
+   "path": "images/COHR_4_horizons.jpg",
+   "bytes": 248239,
+   "sha256": "7dd81af171ad5df3"
+  },
+  {
+   "path": "images/COHR_4_horizons.png",
+   "bytes": 185116,
+   "sha256": "457bb539bcc19edb"
+  },
+  {
+   "path": "images/COHR_5_logic_map.jpg",
+   "bytes": 243302,
+   "sha256": "d0ce381d34492b0f"
+  },
+  {
+   "path": "images/COHR_5_logic_map.png",
+   "bytes": 210458,
+   "sha256": "0ffe1633549a8347"
+  },
+  {
+   "path": "summary.json",
+   "bytes": 538,
+   "sha256": "37c804b17963fdeb"
+  }
+ ]
+}

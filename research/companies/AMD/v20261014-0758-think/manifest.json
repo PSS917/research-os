@@ -1,0 +1,111 @@
+{
+ "release": "AMD_v20261014-0758-think",
+ "generated": "2026-10-14T08:04:19.808643",
+ "files": [
+  {
+   "path": "AMD_Thinking_v20261014-0758-think.docx",
+   "bytes": 393933,
+   "sha256": "fbdbebb3ba908db3"
+  },
+  {
+   "path": "AMD_Thinking_v20261014-0758-think.html",
+   "bytes": 18877,
+   "sha256": "4dfe10cd354166fb"
+  },
+  {
+   "path": "AMD_Thinking_v20261014-0758-think.md",
+   "bytes": 10447,
+   "sha256": "6b4ff728198b3658"
+  },
+  {
+   "path": "AMD_Thinking_v20261014-0758-think.pdf",
+   "bytes": 715079,
+   "sha256": "480f9cffb43c5fe2"
+  },
+  {
+   "path": "AMD_model_v20261014-0758-think.xlsx",
+   "bytes": 35907,
+   "sha256": "ee9351544812409c"
+  },
+  {
+   "path": "images/AMD_1_price_vs_value.jpg",
+   "bytes": 274616,
+   "sha256": "08ab6d61e7be8231"
+  },
+  {
+   "path": "images/AMD_1_price_vs_value.png",
+   "bytes": 187494,
+   "sha256": "2e8c6e354ed1cbf9"
+  },
+  {
+   "path": "images/AMD_2_financials.jpg",
+   "bytes": 247405,
+   "sha256": "5e52801b572a7e82"
+  },
+  {
+   "path": "images/AMD_2_financials.png",
+   "bytes": 184710,
+   "sha256": "8d5029f1bf0cffbd"
+  },
+  {
+   "path": "images/AMD_3_scenarios.jpg",
+   "bytes": 244781,
+   "sha256": "8d5b8a1ff8c14208"
+  },
+  {
+   "path": "images/AMD_3_scenarios.png",
+   "bytes": 171705,
+   "sha256": "26b6d6ac4bf40c97"
+  },
+  {
+   "path": "images/AMD_4_horizons.jpg",
+   "bytes": 232699,
+   "sha256": "ee605a936388ea4b"
+  },
+  {
+   "path": "images/AMD_4_horizons.png",
+   "bytes": 177298,
+   "sha256": "4eaaa8f9a3ffc7b1"
+  },
+  {
+   "path": "images/AMD_5_logic_map.jpg",
+   "bytes": 242081,
+   "sha256": "c916d58eaeac667a"
+  },
+  {
+   "path": "images/AMD_5_logic_map.png",
+   "bytes": 209965,
+   "sha256": "c33b2683e1e7cb9f"
+  },
+  {
+   "path": "images/T1_\u5229\u6da6\u7387\u5468\u671f_annotated.jpg",
+   "bytes": 157710,
+   "sha256": "7a50cffaff6577e9"
+  },
+  {
+   "path": "images/T1_\u5229\u6da6\u7387\u5468\u671f_annotated.png",
+   "bytes": 125144,
+   "sha256": "9020d30ddb178cba"
+  },
+  {
+   "path": "images/T2_\u53cd\u5411DCF_annotated.jpg",
+   "bytes": 177822,
+   "sha256": "54f5410b7198e6a4"
+  },
+  {
+   "path": "images/T2_\u53cd\u5411DCF_annotated.png",
+   "bytes": 126697,
+   "sha256": "445c883469cdde6b"
+  },
+  {
+   "path": "images/T3_\u5386\u53f2\u56de\u64a4_annotated.jpg",
+   "bytes": 192233,
+   "sha256": "e99a858685855c4e"
+  },
+  {
+   "path": "images/T3_\u5386\u53f2\u56de\u64a4_annotated.png",
+   "bytes": 178222,
+   "sha256": "2ac22cc91ca2c618"
+  }
+ ]
+}

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title> </title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<style>body{font-family:'Noto Sans CJK SC','Noto Sans',sans-serif;max-width:1100px;margin:auto;padding:24px;line-height:1.6;color:#1b1b1b}table{border-collapse:collapse;font-size:13px;margin:8px 0}td,th{border:1px solid #ccd;padding:4px 8px}th{background:#1F3A5F;color:#fff}img{max-width:100%;border:1px solid #ddd}h1{color:#1F3A5F}h2{border-bottom:2px solid #1F3A5F}blockquote{background:#f3f6fa;border-left:4px solid #2E86C1;margin:0;padding:6px 12px}</style></head>
+<body><div style="background:#fff7ed;border:1px solid #fdba74;padding:8px 12px;margin:8px 0;font-size:13px">历史版本：PDF/Word/图片已归档至 GitHub Release（下载：<a href="https://github.com/PSS917/research-os/releases/download/archive-v20261013-1812/review_v20261013-1812.zip">ZIP</a>）。Archived version — heavy files live in Release assets.</div>
+<header id="title-block-header">
+<h1 class="title"> </h1>
+</header>
+<h1 id="研究体系审核-system-review-audit-v20261013-1812">研究体系审核
+System Review &amp; Audit — v20261013-1812</h1>
+<blockquote>
+<p>回答你在第10点提出的审核问题。生成于 2026-10-13 18:15 SGT。</p>
+</blockquote>
+<h2 id="研究范围是否正确遗漏模块-scope-gaps">1.
+研究范围是否正确？遗漏模块 Scope gaps</h2>
+<p>已覆盖:
+宏观政策、利率、通胀、就业、流动性、套息、跨资产、AI供应链、台日韩雷达、27家个股、事件生命周期。
+<strong>建议新增 (缺口)</strong>: 1. <strong>信用与私募信贷 Private
+credit / AI 融资链</strong>: CRWV、Oracle、数据中心ABS/项目债——AI Capex
+越来越依赖债务，是反身性风险源。 2. <strong>财政与国债供给 Fiscal &amp;
+Treasury supply</strong>: 再融资季度公告(QRA)、拍卖尾差、期限溢价——10Y
+已在5%以上，此项对估值影响大。 3. <strong>中国变量 China</strong>:
+出口管制、稀土/镓锗、国产替代(CXMT/华为昇腾)、中国需求。 4.
+<strong>能源/电力价格</strong>:
+天然气、PJM容量价格、核电/SMR、变压器交期——AI电力瓶颈的价格信号。 5.
+<strong>持仓/资金面数据源</strong>: CFTC
+COT、EPFR流向、期权偏度/Gamma、卖空比例——v1
+未接入，因此”机构定位”只给框架不下结论。 6.
+<strong>元器件价格源</strong>:
+DRAM/NAND合约价与现货价(TrendForce/DRAMeXchange)、光模块与EML价格、ABF/CCL价格——需付费或手工录入。</p>
+<h2 id="是否扩展观察名单-watchlist-expansion-建议非必须">2.
+是否扩展观察名单 Watchlist expansion (建议，非必须)</h2>
+<ul>
+<li>AI 网络/互连: ANET, CRDO, ALAB, FN (Fabrinet), APH (Amphenol)</li>
+<li>存储: SNDK, WDC, STX；HBM 设备: 韩美(042700.KS, 已在雷达)</li>
+<li>半导体设备/EDA: LRCX, ASML, CDNS, SNPS, TER (测试)</li>
+<li>电力/散热: VRT (Vertiv), GEV (GE Vernova), ETN, CEG/VST (电力)</li>
+<li>云/AI 平台: MSFT, GOOGL, AMZN, META, ORCL (资本开支来源——Capex
+指引是整个AI链的上游信号)</li>
+<li>自动驾驶: UBER, WAYMO(未上市, 通过GOOGL), MBLY 优先级建议: 先加
+<strong>云厂4家+ORCL</strong> (Capex源头) 与
+<strong>VRT/GEV/ANET/LRCX/ASML</strong>。</li>
+</ul>
+<h2 id="台日韩题材分类是否细到技术制程产品">3.
+台日韩题材分类是否细到技术/制程/产品</h2>
+<p>v1 采用 L1 题材 (如 Optical 光通信) + L2 技术/产品 (如 InP
+磊晶、EML、CPO、ABF 载板、高速CCL M8/M9、TC Bonder、HBM测试)。共 48
+档标的。 <strong>下一步</strong>: 增加 L3 制程/规格 (例如
+CoWoS-S/L/R、HBM3E 12-Hi vs HBM4、800G vs 1.6T、M8 vs M9
+CCL)，并对每档标注”美股锚点”(read-across)。每月复核成分。</p>
+<h2 id="个股报告-更好的财务估值分析">4. 个股报告:
+更好的财务/估值分析</h2>
+<ul>
+<li>已有:
+10年DCF三情景、反向DCF、ROIC-WACC、2/4/6/8季度检验、同业、敏感度。</li>
+<li><strong>改进</strong>: (a)
+分部SOTP——需从10-K录入分部收入(v1留空以免编造)；(b) 按行业换主估值法:
+存储/设备用周期中值P/B与EV/EBITDA；软件用EV/NTM收入 vs 增速(Rule of
+40)；CRWV用合约积压折现+资产回收；SPCX/RKLB用分部+期权；(c)
+EPS桥(收入×毛利×费用×股本)而非仅FCF；(d)
+管理层指引录入与”指引可信度”历史评分；(e) 一致预期修正动量(eps_trend
+已抓取，下一版纳入图)。</li>
+<li>注意: v1 的统一假设 (ERP 5%、β夹在0.8–1.6、长期FCF率按框架)
+对高成长股给出偏低的Base价值；这正是用反向DCF呈现”价格隐含了什么”的原因，不应读作目标价。</li>
+</ul>
+<h2 id="三情景与excel公式可审计性">5. 三情景与Excel公式可审计性</h2>
+<ul>
+<li>每个模型 ~2,400 条实时公式；黄色=假设、蓝色=数据；Sources 与
+Assumptions 表逐项列出来源/理由。</li>
+<li>自动核验: LibreOffice 重算结果与 Python 镜像逐一比对
+(容差1e-4)。本次结果见下表 <code>xlsx_recalc_match</code>。</li>
+<li>待改进: 情景概率目前固定 25/50/25
+(ASSUMPTION)；下一版应按证据调整并记录调整理由。</li>
+</ul>
+<h2 id="初学者教学是否足够">6. 初学者教学是否足够</h2>
+<p>每个个股/宏观有独立中英文教学版，遵循九步阶梯 + 自测题。不足:
+例题目前以DCF为主；下一版每次事件后加入”本次事件的例题”(如CPI超预期0.1pp
+→ 2Y 变动 → 成长股估值影响)。</p>
+<h2 id="图片报告结构完整性">7. 图片报告结构完整性</h2>
+<p>每家公司5张 2400×1350 PNG + JPG: ①股价vs三情景 ②季度财务 ③三情景
+④2/4/6/8季度检验
+⑤研究逻辑图；每张含声明类别、来源、思考提示。宏观5张、雷达3张、日报2张。不足:
+尚无供应链地图与KPI红绿灯图 (需结构化KPI数据)。</p>
+<h2 id="历史版本与全部文件能否真正打开-实测">8.
+历史版本与全部文件能否真正打开 (实测)</h2>
+<table>
+<thead>
+<tr>
+<th>检查项</th>
+<th>通过</th>
+<th>失败</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pdf</td>
+<td>130</td>
+<td>0</td>
+</tr>
+<tr>
+<td>docx</td>
+<td>129</td>
+<td>0</td>
+</tr>
+<tr>
+<td>zip</td>
+<td>73</td>
+<td>0</td>
+</tr>
+<tr>
+<td>html_links</td>
+<td>2494</td>
+<td>0</td>
+</tr>
+<tr>
+<td>xlsx_recalc_match</td>
+<td>54</td>
+<td>0</td>
+</tr>
+<tr>
+<td>png_hd&gt;=2000px</td>
+<td>295</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>方法: pdfinfo 解析每个PDF；python-docx 打开每个DOCX；openpyxl 读取 +
+LibreOffice 重算每个XLSX；zipfile.testzip
+校验每个ZIP；解析每个HTML的本地链接是否存在；检查PNG分辨率。旧档案(9月)以原样复制到
+legacy/ 可浏览。</p>
+<h2 id="更新频率矩阵-update-cadence">9. 更新频率矩阵 Update cadence</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>每日</th>
+<th>每周</th>
+<th>每月</th>
+<th>每次财报/事件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dashboard / 行情 / 异动</td>
+<td>✔</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>宏观跨资产</td>
+<td>✔快照</td>
+<td>✔专题</td>
+<td>✔深度</td>
+<td>✔数据发布</td>
+</tr>
+<tr>
+<td>台日韩雷达</td>
+<td>✔</td>
+<td>✔排名</td>
+<td>✔分类复核</td>
+<td></td>
+</tr>
+<tr>
+<td>事件日历</td>
+<td>✔</td>
+<td></td>
+<td></td>
+<td>✔</td>
+</tr>
+<tr>
+<td>个股估值快照</td>
+<td>✔(价格)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>个股深度(假设)</td>
+<td></td>
+<td></td>
+<td>✔轻更新</td>
+<td>✔完整重跑</td>
+</tr>
+<tr>
+<td>Excel模型</td>
+<td>✔输入</td>
+<td></td>
+<td></td>
+<td>✔假设</td>
+</tr>
+<tr>
+<td>产业链(AI Capex/HBM/光/电力)</td>
+<td></td>
+<td>✔</td>
+<td>✔</td>
+<td>✔云厂Capex</td>
+</tr>
+<tr>
+<td>专题(Robotaxi/AI生产率)</td>
+<td></td>
+<td></td>
+<td>✔</td>
+<td>✔重大法规</td>
+</tr>
+<tr>
+<td>Master Prompt</td>
+<td></td>
+<td></td>
+<td>视需要</td>
+<td>重大升级</td>
+</tr>
+</tbody>
+</table>
+<h2 id="english-summary">English summary</h2>
+<p>Scope gaps: private credit/AI financing, fiscal/Treasury supply,
+China, power prices, positioning feeds, component price feeds. Suggested
+adds: MSFT/GOOGL/AMZN/META/ORCL (capex source), VRT, GEV, ANET, LRCX,
+ASML. Radar is L1 theme + L2 technology/product; add L3 process/spec.
+Valuation upgrades: segment SOTP inputs, sector-appropriate primary
+methods, EPS bridge, guidance-credibility scoring, revision momentum.
+Excel: ~2,400 live formulas per model, recalculation verified against
+Python mirror. File-open tests shown above.</p>
+</body>
+</html>

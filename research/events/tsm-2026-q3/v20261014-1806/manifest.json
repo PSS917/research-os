@@ -1,0 +1,166 @@
+{
+ "release": "TSM_Q3_2026_PreEvent_v20261014-1806",
+ "generated": "2026-10-14T18:06:59.854409",
+ "files": [
+  {
+   "path": "CHANGELOG_v20261014-1806.docx",
+   "bytes": 10828,
+   "sha256": "83783983e89764da"
+  },
+  {
+   "path": "CHANGELOG_v20261014-1806.html",
+   "bytes": 5342,
+   "sha256": "0b8d486b849d10cf"
+  },
+  {
+   "path": "CHANGELOG_v20261014-1806.md",
+   "bytes": 215,
+   "sha256": "f80fbf31daddb65a"
+  },
+  {
+   "path": "CHANGELOG_v20261014-1806.pdf",
+   "bytes": 17788,
+   "sha256": "d6cbfbc0b438a4bb"
+  },
+  {
+   "path": "PRE_EVENT_SNAPSHOT_v20261014-1806.json",
+   "bytes": 1118,
+   "sha256": "50e18b6e2446088f"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.docx",
+   "bytes": 36727,
+   "sha256": "9518965780dc1ab9"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.html",
+   "bytes": 53064,
+   "sha256": "75dba9431ed55513"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.md",
+   "bytes": 39671,
+   "sha256": "29708d5893c73391"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.pdf",
+   "bytes": 564865,
+   "sha256": "625895ad76d3790a"
+  },
+  {
+   "path": "TSM_Q3_2026_PreEvent_EN_v20261014-1806.docx",
+   "bytes": 11774,
+   "sha256": "7020e0ab928d66a8"
+  },
+  {
+   "path": "TSM_Q3_2026_PreEvent_EN_v20261014-1806.html",
+   "bytes": 6650,
+   "sha256": "f650d33f6cd9e1d5"
+  },
+  {
+   "path": "TSM_Q3_2026_PreEvent_EN_v20261014-1806.md",
+   "bytes": 1138,
+   "sha256": "329acb4ace530491"
+  },
+  {
+   "path": "TSM_Q3_2026_PreEvent_EN_v20261014-1806.pdf",
+   "bytes": 97289,
+   "sha256": "0dcdbcaef500cd6d"
+  },
+  {
+   "path": "TSM_Q3_2026_PreEvent_ZH_v20261014-1806.docx",
+   "bytes": 1059178,
+   "sha256": "3f9e51b5c13c36ca"
+  },
+  {
+   "path": "TSM_Q3_2026_PreEvent_ZH_v20261014-1806.html",
+   "bytes": 14959,
+   "sha256": "52e7faed96ab077b"
+  },
+  {
+   "path": "TSM_Q3_2026_PreEvent_ZH_v20261014-1806.md",
+   "bytes": 6549,
+   "sha256": "8ce69e71f636ee7f"
+  },
+  {
+   "path": "TSM_Q3_2026_PreEvent_ZH_v20261014-1806.pdf",
+   "bytes": 874831,
+   "sha256": "fab918908ed8a2f8"
+  },
+  {
+   "path": "TSM_Q3_2026_PreEvent_model_v20261014-1806.xlsx",
+   "bytes": 9389,
+   "sha256": "7096140b0c05aeff"
+  },
+  {
+   "path": "TSM_Q3_2026_teaching_ZH_v20261014-1806.docx",
+   "bytes": 253345,
+   "sha256": "c7c8ed69ea3ac3fd"
+  },
+  {
+   "path": "TSM_Q3_2026_teaching_ZH_v20261014-1806.html",
+   "bytes": 8205,
+   "sha256": "b7922a81dc453390"
+  },
+  {
+   "path": "TSM_Q3_2026_teaching_ZH_v20261014-1806.md",
+   "bytes": 2471,
+   "sha256": "94fae1166b871c91"
+  },
+  {
+   "path": "TSM_Q3_2026_teaching_ZH_v20261014-1806.pdf",
+   "bytes": 285544,
+   "sha256": "3de577989bd16e20"
+  },
+  {
+   "path": "images/01_transmission_chain.jpg",
+   "bytes": 285040,
+   "sha256": "bd7254e8edb16766"
+  },
+  {
+   "path": "images/01_transmission_chain.png",
+   "bytes": 229183,
+   "sha256": "9cccb1f09490c311"
+  },
+  {
+   "path": "images/02_expectation_gap.jpg",
+   "bytes": 321881,
+   "sha256": "ddf44a12c51e8ce0"
+  },
+  {
+   "path": "images/02_expectation_gap.png",
+   "bytes": 206759,
+   "sha256": "65c7c76994e6648b"
+  },
+  {
+   "path": "images/03_scenarios_reaction_paths.jpg",
+   "bytes": 322532,
+   "sha256": "9ef53f09b74e62f0"
+  },
+  {
+   "path": "images/03_scenarios_reaction_paths.png",
+   "bytes": 276496,
+   "sha256": "9c81175ed2f7c701"
+  },
+  {
+   "path": "images/04_kpi_scorecard.jpg",
+   "bytes": 287835,
+   "sha256": "575e56d4aec73e59"
+  },
+  {
+   "path": "images/04_kpi_scorecard.png",
+   "bytes": 231668,
+   "sha256": "6e1220e6e612b121"
+  },
+  {
+   "path": "images/05_live_timeline_checklist.jpg",
+   "bytes": 348749,
+   "sha256": "a61f1908e08994f6"
+  },
+  {
+   "path": "images/05_live_timeline_checklist.png",
+   "bytes": 326261,
+   "sha256": "8e36c73754ee587a"
+  }
+ ]
+}

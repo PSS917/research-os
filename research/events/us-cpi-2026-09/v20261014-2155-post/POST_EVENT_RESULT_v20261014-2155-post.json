@@ -1,0 +1,169 @@
+{
+ "event": "US CPI Sep 2026",
+ "ver": "v20261014-2155-post",
+ "pre": "v20261013-1803",
+ "actual": {
+  "headline_mom": 0.6,
+  "headline_yoy": 3.7,
+  "core_mom": 0.3,
+  "core_yoy": 2.6
+ },
+ "surprise": {
+  "headline_mom": 0.0,
+  "headline_yoy": 0.1,
+  "core_mom": 0.1,
+  "core_yoy": 0.1
+ },
+ "cls": "HOT 偏热",
+ "session": "2026-10-14",
+ "d10_bp": 7.399988174438477,
+ "rows": [
+  [
+   "CCL",
+   -2.59,
+   -1.9165969371795655,
+   -2.1511367955029725
+  ],
+  [
+   "ARM",
+   -2.56,
+   -1.89439697265625,
+   -3.982144247327768
+  ],
+  [
+   "SPCX",
+   -2.56,
+   -1.89439697265625,
+   -2.050656959422481
+  ],
+  [
+   "MRVL",
+   -1.84,
+   -1.3615978240966797,
+   -3.486780505226983
+  ],
+  [
+   "RKLB",
+   -1.77,
+   -1.3097979068756103,
+   -1.946434095670846
+  ],
+  [
+   "INTC",
+   -1.53,
+   -1.132198190689087,
+   -1.789705652742546
+  ],
+  [
+   "GLW",
+   -1.49,
+   -1.102598237991333,
+   -1.7503641862418817
+  ],
+  [
+   "KLAC",
+   -1.21,
+   -0.8953985691070556,
+   -1.201090605362598
+  ],
+  [
+   "CIEN",
+   -1.18,
+   -0.8731986045837402,
+   -3.72751948563399
+  ],
+  [
+   "QCOM",
+   -1.16,
+   -0.8583986282348632,
+   -1.6086176698433263
+  ],
+  [
+   "AMD",
+   -1.05,
+   -0.77699875831604,
+   -2.936275401158994
+  ],
+  [
+   "NDX",
+   -0.67,
+   -0.49579920768737795,
+   -0.6922754222674299
+  ],
+  [
+   "SOX",
+   -0.89,
+   -0.6585989475250245,
+   -2.019996958838166
+  ]
+ ],
+ "log": [
+  "pre-event integrity: 35/35 content files match locked sha256 (manifest.json is written after the lock by design)",
+  "CPI 2026-09: {'headline_mom': 0.6, 'headline_yoy': 3.7, 'core_mom': 0.3, 'core_yoy': 2.6} source=BLS API",
+  "market session used: 2026-10-14 (release day); INTRADAY snapshot as of 09:54 ET (not close)",
+  "Kalshi fetched 2026-10-14 21:54 MYT: Oct hike 0.44 (prev-day 0.2), Dec-meeting hike 0.8500000000000001",
+  "Excel recalc: classification=HOT; Brier prior/cal/base=[0.875, 0.675, 0.353]; errors=none"
+ ],
+ "dry": false,
+ "intraday": true,
+ "asof": "09:54 ET",
+ "extra": true,
+ "extra_path": "data/post_extra_us-cpi-2026-09.md",
+ "images_path": "site/research/infographics/us-cpi-sep2026-hot/v20261014-2140-news/",
+ "kalshi": {
+  "OCT": {
+   "Cut 25bps": [
+    0.01,
+    0.01
+   ],
+   "Fed maintains rate": [
+    0.58,
+    0.8
+   ],
+   "Hike 25bps": [
+    0.43,
+    0.19
+   ],
+   "Cut >25bps": [
+    0.01,
+    0.01
+   ],
+   "Hike >25bps": [
+    0.01,
+    0.01
+   ]
+  },
+  "DEC": {
+   "Cut 25bps": [
+    0.01,
+    0.02
+   ],
+   "Hike 25bps": [
+    0.81,
+    0.75
+   ],
+   "Hike >25bps": [
+    0.04,
+    0.03
+   ],
+   "Fed maintains rate": [
+    0.18,
+    0.26
+   ],
+   "Cut >25bps": [
+    0.01,
+    0.01
+   ]
+  }
+ },
+ "base_rate": {
+  "cool": 0.1388888888888889,
+  "hot": 0.5277777777777778,
+  "inline": 0.33333333333333337
+ },
+ "calibrated": {
+  "cool": 0.21951219512195122,
+  "inline": 0.43902439024390244,
+  "hot": 0.34146341463414637
+ }
+}

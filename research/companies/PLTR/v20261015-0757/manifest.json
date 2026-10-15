@@ -1,0 +1,106 @@
+{
+ "release": "PLTR_v20261015-0757",
+ "generated": "2026-10-15T07:59:15.746315",
+ "files": [
+  {
+   "path": "PLTR_model_v20261015-0757.xlsx",
+   "bytes": 35894,
+   "sha256": "5358366c0c8621ab"
+  },
+  {
+   "path": "PLTR_report_v20261015-0757.docx",
+   "bytes": 846601,
+   "sha256": "f36309ade0633fe0"
+  },
+  {
+   "path": "PLTR_report_v20261015-0757.html",
+   "bytes": 29939,
+   "sha256": "b46a9a9ca6ad8f2a"
+  },
+  {
+   "path": "PLTR_report_v20261015-0757.md",
+   "bytes": 16911,
+   "sha256": "86761ba9cf4983e5"
+  },
+  {
+   "path": "PLTR_report_v20261015-0757.pdf",
+   "bytes": 1129277,
+   "sha256": "06e8d227d70798f7"
+  },
+  {
+   "path": "PLTR_teaching_v20261015-0757.docx",
+   "bytes": 195972,
+   "sha256": "cc8cfcbc5d059b03"
+  },
+  {
+   "path": "PLTR_teaching_v20261015-0757.html",
+   "bytes": 10364,
+   "sha256": "37aefa204c715765"
+  },
+  {
+   "path": "PLTR_teaching_v20261015-0757.md",
+   "bytes": 4583,
+   "sha256": "8bdf63fed18c1e99"
+  },
+  {
+   "path": "PLTR_teaching_v20261015-0757.pdf",
+   "bytes": 250979,
+   "sha256": "cec6b85a827cb707"
+  },
+  {
+   "path": "images/PLTR_1_price_vs_value.jpg",
+   "bytes": 305200,
+   "sha256": "bb4355d1bbf2f20b"
+  },
+  {
+   "path": "images/PLTR_1_price_vs_value.png",
+   "bytes": 226746,
+   "sha256": "d3c0f5bc747e7fd0"
+  },
+  {
+   "path": "images/PLTR_2_financials.jpg",
+   "bytes": 271812,
+   "sha256": "0fd9634b3d7c5668"
+  },
+  {
+   "path": "images/PLTR_2_financials.png",
+   "bytes": 192137,
+   "sha256": "aafe46d3ceacdee3"
+  },
+  {
+   "path": "images/PLTR_3_scenarios.jpg",
+   "bytes": 249505,
+   "sha256": "d5dbbff63d3bfc02"
+  },
+  {
+   "path": "images/PLTR_3_scenarios.png",
+   "bytes": 168326,
+   "sha256": "60f94a920685bbc0"
+  },
+  {
+   "path": "images/PLTR_4_horizons.jpg",
+   "bytes": 237912,
+   "sha256": "57797f6c3755bd0c"
+  },
+  {
+   "path": "images/PLTR_4_horizons.png",
+   "bytes": 166525,
+   "sha256": "5c80001e484412b5"
+  },
+  {
+   "path": "images/PLTR_5_logic_map.jpg",
+   "bytes": 240985,
+   "sha256": "10766098d5f48b26"
+  },
+  {
+   "path": "images/PLTR_5_logic_map.png",
+   "bytes": 210818,
+   "sha256": "f28685075c9808ef"
+  },
+  {
+   "path": "summary.json",
+   "bytes": 528,
+   "sha256": "950fd4576c994ec8"
+  }
+ ]
+}
