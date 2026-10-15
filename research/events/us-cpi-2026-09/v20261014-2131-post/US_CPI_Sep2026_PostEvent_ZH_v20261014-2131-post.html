@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title> </title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<style>body{font-family:'Noto Sans CJK SC','Noto Sans',sans-serif;max-width:1100px;margin:auto;padding:24px;line-height:1.6;color:#1b1b1b}table{border-collapse:collapse;font-size:13px;margin:8px 0}td,th{border:1px solid #ccd;padding:4px 8px}th{background:#1F3A5F;color:#fff}img{max-width:100%;border:1px solid #ddd}h1{color:#1F3A5F}h2{border-bottom:2px solid #1F3A5F}abbr{text-decoration:underline dotted #2E86C1;cursor:help}.box30{background:linear-gradient(135deg,#eaf2ff,#f5ecff);border:2px solid #5b8cff;border-radius:14px;padding:6px 18px;margin:14px 0;font-size:16px}.readmap{background:#f6f8fb;border:1px solid #d5dbe6;border-radius:12px;padding:4px 16px;margin:12px 0}.howto{background:#fff8e6;border-left:5px solid #f59e0b;border-radius:8px;padding:2px 14px;margin:6px 0 22px}.quiz{background:#effaf3;border:1px solid #9bd8b1;border-radius:12px;padding:4px 16px}details{margin:8px 0}details.l3{background:#f7f7f9;border:1px dashed #b8c0cc;border-radius:10px;padding:6px 14px}summary{cursor:pointer;font-weight:600;color:#1F3A5F}body{font-size:15.5px}blockquote{background:#f3f6fa;border-left:4px solid #2E86C1;margin:0;padding:6px 12px}</style></head>
+<body><div style="background:#fff7ed;border:1px solid #fdba74;padding:8px 12px;margin:8px 0;font-size:13px">历史版本：PDF/Word/图片已归档至 GitHub Release（下载：<a href="https://github.com/PSS917/research-os/releases/download/archive-v20261014-2131-post/US_CPI_Sep2026_PostEvent_v20261014-2131-post.zip">ZIP</a>）。Archived version — heavy files live in Release assets.</div>
+<header id="title-block-header">
+<h1 class="title"> </h1>
+</header>
+<h1
+id="us-cpi-sep-2026-事后复盘-post-event-review-v20261014-2131-post">US
+CPI Sep 2026 — 事后复盘 Post-Event Review v20261014-2131-post</h1>
+<blockquote>
+<p>✅ 正式复盘｜事前书（锁定）：v20261013-1803，快照
+2026-10-13T18:03:00+08:00｜发布时间 2026-10-14 20:30 SGT｜数据来源：BLS
+API；市场 yfinance（交易日 2026-10-14）｜<strong>非投资建议</strong></p>
+</blockquote>
+<div class="box30">
+<p><strong>⏱ 30秒看懂</strong></p>
+<ol type="1">
+<li><strong>发生什么：</strong>9 月 CPI 结果：核心环比 0.3%（共识
+0.2%），分类 <strong>HOT 偏热</strong>。</li>
+<li><strong>和我的股票有什么关系：</strong>10 年期变动
++9.7bp；事前我们说利率敏感股（CCL/ARM/SPCX…）受影响最大——下表检验。</li>
+<li><strong>该看什么/做什么：</strong>对照事前假设逐环复盘：哪一环成立、哪一环断了，就是这次最大的学习点。</li>
+</ol>
+</div>
+<h2 id="实际-vs-共识-vs-我们的事前假设">1. 实际 vs 共识 vs
+我们的事前假设</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>实际</th>
+<th>共识(事前锁定)</th>
+<th>本系统假设</th>
+<th>意外</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>headline_mom</td>
+<td>0.6%</td>
+<td>0.6%</td>
+<td>0.58%</td>
+<td>+0.0pp</td>
+</tr>
+<tr>
+<td>headline_yoy</td>
+<td>3.7%</td>
+<td>3.6%</td>
+<td>3.6%</td>
+<td>+0.1pp</td>
+</tr>
+<tr>
+<td>core_mom</td>
+<td>0.3%</td>
+<td>0.2%</td>
+<td>0.22%</td>
+<td>+0.1pp</td>
+</tr>
+<tr>
+<td>core_yoy</td>
+<td>2.6%</td>
+<td>2.5%</td>
+<td>2.4%</td>
+<td>+0.1pp</td>
+</tr>
+</tbody>
+</table>
+<p>事前概率：偏冷 25% / 符合 50% / 偏热 25% → 结果：<strong>HOT
+偏热</strong></p>
+<h2 id="市场反应发布日收盘-vs-前收">2. 市场反应（发布日收盘 vs
+前收）</h2>
+<table>
+<thead>
+<tr>
+<th>资产</th>
+<th>收盘</th>
+<th>前收</th>
+<th>变动</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10Y</td>
+<td>5.31</td>
+<td>5.22</td>
+<td>+9.7bp</td>
+</tr>
+<tr>
+<td>S&amp;P500</td>
+<td>7,773.88</td>
+<td>7,805.45</td>
+<td>-0.40%</td>
+</tr>
+<tr>
+<td>NDX</td>
+<td>30,352.14</td>
+<td>30,569.48</td>
+<td>-0.71%</td>
+</tr>
+<tr>
+<td>SOX</td>
+<td>12,008.23</td>
+<td>12,208.79</td>
+<td>-1.64%</td>
+</tr>
+<tr>
+<td>USDJPY</td>
+<td>158.86</td>
+<td>158.52</td>
+<td>+0.22%</td>
+</tr>
+<tr>
+<td>VIX</td>
+<td>15.73</td>
+<td>15.27</td>
+<td>+3.01%</td>
+</tr>
+</tbody>
+</table>
+<p>事前（锁定）：10Y 5.24%、2Y 4.75%、VIX 15.48、Kalshi 10 月加息 20% /
+12 月 73%（Kalshi 事后值需手动核对 → PENDING）。</p>
+<h2 id="利率敏感度预测-vs-实际检验事前模型">3. 利率敏感度预测 vs
+实际（检验事前模型）</h2>
+<table>
+<thead>
+<tr>
+<th>个股</th>
+<th>敏感度(每+10bp)</th>
+<th>预测涨跌</th>
+<th>实际涨跌</th>
+<th>偏差</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CCL</td>
+<td>-2.59%</td>
+<td>-2.51%</td>
+<td>-1.11%</td>
+<td>+1.40pp</td>
+</tr>
+<tr>
+<td>ARM</td>
+<td>-2.56%</td>
+<td>-2.48%</td>
+<td>-2.29%</td>
+<td>+0.19pp</td>
+</tr>
+<tr>
+<td>SPCX</td>
+<td>-2.56%</td>
+<td>-2.48%</td>
+<td>-1.43%</td>
+<td>+1.05pp</td>
+</tr>
+<tr>
+<td>MRVL</td>
+<td>-1.84%</td>
+<td>-1.78%</td>
+<td>-1.87%</td>
+<td>-0.08pp</td>
+</tr>
+<tr>
+<td>RKLB</td>
+<td>-1.77%</td>
+<td>-1.72%</td>
+<td>-1.56%</td>
+<td>+0.16pp</td>
+</tr>
+<tr>
+<td>INTC</td>
+<td>-1.53%</td>
+<td>-1.48%</td>
+<td>-1.95%</td>
+<td>-0.47pp</td>
+</tr>
+<tr>
+<td>GLW</td>
+<td>-1.49%</td>
+<td>-1.45%</td>
+<td>-1.36%</td>
+<td>+0.09pp</td>
+</tr>
+<tr>
+<td>KLAC</td>
+<td>-1.21%</td>
+<td>-1.17%</td>
+<td>-0.77%</td>
+<td>+0.40pp</td>
+</tr>
+<tr>
+<td>CIEN</td>
+<td>-1.18%</td>
+<td>-1.14%</td>
+<td>-2.96%</td>
+<td>-1.82pp</td>
+</tr>
+<tr>
+<td>QCOM</td>
+<td>-1.16%</td>
+<td>-1.13%</td>
+<td>-1.08%</td>
+<td>+0.05pp</td>
+</tr>
+<tr>
+<td>AMD</td>
+<td>-1.05%</td>
+<td>-1.02%</td>
+<td>-2.51%</td>
+<td>-1.49pp</td>
+</tr>
+<tr>
+<td>NDX</td>
+<td>-0.67%</td>
+<td>-0.65%</td>
+<td>-0.71%</td>
+<td>-0.06pp</td>
+</tr>
+<tr>
+<td>SOX</td>
+<td>-0.89%</td>
+<td>-0.86%</td>
+<td>-1.64%</td>
+<td>-0.78pp</td>
+</tr>
+</tbody>
+</table>
+<p>怎么读：偏差大=当天有利率以外的驱动（行业新闻、个股消息）——事前已提示
+R² 很低。</p>
+<h2 id="推理复盘逐环">4. 推理复盘（逐环）</h2>
+<table>
+<thead>
+<tr>
+<th>环节</th>
+<th>成立/断开</th>
+<th>证据</th>
+<th>学到什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>①CPI意外→美联储预期</td>
+<td>____</td>
+<td>____</td>
+<td>____</td>
+</tr>
+<tr>
+<td>②→2年期</td>
+<td>____</td>
+<td>____</td>
+<td>____</td>
+</tr>
+<tr>
+<td>③→10年期</td>
+<td>____</td>
+<td>____</td>
+<td>____</td>
+</tr>
+<tr>
+<td>④→折现率</td>
+<td>____</td>
+<td>____</td>
+<td>____</td>
+</tr>
+<tr>
+<td>⑤→个股</td>
+<td>____</td>
+<td>____</td>
+<td>____</td>
+</tr>
+</tbody>
+</table>
+<p>自动可填：①意外 = 核心环比 +0.1pp；③10Y = +9.7bp；⑤见第 3
+节。②④需人工判断。</p>
+<h2 id="运行日志-run-log">5. 运行日志 Run log</h2>
+<ul>
+<li>pre-event integrity: 35/35 content files match locked sha256
+(manifest.json is written after the lock by design)</li>
+<li>CPI 2026-09: {‘headline_mom’: 0.6, ‘headline_yoy’: 3.7, ‘core_mom’:
+0.3, ‘core_yoy’: 2.6} source=BLS API</li>
+<li>market session used: 2026-10-14 (release day)</li>
+</ul>
+<div class="quiz">
+<p><strong>✅ 自我测验 Check your understanding</strong></p>
+<details>
+<summary>
+Q1. 如果核心意外为 0 但 10 年期大涨，链条哪一环’断’了？
+</summary>
+<p><strong>答案：</strong>①→②成立与否无关；说明利率由其他因素（供给/期限溢价/其他数据）驱动——环③独立于CPI。</p>
+</details>
+<details>
+<summary>
+Q2. 敏感度预测与实际偏差很大，说明模型错了吗？
+</summary>
+<p><strong>答案：</strong>不一定：R²
+低意味着单日噪声大；要看多次事件的平均偏差（基础概率）。</p>
+</details>
+</div>
+</body>
+</html>

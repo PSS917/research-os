@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title> </title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<style>body{font-family:'Noto Sans CJK SC','Noto Sans',sans-serif;max-width:1100px;margin:auto;padding:24px;line-height:1.6;color:#1b1b1b}table{border-collapse:collapse;font-size:13px;margin:8px 0}td,th{border:1px solid #ccd;padding:4px 8px}th{background:#1F3A5F;color:#fff}img{max-width:100%;border:1px solid #ddd}h1{color:#1F3A5F}h2{border-bottom:2px solid #1F3A5F}abbr{text-decoration:underline dotted #2E86C1;cursor:help}.box30{background:linear-gradient(135deg,#eaf2ff,#f5ecff);border:2px solid #5b8cff;border-radius:14px;padding:6px 18px;margin:14px 0;font-size:16px}.readmap{background:#f6f8fb;border:1px solid #d5dbe6;border-radius:12px;padding:4px 16px;margin:12px 0}.howto{background:#fff8e6;border-left:5px solid #f59e0b;border-radius:8px;padding:2px 14px;margin:6px 0 22px}.quiz{background:#effaf3;border:1px solid #9bd8b1;border-radius:12px;padding:4px 16px}details{margin:8px 0}details.l3{background:#f7f7f9;border:1px dashed #b8c0cc;border-radius:10px;padding:6px 14px}summary{cursor:pointer;font-weight:600;color:#1F3A5F}body{font-size:15.5px}blockquote{background:#f3f6fa;border-left:4px solid #2E86C1;margin:0;padding:6px 12px}</style></head>
+<body>
+<header id="title-block-header">
+<h1 class="title"> </h1>
+</header>
+<h1
+id="us-ppi-sep-2026-post-event-review-english-v20261015-2158-post">US
+PPI (Sep 2026) — Post-Event Review (English) v20261015-2158-post</h1>
+<blockquote>
+<p>INTRADAY market snapshot as of 09:59 ET — close review pending |
+Locked pre-event book v20261014-1806 (2026-10-14T18:06), not rewritten |
+Not investment advice</p>
+</blockquote>
+<h2 id="second-take">30-second take</h2>
+<ol type="1">
+<li><strong>What happened:</strong> US PPI (Sep 2026) final_demand_mom =
++1.3% vs locked consensus 0.5% / locked OS 0.5%. Locked-rule bucket:
+<strong>hot</strong>; quality bucket: <strong>hot</strong>.</li>
+<li><strong>Markets:</strong> 10Y -13.2bp on the day, of which -10.9bp
+happened BEFORE 08:30; release window (08:29→09:15 ET) -2.7bp, 2Y
+(futures est.) -2.0bp. Kalshi October hike 28% → peak 36% → 28% at T+45
+(prior-day 43%).</li>
+<li><strong>Lesson:</strong> split the time windows; a spike that
+reverses = the market looked through the headline. Tech weakness (NDX
+-1.71%, SOX -4.08%) was mostly pre-release (AI-credit/positioning), not
+this print.</li>
+</ol>
+<h2 id="actual-vs-consensus-vs-locked-os">1. Actual vs consensus vs
+locked OS</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Actual (OS calc)</th>
+<th>Official rounded</th>
+<th>Consensus (locked)</th>
+<th>OS (locked)</th>
+<th>Surprise</th>
+<th>OS error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>最终需求 Final demand MoM</td>
+<td>+1.34%</td>
+<td></td>
+<td>0.5%</td>
+<td>0.5%</td>
+<td>+0.84pp</td>
+<td>+0.84pp</td>
+</tr>
+<tr>
+<td>最终需求 Final demand YoY</td>
+<td>+6.34%</td>
+<td></td>
+<td>5.3%</td>
+<td>5.3%</td>
+<td>+1.04pp</td>
+<td>+1.04pp</td>
+</tr>
+<tr>
+<td>核心（除食品能源）Core ex F&amp;E MoM〔对照列=Continuum 分析师观点
+0.3%，非共识〕</td>
+<td>+0.68%</td>
+<td></td>
+<td>0.3%</td>
+<td>—</td>
+<td>+0.38pp</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>核心 Core ex F&amp;E YoY</td>
+<td>+4.97%</td>
+<td></td>
+<td>—</td>
+<td>—</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>除食品能源贸易 Ex F/E/trade MoM</td>
+<td>+0.49%</td>
+<td></td>
+<td>—</td>
+<td>—</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<h2 id="components">2. Components</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>MoM</th>
+<th>Prior MoM (revised)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>能源 Energy (goods)</td>
+<td>+10.78%</td>
+<td>+4.46%</td>
+</tr>
+<tr>
+<td>运输仓储 Transport &amp; warehousing</td>
+<td>+3.44%</td>
+<td>+2.18%</td>
+</tr>
+<tr>
+<td>机票 Airline passenger svcs*</td>
+<td>+3.81%</td>
+<td>+2.58%</td>
+</tr>
+<tr>
+<td>食品 Foods</td>
+<td>+1.22%</td>
+<td>-0.32%</td>
+</tr>
+<tr>
+<td>贸易利润 Trade margins</td>
+<td>+1.38%</td>
+<td>+0.19%</td>
+</tr>
+<tr>
+<td>最终需求商品 FD goods</td>
+<td>+2.65%</td>
+<td>+1.09%</td>
+</tr>
+<tr>
+<td>服务 FD services</td>
+<td>+0.82%</td>
+<td>+0.21%</td>
+</tr>
+<tr>
+<td>医院住院 Hospital inpatient</td>
+<td>+0.32%</td>
+<td>+0.33%</td>
+</tr>
+<tr>
+<td>核心商品 Goods ex food&amp;energy</td>
+<td>+0.27%</td>
+<td>+0.39%</td>
+</tr>
+<tr>
+<td>组合管理费 Portfolio mgmt*</td>
+<td>+0.27%</td>
+<td>+0.29%</td>
+</tr>
+<tr>
+<td>服务(除贸易运输) Svcs less trade/transp.</td>
+<td>+0.25%</td>
+<td>-0.00%</td>
+</tr>
+<tr>
+<td>医生服务 Physician care</td>
+<td>-0.02%</td>
+<td>+0.13%</td>
+</tr>
+</tbody>
+</table>
+<h2 id="market-reaction">3. Market reaction</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr>
+<th>资产</th>
+<th>前收</th>
+<th>08:29 ET</th>
+<th>08:31</th>
+<th>09:15（T+45）</th>
+<th>最新</th>
+<th>公布瞬间</th>
+<th>首 45 分钟</th>
+<th>较前收</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10Y 美债 (^TNX)</td>
+<td>5.190%</td>
+<td>5.081%</td>
+<td>5.095%</td>
+<td>5.054%</td>
+<td>5.058%</td>
+<td>+1.4bp</td>
+<td>-2.7bp</td>
+<td>-13.2bp</td>
+</tr>
+<tr>
+<td>5Y (^FVX)</td>
+<td>4.992%</td>
+<td>4.890%</td>
+<td>4.913%</td>
+<td>4.868%</td>
+<td>4.865%</td>
+<td>+2.3bp</td>
+<td>-2.2bp</td>
+<td>-12.7bp</td>
+</tr>
+<tr>
+<td>2Y（ZT 期货估算 / CNBC 现货）</td>
+<td>4.802%</td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.683%（09:58 ET）</td>
+<td>+2.2bp</td>
+<td>-2.0bp</td>
+<td>-11.9bp</td>
+</tr>
+<tr>
+<td>USD/JPY</td>
+<td>158.32</td>
+<td>158.01</td>
+<td>158.07</td>
+<td>157.84</td>
+<td>157.58</td>
+<td>+0.04%</td>
+<td>-0.11%</td>
+<td>-0.47%</td>
+</tr>
+<tr>
+<td>DXY 美元指数</td>
+<td>102.55</td>
+<td>102.13</td>
+<td>102.21</td>
+<td>102.07</td>
+<td>102.06</td>
+<td>+0.08%</td>
+<td>-0.05%</td>
+<td>-0.47%</td>
+</tr>
+<tr>
+<td>NQ 纳指期货</td>
+<td>30,182.75</td>
+<td>29,833.00</td>
+<td>29,754.00</td>
+<td>29,799.50</td>
+<td>29,795.00</td>
+<td>-0.26%</td>
+<td>-0.11%</td>
+<td>-1.28%</td>
+</tr>
+<tr>
+<td>ES 标普期货</td>
+<td>7,770.25</td>
+<td>7,751.50</td>
+<td>7,737.75</td>
+<td>7,744.00</td>
+<td>7,739.50</td>
+<td>-0.18%</td>
+<td>-0.10%</td>
+<td>-0.40%</td>
+</tr>
+<tr>
+<td>黄金 Gold</td>
+<td>4,107.90</td>
+<td>4,176.00</td>
+<td>4,164.50</td>
+<td>4,184.10</td>
+<td>4,181.80</td>
+<td>-0.28%</td>
+<td>+0.19%</td>
+<td>+1.80%</td>
+</tr>
+<tr>
+<td>WTI 原油</td>
+<td>95.09</td>
+<td>93.84</td>
+<td>93.68</td>
+<td>94.47</td>
+<td>94.33</td>
+<td>-0.17%</td>
+<td>+0.67%</td>
+<td>-0.80%</td>
+</tr>
+<tr>
+<td>VIX</td>
+<td>16.87</td>
+<td>17.48</td>
+<td>17.69</td>
+<td>17.49</td>
+<td>17.41</td>
+<td>+0.21</td>
+<td>+0.01</td>
+<td>+0.54</td>
+</tr>
+<tr>
+<td>NDX 纳指100</td>
+<td>29,950.82</td>
+<td>（09:30 开盘）</td>
+<td></td>
+<td></td>
+<td>29,439.48</td>
+<td></td>
+<td></td>
+<td>-1.71%</td>
+</tr>
+<tr>
+<td>SOX 费城半导体</td>
+<td>11,684.38</td>
+<td>（09:30 开盘）</td>
+<td></td>
+<td></td>
+<td>11,207.27</td>
+<td></td>
+<td></td>
+<td>-4.08%</td>
+</tr>
+<tr>
+<td>S&amp;P 500</td>
+<td>7,718.94</td>
+<td>（09:30 开盘）</td>
+<td></td>
+<td></td>
+<td>7,671.34</td>
+<td></td>
+<td></td>
+<td>-0.62%</td>
+</tr>
+</tbody>
+</table>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th>合约（Kalshi）</th>
+<th>前一日参考价</th>
+<th>公布前 08:29 ET</th>
+<th>公布后峰值(08:30–09:15)</th>
+<th>T+45 09:15</th>
+<th>最新</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10/28 会议 加息 25bp</td>
+<td>43%</td>
+<td>28%</td>
+<td>36%</td>
+<td>28%</td>
+<td>26%</td>
+</tr>
+<tr>
+<td>12 月会议 加息 25bp</td>
+<td>81%</td>
+<td>78%</td>
+<td></td>
+<td></td>
+<td>78%</td>
+</tr>
+</tbody>
+</table>
+<h2 id="watchlist">4. Watchlist</h2>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>代码</th>
+<th>类别</th>
+<th>盘前(08:29) vs 前收</th>
+<th>公布后(08:29→最新)</th>
+<th>较前收（盘中 09:59 ET）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NVDA</td>
+<td>AI</td>
+<td>-1.60%</td>
+<td>-1.98%</td>
+<td>-3.55%</td>
+</tr>
+<tr>
+<td>MU</td>
+<td>AI</td>
+<td>-4.20%</td>
+<td>-0.90%</td>
+<td>-5.06%</td>
+</tr>
+<tr>
+<td>TSM</td>
+<td>AI</td>
+<td>-2.38%</td>
+<td>-2.76%</td>
+<td>-5.08%</td>
+</tr>
+<tr>
+<td>AVGO</td>
+<td>AI</td>
+<td>-1.46%</td>
+<td>-1.53%</td>
+<td>-2.97%</td>
+</tr>
+<tr>
+<td>ARM</td>
+<td>AI</td>
+<td>-3.28%</td>
+<td>-0.95%</td>
+<td>-4.20%</td>
+</tr>
+<tr>
+<td>AMD</td>
+<td>AI</td>
+<td>-2.97%</td>
+<td>-3.96%</td>
+<td>-6.81%</td>
+</tr>
+<tr>
+<td>MRVL</td>
+<td>AI</td>
+<td>-4.04%</td>
+<td>-2.82%</td>
+<td>-6.75%</td>
+</tr>
+<tr>
+<td>LITE</td>
+<td>AI</td>
+<td>-4.36%</td>
+<td>-6.07%</td>
+<td>-10.16%</td>
+</tr>
+<tr>
+<td>CIEN</td>
+<td>AI</td>
+<td>-4.53%</td>
+<td>-2.83%</td>
+<td>-7.24%</td>
+</tr>
+<tr>
+<td>COHR</td>
+<td>AI</td>
+<td>-4.00%</td>
+<td>-6.57%</td>
+<td>-10.30%</td>
+</tr>
+<tr>
+<td>CRWV</td>
+<td>AI</td>
+<td>-1.78%</td>
+<td>-7.24%</td>
+<td>-8.89%</td>
+</tr>
+<tr>
+<td>PLTR</td>
+<td>Rate</td>
+<td>-2.58%</td>
+<td>-1.05%</td>
+<td>-3.61%</td>
+</tr>
+<tr>
+<td>RKLB</td>
+<td>Rate</td>
+<td>-9.24%</td>
+<td>-5.54%</td>
+<td>-14.27%</td>
+</tr>
+<tr>
+<td>CRWD</td>
+<td>Rate</td>
+<td>-2.51%</td>
+<td>-0.12%</td>
+<td>-2.63%</td>
+</tr>
+<tr>
+<td>AAPL</td>
+<td>Cons</td>
+<td>+0.61%</td>
+<td>+0.03%</td>
+<td>+0.64%</td>
+</tr>
+<tr>
+<td>TSLA</td>
+<td>Cons</td>
+<td>-1.35%</td>
+<td>-1.83%</td>
+<td>-3.15%</td>
+</tr>
+<tr>
+<td>CCL</td>
+<td>Cons</td>
+<td>+0.15%</td>
+<td>-0.38%</td>
+<td>-0.23%</td>
+</tr>
+<tr>
+<td>AMZN</td>
+<td>Cons</td>
+<td>-1.53%</td>
+<td>-0.10%</td>
+<td>-1.62%</td>
+</tr>
+<tr>
+<td>WMT</td>
+<td>Cons</td>
+<td>+2.77%</td>
+<td>+1.25%</td>
+<td>+4.05%</td>
+</tr>
+<tr>
+<td>COST</td>
+<td>Cons</td>
+<td>+1.28%</td>
+<td>+0.95%</td>
+<td>+2.24%</td>
+</tr>
+<tr>
+<td>HD</td>
+<td>Cons</td>
+<td>+1.72%</td>
+<td>+2.14%</td>
+<td>+3.90%</td>
+</tr>
+<tr>
+<td>TGT</td>
+<td>Cons</td>
+<td>+1.33%</td>
+<td>-0.13%</td>
+<td>+1.20%</td>
+</tr>
+<tr>
+<td>XRT</td>
+<td>Cons</td>
+<td>+0.14%</td>
+<td>+2.58%</td>
+<td>+2.73%</td>
+</tr>
+</tbody>
+</table>
+<h2 id="calibration-brier-lower-better">5. Calibration (Brier, lower =
+better)</h2>
+<p>OS locked 0.875 | base rate 1.261 | uniform 0.667. Base-rate source:
+FRED PPIFIS 过去 36 个月最终需求环比（四舍五入后 ≤0.2 / 0.3–0.6 /
+≥0.7）；事后计算，仅用公布前数据. ## 6. Chain post-mortem, steelman,
+what to watch See the Chinese edition §4–6 (full reasoning). Source
+ledger and assumption register as in ZH §8–9. ## Charts <img
+src="images/01_expectation_gap.png" alt="01_expectation_gap" /> <img
+src="images/02_components.png" alt="02_components" /> <img
+src="images/03_rates_path.png" alt="03_rates_path" /> <img
+src="images/04_kalshi_path.png" alt="04_kalshi_path" /> <img
+src="images/05_watchlist_movers.png" alt="05_watchlist_movers" /> <img
+src="images/06_calibration_brier.png" alt="06_calibration_brier" /> <img
+src="images/07_chain_postmortem.png" alt="07_chain_postmortem" /> <img
+src="images/08_reaction_decomposition.png"
+alt="08_reaction_decomposition" /></p>
+</body>
+</html>

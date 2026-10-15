@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research OS Daily Board｜2026-09-22 Afternoon / 午后</title>
+<style>
+  :root {
+    --bg-deep:#0a0e17; --bg-card:#151d2e; --border:#243049;
+    --accent:#3b82f6; --cyan:#22d3ee; --green:#34d399; --red:#f87171;
+    --amber:#fbbf24; --purple:#a78bfa; --text:#e8edf5; --text-sec:#94a3b8; --text-muted:#64748b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Segoe UI","PingFang SC","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;background:var(--bg-deep);color:var(--text);line-height:1.45;
+    background-image:radial-gradient(ellipse 80% 50% at 50% -20%,rgba(59,130,246,.08),transparent)}
+  .board{max-width:1400px;margin:0 auto;padding:20px 24px 28px;display:flex;flex-direction:column;gap:14px}
+  .header,.card{background:linear-gradient(135deg,var(--bg-card),#121a2c);border:1px solid var(--border);border-radius:12px;padding:16px 18px;position:relative}
+  .header::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--cyan),var(--purple))}
+  .brand{font-size:1.25rem;font-weight:700;background:linear-gradient(90deg,#e8edf5,var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+  .sub{font-size:.78rem;color:var(--text-muted);margin-top:4px}
+  .mood{margin-top:10px;font-size:.95rem;color:var(--amber)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+  h2{font-size:.85rem;letter-spacing:.04em;color:var(--cyan);text-transform:uppercase;margin-bottom:10px}
+  table{width:100%;border-collapse:collapse;font-size:.82rem}
+  th,td{padding:6px 8px;border-bottom:1px solid #1c2740;text-align:left}
+  th{color:var(--text-muted);font-weight:600}
+  .up{color:var(--green)} .down{color:var(--red)} .flat{color:var(--text-sec)}
+  .tag{display:inline-block;font-size:.65rem;padding:2px 6px;border-radius:4px;margin-left:6px;border:1px solid var(--border);color:var(--text-muted)}
+  .tag.confirmed{color:var(--green);border-color:rgba(52,211,153,.35)}
+  .tag.tentative{color:var(--amber);border-color:rgba(251,191,36,.35)}
+  .tag.open{color:var(--red);border-color:rgba(248,113,113,.35)}
+  .caption{margin-top:10px;font-size:.78rem;color:var(--text-sec)}
+  .claim{font-size:.7rem;color:var(--text-muted);margin-top:6px}
+  ul{padding-left:18px;font-size:.85rem;color:var(--text-sec)}
+  li{margin:4px 0}
+  .footer{font-size:.7rem;color:var(--text-muted);text-align:center;padding:8px}
+  .warn{color:var(--amber);font-weight:600}
+</style>
+</head>
+<body>
+<div class="board">
+  <header class="header">
+    <div>
+      <div class="brand">Research OS Daily Board｜AI Factory</div>
+      <div class="sub">2026-09-22 · Afternoon / 午后 · As-of ~17:45 MYT (Asia/Kuala_Lumpur)</div>
+      <div class="mood">Asia soft-hold after KOSPI fade-from-highs (LIVE ~+1.93% → close +0.15%) · Globex cool vs morning (ES ~7,828 / NQ ~30,766) · Oil deeper (WTI ~90.9) · US cash still Mon record · Next veto = US open ~21:30 MYT + Trump–Xi ~Sep 24<br/>亚洲软守住（韩股冲高回吐）· 期货相对早盘降温 · 油价更深 · 美股仍锁周一纪录 · 下一否决 = 今晚现金开盘 + 特习约9/24</div>
+    </div>
+    <div class="sub" style="text-align:right">Sources: Yahoo ~17:38–17:48 MYT, Asiae/Korea Herald/AP Asia, Reuters rare earths, Micron IR<br/>No invented prices · SPCX = Nasdaq-listed SpaceX<br/><span class="warn">Japan TSE CLOSED Sep 22–23 · KR Chuseok Sep 24–25 · CN Mid-Autumn Sep 25</span></div>
+  </header>
+
+  <section class="card">
+    <h2>Index Strip / 指数条 · Tue Asia CONFIRMED · Globex LIVE · Mon US full</h2>
+    <table>
+      <tr><th>Asset</th><th>Last</th><th>1D% / note</th><th>Session label</th></tr>
+      <tr><td>Dow</td><td>52,048.83</td><td class="up">+0.71%</td><td><b>Mon full close</b></td></tr>
+      <tr><td>S&amp;P 500</td><td>7,764.70</td><td class="up">+1.49%</td><td><b>Mon full close</b></td></tr>
+      <tr><td>Nasdaq</td><td>27,122.09</td><td class="up">+2.26%</td><td><b>Mon full — RECORD</b></td></tr>
+      <tr><td>SOX</td><td>12,433.17</td><td class="up">+4.29%</td><td><b>Mon full close</b></td></tr>
+      <tr><td>QQQ</td><td>741.47</td><td class="up">+2.77%</td><td>Mon close</td></tr>
+      <tr><td>RUT</td><td>2,875.36</td><td class="up">+0.52%</td><td>Mon close</td></tr>
+      <tr><td>VIX</td><td>14.87</td><td class="flat">~flat</td><td>Tue bar = Mon — soft</td></tr>
+      <tr><td>ES futures</td><td>7,827.75</td><td class="down">−0.07% vs Mon settle</td><td><b>Globex COOL vs AM</b></td></tr>
+      <tr><td>NQ futures</td><td>30,765.75</td><td class="down">−0.06% vs Mon settle</td><td><b>Below morning ~30,877</b></td></tr>
+      <tr><td>YM futures</td><td>52,492</td><td class="up">+0.03%</td><td>Globex LIVE</td></tr>
+      <tr><td>RTY futures</td><td>2,900.5</td><td class="up">+0.11%</td><td>Globex LIVE</td></tr>
+      <tr><td>KOSPI</td><td>7,017.91</td><td class="up">+0.15%</td><td><b>Tue CLOSE — faded from LIVE ~7,143</b></td></tr>
+      <tr><td>Nikkei</td><td>65,018.95</td><td class="up">+1.38% Fri</td><td><b>HOLIDAY — Fri locked</b></td></tr>
+      <tr><td>Hang Seng</td><td>25,087.75</td><td class="up">+0.18%</td><td><b>Tue close</b></td></tr>
+      <tr><td>SSE</td><td>3,952.13</td><td class="up">+0.06%</td><td><b>Tue close</b></td></tr>
+      <tr><td>CSI 300</td><td>~4,544.59</td><td class="up">~+0.11% vs Mon</td><td>Tue Yahoo print</td></tr>
+      <tr><td>TWSE</td><td>47,800.17</td><td class="up">+0.17%</td><td><b>Tue close</b></td></tr>
+      <tr><td>FBM KLCI</td><td>1,683.50</td><td class="up">+0.99%</td><td><b>Tue close — relative leader</b></td></tr>
+      <tr><td>DAX</td><td>25,625.72</td><td class="up">+0.20%</td><td>Tue Europe</td></tr>
+    </table>
+    <div class="claim">Claim: CONFIRMED Asia closes (Yahoo + Asiae/Herald/AP); RELIABLE Globex Yahoo 5m ~17:38 MYT; Mon US full CONFIRMED continuity. Japan cash CLOSED.</div>
+  </section>
+
+  <div class="grid">
+    <section class="card">
+      <h2>Macro Strip / 宏观条</h2>
+      <table>
+        <tr><td>WTI CL=F LIVE</td><td>~90.94</td><td class="down">−5.05% vs Mon</td></tr>
+        <tr><td>Brent BZ=F LIVE</td><td>~99.36</td><td class="down">−0.98% vs Mon</td></tr>
+        <tr><td>WTI Mon settle</td><td>95.78</td><td class="down">−4.51% Mon</td></tr>
+        <tr><td>US 10Y</td><td>4.963%</td><td class="up">eased vs Fri ~5%</td></tr>
+        <tr><td>USD/JPY</td><td>~157.05</td><td class="flat">~flat vs Mon</td></tr>
+        <tr><td>USD/KRW</td><td>~1,356</td><td class="up">KRW firmer</td></tr>
+        <tr><td>DXY</td><td>~100.45</td><td class="flat">+0.02%</td></tr>
+        <tr><td>Gold GC</td><td>~4,352.7</td><td class="down">−0.71%</td></tr>
+        <tr><td>BTC</td><td>~86,028</td><td class="down">−0.66% vs Mon</td></tr>
+      </table>
+      <div class="claim">Oil: Mon settles vs Tue continuous labeled separately. Spot XAU/XAG N/A — futures proxy.</div>
+    </section>
+
+    <section class="card">
+      <h2>Watchlist Movers / 观察名单 <span class="tag confirmed">Mon close</span></h2>
+      <table>
+        <tr><td>ARM</td><td>322.90</td><td class="up">+17.16%</td></tr>
+        <tr><td>INTC</td><td>121.78</td><td class="up">+12.14%</td></tr>
+        <tr><td>QCOM</td><td>194.23</td><td class="up">+9.29%</td></tr>
+        <tr><td>MRVL</td><td>257.38</td><td class="up">+5.38%</td></tr>
+        <tr><td>CRWV</td><td>85.43</td><td class="up">+5.00%</td></tr>
+        <tr><td>UMC</td><td>25.43</td><td class="up">+3.33%</td></tr>
+        <tr><td>PLTR</td><td>183.09</td><td class="up">+3.07%</td></tr>
+        <tr><td>TSLA</td><td>375.30</td><td class="up">+3.03%</td></tr>
+        <tr><td>MU</td><td>1,043.96</td><td class="up">+2.77%</td></tr>
+        <tr><td>LITE</td><td>954.49</td><td class="up">+2.53%</td></tr>
+        <tr><td>NVDA</td><td>227.38</td><td class="up">+2.30%</td></tr>
+        <tr><td>AVGO</td><td>362.66</td><td class="up">+1.41%</td></tr>
+        <tr><td>AAPL</td><td>338.98</td><td class="up">+0.85%</td></tr>
+        <tr><td>SPCX</td><td>151.85</td><td class="down">−0.56%</td></tr>
+      </table>
+      <div class="claim">Mon closes — Tue US cash not open. Extremes = evening mean-reversion candidates.</div>
+    </section>
+
+    <section class="card">
+      <h2>Catalyst Timeline / 催化 <span class="tag tentative">7-day</span></h2>
+      <ul>
+        <li><b>Tue eve</b> US cash open ~21:30 MYT <span class="tag open">PRIMARY</span></li>
+        <li><b>Sep 22–23</b> Japan cash CLOSED <span class="tag confirmed">CONFIRMED</span></li>
+        <li><b>Sep 24</b> Trump–Xi summit <span class="tag open">RARE EARTHS OPEN</span></li>
+        <li><b>Sep 24–25</b> Korea Chuseok closes <span class="tag confirmed">CONFIRMED</span></li>
+        <li><b>Sep 25</b> China Mid-Autumn <span class="tag confirmed">CONFIRMED</span></li>
+        <li><b>NET ~Sep 28</b> Starship Flight 14 <span class="tag tentative">TENTATIVE</span></li>
+        <li><b>Sep 30</b> MU Q4 earnings <span class="tag confirmed">CONFIRMED</span></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Expectation Gap / 预期差 <span class="tag open">ACTIVE</span></h2>
+      <ul>
+        <li>Mon US cash full confirm → <b class="up">CLOSED</b></li>
+        <li>Overnight fade cascade → <b class="up">MISSED so far</b></li>
+        <li>Asia extension of morning LIVE → <b class="down">PARTIAL MISS</b> (soft-hold)</li>
+        <li>Globex AM hold → <b class="down">MILD COOL</b></li>
+        <li>US Tue cash confirm → <b class="down">OPEN PRIMARY</b></li>
+        <li>Trump–Xi rare earths → <b class="down">OPEN</b></li>
+        <li>MU Sep 30 print → <b class="down">OPEN</b></li>
+        <li>ARM/INTC durability → <b class="down">OPEN</b></li>
+        <li>FOMC SEP 4.1/4.1 → <b class="down">OPEN</b></li>
+      </ul>
+      <div class="caption">Thinking: soft Asia hold ≠ closing summit/MU/ARM gaps.</div>
+    </section>
+  </div>
+
+  <section class="card">
+    <h2>Thinking Tutorial Strip / 思维教程条</h2>
+    <ul>
+      <li><b>1 Observe:</b> Morning LIVE premium → Asia close digestion → Globex cool → US cash gate — upgrade claim class only at each gate.</li>
+      <li><b>2 Why:</b> AI-factory transmission is multi-session; fade-from-highs is digestion, not yet reversal.</li>
+      <li><b>3 Falsifier:</b> US cash gap-down on ARM/INTC / toxic summit RE wire / oil re-spike / NQ break lower.</li>
+      <li><b>1 观察：</b> 早盘实时溢价→亚洲收盘消化→期货降温→美股现金门——逐门升级声称等级。</li>
+      <li><b>2 为何：</b> AI 工厂传导是多时段交接；冲高回吐是消化，尚非反转。</li>
+      <li><b>3 证伪：</b> 现金跳空回吐极端股 / 有毒峰会稀土 / 油价再涨 / 纳指期货再破。</li>
+    </ul>
+  </section>
+
+  <div class="footer">Research OS · AI Factory Afternoon Board · 2026-09-22 ~17:45 MYT · Research/education only · Not investment advice<br/>Chart pack: research-os/charts/exports/2026-09-22-afternoon/</div>
+</div>
+</body>
+</html>

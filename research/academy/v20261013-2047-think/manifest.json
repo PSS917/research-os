@@ -1,0 +1,26 @@
+{
+ "release": "ThinkingMethod_v20261013-2047-think",
+ "generated": "2026-10-13T20:47:58.117963",
+ "files": [
+  {
+   "path": "ThinkingMethod_v20261013-2047-think.docx",
+   "bytes": 16981,
+   "sha256": "f356ccec7f995304"
+  },
+  {
+   "path": "ThinkingMethod_v20261013-2047-think.html",
+   "bytes": 17320,
+   "sha256": "1219ce139e8d4670"
+  },
+  {
+   "path": "ThinkingMethod_v20261013-2047-think.md",
+   "bytes": 9946,
+   "sha256": "6cb6922460db65d0"
+  },
+  {
+   "path": "ThinkingMethod_v20261013-2047-think.pdf",
+   "bytes": 306657,
+   "sha256": "92d3a83c56182eb2"
+  }
+ ]
+}

@@ -1,0 +1,166 @@
+{
+ "release": "US_Retail_Sep2026_PreEvent_v20261015-1805",
+ "generated": "2026-10-15T18:05:52.075612",
+ "files": [
+  {
+   "path": "CHANGELOG_v20261015-1805.docx",
+   "bytes": 10944,
+   "sha256": "fa119d1aff586186"
+  },
+  {
+   "path": "CHANGELOG_v20261015-1805.html",
+   "bytes": 5560,
+   "sha256": "b005bb49bed914fb"
+  },
+  {
+   "path": "CHANGELOG_v20261015-1805.md",
+   "bytes": 413,
+   "sha256": "46ba9be31bc8fc91"
+  },
+  {
+   "path": "CHANGELOG_v20261015-1805.pdf",
+   "bytes": 18623,
+   "sha256": "f5a33b67b8021944"
+  },
+  {
+   "path": "PRE_EVENT_SNAPSHOT_v20261015-1805.json",
+   "bytes": 2198,
+   "sha256": "b0ba3f92b58d5c86"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.docx",
+   "bytes": 37440,
+   "sha256": "266a8e19edd81f19"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.html",
+   "bytes": 54561,
+   "sha256": "88f4876649057b7f"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.md",
+   "bytes": 40981,
+   "sha256": "cf3b97283381c2fe"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.pdf",
+   "bytes": 579706,
+   "sha256": "b9abaeed02fae1eb"
+  },
+  {
+   "path": "US_Retail_Sep2026_PreEvent_EN_v20261015-1805.docx",
+   "bytes": 13209,
+   "sha256": "4ad00c2e982cee57"
+  },
+  {
+   "path": "US_Retail_Sep2026_PreEvent_EN_v20261015-1805.html",
+   "bytes": 9308,
+   "sha256": "91139c9527ac245a"
+  },
+  {
+   "path": "US_Retail_Sep2026_PreEvent_EN_v20261015-1805.md",
+   "bytes": 3137,
+   "sha256": "bddec8d80a9f3baa"
+  },
+  {
+   "path": "US_Retail_Sep2026_PreEvent_EN_v20261015-1805.pdf",
+   "bytes": 120698,
+   "sha256": "521ea01867f68fc0"
+  },
+  {
+   "path": "US_Retail_Sep2026_PreEvent_ZH_v20261015-1805.docx",
+   "bytes": 1100713,
+   "sha256": "7d35ffbc6123615b"
+  },
+  {
+   "path": "US_Retail_Sep2026_PreEvent_ZH_v20261015-1805.html",
+   "bytes": 29334,
+   "sha256": "afc1a0071b4f3956"
+  },
+  {
+   "path": "US_Retail_Sep2026_PreEvent_ZH_v20261015-1805.md",
+   "bytes": 17830,
+   "sha256": "e3a71a9b2710404d"
+  },
+  {
+   "path": "US_Retail_Sep2026_PreEvent_ZH_v20261015-1805.pdf",
+   "bytes": 1185675,
+   "sha256": "c49da77ccd0971c1"
+  },
+  {
+   "path": "US_Retail_Sep2026_PreEvent_model_v20261015-1805.xlsx",
+   "bytes": 11343,
+   "sha256": "c3914a35040c00b4"
+  },
+  {
+   "path": "US_Retail_Sep2026_teaching_ZH_v20261015-1805.docx",
+   "bytes": 516452,
+   "sha256": "babba4e5bc1b810c"
+  },
+  {
+   "path": "US_Retail_Sep2026_teaching_ZH_v20261015-1805.html",
+   "bytes": 11277,
+   "sha256": "d2cbd6a96889cc27"
+  },
+  {
+   "path": "US_Retail_Sep2026_teaching_ZH_v20261015-1805.md",
+   "bytes": 4763,
+   "sha256": "dfe3cd29c58fa305"
+  },
+  {
+   "path": "US_Retail_Sep2026_teaching_ZH_v20261015-1805.pdf",
+   "bytes": 478722,
+   "sha256": "49168a01d12a9e0e"
+  },
+  {
+   "path": "images/01_transmission_chain.jpg",
+   "bytes": 364334,
+   "sha256": "2398d9fefb528413"
+  },
+  {
+   "path": "images/01_transmission_chain.png",
+   "bytes": 299847,
+   "sha256": "03a4e1e0e76aa9b4"
+  },
+  {
+   "path": "images/02_expectation_gap.jpg",
+   "bytes": 335410,
+   "sha256": "1c1075d56207f449"
+  },
+  {
+   "path": "images/02_expectation_gap.png",
+   "bytes": 214384,
+   "sha256": "a73fdaf2a371d36b"
+  },
+  {
+   "path": "images/03_scenarios_reaction_paths.jpg",
+   "bytes": 352903,
+   "sha256": "c65b8baf9e4035a2"
+  },
+  {
+   "path": "images/03_scenarios_reaction_paths.png",
+   "bytes": 306208,
+   "sha256": "a9898f7f0780881b"
+  },
+  {
+   "path": "images/04_retail_history_mom.jpg",
+   "bytes": 343553,
+   "sha256": "7724dd20e1f416d5"
+  },
+  {
+   "path": "images/04_retail_history_mom.png",
+   "bytes": 199191,
+   "sha256": "df045df1b56e7c48"
+  },
+  {
+   "path": "images/05_ppi_retail_matrix.jpg",
+   "bytes": 340254,
+   "sha256": "005830d41bca1de4"
+  },
+  {
+   "path": "images/05_ppi_retail_matrix.png",
+   "bytes": 274788,
+   "sha256": "e60c73dc78c8de66"
+  }
+ ]
+}

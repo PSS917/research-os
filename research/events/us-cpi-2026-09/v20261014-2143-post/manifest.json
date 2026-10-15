@@ -1,0 +1,41 @@
+{
+ "release": "US_CPI_Sep2026_PostEvent_v20261014-2143-post",
+ "generated": "2026-10-14T21:43:23.354209",
+ "files": [
+  {
+   "path": "POST_EVENT_RESULT_v20261014-2143-post.json",
+   "bytes": 1768,
+   "sha256": "e2093830ae91bdad"
+  },
+  {
+   "path": "US_CPI_Sep2026_PostEvent_ZH_v20261014-2143-post.docx",
+   "bytes": 3500774,
+   "sha256": "8940290232973d44"
+  },
+  {
+   "path": "US_CPI_Sep2026_PostEvent_ZH_v20261014-2143-post.html",
+   "bytes": 22866,
+   "sha256": "2286bad5ee102b8b"
+  },
+  {
+   "path": "US_CPI_Sep2026_PostEvent_ZH_v20261014-2143-post.md",
+   "bytes": 11826,
+   "sha256": "7bc22ec490c2e4fd"
+  },
+  {
+   "path": "US_CPI_Sep2026_PostEvent_ZH_v20261014-2143-post.pdf",
+   "bytes": 1571639,
+   "sha256": "f27ce88a0a350479"
+  },
+  {
+   "path": "images/us-cpi-sep2026-hot_news-explainer_p1.jpg",
+   "bytes": 1938407,
+   "sha256": "5e589783895cda47"
+  },
+  {
+   "path": "images/us-cpi-sep2026-hot_news-explainer_p2.jpg",
+   "bytes": 2260112,
+   "sha256": "1de128be10304374"
+  }
+ ]
+}
