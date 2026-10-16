@@ -1,0 +1,329 @@
+{
+ "release": "v20261015-2205-post",
+ "files": [
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/CHANGELOG_v20261015-2158-post.docx",
+   "bytes": 11081
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/CHANGELOG_v20261015-2158-post.html",
+   "bytes": 5787
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/CHANGELOG_v20261015-2158-post.md",
+   "bytes": 611
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/CHANGELOG_v20261015-2158-post.pdf",
+   "bytes": 55946
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/EXTRA_SECTION.txt",
+   "bytes": 9825
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/POST_EVENT_RESULT_v20261015-2158-post.json",
+   "bytes": 4837
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/RESEARCH_OS_MASTER_PROMPT.docx",
+   "bytes": 37440
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/RESEARCH_OS_MASTER_PROMPT.html",
+   "bytes": 54561
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/RESEARCH_OS_MASTER_PROMPT.md",
+   "bytes": 40981
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/RESEARCH_OS_MASTER_PROMPT.pdf",
+   "bytes": 579706
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/US_PPI_Sep2026_PostEvent_EN_v20261015-2158-post.docx",
+   "bytes": 1402611
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/US_PPI_Sep2026_PostEvent_EN_v20261015-2158-post.html",
+   "bytes": 15248
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/US_PPI_Sep2026_PostEvent_EN_v20261015-2158-post.md",
+   "bytes": 5701
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/US_PPI_Sep2026_PostEvent_EN_v20261015-2158-post.pdf",
+   "bytes": 1360503
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/US_PPI_Sep2026_PostEvent_ZH_v20261015-2158-post.docx",
+   "bytes": 1416091
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/US_PPI_Sep2026_PostEvent_ZH_v20261015-2158-post.html",
+   "bytes": 40673
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/US_PPI_Sep2026_PostEvent_ZH_v20261015-2158-post.md",
+   "bytes": 24332
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/US_PPI_Sep2026_PostEvent_ZH_v20261015-2158-post.pdf",
+   "bytes": 1989860
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/US_PPI_Sep2026_PostEvent_model_v20261015-2158-post.xlsx",
+   "bytes": 18164
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/images/01_expectation_gap.jpg",
+   "bytes": 273892
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/images/01_expectation_gap.png",
+   "bytes": 201404
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/images/02_components.jpg",
+   "bytes": 328495
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/images/02_components.png",
+   "bytes": 260374
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/images/03_rates_path.jpg",
+   "bytes": 343632
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/images/03_rates_path.png",
+   "bytes": 318683
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/images/04_kalshi_path.jpg",
+   "bytes": 272604
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/images/04_kalshi_path.png",
+   "bytes": 201193
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/images/05_watchlist_movers.jpg",
+   "bytes": 358996
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/images/05_watchlist_movers.png",
+   "bytes": 216203
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/images/06_calibration_brier.jpg",
+   "bytes": 215563
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/images/06_calibration_brier.png",
+   "bytes": 144577
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/images/07_chain_postmortem.jpg",
+   "bytes": 201342
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/images/07_chain_postmortem.png",
+   "bytes": 149912
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/images/08_reaction_decomposition.jpg",
+   "bytes": 238303
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/images/08_reaction_decomposition.png",
+   "bytes": 161778
+  },
+  {
+   "path": "research/events/us-ppi-2026-09/v20261015-2158-post/manifest.json",
+   "bytes": 3997
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/CHANGELOG_v20261015-2156-post.docx",
+   "bytes": 11117
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/CHANGELOG_v20261015-2156-post.html",
+   "bytes": 5850
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/CHANGELOG_v20261015-2156-post.md",
+   "bytes": 665
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/CHANGELOG_v20261015-2156-post.pdf",
+   "bytes": 55687
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/EXTRA_SECTION.txt",
+   "bytes": 10090
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/POST_EVENT_RESULT_v20261015-2156-post.json",
+   "bytes": 5162
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/RESEARCH_OS_MASTER_PROMPT.docx",
+   "bytes": 37440
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/RESEARCH_OS_MASTER_PROMPT.html",
+   "bytes": 54561
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/RESEARCH_OS_MASTER_PROMPT.md",
+   "bytes": 40981
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/RESEARCH_OS_MASTER_PROMPT.pdf",
+   "bytes": 579706
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/US_Retail_Sep2026_PostEvent_EN_v20261015-2156-post.docx",
+   "bytes": 1409493
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/US_Retail_Sep2026_PostEvent_EN_v20261015-2156-post.html",
+   "bytes": 15131
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/US_Retail_Sep2026_PostEvent_EN_v20261015-2156-post.md",
+   "bytes": 5607
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/US_Retail_Sep2026_PostEvent_EN_v20261015-2156-post.pdf",
+   "bytes": 1344668
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/US_Retail_Sep2026_PostEvent_ZH_v20261015-2156-post.docx",
+   "bytes": 1423531
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/US_Retail_Sep2026_PostEvent_ZH_v20261015-2156-post.html",
+   "bytes": 41234
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/US_Retail_Sep2026_PostEvent_ZH_v20261015-2156-post.md",
+   "bytes": 24868
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/US_Retail_Sep2026_PostEvent_ZH_v20261015-2156-post.pdf",
+   "bytes": 1948439
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/US_Retail_Sep2026_PostEvent_model_v20261015-2156-post.xlsx",
+   "bytes": 18122
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/images/01_expectation_gap.jpg",
+   "bytes": 249527
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/images/01_expectation_gap.png",
+   "bytes": 181562
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/images/02_components.jpg",
+   "bytes": 332432
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/images/02_components.png",
+   "bytes": 273875
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/images/03_rates_path.jpg",
+   "bytes": 343597
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/images/03_rates_path.png",
+   "bytes": 318374
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/images/04_kalshi_path.jpg",
+   "bytes": 272260
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/images/04_kalshi_path.png",
+   "bytes": 200567
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/images/05_watchlist_movers.jpg",
+   "bytes": 357062
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/images/05_watchlist_movers.png",
+   "bytes": 217766
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/images/06_calibration_brier.jpg",
+   "bytes": 207274
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/images/06_calibration_brier.png",
+   "bytes": 142758
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/images/07_chain_postmortem.jpg",
+   "bytes": 213633
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/images/07_chain_postmortem.png",
+   "bytes": 161842
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/images/08_reaction_decomposition.jpg",
+   "bytes": 238303
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/images/08_reaction_decomposition.png",
+   "bytes": 161778
+  },
+  {
+   "path": "research/events/us-retail-2026-09/v20261015-2156-post/manifest.json",
+   "bytes": 4028
+  },
+  {
+   "path": "research/infographics/us-morning-data-1015/v20261015-2205/manifest.json",
+   "bytes": 1165
+  },
+  {
+   "path": "research/infographics/us-morning-data-1015/v20261015-2205/meta.json",
+   "bytes": 742
+  },
+  {
+   "path": "research/infographics/us-morning-data-1015/v20261015-2205/us-morning-data-1015_news-explainer.pdf",
+   "bytes": 1633525
+  },
+  {
+   "path": "research/infographics/us-morning-data-1015/v20261015-2205/us-morning-data-1015_news-explainer_p1.html",
+   "bytes": 24119
+  },
+  {
+   "path": "research/infographics/us-morning-data-1015/v20261015-2205/us-morning-data-1015_news-explainer_p1.jpg",
+   "bytes": 1811990
+  },
+  {
+   "path": "research/infographics/us-morning-data-1015/v20261015-2205/us-morning-data-1015_news-explainer_p1.png",
+   "bytes": 1938034
+  },
+  {
+   "path": "research/infographics/us-morning-data-1015/v20261015-2205/us-morning-data-1015_news-explainer_p2.html",
+   "bytes": 16092
+  },
+  {
+   "path": "research/infographics/us-morning-data-1015/v20261015-2205/us-morning-data-1015_news-explainer_p2.jpg",
+   "bytes": 1867901
+  },
+  {
+   "path": "research/infographics/us-morning-data-1015/v20261015-2205/us-morning-data-1015_news-explainer_p2.png",
+   "bytes": 2088928
+  }
+ ]
+}

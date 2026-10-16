@@ -1,0 +1,106 @@
+{
+ "release": "MU_v20261016-0756",
+ "generated": "2026-10-16T07:58:03.404268",
+ "files": [
+  {
+   "path": "MU_model_v20261016-0756.xlsx",
+   "bytes": 35859,
+   "sha256": "bb3d2578242f8476"
+  },
+  {
+   "path": "MU_report_v20261016-0756.docx",
+   "bytes": 803387,
+   "sha256": "1932a102deca348c"
+  },
+  {
+   "path": "MU_report_v20261016-0756.html",
+   "bytes": 30448,
+   "sha256": "66a5e88df53c6464"
+  },
+  {
+   "path": "MU_report_v20261016-0756.md",
+   "bytes": 17434,
+   "sha256": "0c75bb9337bba890"
+  },
+  {
+   "path": "MU_report_v20261016-0756.pdf",
+   "bytes": 1118773,
+   "sha256": "e80fd419be5ed240"
+  },
+  {
+   "path": "MU_teaching_v20261016-0756.docx",
+   "bytes": 195085,
+   "sha256": "7532aaba69ce7028"
+  },
+  {
+   "path": "MU_teaching_v20261016-0756.html",
+   "bytes": 10492,
+   "sha256": "ba9d802b88916f14"
+  },
+  {
+   "path": "MU_teaching_v20261016-0756.md",
+   "bytes": 4715,
+   "sha256": "a4749395c672114c"
+  },
+  {
+   "path": "MU_teaching_v20261016-0756.pdf",
+   "bytes": 250656,
+   "sha256": "8c31176de9fdf12a"
+  },
+  {
+   "path": "images/MU_1_price_vs_value.jpg",
+   "bytes": 298095,
+   "sha256": "07346a73fded689b"
+  },
+  {
+   "path": "images/MU_1_price_vs_value.png",
+   "bytes": 201372,
+   "sha256": "16d170b6a86f32f5"
+  },
+  {
+   "path": "images/MU_2_financials.jpg",
+   "bytes": 254110,
+   "sha256": "966eeed7da4f391a"
+  },
+  {
+   "path": "images/MU_2_financials.png",
+   "bytes": 182078,
+   "sha256": "a98385746b3b27de"
+  },
+  {
+   "path": "images/MU_3_scenarios.jpg",
+   "bytes": 247588,
+   "sha256": "82f9eb437a41042e"
+  },
+  {
+   "path": "images/MU_3_scenarios.png",
+   "bytes": 167282,
+   "sha256": "6b472ba7843508b8"
+  },
+  {
+   "path": "images/MU_4_horizons.jpg",
+   "bytes": 228417,
+   "sha256": "ba6a41847f2572f1"
+  },
+  {
+   "path": "images/MU_4_horizons.png",
+   "bytes": 161484,
+   "sha256": "3d483b75bce799d2"
+  },
+  {
+   "path": "images/MU_5_logic_map.jpg",
+   "bytes": 242789,
+   "sha256": "5613b8409a3b97de"
+  },
+  {
+   "path": "images/MU_5_logic_map.png",
+   "bytes": 210161,
+   "sha256": "63d0554f82f7bb91"
+  },
+  {
+   "path": "summary.json",
+   "bytes": 501,
+   "sha256": "c9c975e1beec84c4"
+  }
+ ]
+}

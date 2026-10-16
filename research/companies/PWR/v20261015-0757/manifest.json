@@ -1,0 +1,106 @@
+{
+ "release": "PWR_v20261015-0757",
+ "generated": "2026-10-15T07:59:49.432923",
+ "files": [
+  {
+   "path": "PWR_model_v20261015-0757.xlsx",
+   "bytes": 35951,
+   "sha256": "1833da94c7e318c2"
+  },
+  {
+   "path": "PWR_report_v20261015-0757.docx",
+   "bytes": 814862,
+   "sha256": "5044273351027cfc"
+  },
+  {
+   "path": "PWR_report_v20261015-0757.html",
+   "bytes": 29465,
+   "sha256": "96263906ccd9a207"
+  },
+  {
+   "path": "PWR_report_v20261015-0757.md",
+   "bytes": 16447,
+   "sha256": "f3e745e30c22ff98"
+  },
+  {
+   "path": "PWR_report_v20261015-0757.pdf",
+   "bytes": 1099841,
+   "sha256": "a9d16b53d20f755b"
+  },
+  {
+   "path": "PWR_teaching_v20261015-0757.docx",
+   "bytes": 193322,
+   "sha256": "73e21b20cb78161e"
+  },
+  {
+   "path": "PWR_teaching_v20261015-0757.html",
+   "bytes": 10207,
+   "sha256": "16377f0257b9d240"
+  },
+  {
+   "path": "PWR_teaching_v20261015-0757.md",
+   "bytes": 4428,
+   "sha256": "391c9a028efd9ad8"
+  },
+  {
+   "path": "PWR_teaching_v20261015-0757.pdf",
+   "bytes": 249274,
+   "sha256": "f02eccd93ca051b7"
+  },
+  {
+   "path": "images/PWR_1_price_vs_value.jpg",
+   "bytes": 295333,
+   "sha256": "9b7b0bd5b7865552"
+  },
+  {
+   "path": "images/PWR_1_price_vs_value.png",
+   "bytes": 212906,
+   "sha256": "3f5fe842446c76a3"
+  },
+  {
+   "path": "images/PWR_2_financials.jpg",
+   "bytes": 246892,
+   "sha256": "52b83a6a3e8ac48f"
+  },
+  {
+   "path": "images/PWR_2_financials.png",
+   "bytes": 193032,
+   "sha256": "ce3198d4b4243f23"
+  },
+  {
+   "path": "images/PWR_3_scenarios.jpg",
+   "bytes": 246309,
+   "sha256": "70640e21a2cc02d1"
+  },
+  {
+   "path": "images/PWR_3_scenarios.png",
+   "bytes": 166819,
+   "sha256": "a307c5f22b07352b"
+  },
+  {
+   "path": "images/PWR_4_horizons.jpg",
+   "bytes": 223238,
+   "sha256": "3791097c5bc9e1fd"
+  },
+  {
+   "path": "images/PWR_4_horizons.png",
+   "bytes": 154293,
+   "sha256": "8cc74b06cdbebb8f"
+  },
+  {
+   "path": "images/PWR_5_logic_map.jpg",
+   "bytes": 241371,
+   "sha256": "52150f99475f136b"
+  },
+  {
+   "path": "images/PWR_5_logic_map.png",
+   "bytes": 208043,
+   "sha256": "2da2d2bb9cf84ba0"
+  },
+  {
+   "path": "summary.json",
+   "bytes": 519,
+   "sha256": "a229a11017a48854"
+  }
+ ]
+}

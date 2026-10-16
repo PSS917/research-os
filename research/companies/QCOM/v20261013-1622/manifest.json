@@ -1,0 +1,106 @@
+{
+ "release": "QCOM_v20261013-1622",
+ "generated": "2026-10-13T16:24:04.614692",
+ "files": [
+  {
+   "path": "QCOM_model_v20261013-1622.xlsx",
+   "bytes": 35904,
+   "sha256": "63de7a28d1677957"
+  },
+  {
+   "path": "QCOM_report_v20261013-1622.docx",
+   "bytes": 837089,
+   "sha256": "b13cfb34af1d86f0"
+  },
+  {
+   "path": "QCOM_report_v20261013-1622.html",
+   "bytes": 29649,
+   "sha256": "36bfc4e834cbe727"
+  },
+  {
+   "path": "QCOM_report_v20261013-1622.md",
+   "bytes": 17193,
+   "sha256": "2787bafa2dba88ee"
+  },
+  {
+   "path": "QCOM_report_v20261013-1622.pdf",
+   "bytes": 1132536,
+   "sha256": "60a6e778d3b25666"
+  },
+  {
+   "path": "QCOM_teaching_v20261013-1622.docx",
+   "bytes": 196366,
+   "sha256": "13befd5b05e351b3"
+  },
+  {
+   "path": "QCOM_teaching_v20261013-1622.html",
+   "bytes": 9803,
+   "sha256": "49424d326ff01010"
+  },
+  {
+   "path": "QCOM_teaching_v20261013-1622.md",
+   "bytes": 4704,
+   "sha256": "f50be814a1acaf47"
+  },
+  {
+   "path": "QCOM_teaching_v20261013-1622.pdf",
+   "bytes": 250685,
+   "sha256": "f41cc496a33042f5"
+  },
+  {
+   "path": "images/QCOM_1_price_vs_value.jpg",
+   "bytes": 311450,
+   "sha256": "f8fa91d340f41cd2"
+  },
+  {
+   "path": "images/QCOM_1_price_vs_value.png",
+   "bytes": 239736,
+   "sha256": "0435562446b21a78"
+  },
+  {
+   "path": "images/QCOM_2_financials.jpg",
+   "bytes": 255105,
+   "sha256": "395c3c61df460bc0"
+  },
+  {
+   "path": "images/QCOM_2_financials.png",
+   "bytes": 178754,
+   "sha256": "75889999b4dd8c80"
+  },
+  {
+   "path": "images/QCOM_3_scenarios.jpg",
+   "bytes": 245900,
+   "sha256": "6173a471584b44f3"
+  },
+  {
+   "path": "images/QCOM_3_scenarios.png",
+   "bytes": 167783,
+   "sha256": "c4148e80de663d18"
+  },
+  {
+   "path": "images/QCOM_4_horizons.jpg",
+   "bytes": 228344,
+   "sha256": "f41f94711bbac6d7"
+  },
+  {
+   "path": "images/QCOM_4_horizons.png",
+   "bytes": 158108,
+   "sha256": "82c09f724f19997a"
+  },
+  {
+   "path": "images/QCOM_5_logic_map.jpg",
+   "bytes": 242222,
+   "sha256": "b6fd3b38d6629aac"
+  },
+  {
+   "path": "images/QCOM_5_logic_map.png",
+   "bytes": 211588,
+   "sha256": "d0227a8979701826"
+  },
+  {
+   "path": "summary.json",
+   "bytes": 540,
+   "sha256": "944ec0975485a4b1"
+  }
+ ]
+}

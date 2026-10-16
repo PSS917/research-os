@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title> </title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<style>body{font-family:'Noto Sans CJK SC','Noto Sans',sans-serif;max-width:1100px;margin:auto;padding:24px;line-height:1.6;color:#1b1b1b}table{border-collapse:collapse;font-size:13px;margin:8px 0}td,th{border:1px solid #ccd;padding:4px 8px}th{background:#1F3A5F;color:#fff}img{max-width:100%;border:1px solid #ddd}h1{color:#1F3A5F}h2{border-bottom:2px solid #1F3A5F}abbr{text-decoration:underline dotted #2E86C1;cursor:help}.box30{background:linear-gradient(135deg,#eaf2ff,#f5ecff);border:2px solid #5b8cff;border-radius:14px;padding:6px 18px;margin:14px 0;font-size:16px}.readmap{background:#f6f8fb;border:1px solid #d5dbe6;border-radius:12px;padding:4px 16px;margin:12px 0}.howto{background:#fff8e6;border-left:5px solid #f59e0b;border-radius:8px;padding:2px 14px;margin:6px 0 22px}.quiz{background:#effaf3;border:1px solid #9bd8b1;border-radius:12px;padding:4px 16px}details{margin:8px 0}details.l3{background:#f7f7f9;border:1px dashed #b8c0cc;border-radius:10px;padding:6px 14px}summary{cursor:pointer;font-weight:600;color:#1F3A5F}body{font-size:15.5px}blockquote{background:#f3f6fa;border-left:4px solid #2E86C1;margin:0;padding:6px 12px}</style></head>
+<body>
+<header id="title-block-header">
+<h1 class="title"> </h1>
+</header>
+<h1
+id="美国9月cpi-发布前教学版us-cpi-sep-2026-pre-event-teaching-edition-v20261013-2043-teach">美国9月CPI
+发布前·教学版｜US CPI (Sep 2026) Pre-Event — Teaching Edition
+v20261013-2043-teach</h1>
+<blockquote>
+<p>公布时间：<strong>2026-10-14（周三）20:30 新加坡时间</strong>（美东
+08:30，BLS 官方日程 CONFIRMED）。本版是对已锁定的发布前事件书
+<strong>v20261013-1803</strong>
+的「初学者重写版」，所有数字与原书一致，原书不改动。非投资建议。</p>
+</blockquote>
+<div class="box30">
+<p><strong>⏱ 30秒看懂</strong></p>
+<ol type="1">
+<li><strong>发生什么：</strong>美国明晚公布9月的物价数据（CPI），看美国东西是不是还在快速变贵。</li>
+<li><strong>和我的股票有什么关系：</strong>如果物价比大家猜的更热，美联储可能继续加息，利率上升会让
+ARM、PLTR、RKLB 这类「靠未来赚钱」的高估值股票先跌。</li>
+<li><strong>该看什么/做什么：</strong>只盯一个数：核心CPI月度涨幅。≤0.15%
+偏好消息，0.16–0.24% 正常，≥0.25%
+偏坏消息；公布后用第8节「对答案」。</li>
+</ol>
+</div>
+<div class="readmap">
+<p><strong>🗺 阅读地图</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>你有多少时间</th>
+<th>读哪里</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2 分钟</td>
+<td>只读上面的「30秒看懂」+ 第4节的判断表。</td>
+</tr>
+<tr>
+<td>10 分钟</td>
+<td>再读第1–3节故事和第5节对股票的影响，看图1和图2的「怎么看这张图」。</td>
+</tr>
+<tr>
+<td>30 分钟</td>
+<td>全部读完，展开 L3 专业细节，做第9节自我测验和第10节事后作业。</td>
+</tr>
+</tbody>
+</table>
+<p>层级说明：<strong>L1 故事</strong>（人人能懂）→ <strong>L2
+关键数字</strong>（带解释）→ <strong>L3
+专业细节</strong>（网页可折叠，默认收起）。</p>
+</div>
+<h2 id="发生什么l1-故事">1. 发生什么（L1 故事）</h2>
+<p>美国劳工统计局（BLS）每个月公布一次
+<abbr title="消费者价格指数：一篮子日常消费品和服务的价格，用来量通胀｜Consumer Price Index｜比喻：像公司的「采购成本指数」——同样的东西今年比去年贵了多少">CPI</abbr>（Consumer
+Price
+Index：消费者价格指数：一篮子日常消费品和服务的价格，用来量通胀）。明晚公布的是9月的数据。我们最关心的是
+<abbr title="剔除食品和能源后的CPI，波动小，更能看出通胀的「底色」｜Core CPI｜比喻：像扣除一次性项目后的「经常性费用」">核心CPI</abbr>（Core
+CPI：剔除食品和能源后的CPI，波动小，更能看出通胀的「底色」），因为它去掉了油价、菜价这些忽上忽下的项目，更能看出物价上涨的「底色」。</p>
+<p><strong>用你熟悉的方式理解：</strong>把美国经济想成一家公司。CPI
+就是这家公司的「采购成本指数」。美联储是财务总监，目标是让成本每年只涨
+2%。如果成本涨得太快，财务总监就会提高「资金成本」（<abbr title="美联储提高政策利率，借钱变贵｜rate hike｜比喻：银行贷款利率上调，项目融资成本上升">加息</abbr>（rate
+hike：美联储提高政策利率，借钱变贵）），让大家少花钱。</p>
+<h2 id="市场在猜什么l2-关键数字">2. 市场在猜什么（L2 关键数字）</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>指标</th>
+<th>上个月（8月）实际</th>
+<th>这次
+<abbr title="分析师预测的平均值，代表「市场在猜的数」｜consensus｜比喻：像集团给你的预算数">共识</abbr>（consensus：分析师预测的平均值，代表「市场在猜的数」）</th>
+<th>我们的猜测</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核心CPI
+<abbr title="和上个月比的变化｜month-over-month, MoM｜比喻：像本月费用 vs 上月费用">环比</abbr>（month-over-month,
+MoM：和上个月比的变化）</td>
+<td>0.3%（精确 0.29%）</td>
+<td><strong>0.2%</strong></td>
+<td>0.22%</td>
+</tr>
+<tr>
+<td>核心CPI
+<abbr title="和去年同月比的变化｜year-over-year, YoY｜比喻：像今年9月 vs 去年9月的同期对比">同比</abbr>（year-over-year,
+YoY：和去年同月比的变化）</td>
+<td>2.4%</td>
+<td>2.5%（FactSet 为 2.4%）</td>
+<td>2.4%</td>
+</tr>
+<tr>
+<td>整体CPI 环比</td>
+<td>0.4%</td>
+<td>0.6%（FactSet 0.5%）</td>
+<td>0.58%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>财务经理视角：</strong>共识就是「预算」，公布值就是「实际」。实际
+− 预算 =
+<abbr title="实际值减去共识，正数=比预期热｜surprise / expectation gap｜比喻：实际 vs 预算的差异（variance）">预期差</abbr>（surprise
+/ expectation
+gap：实际值减去共识，正数=比预期热）（variance）。市场只对「差异」反应，不对数字本身反应——就像老板只问你「为什么超支」，不问「花了多少」。</p>
+<p><strong>为什么这次重要：</strong>这是 10/27–28
+美联储会议（<abbr title="美联储决定利率的会议｜Federal Open Market Committee｜比喻：像董事会定「全公司的资金成本」">FOMC</abbr>（Federal
+Open Market
+Committee：美联储决定利率的会议））前最后一份通胀数据。美联储9月已经加过一次息；目前市场认为10月再加息的概率约
+20%（Kalshi，10/13，来源见原书）。</p>
+<details class="l3">
+<summary>
+L3 专业细节：为什么我们略高于共识（点击展开）
+</summary>
+<p>投行预测集中在 0.16–0.20%（德银 0.16%、富国 0.20%）。我们给
+0.22%，因为认为住房、医疗服务回升以及航油传导到机票被低估约 0.02–0.04
+个百分点（HYPOTHESIS）。差距只有
+0.02pp，基本是噪声——真正的看点是分项结构（<abbr title="核心服务剔除住房，与工资最相关、最「黏」｜supercore｜比喻：像人工成本——一旦涨上去很难降">超级核心</abbr>（supercore：核心服务剔除住房，与工资最相关、最「黏」）、<abbr title="业主等价租金：估算自住房「如果出租能收多少」，约占CPI三分之一｜Owners&#x27; Equivalent Rent｜比喻：像自用办公楼的「内部租金」分摊">OER</abbr>（Owners’
+Equivalent
+Rent：业主等价租金：估算自住房「如果出租能收多少」，约占CPI三分之一））。若核心
++0.22%，三个月年化会升到约 2.9%，因为6月的 −0.02% 移出了窗口。</p>
+</details>
+<h2 id="我们怎么想l1l2">3. 我们怎么想（L1→L2）</h2>
+<p>我们的基本判断：<strong>大概率「符合预期」（50%）</strong>，偏冷和偏热各
+25%。见图3。</p>
+<figure>
+<img src="images/T3_三种剧本.png" alt="三种剧本" />
+<figcaption aria-hidden="true">三种剧本</figcaption>
+</figure>
+<div class="howto">
+<p><strong>📊 怎么看这张图</strong></p>
+<ul>
+<li><strong>坐标/颜色：</strong>三个方框是三种剧本，颜色：绿=偏冷（对股票友好），蓝=符合，红=偏热（对股票不友好）；下方箭头是因果方向。</li>
+<li><strong>只记住一件事：</strong>最可能是中间的「符合」，市场注意力会转向
+10/28 的美联储会议。</li>
+<li><strong>什么会改变结论：</strong>如果核心CPI
+≥0.25%（红框），我们会预期利率上升、高估值股下跌；若公布后不是这样，就说明市场在交易别的东西（见第7节）。</li>
+</ul>
+</div>
+<h2 id="公布时看什么带数字例子">4. 公布时看什么（带数字例子）</h2>
+<p><strong>只看一个数：核心CPI环比，看到小数点后两位。</strong></p>
+<table>
+<thead>
+<tr>
+<th>公布的核心环比</th>
+<th>意思</th>
+<th>对股票的大方向</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>≤0.15%</td>
+<td>偏冷：通胀在降温</td>
+<td>利率↓，成长股↑</td>
+</tr>
+<tr>
+<td>0.16–0.24%</td>
+<td>符合预期</td>
+<td>小波动，看后续新闻</td>
+</tr>
+<tr>
+<td>≥0.25%</td>
+<td>偏热：通胀还在跑</td>
+<td>利率↑，高估值股↓</td>
+</tr>
+</tbody>
+</table>
+<h3
+id="带符号的数字例题如果核心是-0.3意味着什么">带符号的数字例题（如果核心是
+0.3%，意味着什么？）</h3>
+<p>符号定义： - <strong>I₀</strong> = 8月核心CPI指数 =
+<strong>337.765</strong>（FRED，BLS 数据） - <strong>m</strong> =
+9月核心环比涨幅（假设为 0.3%，这是举例，不是预测） - <strong>I₁</strong>
+= 9月核心CPI指数 = I₀ × (1 + m) - <strong>I₋₁₂</strong> =
+去年9月核心CPI指数 = <strong>330.418</strong>（FRED） -
+<strong>Y</strong> = 同比 = I₁ ÷ I₋₁₂ − 1</p>
+<p>计算： 1. I₁ = 337.765 × 1.003 = <strong>338.778</strong> 2. Y =
+338.778 ÷ 330.418 − 1 = <strong>2.53%</strong>（高于共识 2.5%） 3.
+<abbr title="把一个月的涨幅按12个月复利放大成一年的速度｜annualized｜比喻：月度超支0.1%，全年就是约1.2%的超支">年化</abbr>（annualized：把一个月的涨幅按12个月复利放大成一年的速度）：(1.003)¹²
+− 1 = <strong>3.7%</strong>，几乎是美联储 2% 目标的两倍。</p>
+<p><strong>预算差异的说法：</strong>预算（共识）0.2%，实际
+0.3%，不利差异 0.1pp/月；年化后相当于每年多出约 1.2pp
+的通胀——这就是市场会紧张的原因。</p>
+<h3 id="对股票的数字例题">对股票的数字例题</h3>
+<ul>
+<li><strong>β</strong> =
+<abbr title="10年期利率每升0.1个百分点，股票平均同日涨跌多少｜rate sensitivity (beta to 10Y)｜比喻：像汇率敏感度：汇率动1%，利润动多少">利率敏感度</abbr>（rate
+sensitivity (beta to
+10Y)：10年期利率每升0.1个百分点，股票平均同日涨跌多少）（ARM 约 −2.56% /
+每 +0.1pp 10年期利率，统计平均，见图2）</li>
+<li><strong>Δr</strong> = 10年期利率变化（假设偏热时 +0.08pp，即
++8bp，来自原书情景区间）</li>
+<li>预期影响 ≈ β × (Δr ÷ 0.1) = −2.56% × 0.8 ≈ <strong>−2.0%</strong> ⚠
+这只是平均关系（R² 约
+0.1，意思是利率只能解释约一成的日波动），当天公司新闻可能完全盖过它。</li>
+</ul>
+<h2 id="对哪些股票有什么影响为什么">5.
+对哪些股票有什么影响？为什么？</h2>
+<p><strong>一句话原理：</strong>股票的价值 = 未来现金流 ÷
+折现。利率是「折现率」的地基（<abbr title="把未来的钱换算成今天的钱时用的利率｜discount rate / WACC｜比喻：像你评估投资项目时的门槛回报率（hurdle rate）">折现率</abbr>（discount
+rate / WACC：把未来的钱换算成今天的钱时用的利率））。利率上升 →
+未来的钱在今天更不值钱 → 「靠很远未来赚钱」的公司受伤最大。</p>
+<figure>
+<img src="images/T2_利率敏感度_annotated.png" alt="利率敏感度" />
+<figcaption aria-hidden="true">利率敏感度</figcaption>
+</figure>
+<div class="howto">
+<p><strong>📊 怎么看这张图</strong></p>
+<ul>
+<li><strong>坐标/颜色：</strong>横轴是「10年期美债收益率每上升 0.1
+个百分点时，股价当天平均跌多少」，越往左越怕利率；红色=个股，灰色=指数。</li>
+<li><strong>只记住一件事：</strong>CCL、ARM、SPCX、MRVL、RKLB
+对利率最敏感，大约是纳指的 3–4 倍。</li>
+<li><strong>什么会改变结论：</strong>这是过去一年的平均关系；如果某天有公司自己的大新闻（例如
+MU 的存储扩产担忧），利率的影响会被盖过。</li>
+</ul>
+</div>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>股票</th>
+<th>为什么受影响</th>
+<th>偏热时</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ARM、PLTR、RKLB、TSLA</td>
+<td><abbr title="反向DCF算出的、现价已经「默认」的增长率｜price-implied growth｜比喻：像售价已经把未来涨价预期算进去了">价格隐含增速</abbr>（price-implied
+growth：反向DCF算出的、现价已经「默认」的增长率）远高于分析师预期（例如
+RKLB 价格隐含首年增速 115% vs 共识 41%，见 OS
+模型），属于「长久期」资产</td>
+<td>压力最大</td>
+</tr>
+<tr>
+<td>CCL（邮轮）</td>
+<td>同时受油价和消费者实际收入影响</td>
+<td>敏感度最高</td>
+</tr>
+<tr>
+<td>EME、PWR、CRWV</td>
+<td>数据中心项目要借钱，长期利率影响融资成本</td>
+<td>中等</td>
+</tr>
+<tr>
+<td>MU、SIMO</td>
+<td>近期主因是中国存储扩产（CXMT），<strong>不是</strong> CPI</td>
+<td>别把下跌全怪 CPI</td>
+</tr>
+<tr>
+<td>TSM</td>
+<td>CPI 定情绪，10/15 14:00 SGT 就开业绩会</td>
+<td>看业绩更重要</td>
+</tr>
+</tbody>
+</table>
+<h2 id="图核心通胀每个月涨多少">6. 图：核心通胀每个月涨多少</h2>
+<figure>
+<img src="images/T1_核心CPI月度_annotated.png" alt="核心CPI月度" />
+<figcaption aria-hidden="true">核心CPI月度</figcaption>
+</figure>
+<div class="howto">
+<p><strong>📊 怎么看这张图</strong></p>
+<ul>
+<li><strong>坐标/颜色：</strong>柱子=每个月核心CPI涨了多少（%）；绿区=偏冷，红区=偏热，黑色虚线=每月约
+0.165%，相当于一年 2% 的目标；最右边虚线框=这次的共识 0.2%。</li>
+<li><strong>只记住一件事：</strong>8月已经在红区（0.29%），市场希望9月回到
+0.2% 左右。</li>
+<li><strong>什么会改变结论：</strong>如果9月又在红区，就是连续两个月偏热，「通胀卷土重来」的说法会变强。注：2025年10月数据因政府停摆缺失，图中不画该月，避免错位。</li>
+</ul>
+</div>
+<h2
+id="我们可能错在哪证伪条件falsifier一旦出现就说明我们看错了的信号">7.
+我们可能错在哪（<abbr title="一旦出现就说明我们看错了的信号｜falsifier｜比喻：像预警指标：触发就要重新做预测">证伪条件</abbr>（falsifier：一旦出现就说明我们看错了的信号））</h2>
+<ol type="1">
+<li>核心 ≥0.25% 但 10 年期利率反而下跌 →
+市场在担心经济变差，而不是通胀；我们的「偏热→利率升→科技跌」逻辑当天失效。</li>
+<li>核心 ≤0.15% 但半导体还跌超 1.5% → 半导体由行业新闻驱动（存储供给、AI
+资本成本），不是利率。</li>
+<li>我们 0.22% 的猜测可能只是「锚定」了8月的 0.29%；投行集中在
+0.16–0.20%。</li>
+<li>10 年期利率在 5.2% 以上更多反映财政和期限溢价，即使 CPI
+偏冷，长端利率也可能不降。</li>
+</ol>
+<h2 id="事后对答案公布后填写">8. 事后对答案（公布后填写）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>共识</th>
+<th>我们</th>
+<th>实际</th>
+<th>差异（实际−共识）</th>
+<th>我们对了吗</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核心环比</td>
+<td>0.2%</td>
+<td>0.22%</td>
+<td>____</td>
+<td>____</td>
+<td>____</td>
+</tr>
+<tr>
+<td>核心同比</td>
+<td>2.5%</td>
+<td>2.4%</td>
+<td>____</td>
+<td>____</td>
+<td>____</td>
+</tr>
+<tr>
+<td>2年期利率首15分钟</td>
+<td>—</td>
+<td>见剧本</td>
+<td>____</td>
+<td>—</td>
+<td>____</td>
+</tr>
+<tr>
+<td>NDX / SOX 收盘</td>
+<td>—</td>
+<td>见剧本</td>
+<td>____</td>
+<td>—</td>
+<td>____</td>
+</tr>
+</tbody>
+</table>
+<p>误差分类（选一）：基本面预测错 / 市场预期定价错 / 市场反应判断错 /
+时机错 / 概率校准错。</p>
+<div class="quiz">
+<p><strong>✅ 自我测验 Check your understanding</strong></p>
+<details>
+<summary>
+Q1. 共识是 0.2%，实际 0.3%，这对股票通常是好消息还是坏消息？为什么？
+</summary>
+<p><strong>答案：</strong>通常是坏消息：比预算（共识）更热 →
+市场预期美联储更鹰 → 利率上升 → 折现率上升 → 高估值股受压。</p>
+</details>
+<details>
+<summary>
+Q2. 为什么看「核心」而不是「整体」CPI？
+</summary>
+<p><strong>答案：</strong>核心去掉了波动很大的食品和能源，更能反映持续的通胀趋势，美联储也更看重它。</p>
+</details>
+<details>
+<summary>
+Q3. ARM 的利率敏感度是 −2.56%/0.1pp。如果 10 年期利率升
+0.05pp，平均影响是多少？
+</summary>
+<p><strong>答案：</strong>−2.56% × 0.5 ≈
+−1.3%。但这是统计平均，当天公司新闻可能完全盖过。</p>
+</details>
+<details>
+<summary>
+Q4. CPI 偏冷，但 MU 还在跌，说明什么？
+</summary>
+<p><strong>答案：</strong>MU
+的驱动可能是行业新闻（例如中国存储扩产），而不是利率——不要错误归因。</p>
+</details>
+<details>
+<summary>
+Q5. 月度 0.3% 为什么「听起来很小」却让市场紧张？
+</summary>
+<p><strong>答案：</strong>年化 (1.003)^12−1 ≈ 3.7%，几乎是 2%
+目标的两倍。</p>
+</details>
+</div>
+<h2 id="事后作业公布后-30-分钟内完成">10. 事后作业（公布后 30
+分钟内完成）</h2>
+<ol type="1">
+<li>把实际值填入第8节表格，计算差异。</li>
+<li>记录 2 年期利率在公布后 15 分钟变动了多少
+bp，判断属于哪个剧本。</li>
+<li>看图2中的 5
+只股票当天涨跌，是否符合「越敏感跌越多」？不符合的写下你认为的原因。</li>
+<li>用一句话写：「这次我学到了什么？」——会进入下一份每日 OS
+更新的学习记录。</li>
+</ol>
+<h2 id="术语表-glossary鼠标悬停正文中带下划线的词也可看到解释">11.
+术语表 Glossary（鼠标悬停正文中带下划线的词也可看到解释）</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>术语</th>
+<th>白话意思</th>
+<th>English</th>
+<th>生活/财务比喻</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPI</td>
+<td>消费者价格指数：一篮子日常消费品和服务的价格，用来量通胀</td>
+<td>Consumer Price Index</td>
+<td>像公司的「采购成本指数」——同样的东西今年比去年贵了多少</td>
+</tr>
+<tr>
+<td>核心CPI</td>
+<td>剔除食品和能源后的CPI，波动小，更能看出通胀的「底色」</td>
+<td>Core CPI</td>
+<td>像扣除一次性项目后的「经常性费用」</td>
+</tr>
+<tr>
+<td>加息</td>
+<td>美联储提高政策利率，借钱变贵</td>
+<td>rate hike</td>
+<td>银行贷款利率上调，项目融资成本上升</td>
+</tr>
+<tr>
+<td>共识</td>
+<td>分析师预测的平均值，代表「市场在猜的数」</td>
+<td>consensus</td>
+<td>像集团给你的预算数</td>
+</tr>
+<tr>
+<td>环比</td>
+<td>和上个月比的变化</td>
+<td>month-over-month, MoM</td>
+<td>像本月费用 vs 上月费用</td>
+</tr>
+<tr>
+<td>同比</td>
+<td>和去年同月比的变化</td>
+<td>year-over-year, YoY</td>
+<td>像今年9月 vs 去年9月的同期对比</td>
+</tr>
+<tr>
+<td>预期差</td>
+<td>实际值减去共识，正数=比预期热</td>
+<td>surprise / expectation gap</td>
+<td>实际 vs 预算的差异（variance）</td>
+</tr>
+<tr>
+<td>FOMC</td>
+<td>美联储决定利率的会议</td>
+<td>Federal Open Market Committee</td>
+<td>像董事会定「全公司的资金成本」</td>
+</tr>
+<tr>
+<td>超级核心</td>
+<td>核心服务剔除住房，与工资最相关、最「黏」</td>
+<td>supercore</td>
+<td>像人工成本——一旦涨上去很难降</td>
+</tr>
+<tr>
+<td>OER</td>
+<td>业主等价租金：估算自住房「如果出租能收多少」，约占CPI三分之一</td>
+<td>Owners’ Equivalent Rent</td>
+<td>像自用办公楼的「内部租金」分摊</td>
+</tr>
+<tr>
+<td>年化</td>
+<td>把一个月的涨幅按12个月复利放大成一年的速度</td>
+<td>annualized</td>
+<td>月度超支0.1%，全年就是约1.2%的超支</td>
+</tr>
+<tr>
+<td>利率敏感度</td>
+<td>10年期利率每升0.1个百分点，股票平均同日涨跌多少</td>
+<td>rate sensitivity (beta to 10Y)</td>
+<td>像汇率敏感度：汇率动1%，利润动多少</td>
+</tr>
+<tr>
+<td>折现率</td>
+<td>把未来的钱换算成今天的钱时用的利率</td>
+<td>discount rate / WACC</td>
+<td>像你评估投资项目时的门槛回报率（hurdle rate）</td>
+</tr>
+<tr>
+<td>价格隐含增速</td>
+<td>反向DCF算出的、现价已经「默认」的增长率</td>
+<td>price-implied growth</td>
+<td>像售价已经把未来涨价预期算进去了</td>
+</tr>
+<tr>
+<td>证伪条件</td>
+<td>一旦出现就说明我们看错了的信号</td>
+<td>falsifier</td>
+<td>像预警指标：触发就要重新做预测</td>
+</tr>
+</tbody>
+</table>
+<h2 id="来源与模型溯源">12. 来源与模型溯源</h2>
+<ul>
+<li>共识、我们的预测、情景概率、利率敏感度回归、Kalshi
+概率：全部来自发布前事件书 <strong>v20261013-1803</strong>（Source
+Ledger 与 Assumption Register 见该版本 Excel）。</li>
+<li>核心CPI指数与月度涨幅：FRED CPILFESL（BLS），数据快照
+20261013-1812。</li>
+<li>价格隐含增速：OS 公司模型 v20261013-1812（反向DCF）。</li>
+<li>本版只改写表达方式，不新增预测。</li>
+</ul>
+<hr />
+<h1 id="english-summary-beginner">English summary (beginner)</h1>
+<p><strong>30-second read:</strong> US September CPI is out Oct 14,
+20:30 SGT. If core CPI is hotter than the 0.2% consensus, rate-hike
+fears rise and long-duration, high-valuation stocks (ARM, PLTR, RKLB)
+tend to fall first. Watch one number: core CPI month-over-month — ≤0.15%
+cool, 0.16–0.24% inline, ≥0.25% hot. <strong>Finance-manager
+lens:</strong> consensus = budget, actual = actual, the market trades
+the variance. <strong>Worked example:</strong> if core m/m = 0.3%, index
+337.765 → 338.778, YoY 2.53%, annualized 3.7% (≈2× the Fed’s 2% target).
+ARM’s rate beta −2.56% per +10bp × 0.8 ≈ −2.0% (statistical average, low
+R²). <strong>Where we could be wrong:</strong> hot print but falling 10Y
+(growth scare); semis driven by industry news, not rates; our 0.22% may
+be anchored on August.</p>
+</body>
+</html>

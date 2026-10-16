@@ -1,0 +1,46 @@
+{
+ "release": "daily_v20261016-0756",
+ "generated": "2026-10-16T07:59:48.545932",
+ "files": [
+  {
+   "path": "daily_2026-10-16_v20261016-0756.docx",
+   "bytes": 228640,
+   "sha256": "5e985ee43a50fde7"
+  },
+  {
+   "path": "daily_2026-10-16_v20261016-0756.html",
+   "bytes": 12691,
+   "sha256": "319a4906c35e42cc"
+  },
+  {
+   "path": "daily_2026-10-16_v20261016-0756.md",
+   "bytes": 4747,
+   "sha256": "89e7dbd6100fb8f8"
+  },
+  {
+   "path": "daily_2026-10-16_v20261016-0756.pdf",
+   "bytes": 545271,
+   "sha256": "2e08f3cbdb6ac9aa"
+  },
+  {
+   "path": "images/daily_movers.jpg",
+   "bytes": 295682,
+   "sha256": "4216a2e0e45d5190"
+  },
+  {
+   "path": "images/daily_movers.png",
+   "bytes": 136561,
+   "sha256": "dd8bb1b16fd8590c"
+  },
+  {
+   "path": "images/daily_valuation.jpg",
+   "bytes": 283253,
+   "sha256": "9c6ccdcd61aa2e0e"
+  },
+  {
+   "path": "images/daily_valuation.png",
+   "bytes": 137313,
+   "sha256": "3bffdb3d9012d3ba"
+  }
+ ]
+}

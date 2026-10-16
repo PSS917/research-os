@@ -1,0 +1,106 @@
+{
+ "release": "ARM_v20261015-0757",
+ "generated": "2026-10-15T07:58:44.828106",
+ "files": [
+  {
+   "path": "ARM_model_v20261015-0757.xlsx",
+   "bytes": 35789,
+   "sha256": "440cbf33b0e1b5fc"
+  },
+  {
+   "path": "ARM_report_v20261015-0757.docx",
+   "bytes": 826400,
+   "sha256": "de008d1bf66f8a6f"
+  },
+  {
+   "path": "ARM_report_v20261015-0757.html",
+   "bytes": 30252,
+   "sha256": "0378b2a20fd46fef"
+  },
+  {
+   "path": "ARM_report_v20261015-0757.md",
+   "bytes": 17142,
+   "sha256": "a6833de85235bc5e"
+  },
+  {
+   "path": "ARM_report_v20261015-0757.pdf",
+   "bytes": 1111800,
+   "sha256": "d0ba65882a3768c2"
+  },
+  {
+   "path": "ARM_teaching_v20261015-0757.docx",
+   "bytes": 197005,
+   "sha256": "b262a11d72e05344"
+  },
+  {
+   "path": "ARM_teaching_v20261015-0757.html",
+   "bytes": 10340,
+   "sha256": "54519080c41febfd"
+  },
+  {
+   "path": "ARM_teaching_v20261015-0757.md",
+   "bytes": 4563,
+   "sha256": "0b6cb38846b78664"
+  },
+  {
+   "path": "ARM_teaching_v20261015-0757.pdf",
+   "bytes": 250319,
+   "sha256": "ca92f13a464d2f3b"
+  },
+  {
+   "path": "images/ARM_1_price_vs_value.jpg",
+   "bytes": 288120,
+   "sha256": "464fed9803000270"
+  },
+  {
+   "path": "images/ARM_1_price_vs_value.png",
+   "bytes": 217967,
+   "sha256": "e4da38a223147cf3"
+  },
+  {
+   "path": "images/ARM_2_financials.jpg",
+   "bytes": 261076,
+   "sha256": "5ed4e41efe755ce1"
+  },
+  {
+   "path": "images/ARM_2_financials.png",
+   "bytes": 193365,
+   "sha256": "e66389804ba0e3ec"
+  },
+  {
+   "path": "images/ARM_3_scenarios.jpg",
+   "bytes": 243568,
+   "sha256": "9e27b8b161f66324"
+  },
+  {
+   "path": "images/ARM_3_scenarios.png",
+   "bytes": 162618,
+   "sha256": "de9016a2ed17bfb8"
+  },
+  {
+   "path": "images/ARM_4_horizons.jpg",
+   "bytes": 224638,
+   "sha256": "d8886b643e26360f"
+  },
+  {
+   "path": "images/ARM_4_horizons.png",
+   "bytes": 160770,
+   "sha256": "b1a58b501206487d"
+  },
+  {
+   "path": "images/ARM_5_logic_map.jpg",
+   "bytes": 243328,
+   "sha256": "bdec9a7c27437bca"
+  },
+  {
+   "path": "images/ARM_5_logic_map.png",
+   "bytes": 212075,
+   "sha256": "d47057fc3c50138a"
+  },
+  {
+   "path": "summary.json",
+   "bytes": 510,
+   "sha256": "5ecce5877273f2af"
+  }
+ ]
+}

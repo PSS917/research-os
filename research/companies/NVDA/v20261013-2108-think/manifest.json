@@ -1,0 +1,111 @@
+{
+ "release": "NVDA_v20261013-2108-think",
+ "generated": "2026-10-13T21:09:43.118552",
+ "files": [
+  {
+   "path": "NVDA_Thinking_v20261013-2108-think.docx",
+   "bytes": 375146,
+   "sha256": "d6bcbf08a37ad431"
+  },
+  {
+   "path": "NVDA_Thinking_v20261013-2108-think.html",
+   "bytes": 19505,
+   "sha256": "bfd7b057b3a26f3e"
+  },
+  {
+   "path": "NVDA_Thinking_v20261013-2108-think.md",
+   "bytes": 11067,
+   "sha256": "82c58d6820280659"
+  },
+  {
+   "path": "NVDA_Thinking_v20261013-2108-think.pdf",
+   "bytes": 716254,
+   "sha256": "cd002d8eca79c334"
+  },
+  {
+   "path": "NVDA_model_v20261013-2108-think.xlsx",
+   "bytes": 35966,
+   "sha256": "942fe984dd290ae3"
+  },
+  {
+   "path": "images/NVDA_1_price_vs_value.jpg",
+   "bytes": 280801,
+   "sha256": "4bfa80f67238221e"
+  },
+  {
+   "path": "images/NVDA_1_price_vs_value.png",
+   "bytes": 182314,
+   "sha256": "e3608986d1483dc5"
+  },
+  {
+   "path": "images/NVDA_2_financials.jpg",
+   "bytes": 239759,
+   "sha256": "c8fa6688504d6a50"
+  },
+  {
+   "path": "images/NVDA_2_financials.png",
+   "bytes": 180161,
+   "sha256": "01e1cdd4464233cc"
+  },
+  {
+   "path": "images/NVDA_3_scenarios.jpg",
+   "bytes": 260442,
+   "sha256": "8fee75acb2d89beb"
+  },
+  {
+   "path": "images/NVDA_3_scenarios.png",
+   "bytes": 168479,
+   "sha256": "3cf27bb57ab14a79"
+  },
+  {
+   "path": "images/NVDA_4_horizons.jpg",
+   "bytes": 229279,
+   "sha256": "7d817562f709f686"
+  },
+  {
+   "path": "images/NVDA_4_horizons.png",
+   "bytes": 174046,
+   "sha256": "24e0ca4f5ae29255"
+  },
+  {
+   "path": "images/NVDA_5_logic_map.jpg",
+   "bytes": 241897,
+   "sha256": "794e563b3e2f26d0"
+  },
+  {
+   "path": "images/NVDA_5_logic_map.png",
+   "bytes": 211846,
+   "sha256": "403df0e24128335b"
+  },
+  {
+   "path": "images/T1_\u5229\u6da6\u7387\u5468\u671f_annotated.jpg",
+   "bytes": 164626,
+   "sha256": "e3986076610e3c54"
+  },
+  {
+   "path": "images/T1_\u5229\u6da6\u7387\u5468\u671f_annotated.png",
+   "bytes": 121707,
+   "sha256": "fe41710eb796d5a8"
+  },
+  {
+   "path": "images/T2_\u53cd\u5411DCF_annotated.jpg",
+   "bytes": 172777,
+   "sha256": "08e6f813b7f3f0be"
+  },
+  {
+   "path": "images/T2_\u53cd\u5411DCF_annotated.png",
+   "bytes": 124234,
+   "sha256": "d41544dc6ed7afb7"
+  },
+  {
+   "path": "images/T3_\u5386\u53f2\u56de\u64a4_annotated.jpg",
+   "bytes": 181825,
+   "sha256": "5b6645a40636e962"
+  },
+  {
+   "path": "images/T3_\u5386\u53f2\u56de\u64a4_annotated.png",
+   "bytes": 164964,
+   "sha256": "96648d6b23868672"
+  }
+ ]
+}

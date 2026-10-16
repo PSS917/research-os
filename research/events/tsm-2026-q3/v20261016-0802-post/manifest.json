@@ -1,0 +1,146 @@
+{
+ "release": "TSM_Q3_2026_PostEvent_v20261016-0802-post",
+ "generated": "2026-10-16T08:02:36.886504",
+ "files": [
+  {
+   "path": "CHANGELOG_v20261016-0802-post.docx",
+   "bytes": 10940,
+   "sha256": "9f03b1eb03969d6c"
+  },
+  {
+   "path": "CHANGELOG_v20261016-0802-post.html",
+   "bytes": 5566,
+   "sha256": "e27d152d9fc6f5c1"
+  },
+  {
+   "path": "CHANGELOG_v20261016-0802-post.md",
+   "bytes": 414,
+   "sha256": "5788619bdd90560c"
+  },
+  {
+   "path": "CHANGELOG_v20261016-0802-post.pdf",
+   "bytes": 19709,
+   "sha256": "53452e3ef360fa22"
+  },
+  {
+   "path": "POST_EVENT_RESULT_v20261016-0802-post.json",
+   "bytes": 2345,
+   "sha256": "ec26b0ce168216d0"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.docx",
+   "bytes": 37440,
+   "sha256": "9c01678155bbaad0"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.html",
+   "bytes": 54561,
+   "sha256": "88f4876649057b7f"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.md",
+   "bytes": 40981,
+   "sha256": "cf3b97283381c2fe"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.pdf",
+   "bytes": 579706,
+   "sha256": "faf8294bf8c9d537"
+  },
+  {
+   "path": "TSM_Q3_2026_PostEvent_EN_v20261016-0802-post.docx",
+   "bytes": 12706,
+   "sha256": "662d80b261e12e02"
+  },
+  {
+   "path": "TSM_Q3_2026_PostEvent_EN_v20261016-0802-post.html",
+   "bytes": 8696,
+   "sha256": "83491a4ba9db789c"
+  },
+  {
+   "path": "TSM_Q3_2026_PostEvent_EN_v20261016-0802-post.md",
+   "bytes": 2996,
+   "sha256": "e7bc4e68b95e095a"
+  },
+  {
+   "path": "TSM_Q3_2026_PostEvent_EN_v20261016-0802-post.pdf",
+   "bytes": 54375,
+   "sha256": "32a4194b089197bf"
+  },
+  {
+   "path": "TSM_Q3_2026_PostEvent_ZH_v20261016-0802-post.docx",
+   "bytes": 584113,
+   "sha256": "c8d2f33f31bf5fa2"
+  },
+  {
+   "path": "TSM_Q3_2026_PostEvent_ZH_v20261016-0802-post.html",
+   "bytes": 25214,
+   "sha256": "8826c10cd9b8a0dd"
+  },
+  {
+   "path": "TSM_Q3_2026_PostEvent_ZH_v20261016-0802-post.md",
+   "bytes": 15189,
+   "sha256": "60f9e515537e31fb"
+  },
+  {
+   "path": "TSM_Q3_2026_PostEvent_ZH_v20261016-0802-post.pdf",
+   "bytes": 1113941,
+   "sha256": "bf63f45a97fc8ef5"
+  },
+  {
+   "path": "TSM_Q3_2026_PostEvent_model_v20261016-0802-post.xlsx",
+   "bytes": 10719,
+   "sha256": "9d13e4b1945a9c77"
+  },
+  {
+   "path": "images/01_scorecard.jpg",
+   "bytes": 230246,
+   "sha256": "4b2280f81c0d213f"
+  },
+  {
+   "path": "images/01_scorecard.png",
+   "bytes": 177998,
+   "sha256": "eeee67a3b8dd2f3e"
+  },
+  {
+   "path": "images/02_revenue_path_guide.jpg",
+   "bytes": 150887,
+   "sha256": "c87438cec28339ea"
+  },
+  {
+   "path": "images/02_revenue_path_guide.png",
+   "bytes": 112087,
+   "sha256": "2e94c9d6ae076f64"
+  },
+  {
+   "path": "images/03_reaction.jpg",
+   "bytes": 160284,
+   "sha256": "bde7d5d81c672466"
+  },
+  {
+   "path": "images/03_reaction.png",
+   "bytes": 108968,
+   "sha256": "4fb37bb99efc6780"
+  },
+  {
+   "path": "images/04_calibration.jpg",
+   "bytes": 150902,
+   "sha256": "7a354d0a164f4ce3"
+  },
+  {
+   "path": "images/04_calibration.png",
+   "bytes": 114354,
+   "sha256": "e02b4f0b31336668"
+  },
+  {
+   "path": "images/05_chain_postmortem.jpg",
+   "bytes": 162149,
+   "sha256": "bf5d72a1c4c778d6"
+  },
+  {
+   "path": "images/05_chain_postmortem.png",
+   "bytes": 152850,
+   "sha256": "317ef450e69ad5f6"
+  }
+ ]
+}

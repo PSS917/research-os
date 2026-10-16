@@ -1,0 +1,26 @@
+{
+ "release": "events_v20261013-1622",
+ "generated": "2026-10-13T16:25:23.069633",
+ "files": [
+  {
+   "path": "event_calendar_v20261013-1622.docx",
+   "bytes": 14445,
+   "sha256": "c04a5bd0a5c87342"
+  },
+  {
+   "path": "event_calendar_v20261013-1622.html",
+   "bytes": 15047,
+   "sha256": "2adf845cf7146884"
+  },
+  {
+   "path": "event_calendar_v20261013-1622.md",
+   "bytes": 8133,
+   "sha256": "3161fd807f7194c3"
+  },
+  {
+   "path": "event_calendar_v20261013-1622.pdf",
+   "bytes": 221965,
+   "sha256": "2c3c9f2ac1ce1775"
+  }
+ ]
+}

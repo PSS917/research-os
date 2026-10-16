@@ -1,0 +1,106 @@
+{
+ "release": "TSM_v20261016-0756",
+ "generated": "2026-10-16T07:58:20.095328",
+ "files": [
+  {
+   "path": "TSM_model_v20261016-0756.xlsx",
+   "bytes": 36071,
+   "sha256": "c254c8fb8ee1e479"
+  },
+  {
+   "path": "TSM_report_v20261016-0756.docx",
+   "bytes": 809931,
+   "sha256": "a77d4d2f9689c360"
+  },
+  {
+   "path": "TSM_report_v20261016-0756.html",
+   "bytes": 30874,
+   "sha256": "4b7ad6cfe1c0a66f"
+  },
+  {
+   "path": "TSM_report_v20261016-0756.md",
+   "bytes": 17690,
+   "sha256": "ad186bcf1b927cb5"
+  },
+  {
+   "path": "TSM_report_v20261016-0756.pdf",
+   "bytes": 1127791,
+   "sha256": "bf8d8f2851675ab3"
+  },
+  {
+   "path": "TSM_teaching_v20261016-0756.docx",
+   "bytes": 195066,
+   "sha256": "4ce4f187eaf2c9bc"
+  },
+  {
+   "path": "TSM_teaching_v20261016-0756.html",
+   "bytes": 10596,
+   "sha256": "11d4317f5c9ad109"
+  },
+  {
+   "path": "TSM_teaching_v20261016-0756.md",
+   "bytes": 4819,
+   "sha256": "9adfde9e3269240d"
+  },
+  {
+   "path": "TSM_teaching_v20261016-0756.pdf",
+   "bytes": 257242,
+   "sha256": "9259126f4c81ea4d"
+  },
+  {
+   "path": "images/TSM_1_price_vs_value.jpg",
+   "bytes": 283100,
+   "sha256": "df3947d204abfbc7"
+  },
+  {
+   "path": "images/TSM_1_price_vs_value.png",
+   "bytes": 206723,
+   "sha256": "e0ee231bfde8c1db"
+  },
+  {
+   "path": "images/TSM_2_financials.jpg",
+   "bytes": 253175,
+   "sha256": "3ed3a58b691a971a"
+  },
+  {
+   "path": "images/TSM_2_financials.png",
+   "bytes": 179137,
+   "sha256": "0a516e6894e25c32"
+  },
+  {
+   "path": "images/TSM_3_scenarios.jpg",
+   "bytes": 247198,
+   "sha256": "b2de483c329e720b"
+  },
+  {
+   "path": "images/TSM_3_scenarios.png",
+   "bytes": 165865,
+   "sha256": "78fccf688c253f3a"
+  },
+  {
+   "path": "images/TSM_4_horizons.jpg",
+   "bytes": 234093,
+   "sha256": "95cf072d9fd949a8"
+  },
+  {
+   "path": "images/TSM_4_horizons.png",
+   "bytes": 168949,
+   "sha256": "a0fe390d9081d1b2"
+  },
+  {
+   "path": "images/TSM_5_logic_map.jpg",
+   "bytes": 241702,
+   "sha256": "6d33c3d187bf44e5"
+  },
+  {
+   "path": "images/TSM_5_logic_map.png",
+   "bytes": 210225,
+   "sha256": "6359c76945396a64"
+  },
+  {
+   "path": "summary.json",
+   "bytes": 572,
+   "sha256": "43a36bcec0775a81"
+  }
+ ]
+}

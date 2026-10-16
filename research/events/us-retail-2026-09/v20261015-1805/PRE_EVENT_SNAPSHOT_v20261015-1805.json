@@ -1,0 +1,105 @@
+{
+ "event": "US Retail Sales Sep 2026",
+ "release_et": "2026-10-15 08:30 ET",
+ "release_sgt": "2026-10-15 20:30 SGT",
+ "status": "CONFIRMED",
+ "status_source": "census.gov/retail/release_schedule.html",
+ "snapshot_locked": "2026-10-15T18:05:42.577256+08:00",
+ "version": "v20261015-1805",
+ "consensus": {
+  "headline": 0.3,
+  "ex_auto": 0.5,
+  "control": 0.3,
+  "source": "investingLive via Admiral 2026-10-14; Action Economics survey median 2026-10-13",
+  "class": "MARKET EXP",
+  "prior_aug_headline_fred": 1.127,
+  "prior_aug_exauto_fred": 1.283,
+  "prior_aug_control_reported": 1.2
+ },
+ "analyst_views_not_consensus": {
+  "Action Economics (Oct 13 survey note)": {
+   "headline": 0.1,
+   "ex_auto": 0.3,
+   "control": -0.1
+  },
+  "Continuum Economics (Oct 14)": {
+   "headline": 0.1,
+   "ex_auto": 0.4,
+   "ex_auto_gas": -0.1
+  },
+  "Wells Fargo (Oct 9 week ahead)": {
+   "headline": 0.4
+  }
+ },
+ "os_hypothesis": {
+  "headline": 0.2,
+  "ex_auto": 0.4,
+  "control": 0.0,
+  "probs_raw": {
+   "weak": 0.25,
+   "inline": 0.55,
+   "strong": 0.2
+  },
+  "probs": {
+   "weak": 0.25,
+   "inline": 0.55,
+   "strong": 0.2
+  },
+  "calibration": {
+   "rule": "v2026-10-14 shrink≥50% if gap>20pp",
+   "applied": true,
+   "raw": {
+    "weak": 0.25,
+    "inline": 0.55,
+    "strong": 0.2
+   },
+   "base": {
+    "weak": 0.3333333333333333,
+    "inline": 0.36111111111111116,
+    "strong": 0.3055555555555556
+   },
+   "calibrated": {
+    "weak": 0.25,
+    "inline": 0.55,
+    "strong": 0.2
+   },
+   "shrunk": []
+  },
+  "confidence": "moderate-low"
+ },
+ "scenarios": {
+  "weak": {
+   "headline_max": 0.0,
+   "control_max": -0.2
+  },
+  "inline": {
+   "headline": [
+    0.1,
+    0.6
+   ],
+   "control": [
+    -0.1,
+    0.5
+   ]
+  },
+  "strong": {
+   "headline_min": 0.7,
+   "control_min": 0.6
+  }
+ },
+ "side_releases": {
+  "initial_claims_cons_k": [
+   195,
+   200
+  ],
+  "philly_cons": 28.4,
+  "empire_cons": 10.3,
+  "source": "ITC G10 Daily Calendar 2026-10-15 / Admiral"
+ },
+ "links": {
+  "ppi_lock": "us-ppi-2026-09/v20261014-1806",
+  "cpi_post": "us-cpi-2026-09/v20261015-0800-post",
+  "rewrite": false
+ },
+ "outdir": "/home/box/investment/production/site/research/events/us-retail-2026-09/v20261015-1805"
+}

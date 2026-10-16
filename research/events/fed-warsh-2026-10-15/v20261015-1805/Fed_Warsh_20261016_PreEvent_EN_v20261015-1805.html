@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title> </title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<style>body{font-family:'Noto Sans CJK SC','Noto Sans',sans-serif;max-width:1100px;margin:auto;padding:24px;line-height:1.6;color:#1b1b1b}table{border-collapse:collapse;font-size:13px;margin:8px 0}td,th{border:1px solid #ccd;padding:4px 8px}th{background:#1F3A5F;color:#fff}img{max-width:100%;border:1px solid #ddd}h1{color:#1F3A5F}h2{border-bottom:2px solid #1F3A5F}abbr{text-decoration:underline dotted #2E86C1;cursor:help}.box30{background:linear-gradient(135deg,#eaf2ff,#f5ecff);border:2px solid #5b8cff;border-radius:14px;padding:6px 18px;margin:14px 0;font-size:16px}.readmap{background:#f6f8fb;border:1px solid #d5dbe6;border-radius:12px;padding:4px 16px;margin:12px 0}.howto{background:#fff8e6;border-left:5px solid #f59e0b;border-radius:8px;padding:2px 14px;margin:6px 0 22px}.quiz{background:#effaf3;border:1px solid #9bd8b1;border-radius:12px;padding:4px 16px}details{margin:8px 0}details.l3{background:#f7f7f9;border:1px dashed #b8c0cc;border-radius:10px;padding:6px 14px}summary{cursor:pointer;font-weight:600;color:#1F3A5F}body{font-size:15.5px}blockquote{background:#f3f6fa;border-left:4px solid #2E86C1;margin:0;padding:6px 12px}</style></head>
+<body>
+<header id="title-block-header">
+<h1 class="title"> </h1>
+</header>
+<h1
+id="fed-chair-warsh-imf-georgieva-fireside-chat-pre-event-book-english-twin-v20261015-1805">Fed
+Chair Warsh × IMF Georgieva Fireside Chat — Pre-Event Book, English twin
+(v20261015-1805)</h1>
+<blockquote>
+<p><strong>Time: Thu 2026-10-15 23:30 ET = Fri 2026-10-16 11:30
+SGT</strong> (Bangkok 10:30)｜<strong>CONFIRMED</strong>
+(federalreserve.gov October 2026 calendar, live-streamed). Last Chair
+appearance before the Oct 27–28 FOMC blackout (from Oct 17). Locked
+2026-10-15 18:05 SGT, before tonight’s PPI/retail data. Not investment
+advice.</p>
+</blockquote>
+<h2 id="context-fact">Context (FACT)</h2>
+<p>Sep 16: unanimous 25bp hike to 3.75–4.00% — “removed a dose of
+accommodation”; “I am not going to pre-judge any future decisions”;
+forward guidance dropped; five task forces (incl. productivity/AI,
+balance sheet). Sep CPI +0.6% / 3.7%, core +0.3% / 2.6%. Oct-28 hike
+odds 22% pre-CPI → 41.5% / 49% / 32.7% (FedWatch via Yahoo, WSJ, Cboe,
+10/14).</p>
+<h2 id="os-hypothesis">OS hypothesis</h2>
+<p>Neutral 50% / Hawkish 30% / Dovish 20% (subjective; base rate
+unavailable — not calibrated). Hawkish tail &gt; dovish tail.
+Conditional: if tonight’s PPI and retail are both hot, even neutral
+wording will be read as not opposing October.</p>
+<h2 id="scenarios">Scenarios</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Trigger wording</th>
+<th>Prob</th>
+<th>Oct odds</th>
+<th>2Y</th>
+<th>USDJPY</th>
+<th>NQ / Asia tech</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hawkish</td>
+<td>inflation not moving “clearly and at sufficient speed”; second-round
+energy; conditions “not restrictive”</td>
+<td>30%</td>
+<td>≥55%</td>
+<td>+3~+6bp</td>
+<td>+0.3~+0.6</td>
+<td>−0.5~−1%</td>
+</tr>
+<tr>
+<td>Neutral</td>
+<td>“won’t pre-judge”; global/IMF/independence/AI</td>
+<td>50%</td>
+<td>±5pp</td>
+<td>±2bp</td>
+<td>flat</td>
+<td>data/earnings-driven</td>
+</tr>
+<tr>
+<td>Dovish</td>
+<td>look through energy; cumulative effect; AI supply-side
+disinflation</td>
+<td>20%</td>
+<td>≤30%</td>
+<td>−3~−6bp</td>
+<td>−0.3~−0.6</td>
+<td>+0.3~+0.8%</td>
+</tr>
+</tbody>
+</table>
+<h2 id="live-checklist-from-1130-sgt-fri">Live checklist (from 11:30 SGT
+Fri)</h2>
+<p>Mentions of October/next meeting; the inflation-bar phrase; “look
+through” vs “second-round”; financial conditions; 2Y futures ±3bp in 15
+min; USD/JPY ±0.3; TSM/Korea memory (confounded by TSMC results); AI
+productivity framing; balance sheet.</p>
+<h2 id="affected-names">Affected names</h2>
+<p>Asia first: TSM, Korea memory (MU/SIMO read-across), Nikkei via
+USD/JPY. US rate-sensitive: ARM, PLTR, RKLB, CRWV, CRWD, MRVL, TSLA. AI
+capex chain: NVDA, AVGO, AMD, EME, PWR. Consumer: CCL.</p>
+<h2 id="falsifiers">Falsifiers</h2>
+<ol type="1">
+<li>Hawkish words but 2Y &lt;+2bp → priced/committee &gt; chair. 2.
+Market moves on a non-policy chat → other drivers; chain invalid that
+day. 3. Dovish words + 10Y up → term-premium fear. 4. Explicit path
+guidance despite our 50% neutral → calibration error.</li>
+</ol>
+<h2 id="self-challenge">Self-challenge</h2>
+<p>“Neutral 50%” is subjective; we may over-weight one person on a
+committee; thin Asian liquidity may exaggerate first moves.</p>
+<p>Sources: federalreserve.gov calendar &amp; 9/16 transcript; CNBC;
+WSJ; Cboe; Reuters; FRED. Charts in <code>images/</code>.</p>
+</body>
+</html>
