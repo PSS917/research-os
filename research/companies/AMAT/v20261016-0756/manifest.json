@@ -1,0 +1,106 @@
+{
+ "release": "AMAT_v20261016-0756",
+ "generated": "2026-10-16T07:59:09.481041",
+ "files": [
+  {
+   "path": "AMAT_model_v20261016-0756.xlsx",
+   "bytes": 35903,
+   "sha256": "ec5f5cafd162d9da"
+  },
+  {
+   "path": "AMAT_report_v20261016-0756.docx",
+   "bytes": 820097,
+   "sha256": "c92317c44da72f2f"
+  },
+  {
+   "path": "AMAT_report_v20261016-0756.html",
+   "bytes": 29831,
+   "sha256": "c65bed6907a97467"
+  },
+  {
+   "path": "AMAT_report_v20261016-0756.md",
+   "bytes": 16703,
+   "sha256": "e60fb01d6f86bf38"
+  },
+  {
+   "path": "AMAT_report_v20261016-0756.pdf",
+   "bytes": 1115682,
+   "sha256": "5b7e18a57ae14469"
+  },
+  {
+   "path": "AMAT_teaching_v20261016-0756.docx",
+   "bytes": 195089,
+   "sha256": "815b03a16a835403"
+  },
+  {
+   "path": "AMAT_teaching_v20261016-0756.html",
+   "bytes": 10268,
+   "sha256": "71e2c7d4be15327f"
+  },
+  {
+   "path": "AMAT_teaching_v20261016-0756.md",
+   "bytes": 4487,
+   "sha256": "19dfa6f300d86a9f"
+  },
+  {
+   "path": "AMAT_teaching_v20261016-0756.pdf",
+   "bytes": 249167,
+   "sha256": "a25879254263c692"
+  },
+  {
+   "path": "images/AMAT_1_price_vs_value.jpg",
+   "bytes": 297860,
+   "sha256": "bd86948c513287d2"
+  },
+  {
+   "path": "images/AMAT_1_price_vs_value.png",
+   "bytes": 215075,
+   "sha256": "c1af53064aa33443"
+  },
+  {
+   "path": "images/AMAT_2_financials.jpg",
+   "bytes": 243856,
+   "sha256": "2154acc96a4ccf76"
+  },
+  {
+   "path": "images/AMAT_2_financials.png",
+   "bytes": 178549,
+   "sha256": "0dee430bd546eccc"
+  },
+  {
+   "path": "images/AMAT_3_scenarios.jpg",
+   "bytes": 254250,
+   "sha256": "b6b4facb7acb382a"
+  },
+  {
+   "path": "images/AMAT_3_scenarios.png",
+   "bytes": 164612,
+   "sha256": "1a4f184c33f173fb"
+  },
+  {
+   "path": "images/AMAT_4_horizons.jpg",
+   "bytes": 238406,
+   "sha256": "e75ad7dca25b35b3"
+  },
+  {
+   "path": "images/AMAT_4_horizons.png",
+   "bytes": 171507,
+   "sha256": "8d3507fe36a4ef36"
+  },
+  {
+   "path": "images/AMAT_5_logic_map.jpg",
+   "bytes": 243222,
+   "sha256": "65a4da93b697d1a8"
+  },
+  {
+   "path": "images/AMAT_5_logic_map.png",
+   "bytes": 209830,
+   "sha256": "43e016bc5b2638dd"
+  },
+  {
+   "path": "summary.json",
+   "bytes": 524,
+   "sha256": "826513fdbe1cc8bc"
+  }
+ ]
+}

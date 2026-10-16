@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title> </title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<style>body{font-family:'Noto Sans CJK SC','Noto Sans',sans-serif;max-width:1100px;margin:auto;padding:24px;line-height:1.6;color:#1b1b1b}table{border-collapse:collapse;font-size:13px;margin:8px 0}td,th{border:1px solid #ccd;padding:4px 8px}th{background:#1F3A5F;color:#fff}img{max-width:100%;border:1px solid #ddd}h1{color:#1F3A5F}h2{border-bottom:2px solid #1F3A5F}blockquote{background:#f3f6fa;border-left:4px solid #2E86C1;margin:0;padding:6px 12px}</style></head>
+<body><div style="background:#fff7ed;border:1px solid #fdba74;padding:8px 12px;margin:8px 0;font-size:13px">历史版本：PDF/Word/图片已归档至 GitHub Release（下载：<a href="https://github.com/PSS917/research-os/releases/download/archive-v20261013-1803/US_CPI_Sep2026_PreEvent_v20261013-1803.zip">ZIP</a>）。Archived version — heavy files live in Release assets.</div>
+<header id="title-block-header">
+<h1 class="title"> </h1>
+</header>
+<h1
+id="初学者教学版怎么看明晚的美国-cpibeginner-teaching-中文">初学者教学版：怎么看明晚的美国
+CPI｜Beginner Teaching (中文)</h1>
+<blockquote>
+<p>发布：<strong>10/14（周三）20:30 新加坡时间</strong>。快照 2026-10-13
+18:03 SGT（v20261013-1803）。非投资建议。</p>
+</blockquote>
+<h2 id="白话发生什么">1. 白话：发生什么？</h2>
+<p>美国劳工统计局每月公布一次”一篮子商品和服务涨了多少”，这就是
+CPI。明晚公布的是 9
+月的数据。市场最关心的不是总数，而是剔除食品和能源后的 <strong>核心
+CPI</strong>，因为它更能反映”通胀会不会粘住不走”。</p>
+<h2 id="中英术语表-glossary">2. 中英术语表 Glossary</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>英文</th>
+<th>中文</th>
+<th>一句话解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPI (Consumer Price Index)</td>
+<td>消费者价格指数</td>
+<td>一篮子消费品价格的”体温计”</td>
+</tr>
+<tr>
+<td>Core CPI</td>
+<td>核心CPI</td>
+<td>剔除食品和能源，去掉”天气噪音”</td>
+</tr>
+<tr>
+<td>MoM (Month-over-Month)</td>
+<td>环比</td>
+<td>和上个月比</td>
+</tr>
+<tr>
+<td>YoY (Year-over-Year)</td>
+<td>同比</td>
+<td>和去年同月比</td>
+</tr>
+<tr>
+<td>Base effect</td>
+<td>基数效应</td>
+<td>去年同期高/低，会让今年同比”看起来”变低/变高</td>
+</tr>
+<tr>
+<td>Shelter / OER</td>
+<td>住房 / 业主等价租金</td>
+<td>占 CPI 约三分之一，变化慢</td>
+</tr>
+<tr>
+<td>Supercore</td>
+<td>超级核心</td>
+<td>核心服务剔除住房，和工资关系最大</td>
+</tr>
+<tr>
+<td>3m annualized</td>
+<td>三个月年化</td>
+<td>最近三个月的速度换算成一年</td>
+</tr>
+<tr>
+<td>Breakeven inflation</td>
+<td>盈亏平衡通胀率</td>
+<td>债市”押注”的未来通胀</td>
+</tr>
+<tr>
+<td>Term premium</td>
+<td>期限溢价</td>
+<td>借钱更久要多给的补偿</td>
+</tr>
+<tr>
+<td>WACC</td>
+<td>加权平均资本成本</td>
+<td>给未来现金流打折的”折现率”</td>
+</tr>
+<tr>
+<td>FOMC</td>
+<td>联邦公开市场委员会</td>
+<td>决定美国利率的会议</td>
+</tr>
+</tbody>
+</table>
+<h2 id="生活比喻">3. 生活比喻</h2>
+<ul>
+<li><strong>核心 vs
+整体</strong>：量体温时刚跑完步（能源价格暴涨）会偏高；核心 CPI
+像”休息十分钟后再量”。</li>
+<li><strong>2年期国债收益率</strong>：像全班同学对”老师下次会不会加作业（加息）“的集体投票，数据一出马上改票。</li>
+<li><strong>利率与成长股</strong>：像跷跷板。利率一端升高，“未来很远才赚钱”的股票这一端就会下沉，因为未来的钱要打更大的折扣。</li>
+</ul>
+<h2 id="因果箭头">4. 因果箭头</h2>
+<p>核心CPI偏热 → 市场认为 Fed 更可能加息 → 2年期收益率↑ → 10年期↑ →
+折现率↑ → 成长股估值↓ → 纳指/半导体↓ 核心CPI偏冷 → 加息概率↓ → 收益率↓ →
+估值压力缓解 → 超跌的半导体可能反弹（但存储股另有供给问题）</p>
+<h2 id="带数字的例题全部来自-fred-数据与我们的计算">5.
+带数字的例题（全部来自 FRED 数据与我们的计算）</h2>
+<ul>
+<li>例1（同比怎么算）：8 月核心指数 337.765。若 9 月环比 +0.22% →
+337.765 × 1.0022 = 338.51；去年 9 月为 330.418 → 同比 = 338.51 ÷ 330.418
+− 1 ≈ <strong>2.45%</strong>。所以 0.22% 正好卡在 2.4% 与 2.5%
+的分界线上。</li>
+<li>例2（三个月年化）：7、8、9 月核心环比 0.215%、0.29%、0.22% →
+(1.00215×1.0029×1.0022)^4 − 1 ≈ <strong>2.9%</strong>。比同比 2.4%
+高，说明”最近在加速”。</li>
+<li>例3（个股）：过去一年 10 年期收益率每升 10bp，ARM 平均同日约
+−2.6%。若明晚 10 年期升 8bp → 利率因素约 −2.0%。但 R² 只有 0.04——意思是
+ARM 的日常涨跌里只有约 4% 能用利率解释，其余是公司和行业新闻。</li>
+</ul>
+<h2 id="事实预测市场预期要分开">6. 事实、预测、市场预期要分开</h2>
+<ul>
+<li><strong>事实</strong>：8 月核心环比 0.29%；9 月非农 +29k；失业率
+4.2%；目标利率区间 3.75–4.00%。</li>
+<li><strong>市场预期</strong>：核心环比 0.2%；10 月加息概率约 20%，12
+月约 73%（Kalshi）。</li>
+<li><strong>我们的预测</strong>：核心 0.22%；三情景概率 25/50/25。</li>
+</ul>
+<h2 id="三种情景怎么读">7. 三种情景（怎么读）</h2>
+<ul>
+<li><strong>偏冷（≤0.15%，25%）</strong>：收益率下行，成长股和半导体可能反弹。</li>
+<li><strong>符合（0.16–0.24%，50%）</strong>：市场注意力转向周四
+PPI、零售销售和 TSMC 财报。</li>
+<li><strong>偏热（≥0.25%，25%）</strong>：收益率上行、美元走强，纳指和半导体承压，10
+月加息重新成为话题。</li>
+</ul>
+<h2 id="反方观点与失效条件">8. 反方观点与失效条件</h2>
+<ul>
+<li>反方：10 年期在 5.2% 以上主要是财政与期限溢价问题，CPI
+好坏都难以让它大幅下降。</li>
+<li>失效条件：如果核心偏热但 10
+年期反而下跌，说明市场更担心经济放缓，“热 → 利率升 →
+股跌”的简单逻辑当天不成立。</li>
+<li>自测题：如果核心 0.18%、整体 0.75%、10 年期盈亏平衡通胀率升
+6bp，你会怎么判断？（提示：看第 6 节”能源二次传导”）</li>
+</ul>
+<figure>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261013-1803/US_CPI_Sep2026_PreEvent_v20261013-1803.zip"
+alt="传导链 Transmission chain" />
+<figcaption aria-hidden="true">传导链 Transmission chain</figcaption>
+</figure>
+<figure>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261013-1803/US_CPI_Sep2026_PreEvent_v20261013-1803.zip"
+alt="情景树 Scenario tree" />
+<figcaption aria-hidden="true">情景树 Scenario tree</figcaption>
+</figure>
+</body>
+</html>

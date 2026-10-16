@@ -1,0 +1,118 @@
+{
+ "event": "TSM Q3 2026 Earnings",
+ "ev": "tsm-2026-q3",
+ "ver": "v20261016-0802-post",
+ "pre": "v20261014-1806",
+ "actual": {
+  "rev_usd": 46.72,
+  "rev_twd": 1494.24,
+  "gm": 66.4,
+  "om": 58.7,
+  "npm": 51.1,
+  "eps_twd": 29.43,
+  "eps_adr": 4.6,
+  "ni_twd": 763.06,
+  "roe": 45.5,
+  "fx": 31.98,
+  "rev_yoy_usd": 41.2,
+  "rev_qoq_usd": 16.2,
+  "ship_k": 4476,
+  "capex_q_usd": 13.8,
+  "cash_twd_tn": 4.0,
+  "inv_days": 82,
+  "n2": 8,
+  "n3": 33,
+  "n5": 28,
+  "n7": 10,
+  "adv": 79,
+  "hpc": 68,
+  "hpc_qoq": 22,
+  "phone": 21,
+  "phone_qoq": 10
+ },
+ "guide4q": {
+  "rev": [
+   52.3,
+   54.3
+  ],
+  "gm": [
+   65.0,
+   67.0
+  ],
+  "om": [
+   56.5,
+   58.5
+  ],
+  "fx": 31.8
+ },
+ "cls": "beat",
+ "probs": {
+  "beat": 0.3,
+  "inline": 0.45,
+  "miss": 0.25
+ },
+ "base_rate": {
+  "beat": 0.6666666666666666,
+  "inline": 0.16666666666666666,
+  "miss": 0.16666666666666666
+ },
+ "brier": {
+  "os": 0.7549999999999999,
+  "uniform": 0.6666666666666667,
+  "base": 0.16666666666666669
+ },
+ "reaction": {
+  "TSM": {
+   "pre": -3.396836808051762,
+   "rel": -1.8023255813953476
+  },
+  "^SOX": {
+   "pre": -4.295349126097914,
+   "rel": -0.8829312303877956
+  },
+  "^NDX": {
+   "pre": -2.023783678242197,
+   "rel": -0.05083854913197072
+  },
+  "NVDA": {
+   "pre": -3.1594608786977063,
+   "rel": -1.8391323994577546
+  },
+  "AVGO": {
+   "pre": -3.0953513755562434,
+   "rel": -0.5545126353790675
+  },
+  "AMD": {
+   "pre": -5.732168513533587,
+   "rel": -1.5048526680915275
+  },
+  "AMAT": {
+   "pre": -3.7932965707392796,
+   "rel": -3.721200994111462
+  },
+  "KLAC": {
+   "pre": -2.820652173913041,
+   "rel": -2.432749846205462
+  },
+  "MU": {
+   "pre": -4.082724754469902,
+   "rel": 1.871725028168858
+  },
+  "ARM": {
+   "pre": -6.805278201965614,
+   "rel": 2.8486198058905066
+  },
+  "INTC": {
+   "pre": -4.5618130532049435,
+   "rel": -2.802690582959644
+  }
+ },
+ "tw": null,
+ "log": [
+  "pre-event integrity (v20261014-1806): 32/32 files match manifest sha256 — lock intact, not rewritten",
+  "locked-rule class=beat; Brier OS 0.755 | uniform 0.667 | EPS-beat base rate (3 prior qtrs, Yahoo earn_hist) 0.167",
+  "2330.TW 10/16 session: not yet trading / no data at build time (Taiwan reacts on 10/16 because results came after the 10/15 TWSE close)",
+  "Excel recalc: class=beat; Brier OS=0.755; FY26 growth=46.8517642438254; errors=none"
+ ],
+ "intraday": false
+}

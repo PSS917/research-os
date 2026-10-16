@@ -1,0 +1,40 @@
+{
+ "slug": "us-morning-data-1015",
+ "title": "美国早盘数据复盘：PPI 爆热、零售假强，债市却大涨 | US PPI hot + retail fake-strong, yet Treasuries rally (2026-10-15)",
+ "date": "2026-10-15",
+ "trigger": "material: PPI FD +1.3% vs 0.5% cons; retail headline +0.8% vs control +0.14%; 10Y -13.2bp; SOX -4.1%",
+ "tickers": [
+  "NVDA",
+  "MU",
+  "TSM",
+  "AVGO",
+  "ARM",
+  "AMD",
+  "LITE",
+  "CRWV",
+  "AAPL",
+  "TSLA",
+  "CCL",
+  "WMT",
+  "COST",
+  "HD",
+  "AMZN"
+ ],
+ "watchlist": [
+  "NVDA",
+  "MU",
+  "TSM",
+  "AVGO",
+  "ARM",
+  "AAPL",
+  "TSLA",
+  "CCL"
+ ],
+ "base": "us-morning-data-1015_news-explainer",
+ "pages": 2,
+ "related": [
+  "events/us-ppi-2026-09",
+  "events/us-retail-2026-09"
+ ],
+ "event": "us-ppi-2026-09"
+}

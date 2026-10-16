@@ -1,0 +1,106 @@
+{
+ "release": "RKLB_v20261015-0757",
+ "generated": "2026-10-15T08:00:01.186334",
+ "files": [
+  {
+   "path": "RKLB_model_v20261015-0757.xlsx",
+   "bytes": 35865,
+   "sha256": "288eff1eff4eaf5b"
+  },
+  {
+   "path": "RKLB_report_v20261015-0757.docx",
+   "bytes": 802258,
+   "sha256": "d37c5f5c1e30195c"
+  },
+  {
+   "path": "RKLB_report_v20261015-0757.html",
+   "bytes": 30055,
+   "sha256": "d59b008b0227c6b7"
+  },
+  {
+   "path": "RKLB_report_v20261015-0757.md",
+   "bytes": 16915,
+   "sha256": "8f79bbb3a9265d5e"
+  },
+  {
+   "path": "RKLB_report_v20261015-0757.pdf",
+   "bytes": 1123592,
+   "sha256": "7e28f631e3de07b4"
+  },
+  {
+   "path": "RKLB_teaching_v20261015-0757.docx",
+   "bytes": 192270,
+   "sha256": "e03cf2ef1bc92809"
+  },
+  {
+   "path": "RKLB_teaching_v20261015-0757.html",
+   "bytes": 10314,
+   "sha256": "b4d5ce4184ed98d8"
+  },
+  {
+   "path": "RKLB_teaching_v20261015-0757.md",
+   "bytes": 4535,
+   "sha256": "99dbea98304e0119"
+  },
+  {
+   "path": "RKLB_teaching_v20261015-0757.pdf",
+   "bytes": 250320,
+   "sha256": "c47a224bb4fe8454"
+  },
+  {
+   "path": "images/RKLB_1_price_vs_value.jpg",
+   "bytes": 291951,
+   "sha256": "95fc2f1e1b49d053"
+  },
+  {
+   "path": "images/RKLB_1_price_vs_value.png",
+   "bytes": 208670,
+   "sha256": "d46a55183ac8c35a"
+  },
+  {
+   "path": "images/RKLB_2_financials.jpg",
+   "bytes": 253929,
+   "sha256": "130a2090970e154c"
+  },
+  {
+   "path": "images/RKLB_2_financials.png",
+   "bytes": 187614,
+   "sha256": "afd2b5ac8fe79ceb"
+  },
+  {
+   "path": "images/RKLB_3_scenarios.jpg",
+   "bytes": 234249,
+   "sha256": "9f9bc4de75c2fd3d"
+  },
+  {
+   "path": "images/RKLB_3_scenarios.png",
+   "bytes": 162372,
+   "sha256": "51baa40cbe022714"
+  },
+  {
+   "path": "images/RKLB_4_horizons.jpg",
+   "bytes": 238121,
+   "sha256": "6602b2389475e0c2"
+  },
+  {
+   "path": "images/RKLB_4_horizons.png",
+   "bytes": 160952,
+   "sha256": "8834e7df5477f901"
+  },
+  {
+   "path": "images/RKLB_5_logic_map.jpg",
+   "bytes": 243873,
+   "sha256": "367f7a4f9ebcf398"
+  },
+  {
+   "path": "images/RKLB_5_logic_map.png",
+   "bytes": 206518,
+   "sha256": "39dbab8570b6682b"
+  },
+  {
+   "path": "summary.json",
+   "bytes": 560,
+   "sha256": "638982f02c4de8dd"
+  }
+ ]
+}

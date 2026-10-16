@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title> </title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<style>body{font-family:'Noto Sans CJK SC','Noto Sans',sans-serif;max-width:1100px;margin:auto;padding:24px;line-height:1.6;color:#1b1b1b}table{border-collapse:collapse;font-size:13px;margin:8px 0}td,th{border:1px solid #ccd;padding:4px 8px}th{background:#1F3A5F;color:#fff}img{max-width:100%;border:1px solid #ddd}h1{color:#1F3A5F}h2{border-bottom:2px solid #1F3A5F}abbr{text-decoration:underline dotted #2E86C1;cursor:help}.box30{background:linear-gradient(135deg,#eaf2ff,#f5ecff);border:2px solid #5b8cff;border-radius:14px;padding:6px 18px;margin:14px 0;font-size:16px}.readmap{background:#f6f8fb;border:1px solid #d5dbe6;border-radius:12px;padding:4px 16px;margin:12px 0}.howto{background:#fff8e6;border-left:5px solid #f59e0b;border-radius:8px;padding:2px 14px;margin:6px 0 22px}.quiz{background:#effaf3;border:1px solid #9bd8b1;border-radius:12px;padding:4px 16px}details{margin:8px 0}details.l3{background:#f7f7f9;border:1px dashed #b8c0cc;border-radius:10px;padding:6px 14px}summary{cursor:pointer;font-weight:600;color:#1F3A5F}body{font-size:15.5px}blockquote{background:#f3f6fa;border-left:4px solid #2E86C1;margin:0;padding:6px 12px}</style></head>
+<body>
+<header id="title-block-header">
+<h1 class="title"> </h1>
+</header>
+<div class="box30">
+<p><strong>⏱ 30秒看懂</strong></p>
+<ol type="1">
+<li><strong>发生什么：</strong>这里列出未来约75天会影响市场的重要数据和财报，并说明每个事件「发布前/发布时/发布后」要做什么。</li>
+<li><strong>和我的股票有什么关系：</strong>通胀、就业数据和美联储会议决定利率；财报决定单家公司的估值——两者都会改变你关注的股票。</li>
+<li><strong>该看什么/做什么：</strong>先看最近一个 CONFIRMED
+事件；它的发布前教学版会告诉你只需盯哪一个数字。</li>
+</ol>
+</div>
+<h1
+id="事件日历与事件生命周期-event-calendar-lifecycle-v20261016-0756">事件日历与事件生命周期
+Event Calendar &amp; Lifecycle v20261016-0756</h1>
+<blockquote>
+<p>生成
+2026-10-16。CONFIRMED=官方日程；TENTATIVE=聚合源/待确认。时间为美东(ET)，SGT=ET+12h
+(夏令时期间)。</p>
+</blockquote>
+<h2 id="未来事件-75天">1. 未来事件 (~75天)</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th>日期</th>
+<th>时间</th>
+<th>事件</th>
+<th>状态</th>
+<th>来源</th>
+<th>生命周期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-10-14</td>
+<td>08:30 ET</td>
+<td>US CPI (Sep 2026)｜美国CPI</td>
+<td>CONFIRMED</td>
+<td>bls.gov/schedule/2026</td>
+<td>Pre/Live/Post</td>
+</tr>
+<tr>
+<td>2026-10-15</td>
+<td>08:30 ET</td>
+<td>US PPI (Sep 2026)｜美国PPI</td>
+<td>CONFIRMED</td>
+<td>bls.gov/schedule/2026</td>
+<td>Pre/Live/Post</td>
+</tr>
+<tr>
+<td>2026-10-15</td>
+<td>08:30 ET</td>
+<td>US Retail Sales (Sep 2026)｜美国零售销售</td>
+<td>CONFIRMED</td>
+<td>census.gov/retail/release_schedule.html</td>
+<td>Pre/Live/Post</td>
+</tr>
+<tr>
+<td>2026-10-15</td>
+<td>23:30 ET</td>
+<td>Fed Chair Warsh × IMF Georgieva fireside｜Warsh与IMF总裁对话</td>
+<td>CONFIRMED</td>
+<td>federalreserve.gov/newsevents/2026-october.htm</td>
+<td>Pre/Live/Post</td>
+</tr>
+<tr>
+<td>2026-10-16</td>
+<td>08:30 ET</td>
+<td>US Import/Export Prices (Sep)</td>
+<td>CONFIRMED</td>
+<td>bls.gov/schedule/2026</td>
+<td>Post only</td>
+</tr>
+<tr>
+<td>2026-10-22</td>
+<td>—</td>
+<td>TSLA earnings + call｜财报与电话会</td>
+<td>TENTATIVE (Yahoo; confirm on IR)</td>
+<td>Yahoo calendar 2026-10-16</td>
+<td>Pre/Live/Post + model update</td>
+</tr>
+<tr>
+<td>2026-10-23</td>
+<td>—</td>
+<td>MXL earnings + call｜财报与电话会</td>
+<td>TENTATIVE (Yahoo; confirm on IR)</td>
+<td>Yahoo calendar 2026-10-16</td>
+<td>Pre/Live/Post + model update</td>
+</tr>
+<tr>
+<td>2026-10-27</td>
+<td>—</td>
+<td>GLW earnings + call｜财报与电话会</td>
+<td>TENTATIVE (Yahoo; confirm on IR)</td>
+<td>Yahoo calendar 2026-10-16</td>
+<td>Pre/Live/Post + model update</td>
+</tr>
+<tr>
+<td>2026-10-27/28</td>
+<td>2:00 PM ET (28th)</td>
+<td>FOMC decision + Powell presser｜FOMC利率决议</td>
+<td>CONFIRMED</td>
+<td>federalreserve.gov FOMC calendar (Oct 27–28)</td>
+<td>Pre/Live/Post</td>
+</tr>
+<tr>
+<td>2026-10-29</td>
+<td>08:30 ET</td>
+<td>US GDP Q3 advance + Sep PCE (BEA)</td>
+<td>TENTATIVE</td>
+<td>OS master monitor 2026-10-02 (conflicting Oct 27 note) — verify
+bea.gov</td>
+<td>Pre/Live/Post</td>
+</tr>
+<tr>
+<td>2026-10-29</td>
+<td>—</td>
+<td>EME earnings + call｜财报与电话会</td>
+<td>TENTATIVE (Yahoo; confirm on IR)</td>
+<td>Yahoo calendar 2026-10-16</td>
+<td>Pre/Live/Post + model update</td>
+</tr>
+<tr>
+<td>2026-10-29</td>
+<td>—</td>
+<td>KLAC earnings + call｜财报与电话会</td>
+<td>TENTATIVE (Yahoo; confirm on IR)</td>
+<td>Yahoo calendar 2026-10-16</td>
+<td>Pre/Live/Post + model update</td>
+</tr>
+<tr>
+<td>2026-10-29</td>
+<td>—</td>
+<td>PWR earnings + call｜财报与电话会</td>
+<td>TENTATIVE (Yahoo; confirm on IR)</td>
+<td>Yahoo calendar 2026-10-16</td>
+<td>Pre/Live/Post + model update</td>
+</tr>
+<tr>
+<td>2026-10-29</td>
+<td>—</td>
+<td>SIMO earnings + call｜财报与电话会</td>
+<td>TENTATIVE (Yahoo; confirm on IR)</td>
+<td>Yahoo calendar 2026-10-16</td>
+<td>Pre/Live/Post + model update</td>
+</tr>
+<tr>
+<td>2026-10-29/30</td>
+<td>JST (30th)</td>
+<td>BOJ MPM + Outlook Report｜日本央行会议</td>
+<td>CONFIRMED</td>
+<td>boj.or.jp (per OS calendar 2026-10-02)</td>
+<td>Pre/Live/Post</td>
+</tr>
+<tr>
+<td>2026-10-30</td>
+<td>08:30 ET</td>
+<td>Employment Cost Index Q3｜就业成本指数</td>
+<td>CONFIRMED</td>
+<td>bls.gov/schedule/2026</td>
+<td>Post</td>
+</tr>
+<tr>
+<td>2026-10-30</td>
+<td>—</td>
+<td>INTC earnings + call｜财报与电话会</td>
+<td>TENTATIVE (Yahoo; confirm on IR)</td>
+<td>Yahoo calendar 2026-10-16</td>
+<td>Pre/Live/Post + model update</td>
+</tr>
+<tr>
+<td>2026-11-03</td>
+<td>10:00 ET</td>
+<td>JOLTS (Sep)</td>
+<td>CONFIRMED</td>
+<td>bls.gov/schedule/2026</td>
+<td>Post</td>
+</tr>
+<tr>
+<td>2026-11-03</td>
+<td>—</td>
+<td>AAPL earnings + call｜财报与电话会</td>
+<td>TENTATIVE (Yahoo; confirm on IR)</td>
+<td>Yahoo calendar 2026-10-16</td>
+<td>Pre/Live/Post + model update</td>
+</tr>
+<tr>
+<td>2026-11-03</td>
+<td>—</td>
+<td>PLTR earnings + call｜财报与电话会</td>
+<td>TENTATIVE (Yahoo; confirm on IR)</td>
+<td>Yahoo calendar 2026-10-16</td>
+<td>Pre/Live/Post + model update</td>
+</tr>
+<tr>
+<td>2026-11-04</td>
+<td>—</td>
+<td>AMD earnings + call｜财报与电话会</td>
+<td>TENTATIVE (Yahoo; confirm on IR)</td>
+<td>Yahoo calendar 2026-10-16</td>
+<td>Pre/Live/Post + model update</td>
+</tr>
+<tr>
+<td>2026-11-04</td>
+<td>—</td>
+<td>SPCX earnings + call｜财报与电话会</td>
+<td>TENTATIVE (Yahoo; confirm on IR)</td>
+<td>Yahoo calendar 2026-10-16</td>
+<td>Pre/Live/Post + model update</td>
+</tr>
+<tr>
+<td>2026-11-05</td>
+<td>08:30 ET</td>
+<td>Productivity &amp; Costs Q3 (P)｜生产率与单位劳动成本</td>
+<td>CONFIRMED</td>
+<td>bls.gov/schedule/2026</td>
+<td>Post (AI productivity module)</td>
+</tr>
+<tr>
+<td>2026-11-05</td>
+<td>—</td>
+<td>ARM earnings + call｜财报与电话会</td>
+<td>TENTATIVE (Yahoo; confirm on IR)</td>
+<td>Yahoo calendar 2026-10-16</td>
+<td>Pre/Live/Post + model update</td>
+</tr>
+<tr>
+<td>2026-11-05</td>
+<td>—</td>
+<td>COHR earnings + call｜财报与电话会</td>
+<td>TENTATIVE (Yahoo; confirm on IR)</td>
+<td>Yahoo calendar 2026-10-16</td>
+<td>Pre/Live/Post + model update</td>
+</tr>
+<tr>
+<td>2026-11-05</td>
+<td>—</td>
+<td>QCOM earnings + call｜财报与电话会</td>
+<td>TENTATIVE (Yahoo; confirm on IR)</td>
+<td>Yahoo calendar 2026-10-16</td>
+<td>Pre/Live/Post + model update</td>
+</tr>
+<tr>
+<td>2026-11-06</td>
+<td>08:30 ET</td>
+<td>Employment Situation (Oct)｜非农就业</td>
+<td>CONFIRMED</td>
+<td>bls.gov/schedule/2026</td>
+<td>Pre/Live/Post</td>
+</tr>
+<tr>
+<td>2026-11-06</td>
+<td>—</td>
+<td>LITE earnings + call｜财报与电话会</td>
+<td>TENTATIVE (Yahoo; confirm on IR)</td>
+<td>Yahoo calendar 2026-10-16</td>
+<td>Pre/Live/Post + model update</td>
+</tr>
+<tr>
+<td>2026-11-10</td>
+<td>08:30 ET</td>
+<td>US CPI (Oct 2026)</td>
+<td>CONFIRMED</td>
+<td>bls.gov/schedule/2026</td>
+<td>Pre/Live/Post</td>
+</tr>
+<tr>
+<td>2026-11-10</td>
+<td>—</td>
+<td>RKLB earnings + call｜财报与电话会</td>
+<td>TENTATIVE (Yahoo; confirm on IR)</td>
+<td>Yahoo calendar 2026-10-16</td>
+<td>Pre/Live/Post + model update</td>
+</tr>
+<tr>
+<td>2026-11-12</td>
+<td>—</td>
+<td>CRWV earnings + call｜财报与电话会</td>
+<td>TENTATIVE (Yahoo; confirm on IR)</td>
+<td>Yahoo calendar 2026-10-16</td>
+<td>Pre/Live/Post + model update</td>
+</tr>
+<tr>
+<td>2026-11-13</td>
+<td>—</td>
+<td>AMAT earnings + call｜财报与电话会</td>
+<td>TENTATIVE (Yahoo; confirm on IR)</td>
+<td>Yahoo calendar 2026-10-16</td>
+<td>Pre/Live/Post + model update</td>
+</tr>
+<tr>
+<td>2026-11-18</td>
+<td>—</td>
+<td>NVDA earnings + call｜财报与电话会</td>
+<td>TENTATIVE (Yahoo; confirm on IR)</td>
+<td>Yahoo calendar 2026-10-16</td>
+<td>Pre/Live/Post + model update</td>
+</tr>
+<tr>
+<td>2026-12-02</td>
+<td>—</td>
+<td>CRWD earnings + call｜财报与电话会</td>
+<td>TENTATIVE (Yahoo; confirm on IR)</td>
+<td>Yahoo calendar 2026-10-16</td>
+<td>Pre/Live/Post + model update</td>
+</tr>
+<tr>
+<td>2026-12-02</td>
+<td>—</td>
+<td>MRVL earnings + call｜财报与电话会</td>
+<td>TENTATIVE (Yahoo; confirm on IR)</td>
+<td>Yahoo calendar 2026-10-16</td>
+<td>Pre/Live/Post + model update</td>
+</tr>
+<tr>
+<td>2026-12-10</td>
+<td>—</td>
+<td>AVGO earnings + call｜财报与电话会</td>
+<td>TENTATIVE (Yahoo; confirm on IR)</td>
+<td>Yahoo calendar 2026-10-16</td>
+<td>Pre/Live/Post + model update</td>
+</tr>
+<tr>
+<td>2026-12-18</td>
+<td>—</td>
+<td>CCL earnings + call｜财报与电话会</td>
+<td>TENTATIVE (Yahoo; confirm on IR)</td>
+<td>Yahoo calendar 2026-10-16</td>
+<td>Pre/Live/Post + model update</td>
+</tr>
+<tr>
+<td>2026-12-24</td>
+<td>—</td>
+<td>MU earnings + call｜财报与电话会</td>
+<td>TENTATIVE (Yahoo; confirm on IR)</td>
+<td>Yahoo calendar 2026-10-16</td>
+<td>Pre/Live/Post + model update</td>
+</tr>
+</tbody>
+</table>
+<h2 id="生命周期模板-lifecycle-templates-每个重大事件必须走完">2.
+生命周期模板 Lifecycle templates (每个重大事件必须走完)</h2>
+<h3 id="a.-发布前-pre-release-t-2dt-1h">A. 发布前 Pre-release
+(T-2d→T-1h)</h3>
+<ol type="1">
+<li>共识与区间 Consensus &amp; range (来源+时间) 2. 我们的预测 vs 共识
+(预期差) 3. 情景树 Hot/Inline/Cool 及概率 4. 每个情景的跨资产传导
+(2Y/10Y/USD/JPY/NDX/SOX/个股) 5. 受影响个股清单与敏感度 6. 观察清单:
+看哪些分项 7. 证伪条件 8. 初学者解读 ### B. 发布时 Live (T→T+2h)</li>
+<li>实际值 vs 共识 vs 我们 (Surprise = Actual − Expected) 2. 分项拆解 3.
+首30分钟市场反应 (Headline vs Fundamental) 4. 反应分解 ΔPrice ≈ ΔEPS +
+ΔMultiple(rates) + ΔPositioning + ΔLiquidity 5. 是否触发模型更新 ### C.
+发布后复盘 Post-release (T+1d)</li>
+<li>原假设→预测→实际→偏差→反应 2. 误差分类 (Fundamental /
+Expectation-pricing / Market-reaction / Timing / Probability) 3. 根因 4.
+模型重校准 (哪些假设改变、改多少) 5. 估值更新 (重跑Excel) 6. 学习要点 7.
+追加到当日 Daily OS 更新 ### E. 思考过程标准 (Teaching v2.1, master
+prompt Part C)
+若事件由重大新闻驱动（自选股/指数单日≥3%或市场热议），必须附「新闻解读图」(news.html，模板
+pipeline/infographic)。每本事件书必须展示推理过程：七步思考法 —
+先问对问题：谁在乎、为什么在乎 → 市场已经定价了什么 →
+搭因果链，每环配一个检验数据 → 找每一环的断点 → 用工具箱逐一质疑 →
+给对立观点最强版本，再用证据裁判 →
+写下「如果我错了，会先看到什么」；质疑工具箱逐一应用（第一性原理、二阶思维、反向思考、市场已经定价了什么、谁在对手盘、基础概率、假设清单与证伪），每个工具含真实数字与「轮到你」；对立观点最强版本+证据打分；推理测验（为什么/如果…会怎样）；发布后逐环因果链复盘：
+| 环节 | 成立/断开 | 证据 | 学到什么 | |—|—|—|—| | ①意外→美联储预期 |
+____ | ____ | ____ | | ②→2年期 | ____ | ____ | ____ | | ③→10年期 | ____
+| ____ | ____ | | ④→折现率 | ____ | ____ | ____ | | ⑤→个股 | ____ | ____
+| ____ |</li>
+</ol>
+<h3 id="d.-财报事件-earnings">D. 财报事件 Earnings</h3>
+<p>Pre: 一致预期EPS/收入、上季指引、关键KPI、隐含波动；Live:
+实际vs指引vs一致预期、新指引、电话会要点；Post: 修改Assumption Register
+→ 重跑模型 → 新版本报告 (旧版保留)。 ## 3. 最近重大事件: 美国9月CPI
+(10/14 08:30 ET = 10/14 20:30 SGT) — Pre-release book - 最新已知 (FRED):
+CPI 指数 336.298 (2026-09-01)；核心CPI同比 +2.6%。 - 共识:
+<strong>UNAVAILABLE</strong> in automated feed —
+需在发布前从Reuters/Bloomberg/WSJ调查补录 (不编造)。 - 情景: Hot
+(核心月率高于共识≥0.1pp) →
+2Y↑、USD↑、NDX/SOX↓、高估值(PLTR/ARM/CRWV)最敏感；Inline → 关注10/28
+FOMC定价；Cool → 成长股、长久期资产受益。 - 证伪: 若Hot但10Y下行 →
+市场更担心增长/风险规避，而非通胀。 - 发布后: 运行 Refresh →
+生成新版本日报 + 本文件Post部分。</p>
+<hr />
+<p>English: Calendar above uses bilingual labels. Lifecycle = Pre
+(consensus, our view, scenario tree, transmission, falsifiers) → Live
+(surprise, decomposition) → Post (error class, root cause,
+recalibration, valuation rerun, append to Daily OS). Next major: US CPI
+Oct 14 08:30 ET; FOMC Oct 28; BOJ Oct 30; TSM earnings Oct 15
+(TENTATIVE).</p>
+</body>
+</html>

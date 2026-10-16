@@ -1,0 +1,55 @@
+{
+ "event": "TSM Q3 2026 Earnings",
+ "call_taiwan": "2026-10-15 14:00",
+ "call_sgt": "2026-10-15 14:00 SGT",
+ "call_et": "2026-10-15 02:00 ET",
+ "status": "CONFIRMED",
+ "status_source": "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+ "quiet_period": "2026-10-05 to 2026-10-14",
+ "snapshot_locked": "2026-10-14T18:06:51.337377+08:00",
+ "version": "v20261014-1806",
+ "guidance": {
+  "rev_usd_bn": [
+   44.6,
+   45.8
+  ],
+  "gm_pct": [
+   65.0,
+   67.0
+  ],
+  "om_pct": [
+   56.0,
+   58.0
+  ],
+  "fx": 32.0
+ },
+ "q2_actual": {
+  "rev": 40.2,
+  "gm": 67.7,
+  "om": 60.3
+ },
+ "consensus": {
+  "eps_adr_avg": 4.52449,
+  "eps_low": 4.26,
+  "eps_high": 4.85,
+  "eps_n": 9,
+  "rev_twd_avg": 1460392943930,
+  "rev_usd_at_32": 45.6372794978125,
+  "rev_n": 28,
+  "price": 445.12,
+  "source": "Yahoo co_TSM.json 2026-10-14",
+  "class": "MARKET EXP"
+ },
+ "os_hypothesis": {
+  "rev_usd_bn": 45.2,
+  "gm_pct": 66.0,
+  "om_pct": 57.0,
+  "eps_adr": 4.5,
+  "probs": {
+   "beat": 0.3,
+   "inline": 0.45,
+   "miss": 0.25
+  }
+ },
+ "outdir": "/home/box/investment/production/site/research/events/tsm-2026-q3/v20261014-1806"
+}

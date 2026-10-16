@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title> </title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<style>body{font-family:'Noto Sans CJK SC','Noto Sans',sans-serif;max-width:1100px;margin:auto;padding:24px;line-height:1.6;color:#1b1b1b}table{border-collapse:collapse;font-size:13px;margin:8px 0}td,th{border:1px solid #ccd;padding:4px 8px}th{background:#1F3A5F;color:#fff}img{max-width:100%;border:1px solid #ddd}h1{color:#1F3A5F}h2{border-bottom:2px solid #1F3A5F}abbr{text-decoration:underline dotted #2E86C1;cursor:help}.box30{background:linear-gradient(135deg,#eaf2ff,#f5ecff);border:2px solid #5b8cff;border-radius:14px;padding:6px 18px;margin:14px 0;font-size:16px}.readmap{background:#f6f8fb;border:1px solid #d5dbe6;border-radius:12px;padding:4px 16px;margin:12px 0}.howto{background:#fff8e6;border-left:5px solid #f59e0b;border-radius:8px;padding:2px 14px;margin:6px 0 22px}.quiz{background:#effaf3;border:1px solid #9bd8b1;border-radius:12px;padding:4px 16px}details{margin:8px 0}details.l3{background:#f7f7f9;border:1px dashed #b8c0cc;border-radius:10px;padding:6px 14px}summary{cursor:pointer;font-weight:600;color:#1F3A5F}body{font-size:15.5px}blockquote{background:#f3f6fa;border-left:4px solid #2E86C1;margin:0;padding:6px 12px}</style></head>
+<body><div style="background:#fff7ed;border:1px solid #fdba74;padding:8px 12px;margin:8px 0;font-size:13px">历史版本：PDF/Word/图片已归档至 GitHub Release（下载：<a href="https://github.com/PSS917/research-os/releases/download/archive-v20261015-1805/US_Retail_Sep2026_PreEvent_v20261015-1805.zip">ZIP</a>）。Archived version — heavy files live in Release assets.</div>
+<header id="title-block-header">
+<h1 class="title"> </h1>
+</header>
+<h1
+id="美国9月零售销售-发布前事件书us-retail-sales-sep-2026-pre-event-book-专业中文版">美国9月零售销售
+发布前事件书｜US Retail Sales (Sep 2026) Pre-Event Book —
+专业中文版</h1>
+<blockquote>
+<p><strong>发布时间：2026-10-15（周四）08:30 美东 = 20:30 新加坡时间
+(SGT)</strong>｜状态
+<strong>CONFIRMED</strong>（census.gov/retail/release_schedule.html：September
+2026 → October 15, 2026, 8:30 am） 同一时刻：PPI（已于 v20261014-1806
+独立锁定，本书不改写）、初请失业金、费城联储、纽约联储制造业指数。次日：进口价格（周五
+20:30 SGT）、工业产出（周五 21:15 SGT）。
+发布前快照锁定：<strong>2026-10-15 18:05 SGT</strong>（版本
+v20261015-1805）。本文件不会在事后改写。非投资建议｜Not investment
+advice。标签：FACT｜DATA｜MARKET
+EXP｜HYPOTHESIS｜INFERENCE｜UNCERTAINTY。</p>
+</blockquote>
+<div class="box30">
+<p><strong>⏱ 30秒看懂</strong></p>
+<ol type="1">
+<li><strong>发生什么：</strong>今晚 20:30 SGT
+公布美国9月零售销售（Retail
+Sales｜美国人在商店、网上、餐厅花了多少钱）——和 PPI 同一秒公布。</li>
+<li><strong>和我的股票有什么关系：</strong>美联储9月刚加息到
+3.75–4.00%，昨晚 CPI 偏热后市场给 10/28 再加息约 33–49% 概率。消费太强 =
+更可能加息 = 利率敏感的成长股（ARM/PLTR/RKLB/CRWV）承压；AAPL、TSLA、CCL
+直接看消费。</li>
+<li><strong>该看什么/做什么：</strong>只盯一个数：控制组 Control
+group（共识 +0.3%）。≤−0.2% 偏弱，≥+0.6%
+偏强；再问：总额高是不是只因为汽油变贵？</li>
+</ol>
+</div>
+<div class="readmap">
+<p><strong>🗺 阅读地图</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>你有多少时间</th>
+<th>读哪里</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2 分钟</td>
+<td>⏱30秒 + 第4节观察清单。</td>
+</tr>
+<tr>
+<td>10 分钟</td>
+<td>第1–3节 + 图01/03/05：名义 vs 实际、三种剧本、PPI×零售矩阵。</td>
+</tr>
+<tr>
+<td>30 分钟</td>
+<td>全文 + 思考过程（第7节）+ 教学版 + 测验 + 事后作业。</td>
+</tr>
+</tbody>
+</table>
+<p>层级说明：<strong>L1 故事</strong>（人人能懂）→ <strong>L2
+关键数字</strong>（带解释）→ <strong>L3
+专业细节</strong>（网页可折叠，默认收起）。</p>
+</div>
+<h2 id="背景事实-context-fact-data">0. 背景事实 Context (FACT /
+DATA)</h2>
+<ul>
+<li><strong>政策利率</strong>：FOMC 9/16 加息 25bp 至
+<strong>3.75–4.00%</strong>（FRED DFEDTARU=4.00；Warsh
+发布会称「移除一剂宽松 a dose of
+accommodation」，并拒绝预判下一步）。</li>
+<li><strong>昨晚 CPI（锁定书 us-cpi-2026-09
+已出事后复盘）</strong>：整体 <strong>+0.6% 环比 / 3.7%
+同比</strong>，核心 <strong>+0.3% / 2.6%</strong>；汽油涨
+9.1%（媒体报道）。</li>
+<li><strong>市场定价（MARKET EXP）</strong>：10/28 加息概率 CPI 前约 22%
+→ 公布后 41.5%（CME FedWatch，10/14 12:20 ET）/ 49%（WSJ 引 CME）/
+收盘约 32.7%（Cboe）——<strong>波动大，以发布前最新为准</strong>。</li>
+<li><strong>利率</strong>：2Y <strong>4.79%</strong>、10Y
+<strong>5.21%</strong>（FRED，2026-10-13）。</li>
+<li><strong>8月零售</strong>（FRED，年度修订后）：总额
+<strong>+1.13%</strong>、除汽车 <strong>+1.28%</strong>（首发曾为 +1.2%
+/ +1.4%）；网购 8 月 +2.3~2.6%（Prime Day 时间错位，Action Economics /
+Continuum）。</li>
+</ul>
+<h2 id="执行摘要-executive-summary">1. 执行摘要 Executive Summary</h2>
+<ol type="1">
+<li><strong>共识 (MARKET EXP)</strong>：总额
+<strong>+0.3%</strong>、除汽车 <strong>+0.5%</strong>（investingLive
+周历，经 Admiral Markets 10/14 转引；Action Economics
+调查中位数相同），控制组 <strong>+0.3%</strong>（Action Economics
+调查中位数，区间 −0.1~+0.5%）。</li>
+<li><strong>我们 (HYPOTHESIS)</strong>：总额
+<strong>+0.2%</strong>、除汽车 <strong>+0.4%</strong>、控制组
+<strong>0.0%</strong>——<strong>比共识偏软</strong>。理由：①8 月网购
++2.3~2.6% 的 Prime Day 错位在 9 月回吐（网购约占控制组
+28%）；②汽油涨价撑高名义总额、却挤压实际购买力；③两家独立预览（Action
+Economics 控制组 −0.1%、Continuum 除汽车与汽油
+−0.1%）均偏软。<strong>UNCERTAINTY：我们没有独立的刷卡数据模型，偏离共识的依据是二手预览，置信度中等偏低。</strong></li>
+<li><strong>情景概率（已按 v2026-10-14 规则校准）</strong>：偏弱 25% /
+符合 55% / 偏强 20%。基础概率：过去36个月 headline 环比：≤0.0% 占
+33%、0.1–0.6% 占 36%、≥0.7% 占 31%（FRED RSAFS
+计算）。校准：未触发（所有情景与基础概率差距 ≤20pp）。</li>
+<li><strong>为什么重要</strong>：在加息周期里，「消费强」= 「需求过热」=
+更可能 10 月加息（坏消息对估值倍数）；「消费弱 + PPI 热」=
+滞胀味——不是干净的利好。</li>
+<li><strong>观察名单</strong>：消费直连
+AAPL、TSLA（汽车销售）、CCL（可选消费/旅游）；利率敏感
+ARM、PLTR、RKLB、CRWV、CRWD；AI
+资本开支链（NVDA/AVGO/TSM）主要受今天台积电财报叙事主导，零售数据只通过
+2Y/10Y 间接影响。</li>
+</ol>
+<h2 id="共识-vs-我们-expectation-gap">2. 共识 vs 我们 Expectation
+Gap</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th>指标</th>
+<th>8月前值 (DATA)</th>
+<th>共识 MARKET EXP</th>
+<th>来源/日期</th>
+<th>我们 HYPOTHESIS</th>
+<th>差（我们−共识）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>总额 Headline MoM</td>
+<td>+1.13%（首发 +1.2%）</td>
+<td><strong>+0.3%</strong></td>
+<td>investingLive via Admiral 10/14；Action Econ. 中位数</td>
+<td><strong>+0.2%</strong></td>
+<td>−0.1</td>
+</tr>
+<tr>
+<td>除汽车 Ex-auto MoM</td>
+<td>+1.28%（首发 +1.4%）</td>
+<td><strong>+0.5%</strong></td>
+<td>同上</td>
+<td><strong>+0.4%</strong></td>
+<td>−0.1</td>
+</tr>
+<tr>
+<td>控制组 Control MoM</td>
+<td>+1.2%（Action Econ. 引述）</td>
+<td><strong>+0.3%</strong></td>
+<td>Action Econ. 调查中位数（区间 −0.1~+0.5）</td>
+<td><strong>0.0%</strong></td>
+<td><strong>−0.3</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>分析师备选（非共识，仅作对照）</strong></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>机构</th>
+<th>预测</th>
+<th>类别</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Action Economics (Oct 13 survey note)</td>
+<td>headline +0.1% / ex_auto +0.3% / control -0.1%</td>
+<td>分析师观点（非共识）</td>
+</tr>
+<tr>
+<td>Continuum Economics (Oct 14)</td>
+<td>headline +0.1% / ex_auto +0.4% / ex_auto_gas -0.1%</td>
+<td>分析师观点（非共识）</td>
+</tr>
+<tr>
+<td>Wells Fargo (Oct 9 week ahead)</td>
+<td>headline +0.4%</td>
+<td>分析师观点（非共识）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="情景树-scenarios-hypothesis">3. 情景树 Scenarios
+(HYPOTHESIS)</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr>
+<th>情景</th>
+<th>阈值</th>
+<th>原始概率</th>
+<th>基础概率</th>
+<th>校准后</th>
+<th>2Y</th>
+<th>10Y</th>
+<th>USD/JPY</th>
+<th>NDX</th>
+<th>受影响最大</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>偏弱 Weak</td>
+<td>总额 ≤0.0% 或 控制组 ≤−0.2%</td>
+<td>25%</td>
+<td>33%</td>
+<td><strong>25%</strong></td>
+<td>−4~−8bp</td>
+<td>−2~−6bp</td>
+<td>−0.3~−0.6</td>
+<td>若 PPI 冷：+0.5~+1%；若 PPI 热：分化</td>
+<td>AAPL/TSLA/CCL ↓，长久期成长 ↑</td>
+</tr>
+<tr>
+<td>符合 Inline</td>
+<td>总额 0.1–0.6%；控制组 −0.1~0.5%</td>
+<td>55%</td>
+<td>36%</td>
+<td><strong>55%</strong></td>
+<td>由 PPI 主导</td>
+<td>由 PPI 主导</td>
+<td>—</td>
+<td>±0.5%</td>
+<td>看控制组质量</td>
+</tr>
+<tr>
+<td>偏强 Strong</td>
+<td>总额 ≥0.7% 或 控制组 ≥0.6%</td>
+<td>20%</td>
+<td>31%</td>
+<td><strong>20%</strong></td>
+<td>+4~+8bp</td>
+<td>+3~+6bp</td>
+<td>+0.3~+0.7</td>
+<td>−0.5~−1.5%</td>
+<td>ARM/PLTR/RKLB/CRWV ↓</td>
+</tr>
+</tbody>
+</table>
+<p>反应幅度为数量级示意（HYPOTHESIS），不是交易信号。<strong>关键子情景</strong>：总额
+≥0.7% 但控制组 ≤0.1% = 汽油/价格推动的「假强」，债市可能先涨后回。</p>
+<h2 id="发布时观察清单-live-observation-checklist2030-sgt-1015">4.
+发布时观察清单 Live-Observation Checklist（20:30 SGT 10/15）</h2>
+<p>先填实际值，再看标题；先看控制组，再看总额。</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>#</th>
+<th>看什么</th>
+<th>偏弱</th>
+<th>偏强</th>
+<th>初学者注释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>控制组 Control group</strong> 环比</td>
+<td>≤−0.2%</td>
+<td>≥+0.6%</td>
+<td>进 GDP 的那部分；共识 +0.3%，我们 0.0%</td>
+</tr>
+<tr>
+<td>2</td>
+<td>总额 Headline 环比</td>
+<td>≤0.0%</td>
+<td>≥0.7%</td>
+<td>共识 +0.3%；汽油贵会「虚高」</td>
+</tr>
+<tr>
+<td>3</td>
+<td>加油站销售 Gasoline stations</td>
+<td>—</td>
+<td>大涨</td>
+<td>若总额强主要来自这里 → 价格不是数量</td>
+</tr>
+<tr>
+<td>4</td>
+<td>无店铺/网购 Nonstore</td>
+<td>明显负</td>
+<td>再涨</td>
+<td>检验「Prime Day 回吐」假设（我们偏软的核心理由）</td>
+</tr>
+<tr>
+<td>5</td>
+<td>汽车 Motor vehicles</td>
+<td>负</td>
+<td>正</td>
+<td>行业数据显示 9 月汽车销售走弱 → TSLA 叙事</td>
+</tr>
+<tr>
+<td>6</td>
+<td>8 月修正 Revisions</td>
+<td>下修</td>
+<td>上修</td>
+<td>下修 0.3pp 以上 = 等于额外一次「偏弱」</td>
+</tr>
+<tr>
+<td>7</td>
+<td>餐饮 Food services</td>
+<td>负</td>
+<td>强</td>
+<td>服务类消费唯一窗口 → CCL 等旅游消费</td>
+</tr>
+<tr>
+<td>8</td>
+<td>2Y 首 15 分钟</td>
+<td>≤−4bp</td>
+<td>≥+4bp</td>
+<td>注意：同一秒还有 PPI，见图05矩阵归因</td>
+</tr>
+<tr>
+<td>9</td>
+<td>初请 Initial claims（共识约 195–200k，前值 197k）</td>
+<td>≥215k</td>
+<td>≤190k</td>
+<td>劳动市场若松动，Fed 更可能等到 12 月</td>
+</tr>
+<tr>
+<td>10</td>
+<td>费城联储（共识 28.4，前值 37.8）/ 纽约联储（共识 10.3，前值
+7.6）</td>
+<td>大幅低于</td>
+<td>大幅高于</td>
+<td>共识来自 ITC Daily Calendar 10/15；价格分项更重要</td>
+</tr>
+</tbody>
+</table>
+<figure>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261015-1805/US_Retail_Sep2026_PreEvent_v20261015-1805.zip" alt="2×2 矩阵" />
+<figcaption aria-hidden="true">2×2 矩阵</figcaption>
+</figure>
+<div class="howto">
+<p><strong>📊 怎么看这张图</strong></p>
+<ul>
+<li><strong>坐标/颜色：</strong>横轴=零售（控制组）强弱，纵轴=PPI
+冷热；四格=四种组合的市场含义。</li>
+<li><strong>只记住一件事：</strong>两份数据同时出来，2Y
+的反应是「合成」的——先看哪份更出乎意料。</li>
+<li><strong>什么会改变结论：</strong>若 2Y 在 PPI
+偏热时反而下行，说明市场在交易「增长担忧」而不是通胀。</li>
+</ul>
+</div>
+<h2 id="受影响观察名单">5. 受影响观察名单</h2>
+<ul>
+<li><strong>消费直连</strong>：AAPL（高端消费韧性；iPhone
+周期）、TSLA（汽车销售 +
+利率敏感双重）、CCL（可选消费/旅游；餐饮分项是代理变量）。</li>
+<li><strong>利率路径</strong>（与 CPI/PPI
+书同一敏感度框架）：ARM、PLTR、RKLB、CRWV、CRWD、MRVL——偏强情景下最弱。</li>
+<li><strong>AI 链</strong>：NVDA、AVGO、TSM、MU
+今日主驱动是台积电财报（14:00 SGT 已开完，事后复盘归入下一份
+Daily），零售只经由 2Y/10Y
+间接影响——<strong>归因时勿混淆</strong>。</li>
+<li><strong>USD/JPY</strong>：偏强情景 → 美日利差扩大 → 日元走弱；关注
+BOJ 10/29–30 前的套息交易拥挤（Carry stress）。</li>
+</ul>
+<h2 id="证伪条件-falsifiers">6. 证伪条件 Falsifiers</h2>
+<ol type="1">
+<li>控制组 ≥+0.5%（且网购未回吐）→ 我们「Prime Day 回吐」假设错误 → 记
+Fundamental Forecast 误差，上调消费韧性先验。</li>
+<li>偏强但 2Y 升幅 &lt;2bp → 市场只认 PPI/Fed 讲话，零售对当前 Fed
+反应函数权重低。</li>
+<li>偏弱但 AAPL/TSLA/CCL 上涨 → 市场在交易「利率下行」而非「需求转弱」→
+本书的消费股传导失效。</li>
+<li>总额强、控制组弱，但 10Y 盈亏平衡通胀大涨 →
+市场担心汽油二次传导，「价格虚高可看穿」假设失效。</li>
+<li>8 月大幅上修（≥0.3pp）而 9 月符合 →
+水平更高，实际是偏强；只看环比会误判。</li>
+</ol>
+<h2 id="思考过程-thinking-walkthrough七步法">7. 思考过程 Thinking
+walkthrough（七步法）</h2>
+<ol type="1">
+<li><strong>先问对问题：谁在乎、为什么在乎</strong>：谁在乎？美联储（10/28
+是否连续加息）、债市（2Y）、消费股。为什么？在加息周期里，需求强弱决定
+Fed 要不要继续「移除宽松」。</li>
+<li><strong>市场已经定价了什么</strong>：共识 +0.3% 已经假设 8
+月大涨后放缓；10 月加息约
+33–49%——市场把「强消费」部分计入。只有「实际−共识」会动价格。</li>
+<li><strong>搭因果链，每环配一个检验数据</strong>：零售名义额
+→（扣汽油价格：CPI 汽油 +9.1%）→ 控制组 → 实际商品消费 → GDP → Fed
+判断需求是否过热 → 2Y → 10Y → WACC →
+成长股倍数。每环检验数据：加油站分项、控制组、BEA
+实际消费（10/29）、FedWatch、2Y、10Y、NDX。</li>
+<li><strong>找每一环的断点</strong>：断点①汽油虚高（名义≠实际）；断点②PPI
+同时公布，2Y 反应混合；断点③Warsh 明早 11:30 SGT
+讲话可能盖过数据；断点④8 月修正改变基数。</li>
+<li><strong>用工具箱逐一质疑</strong>：见下方工具。</li>
+<li><strong>给对立观点最强版本，再用证据裁判</strong>：见「对立观点」。</li>
+<li><strong>写下「如果我错了，会先看到什么」</strong>：如果我错了，会先看到「网购
+Nonstore 分项仍为正、控制组 ≥+0.4%」。</li>
+</ol>
+<h3 id="二阶思维-second-order">二阶思维 Second-order</h3>
+<ul>
+<li><strong>是什么：</strong>然后呢？谁会因此改变行为？</li>
+<li><strong>为什么用：</strong>零售数据本身不改变公司利润，它改变的是
+Fed 的判断。</li>
+<li><strong>用在本事件上：</strong>控制组 +0.6% → FedWatch 10
+月加息概率可能从约 40% 升至 &gt;55% → 2Y +5bp → 按 CPI
+书的敏感度框架，高估值股承压。一阶是「消费好=消费股好」，二阶是「消费好=加息=估值降」。</li>
+<li><strong>✍ 轮到你：</strong>如果控制组 −0.3%，同时 PPI
+0.7%，二阶效果是什么？写下你的答案再看图05。</li>
+</ul>
+<h3 id="市场已经定价了什么-priced-in">市场已经定价了什么 Priced-in</h3>
+<ul>
+<li><strong>是什么：</strong>只有「实际−预期」推动价格。</li>
+<li><strong>为什么用：</strong>8 月 +1.1% 很强，共识已经预期放缓到
++0.3%。</li>
+<li><strong>用在本事件上：</strong>若公布 +0.3%：虽然比 8
+月「大幅放缓」，标题会写「零售放缓」，但这是「符合」——不应引发大反应。</li>
+<li><strong>✍ 轮到你：</strong>如果标题写「零售销售大幅放缓」而实际 =
+共识，你会怎么判断市场反应？</li>
+</ul>
+<h3 id="基础概率-base-rates">基础概率 Base rates</h3>
+<ul>
+<li><strong>是什么：</strong>这类结果历史上多常见？</li>
+<li><strong>为什么用：</strong>防止我们对「偏软」过度自信。</li>
+<li><strong>用在本事件上：</strong>过去36个月 headline 环比：≤0.0% 占
+33%、0.1–0.6% 占 36%、≥0.7% 占 31%（FRED RSAFS 计算）。我们给偏弱
+25%，与基础概率比较后：未触发（所有情景与基础概率差距 ≤20pp）。</li>
+<li><strong>✍ 轮到你：</strong>把阈值改成控制组
+≤0.0%，你觉得基础概率会更高还是更低？为什么？</li>
+</ul>
+<p><strong>我们的观点：</strong>9 月零售偏软（控制组约
+0.0%），主要是网购回吐 + 汽油挤压实际购买力。</p>
+<p><strong>对立观点最强版本：</strong> 1. 8 月 BEA
+年度修订显示家庭收入更强（Wells Fargo），消费有更多支撑，可能不回吐。 2.
+股市财富效应（指数高位）与工资增长仍支撑高收入人群消费。 3. 共识 +0.3%
+是许多机构的中位数，我们只依赖两家偏软预览，样本偏差。</p>
+<table>
+<thead>
+<tr>
+<th>证据</th>
+<th>支持我们</th>
+<th>支持对立</th>
+<th>权重</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Action Economics 控制组 −0.1%</td>
+<td>✔</td>
+<td></td>
+<td>中</td>
+</tr>
+<tr>
+<td>Continuum 除汽车与汽油 −0.1%</td>
+<td>✔</td>
+<td></td>
+<td>中</td>
+</tr>
+<tr>
+<td>Wells Fargo 总额 +0.4%，收入修订上调</td>
+<td></td>
+<td>✔</td>
+<td>中</td>
+</tr>
+<tr>
+<td>Redbook 周数据 9 月动能略降（Continuum 引述）</td>
+<td>✔</td>
+<td></td>
+<td>低</td>
+</tr>
+<tr>
+<td>8 月网购 +2.3~2.6% 一次性</td>
+<td>✔</td>
+<td></td>
+<td>高</td>
+</tr>
+</tbody>
+</table>
+<p><strong>裁判：</strong>证据略偏向我们，但不足以高信心偏离共识——所以我们只把控制组下调
+0.3pp，并把「符合」保持为最大概率情景。</p>
+<h2 id="最终自我质疑-final-self-challenge">8. 最终自我质疑 Final
+Self-Challenge</h2>
+<ul>
+<li>我们偏软的理由几乎都来自二手预览；如果那些机构本身有「偏软」历史偏差，我们是在复制别人的错误。</li>
+<li>今晚真正主导 2Y 的可能是
+PPI，而不是零售——我们是否高估了这份数据的市场意义？</li>
+<li>加息周期中「强=坏」的映射可能在财报季被盈利叙事打断（TSM
+指引）；不要把 NDX 的全部涨跌归因给零售。</li>
+</ul>
+<h2 id="周五次日工业产出-进口价格简表post-only">9. 周五次日：工业产出
+&amp; 进口价格（简表，Post only）</h2>
+<ul>
+<li>进口价格 Import prices（9 月）：周五 08:30 ET = <strong>20:30
+SGT</strong>，CONFIRMED（bls.gov）。观察：油价推动 vs
+非油进口价格（关税/美元）。</li>
+<li>工业产出与产能利用率 IP &amp; Capacity Utilization（9 月）：周五
+09:15 ET = <strong>21:15 SGT</strong>，CONFIRMED（federalreserve.gov
+G.17 日历）。8 月 IP 指数 103.07（FRED INDPRO，环比约
++0.02%）。共识本书未核实 → 不编造；复盘归入下一份 Daily OS。</li>
+</ul>
+<h2 id="source-ledger">10. Source Ledger</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>来源</th>
+<th>日期</th>
+<th>用途</th>
+<th>类别</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>census.gov/retail/release_schedule.html</td>
+<td>查证 2026-10-15</td>
+<td>发布时间 CONFIRMED</td>
+<td>FACT</td>
+</tr>
+<tr>
+<td>Admiral Markets preview（引 investingLive 周历）</td>
+<td>2026-10-14</td>
+<td>共识 0.3% / 0.5%</td>
+<td>MARKET EXP</td>
+</tr>
+<tr>
+<td>Action Economics 调查（Indicator survey PDF）</td>
+<td>2026-10-13</td>
+<td>中位数 0.3/0.5/0.3、区间；自家预测 0.1/0.3/−0.1</td>
+<td>MARKET EXP + Analyst</td>
+</tr>
+<tr>
+<td>Continuum Economics preview</td>
+<td>2026-10-14</td>
+<td>0.1 / 0.4 / ex auto&amp;gas −0.1</td>
+<td>Analyst</td>
+</tr>
+<tr>
+<td>Wells Fargo Economics Week Ahead</td>
+<td>2026-10-09</td>
+<td>0.4%；年度修订说明</td>
+<td>Analyst</td>
+</tr>
+<tr>
+<td>ITC G10 Daily Calendar</td>
+<td>2026-10-15</td>
+<td>初请/费城/纽约联储共识</td>
+<td>MARKET EXP</td>
+</tr>
+<tr>
+<td>FRED RSAFS / RSFSXMV / INDPRO / DGS2 / DGS10 / DFEDTARU</td>
+<td>拉取 2026-10-15 18:05 SGT</td>
+<td>前值、历史、利率</td>
+<td>DATA</td>
+</tr>
+<tr>
+<td>federalreserve.gov 9/16 发布会实录</td>
+<td>2026-09-16</td>
+<td>加息至 3.75–4.00%，「a dose of accommodation」</td>
+<td>FACT</td>
+</tr>
+<tr>
+<td>CME FedWatch via Yahoo/Benzinga, WSJ, Cboe</td>
+<td>2026-10-14</td>
+<td>10 月加息概率 22%→41.5%/49%/32.7%</td>
+<td>MARKET EXP</td>
+</tr>
+<tr>
+<td>us-cpi-2026-09 post v20261015-0800；us-ppi-2026-09 pre
+v20261014-1806</td>
+<td>锁定</td>
+<td>联动，不改写</td>
+<td>Locked</td>
+</tr>
+</tbody>
+</table>
+<h2 id="assumption-register">11. Assumption Register</h2>
+<ol type="1">
+<li>investingLive/Action Economics
+中位数可作街共识代理（ASSUMPTION）；若 Bloomberg
+调查中位数不同，复盘时注明。</li>
+<li>网购回吐幅度足以把控制组拉到约 0.0%（HYPOTHESIS；证伪见
+§6-1）。</li>
+<li>当前 Fed 反应函数对「需求强」敏感（INFERENCE，依据 Warsh
+9/16「金融条件并不紧」表述）。</li>
+<li>反应幅度为数量级示意（HYPOTHESIS）。</li>
+</ol>
+<h2 id="model-provenance">12. Model Provenance</h2>
+<p>Builder <code>pipeline/build_1015_pre.py</code>；版本
+v20261015-1805；FRED 实时拉取；校准规则
+<code>calibration.apply_rule</code>（v2026-10-14）。Excel
+含活公式（意外值、情景判定、概率加权期望）。</p>
+<h2 id="图表-charts">图表 Charts</h2>
+<figure>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261015-1805/US_Retail_Sep2026_PreEvent_v20261015-1805.zip" alt="传导链" />
+<figcaption aria-hidden="true">传导链</figcaption>
+</figure>
+<div class="howto">
+<p><strong>📊 怎么看这张图</strong></p>
+<ul>
+<li><strong>坐标/颜色：</strong>方框从左到右=因果顺序；箭头=传导。</li>
+<li><strong>只记住一件事：</strong>名义零售 ≠
+实际消费：汽油涨价会让数字「看起来强」。</li>
+<li><strong>什么会改变结论：</strong>若控制组强（不仅是汽油），链条后半段（Fed→2Y）才真正被触发。</li>
+</ul>
+</div>
+<figure>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261015-1805/US_Retail_Sep2026_PreEvent_v20261015-1805.zip" alt="预期差" />
+<figcaption aria-hidden="true">预期差</figcaption>
+</figure>
+<div class="howto">
+<p><strong>📊 怎么看这张图</strong></p>
+<ul>
+<li><strong>坐标/颜色：</strong>灰=8月前值，蓝=共识，绿=我们。</li>
+<li><strong>只记住一件事：</strong>我们最大分歧在控制组（0.0 vs
+0.3）。</li>
+<li><strong>什么会改变结论：</strong>网购分项若仍为正，我们的绿柱就是错的。</li>
+</ul>
+</div>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261015-1805/US_Retail_Sep2026_PreEvent_v20261015-1805.zip" alt="情景" /> <img
+src="https://github.com/PSS917/research-os/releases/download/archive-v20261015-1805/US_Retail_Sep2026_PreEvent_v20261015-1805.zip" alt="历史环比" />
+<div class="howto">
+<p><strong>📊 怎么看这张图</strong></p>
+<ul>
+<li><strong>坐标/颜色：</strong>每根柱=一个月的零售环比；红≥0.7、绿≤0.0。</li>
+<li><strong>只记住一件事：</strong>7 月低、8 月高是 Prime Day
+时间错位；9 月可能回吐。</li>
+<li><strong>什么会改变结论：</strong>若 9 月仍
+≥0.7，说明不是错位，而是消费真强。</li>
+</ul>
+</div>
+<h2 id="事后作业-post-event-homework发布后填写不改本书">13. 事后作业
+Post-event homework（发布后填写，不改本书）</h2>
+<table>
+<thead>
+<tr>
+<th>环节</th>
+<th>成立/断开</th>
+<th>证据</th>
+<th>学到什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>①零售意外→Fed 10月预期</td>
+<td>____</td>
+<td>____</td>
+<td>____</td>
+</tr>
+<tr>
+<td>②→2年期</td>
+<td>____</td>
+<td>____</td>
+<td>____</td>
+</tr>
+<tr>
+<td>③→10年期</td>
+<td>____</td>
+<td>____</td>
+<td>____</td>
+</tr>
+<tr>
+<td>④→折现率</td>
+<td>____</td>
+<td>____</td>
+<td>____</td>
+</tr>
+<tr>
+<td>⑤→AAPL/TSLA/CCL 与成长股</td>
+<td>____</td>
+<td>____</td>
+<td>____</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

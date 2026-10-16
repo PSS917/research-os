@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title> </title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<style>body{font-family:'Noto Sans CJK SC','Noto Sans',sans-serif;max-width:1100px;margin:auto;padding:24px;line-height:1.6;color:#1b1b1b}table{border-collapse:collapse;font-size:13px;margin:8px 0}td,th{border:1px solid #ccd;padding:4px 8px}th{background:#1F3A5F;color:#fff}img{max-width:100%;border:1px solid #ddd}h1{color:#1F3A5F}h2{border-bottom:2px solid #1F3A5F}abbr{text-decoration:underline dotted #2E86C1;cursor:help}.box30{background:linear-gradient(135deg,#eaf2ff,#f5ecff);border:2px solid #5b8cff;border-radius:14px;padding:6px 18px;margin:14px 0;font-size:16px}.readmap{background:#f6f8fb;border:1px solid #d5dbe6;border-radius:12px;padding:4px 16px;margin:12px 0}.howto{background:#fff8e6;border-left:5px solid #f59e0b;border-radius:8px;padding:2px 14px;margin:6px 0 22px}.quiz{background:#effaf3;border:1px solid #9bd8b1;border-radius:12px;padding:4px 16px}details{margin:8px 0}details.l3{background:#f7f7f9;border:1px dashed #b8c0cc;border-radius:10px;padding:6px 14px}summary{cursor:pointer;font-weight:600;color:#1F3A5F}body{font-size:15.5px}blockquote{background:#f3f6fa;border-left:4px solid #2E86C1;margin:0;padding:6px 12px}</style></head>
+<body>
+<header id="title-block-header">
+<h1 class="title"> </h1>
+</header>
+<h1 id="台积电-tsm-3q26-财报事后复盘tsmc-q3-2026-post-event-book">台积电
+TSM 3Q26 财报事后复盘｜TSMC Q3 2026 Post-Event Book</h1>
+<blockquote>
+<p>版本 v20261016-0802-post｜生成 2026-10-16 08:02 SGT｜基于锁定的事前书
+<strong>v20261014-1806</strong>（完整性校验通过，未改写）｜财报发布
+2026-10-15 约 14:00 台北/新加坡时间｜非投资建议 Not investment
+advice</p>
+</blockquote>
+<div class="box30">
+<p><strong>⏱ 30秒看懂</strong></p>
+<ol type="1">
+<li><strong>发生什么：</strong>台积电第三季营收
+<strong>46.72亿美元×10</strong>（即 $46.72bn），<strong>高于指引上沿
+$45.8bn</strong>；毛利率 66.4%、营业利润率 58.7% 落在/高于指引；每 ADR
+盈利 $4.60，略高于共识 $4.52。第四季指引 $52.3–54.3bn（中值环比
++14%）。</li>
+<li><strong>和我的股票有什么关系：</strong>按事前锁定规则这是
+<strong>Beat（超预期）</strong>，但美股 ADR 当天
+<strong>-1.80%</strong>，费城半导体 SOX -0.88%，设备股 AMAT -3.7%、KLAC
+-2.4%。好成绩≠股价涨：当天定价的主角是整个半导体板块的估值收缩。</li>
+<li><strong>该看什么/做什么：</strong>盯三件事：①台股 2330
+今天怎么反应；②毛利率稀释（N2 + 海外厂
+2%→3–4%）会不会压过营收增长；③2027
+资本开支口径（‘显著高于过去三年’）对设备股 AMAT/KLAC
+是利好还是’回报担忧’。</li>
+</ol>
+</div>
+<div class="readmap">
+<p><strong>🗺 阅读地图</strong></p>
+<table>
+<thead>
+<tr>
+<th>你有多少时间</th>
+<th>读哪里</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2 分钟</td>
+<td>只看 ⏱30秒 + 图1、图3</td>
+</tr>
+<tr>
+<td>10 分钟</td>
+<td>加读 §1 实际vs预期、§2 市场反应、§4 我们错在哪</td>
+</tr>
+<tr>
+<td>30 分钟</td>
+<td>全读，含 §5 估值、§6 对立观点、§7 来源与假设、自我测验</td>
+</tr>
+</tbody>
+</table>
+<p>层级说明：<strong>L1 故事</strong>（人人能懂）→ <strong>L2
+关键数字</strong>（带解释）→ <strong>L3
+专业细节</strong>（网页可折叠，默认收起）。</p>
+</div>
+<h2 id="实际-vs-预期actual-vs-expected事实-fact">1. 实际 vs 预期｜Actual
+vs Expected（事实 FACT）</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th>指标</th>
+<th>公司指引</th>
+<th>共识 (锁定, MARKET EXP)</th>
+<th>我们 (锁定, HYPOTHESIS)</th>
+<th>实际 FACT</th>
+<th>判定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>营收 Revenue US$bn</td>
+<td>44.6–45.8</td>
+<td>45.64</td>
+<td>45.2</td>
+<td><strong>46.72</strong></td>
+<td>高于指引上沿 +0.92</td>
+</tr>
+<tr>
+<td>毛利率 GM %</td>
+<td>65.0–67.0</td>
+<td>—</td>
+<td>66.0</td>
+<td><strong>66.4</strong></td>
+<td>指引内（环比 −1.3pp，N2 稀释）</td>
+</tr>
+<tr>
+<td>营业利润率 OM %</td>
+<td>56.0–58.0</td>
+<td>—</td>
+<td>57.0</td>
+<td><strong>58.7</strong></td>
+<td>高于指引上沿</td>
+</tr>
+<tr>
+<td>EPS/ADR US$</td>
+<td>—</td>
+<td>4.52（4.26–4.85）</td>
+<td>4.5</td>
+<td><strong>4.6</strong></td>
+<td>比共识 +1.7%</td>
+</tr>
+<tr>
+<td>汇率 USD/TWD</td>
+<td>32.0</td>
+<td></td>
+<td></td>
+<td>31.98</td>
+<td>台币略弱，利好台币计价利润</td>
+</tr>
+</tbody>
+</table>
+<p>其他事实：净利 NT$763.06bn（+68.7% YoY），ROE 45.5%，出货 4476k
+片（12寸当量），季度 capex $13.8bn，现金及有价证券约 NT$4.0tn，存货天数
+82 天。制程结构：N2 8% / N3 33% / N5 28% / N7 10%，7nm 及以下
+79%。平台：HPC 68%（环比 +22%），手机 21%（+10%）。</p>
+<p><strong>4Q26 指引（管理层指引 GUIDANCE）</strong>：营收
+$52.3–54.3bn，毛利率 65–67%，营业利润率 56.5–58.5%，汇率假设 31.8。
+<strong>电话会要点（GUIDANCE / 管理层表述）：</strong> - FY2026 USD
+revenue growth now ~44% (2026 全年美元营收增长约44%) - 2026 capex
+reiterated $60–64bn; 2026–28 capex ‘even more significantly higher’ than
+prior 3 years - AI accelerator CAGR (2024–29, mid-to-high 50s%):
+‘probably will be higher’ — no formal update - N2 capacity to more than
+double in 2027; A14 risk production 2027, volume 2028 - Arizona Fab 2
+volume production 3Q27 (slightly ahead); extra 3nm fab in Tainan (1H28)
+- Overseas-fab GM dilution ~2% now, widening to 3–4% in later years -
+Consumer / price-sensitive segments challenged by rising component
+prices → ‘prudent’ 2027 planning - Advanced packaging: 5x reticle in
+production; 9x and 14x in development; GlobalFoundries interposer deal
+for back-end shortage</p>
+<figure>
+<img src="images/01_scorecard.png" alt="记分卡" />
+<figcaption aria-hidden="true">记分卡</figcaption>
+</figure>
+<div class="howto">
+<p><strong>📊 怎么看这张图</strong></p>
+<ul>
+<li><strong>坐标/颜色：</strong>每个小图是一个指标：灰=共识，蓝=我们事前锁定的数字，绿=实际，黄色带=公司指引区间。</li>
+<li><strong>只记住一件事：</strong>营收冲出黄色带上沿，利润率留在带内——‘量超预期、利润率符合’。</li>
+<li><strong>什么会改变结论：</strong>如果下季毛利率跌出 65%
+下沿，说明稀释比管理层说的快，结论要改。</li>
+</ul>
+</div>
+<figure>
+<img src="images/02_revenue_path_guide.png" alt="营收路径" />
+<figcaption aria-hidden="true">营收路径</figcaption>
+</figure>
+<div class="howto">
+<p><strong>📊 怎么看这张图</strong></p>
+<ul>
+<li><strong>坐标/颜色：</strong>柱子=每季美元营收；最右橙柱是第四季指引中值，黑色线段是指引上下沿。</li>
+<li><strong>只记住一件事：</strong>第四季还要再长
+14%，需求端没有放缓信号。</li>
+<li><strong>什么会改变结论：</strong>若 1 月公布的 4Q 实际低于 $52.3bn
+下沿，’需求无上限’叙事破裂。</li>
+</ul>
+</div>
+<h2 id="市场反应market-reactiondata-inference">2. 市场反应｜Market
+Reaction（DATA + INFERENCE）</h2>
+<table>
+<thead>
+<tr>
+<th>标的</th>
+<th>10/14 发布前一日 %</th>
+<th>10/15 发布日 %</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TSM</td>
+<td>-3.40</td>
+<td>-1.80</td>
+</tr>
+<tr>
+<td>^SOX</td>
+<td>-4.30</td>
+<td>-0.88</td>
+</tr>
+<tr>
+<td>^NDX</td>
+<td>-2.02</td>
+<td>-0.05</td>
+</tr>
+<tr>
+<td>NVDA</td>
+<td>-3.16</td>
+<td>-1.84</td>
+</tr>
+<tr>
+<td>AVGO</td>
+<td>-3.10</td>
+<td>-0.55</td>
+</tr>
+<tr>
+<td>AMD</td>
+<td>-5.73</td>
+<td>-1.50</td>
+</tr>
+<tr>
+<td>AMAT</td>
+<td>-3.79</td>
+<td>-3.72</td>
+</tr>
+<tr>
+<td>KLAC</td>
+<td>-2.82</td>
+<td>-2.43</td>
+</tr>
+<tr>
+<td>MU</td>
+<td>-4.08</td>
+<td>+1.87</td>
+</tr>
+<tr>
+<td>ARM</td>
+<td>-6.81</td>
+<td>+2.85</td>
+</tr>
+<tr>
+<td>INTC</td>
+<td>-4.56</td>
+<td>-2.80</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>TSM ADR 发布日 -1.80%，相对 SOX -0.92pp。两天累计 ADR
+-5.14%（445.12→422.25）。</li>
+<li>台股 2330 的反应要看 10/16 台北交易时段（财报在 10/15
+台股收盘后发布）；本书生成时尚无数据，明日日报补上。</li>
+<li>同日美国宏观：9 月零售销售（总体 +0.8%，控制组约
++0.1%，见零售事后书）与 PPI 同日公布；10 年期美债 10/15
+小幅回落。<strong>标题驱动 vs 基本面</strong>：TSM
+自身基本面向好（Fundamental Change
+正面），但当天价格主要跟随板块估值（Headline/Sector 反应）。</li>
+<li>分解（INFERENCE，非精确归因）：ΔPrice ≈ ΔEPS(+，Q4 共识 EPS 7日前
+4.98→现 5.08) + ΔMultiple(板块, −) + ΔPositioning(−，设备股连续下跌显示
+AI 链在去拥挤)。</li>
+</ul>
+<figure>
+<img src="images/03_reaction.png" alt="反应" />
+<figcaption aria-hidden="true">反应</figcaption>
+</figure>
+<div class="howto">
+<p><strong>📊 怎么看这张图</strong></p>
+<ul>
+<li><strong>坐标/颜色：</strong>灰柱=发布前一天，蓝柱=发布当天（美股），单位%。</li>
+<li><strong>只记住一件事：</strong>TSM 跌得比 SOX
+多一点，但设备股跌得更多——卖压集中在板块整体和设备股（MU、ARM
+当天反而上涨），不是针对台积电成绩。</li>
+<li><strong>什么会改变结论：</strong>如果台股 2330
+今天大涨，说明美股反应只是板块情绪，台股才是’对成绩投票’。</li>
+</ul>
+</div>
+<h2 id="判定与校准classification-calibration">3.
+判定与校准｜Classification &amp; Calibration</h2>
+<ul>
+<li>锁定规则（事前书 §3）：营收 ≥ $45.8bn 或 毛利率 ≥ 67% →
+Beat。实际营收 $46.72bn → <strong>BEAT</strong>。</li>
+<li>我们事前概率 Beat 30% / Inline 45% / Miss 25% → Brier
+<strong>0.755</strong>；均匀 1/3 → 0.667；基础概率（Yahoo 记录前 3 季中
+3 季 EPS 超共识 &gt;1.5%，加一平滑后 Beat 67%）→ 0.167。</li>
+<li><strong>结论：我们输给了’什么都不知道’的均匀猜测。</strong> 错误类型
+= 概率校准错误（Probability
+Calibration），不是基本面预测错误：我们的点预测（营收 $45.2bn）低于实际
+3.3%，而台积电过去几季几乎每季都超过指引上沿/共识。教训：对’习惯性保守指引’的公司，Beat
+的基础概率应 ≥60%。</li>
+</ul>
+<figure>
+<img src="images/04_calibration.png" alt="校准" />
+<figcaption aria-hidden="true">校准</figcaption>
+</figure>
+<div class="howto">
+<p><strong>📊 怎么看这张图</strong></p>
+<ul>
+<li><strong>坐标/颜色：</strong>柱子越低=概率预测越准。</li>
+<li><strong>只记住一件事：</strong>我们的 Brier 比均匀猜测还高——事前把
+Beat 只给 30% 是错的。</li>
+<li><strong>什么会改变结论：</strong>未来 4 季若台积电出现
+Inline/Miss，基础概率要相应下调。</li>
+</ul>
+</div>
+<h2 id="事后复盘我们错在哪post-mortem">4.
+事后复盘：我们错在哪｜Post-Mortem</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>环节</th>
+<th>成立/断开</th>
+<th>证据</th>
+<th>学到什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI 需求</td>
+<td>成立</td>
+<td>HPC 环比 +22%，占比 68%；CEO：需求’远高于供给’</td>
+<td>需求端信号仍然最强</td>
+</tr>
+<tr>
+<td>N2/N3 爬坡</td>
+<td>成立</td>
+<td>N2 占 8%；2027 年 N2 产能翻倍以上；新增台南 3nm 厂</td>
+<td>产能扩张=未来 2–3 年营收能见度</td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td>部分成立</td>
+<td>66.4% 指引内，但 N2 + 海外厂稀释 2%→3–4%</td>
+<td>利润率是下一阶段的主要争议</td>
+</tr>
+<tr>
+<td>指引</td>
+<td>成立</td>
+<td>4Q +14% QoQ；全年 +44%</td>
+<td>与共识 2026 全年 +44.9%（TWD）基本一致 → 已被定价</td>
+</tr>
+<tr>
+<td>股价</td>
+<td>断开</td>
+<td>ADR -1.8%，SOX -0.9%，AMAT -3.7%</td>
+<td>板块估值 &gt; 单季成绩；事前证伪条件 #1（Beat 但跌
+&gt;3%）<strong>未触发</strong>（跌幅 &lt;3%），但方向一致</td>
+</tr>
+</tbody>
+</table>
+<p><strong>错误分类</strong>：①概率校准错误（主要）②市场反应错误（次要：事前
+Beat 剧本预期 ADR +3~+7%，实际 -1.8%）。<strong>根因</strong>：忽视了
+10/13–10/14 半导体板块已在去拥挤（AMAT 两日
+-10.2%），个股成绩难以对抗板块资金流。<strong>逻辑修正</strong>：财报剧本要加入’板块动量/拥挤度’条件，Beat
+剧本拆为’Beat+板块顺风’和’Beat+板块逆风’。</p>
+<figure>
+<img src="images/05_chain_postmortem.png" alt="链条复盘" />
+<figcaption aria-hidden="true">链条复盘</figcaption>
+</figure>
+<h2 id="模型与估值更新model-valuation-update">5. 模型与估值更新｜Model /
+Valuation Update</h2>
+<ul>
+<li>原则：没有重大新信息就不强行改估值；<strong>不改写事前预测</strong>。</li>
+<li>本次信息是重大的（季度实际 +
+新指引），但它与共识大体一致：用公司数据推算 2026 全年营收 ≈ 1Q
+NT$1134bn + 2Q 1270 + 3Q 1494 + 4Q 指引中值×31.8 ≈ 1695 =
+<strong>NT$5,594bn</strong>（DERIVED），相比 2025 年 NT$3,809bn 增长
+<strong>46.9%</strong>；共识（Yahoo 0y）NT$5,520bn。差距 +1.3%。</li>
+<li>因此：<strong>三情景 DCF
+结构不变</strong>，只做机械刷新（价格、共识、利率）。公司模型最新两版：v20261015-0757:
+Bear $134 / Base $350 / Bull $655（价格 $430.00）；v20261016-0756: Bear
+$132 / Base $341 / Bull $635（价格 $422.25）。</li>
+<li>需要上调的假设（记入假设登记表，等下季验证）：2027 年 capex
+强度（‘显著高于过去三年’）→
+对设备股是营收利好，但对台积电自由现金流是压力；海外厂毛利稀释 3–4%
+纳入熊市情景。</li>
+</ul>
+<h2 id="对立观点最强版本steelman">6. 对立观点最强版本｜Steelman</h2>
+<p><strong>我们的观点：</strong>台积电基本面持续超预期，股价下跌主要是板块估值收缩，中期价值未受损。</p>
+<p><strong>对立观点最强版本：</strong> 1.
+营收超预期已经是’惯例’，市场早已按’超上沿’定价，所以这不是真正的惊喜。
+2. 毛利率连续两季环比下滑（67.7%→66.4%→指引中值66%），N2
+与海外厂稀释可能持续多年，‘量增利减’会压低估值倍数。 3. 2026–28 capex
+大幅上升 + 设备涨价，意味着自由现金流转化率下降；如果 AI 需求在 2027
+年放缓，产能将过剩。 4. CEO 承认消费类需求受零部件涨价冲击，2027
+规划’审慎’。</p>
+<table>
+<thead>
+<tr>
+<th>证据</th>
+<th>支持我们</th>
+<th>支持对立</th>
+<th>权重</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>营收高于指引上沿 $0.9bn</td>
+<td>✔</td>
+<td></td>
+<td>中</td>
+</tr>
+<tr>
+<td>毛利率环比 −1.3pp</td>
+<td></td>
+<td>✔</td>
+<td>中</td>
+</tr>
+<tr>
+<td>4Q 指引中值 +14% QoQ</td>
+<td>✔</td>
+<td></td>
+<td>高</td>
+</tr>
+<tr>
+<td>全年 +44% ≈ 共识 +44.9%</td>
+<td></td>
+<td>✔</td>
+<td>高</td>
+</tr>
+<tr>
+<td>capex 2026–28 显著上升</td>
+<td>✔</td>
+<td>✔</td>
+<td>中</td>
+</tr>
+<tr>
+<td>发布日 ADR 跑输 SOX</td>
+<td></td>
+<td>✔</td>
+<td>低（一天噪音大）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>裁判：</strong>证据双方都有；’基本面强’成立，但’这些已经被定价’同样成立。我们维持基本面判断，但承认短期股价由板块与毛利率路径决定。</p>
+<h2 id="证伪与下一步falsifiers-watch-next">7. 证伪与下一步｜Falsifiers
+&amp; Watch Next</h2>
+<ol type="1">
+<li>11 月 10 日前后公布的 10 月营收若环比转负 → ‘+14% QoQ’
+指引可信度下降。</li>
+<li>4Q 毛利率低于 65%（1 月公布）→ 稀释快于指引，熊市情景权重上调。</li>
+<li>设备股（AMAT/KLAC）在台积电重申高 capex 后仍继续下跌 →
+市场在交易’资本回报担忧’而非’订单利好’。</li>
+<li>台股 2330 今日若明显跑赢 ADR → 美股反应是情绪/时区噪音。</li>
+</ol>
+<h2 id="来源登记source-ledger">8. 来源登记｜Source Ledger</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>项目</th>
+<th>来源</th>
+<th>类别</th>
+<th>时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3Q26 实际、4Q26 指引</td>
+<td><a
+href="https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/526b65af7305df2dde6b9ece6812b1fdf1e49f9b/3Q26%20EarningsRelease.pdf">TSMC
+3Q26 Earnings Release</a>；<a
+href="https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm">SEC
+6-K</a></td>
+<td>FACT</td>
+<td>2026-10-15</td>
+</tr>
+<tr>
+<td>制程/平台结构、汇率、出货</td>
+<td><a
+href="https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/9f58506f6f114f91cefbf86820cc63297b39b130/3Q26%20Presentation%20(E).pdf">TSMC
+3Q26 Presentation</a></td>
+<td>FACT</td>
+<td>2026-10-15</td>
+</tr>
+<tr>
+<td>电话会表述</td>
+<td><a
+href="https://www.fool.com/earnings/call-transcripts/2026/10/15/tsmc-tsm-q3-2026-earnings-call-transcript/">Motley
+Fool transcript</a></td>
+<td>GUIDANCE（管理层表述）</td>
+<td>2026-10-15</td>
+</tr>
+<tr>
+<td>事前共识/我们的预测</td>
+<td>锁定快照 v20261014-1806（Yahoo co_TSM 2026-10-14）</td>
+<td>MARKET EXP / HYPOTHESIS</td>
+<td>2026-10-14 18:06 SGT</td>
+</tr>
+<tr>
+<td>股价</td>
+<td>Yahoo Finance 日收盘（yfinance）</td>
+<td>DATA</td>
+<td>抓取 2026-10-16 08:02 SGT</td>
+</tr>
+<tr>
+<td>EPS 超预期历史</td>
+<td>Yahoo earn_hist</td>
+<td>DATA</td>
+<td>抓取 2026-10-16 08:02 SGT</td>
+</tr>
+</tbody>
+</table>
+<h2 id="假设登记assumption-register">9. 假设登记｜Assumption
+Register</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>#</th>
+<th>假设</th>
+<th>类型</th>
+<th>检验/失效条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>4Q 营收落在指引内</td>
+<td>GUIDANCE</td>
+<td>1 月财报；月营收</td>
+</tr>
+<tr>
+<td>2</td>
+<td>毛利率稀释（N2+海外）≤ 管理层口径</td>
+<td>HYPOTHESIS</td>
+<td>4Q GM &lt; 65% 即失效</td>
+</tr>
+<tr>
+<td>3</td>
+<td>发布日 ADR 下跌主要由板块驱动</td>
+<td>INFERENCE</td>
+<td>若 2330 今日也明显跑输台股大盘则失效</td>
+</tr>
+<tr>
+<td>4</td>
+<td>4Q25 美元营收 = 指引中值 ÷ 1.58（推导）</td>
+<td>DERIVED</td>
+<td>用公司年报数字替换</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Beat 基础概率 ≈ 历史 EPS 超预期频率</td>
+<td>HYPOTHESIS</td>
+<td>样本仅 3 季，需扩充</td>
+</tr>
+</tbody>
+</table>
+<h2 id="模型来源model-provenance">10. 模型来源｜Model Provenance</h2>
+<p>构建脚本 <code>pipeline/build_tsm_post.py</code>；事前快照
+<code>v20261014-1806</code>（只读）；Excel
+含实时公式（记分卡、Brier、反应、全年营收推算）；公司模型
+<code>research/companies/TSM/</code> 最新版由
+<code>build_companies.py</code> 生成。</p>
+<div class="quiz">
+<p><strong>✅ 自我测验 Check your understanding</strong></p>
+<details>
+<summary>
+Q1. 营收超过指引上沿，股价却跌了，最可能的原因是什么？
+</summary>
+<p><strong>答案：</strong>当天整个半导体板块和设备股都在跌，TSM 跑输 SOX
+不到 1
+个百分点——板块估值收缩压过了单季成绩；而且’超指引’对台积电已是常态，部分已被定价。</p>
+</details>
+<details>
+<summary>
+Q2. 为什么我们的 Brier 分数比均匀猜测还差？
+</summary>
+<p><strong>答案：</strong>结果是 Beat，我们只给了 Beat
+30%。台积电近几季几乎每季超预期，我们没用基础概率。</p>
+</details>
+<details>
+<summary>
+Q3. 毛利率在指引内，为什么还被当作风险？
+</summary>
+<p><strong>答案：</strong>因为方向在下滑（67.7%→66.4%→66%），且管理层说海外厂稀释会扩大到
+3–4%：营收增长的同时每一美元赚得更少。</p>
+</details>
+</div>
+<p><strong>✍ 事后作业</strong>：打开 Excel ‘FY2026_Bridge’
+表，把第四季营收改成指引下沿
+52.3，看看全年增长和与共识的差距怎么变。</p>
+<h2 id="final-self-challenge">Final Self-Challenge</h2>
+<p>如果明天台股 2330 大涨、而 SOX
+继续跌，我们的’板块驱动’解释是否还成立？——是的，这正好说明 TSM
+自身的成绩在被单独认可；真正推翻我们的是：2330
+同样大幅跑输台股大盘。</p>
+<ul>
+<li>构建日志：pre-event integrity (v20261014-1806): 32/32 files match
+manifest sha256 — lock intact, not rewritten</li>
+<li>构建日志：locked-rule class=beat; Brier OS 0.755 | uniform 0.667 |
+EPS-beat base rate (3 prior qtrs, Yahoo earn_hist) 0.167</li>
+<li>构建日志：2330.TW 10/16 session: not yet trading / no data at build
+time (Taiwan reacts on 10/16 because results came after the 10/15 TWSE
+close)</li>
+<li>构建日志：Excel recalc: class=beat; Brier OS=0.755; FY26
+growth=46.8517642438254; errors=none</li>
+</ul>
+</body>
+</html>

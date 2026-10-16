@@ -1,0 +1,25 @@
+{
+ "slug": "cxmt-4f2",
+ "title": "长鑫 4F² DRAM 冲击（v2 双页深度版）| CXMT 4F² DRAM shock — 2-page set",
+ "date": "2026-10-13",
+ "trigger": "material news: KOSPI −5.46%, SK hynix −10.09%",
+ "tickers": [
+  "MU",
+  "SIMO",
+  "000660.KS",
+  "005930.KS",
+  "SNDK",
+  "AMAT",
+  "KLAC",
+  "AAPL"
+ ],
+ "watchlist": [
+  "MU",
+  "SIMO",
+  "AMAT",
+  "KLAC",
+  "AAPL"
+ ],
+ "base": "cxmt-4f2_news-explainer-v2",
+ "pages": 2
+}

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title> </title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<style>body{font-family:'Noto Sans CJK SC','Noto Sans',sans-serif;max-width:1100px;margin:auto;padding:24px;line-height:1.6;color:#1b1b1b}table{border-collapse:collapse;font-size:13px;margin:8px 0}td,th{border:1px solid #ccd;padding:4px 8px}th{background:#1F3A5F;color:#fff}img{max-width:100%;border:1px solid #ddd}h1{color:#1F3A5F}h2{border-bottom:2px solid #1F3A5F}abbr{text-decoration:underline dotted #2E86C1;cursor:help}.box30{background:linear-gradient(135deg,#eaf2ff,#f5ecff);border:2px solid #5b8cff;border-radius:14px;padding:6px 18px;margin:14px 0;font-size:16px}.readmap{background:#f6f8fb;border:1px solid #d5dbe6;border-radius:12px;padding:4px 16px;margin:12px 0}.howto{background:#fff8e6;border-left:5px solid #f59e0b;border-radius:8px;padding:2px 14px;margin:6px 0 22px}.quiz{background:#effaf3;border:1px solid #9bd8b1;border-radius:12px;padding:4px 16px}details{margin:8px 0}details.l3{background:#f7f7f9;border:1px dashed #b8c0cc;border-radius:10px;padding:6px 14px}summary{cursor:pointer;font-weight:600;color:#1F3A5F}body{font-size:15.5px}blockquote{background:#f3f6fa;border-left:4px solid #2E86C1;margin:0;padding:6px 12px}</style></head>
+<body>
+<header id="title-block-header">
+<h1 class="title"> </h1>
+</header>
+<h1 id="warsh-讲话-发布前教学版v20261015-1805">Warsh 讲话
+发布前·教学版｜v20261015-1805</h1>
+<blockquote>
+<p>时间：<strong>2026-10-16（周五）11:30 SGT</strong>。非投资建议。</p>
+</blockquote>
+<div class="box30">
+<p><strong>⏱ 30秒看懂</strong></p>
+<ol type="1">
+<li><strong>发生什么：</strong>美联储主席沃什明天上午在曼谷和 IMF
+总裁聊天，这是 10 月底开会前他最后一次公开说话。</li>
+<li><strong>和我的股票有什么关系：</strong>市场在猜美联储 10/28
+会不会再加息（大约一半一半）。他的话会让美债利率、日元、台股/美股科技股马上动起来。</li>
+<li><strong>该看什么/做什么：</strong>只听他有没有说「下次会议」或「通胀还不够快回落」——前者给路径，后者偏鹰；只说「不预判」就是中性。</li>
+</ol>
+</div>
+<div class="readmap">
+<p><strong>🗺 阅读地图</strong></p>
+<table>
+<thead>
+<tr>
+<th>你有多少时间</th>
+<th>读哪里</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2 分钟</td>
+<td>30秒 + 图05 措辞解码器。</td>
+</tr>
+<tr>
+<td>10 分钟</td>
+<td>专业版第1–4节。</td>
+</tr>
+<tr>
+<td>30 分钟</td>
+<td>全文 + 测验。</td>
+</tr>
+</tbody>
+</table>
+<p>层级说明：<strong>L1 故事</strong>（人人能懂）→ <strong>L2
+关键数字</strong>（带解释）→ <strong>L3
+专业细节</strong>（网页可折叠，默认收起）。</p>
+</div>
+<h2 id="为什么一次聊天也重要l1">1. 为什么一次「聊天」也重要（L1）</h2>
+<p>美联储开会前约 10
+天会进入「静默期」，官员不再公开谈政策。所以静默期前的最后一次讲话，就像董事会开会前
+CEO 最后一次对外表态——大家会逐字解读。</p>
+<h2 id="鹰-vs-鸽l2">2. 鹰 vs 鸽（L2）</h2>
+<ul>
+<li><strong>鹰 Hawkish</strong>：更想加息/保持高利率来压通胀。</li>
+<li><strong>鸽 Dovish</strong>：更愿意等、担心经济被压坏。</li>
+<li>他 9
+月说「移除一剂宽松」——意思是：现在的利率其实还不算紧，所以加一点是「把油门松一点」，不是「踩刹车」。</li>
+</ul>
+<p><strong>数字例题</strong>：2 年期美债收益率 4.79% 高于政策利率上限
+4.00%。差约 0.79 个百分点 ≈ 市场预期未来两年平均还要再加约 3.2 次
+25bp（粗略估算，忽略期限溢价）。如果他偏鹰，这个差会变大。</p>
+<h2 id="三种剧本">3. 三种剧本</h2>
+<figure>
+<img src="images/03_scenarios_reaction_paths.png" alt="情景" />
+<figcaption aria-hidden="true">情景</figcaption>
+</figure>
+<div class="howto">
+<p><strong>📊 怎么看这张图</strong></p>
+<ul>
+<li><strong>坐标/颜色：</strong>红=偏鹰，蓝=中性，绿=偏鸽；方框下部=市场可能反应。</li>
+<li><strong>只记住一件事：</strong>最可能是中性：他习惯「不预判」。</li>
+<li><strong>什么会改变结论：</strong>如果今晚通胀和消费数据都很热，中性的话也可能被当作偏鹰。</li>
+</ul>
+</div>
+<h2 id="怎么听">4. 怎么听</h2>
+<figure>
+<img src="images/05_phrase_decoder_checklist.png" alt="解码器" />
+<figcaption aria-hidden="true">解码器</figcaption>
+</figure>
+<div class="quiz">
+<p><strong>✅ 自我测验 Check your understanding</strong></p>
+<details>
+<summary>
+Q1. 他说「我不会预判未来决定」，这是鹰还是鸽？
+</summary>
+<p><strong>答案：</strong>中性——这是他的默认句式；要看后面有没有给出条件。</p>
+</details>
+<details>
+<summary>
+Q2. 为什么周五上午讲话先影响日元和台股，而不是美股？
+</summary>
+<p><strong>答案：</strong>11:30 SGT
+是亚洲交易时段，美股还没开盘；最先动的是美债期货、USD/JPY
+和亚洲股市。</p>
+</details>
+<details>
+<summary>
+Q3. 他偏鹰但 2 年期利率不动，说明什么？
+</summary>
+<p><strong>答案：</strong>市场已经定价，或者不认为主席一人能决定委员会投票。</p>
+</details>
+</div>
+<h2 id="术语">术语</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>术语</th>
+<th>白话</th>
+<th>English</th>
+<th>比喻</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>静默期</td>
+<td>开会前官员不公开谈政策</td>
+<td>blackout period</td>
+<td>财报前公司的静默期</td>
+</tr>
+<tr>
+<td>鹰/鸽</td>
+<td>偏紧/偏松</td>
+<td>hawkish / dovish</td>
+<td>偏保守/偏进取的财务总监</td>
+</tr>
+<tr>
+<td>前瞻指引</td>
+<td>央行提前暗示未来动作</td>
+<td>forward guidance</td>
+<td>提前给市场的「业绩指引」</td>
+</tr>
+<tr>
+<td>FedWatch</td>
+<td>用期货价格算出的加息概率</td>
+<td>CME FedWatch</td>
+<td>博彩赔率换算成概率</td>
+</tr>
+<tr>
+<td>套息交易</td>
+<td>借低息日元买高息资产</td>
+<td>carry trade</td>
+<td>借便宜的钱投贵的项目</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<!--
+  Research OS — Canonical Daily Board Template
+  Path: dashboard/boards/template-daily-board.html
+  Placeholders: {{DATE}} {{DATE_LABEL}} {{EVENT_SLUG}} {{EVENT_ID}} {{MOOD_EN}} {{MOOD_ZH}} {{SESSION_NOTE}} {{SESSION_NOTE_ZH}}
+  Chart blocks required (CHARTING_STANDARD Phase 1):
+    Expectation Gap | Scenario Probability | Transmission Chain SVG |
+    Mini Catalyst Timeline | Thinking Tutorial 7-step strip
+  Rules: bilingual titles; claim class; source/as-of; thinking caption; no invented prices.
+  Clone from a dated board and replace archive-verified figures only.
+-->
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research OS Daily Board｜{{DATE}} {{EVENT_SLUG}}</title>
+<style>
+  :root {
+    --bg-deep: #0a0e17;
+    --bg-navy: #0f1623;
+    --bg-card: #151d2e;
+    --bg-card-hover: #1a2438;
+    --border: #243049;
+    --border-soft: #1c2740;
+    --accent: #3b82f6;
+    --accent-dim: rgba(59, 130, 246, 0.15);
+    --cyan: #22d3ee;
+    --cyan-dim: rgba(34, 211, 238, 0.12);
+    --green: #34d399;
+    --green-dim: rgba(52, 211, 153, 0.12);
+    --red: #f87171;
+    --red-dim: rgba(248, 113, 113, 0.12);
+    --amber: #fbbf24;
+    --amber-dim: rgba(251, 191, 36, 0.12);
+    --purple: #a78bfa;
+    --purple-dim: rgba(167, 139, 250, 0.12);
+    --text: #e8edf5;
+    --text-sec: #94a3b8;
+    --text-muted: #64748b;
+    --gold: #d4a574;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+    background: var(--bg-deep);
+    color: var(--text);
+    min-height: 100vh;
+    line-height: 1.45;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(59, 130, 246, 0.08), transparent),
+      radial-gradient(ellipse 40% 30% at 90% 80%, rgba(34, 211, 238, 0.04), transparent);
+  }
+
+  .board {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 20px 28px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    min-height: 100vh;
+  }
+
+  /* ── Header ── */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 14px 20px;
+    background: linear-gradient(135deg, var(--bg-card) 0%, #121a2c 100%);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent), var(--cyan), var(--purple));
+  }
+  .header-left { display: flex; flex-direction: column; gap: 4px; }
+  .brand {
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    background: linear-gradient(90deg, #e8edf5, var(--cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .brand-sub {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    letter-spacing: 0.04em;
+  }
+  .header-center {
+    flex: 1;
+    text-align: center;
+  }
+  .mood {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    background: var(--amber-dim);
+    border: 1px solid rgba(251, 191, 36, 0.25);
+    border-radius: 8px;
+    font-size: 0.92rem;
+    color: var(--amber);
+    font-weight: 560;
+  }
+  .mood .dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--amber);
+    box-shadow: 0 0 8px var(--amber);
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+  .header-right {
+    text-align: right;
+    font-size: 0.82rem;
+    color: var(--text-sec);
+  }
+  .header-right .date-main {
+    font-size: 1.05rem;
+    font-weight: 650;
+    color: var(--text);
+  }
+
+  /* ── Labels ── */
+  .lbl {
+    display: inline-block;
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    padding: 2px 7px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+  .lbl-confirmed { background: var(--green-dim); color: var(--green); border: 1px solid rgba(52,211,153,0.3); }
+  .lbl-reliable { background: var(--cyan-dim); color: var(--cyan); border: 1px solid rgba(34,211,238,0.3); }
+  .lbl-hypothesis { background: var(--purple-dim); color: var(--purple); border: 1px solid rgba(167,139,250,0.3); }
+  .lbl-tentative { background: var(--amber-dim); color: var(--amber); border: 1px solid rgba(251,191,36,0.3); }
+  .lbl-hit { background: var(--green-dim); color: var(--green); border: 1px solid rgba(52,211,153,0.35); }
+
+  /* ── Cards ── */
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    position: relative;
+  }
+  .card-title {
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .card-title .en { color: var(--text-sec); }
+  .card-title .zh { color: var(--text-muted); font-weight: 500; }
+
+  /* ── Grid layouts ── */
+  .row-main {
+    display: grid;
+    grid-template-columns: 1.15fr 1.6fr;
+    gap: 14px;
+  }
+  .indices {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  .tape-strip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  .row-mid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 14px;
+  }
+  .row-bottom {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 14px;
+  }
+
+  /* ── Expectation Gap ── */
+  .gap-grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 12px;
+    align-items: stretch;
+  }
+  .gap-box {
+    background: var(--bg-navy);
+    border: 1px solid var(--border-soft);
+    border-radius: 8px;
+    padding: 12px 14px;
+  }
+  .gap-box .tag {
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+    margin-bottom: 6px;
+  }
+  .gap-box .val {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .gap-box .val.hit { color: var(--green); }
+  .gap-box .detail {
+    font-size: 0.75rem;
+    color: var(--text-sec);
+    margin-top: 6px;
+    line-height: 1.4;
+  }
+  .gap-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+  .residual {
+    margin-top: 10px;
+    padding: 10px 12px;
+    background: var(--amber-dim);
+    border: 1px solid rgba(251, 191, 36, 0.2);
+    border-radius: 8px;
+    font-size: 0.78rem;
+    color: var(--amber);
+    line-height: 1.5;
+  }
+  .residual strong { color: #fcd34d; }
+
+  /* ── Index tiles ── */
+  .idx-tile {
+    background: var(--bg-navy);
+    border: 1px solid var(--border-soft);
+    border-radius: 8px;
+    padding: 12px 14px;
+    text-align: center;
+  }
+  .idx-tile .name {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+  }
+  .idx-tile .price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    color: var(--text);
+  }
+  .idx-tile .chg {
+    font-size: 0.88rem;
+    font-weight: 600;
+    margin-top: 2px;
+    font-variant-numeric: tabular-nums;
+  }
+  .chg-down { color: var(--red); }
+  .chg-up { color: var(--green); }
+  .chg-flat { color: var(--text-sec); }
+
+  /* visual bar under index */
+  .bar-track {
+    height: 3px;
+    background: var(--border-soft);
+    border-radius: 2px;
+    margin-top: 8px;
+    overflow: hidden;
+  }
+  .bar-fill {
+    height: 100%;
+    border-radius: 2px;
+  }
+  .bar-down { background: linear-gradient(90deg, transparent, var(--red)); }
+  .bar-up { background: linear-gradient(90deg, transparent, var(--green)); }
+
+  /* ── FOMC card ── */
+  .fomc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .fomc-item {
+    background: var(--bg-navy);
+    border: 1px solid var(--border-soft);
+    border-radius: 8px;
+    padding: 10px 12px;
+  }
+  .fomc-item.full { grid-column: 1 / -1; }
+  .fomc-item .fi-label {
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .fomc-item .fi-val {
+    font-size: 0.88rem;
+    color: var(--text);
+    line-height: 1.4;
+  }
+  .fomc-item .fi-val .zh {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-sec);
+    margin-top: 2px;
+  }
+  .abbrev {
+    color: var(--cyan);
+    font-weight: 600;
+  }
+
+  /* ── Tape metrics ── */
+  .tape-tile {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .tape-tile .t-name {
+    font-size: 0.68rem;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+  }
+  .tape-tile .t-val {
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+  .tape-tile .t-note {
+    font-size: 0.7rem;
+    color: var(--text-sec);
+  }
+
+  /* ── Watchlist table ── */
+  table.wl {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+  }
+  table.wl th {
+    text-align: left;
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    letter-spacing: 0.06em;
+    font-weight: 600;
+    padding: 4px 8px 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  table.wl td {
+    padding: 7px 8px;
+    border-bottom: 1px solid var(--border-soft);
+    vertical-align: middle;
+  }
+  table.wl tr:last-child td { border-bottom: none; }
+  table.wl .ticker {
+    font-weight: 700;
+    color: var(--cyan);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.02em;
+  }
+  table.wl .note { color: var(--text-sec); font-size: 0.75rem; }
+  table.wl .pos { color: var(--green); font-weight: 600; }
+  table.wl .neg { color: var(--red); font-weight: 600; }
+  table.wl .neu { color: var(--text-sec); }
+
+  /* ── Thinking Tutorial ── */
+  .tutorial {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+  }
+  .tut-step {
+    background: var(--bg-navy);
+    border: 1px solid var(--border-soft);
+    border-radius: 8px;
+    padding: 10px 8px;
+    position: relative;
+  }
+  .tut-step::after {
+    content: "→";
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--border);
+    font-size: 0.75rem;
+    z-index: 1;
+  }
+  .tut-step:last-child::after { display: none; }
+  .tut-num {
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+  }
+  .tut-title {
+    font-size: 0.72rem;
+    font-weight: 650;
+    color: var(--gold);
+    margin-bottom: 4px;
+  }
+  .tut-body {
+    font-size: 0.68rem;
+    color: var(--text-sec);
+    line-height: 1.35;
+  }
+
+  /* ── What's Next ── */
+  .checklist {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 8px 10px;
+    background: var(--bg-navy);
+    border: 1px solid var(--border-soft);
+    border-radius: 7px;
+    font-size: 0.8rem;
+  }
+  .check-box {
+    width: 14px; height: 14px;
+    border: 1.5px solid var(--border);
+    border-radius: 3px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .checklist .item-main { color: var(--text); font-weight: 550; }
+  .checklist .item-sub { color: var(--text-sec); font-size: 0.72rem; margin-top: 2px; }
+
+  /* ── Footer ── */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 12px 16px;
+    background: var(--bg-navy);
+    border: 1px solid var(--border-soft);
+    border-radius: 8px;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+  .footer code {
+    font-family: "SF Mono", "Cascadia Code", "Consolas", monospace;
+    font-size: 0.68rem;
+    color: var(--cyan);
+    background: rgba(34, 211, 238, 0.08);
+    padding: 1px 5px;
+    border-radius: 3px;
+  }
+  .disclaimer {
+    max-width: 55%;
+    text-align: right;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 1400px) {
+    .tutorial { grid-template-columns: repeat(4, 1fr); }
+    .tut-step:nth-child(4)::after { display: none; }
+    .row-main, .row-mid, .row-bottom { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 900px) {
+    .indices, .tape-strip { grid-template-columns: repeat(2, 1fr); }
+    .tutorial { grid-template-columns: 1fr 1fr; }
+    .tut-step::after { display: none; }
+    .header { flex-direction: column; text-align: center; }
+    .header-right { text-align: center; }
+    .gap-grid { grid-template-columns: 1fr; }
+    .gap-arrow { transform: rotate(90deg); }
+    .fomc-grid { grid-template-columns: 1fr; }
+    .footer { flex-direction: column; }
+    .disclaimer { max-width: 100%; text-align: left; }
+
+  /* ── Chart block chrome ── */
+  .chart-block {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    position: relative;
+  }
+  .chart-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+  }
+  .chart-title {
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-sec);
+  }
+  .chart-title .zh { color: var(--text-muted); font-weight: 500; text-transform: none; letter-spacing: 0.02em; }
+  .chart-meta {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .chart-caption {
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px solid var(--border-soft);
+    font-size: 0.68rem;
+    color: var(--text-muted);
+    line-height: 1.45;
+  }
+  .chart-caption .src { color: var(--text-sec); }
+  .chart-think {
+    margin-top: 6px;
+    font-size: 0.72rem;
+    color: var(--gold);
+    line-height: 1.4;
+  }
+  .lbl-inference { background: var(--amber-dim); color: var(--amber); border: 1px solid rgba(251,191,36,0.3); }
+  .lbl-illustrative { background: rgba(148,163,184,0.12); color: var(--text-sec); border: 1px solid rgba(148,163,184,0.25); }
+
+  /* ── Scenario probability bars ── */
+  .scenario-bars { display: flex; flex-direction: column; gap: 10px; }
+  .sc-row {
+    display: grid;
+    grid-template-columns: 88px 1fr 48px;
+    gap: 10px;
+    align-items: center;
+  }
+  .sc-label { font-size: 0.78rem; font-weight: 600; }
+  .sc-label .zh { display: block; font-size: 0.65rem; color: var(--text-muted); font-weight: 500; }
+  .sc-track {
+    height: 18px;
+    background: var(--bg-navy);
+    border: 1px solid var(--border-soft);
+    border-radius: 6px;
+    position: relative;
+    overflow: visible;
+  }
+  .sc-fill {
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #0a0e17;
+  }
+  .sc-bear .sc-fill { background: linear-gradient(90deg, #f87171, #fb7185); width: 25%; }
+  .sc-base .sc-fill { background: linear-gradient(90deg, #34d399, #22d3ee); width: 55%; }
+  .sc-bull .sc-fill { background: linear-gradient(90deg, #60a5fa, #a78bfa); width: 20%; }
+  .sc-pct { font-variant-numeric: tabular-nums; font-weight: 700; font-size: 0.9rem; text-align: right; }
+  .sc-marker-row {
+    margin-top: 8px;
+    position: relative;
+    height: 28px;
+    background: var(--bg-navy);
+    border: 1px dashed rgba(52,211,153,0.35);
+    border-radius: 6px;
+  }
+  .sc-marker {
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--green-dim);
+    border: 1px solid rgba(52,211,153,0.5);
+    color: var(--green);
+    font-size: 0.68rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+    letter-spacing: 0.03em;
+  }
+  .sc-marker::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -7px;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: rgba(52,211,153,0.5);
+  }
+
+  /* ── Expectation Gap visual upgrade ── */
+  .gap-visual {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 12px;
+    margin-top: 4px;
+  }
+  .gap-hit-card {
+    background: linear-gradient(135deg, rgba(52,211,153,0.1), var(--bg-navy));
+    border: 1px solid rgba(52,211,153,0.35);
+    border-radius: 8px;
+    padding: 12px 14px;
+    text-align: center;
+  }
+  .gap-hit-card .big {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--green);
+    letter-spacing: 0.02em;
+  }
+  .gap-hit-card .sub {
+    font-size: 0.72rem;
+    color: var(--text-sec);
+    margin-top: 4px;
+  }
+  .gap-residual-card {
+    background: var(--amber-dim);
+    border: 1px solid rgba(251,191,36,0.25);
+    border-radius: 8px;
+    padding: 12px 14px;
+  }
+  .gap-residual-card .rtitle {
+    font-size: 0.68rem;
+    color: var(--amber);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-bottom: 6px;
+  }
+  .gap-residual-card .rbody {
+    font-size: 0.75rem;
+    color: #fcd34d;
+    line-height: 1.45;
+  }
+
+  /* ── Transmission chain SVG ── */
+  .tx-wrap { width: 100%; overflow-x: auto; }
+  .tx-svg { width: 100%; min-width: 720px; height: auto; display: block; }
+  .tx-node rect {
+    fill: #121a2c;
+    stroke: #243049;
+    stroke-width: 1.2;
+  }
+  .tx-node.confirmed rect { stroke: rgba(52,211,153,0.55); fill: rgba(52,211,153,0.08); }
+  .tx-node.reliable rect { stroke: rgba(34,211,238,0.45); fill: rgba(34,211,238,0.07); }
+  .tx-node.inference rect { stroke: rgba(251,191,36,0.45); fill: rgba(251,191,36,0.07); }
+  .tx-node text { font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
+  .tx-en { fill: #e8edf5; font-size: 11px; font-weight: 650; }
+  .tx-zh { fill: #94a3b8; font-size: 9.5px; }
+  .tx-arrow { stroke: #3b82f6; stroke-width: 1.6; fill: none; marker-end: url(#arrowHead); }
+  .tx-arrow-soft { stroke: #64748b; stroke-width: 1.2; stroke-dasharray: 4 3; fill: none; marker-end: url(#arrowHeadMuted); }
+
+  /* ── Catalyst timeline ── */
+  .tl {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    position: relative;
+    padding: 8px 0 4px;
+  }
+  .tl::before {
+    content: "";
+    position: absolute;
+    left: 6%;
+    right: 6%;
+    top: 28px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--green), var(--cyan), var(--amber), var(--purple));
+    opacity: 0.55;
+  }
+  .tl-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 8px;
+    position: relative;
+    z-index: 1;
+  }
+  .tl-dot {
+    width: 14px; height: 14px;
+    border-radius: 50%;
+    border: 2px solid var(--border);
+    background: var(--bg-navy);
+    margin-bottom: 10px;
+    box-shadow: 0 0 0 4px var(--bg-card);
+  }
+  .tl-item.confirmed .tl-dot { border-color: var(--green); background: var(--green); box-shadow: 0 0 0 4px var(--bg-card), 0 0 10px rgba(52,211,153,0.35); }
+  .tl-item.tentative .tl-dot { border-color: var(--amber); background: var(--amber); box-shadow: 0 0 0 4px var(--bg-card), 0 0 10px rgba(251,191,36,0.3); }
+  .tl-date {
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: var(--cyan);
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+  }
+  .tl-name {
+    font-size: 0.78rem;
+    font-weight: 650;
+    color: var(--text);
+    line-height: 1.3;
+  }
+  .tl-zh {
+    font-size: 0.68rem;
+    color: var(--text-sec);
+    margin-top: 2px;
+  }
+  .tl-flags { margin-top: 6px; }
+
+  /* ── Thinking strip visual upgrade ── */
+  .tut-strip-wrap { overflow-x: auto; }
+  .tutorial.visual-strip {
+    min-width: 980px;
+  }
+  .tut-step.active-path {
+    border-color: rgba(59,130,246,0.45);
+    background: linear-gradient(180deg, rgba(59,130,246,0.08), var(--bg-navy));
+  }
+  .tut-step .tut-en {
+    display: block;
+    font-size: 0.62rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    margin-top: 1px;
+  }
+
+  /* ── Chart rows ── */
+  .row-charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .row-charts-full { display: grid; grid-template-columns: 1fr; gap: 14px; }
+
+  @media (max-width: 1400px) {
+    .row-charts { grid-template-columns: 1fr; }
+    .gap-visual { grid-template-columns: 1fr; }
+    .tl { grid-template-columns: repeat(2, 1fr); gap: 14px 0; }
+    .tl::before { display: none; }
+  }
+  @media (max-width: 900px) {
+    .sc-row { grid-template-columns: 72px 1fr 40px; }
+    .tl { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="board">
+
+  <!-- 1. Header -->
+  <header class="header">
+    <div class="header-left">
+      <div class="brand">Research OS Daily Board｜投资研究OS日报看板</div>
+      <div class="brand-sub">INVESTMENT RESEARCH OPERATING SYSTEM · ARCHIVE VERIFIED</div>
+    </div>
+    <div class="header-center">
+      <div class="mood">
+        <span class="dot"></span>
+        {{MOOD_EN}}｜{{MOOD_ZH}}
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="date-main">{{DATE_LABEL}}</div>
+      <div>{{SESSION_NOTE}}</div>
+      <div style="margin-top:2px;color:var(--text-muted)">{{SESSION_NOTE_ZH}}</div>
+    </div>
+  </header>
+
+  <!-- 2. Expectation Gap + 3. Indices -->
+  <div class="row-main">
+    <section class="chart-block">
+      <div class="chart-head">
+        <div class="chart-title">Expectation Gap <span class="zh">｜预期差</span></div>
+        <div class="chart-meta">
+          <span class="lbl lbl-hypothesis">HYPOTHESIS→</span>
+          <span class="lbl lbl-confirmed">CONFIRMED HIT</span>
+        </div>
+      </div>
+      <div class="gap-grid">
+        <div class="gap-box">
+          <div class="tag">PRE-EVENT BASE｜事前基准</div>
+          <div class="val">{{BASE_PCT}}%</div>
+          <div class="detail">Binary decision priced as base case<br>二元决议作基准情形</div>
+        </div>
+        <div class="gap-arrow">⟶</div>
+        <div class="gap-box">
+          <div class="tag">ACTUAL｜实际 <span class="lbl lbl-hit">HIT</span></div>
+          <div class="val hit">BINARY HIT</div>
+          <div class="detail">+25 bp delivered as expected<br>按预期兑现+25bp · 12–0</div>
+        </div>
+      </div>
+      <div class="gap-visual">
+        <div class="gap-hit-card">
+          <div class="big">Base {{BASE_PCT}}% → {{HIT_OR_MISS}}</div>
+          <div class="sub">Binary +25 bp｜二元加息命中<br>Decision surprise ≈ 0 (FedWatch ~92–93%)</div>
+        </div>
+        <div class="gap-residual-card">
+          <div class="rtitle">RESIDUAL PATH RISK｜路径残余风险</div>
+          <div class="rbody">One more then higher-for-longer (not ~100 bp narrative). WACC / terminal-rate reassessment still open.<br>再一次后更高更久（非约100bp叙事）。加权平均资本成本 / 终值利率重估仍开放。</div>
+        </div>
+      </div>
+      <div class="chart-caption">
+        <span class="src">Source｜来源:</span> Pre-Event Snapshot + Post-Mortem · <span class="abbrev">FOMC</span> (Federal Open Market Committee｜联邦公开市场委员会) Sep 2026 pack · As-of {{DATE_LABEL}} US close / Thu 17 Sep MYT digest
+      </div>
+      <div class="chart-think">Thinking｜思维: Binary was priced — watch path/SEP/WACC residual, not hike-vs-hold.｜二元已定价——盯路径/点阵/资本成本残差，非加息与否。</div>
+    </section>
+
+    <section class="card" style="padding:12px 14px">
+      <div class="card-title">
+        <span class="en">Indices · Wed Close</span>
+        <span class="zh">｜主要指数 · 周三收盘</span>
+      </div>
+      <div class="indices">
+        <div class="idx-tile">
+          <div class="name">DOW</div>
+          <div class="price">52,093</div>
+          <div class="chg chg-down">−1.21%</div>
+          <div class="bar-track"><div class="bar-fill bar-down" style="width:100%"></div></div>
+        </div>
+        <div class="idx-tile">
+          <div class="name">S&amp;P 500</div>
+          <div class="price">7,586</div>
+          <div class="chg chg-down">−0.45%</div>
+          <div class="bar-track"><div class="bar-fill bar-down" style="width:37%"></div></div>
+        </div>
+        <div class="idx-tile">
+          <div class="name">NASDAQ</div>
+          <div class="price">25,982</div>
+          <div class="chg chg-flat">−0.01%</div>
+          <div class="bar-track"><div class="bar-fill bar-down" style="width:3%"></div></div>
+        </div>
+        <div class="idx-tile">
+          <div class="name">SOX</div>
+          <div class="price">—</div>
+          <div class="chg chg-up">+0.63%</div>
+          <div class="bar-track"><div class="bar-fill bar-up" style="width:52%"></div></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- CHART: Scenario Probability + Mini Catalyst Timeline -->
+  <div class="row-charts">
+    <section class="chart-block">
+      <div class="chart-head">
+        <div class="chart-title">Scenario Probability <span class="zh">｜情景概率</span></div>
+        <div class="chart-meta">
+          <span class="lbl lbl-hypothesis">HYPOTHESIS (pre)</span>
+          <span class="lbl lbl-confirmed">ACTUAL MARKER</span>
+        </div>
+      </div>
+      <div class="scenario-bars">
+        <div class="sc-row sc-bear">
+          <div class="sc-label">Bear<span class="zh">熊</span></div>
+          <div class="sc-track"><div class="sc-fill">25%</div></div>
+          <div class="sc-pct" style="color:var(--red)">25%</div>
+        </div>
+        <div class="sc-row sc-base">
+          <div class="sc-label">Base<span class="zh">基准</span></div>
+          <div class="sc-track"><div class="sc-fill">55%</div></div>
+          <div class="sc-pct" style="color:var(--green)">55%</div>
+        </div>
+        <div class="sc-row sc-bull">
+          <div class="sc-label">Bull<span class="zh">牛</span></div>
+          <div class="sc-track"><div class="sc-fill">20%</div></div>
+          <div class="sc-pct" style="color:var(--purple)">20%</div>
+        </div>
+      </div>
+      <div class="sc-marker-row" title="Actual binary outcome lands on Base">
+        <div class="sc-marker">▲ ACTUAL: Binary hike HIT on Base｜实际：二元加息命中基准</div>
+      </div>
+      <div class="chart-caption">
+        <span class="src">Source｜来源:</span> EXEC_SUMMARY / PRE_EVENT_SNAPSHOT scenarios (sum 100%) · As-of pre-event lock 2026-09-15 · Actual: statement 2026-09-16
+      </div>
+      <div class="chart-think">Thinking｜思维: Marker is on the binary only — path hawk lean can still reprice WACC after a Base HIT.｜标记仅对二元——基准命中后路径偏鹰仍可重估资本成本。</div>
+    </section>
+
+    <section class="chart-block">
+      <div class="chart-head">
+        <div class="chart-title">Mini Catalyst Timeline <span class="zh">｜迷你催化剂时间线</span></div>
+        <div class="chart-meta">
+          <span class="lbl lbl-confirmed">CONFIRMED</span>
+          <span class="lbl lbl-tentative">TENTATIVE</span>
+        </div>
+      </div>
+      <div class="tl">
+        <div class="tl-item confirmed">
+          <div class="tl-dot"></div>
+          <div class="tl-date">Fri Sep 18</div>
+          <div class="tl-name">BOJ Statement</div>
+          <div class="tl-zh">日本央行声明</div>
+          <div class="tl-flags"><span class="lbl lbl-confirmed">CONFIRMED</span></div>
+        </div>
+        <div class="tl-item confirmed">
+          <div class="tl-dot"></div>
+          <div class="tl-date">Fri Sep 18</div>
+          <div class="tl-name">AAPL Retail</div>
+          <div class="tl-zh">iPhone 18 Pro 开售</div>
+          <div class="tl-flags"><span class="lbl lbl-confirmed">CONFIRMED</span></div>
+        </div>
+        <div class="tl-item tentative">
+          <div class="tl-dot"></div>
+          <div class="tl-date">~Sep 22</div>
+          <div class="tl-name">Starship F14</div>
+          <div class="tl-zh">星舰第14次飞行</div>
+          <div class="tl-flags"><span class="lbl lbl-tentative">TENTATIVE</span></div>
+        </div>
+        <div class="tl-item confirmed">
+          <div class="tl-dot"></div>
+          <div class="tl-date">Tue Sep 30</div>
+          <div class="tl-name">MU FY26 Q4</div>
+          <div class="tl-zh">美光财年Q4财报</div>
+          <div class="tl-flags"><span class="lbl lbl-confirmed">CONFIRMED</span></div>
+        </div>
+      </div>
+      <div class="chart-caption">
+        <span class="src">Source｜来源:</span> Daily Board Near Catalysts archive · As-of {{DATE_LABEL}} board cut · Starship date TENTATIVE
+      </div>
+      <div class="chart-think">Thinking｜思维: Sequence BOJ/USDJPY → AAPL retail optics → Starship narrative → MU print for memory/WACC.｜顺序：日银/美日 → 苹果零售观感 → 星舰叙事 → 美光验证存储/资本成本。</div>
+    </section>
+  </div>
+
+  <div class="row-charts-full">
+    <section class="chart-block">
+      <div class="chart-head">
+        <div class="chart-title">Transmission Chain <span class="zh">｜传导链</span></div>
+        <div class="chart-meta">
+          <span class="lbl lbl-confirmed">CONFIRMED</span>
+          <span class="lbl lbl-reliable">RELIABLE</span>
+          <span class="lbl lbl-inference">INFERENCE</span>
+        </div>
+      </div>
+      <div class="tx-wrap">
+        <svg class="tx-svg" viewBox="0 0 1100 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="FOMC transmission chain">
+          <defs>
+            <marker id="arrowHead" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+              <path d="M0,0 L7,3 L0,6 Z" fill="#3b82f6"/>
+            </marker>
+            <marker id="arrowHeadMuted" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+              <path d="M0,0 L7,3 L0,6 Z" fill="#64748b"/>
+            </marker>
+          </defs>
+          <g class="tx-node confirmed" transform="translate(20,70)">
+            <rect rx="8" width="150" height="70"/>
+            <text class="tx-en" x="12" y="28">FOMC +25 bp</text>
+            <text class="tx-zh" x="12" y="46">3.75–4.00% · 12–0</text>
+            <text class="tx-zh" x="12" y="60">联邦公开市场委员会</text>
+          </g>
+          <g class="tx-node confirmed" transform="translate(210,70)">
+            <rect rx="8" width="160" height="70"/>
+            <text class="tx-en" x="12" y="28">SEP Path 4.1 / 4.1</text>
+            <text class="tx-zh" x="12" y="46">16/18 ≥ one more</text>
+            <text class="tx-zh" x="12" y="60">点阵路径 · 更高更久</text>
+          </g>
+          <g class="tx-node reliable" transform="translate(410,70)">
+            <rect rx="8" width="150" height="70"/>
+            <text class="tx-en" x="12" y="28">Yields · 10Y ~5%</text>
+            <text class="tx-zh" x="12" y="46">Real yields firm</text>
+            <text class="tx-zh" x="12" y="60">长端 / 实际利率</text>
+          </g>
+          <g class="tx-node inference" transform="translate(600,70)">
+            <rect rx="8" width="150" height="70"/>
+            <text class="tx-en" x="12" y="28">WACC ↑</text>
+            <text class="tx-zh" x="12" y="46">Discount rate</text>
+            <text class="tx-zh" x="12" y="60">加权平均资本成本</text>
+          </g>
+          <g class="tx-node inference" transform="translate(790,55)">
+            <rect rx="8" width="280" height="100"/>
+            <text class="tx-en" x="12" y="26">Watchlist transmission</text>
+            <text class="tx-zh" x="12" y="44">NVDA MU ARM LITE MRVL AVGO</text>
+            <text class="tx-zh" x="12" y="60">CRWV TSLA · SPCX (Nasdaq listed)</text>
+            <text class="tx-zh" x="12" y="78">观察名单：久期倍数 / 资本开支</text>
+            <text class="tx-zh" x="12" y="92">quote N/A for SPCX this cut</text>
+          </g>
+          <g class="tx-node reliable" transform="translate(210,8)">
+            <rect rx="6" width="160" height="44"/>
+            <text class="tx-en" x="10" y="18">Warsh tone</text>
+            <text class="tx-zh" x="10" y="34">条件“并不紧缩”</text>
+          </g>
+          <path class="tx-arrow" d="M170,105 H210"/>
+          <path class="tx-arrow" d="M370,105 H410"/>
+          <path class="tx-arrow" d="M560,105 H600"/>
+          <path class="tx-arrow" d="M750,105 H790"/>
+          <path class="tx-arrow-soft" d="M290,52 V70"/>
+        </svg>
+      </div>
+      <div class="chart-caption">
+        <span class="src">Source｜来源:</span> Fed statement/SEP + Post-Mortem · <span class="abbrev">WACC</span> (Weighted Average Cost of Capital｜加权平均资本成本) link = INFERENCE · <span class="abbrev">SEP</span> (Summary of Economic Projections｜经济预测摘要) · As-of 2026-09-16/17 · SPCX Nasdaq listed since 2026-06-12 (quote N/A this board cut)
+      </div>
+      <div class="chart-think">Thinking｜思维: Path &gt; decision — 10Y/WACC is the live hinge into AI duration names.｜路径大于决议——10年期/资本成本是AI久期标的活铰链。</div>
+    </section>
+  </div>
+
+  <!-- 4. FOMC / SEP + 5. Tape -->
+  <div class="row-mid">
+    <section class="card">
+      <div class="card-title">
+        <span class="en"><span class="abbrev">FOMC</span> (Federal Open Market Committee｜联邦公开市场委员会)</span>
+        <span class="lbl lbl-confirmed">CONFIRMED</span>
+      </div>
+      <div class="fomc-grid">
+        <div class="fomc-item">
+          <div class="fi-label">Decision｜决议 <span class="lbl lbl-confirmed">CONFIRMED</span></div>
+          <div class="fi-val">
+            +25 bp → 3.75%–4.00%, vote 12–0
+            <span class="zh">加息25个基点至3.75%–4.00%，表决12–0</span>
+          </div>
+        </div>
+        <div class="fomc-item">
+          <div class="fi-label">SEP FF Median｜点阵图联邦基金中位数 <span class="lbl lbl-confirmed">CONFIRMED</span></div>
+          <div class="fi-val">
+            4.1% end-2026 AND end-2027
+            <span class="zh">2026与2027年末均为4.1%（6月为3.8 / 3.6）</span>
+          </div>
+        </div>
+        <div class="fomc-item">
+          <div class="fi-label">PCE &amp; Dots｜PCE与点阵 <span class="lbl lbl-confirmed">CONFIRMED</span></div>
+          <div class="fi-val">
+            PCE 2026 3.7；16/18 dots ≥ one more 2026 hike
+            <span class="zh">2026年PCE 3.7；18点中16点≥2026年再加一次</span>
+          </div>
+        </div>
+        <div class="fomc-item">
+          <div class="fi-label">Chair &amp; Tone｜主席与口径 <span class="lbl lbl-confirmed">CONFIRMED</span></div>
+          <div class="fi-val">
+            Chair Kevin Warsh；inflation “too high for too long”；financial conditions “not restrictive”
+            <span class="zh">沃什主席；通胀“过高过久”；金融条件“并不紧缩”</span>
+          </div>
+        </div>
+        <div class="fomc-item full">
+          <div class="fi-label">Path Read｜路径解读 <span class="lbl lbl-hypothesis">HYPOTHESIS</span></div>
+          <div class="fi-val">
+            Pre-event Base 55%: BINARY HIT；path = one more then higher-for-longer (not ~100 bp narrative)
+            <span class="zh">事前基准55%：二元命中；路径＝再一次后更高更久（非约100个基点叙事）</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" style="padding:12px 14px">
+      <div class="card-title">
+        <span class="en">Rates / Oil / VIX / DXY</span>
+        <span class="zh">｜利率 / 原油 / 波动率 / 美元</span>
+      </div>
+      <div class="tape-strip" style="grid-template-columns: 1fr 1fr; gap: 10px;">
+        <div class="tape-tile">
+          <div class="t-name">10Y UST</div>
+          <div class="t-val" style="color:var(--amber)">~5.006%</div>
+          <div class="t-note">Wed into Thu｜周三至周四</div>
+        </div>
+        <div class="tape-tile">
+          <div class="t-name">VIX</div>
+          <div class="t-val" style="color:var(--text)">17.71</div>
+          <div class="t-note">Implied vol｜隐含波动</div>
+        </div>
+        <div class="tape-tile">
+          <div class="t-name">DXY</div>
+          <div class="t-val" style="color:var(--cyan)">~100.3</div>
+          <div class="t-note">Dollar index｜美元指数</div>
+        </div>
+        <div class="tape-tile">
+          <div class="t-name">Brent Globex</div>
+          <div class="t-val" style="color:var(--gold)">~$104.9</div>
+          <div class="t-note">still &gt;$100；cooler vs spike week<br>仍&gt;$100；较冲高周降温</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- 6. Watchlist + Near Catalysts -->
+  <div class="row-bottom">
+    <section class="card">
+      <div class="card-title">
+        <span class="en">Watchlist · Wed Highlights</span>
+        <span class="zh">｜观察名单 · 周三要点（晨报）</span>
+      </div>
+      <table class="wl">
+        <thead>
+          <tr>
+            <th>Ticker</th>
+            <th>Move / Note｜变动 / 备注</th>
+            <th>Theme｜主题</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="ticker">LITE</td>
+            <td class="pos">+9.6%</td>
+            <td class="note">Optics｜光学</td>
+          </tr>
+          <tr>
+            <td class="ticker">CRWV</td>
+            <td class="neu">firm｜偏强</td>
+            <td class="note">Semis complex｜半导体链</td>
+          </tr>
+          <tr>
+            <td class="ticker">MRVL</td>
+            <td class="neu">firm｜偏强</td>
+            <td class="note">Semis complex｜半导体链</td>
+          </tr>
+          <tr>
+            <td class="ticker">INTC</td>
+            <td class="neu">firm｜偏强</td>
+            <td class="note">Semis complex｜半导体链</td>
+          </tr>
+          <tr>
+            <td class="ticker">UMC</td>
+            <td class="neu">firm｜偏强</td>
+            <td class="note">Foundry｜晶圆代工</td>
+          </tr>
+          <tr>
+            <td class="ticker">QCOM</td>
+            <td class="neg">−1.6%</td>
+            <td class="note">Selective lag｜相对落后</td>
+          </tr>
+          <tr>
+            <td class="ticker">NVDA / MU</td>
+            <td class="neu">selective resilience in SOX｜SOX内选择性韧性</td>
+            <td class="note">AI / Memory｜AI / 存储</td>
+          </tr>
+          <tr>
+            <td class="ticker">SPCX</td>
+            <td class="neu">Nasdaq listed SPCX (since 2026-06-12)｜纳斯达克已上市（自2026-06-12）— quote N/A this board cut</td>
+            <td class="note">Space / Nasdaq listed｜航天 / 纳斯达克已上市</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <div class="card-title">
+        <span class="en">Near Catalysts｜临近催化剂</span>
+        <span class="zh" style="font-size:0.65rem;font-weight:500;color:var(--text-muted)">（时间线见上｜see timeline above）</span>
+      </div>
+      <ul class="checklist">
+        <li>
+          <span class="check-box"></span>
+          <div>
+            <div class="item-main">AAPL · iPhone 18 Pro retail Fri Sep 18 <span class="lbl lbl-confirmed">CONFIRMED</span></div>
+            <div class="item-sub">零售开售｜周五 9月18日</div>
+          </div>
+        </li>
+        <li>
+          <span class="check-box"></span>
+          <div>
+            <div class="item-main">TSLA · NHTSA Cybercab AQ26002 ongoing <span class="lbl lbl-confirmed">CONFIRMED</span></div>
+            <div class="item-sub">NHTSA 调查进行中</div>
+          </div>
+        </li>
+        <li>
+          <span class="check-box"></span>
+          <div>
+            <div class="item-main">Starship Flight 14 ~Sep 22 <span class="lbl lbl-tentative">TENTATIVE</span> <span class="lbl lbl-reliable">RELIABLE</span></div>
+            <div class="item-sub">约9月22日｜暂定/可靠</div>
+          </div>
+        </li>
+        <li>
+          <span class="check-box"></span>
+          <div>
+            <div class="item-main">MU · FY26 Q4 Sep 30 <span class="lbl lbl-confirmed">CONFIRMED</span></div>
+            <div class="item-sub">财年Q4财报｜9月30日</div>
+          </div>
+        </li>
+        <li>
+          <span class="check-box"></span>
+          <div>
+            <div class="item-main">BOJ Statement Fri Sep 18 <span class="lbl lbl-confirmed">CONFIRMED</span></div>
+            <div class="item-sub">日本央行声明日｜会议/声明日已确认</div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- 7. Thinking Tutorial (visual strip) -->
+  <section class="chart-block">
+    <div class="chart-head">
+      <div class="chart-title">Thinking Tutorial <span class="zh">｜思维教程流</span></div>
+      <div class="chart-meta">
+        <span class="lbl lbl-illustrative">ILLUSTRATIVE FLOW</span>
+        <span class="lbl lbl-reliable">ARCHIVE LOGIC</span>
+      </div>
+    </div>
+    <div class="tut-strip-wrap">
+      <div class="tutorial visual-strip">
+        <div class="tut-step active-path">
+          <div class="tut-num">01</div>
+          <div class="tut-title">看什么<span class="tut-en">Observe</span></div>
+          <div class="tut-body">FOMC +25 bp &amp; SEP dots vs pre-event 55% base；10Y &gt;5%；SOX vs broad indices</div>
+        </div>
+        <div class="tut-step active-path">
+          <div class="tut-num">02</div>
+          <div class="tut-title">为什么<span class="tut-en">Why</span></div>
+          <div class="tut-body">Binary +25 bp was base；gap is path / WACC / “higher-for-longer”，非是否降息</div>
+        </div>
+        <div class="tut-step active-path">
+          <div class="tut-num">03</div>
+          <div class="tut-title">证据<span class="tut-en">Evidence</span></div>
+          <div class="tut-body">Vote 12–0；SEP median 4.1/4.1；PCE 3.7；16/18 ≥ one more 2026 hike；Warsh tone</div>
+        </div>
+        <div class="tut-step active-path">
+          <div class="tut-num">04</div>
+          <div class="tut-title">传导<span class="tut-en">Transmission</span></div>
+          <div class="tut-body">Rates↑ → multiples / WACC；DXY ~100.3；oil still &gt;$100；risk assets digest not relief</div>
+        </div>
+        <div class="tut-step active-path">
+          <div class="tut-num">05</div>
+          <div class="tut-title">其他解释<span class="tut-en">Alternative</span></div>
+          <div class="tut-body">Dow −1.21% may mix rate path + sector rotation；SOX +0.63% selective semis resilience</div>
+        </div>
+        <div class="tut-step active-path">
+          <div class="tut-num">06</div>
+          <div class="tut-title">证伪<span class="tut-en">Falsifier</span></div>
+          <div class="tut-body">若10Y显著回落且叙事重回~100 bp easing → 当前“更高更久”路径假说弱化</div>
+        </div>
+        <div class="tut-step active-path">
+          <div class="tut-num">07</div>
+          <div class="tut-title">下一步<span class="tut-en">Watch next</span></div>
+          <div class="tut-body">BOJ Fri；AAPL retail；track 10Y&gt;5%；oil vs $100；MU Sep 30</div>
+        </div>
+      </div>
+    </div>
+    <div class="chart-caption">
+      <span class="src">Source｜来源:</span> Research OS Thinking Tutorial standard · FOMC-2026-09 Event Book · As-of Thu 2026-09-17 MYT
+    </div>
+    <div class="chart-think">Thinking｜思维: Run the 7-step strip left→right before sizing any post-FOMC duration bet.｜下任何美联储后久期注前，先从左到右跑完七步。</div>
+  </section>
+
+  <!-- 8. What's Next (macro focus strip already partly in catalysts; dedicated checklist) -->
+  <section class="card" style="padding:10px 16px">
+    <div class="card-title" style="margin-bottom:8px">
+      <span class="en">What's Next Checklist｜下一步核对</span>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px 16px;font-size:0.78rem;color:var(--text-sec)">
+      <span>☐ <strong style="color:var(--text)">BOJ</strong> Statement Fri Sep 18</span>
+      <span>☐ <strong style="color:var(--text)">AAPL</strong> iPhone 18 Pro retail Fri Sep 18</span>
+      <span>☐ <strong style="color:var(--text)">MU</strong> FY26 Q4 Sep 30</span>
+      <span>☐ <strong style="color:var(--amber)">10Y &gt;5%</strong> hold / break</span>
+      <span>☐ <strong style="color:var(--gold)">Oil</strong> still &gt;$100 / cooler path</span>
+    </div>
+  </section>
+
+  <!-- 9. Footer -->
+  <footer class="footer">
+    <div>
+      <div style="margin-bottom:4px;color:var(--text-sec);font-weight:550">Event Book｜事件簿</div>
+      <div><code>research-os/events/{{EVENT_ID}}/</code></div>
+      <div style="margin-top:4px">Archive source · claim classes: CONFIRMED / RELIABLE / HYPOTHESIS / TENTATIVE</div>
+    </div>
+    <div class="disclaimer">
+      <strong style="color:var(--text-sec)">Disclaimer｜免责声明</strong><br>
+      Research / education material only — not personalized trading advice, not a tip sheet.
+      仅供研究与教育用途，非个性化交易建议，非荐股单。
+      Figures limited to archive-verified prints for {{DATE_LABEL}} US cash close / post-FOMC digestion.
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

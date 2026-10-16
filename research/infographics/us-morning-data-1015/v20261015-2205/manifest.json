@@ -1,0 +1,52 @@
+{
+ "release": "us-morning-data-1015_v20261015-2205",
+ "generated": "2026-10-15T22:00:50.453180",
+ "kind": "news-explainer",
+ "files": [
+  {
+   "path": "meta.json",
+   "bytes": 742,
+   "sha256": "6b03aae27f1e7019"
+  },
+  {
+   "path": "us-morning-data-1015_news-explainer.pdf",
+   "bytes": 1633525,
+   "sha256": "faa1f99be5e95aa8"
+  },
+  {
+   "path": "us-morning-data-1015_news-explainer_p1.html",
+   "bytes": 24119,
+   "sha256": "3ed2582f01fe35da"
+  },
+  {
+   "path": "us-morning-data-1015_news-explainer_p1.jpg",
+   "bytes": 1811990,
+   "sha256": "8bd335bf64136f82"
+  },
+  {
+   "path": "us-morning-data-1015_news-explainer_p1.png",
+   "bytes": 1938034,
+   "sha256": "46ea3516b3919a2f"
+  },
+  {
+   "path": "us-morning-data-1015_news-explainer_p2.html",
+   "bytes": 16092,
+   "sha256": "b0ca4ebeee505860"
+  },
+  {
+   "path": "us-morning-data-1015_news-explainer_p2.jpg",
+   "bytes": 1867901,
+   "sha256": "efa8a57c7e1c70d0"
+  },
+  {
+   "path": "us-morning-data-1015_news-explainer_p2.png",
+   "bytes": 2088928,
+   "sha256": "82cda85cf7388ad8"
+  },
+  {
+   "path": "us-morning-data-1015_v20261015-2205.zip",
+   "bytes": 7568456,
+   "sha256": "0694764f67e642ab"
+  }
+ ]
+}

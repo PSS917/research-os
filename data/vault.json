@@ -1,0 +1,2034 @@
+[
+ {
+  "kind": "review",
+  "tk": "",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 08:03",
+  "d": "research/review/v20261016-0756",
+  "n": 4
+ },
+ {
+  "kind": "release",
+  "tk": "",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 08:03",
+  "d": "releases/v20261016-0756",
+  "n": 10
+ },
+ {
+  "kind": "events",
+  "tk": "",
+  "ver": "v20261016-0802-post",
+  "gen": "2026-10-16 08:02",
+  "d": "research/events/tsm-2026-q3/v20261016-0802-post",
+  "n": 28
+ },
+ {
+  "kind": "events",
+  "tk": "",
+  "ver": "v20261016-0800-post",
+  "gen": "2026-10-16 08:01",
+  "d": "research/events/us-retail-2026-09/v20261016-0800-post",
+  "n": 35
+ },
+ {
+  "kind": "events",
+  "tk": "",
+  "ver": "v20261016-0759-post",
+  "gen": "2026-10-16 08:00",
+  "d": "research/events/us-ppi-2026-09/v20261016-0759-post",
+  "n": 35
+ },
+ {
+  "kind": "radar",
+  "tk": "",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:59",
+  "d": "research/radar/v20261016-0756",
+  "n": 10
+ },
+ {
+  "kind": "macro",
+  "tk": "",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:59",
+  "d": "research/macro/v20261016-0756",
+  "n": 18
+ },
+ {
+  "kind": "events",
+  "tk": "",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:59",
+  "d": "research/events/v20261016-0756",
+  "n": 4
+ },
+ {
+  "kind": "daily",
+  "tk": "",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:59",
+  "d": "research/daily/v20261016-0756",
+  "n": 8
+ },
+ {
+  "kind": "companies",
+  "tk": "SIMO",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:59",
+  "d": "research/companies/SIMO/v20261016-0756",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "RKLB",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:59",
+  "d": "research/companies/RKLB/v20261016-0756",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "PWR",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:59",
+  "d": "research/companies/PWR/v20261016-0756",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "MXL",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:59",
+  "d": "research/companies/MXL/v20261016-0756",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "KLAC",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:59",
+  "d": "research/companies/KLAC/v20261016-0756",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "EME",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:59",
+  "d": "research/companies/EME/v20261016-0756",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "COHR",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:59",
+  "d": "research/companies/COHR/v20261016-0756",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "CCL",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:59",
+  "d": "research/companies/CCL/v20261016-0756",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "AMD",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:59",
+  "d": "research/companies/AMD/v20261016-0756",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "AMAT",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:59",
+  "d": "research/companies/AMAT/v20261016-0756",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "TSM",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:58",
+  "d": "research/companies/TSM/v20261016-0756",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "QCOM",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:58",
+  "d": "research/companies/QCOM/v20261016-0756",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "PLTR",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:58",
+  "d": "research/companies/PLTR/v20261016-0756",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "MU",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:58",
+  "d": "research/companies/MU/v20261016-0756",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "MRVL",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:58",
+  "d": "research/companies/MRVL/v20261016-0756",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "LITE",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:58",
+  "d": "research/companies/LITE/v20261016-0756",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "INTC",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:58",
+  "d": "research/companies/INTC/v20261016-0756",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "GLW",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:58",
+  "d": "research/companies/GLW/v20261016-0756",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "CRWV",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:58",
+  "d": "research/companies/CRWV/v20261016-0756",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "CRWD",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:58",
+  "d": "research/companies/CRWD/v20261016-0756",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "CIEN",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:58",
+  "d": "research/companies/CIEN/v20261016-0756",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "AVGO",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:58",
+  "d": "research/companies/AVGO/v20261016-0756",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "ARM",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:58",
+  "d": "research/companies/ARM/v20261016-0756",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "AAPL",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:58",
+  "d": "research/companies/AAPL/v20261016-0756",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "TSLA",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:57",
+  "d": "research/companies/TSLA/v20261016-0756",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "SPCX",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:57",
+  "d": "research/companies/SPCX/v20261016-0756",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "NVDA",
+  "ver": "v20261016-0756",
+  "gen": "2026-10-16 07:57",
+  "d": "research/companies/NVDA/v20261016-0756",
+  "n": 20
+ },
+ {
+  "kind": "release",
+  "tk": "",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-16 07:39",
+  "d": "releases/v20261013-1622",
+  "n": 9
+ },
+ {
+  "kind": "release",
+  "tk": "",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-16 07:39",
+  "d": "releases/v20261013-1812",
+  "n": 9
+ },
+ {
+  "kind": "release",
+  "tk": "",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-16 07:39",
+  "d": "releases/v20261014-0758",
+  "n": 10
+ },
+ {
+  "kind": "release",
+  "tk": "",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-16 07:39",
+  "d": "releases/v20261015-0757",
+  "n": 10
+ },
+ {
+  "kind": "events",
+  "tk": "",
+  "ver": "v20261015-2158-post",
+  "gen": "2026-10-15 22:05",
+  "d": "research/events/us-ppi-2026-09/v20261015-2158-post",
+  "n": 35
+ },
+ {
+  "kind": "events",
+  "tk": "",
+  "ver": "v20261015-2156-post",
+  "gen": "2026-10-15 22:05",
+  "d": "research/events/us-retail-2026-09/v20261015-2156-post",
+  "n": 35
+ },
+ {
+  "kind": "release",
+  "tk": "",
+  "ver": "v20261015-2205-post",
+  "gen": "2026-10-15 22:01",
+  "d": "releases/v20261015-2205-post",
+  "n": 3
+ },
+ {
+  "kind": "infographics",
+  "tk": "",
+  "ver": "v20261015-2205",
+  "gen": "2026-10-15 22:00",
+  "d": "research/infographics/us-morning-data-1015/v20261015-2205",
+  "n": 9
+ },
+ {
+  "kind": "events",
+  "tk": "",
+  "ver": "v20261015-1805",
+  "gen": "2026-10-15 18:06",
+  "d": "research/events/fed-warsh-2026-10-15/v20261015-1805",
+  "n": 32
+ },
+ {
+  "kind": "events",
+  "tk": "",
+  "ver": "v20261015-1805",
+  "gen": "2026-10-15 18:05",
+  "d": "research/events/us-retail-2026-09/v20261015-1805",
+  "n": 32
+ },
+ {
+  "kind": "review",
+  "tk": "",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 08:02",
+  "d": "research/review/v20261015-0757",
+  "n": 4
+ },
+ {
+  "kind": "radar",
+  "tk": "",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 08:00",
+  "d": "research/radar/v20261015-0757",
+  "n": 10
+ },
+ {
+  "kind": "macro",
+  "tk": "",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 08:00",
+  "d": "research/macro/v20261015-0757",
+  "n": 18
+ },
+ {
+  "kind": "events",
+  "tk": "",
+  "ver": "v20261015-0800-post",
+  "gen": "2026-10-15 08:00",
+  "d": "research/events/us-cpi-2026-09/v20261015-0800-post",
+  "n": 13
+ },
+ {
+  "kind": "events",
+  "tk": "",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 08:00",
+  "d": "research/events/v20261015-0757",
+  "n": 4
+ },
+ {
+  "kind": "daily",
+  "tk": "",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 08:00",
+  "d": "research/daily/v20261015-0757",
+  "n": 8
+ },
+ {
+  "kind": "companies",
+  "tk": "RKLB",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 08:00",
+  "d": "research/companies/RKLB/v20261015-0757",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "MXL",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 08:00",
+  "d": "research/companies/MXL/v20261015-0757",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "SIMO",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 07:59",
+  "d": "research/companies/SIMO/v20261015-0757",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "QCOM",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 07:59",
+  "d": "research/companies/QCOM/v20261015-0757",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "PWR",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 07:59",
+  "d": "research/companies/PWR/v20261015-0757",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "PLTR",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 07:59",
+  "d": "research/companies/PLTR/v20261015-0757",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "MRVL",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 07:59",
+  "d": "research/companies/MRVL/v20261015-0757",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "LITE",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 07:59",
+  "d": "research/companies/LITE/v20261015-0757",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "KLAC",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 07:59",
+  "d": "research/companies/KLAC/v20261015-0757",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "INTC",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 07:59",
+  "d": "research/companies/INTC/v20261015-0757",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "EME",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 07:59",
+  "d": "research/companies/EME/v20261015-0757",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "CRWV",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 07:59",
+  "d": "research/companies/CRWV/v20261015-0757",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "CRWD",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 07:59",
+  "d": "research/companies/CRWD/v20261015-0757",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "COHR",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 07:59",
+  "d": "research/companies/COHR/v20261015-0757",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "CIEN",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 07:59",
+  "d": "research/companies/CIEN/v20261015-0757",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "CCL",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 07:59",
+  "d": "research/companies/CCL/v20261015-0757",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "AMD",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 07:59",
+  "d": "research/companies/AMD/v20261015-0757",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "AMAT",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 07:59",
+  "d": "research/companies/AMAT/v20261015-0757",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "TSM",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 07:58",
+  "d": "research/companies/TSM/v20261015-0757",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "TSLA",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 07:58",
+  "d": "research/companies/TSLA/v20261015-0757",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "SPCX",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 07:58",
+  "d": "research/companies/SPCX/v20261015-0757",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "NVDA",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 07:58",
+  "d": "research/companies/NVDA/v20261015-0757",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "MU",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 07:58",
+  "d": "research/companies/MU/v20261015-0757",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "GLW",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 07:58",
+  "d": "research/companies/GLW/v20261015-0757",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "AVGO",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 07:58",
+  "d": "research/companies/AVGO/v20261015-0757",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "ARM",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 07:58",
+  "d": "research/companies/ARM/v20261015-0757",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "AAPL",
+  "ver": "v20261015-0757",
+  "gen": "2026-10-15 07:58",
+  "d": "research/companies/AAPL/v20261015-0757",
+  "n": 20
+ },
+ {
+  "kind": "master-prompt",
+  "tk": "",
+  "ver": "v2026-10-14",
+  "gen": "2026-10-14 22:00",
+  "d": "research/master-prompt/v2026-10-14",
+  "n": 8
+ },
+ {
+  "kind": "events",
+  "tk": "",
+  "ver": "v20261014-2155-post",
+  "gen": "2026-10-14 21:55",
+  "d": "research/events/us-cpi-2026-09/v20261014-2155-post",
+  "n": 13
+ },
+ {
+  "kind": "release",
+  "tk": "",
+  "ver": "v20261014-2143-post",
+  "gen": "2026-10-14 21:44",
+  "d": "releases/v20261014-2143-post",
+  "n": 3
+ },
+ {
+  "kind": "events",
+  "tk": "",
+  "ver": "v20261014-2143-post",
+  "gen": "2026-10-14 21:43",
+  "d": "research/events/us-cpi-2026-09/v20261014-2143-post",
+  "n": 7
+ },
+ {
+  "kind": "infographics",
+  "tk": "",
+  "ver": "v20261014-2140-news",
+  "gen": "2026-10-14 21:40",
+  "d": "research/infographics/us-cpi-sep2026-hot/v20261014-2140-news",
+  "n": 9
+ },
+ {
+  "kind": "events",
+  "tk": "",
+  "ver": "v20261014-2131-post",
+  "gen": "2026-10-14 21:31",
+  "d": "research/events/us-cpi-2026-09/v20261014-2131-post",
+  "n": 5
+ },
+ {
+  "kind": "events",
+  "tk": "",
+  "ver": "v20261014-1806",
+  "gen": "2026-10-14 18:06",
+  "d": "research/events/us-ppi-2026-09/v20261014-1806",
+  "n": 32
+ },
+ {
+  "kind": "events",
+  "tk": "",
+  "ver": "v20261014-1806",
+  "gen": "2026-10-14 18:06",
+  "d": "research/events/tsm-2026-q3/v20261014-1806",
+  "n": 32
+ },
+ {
+  "kind": "infographics",
+  "tk": "",
+  "ver": "v20261014-0758-news",
+  "gen": "2026-10-14 08:06",
+  "d": "research/infographics/ai-chip-selloff-20261013/v20261014-0758-news",
+  "n": 9
+ },
+ {
+  "kind": "companies",
+  "tk": "SIMO",
+  "ver": "v20261014-0758-think",
+  "gen": "2026-10-14 08:04",
+  "d": "research/companies/SIMO/v20261014-0758-think",
+  "n": 22
+ },
+ {
+  "kind": "companies",
+  "tk": "RKLB",
+  "ver": "v20261014-0758-think",
+  "gen": "2026-10-14 08:04",
+  "d": "research/companies/RKLB/v20261014-0758-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "PWR",
+  "ver": "v20261014-0758-think",
+  "gen": "2026-10-14 08:04",
+  "d": "research/companies/PWR/v20261014-0758-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "PLTR",
+  "ver": "v20261014-0758-think",
+  "gen": "2026-10-14 08:04",
+  "d": "research/companies/PLTR/v20261014-0758-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "MXL",
+  "ver": "v20261014-0758-think",
+  "gen": "2026-10-14 08:04",
+  "d": "research/companies/MXL/v20261014-0758-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "LITE",
+  "ver": "v20261014-0758-think",
+  "gen": "2026-10-14 08:04",
+  "d": "research/companies/LITE/v20261014-0758-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "KLAC",
+  "ver": "v20261014-0758-think",
+  "gen": "2026-10-14 08:04",
+  "d": "research/companies/KLAC/v20261014-0758-think",
+  "n": 22
+ },
+ {
+  "kind": "companies",
+  "tk": "EME",
+  "ver": "v20261014-0758-think",
+  "gen": "2026-10-14 08:04",
+  "d": "research/companies/EME/v20261014-0758-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "CRWV",
+  "ver": "v20261014-0758-think",
+  "gen": "2026-10-14 08:04",
+  "d": "research/companies/CRWV/v20261014-0758-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "CRWD",
+  "ver": "v20261014-0758-think",
+  "gen": "2026-10-14 08:04",
+  "d": "research/companies/CRWD/v20261014-0758-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "COHR",
+  "ver": "v20261014-0758-think",
+  "gen": "2026-10-14 08:04",
+  "d": "research/companies/COHR/v20261014-0758-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "CIEN",
+  "ver": "v20261014-0758-think",
+  "gen": "2026-10-14 08:04",
+  "d": "research/companies/CIEN/v20261014-0758-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "CCL",
+  "ver": "v20261014-0758-think",
+  "gen": "2026-10-14 08:04",
+  "d": "research/companies/CCL/v20261014-0758-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "AMD",
+  "ver": "v20261014-0758-think",
+  "gen": "2026-10-14 08:04",
+  "d": "research/companies/AMD/v20261014-0758-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "AMAT",
+  "ver": "v20261014-0758-think",
+  "gen": "2026-10-14 08:04",
+  "d": "research/companies/AMAT/v20261014-0758-think",
+  "n": 22
+ },
+ {
+  "kind": "review",
+  "tk": "",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 08:03",
+  "d": "research/review/v20261014-0758",
+  "n": 4
+ },
+ {
+  "kind": "companies",
+  "tk": "TSM",
+  "ver": "v20261014-0758-think",
+  "gen": "2026-10-14 08:03",
+  "d": "research/companies/TSM/v20261014-0758-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "TSLA",
+  "ver": "v20261014-0758-think",
+  "gen": "2026-10-14 08:03",
+  "d": "research/companies/TSLA/v20261014-0758-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "SPCX",
+  "ver": "v20261014-0758-think",
+  "gen": "2026-10-14 08:03",
+  "d": "research/companies/SPCX/v20261014-0758-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "QCOM",
+  "ver": "v20261014-0758-think",
+  "gen": "2026-10-14 08:03",
+  "d": "research/companies/QCOM/v20261014-0758-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "NVDA",
+  "ver": "v20261014-0758-think",
+  "gen": "2026-10-14 08:03",
+  "d": "research/companies/NVDA/v20261014-0758-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "MU",
+  "ver": "v20261014-0758-think",
+  "gen": "2026-10-14 08:03",
+  "d": "research/companies/MU/v20261014-0758-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "MRVL",
+  "ver": "v20261014-0758-think",
+  "gen": "2026-10-14 08:03",
+  "d": "research/companies/MRVL/v20261014-0758-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "INTC",
+  "ver": "v20261014-0758-think",
+  "gen": "2026-10-14 08:03",
+  "d": "research/companies/INTC/v20261014-0758-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "GLW",
+  "ver": "v20261014-0758-think",
+  "gen": "2026-10-14 08:03",
+  "d": "research/companies/GLW/v20261014-0758-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "AVGO",
+  "ver": "v20261014-0758-think",
+  "gen": "2026-10-14 08:03",
+  "d": "research/companies/AVGO/v20261014-0758-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "ARM",
+  "ver": "v20261014-0758-think",
+  "gen": "2026-10-14 08:03",
+  "d": "research/companies/ARM/v20261014-0758-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "AAPL",
+  "ver": "v20261014-0758-think",
+  "gen": "2026-10-14 08:03",
+  "d": "research/companies/AAPL/v20261014-0758-think",
+  "n": 22
+ },
+ {
+  "kind": "radar",
+  "tk": "",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 08:01",
+  "d": "research/radar/v20261014-0758",
+  "n": 10
+ },
+ {
+  "kind": "macro",
+  "tk": "",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 08:01",
+  "d": "research/macro/v20261014-0758",
+  "n": 18
+ },
+ {
+  "kind": "events",
+  "tk": "",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 08:01",
+  "d": "research/events/v20261014-0758",
+  "n": 4
+ },
+ {
+  "kind": "daily",
+  "tk": "",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 08:01",
+  "d": "research/daily/v20261014-0758",
+  "n": 8
+ },
+ {
+  "kind": "companies",
+  "tk": "MXL",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 08:01",
+  "d": "research/companies/MXL/v20261014-0758",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "SIMO",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 08:00",
+  "d": "research/companies/SIMO/v20261014-0758",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "RKLB",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 08:00",
+  "d": "research/companies/RKLB/v20261014-0758",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "PWR",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 08:00",
+  "d": "research/companies/PWR/v20261014-0758",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "PLTR",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 08:00",
+  "d": "research/companies/PLTR/v20261014-0758",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "LITE",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 08:00",
+  "d": "research/companies/LITE/v20261014-0758",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "KLAC",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 08:00",
+  "d": "research/companies/KLAC/v20261014-0758",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "INTC",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 08:00",
+  "d": "research/companies/INTC/v20261014-0758",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "EME",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 08:00",
+  "d": "research/companies/EME/v20261014-0758",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "CRWV",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 08:00",
+  "d": "research/companies/CRWV/v20261014-0758",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "CRWD",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 08:00",
+  "d": "research/companies/CRWD/v20261014-0758",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "COHR",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 08:00",
+  "d": "research/companies/COHR/v20261014-0758",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "CIEN",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 08:00",
+  "d": "research/companies/CIEN/v20261014-0758",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "CCL",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 08:00",
+  "d": "research/companies/CCL/v20261014-0758",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "AMD",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 08:00",
+  "d": "research/companies/AMD/v20261014-0758",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "AMAT",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 08:00",
+  "d": "research/companies/AMAT/v20261014-0758",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "TSM",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 07:59",
+  "d": "research/companies/TSM/v20261014-0758",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "TSLA",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 07:59",
+  "d": "research/companies/TSLA/v20261014-0758",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "SPCX",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 07:59",
+  "d": "research/companies/SPCX/v20261014-0758",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "QCOM",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 07:59",
+  "d": "research/companies/QCOM/v20261014-0758",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "NVDA",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 07:59",
+  "d": "research/companies/NVDA/v20261014-0758",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "MU",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 07:59",
+  "d": "research/companies/MU/v20261014-0758",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "MRVL",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 07:59",
+  "d": "research/companies/MRVL/v20261014-0758",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "GLW",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 07:59",
+  "d": "research/companies/GLW/v20261014-0758",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "AVGO",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 07:59",
+  "d": "research/companies/AVGO/v20261014-0758",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "ARM",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 07:59",
+  "d": "research/companies/ARM/v20261014-0758",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "AAPL",
+  "ver": "v20261014-0758",
+  "gen": "2026-10-14 07:59",
+  "d": "research/companies/AAPL/v20261014-0758",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "SIMO",
+  "ver": "v20261013-2108-think",
+  "gen": "2026-10-13 21:09",
+  "d": "research/companies/SIMO/v20261013-2108-think",
+  "n": 22
+ },
+ {
+  "kind": "companies",
+  "tk": "RKLB",
+  "ver": "v20261013-2108-think",
+  "gen": "2026-10-13 21:09",
+  "d": "research/companies/RKLB/v20261013-2108-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "QCOM",
+  "ver": "v20261013-2108-think",
+  "gen": "2026-10-13 21:09",
+  "d": "research/companies/QCOM/v20261013-2108-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "PWR",
+  "ver": "v20261013-2108-think",
+  "gen": "2026-10-13 21:09",
+  "d": "research/companies/PWR/v20261013-2108-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "PLTR",
+  "ver": "v20261013-2108-think",
+  "gen": "2026-10-13 21:09",
+  "d": "research/companies/PLTR/v20261013-2108-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "NVDA",
+  "ver": "v20261013-2108-think",
+  "gen": "2026-10-13 21:09",
+  "d": "research/companies/NVDA/v20261013-2108-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "MXL",
+  "ver": "v20261013-2108-think",
+  "gen": "2026-10-13 21:09",
+  "d": "research/companies/MXL/v20261013-2108-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "MRVL",
+  "ver": "v20261013-2108-think",
+  "gen": "2026-10-13 21:09",
+  "d": "research/companies/MRVL/v20261013-2108-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "LITE",
+  "ver": "v20261013-2108-think",
+  "gen": "2026-10-13 21:09",
+  "d": "research/companies/LITE/v20261013-2108-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "KLAC",
+  "ver": "v20261013-2108-think",
+  "gen": "2026-10-13 21:09",
+  "d": "research/companies/KLAC/v20261013-2108-think",
+  "n": 22
+ },
+ {
+  "kind": "companies",
+  "tk": "INTC",
+  "ver": "v20261013-2108-think",
+  "gen": "2026-10-13 21:09",
+  "d": "research/companies/INTC/v20261013-2108-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "GLW",
+  "ver": "v20261013-2108-think",
+  "gen": "2026-10-13 21:09",
+  "d": "research/companies/GLW/v20261013-2108-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "EME",
+  "ver": "v20261013-2108-think",
+  "gen": "2026-10-13 21:09",
+  "d": "research/companies/EME/v20261013-2108-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "CRWV",
+  "ver": "v20261013-2108-think",
+  "gen": "2026-10-13 21:09",
+  "d": "research/companies/CRWV/v20261013-2108-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "CRWD",
+  "ver": "v20261013-2108-think",
+  "gen": "2026-10-13 21:09",
+  "d": "research/companies/CRWD/v20261013-2108-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "COHR",
+  "ver": "v20261013-2108-think",
+  "gen": "2026-10-13 21:09",
+  "d": "research/companies/COHR/v20261013-2108-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "CIEN",
+  "ver": "v20261013-2108-think",
+  "gen": "2026-10-13 21:09",
+  "d": "research/companies/CIEN/v20261013-2108-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "CCL",
+  "ver": "v20261013-2108-think",
+  "gen": "2026-10-13 21:09",
+  "d": "research/companies/CCL/v20261013-2108-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "AVGO",
+  "ver": "v20261013-2108-think",
+  "gen": "2026-10-13 21:09",
+  "d": "research/companies/AVGO/v20261013-2108-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "AMD",
+  "ver": "v20261013-2108-think",
+  "gen": "2026-10-13 21:09",
+  "d": "research/companies/AMD/v20261013-2108-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "AMAT",
+  "ver": "v20261013-2108-think",
+  "gen": "2026-10-13 21:09",
+  "d": "research/companies/AMAT/v20261013-2108-think",
+  "n": 22
+ },
+ {
+  "kind": "companies",
+  "tk": "AAPL",
+  "ver": "v20261013-2108-think",
+  "gen": "2026-10-13 21:09",
+  "d": "research/companies/AAPL/v20261013-2108-think",
+  "n": 22
+ },
+ {
+  "kind": "companies",
+  "tk": "TSM",
+  "ver": "v20261013-2108-think",
+  "gen": "2026-10-13 21:08",
+  "d": "research/companies/TSM/v20261013-2108-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "TSLA",
+  "ver": "v20261013-2108-think",
+  "gen": "2026-10-13 21:08",
+  "d": "research/companies/TSLA/v20261013-2108-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "SPCX",
+  "ver": "v20261013-2108-think",
+  "gen": "2026-10-13 21:08",
+  "d": "research/companies/SPCX/v20261013-2108-think",
+  "n": 21
+ },
+ {
+  "kind": "companies",
+  "tk": "ARM",
+  "ver": "v20261013-2108-think",
+  "gen": "2026-10-13 21:08",
+  "d": "research/companies/ARM/v20261013-2108-think",
+  "n": 21
+ },
+ {
+  "kind": "infographics",
+  "tk": "",
+  "ver": "v20261013-2115",
+  "gen": "2026-10-13 21:07",
+  "d": "research/infographics/cxmt-4f2/v20261013-2115",
+  "n": 9
+ },
+ {
+  "kind": "master-prompt",
+  "tk": "",
+  "ver": "v2026-10-13d",
+  "gen": "2026-10-13 20:58",
+  "d": "research/master-prompt/v2026-10-13d",
+  "n": 8
+ },
+ {
+  "kind": "companies",
+  "tk": "MU",
+  "ver": "v20261013-2057-think",
+  "gen": "2026-10-13 20:58",
+  "d": "research/companies/MU/v20261013-2057-think",
+  "n": 22
+ },
+ {
+  "kind": "infographics",
+  "tk": "",
+  "ver": "v20261013-2058",
+  "gen": "2026-10-13 20:56",
+  "d": "research/infographics/cxmt-4f2/v20261013-2058",
+  "n": 6
+ },
+ {
+  "kind": "master-prompt",
+  "tk": "",
+  "ver": "v2026-10-13c",
+  "gen": "2026-10-13 20:48",
+  "d": "research/master-prompt/v2026-10-13c",
+  "n": 8
+ },
+ {
+  "kind": "events",
+  "tk": "",
+  "ver": "v20261013-2047-think",
+  "gen": "2026-10-13 20:47",
+  "d": "research/events/us-cpi-2026-09/v20261013-2047-think",
+  "n": 18
+ },
+ {
+  "kind": "academy",
+  "tk": "",
+  "ver": "v20261013-2047-think",
+  "gen": "2026-10-13 20:47",
+  "d": "research/academy/v20261013-2047-think",
+  "n": 4
+ },
+ {
+  "kind": "radar",
+  "tk": "",
+  "ver": "v20261013-1812-204437",
+  "gen": "2026-10-13 20:44",
+  "d": "research/radar/v20261013-1812-204437",
+  "n": 10
+ },
+ {
+  "kind": "master-prompt",
+  "tk": "",
+  "ver": "v2026-10-13b",
+  "gen": "2026-10-13 20:44",
+  "d": "research/master-prompt/v2026-10-13b",
+  "n": 8
+ },
+ {
+  "kind": "macro",
+  "tk": "",
+  "ver": "v20261013-1812-204431",
+  "gen": "2026-10-13 20:44",
+  "d": "research/macro/v20261013-1812-204431",
+  "n": 18
+ },
+ {
+  "kind": "events",
+  "tk": "",
+  "ver": "v20261013-1812-204441",
+  "gen": "2026-10-13 20:44",
+  "d": "research/events/v20261013-1812-204441",
+  "n": 4
+ },
+ {
+  "kind": "daily",
+  "tk": "",
+  "ver": "v20261013-1812-204441",
+  "gen": "2026-10-13 20:44",
+  "d": "research/daily/v20261013-1812-204441",
+  "n": 8
+ },
+ {
+  "kind": "events",
+  "tk": "",
+  "ver": "v20261013-2043-teach",
+  "gen": "2026-10-13 20:43",
+  "d": "research/events/us-cpi-2026-09/v20261013-2043-teach",
+  "n": 14
+ },
+ {
+  "kind": "academy",
+  "tk": "",
+  "ver": "v20261013-2043",
+  "gen": "2026-10-13 20:43",
+  "d": "research/academy/v20261013-2043",
+  "n": 4
+ },
+ {
+  "kind": "review",
+  "tk": "",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:15",
+  "d": "research/review/v20261013-1812",
+  "n": 4
+ },
+ {
+  "kind": "radar",
+  "tk": "",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:14",
+  "d": "research/radar/v20261013-1812",
+  "n": 10
+ },
+ {
+  "kind": "macro",
+  "tk": "",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:14",
+  "d": "research/macro/v20261013-1812",
+  "n": 18
+ },
+ {
+  "kind": "events",
+  "tk": "",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:14",
+  "d": "research/events/v20261013-1812",
+  "n": 4
+ },
+ {
+  "kind": "daily",
+  "tk": "",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:14",
+  "d": "research/daily/v20261013-1812",
+  "n": 8
+ },
+ {
+  "kind": "companies",
+  "tk": "SIMO",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:14",
+  "d": "research/companies/SIMO/v20261013-1812",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "RKLB",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:14",
+  "d": "research/companies/RKLB/v20261013-1812",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "PWR",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:14",
+  "d": "research/companies/PWR/v20261013-1812",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "MXL",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:14",
+  "d": "research/companies/MXL/v20261013-1812",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "KLAC",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:14",
+  "d": "research/companies/KLAC/v20261013-1812",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "EME",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:14",
+  "d": "research/companies/EME/v20261013-1812",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "COHR",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:14",
+  "d": "research/companies/COHR/v20261013-1812",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "CIEN",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:14",
+  "d": "research/companies/CIEN/v20261013-1812",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "CCL",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:14",
+  "d": "research/companies/CCL/v20261013-1812",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "AMD",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:14",
+  "d": "research/companies/AMD/v20261013-1812",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "AMAT",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:14",
+  "d": "research/companies/AMAT/v20261013-1812",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "TSM",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:13",
+  "d": "research/companies/TSM/v20261013-1812",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "TSLA",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:13",
+  "d": "research/companies/TSLA/v20261013-1812",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "QCOM",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:13",
+  "d": "research/companies/QCOM/v20261013-1812",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "PLTR",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:13",
+  "d": "research/companies/PLTR/v20261013-1812",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "NVDA",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:13",
+  "d": "research/companies/NVDA/v20261013-1812",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "MU",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:13",
+  "d": "research/companies/MU/v20261013-1812",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "MRVL",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:13",
+  "d": "research/companies/MRVL/v20261013-1812",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "LITE",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:13",
+  "d": "research/companies/LITE/v20261013-1812",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "INTC",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:13",
+  "d": "research/companies/INTC/v20261013-1812",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "GLW",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:13",
+  "d": "research/companies/GLW/v20261013-1812",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "CRWV",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:13",
+  "d": "research/companies/CRWV/v20261013-1812",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "CRWD",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:13",
+  "d": "research/companies/CRWD/v20261013-1812",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "AVGO",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:13",
+  "d": "research/companies/AVGO/v20261013-1812",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "ARM",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:13",
+  "d": "research/companies/ARM/v20261013-1812",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "AAPL",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:13",
+  "d": "research/companies/AAPL/v20261013-1812",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "SPCX",
+  "ver": "v20261013-1812",
+  "gen": "2026-10-13 18:12",
+  "d": "research/companies/SPCX/v20261013-1812",
+  "n": 20
+ },
+ {
+  "kind": "events",
+  "tk": "",
+  "ver": "v20261013-1803",
+  "gen": "2026-10-13 18:09",
+  "d": "research/events/us-cpi-2026-09/v20261013-1803",
+  "n": 36
+ },
+ {
+  "kind": "review",
+  "tk": "",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:25",
+  "d": "research/review/v20261013-1622",
+  "n": 4
+ },
+ {
+  "kind": "radar",
+  "tk": "",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:25",
+  "d": "research/radar/v20261013-1622",
+  "n": 10
+ },
+ {
+  "kind": "macro",
+  "tk": "",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:25",
+  "d": "research/macro/v20261013-1622",
+  "n": 18
+ },
+ {
+  "kind": "events",
+  "tk": "",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:25",
+  "d": "research/events/v20261013-1622",
+  "n": 4
+ },
+ {
+  "kind": "daily",
+  "tk": "",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:25",
+  "d": "research/daily/v20261013-1622",
+  "n": 8
+ },
+ {
+  "kind": "companies",
+  "tk": "SIMO",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:25",
+  "d": "research/companies/SIMO/v20261013-1622",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "RKLB",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:25",
+  "d": "research/companies/RKLB/v20261013-1622",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "MXL",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:25",
+  "d": "research/companies/MXL/v20261013-1622",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "CCL",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:25",
+  "d": "research/companies/CCL/v20261013-1622",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "QCOM",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:24",
+  "d": "research/companies/QCOM/v20261013-1622",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "PWR",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:24",
+  "d": "research/companies/PWR/v20261013-1622",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "PLTR",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:24",
+  "d": "research/companies/PLTR/v20261013-1622",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "MRVL",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:24",
+  "d": "research/companies/MRVL/v20261013-1622",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "LITE",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:24",
+  "d": "research/companies/LITE/v20261013-1622",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "KLAC",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:24",
+  "d": "research/companies/KLAC/v20261013-1622",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "INTC",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:24",
+  "d": "research/companies/INTC/v20261013-1622",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "EME",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:24",
+  "d": "research/companies/EME/v20261013-1622",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "CRWV",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:24",
+  "d": "research/companies/CRWV/v20261013-1622",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "CRWD",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:24",
+  "d": "research/companies/CRWD/v20261013-1622",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "COHR",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:24",
+  "d": "research/companies/COHR/v20261013-1622",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "CIEN",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:24",
+  "d": "research/companies/CIEN/v20261013-1622",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "AVGO",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:24",
+  "d": "research/companies/AVGO/v20261013-1622",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "AMD",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:24",
+  "d": "research/companies/AMD/v20261013-1622",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "AMAT",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:24",
+  "d": "research/companies/AMAT/v20261013-1622",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "TSM",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:23",
+  "d": "research/companies/TSM/v20261013-1622",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "TSLA",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:23",
+  "d": "research/companies/TSLA/v20261013-1622",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "SPCX",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:23",
+  "d": "research/companies/SPCX/v20261013-1622",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "NVDA",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:23",
+  "d": "research/companies/NVDA/v20261013-1622",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "MU",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:23",
+  "d": "research/companies/MU/v20261013-1622",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "GLW",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:23",
+  "d": "research/companies/GLW/v20261013-1622",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "ARM",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:23",
+  "d": "research/companies/ARM/v20261013-1622",
+  "n": 20
+ },
+ {
+  "kind": "companies",
+  "tk": "AAPL",
+  "ver": "v20261013-1622",
+  "gen": "2026-10-13 16:23",
+  "d": "research/companies/AAPL/v20261013-1622",
+  "n": 20
+ },
+ {
+  "kind": "master-prompt",
+  "tk": "",
+  "ver": "v2026-09-17b",
+  "gen": "2026-10-13 16:18",
+  "d": "research/master-prompt/v2026-09-17b",
+  "n": 8
+ },
+ {
+  "kind": "master-prompt",
+  "tk": "",
+  "ver": "v2026-10-13",
+  "gen": "2026-10-13 16:18",
+  "d": "research/master-prompt/v2026-10-13",
+  "n": 8
+ }
+]

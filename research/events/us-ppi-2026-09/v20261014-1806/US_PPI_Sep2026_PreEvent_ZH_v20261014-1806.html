@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title> </title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<style>body{font-family:'Noto Sans CJK SC','Noto Sans',sans-serif;max-width:1100px;margin:auto;padding:24px;line-height:1.6;color:#1b1b1b}table{border-collapse:collapse;font-size:13px;margin:8px 0}td,th{border:1px solid #ccd;padding:4px 8px}th{background:#1F3A5F;color:#fff}img{max-width:100%;border:1px solid #ddd}h1{color:#1F3A5F}h2{border-bottom:2px solid #1F3A5F}abbr{text-decoration:underline dotted #2E86C1;cursor:help}.box30{background:linear-gradient(135deg,#eaf2ff,#f5ecff);border:2px solid #5b8cff;border-radius:14px;padding:6px 18px;margin:14px 0;font-size:16px}.readmap{background:#f6f8fb;border:1px solid #d5dbe6;border-radius:12px;padding:4px 16px;margin:12px 0}.howto{background:#fff8e6;border-left:5px solid #f59e0b;border-radius:8px;padding:2px 14px;margin:6px 0 22px}.quiz{background:#effaf3;border:1px solid #9bd8b1;border-radius:12px;padding:4px 16px}details{margin:8px 0}details.l3{background:#f7f7f9;border:1px dashed #b8c0cc;border-radius:10px;padding:6px 14px}summary{cursor:pointer;font-weight:600;color:#1F3A5F}body{font-size:15.5px}blockquote{background:#f3f6fa;border-left:4px solid #2E86C1;margin:0;padding:6px 12px}</style></head>
+<body><div style="background:#fff7ed;border:1px solid #fdba74;padding:8px 12px;margin:8px 0;font-size:13px">历史版本：PDF/Word/图片已归档至 GitHub Release（下载：<a href="https://github.com/PSS917/research-os/releases/download/archive-v20261014-1806/US_PPI_Sep2026_PreEvent_v20261014-1806.zip">ZIP</a>）。Archived version — heavy files live in Release assets.</div>
+<header id="title-block-header">
+<h1 class="title"> </h1>
+</header>
+<h1
+id="美国9月ppi-发布前事件书us-ppi-sep-2026-pre-event-book-专业中文版">美国9月PPI
+发布前事件书｜US PPI (Sep 2026) Pre-Event Book — 专业中文版</h1>
+<blockquote>
+<p><strong>发布时间：2026-10-15（周四）08:30 美东 = 20:30 新加坡时间
+(SGT)</strong>｜状态
+<strong>CONFIRMED</strong>（bls.gov/schedule/news_release/ppi.htm）
+发布前快照锁定：<strong>2026-10-14 18:06 SGT</strong>（版本
+v20261014-1806）。本文件不会在事后改写；实际值与复盘写入下一份 Daily OS
+/ 21:20 事后流程。 非投资建议｜Not investment
+advice。标签：FACT｜DATA｜MARKET
+EXP｜HYPOTHESIS｜INFERENCE｜UNCERTAINTY。</p>
+</blockquote>
+<div class="box30">
+<p><strong>⏱ 30秒看懂</strong></p>
+<ol type="1">
+<li><strong>发生什么：</strong>明天晚上 20:30 SGT 公布美国9月
+PPI（生产者价格指数｜Producer Price
+Index）——工厂/企业卖出价格，不是你买菜的价格。</li>
+<li><strong>和我的股票有什么关系：</strong>Fed 真正盯的是 PCE；PPI
+里的医疗、机票、组合管理费会映射进核心 PCE。今晚 CPI 定基调，PPI
+补拼图，一起影响 10/27–28 FOMC 路径与利率敏感股。</li>
+<li><strong>该看什么/做什么：</strong>盯 Final Demand 环比：≤0.2%
+偏冷，0.3–0.6% 符合（共识约 0.50%），≥0.7%
+偏热；再看服务分项是否指向核心 PCE。</li>
+</ol>
+</div>
+<div class="readmap">
+<p><strong>🗺 阅读地图</strong></p>
+<table>
+<thead>
+<tr>
+<th>你有多少时间</th>
+<th>读哪里</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2 分钟</td>
+<td>⏱30秒 + 第4节观察清单阈值。</td>
+</tr>
+<tr>
+<td>10 分钟</td>
+<td>第1–3节 + 图01/03：为什么 PPI→PCE，三种剧本。</td>
+</tr>
+<tr>
+<td>30 分钟</td>
+<td>全文 + 教学版 + 自我测验；对照今晚 CPI 锁定书。</td>
+</tr>
+</tbody>
+</table>
+<p>层级说明：<strong>L1 故事</strong>（人人能懂）→ <strong>L2
+关键数字</strong>（带解释）→ <strong>L3
+专业细节</strong>（网页可折叠，默认收起）。</p>
+</div>
+<h2 id="与今晚-cpi-的关系不改写锁定快照">0. 与今晚 CPI
+的关系（不改写锁定快照）</h2>
+<ul>
+<li>CPI 锁定快照：<code>us-cpi-2026-09</code>
+<strong>v20261013-1803</strong>（只读）。共识核心环比 0.2%、我们
+0.22%；情景 Cool/Inline/Hot 已锁。</li>
+<li><strong>本 PPI 书独立锁定</strong>；不得回写 CPI 数字。</li>
+<li>逻辑（INFERENCE）：若今晚核心偏热而明日 PPI 服务分项也热 → 核心 PCE
+风险上升；若 CPI 热但 PPI 服务冷 → 可能是 CPI 住房等权重差异，Fed
+反应更弱。</li>
+</ul>
+<h2 id="执行摘要-executive-summary">1. 执行摘要 Executive Summary</h2>
+<ol type="1">
+<li><strong>共识 (MARKET EXP, Helious 2026-10-14)</strong>：最终需求 PPI
+<strong>+0.50% m/m、5.3% y/y</strong>。8月实际 <strong>+0.40% m/m / 5.4%
+y/y</strong>（FRED PPIFIS 指数 Aug 157.411，与共识一致的量级）。</li>
+<li><strong>分析师备选（非共识）</strong>：Continuum Economics
+预览（2026-10-01）预计 headline <strong>+0.6%</strong>（能源带动）、核心
+ex food/energy <strong>+0.3%</strong>——标注为 analyst
+view，<strong>不是</strong> street consensus。</li>
+<li><strong>我们 (HYPOTHESIS)</strong>：贴近 Helious 共识 <strong>+0.50%
+/ 5.3%</strong>；概率 Cool 25% / Inline 50% / Hot
+25%。<strong>UNCERTAINTY：我们没有独立分项模型，故不发明更「精确」的共识或假装高信心。</strong></li>
+<li><strong>为什么重要</strong>：PCE 是 Fed 偏好指标；PPI→PCE 映射 +
+今晚 CPI 结构 = FOMC 前最后通胀拼图之一。10Y 已处高位、半导体对利率敏感
+→ 偏热路径对 NDX/SOX 非对称偏空。</li>
+<li><strong>观察名单</strong>：利率敏感（ARM/PLTR/RKLB/CCL…）与 AI
+融资叙事（EME/PWR/CRWV）；TSM 同日下午财报情绪叠加油。</li>
+</ol>
+<h2 id="共识-vs-我们-expectation-gap">2. 共识 vs 我们 Expectation
+Gap</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th>指标</th>
+<th>8月前值 (DATA)</th>
+<th>共识 MARKET EXP</th>
+<th>来源/日期</th>
+<th>我们 HYPOTHESIS</th>
+<th>差</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Final Demand MoM</td>
+<td>+0.40%</td>
+<td><strong>+0.50%</strong></td>
+<td>Helious 2026-10-14</td>
+<td><strong>+0.50%</strong></td>
+<td>0</td>
+</tr>
+<tr>
+<td>Final Demand YoY</td>
+<td>+5.41% (FRED calc)</td>
+<td><strong>5.3%</strong></td>
+<td>Helious 2026-10-14</td>
+<td><strong>5.3%</strong></td>
+<td>0</td>
+</tr>
+<tr>
+<td>Core ex F/E MoM</td>
+<td>—</td>
+<td>未见统一街共识</td>
+<td>Continuum 估 +0.3% (2026-10-01)</td>
+<td>无独立点估计；看分项</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>FRED PPIFIS：Aug 157.411 / Jul 156.784 / Aug-2025 149.327。</p>
+<h2 id="情景树-scenarios-hypothesis">3. 情景树 Scenarios
+(HYPOTHESIS)</h2>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr>
+<th>情景</th>
+<th>阈值</th>
+<th>概率</th>
+<th>2Y</th>
+<th>10Y</th>
+<th>USD/JPY</th>
+<th>NDX</th>
+<th>SOX</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cool 偏冷</td>
+<td>FD MoM ≤0.2% 或 YoY ≤5.0%</td>
+<td>25%</td>
+<td>−5~−10bp</td>
+<td>−3~−8bp</td>
+<td>−0.3~−0.8</td>
+<td>+0.5~+1.2%</td>
+<td>+0.8~+2%</td>
+</tr>
+<tr>
+<td>Inline 符合</td>
+<td>MoM 0.3–0.6%；YoY ~5.1–5.5%</td>
+<td>50%</td>
+<td>±3bp</td>
+<td>±4bp</td>
+<td>持平</td>
+<td>±0.5%</td>
+<td>由 AI/财报主导</td>
+</tr>
+<tr>
+<td>Hot 偏热</td>
+<td>MoM ≥0.7% 或 YoY ≥5.6%</td>
+<td>25%</td>
+<td>+6~+12bp</td>
+<td>+4~+8bp</td>
+<td>+0.4~+0.9</td>
+<td>−0.8~−1.8%</td>
+<td>−1~−2.5%</td>
+</tr>
+</tbody>
+</table>
+<p>子情景：<strong>Headline ≥0.7% 但核心/服务软</strong> =
+能源冲击可看穿；债市可能分化。<strong>服务（医疗/机票/组合管理）强</strong>
+= PCE 映射担忧上升。</p>
+<h2 id="发布时观察清单-live-observation-checklist2030-sgt-1015">4.
+发布时观察清单 Live-Observation Checklist（20:30 SGT 10/15）</h2>
+<p>先填实际值，再看标题。</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>#</th>
+<th>看什么</th>
+<th>偏冷</th>
+<th>偏热</th>
+<th>初学者注释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Final Demand 环比（两位小数）</td>
+<td>≤0.2</td>
+<td>≥0.7</td>
+<td>共识约 0.50%；0.5 与 0.7 标题差很大</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Final Demand 同比</td>
+<td>≤5.0</td>
+<td>≥5.6</td>
+<td>8月约 5.4%；共识 5.3%</td>
+</tr>
+<tr>
+<td>3</td>
+<td>核心（若公布）</td>
+<td>明显 &lt;0.3</td>
+<td>明显 &gt;0.4</td>
+<td>Continuum 0.3% 仅参考，非共识</td>
+</tr>
+<tr>
+<td>4</td>
+<td>医疗服务、机票、组合管理费</td>
+<td>温和</td>
+<td>大幅跳升</td>
+<td>这些更可能进核心 PCE</td>
+</tr>
+<tr>
+<td>5</td>
+<td>能源与贸易利润</td>
+<td>—</td>
+<td>主导 headline</td>
+<td>「可看穿」vs「二次传导」</td>
+</tr>
+<tr>
+<td>6</td>
+<td>2Y 首15分钟</td>
+<td>≤−5bp</td>
+<td>≥+6bp</td>
+<td>市场对 Fed 路径的投票</td>
+</tr>
+<tr>
+<td>7</td>
+<td>10Y 与 2Y 方向</td>
+<td>同向</td>
+<td>热但 10Y 跌</td>
+<td>增长担忧 → 传导图当天失效</td>
+</tr>
+<tr>
+<td>8</td>
+<td>与今晚 CPI 结构对照</td>
+<td>双冷</td>
+<td>双热/服务共振</td>
+<td>一致性决定 PCE 叙事强度</td>
+</tr>
+</tbody>
+</table>
+<h2 id="受影响观察名单">5. 受影响观察名单</h2>
+<ul>
+<li><strong>利率路径</strong>：ARM、PLTR、RKLB、CCL、MRVL、INTC（与 CPI
+书同一敏感度框架，DATA 来自 CPI 锁定书回归，R² 低仅参考）。</li>
+<li><strong>AI 资本成本叙事</strong>：EME、PWR、CRWV、NVDA、AVGO。</li>
+<li><strong>同日 TSM</strong>：14:00 SGT 财报；PPI 若偏热可能压制 ADR
+风险偏好（情绪，非基本面因果）。</li>
+<li><strong>存储</strong>：MU/SIMO 仍可能由供给新闻主导（CXMT 叙事）——若
+PPI 冷而 MU 弱，确认驱动在 Industry multiple。</li>
+</ul>
+<h2 id="证伪条件-falsifiers">6. 证伪条件 Falsifiers</h2>
+<ol type="1">
+<li>FD ≥0.7% 但 2Y 升幅 &lt;3bp → 已定价或交易增长；Hot→Rates→Tech
+映射失效。</li>
+<li>FD ≤0.2% 但 SOX 仍跌 &gt;1.5% → 半导体由供给/AI capex
+叙事驱动。</li>
+<li>Headline 热、服务分项冷，但 10Y 盈亏平衡大涨 →
+市场担心二次传导，「可看穿能源」假设失效。</li>
+<li>我们贴共识却落在 Cool/Hot 阈值外 → Fundamental Forecast
+误差（记录分项）。</li>
+<li>PPI 与今晚 CPI 服务方向严重背离且 PCE 预期不动 → 下调 PPI→PCE
+当月权重。</li>
+</ol>
+<h2 id="思维教程-thinking-tutorial">7. 思维教程 Thinking Tutorial</h2>
+<p>看什么（FD MoM + 服务分项）→ 为什么（PCE 映射 + FOMC）→ 证据（分项 +
+2Y）→ 传导（2Y→10Y→WACC→倍数）→ 其他解释（能源一次性、仓位、TSM 情绪）→
+证伪（§6）→ 下一步（零售销售/进口价格、TSM 会后、FOMC）。</p>
+<h2 id="最终自我质疑">8. 最终自我质疑</h2>
+<ul>
+<li>我们把 OS 贴在 Helious 上，是诚实的不确定性，还是偷懒？若 Continuum
+0.6% 更接近真实，我们的 Inline 带宽是否过宽？</li>
+<li>Headline
+共识可能被能源主导；真正的研究问题是服务→PCE，而街面上核心共识稀薄——<strong>UNCERTAINTY
+本身就是结论的一部分</strong>。</li>
+<li>同日 TSM 可能盖过 PPI 对 SOX 的影响；归因时勿把财报反应算进
+PPI。</li>
+</ul>
+<h2 id="source-ledger摘要">9. Source Ledger（摘要）</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>来源</th>
+<th>日期</th>
+<th>用途</th>
+<th>类别</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bls.gov/schedule/news_release/ppi.htm</td>
+<td>查证 2026-10-14</td>
+<td>发布时间 CONFIRMED</td>
+<td>FACT</td>
+</tr>
+<tr>
+<td>Helious forecast page</td>
+<td>2026-10-14</td>
+<td>FD +0.50% / 5.3%</td>
+<td>MARKET EXP</td>
+</tr>
+<tr>
+<td>Continuum Economics preview</td>
+<td>2026-10-01</td>
+<td>+0.6% head / +0.3% core</td>
+<td>Analyst view（非共识）</td>
+</tr>
+<tr>
+<td>FRED PPIFIS</td>
+<td>拉取至 Aug 2026</td>
+<td>前值指数与 MoM/YoY</td>
+<td>DATA</td>
+</tr>
+<tr>
+<td>CPI PRE_EVENT_SNAPSHOT v20261013-1803</td>
+<td>2026-10-13</td>
+<td>联动，不改写</td>
+<td>Locked</td>
+</tr>
+</tbody>
+</table>
+<h2 id="assumption-register">10. Assumption Register</h2>
+<ol type="1">
+<li>Helious 数字代表可用的街共识代理（ASSUMPTION）——若日后获得 Bloomberg
+调查中位数将替换并标注。</li>
+<li>Cool/Hot 阈值围绕 0.50% 对称加宽（HYPOTHESIS）。</li>
+<li>反应路径为数量级示意，非交易信号（HYPOTHESIS）。</li>
+<li>PPI 服务分项→核心 PCE 映射在当月成立（INFERENCE；可被 BEA
+细节证伪）。</li>
+</ol>
+<h2 id="图表-charts">图表 Charts</h2>
+<p><img src="https://github.com/PSS917/research-os/releases/download/archive-v20261014-1806/US_PPI_Sep2026_PreEvent_v20261014-1806.zip" alt="传导链" /> <img
+src="https://github.com/PSS917/research-os/releases/download/archive-v20261014-1806/US_PPI_Sep2026_PreEvent_v20261014-1806.zip" alt="预期差" /> <img
+src="https://github.com/PSS917/research-os/releases/download/archive-v20261014-1806/US_PPI_Sep2026_PreEvent_v20261014-1806.zip" alt="情景" /> <img
+src="https://github.com/PSS917/research-os/releases/download/archive-v20261014-1806/US_PPI_Sep2026_PreEvent_v20261014-1806.zip" alt="历史环比" /> <img
+src="https://github.com/PSS917/research-os/releases/download/archive-v20261014-1806/US_PPI_Sep2026_PreEvent_v20261014-1806.zip" alt="观察清单" /></p>
+</body>
+</html>
