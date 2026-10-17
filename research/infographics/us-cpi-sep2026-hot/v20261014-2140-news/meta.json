@@ -1,0 +1,40 @@
+{
+ "slug": "us-cpi-sep2026-hot",
+ "title": "美国 9 月 CPI 偏热：核心 0.3% 让 10 月加息重新变活 | US CPI Sep 2026 — hot core revives an October hike",
+ "date": "2026-10-14",
+ "trigger": "material: core CPI 0.335% vs 0.2% consensus; Kalshi Oct hike 18%→47%; 2Y +11bp; watchlist CRWV/MXL/CRWD/COHR/ARM/CIEN/LITE ≥3% down",
+ "tickers": [
+  "CRWV",
+  "MXL",
+  "CRWD",
+  "COHR",
+  "ARM",
+  "CIEN",
+  "LITE",
+  "MRVL",
+  "AMD",
+  "NVDA",
+  "MU",
+  "AAPL",
+  "TSM",
+  "AVGO"
+ ],
+ "watchlist": [
+  "NVDA",
+  "MU",
+  "ARM",
+  "MRVL",
+  "CRWV",
+  "AMD",
+  "AVGO",
+  "TSM",
+  "AAPL",
+  "LITE"
+ ],
+ "base": "us-cpi-sep2026-hot_news-explainer",
+ "pages": 2,
+ "related": [
+  "events/us-cpi-2026-09"
+ ],
+ "event": "us-cpi-2026-09"
+}

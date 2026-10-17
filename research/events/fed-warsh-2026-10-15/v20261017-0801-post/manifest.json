@@ -1,0 +1,146 @@
+{
+ "release": "Fed_Warsh_20261016_PostEvent_v20261017-0801-post",
+ "generated": "2026-10-17T08:01:36.063990",
+ "files": [
+  {
+   "path": "CHANGELOG_v20261017-0801-post.docx",
+   "bytes": 11029,
+   "sha256": "b0a9577dfc8ed135"
+  },
+  {
+   "path": "CHANGELOG_v20261017-0801-post.html",
+   "bytes": 5677,
+   "sha256": "4dbc5860c7749bc8"
+  },
+  {
+   "path": "CHANGELOG_v20261017-0801-post.md",
+   "bytes": 518,
+   "sha256": "f02ff5e606fb9242"
+  },
+  {
+   "path": "CHANGELOG_v20261017-0801-post.pdf",
+   "bytes": 21150,
+   "sha256": "ae0f48d53063bb32"
+  },
+  {
+   "path": "Fed_Warsh_20261016_PostEvent_EN_v20261017-0801-post.docx",
+   "bytes": 13315,
+   "sha256": "468823c0b9420ce1"
+  },
+  {
+   "path": "Fed_Warsh_20261016_PostEvent_EN_v20261017-0801-post.html",
+   "bytes": 9568,
+   "sha256": "eee898644bc7a1db"
+  },
+  {
+   "path": "Fed_Warsh_20261016_PostEvent_EN_v20261017-0801-post.md",
+   "bytes": 3903,
+   "sha256": "2e8c071ddc017ae1"
+  },
+  {
+   "path": "Fed_Warsh_20261016_PostEvent_EN_v20261017-0801-post.pdf",
+   "bytes": 74515,
+   "sha256": "b115973749f411de"
+  },
+  {
+   "path": "Fed_Warsh_20261016_PostEvent_ZH_v20261017-0801-post.docx",
+   "bytes": 694275,
+   "sha256": "8789acc7e7e4fdc1"
+  },
+  {
+   "path": "Fed_Warsh_20261016_PostEvent_ZH_v20261017-0801-post.html",
+   "bytes": 29131,
+   "sha256": "e0d6d7d6c8d4c814"
+  },
+  {
+   "path": "Fed_Warsh_20261016_PostEvent_ZH_v20261017-0801-post.md",
+   "bytes": 17898,
+   "sha256": "30751e2b89b54f22"
+  },
+  {
+   "path": "Fed_Warsh_20261016_PostEvent_ZH_v20261017-0801-post.pdf",
+   "bytes": 1183435,
+   "sha256": "ca10abfd14b3fe9c"
+  },
+  {
+   "path": "Fed_Warsh_20261016_PostEvent_model_v20261017-0801-post.xlsx",
+   "bytes": 11915,
+   "sha256": "70de7473ccf615e6"
+  },
+  {
+   "path": "POST_EVENT_RESULT_v20261017-0801-post.json",
+   "bytes": 3416,
+   "sha256": "953ea04e49d32f27"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.docx",
+   "bytes": 38481,
+   "sha256": "94fce64e39e90c50"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.html",
+   "bytes": 56778,
+   "sha256": "d029f182feeefd61"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.md",
+   "bytes": 42891,
+   "sha256": "9b3c0e27105d81db"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.pdf",
+   "bytes": 604549,
+   "sha256": "51f1f342cf4f3b35"
+  },
+  {
+   "path": "images/01_wording_scorecard.jpg",
+   "bytes": 256552,
+   "sha256": "a5da818fbfe3dc5d"
+  },
+  {
+   "path": "images/01_wording_scorecard.png",
+   "bytes": 282523,
+   "sha256": "b34f294a7cafb137"
+  },
+  {
+   "path": "images/02_kalshi_path.jpg",
+   "bytes": 167148,
+   "sha256": "e1d2da6666323c83"
+  },
+  {
+   "path": "images/02_kalshi_path.png",
+   "bytes": 128778,
+   "sha256": "8631b470acd548a4"
+  },
+  {
+   "path": "images/03_window_vs_bands.jpg",
+   "bytes": 167372,
+   "sha256": "8f5592ea19f868d9"
+  },
+  {
+   "path": "images/03_window_vs_bands.png",
+   "bytes": 117379,
+   "sha256": "1b136bca0474443f"
+  },
+  {
+   "path": "images/04_calibration.jpg",
+   "bytes": 145733,
+   "sha256": "52d5629c9d40789e"
+  },
+  {
+   "path": "images/04_calibration.png",
+   "bytes": 113209,
+   "sha256": "e2a2d0074b5a913f"
+  },
+  {
+   "path": "images/05_chain_postmortem.jpg",
+   "bytes": 154207,
+   "sha256": "db0c0d2e041912ee"
+  },
+  {
+   "path": "images/05_chain_postmortem.png",
+   "bytes": 141899,
+   "sha256": "276f09666e4afc77"
+  }
+ ]
+}

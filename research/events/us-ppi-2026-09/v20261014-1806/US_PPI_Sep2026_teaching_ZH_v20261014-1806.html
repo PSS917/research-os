@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title> </title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<style>body{font-family:'Noto Sans CJK SC','Noto Sans',sans-serif;max-width:1100px;margin:auto;padding:24px;line-height:1.6;color:#1b1b1b}table{border-collapse:collapse;font-size:13px;margin:8px 0}td,th{border:1px solid #ccd;padding:4px 8px}th{background:#1F3A5F;color:#fff}img{max-width:100%;border:1px solid #ddd}h1{color:#1F3A5F}h2{border-bottom:2px solid #1F3A5F}abbr{text-decoration:underline dotted #2E86C1;cursor:help}.box30{background:linear-gradient(135deg,#eaf2ff,#f5ecff);border:2px solid #5b8cff;border-radius:14px;padding:6px 18px;margin:14px 0;font-size:16px}.readmap{background:#f6f8fb;border:1px solid #d5dbe6;border-radius:12px;padding:4px 16px;margin:12px 0}.howto{background:#fff8e6;border-left:5px solid #f59e0b;border-radius:8px;padding:2px 14px;margin:6px 0 22px}.quiz{background:#effaf3;border:1px solid #9bd8b1;border-radius:12px;padding:4px 16px}details{margin:8px 0}details.l3{background:#f7f7f9;border:1px dashed #b8c0cc;border-radius:10px;padding:6px 14px}summary{cursor:pointer;font-weight:600;color:#1F3A5F}body{font-size:15.5px}blockquote{background:#f3f6fa;border-left:4px solid #2E86C1;margin:0;padding:6px 12px}</style></head>
+<body><div style="background:#fff7ed;border:1px solid #fdba74;padding:8px 12px;margin:8px 0;font-size:13px">历史版本：PDF/Word/图片已归档至 GitHub Release（下载：<a href="https://github.com/PSS917/research-os/releases/download/archive-v20261014-1806/US_PPI_Sep2026_PreEvent_v20261014-1806.zip">ZIP</a>）。Archived version — heavy files live in Release assets.</div>
+<header id="title-block-header">
+<h1 class="title"> </h1>
+</header>
+<h1 id="美国9月ppi-发布前教学版v20261014-1806">美国9月PPI
+发布前·教学版｜v20261014-1806</h1>
+<blockquote>
+<p>公布：<strong>2026-10-15（周四）20:30 SGT</strong>。对照 CPI 锁定书
+v20261013-1803（不改写）。非投资建议。</p>
+</blockquote>
+<div class="box30">
+<p><strong>⏱ 30秒看懂</strong></p>
+<ol type="1">
+<li><strong>发生什么：</strong>PPI 是「企业卖出价格」指数，比 CPI
+更靠生产端。</li>
+<li><strong>和我的股票有什么关系：</strong>它影响美联储看的
+PCE：医疗、机票等费用会从 PPI 渗进核心
+PCE，从而影响利率和成长股估值。</li>
+<li><strong>该看什么/做什么：</strong>只记：Final Demand 环比 ≤0.2
+偏好消息，约 0.5 正常，≥0.7 偏坏；并问「热在能源还是热在服务？」</li>
+</ol>
+</div>
+<div class="readmap">
+<p><strong>🗺 阅读地图</strong></p>
+<table>
+<thead>
+<tr>
+<th>你有多少时间</th>
+<th>读哪里</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2 分钟</td>
+<td>30秒 + 情景表。</td>
+</tr>
+<tr>
+<td>10 分钟</td>
+<td>第1–4节 + 图01。</td>
+</tr>
+<tr>
+<td>30 分钟</td>
+<td>对照 CPI 教学版，做测验。</td>
+</tr>
+</tbody>
+</table>
+<p>层级说明：<strong>L1 故事</strong>（人人能懂）→ <strong>L2
+关键数字</strong>（带解释）→ <strong>L3
+专业细节</strong>（网页可折叠，默认收起）。</p>
+</div>
+<h2 id="发生什么l1">1. 发生什么（L1）</h2>
+<p>劳工统计局公布 <strong>PPI (Producer Price
+Index｜生产者价格指数)</strong>。你买东西看 CPI；工厂出厂价看
+PPI。美联储更关心 <strong>PCE</strong>，而 PPI
+的一部分服务会「流进」PCE。</p>
+<h2 id="市场在猜什么l2">2. 市场在猜什么（L2）</h2>
+<p>街面上我们引用的共识（Helious，2026-10-14）：<strong>+0.50%
+环比、5.3% 同比</strong>。Continuum（10/01）另给出 +0.6% / 核心
++0.3%——那是一家的看法，不是共识。我们的假设贴着
+0.50%，因为没有更强模型（诚实的不确定性）。</p>
+<h2 id="三种剧本">3. 三种剧本</h2>
+<p>见图03：绿偏冷 / 蓝符合 / 红偏热。概率 25/50/25。</p>
+<figure>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261014-1806/US_PPI_Sep2026_PreEvent_v20261014-1806.zip" alt="情景" />
+<figcaption aria-hidden="true">情景</figcaption>
+</figure>
+<div class="howto">
+<p><strong>📊 怎么看这张图</strong></p>
+<ul>
+<li><strong>坐标/颜色：</strong>三色方框=三种结果；下方是利率与股指的可能方向。</li>
+<li><strong>只记住一件事：</strong>中间「符合」最可能；真正要学的是问「热在哪一分项」。</li>
+<li><strong>什么会改变结论：</strong>若能源很热但服务很冷，标题吓人但
+Fed 可能不太动。</li>
+</ul>
+</div>
+<h2 id="公布时看什么">4. 公布时看什么</h2>
+<p>用专业版第4节表格；先填数再看新闻。</p>
+<h2 id="和今晚-cpi-怎么一起想">5. 和今晚 CPI 怎么一起想</h2>
+<p>CPI 已锁定。若两者服务都热 → 更担心核心 PCE；若一个热一个冷 →
+先别下死结论，等 PCE。</p>
+<h2 id="证伪白话">6. 证伪（白话）</h2>
+<p>数字很热但美债利率不怎么动 →
+市场早知道了或在担心经济变差；别机械地以为「热通胀=科技股必跌」。</p>
+<div class="quiz">
+<p><strong>✅ 自我测验 Check your understanding</strong></p>
+<details>
+<summary>
+Q1. PPI 和 CPI 哪个更贴近美联储的正式目标？
+</summary>
+<p><strong>答案：</strong>都不是正式目标本身——<strong>PCE</strong>
+才是；PPI/CPI 是拼图。</p>
+</details>
+<details>
+<summary>
+Q2. Helious 的 0.50% 和 Continuum 的 0.6% 哪个是共识？
+</summary>
+<p><strong>答案：</strong>Helious 在本书中作 MARKET EXP 代理；Continuum
+明确标为分析师观点，不是共识。</p>
+</details>
+<details>
+<summary>
+Q3. 为什么要看医疗/机票而不是只看能源？
+</summary>
+<p><strong>答案：</strong>它们更容易映射进核心
+PCE；能源常被「看穿」。</p>
+</details>
+</div>
+<h2 id="术语">术语</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>术语</th>
+<th>白话</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PPI</td>
+<td>生产者出厂价格指数</td>
+<td>Producer Price Index</td>
+</tr>
+<tr>
+<td>Final Demand</td>
+<td>最终需求：卖给最终用户的价格</td>
+<td>PPI Final Demand</td>
+</tr>
+<tr>
+<td>PCE</td>
+<td>美联储偏好的通胀指标</td>
+<td>Personal Consumption Expenditures price index</td>
+</tr>
+<tr>
+<td>映射</td>
+<td>一个指数的分项如何进入另一个指数</td>
+<td>pass-through / mapping</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

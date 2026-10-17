@@ -1,0 +1,71 @@
+{
+ "release": "US_CPI_Sep2026_PostEvent_v20261014-2155-post",
+ "generated": "2026-10-14T21:55:14.436219",
+ "files": [
+  {
+   "path": "EXTRA_SECTION.txt",
+   "bytes": 8339,
+   "sha256": "6243c642be1f652f"
+  },
+  {
+   "path": "POST_EVENT_RESULT_v20261014-2155-post.json",
+   "bytes": 2836,
+   "sha256": "e46f5084925d422a"
+  },
+  {
+   "path": "US_CPI_Sep2026_PostEvent_EN_v20261014-2155-post.docx",
+   "bytes": 13558,
+   "sha256": "db3fb80658672715"
+  },
+  {
+   "path": "US_CPI_Sep2026_PostEvent_EN_v20261014-2155-post.html",
+   "bytes": 11598,
+   "sha256": "3cccc672c2060c4d"
+  },
+  {
+   "path": "US_CPI_Sep2026_PostEvent_EN_v20261014-2155-post.md",
+   "bytes": 4021,
+   "sha256": "47961ba0cb68ab24"
+  },
+  {
+   "path": "US_CPI_Sep2026_PostEvent_EN_v20261014-2155-post.pdf",
+   "bytes": 167338,
+   "sha256": "c74469bf005f3979"
+  },
+  {
+   "path": "US_CPI_Sep2026_PostEvent_ZH_v20261014-2155-post.docx",
+   "bytes": 3502635,
+   "sha256": "316952ec41782f66"
+  },
+  {
+   "path": "US_CPI_Sep2026_PostEvent_ZH_v20261014-2155-post.html",
+   "bytes": 27093,
+   "sha256": "303fadc511ac6042"
+  },
+  {
+   "path": "US_CPI_Sep2026_PostEvent_ZH_v20261014-2155-post.md",
+   "bytes": 14469,
+   "sha256": "08a588cda47bf436"
+  },
+  {
+   "path": "US_CPI_Sep2026_PostEvent_ZH_v20261014-2155-post.pdf",
+   "bytes": 1647260,
+   "sha256": "12d03beaf4cd6336"
+  },
+  {
+   "path": "US_CPI_Sep2026_PostEvent_model_v20261014-2155-post.xlsx",
+   "bytes": 14008,
+   "sha256": "5410e94f62682fe9"
+  },
+  {
+   "path": "images/us-cpi-sep2026-hot_news-explainer_p1.jpg",
+   "bytes": 1938407,
+   "sha256": "5e589783895cda47"
+  },
+  {
+   "path": "images/us-cpi-sep2026-hot_news-explainer_p2.jpg",
+   "bytes": 2260112,
+   "sha256": "1de128be10304374"
+  }
+ ]
+}

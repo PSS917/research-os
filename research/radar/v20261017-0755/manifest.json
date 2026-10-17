@@ -1,0 +1,56 @@
+{
+ "release": "radar_v20261017-0755",
+ "generated": "2026-10-17T07:58:58.520171",
+ "files": [
+  {
+   "path": "images/radar_JP.jpg",
+   "bytes": 285593,
+   "sha256": "ace85b33f715a01b"
+  },
+  {
+   "path": "images/radar_JP.png",
+   "bytes": 174083,
+   "sha256": "3a99206188e07471"
+  },
+  {
+   "path": "images/radar_KR.jpg",
+   "bytes": 276281,
+   "sha256": "fc9fd5618271952f"
+  },
+  {
+   "path": "images/radar_KR.png",
+   "bytes": 167119,
+   "sha256": "881941e95775aed0"
+  },
+  {
+   "path": "images/radar_TW.jpg",
+   "bytes": 290038,
+   "sha256": "14489894b69e42ed"
+  },
+  {
+   "path": "images/radar_TW.png",
+   "bytes": 184268,
+   "sha256": "e8656edce9137ce4"
+  },
+  {
+   "path": "radar_report_v20261017-0755.docx",
+   "bytes": 432500,
+   "sha256": "7364a36a00c548a0"
+  },
+  {
+   "path": "radar_report_v20261017-0755.html",
+   "bytes": 20220,
+   "sha256": "68d3b7f08bad344f"
+  },
+  {
+   "path": "radar_report_v20261017-0755.md",
+   "bytes": 8691,
+   "sha256": "60ea240003b62e50"
+  },
+  {
+   "path": "radar_report_v20261017-0755.pdf",
+   "bytes": 814308,
+   "sha256": "43f81b0499c2f6d3"
+  }
+ ]
+}

@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title> </title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<style>body{font-family:'Noto Sans CJK SC','Noto Sans',sans-serif;max-width:1100px;margin:auto;padding:24px;line-height:1.6;color:#1b1b1b}table{border-collapse:collapse;font-size:13px;margin:8px 0}td,th{border:1px solid #ccd;padding:4px 8px}th{background:#1F3A5F;color:#fff}img{max-width:100%;border:1px solid #ddd}h1{color:#1F3A5F}h2{border-bottom:2px solid #1F3A5F}abbr{text-decoration:underline dotted #2E86C1;cursor:help}.box30{background:linear-gradient(135deg,#eaf2ff,#f5ecff);border:2px solid #5b8cff;border-radius:14px;padding:6px 18px;margin:14px 0;font-size:16px}.readmap{background:#f6f8fb;border:1px solid #d5dbe6;border-radius:12px;padding:4px 16px;margin:12px 0}.howto{background:#fff8e6;border-left:5px solid #f59e0b;border-radius:8px;padding:2px 14px;margin:6px 0 22px}.quiz{background:#effaf3;border:1px solid #9bd8b1;border-radius:12px;padding:4px 16px}details{margin:8px 0}details.l3{background:#f7f7f9;border:1px dashed #b8c0cc;border-radius:10px;padding:6px 14px}summary{cursor:pointer;font-weight:600;color:#1F3A5F}body{font-size:15.5px}blockquote{background:#f3f6fa;border-left:4px solid #2E86C1;margin:0;padding:6px 12px}</style></head>
+<body><div style="background:#fff7ed;border:1px solid #fdba74;padding:8px 12px;margin:8px 0;font-size:13px">历史版本：PDF/Word/图片已归档至 GitHub Release（下载：<a href="https://github.com/PSS917/research-os/releases/download/archive-v20261015-1805/Fed_Warsh_20261016_PreEvent_v20261015-1805.zip">ZIP</a>）。Archived version — heavy files live in Release assets.</div>
+<header id="title-block-header">
+<h1 class="title"> </h1>
+</header>
+<h1
+id="美联储主席-warsh-imf-georgieva-对谈-发布前事件书fed-chair-warsh-fireside-chat-pre-event-book-专业中文版">美联储主席
+Warsh × IMF Georgieva 对谈 发布前事件书｜Fed Chair Warsh Fireside Chat
+Pre-Event Book — 专业中文版</h1>
+<blockquote>
+<p><strong>时间：2026-10-15（周四）23:30 美东 = 2026-10-16（周五）11:30
+新加坡时间 (SGT)</strong> = 曼谷 10:30｜状态
+<strong>CONFIRMED</strong>（federalreserve.gov 2026 年 10
+月日程：「Discussion – Chairman Kevin Warsh, Fireside Chat with IMF MD
+Kristalina Georgieva, Bangkok」，有直播 Watch Live）
+形式：对谈（discussion），未列主题；<strong>是 10/27–28 FOMC
+静默期（10/17 起）前主席最后一次公开亮相</strong>（Cboe 10/14 亦指出）。
+发布前快照锁定：<strong>2026-10-15 18:05 SGT</strong>（版本
+v20261015-1805）。PPI、零售销售（今晚 20:30
+SGT）结果出来前锁定——不得事后改写。非投资建议。</p>
+</blockquote>
+<div class="box30">
+<p><strong>⏱ 30秒看懂</strong></p>
+<ol type="1">
+<li><strong>发生什么：</strong>明天（周五）上午 11:30
+SGT，美联储主席沃什（Kevin Warsh）在曼谷与 IMF 总裁对谈——这是 10
+月议息会前他最后一次公开说话。</li>
+<li><strong>和我的股票有什么关系：</strong>市场正在赌 10/28
+会不会再加息（概率在 33–49% 之间摇摆）。他一句话就能把概率推过或拉回
+50%，进而影响美债利率、日元和台日韩科技股（TSM、NVDA 供应链）。</li>
+<li><strong>该看什么/做什么：</strong>只听一件事：他有没有改变「10 月 vs
+12 月」的路径。说「不预判」= 中性；说「通胀没有清楚且足够快地回落」=
+偏鹰。</li>
+</ol>
+</div>
+<div class="readmap">
+<p><strong>🗺 阅读地图</strong></p>
+<table>
+<thead>
+<tr>
+<th>你有多少时间</th>
+<th>读哪里</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2 分钟</td>
+<td>⏱30秒 + 图05 措辞解码器。</td>
+</tr>
+<tr>
+<td>10 分钟</td>
+<td>第1–4节 + 图01/02/03。</td>
+</tr>
+<tr>
+<td>30 分钟</td>
+<td>全文 + 思考过程 + 教学版 + 测验 + 事后作业。</td>
+</tr>
+</tbody>
+</table>
+<p>层级说明：<strong>L1 故事</strong>（人人能懂）→ <strong>L2
+关键数字</strong>（带解释）→ <strong>L3
+专业细节</strong>（网页可折叠，默认收起）。</p>
+</div>
+<h2 id="背景事实-context-fact">0. 背景事实 Context (FACT)</h2>
+<ul>
+<li>9/16 FOMC 一致决定加息 25bp 至
+<strong>3.75–4.00%</strong>——三年来首次加息（Fed 发布会实录；Fortune
+报道一致投票）。Warsh 原话：「I would be hard pressed to describe broad
+financial conditions as restrictive… So we removed a dose of
+accommodation.」并称「I am not going to pre-judge any future
+decisions」。</li>
+<li>声明删除了前瞻指引；成立 5
+个任务组（沟通、资产负债表、数据、生产率与就业含
+AI、通胀框架），年底前后报告（TickerGrove/CNBC 报道）。</li>
+<li>Warsh 的加息门槛：需确信基础通胀「清楚且以足够速度」回到 2%（Jackson
+Hole 框架，9/16 重申「尚未满足」）。</li>
+<li>中性利率：他称其「学术上有用」但对操作「没有作用」（CNBC
+9/18）。</li>
+<li>资产负债表 6.7 万亿美元：他长期主张缩表，但尚未落地（CNBC
+9/25）。</li>
+<li>9 月 CPI：+0.6% / 3.7%，核心 +0.3% / 2.6%（BLS；本系统 CPI 复盘
+v20261015-0800-post）。</li>
+<li>市场（MARKET EXP）：10/28 加息概率 22%（CPI 前）→ 41.5%（FedWatch
+12:20 ET）→ 49%（WSJ）→ 约 32.7%（Cboe 收盘）；期货隐含 2027 年底约
+4.635%（CNBC 9/18，当时值）。</li>
+</ul>
+<h2 id="执行摘要-executive-summary">1. 执行摘要 Executive Summary</h2>
+<ol type="1">
+<li><strong>事件性质</strong>：不是议息决定，而是对谈；但处于「数据密集
++ 静默期前最后一次」的时点，信息价值高。</li>
+<li><strong>市场在猜什么</strong>：10 月加息是「抛硬币」；12
+月加息被更大程度定价（多家机构基准：10 月按兵不动、12 月加息）。</li>
+<li><strong>我们 (HYPOTHESIS)</strong>：中性 50% / 偏鹰 30% / 偏鸽
+20%。理由：他 9/16 明确不做前瞻指引、Cboe 评「close-to-the-vest」；但
+CPI 偏热 + 「金融条件不紧」论述让偏鹰尾部 &gt;
+偏鸽尾部。基础概率：<strong>不可得</strong>（主席非议息会对谈的措辞分类无可靠历史样本）——如实说明，未校准。</li>
+<li><strong>最关键的条件依赖</strong>：今晚 PPI +
+零售销售先公布。若两者都偏热，「中性」措辞也会被市场读成「不反对 10
+月」→ 偏鹰反应。</li>
+<li><strong>观察名单</strong>：亚洲盘 TSM（台股）、SK
+海力士/三星（韩股，经 MU/SIMO 映射）、日经（USD/JPY）；美股盘前
+NVDA、ARM、PLTR、RKLB、CRWV、CCL（利率敏感）。</li>
+</ol>
+<h2 id="市场定价-vs-我们-expectation-gap">2. 市场定价 vs 我们
+Expectation Gap</h2>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>项目</th>
+<th>市场 MARKET EXP</th>
+<th>来源</th>
+<th>我们 HYPOTHESIS</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10/28 加息 25bp 概率</td>
+<td>33–49%（10/14 区间）</td>
+<td>CME FedWatch via WSJ/Cboe/Yahoo</td>
+<td>讲话后大概率仍在 30–55%</td>
+<td>讲话大概率不「定案」</td>
+</tr>
+<tr>
+<td>讲话基调</td>
+<td>无共识（市场预期「谨慎不表态」）</td>
+<td>Cboe 10/14</td>
+<td>中性为主，偏鹰尾部</td>
+<td>尾部风险不对称</td>
+</tr>
+<tr>
+<td>12 月加息</td>
+<td>被更大程度定价（Reuters 引述多家机构）</td>
+<td>Reuters/Investing.com 10/14</td>
+<td>同意</td>
+<td>真正的问题是「10 月还是 12 月」</td>
+</tr>
+</tbody>
+</table>
+<h2 id="情景树-scenarios-hypothesis未校准无基础概率">3. 情景树 Scenarios
+(HYPOTHESIS，未校准：无基础概率)</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发措辞</th>
+<th>概率</th>
+<th>10月概率</th>
+<th>2Y</th>
+<th>USD/JPY</th>
+<th>NQ/亚洲科技</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>偏鹰 Hawkish</td>
+<td>通胀未「清楚且足够快」回落；能源二次传导；金融条件仍不紧</td>
+<td>30%</td>
+<td>≥55%</td>
+<td>+3~+6bp</td>
+<td>+0.3~+0.6</td>
+<td>−0.5~−1%</td>
+</tr>
+<tr>
+<td>中性 Neutral</td>
+<td>「不预判」；谈全球/IMF/独立性/AI</td>
+<td>50%</td>
+<td>±5pp</td>
+<td>±2bp</td>
+<td>持平</td>
+<td>由数据/财报主导</td>
+</tr>
+<tr>
+<td>偏鸽 Dovish</td>
+<td>看穿能源；已加息需看累积效果；AI 生产率压通胀</td>
+<td>20%</td>
+<td>≤30%</td>
+<td>−3~−6bp</td>
+<td>−0.3~−0.6</td>
+<td>+0.3~+0.8%</td>
+</tr>
+</tbody>
+</table>
+<h2 id="盘中观察清单-live-observation-checklist周五-1130-sgt-起">4.
+盘中观察清单 Live-Observation Checklist（周五 11:30 SGT 起）</h2>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>#</th>
+<th>看什么</th>
+<th>偏鸽</th>
+<th>偏鹰</th>
+<th>初学者注释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>是否提到 10 月/「下次会议」</td>
+<td>「不急」「看累积效应」</td>
+<td>「全部选项在桌上」</td>
+<td>路径信号 &gt; 语气</td>
+</tr>
+<tr>
+<td>2</td>
+<td>通胀门槛原句</td>
+<td>「取得进展」</td>
+<td>「尚未清楚且足够快」</td>
+<td>9/16 的加息理由</td>
+</tr>
+<tr>
+<td>3</td>
+<td>能源/汽油</td>
+<td>「看穿 look through」</td>
+<td>「二次传导 second-round」</td>
+<td>9 月 CPI 汽油 +9.1%</td>
+</tr>
+<tr>
+<td>4</td>
+<td>金融条件</td>
+<td>「已收紧」</td>
+<td>「仍不紧 not restrictive」</td>
+<td>他的加息核心论点</td>
+</tr>
+<tr>
+<td>5</td>
+<td>2Y 期货首15分钟</td>
+<td>≤−3bp</td>
+<td>≥+3bp</td>
+<td>市场对路径的投票</td>
+</tr>
+<tr>
+<td>6</td>
+<td>USD/JPY</td>
+<td>跌 ≥0.3</td>
+<td>涨 ≥0.3</td>
+<td>亚洲时段最快的传导</td>
+</tr>
+<tr>
+<td>7</td>
+<td>台股 TSM / 韩股存储</td>
+<td>走强</td>
+<td>走弱</td>
+<td>同时受 TSM 财报影响，注意归因</td>
+</tr>
+<tr>
+<td>8</td>
+<td>AI 生产率</td>
+<td>「供给侧利好、抑制通胀」</td>
+<td>「需求侧拉动、投资过热」</td>
+<td>本系统生产率模块的直接检验</td>
+</tr>
+<tr>
+<td>9</td>
+<td>资产负债表</td>
+<td>不提</td>
+<td>暗示加速缩表</td>
+<td>影响长端 10Y 期限溢价</td>
+</tr>
+</tbody>
+</table>
+<figure>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261015-1805/Fed_Warsh_20261016_PreEvent_v20261015-1805.zip" alt="措辞解码器" />
+<figcaption aria-hidden="true">措辞解码器</figcaption>
+</figure>
+<div class="howto">
+<p><strong>📊 怎么看这张图</strong></p>
+<ul>
+<li><strong>坐标/颜色：</strong>每行=一句可能出现的话 →
+对应的鹰/鸽含义。</li>
+<li><strong>只记住一件事：</strong>把措辞对应到「10 月 vs 12
+月」路径，不对应到情绪。</li>
+<li><strong>什么会改变结论：</strong>若他说了偏鹰的话但 2Y
+不动，说明市场已经定价或不信。</li>
+</ul>
+</div>
+<h2 id="受影响观察名单">5. 受影响观察名单</h2>
+<ul>
+<li><strong>亚洲时段首先反应</strong>：TSM（台股，叠加昨日财报）、MU/SIMO
+映射的韩国存储、日经（USD/JPY 方向）。</li>
+<li><strong>利率敏感</strong>：ARM、PLTR、RKLB、CRWV、CRWD、MRVL、TSLA。</li>
+<li><strong>AI 资本开支链</strong>：NVDA、AVGO、AMD、EME、PWR——若谈 AI
+需求侧过热，属于叙事风险（INFERENCE）。</li>
+<li><strong>消费/旅游</strong>：CCL（利率与消费双重）。</li>
+</ul>
+<h2 id="证伪条件-falsifiers">6. 证伪条件 Falsifiers</h2>
+<ol type="1">
+<li>他明确偏鹰但 2Y 升 &lt;2bp、10 月概率变动 &lt;5pp →
+市场已定价，或不认为主席一人能左右委员会 →
+下调「主席讲话」信号权重。</li>
+<li>他只谈全球/IMF，但市场大动 →
+动因是同时段的其他信息（日本数据、地缘、TSM），本书传导链当日失效。</li>
+<li>偏鸽措辞 + 10Y 上升 → 市场担心 Fed
+落后于通胀（期限溢价上升）——「鸽=利好长久期」映射失效。</li>
+<li>我们中性 50% 却出现明确路径指引 → Probability Calibration
+误差，复盘时记录。</li>
+</ol>
+<h2 id="思考过程-thinking-walkthrough七步法">7. 思考过程 Thinking
+walkthrough（七步法）</h2>
+<ol type="1">
+<li><strong>先问对问题：谁在乎、为什么在乎</strong>：谁在乎？利率交易员（10
+月加息是
+50/50）、日元套息交易者、成长股持有人。为什么？这是静默期前最后的信号。</li>
+<li><strong>市场已经定价了什么</strong>：10 月约 33–49%、12
+月更高；2Y（4.79%）已高于政策利率上限
+4.00%——市场已经计入「还会加」。</li>
+<li><strong>搭因果链，每环配一个检验数据</strong>：措辞 → FedWatch → 2Y
+→ USD/JPY → 亚洲科技 → NQ → WACC。检验数据：FedWatch、2Y
+期货、USD/JPY、TAIEX/KOSPI、NQ。</li>
+<li><strong>找每一环的断点</strong>：断点①他不表态（模态结果）；②主席≠委员会（Reuters：多位官员暗示
+10 月不急）；③中期选举前的政治考量（UBS 称选举前加息「politically
+untenable」——一家观点）；④同一时段 TSM 财报余波。</li>
+<li><strong>用工具箱逐一质疑</strong>：见下方工具。</li>
+<li><strong>给对立观点最强版本，再用证据裁判</strong>：见「对立观点」。</li>
+<li><strong>写下「如果我错了，会先看到什么」</strong>：如果我错了，会先看到他主动提「October」或「next
+meeting」并给出条件。</li>
+</ol>
+<h3 id="反向思考-inversion">反向思考 Inversion</h3>
+<ul>
+<li><strong>是什么：</strong>什么会让我错？</li>
+<li><strong>为什么用：</strong>我们的模态是「中性」——反过来想，什么会让他必须表态？</li>
+<li><strong>用在本事件上：</strong>若今晚 PPI ≥0.7% 且零售控制组
+≥0.6%，主席沉默本身就会被读成「默许 10 月加息」——此时「中性」措辞 ≈
+偏鹰结果。</li>
+<li><strong>✍ 轮到你：</strong>如果 PPI
+和零售都偏冷，同样一句「我不预判」会被市场怎么读？</li>
+</ul>
+<h3 id="谁在对手盘-counterparty">谁在对手盘 Counterparty</h3>
+<ul>
+<li><strong>是什么：</strong>如果我对，谁错？</li>
+<li><strong>为什么用：</strong>帮助判断是否已被定价。</li>
+<li><strong>用在本事件上：</strong>押 10 月加息的一方（约 41–49%）vs 押
+12 月的一方。若 Warsh 中性，押 10 月的人会逐步平仓 → 2Y 小幅回落（约
+−1~−3bp）。</li>
+<li><strong>✍
+轮到你：</strong>你能想出一个让两边都「错」的结果吗？（提示：12
+月也不加）</li>
+</ul>
+<h3 id="第一性原理-first-principles">第一性原理 First principles</h3>
+<ul>
+<li><strong>是什么：</strong>价格 = 未来现金流 ÷ 折现。</li>
+<li><strong>为什么用：</strong>讲话不改变公司现金流，只改变折现率预期。</li>
+<li><strong>用在本事件上：</strong>若 10 年期上升
+10bp，长久期成长股的估值压力远大于公用事业型公司（EME/PWR
+有合同现金流）。</li>
+<li><strong>✍ 轮到你：</strong>对
+TSLA，讲话改变的是现金流还是折现率？两者都有吗？</li>
+</ul>
+<p><strong>我们的观点：</strong>讲话大概率中性，不会定案 10
+月；偏鹰尾部大于偏鸽尾部。</p>
+<p><strong>对立观点最强版本：</strong> 1. 他 9/16
+已经用「金融条件不紧」为加息辩护；CPI
+偏热后，他有动机提前给市场「打预防针」以免 10 月加息造成冲击。 2. IMF
+场合他可能谈全球通胀与美元，市场会把「全球通胀风险」读成偏鹰。 3.
+静默期前最后机会——历史上主席有时在此窗口校准市场预期。</p>
+<table>
+<thead>
+<tr>
+<th>证据</th>
+<th>支持我们</th>
+<th>支持对立</th>
+<th>权重</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9/16「不预判」原话、取消前瞻指引</td>
+<td>✔</td>
+<td></td>
+<td>高</td>
+</tr>
+<tr>
+<td>Cboe 评其「close-to-the-vest」</td>
+<td>✔</td>
+<td></td>
+<td>中</td>
+</tr>
+<tr>
+<td>CPI 偏热、10 月概率飙升</td>
+<td></td>
+<td>✔</td>
+<td>中</td>
+</tr>
+<tr>
+<td>多位官员称 10 月不急（Reuters 引述）</td>
+<td>✔</td>
+<td></td>
+<td>中</td>
+</tr>
+</tbody>
+</table>
+<p><strong>裁判：</strong>证据仍支持「中性为主」，但偏鹰尾部 30%
+合理；若今晚数据双热，我们会把偏鹰情景视为更可能——但<strong>快照不改写</strong>，只在复盘中记录。</p>
+<h2 id="最终自我质疑-final-self-challenge">8. 最终自我质疑 Final
+Self-Challenge</h2>
+<ul>
+<li>「中性
+50%」是否只是逃避判断？基础概率不可得，这个数字是主观的——复盘时检验是否偏离过大。</li>
+<li>我们可能过度重视主席个人：FOMC 是委员会投票，市场也知道。</li>
+<li>亚洲时段流动性较低，首 15 分钟的 2Y 期货/USD/JPY
+可能夸大反应；以美股开盘后为二次确认。</li>
+</ul>
+<h2 id="source-ledger">9. Source Ledger</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>来源</th>
+<th>日期</th>
+<th>用途</th>
+<th>类别</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>federalreserve.gov/newsevents/2026-october.htm</td>
+<td>查证 2026-10-15</td>
+<td>时间 CONFIRMED（23:30 ET）</td>
+<td>FACT</td>
+</tr>
+<tr>
+<td>Fed 9/16 发布会实录 FOMCpresconf20260916.pdf</td>
+<td>2026-09-16</td>
+<td>原话、加息至 3.75–4.00%</td>
+<td>FACT</td>
+</tr>
+<tr>
+<td>CNBC 9/18、9/25；TickerGrove 9/16</td>
+<td>2026-09</td>
+<td>中性利率、任务组、缩表</td>
+<td>报道（二手）</td>
+</tr>
+<tr>
+<td>Yahoo/Benzinga、WSJ、Cboe、Reuters/Investing.com</td>
+<td>2026-10-14</td>
+<td>10 月加息概率、机构观点</td>
+<td>MARKET EXP / Analyst</td>
+</tr>
+<tr>
+<td>Capital Finance Bureau / Kiplinger</td>
+<td>2026-10-14</td>
+<td>本周美联储讲话日程</td>
+<td>报道</td>
+</tr>
+<tr>
+<td>FRED DFEDTARU/DGS2/DGS10</td>
+<td>data/latest</td>
+<td>利率图</td>
+<td>DATA</td>
+</tr>
+</tbody>
+</table>
+<h2 id="assumption-register">10. Assumption Register</h2>
+<ol type="1">
+<li>静默期 10/17 开始（FOMC
+规则：会议前第二个周六），本讲话为会前主席最后一次（ASSUMPTION，与 Cboe
+表述一致）。</li>
+<li>情景概率为主观（HYPOTHESIS），基础概率不可得，未校准。</li>
+<li>亚洲时段反应可在美股开盘时部分逆转（HYPOTHESIS）。</li>
+<li>反应幅度为数量级示意（HYPOTHESIS）。</li>
+</ol>
+<h2 id="model-provenance">11. Model Provenance</h2>
+<p>Builder <code>pipeline/build_1015_pre.py</code>；版本
+v20261015-1805；与零售书同一批锁定，均在 20:30 SGT 数据公布之前。</p>
+<h2 id="图表-charts">图表 Charts</h2>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261015-1805/Fed_Warsh_20261016_PreEvent_v20261015-1805.zip" alt="传导链" /> <img
+src="https://github.com/PSS917/research-os/releases/download/archive-v20261015-1805/Fed_Warsh_20261016_PreEvent_v20261015-1805.zip" alt="市场定价" />
+<div class="howto">
+<p><strong>📊 怎么看这张图</strong></p>
+<ul>
+<li><strong>坐标/颜色：</strong>每根柱=不同时点/来源报道的 10
+月加息概率；红虚线=50%。</li>
+<li><strong>只记住一件事：</strong>一天内从 22% 摆到 49% 再回
+33%——市场很不确定，所以讲话有信息价值。</li>
+<li><strong>什么会改变结论：</strong>若讲话后概率稳定在 &gt;55% 或
+&lt;25%，说明他给了路径信号。</li>
+</ul>
+</div>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261015-1805/Fed_Warsh_20261016_PreEvent_v20261015-1805.zip" alt="情景" /> <img
+src="https://github.com/PSS917/research-os/releases/download/archive-v20261015-1805/Fed_Warsh_20261016_PreEvent_v20261015-1805.zip" alt="利率" />
+<div class="howto">
+<p><strong>📊 怎么看这张图</strong></p>
+<ul>
+<li><strong>坐标/颜色：</strong>深蓝阶梯=政策利率上限；红=2年期；绿=10年期。</li>
+<li><strong>只记住一件事：</strong>2 年期高于政策利率 →
+市场已预期继续加息。</li>
+<li><strong>什么会改变结论：</strong>若讲话后 2 年期跌回 4.00%
+附近，说明市场放弃「再加」。</li>
+</ul>
+</div>
+<h2 id="事后作业-post-event-homework不改本书">12. 事后作业 Post-event
+homework（不改本书）</h2>
+<table>
+<thead>
+<tr>
+<th>环节</th>
+<th>成立/断开</th>
+<th>证据</th>
+<th>学到什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>①措辞→10月加息概率</td>
+<td>____</td>
+<td>____</td>
+<td>____</td>
+</tr>
+<tr>
+<td>②→2年期期货</td>
+<td>____</td>
+<td>____</td>
+<td>____</td>
+</tr>
+<tr>
+<td>③→USD/JPY</td>
+<td>____</td>
+<td>____</td>
+<td>____</td>
+</tr>
+<tr>
+<td>④→台日韩科技/NQ</td>
+<td>____</td>
+<td>____</td>
+<td>____</td>
+</tr>
+<tr>
+<td>⑤→美股利率敏感股</td>
+<td>____</td>
+<td>____</td>
+<td>____</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

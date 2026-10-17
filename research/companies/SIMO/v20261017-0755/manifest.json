@@ -1,0 +1,106 @@
+{
+ "release": "SIMO_v20261017-0755",
+ "generated": "2026-10-17T07:58:42.941019",
+ "files": [
+  {
+   "path": "SIMO_model_v20261017-0755.xlsx",
+   "bytes": 35805,
+   "sha256": "87f29c36b8b8cf70"
+  },
+  {
+   "path": "SIMO_report_v20261017-0755.docx",
+   "bytes": 844492,
+   "sha256": "c2966b82ab403879"
+  },
+  {
+   "path": "SIMO_report_v20261017-0755.html",
+   "bytes": 29620,
+   "sha256": "54c65cc5173d5f12"
+  },
+  {
+   "path": "SIMO_report_v20261017-0755.md",
+   "bytes": 16434,
+   "sha256": "ed5b32038dfb45bc"
+  },
+  {
+   "path": "SIMO_report_v20261017-0755.pdf",
+   "bytes": 1106631,
+   "sha256": "2487c3e3223e6c39"
+  },
+  {
+   "path": "SIMO_teaching_v20261017-0755.docx",
+   "bytes": 199232,
+   "sha256": "36a4d672409f4840"
+  },
+  {
+   "path": "SIMO_teaching_v20261017-0755.html",
+   "bytes": 10249,
+   "sha256": "03994061009d1831"
+  },
+  {
+   "path": "SIMO_teaching_v20261017-0755.md",
+   "bytes": 4458,
+   "sha256": "ba30d019471f82c5"
+  },
+  {
+   "path": "SIMO_teaching_v20261017-0755.pdf",
+   "bytes": 249464,
+   "sha256": "c6755ff530266417"
+  },
+  {
+   "path": "images/SIMO_1_price_vs_value.jpg",
+   "bytes": 286990,
+   "sha256": "13b7c72cf1e7914a"
+  },
+  {
+   "path": "images/SIMO_1_price_vs_value.png",
+   "bytes": 213076,
+   "sha256": "e1b6f03d08a5b157"
+  },
+  {
+   "path": "images/SIMO_2_financials.jpg",
+   "bytes": 240991,
+   "sha256": "185cb3ca4a06d973"
+  },
+  {
+   "path": "images/SIMO_2_financials.png",
+   "bytes": 177785,
+   "sha256": "98b22ae536b34cf7"
+  },
+  {
+   "path": "images/SIMO_3_scenarios.jpg",
+   "bytes": 246334,
+   "sha256": "9c83c99a88815c45"
+  },
+  {
+   "path": "images/SIMO_3_scenarios.png",
+   "bytes": 166071,
+   "sha256": "7c2255eff044863b"
+  },
+  {
+   "path": "images/SIMO_4_horizons.jpg",
+   "bytes": 233030,
+   "sha256": "43536c42b4ca3c8a"
+  },
+  {
+   "path": "images/SIMO_4_horizons.png",
+   "bytes": 192885,
+   "sha256": "c7f210bb3e8ffc86"
+  },
+  {
+   "path": "images/SIMO_5_logic_map.jpg",
+   "bytes": 243072,
+   "sha256": "3669cd8617b6dcfa"
+  },
+  {
+   "path": "images/SIMO_5_logic_map.png",
+   "bytes": 213699,
+   "sha256": "d37b76362d22c626"
+  },
+  {
+   "path": "summary.json",
+   "bytes": 526,
+   "sha256": "c3523711775293ab"
+  }
+ ]
+}

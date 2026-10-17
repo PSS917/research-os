@@ -1,0 +1,161 @@
+{
+ "release": "Weekly_Review_2026-W42_v20261017-0807-2026-W42",
+ "generated": "2026-10-17T08:07:36.162507",
+ "files": [
+  {
+   "path": "CHANGELOG_v20261017-0807-2026-W42.docx",
+   "bytes": 10849,
+   "sha256": "8c42a1cb5e3584fa"
+  },
+  {
+   "path": "CHANGELOG_v20261017-0807-2026-W42.html",
+   "bytes": 5462,
+   "sha256": "1ec5764fb7691534"
+  },
+  {
+   "path": "CHANGELOG_v20261017-0807-2026-W42.md",
+   "bytes": 311,
+   "sha256": "97b8c40be7f459b8"
+  },
+  {
+   "path": "CHANGELOG_v20261017-0807-2026-W42.pdf",
+   "bytes": 18700,
+   "sha256": "9465e668c91a7461"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.docx",
+   "bytes": 38481,
+   "sha256": "94fce64e39e90c50"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.html",
+   "bytes": 56778,
+   "sha256": "d029f182feeefd61"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.md",
+   "bytes": 42891,
+   "sha256": "9b3c0e27105d81db"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.pdf",
+   "bytes": 604549,
+   "sha256": "51f1f342cf4f3b35"
+  },
+  {
+   "path": "WEEKLY_RESULT_v20261017-0807-2026-W42.json",
+   "bytes": 10026,
+   "sha256": "3b6908492b19bb04"
+  },
+  {
+   "path": "Weekly_Review_2026-W42_EN_v20261017-0807-2026-W42.docx",
+   "bytes": 13498,
+   "sha256": "3735f6bf6b85292f"
+  },
+  {
+   "path": "Weekly_Review_2026-W42_EN_v20261017-0807-2026-W42.html",
+   "bytes": 10482,
+   "sha256": "78bf62c8614f27b2"
+  },
+  {
+   "path": "Weekly_Review_2026-W42_EN_v20261017-0807-2026-W42.md",
+   "bytes": 4803,
+   "sha256": "8c8038ca57a051d9"
+  },
+  {
+   "path": "Weekly_Review_2026-W42_EN_v20261017-0807-2026-W42.pdf",
+   "bytes": 79409,
+   "sha256": "7bd194d00452ee77"
+  },
+  {
+   "path": "Weekly_Review_2026-W42_ZH_v20261017-0807-2026-W42.docx",
+   "bytes": 909213,
+   "sha256": "cd1bbf69799eef2f"
+  },
+  {
+   "path": "Weekly_Review_2026-W42_ZH_v20261017-0807-2026-W42.html",
+   "bytes": 34209,
+   "sha256": "d0d037dd7312cfab"
+  },
+  {
+   "path": "Weekly_Review_2026-W42_ZH_v20261017-0807-2026-W42.md",
+   "bytes": 21194,
+   "sha256": "9da1ee9b3b4a3cbd"
+  },
+  {
+   "path": "Weekly_Review_2026-W42_ZH_v20261017-0807-2026-W42.pdf",
+   "bytes": 1475973,
+   "sha256": "b304b061f2b30155"
+  },
+  {
+   "path": "Weekly_Review_2026-W42_model_v20261017-0807-2026-W42.xlsx",
+   "bytes": 14600,
+   "sha256": "5fc94213f9971be4"
+  },
+  {
+   "path": "images/01_cross_asset_week.jpg",
+   "bytes": 287340,
+   "sha256": "755a718ea7072131"
+  },
+  {
+   "path": "images/01_cross_asset_week.png",
+   "bytes": 205048,
+   "sha256": "45785935412c7dee"
+  },
+  {
+   "path": "images/02_daily_path.jpg",
+   "bytes": 236534,
+   "sha256": "4b3b701ae90ef203"
+  },
+  {
+   "path": "images/02_daily_path.png",
+   "bytes": 198834,
+   "sha256": "282e7e391aed7dd1"
+  },
+  {
+   "path": "images/03_coverage_movers.jpg",
+   "bytes": 290261,
+   "sha256": "ab4a353c99272c78"
+  },
+  {
+   "path": "images/03_coverage_movers.png",
+   "bytes": 139540,
+   "sha256": "91254a38c3389431"
+  },
+  {
+   "path": "images/04_calibration_scoreboard.jpg",
+   "bytes": 220028,
+   "sha256": "73f93a444cafcb73"
+  },
+  {
+   "path": "images/04_calibration_scoreboard.png",
+   "bytes": 144361,
+   "sha256": "1cec1b16f1ff0f14"
+  },
+  {
+   "path": "images/05_theme_radar_week.jpg",
+   "bytes": 279241,
+   "sha256": "79fc017101f4f493"
+  },
+  {
+   "path": "images/05_theme_radar_week.png",
+   "bytes": 184569,
+   "sha256": "11bcf40214e1600a"
+  },
+  {
+   "path": "images/06_transmission_chain.jpg",
+   "bytes": 256952,
+   "sha256": "dbf670a0585afdd1"
+  },
+  {
+   "path": "images/06_transmission_chain.png",
+   "bytes": 209240,
+   "sha256": "62940178acf31306"
+  },
+  {
+   "path": "meta.json",
+   "bytes": 72,
+   "sha256": "7548ee3cda61cc8a"
+  }
+ ]
+}

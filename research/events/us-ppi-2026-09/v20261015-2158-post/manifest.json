@@ -1,0 +1,181 @@
+{
+ "release": "US_PPI_Sep2026_PostEvent_v20261015-2158-post",
+ "generated": "2026-10-15T22:05:02.370508",
+ "files": [
+  {
+   "path": "CHANGELOG_v20261015-2158-post.docx",
+   "bytes": 11081,
+   "sha256": "fe7fb8320d3da1f4"
+  },
+  {
+   "path": "CHANGELOG_v20261015-2158-post.html",
+   "bytes": 5787,
+   "sha256": "fd2fcb18855aff35"
+  },
+  {
+   "path": "CHANGELOG_v20261015-2158-post.md",
+   "bytes": 611,
+   "sha256": "125bb22c567e89a7"
+  },
+  {
+   "path": "CHANGELOG_v20261015-2158-post.pdf",
+   "bytes": 55946,
+   "sha256": "1ecaa572ce375a00"
+  },
+  {
+   "path": "EXTRA_SECTION.txt",
+   "bytes": 9825,
+   "sha256": "dabbf0580733cd72"
+  },
+  {
+   "path": "POST_EVENT_RESULT_v20261015-2158-post.json",
+   "bytes": 4837,
+   "sha256": "78703c349dce1eb1"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.docx",
+   "bytes": 37440,
+   "sha256": "9c01678155bbaad0"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.html",
+   "bytes": 54561,
+   "sha256": "88f4876649057b7f"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.md",
+   "bytes": 40981,
+   "sha256": "cf3b97283381c2fe"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.pdf",
+   "bytes": 579706,
+   "sha256": "faf8294bf8c9d537"
+  },
+  {
+   "path": "US_PPI_Sep2026_PostEvent_EN_v20261015-2158-post.docx",
+   "bytes": 1402611,
+   "sha256": "435c56e639856046"
+  },
+  {
+   "path": "US_PPI_Sep2026_PostEvent_EN_v20261015-2158-post.html",
+   "bytes": 15248,
+   "sha256": "c4847dc4c613ccdd"
+  },
+  {
+   "path": "US_PPI_Sep2026_PostEvent_EN_v20261015-2158-post.md",
+   "bytes": 5701,
+   "sha256": "2d01c05100cf3f32"
+  },
+  {
+   "path": "US_PPI_Sep2026_PostEvent_EN_v20261015-2158-post.pdf",
+   "bytes": 1360503,
+   "sha256": "f53309e8d05226ab"
+  },
+  {
+   "path": "US_PPI_Sep2026_PostEvent_ZH_v20261015-2158-post.docx",
+   "bytes": 1416091,
+   "sha256": "3706e799467a7035"
+  },
+  {
+   "path": "US_PPI_Sep2026_PostEvent_ZH_v20261015-2158-post.html",
+   "bytes": 40673,
+   "sha256": "c9166cf78ca70733"
+  },
+  {
+   "path": "US_PPI_Sep2026_PostEvent_ZH_v20261015-2158-post.md",
+   "bytes": 24332,
+   "sha256": "45980f779ba911d0"
+  },
+  {
+   "path": "US_PPI_Sep2026_PostEvent_ZH_v20261015-2158-post.pdf",
+   "bytes": 1989860,
+   "sha256": "70d8fa0ff7914bc4"
+  },
+  {
+   "path": "US_PPI_Sep2026_PostEvent_model_v20261015-2158-post.xlsx",
+   "bytes": 18164,
+   "sha256": "472c0a0af6aef87d"
+  },
+  {
+   "path": "images/01_expectation_gap.jpg",
+   "bytes": 273892,
+   "sha256": "9ac22160ae0a46e2"
+  },
+  {
+   "path": "images/01_expectation_gap.png",
+   "bytes": 201404,
+   "sha256": "9174c2190d00dd51"
+  },
+  {
+   "path": "images/02_components.jpg",
+   "bytes": 328495,
+   "sha256": "307df5b0b98eaa7f"
+  },
+  {
+   "path": "images/02_components.png",
+   "bytes": 260374,
+   "sha256": "bc31f55ea1f00bc4"
+  },
+  {
+   "path": "images/03_rates_path.jpg",
+   "bytes": 343632,
+   "sha256": "5d2ffd45695c8057"
+  },
+  {
+   "path": "images/03_rates_path.png",
+   "bytes": 318683,
+   "sha256": "f0b16471b4c3620d"
+  },
+  {
+   "path": "images/04_kalshi_path.jpg",
+   "bytes": 272604,
+   "sha256": "3d7507d25fee0012"
+  },
+  {
+   "path": "images/04_kalshi_path.png",
+   "bytes": 201193,
+   "sha256": "26e2cc66414f14f7"
+  },
+  {
+   "path": "images/05_watchlist_movers.jpg",
+   "bytes": 358996,
+   "sha256": "ea4228de27ff132f"
+  },
+  {
+   "path": "images/05_watchlist_movers.png",
+   "bytes": 216203,
+   "sha256": "db941bfacd2dea2b"
+  },
+  {
+   "path": "images/06_calibration_brier.jpg",
+   "bytes": 215563,
+   "sha256": "76f3fcd0bb76b2c4"
+  },
+  {
+   "path": "images/06_calibration_brier.png",
+   "bytes": 144577,
+   "sha256": "c3d0e2e739a72f12"
+  },
+  {
+   "path": "images/07_chain_postmortem.jpg",
+   "bytes": 201342,
+   "sha256": "5de7219c0c4b1bd7"
+  },
+  {
+   "path": "images/07_chain_postmortem.png",
+   "bytes": 149912,
+   "sha256": "3a5d35ac4f60d6c7"
+  },
+  {
+   "path": "images/08_reaction_decomposition.jpg",
+   "bytes": 238303,
+   "sha256": "e7e1e7eeb42edf8b"
+  },
+  {
+   "path": "images/08_reaction_decomposition.png",
+   "bytes": 161778,
+   "sha256": "7bf705b7ab0246e3"
+  }
+ ]
+}

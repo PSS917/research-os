@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title> </title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<style>body{font-family:'Noto Sans CJK SC','Noto Sans',sans-serif;max-width:1100px;margin:auto;padding:24px;line-height:1.6;color:#1b1b1b}table{border-collapse:collapse;font-size:13px;margin:8px 0}td,th{border:1px solid #ccd;padding:4px 8px}th{background:#1F3A5F;color:#fff}img{max-width:100%;border:1px solid #ddd}h1{color:#1F3A5F}h2{border-bottom:2px solid #1F3A5F}abbr{text-decoration:underline dotted #2E86C1;cursor:help}.box30{background:linear-gradient(135deg,#eaf2ff,#f5ecff);border:2px solid #5b8cff;border-radius:14px;padding:6px 18px;margin:14px 0;font-size:16px}.readmap{background:#f6f8fb;border:1px solid #d5dbe6;border-radius:12px;padding:4px 16px;margin:12px 0}.howto{background:#fff8e6;border-left:5px solid #f59e0b;border-radius:8px;padding:2px 14px;margin:6px 0 22px}.quiz{background:#effaf3;border:1px solid #9bd8b1;border-radius:12px;padding:4px 16px}details{margin:8px 0}details.l3{background:#f7f7f9;border:1px dashed #b8c0cc;border-radius:10px;padding:6px 14px}summary{cursor:pointer;font-weight:600;color:#1F3A5F}body{font-size:15.5px}blockquote{background:#f3f6fa;border-left:4px solid #2E86C1;margin:0;padding:6px 12px}</style></head>
+<body>
+<header id="title-block-header">
+<h1 class="title"> </h1>
+</header>
+<h1 id="weekly-radar-review-2026-w42-2026-10-12-2026-10-16">Weekly Radar
+&amp; Review — 2026-W42 (2026-10-12 – 2026-10-16)</h1>
+<blockquote>
+<p>v20261017-0807-2026-W42 | built 2026-10-17 08:07 SGT | Not investment
+advice | Data: yfinance closes (base = close on/before 2026-10-09), OS
+event books, dated press sources.</p>
+</blockquote>
+<h2 id="the-week-in-one-paragraph">1. The week in one paragraph</h2>
+<p>AI/semis de-rated hard: Nasdaq -4.5%, SOX -11.4%, S&amp;P -1.9%, Dow
++0.7% (rotation into industrials/energy). Two overlapping shocks: (1)
+CXMT’s higher-density server-DRAM progress triggered memory-supply
+fears; (2) hot CPI/PPI, Brent touching $110 and widening credit spreads
+for levered AI borrowers (a CoreWeave bond at 15%; Broadcom/Intel CEO
+warnings) put the financing of the debt-funded AI build-out in question.
+Note the 10Y yield FELL ~15bp on the week — the stress was in credit and
+crowding, not Treasuries. Coverage median -14.5%; worst CIEN -26%、MXL
+-26%、COHR -26%; best AAPL +2%、CCL -2%、QCOM -2%.</p>
+<h2 id="timeline-fact-dated-sources">2. Timeline (FACT, dated
+sources)</h2>
+<ul>
+<li><strong>10/10–12 周末–周一</strong>: CXMT (ChangXin Memory)
+announced a higher-density server-DRAM architecture; SOX −2.7% Mon;
+Samsung −10%, SK Hynix −8%. [cn13 / reu]</li>
+<li><strong>10/12 周一</strong>: Broadcom’s Hock Tan and Intel’s CEO
+warned financing could become a major headwind to the AI build-out.
+[cn15]</li>
+<li><strong>10/13 周二</strong>: KOSPI fell &gt;6% (5th straight day of
+Korean chip selling), Kioxia −13%; a CoreWeave bond issued in June
+yielded 15% vs 9.625% at issue. [reu]</li>
+<li><strong>10/14 周三</strong>: Sep CPI 3.7% YoY / 0.6% MoM
+(gasoline-led), core 2.6% YoY → OS class HOT. [OS CPI post book]</li>
+<li><strong>10/15 周四</strong>: Hot PPI; retail headline strong,
+control group soft; TSMC beat the top of guidance; top-20 global
+AI/semis shed &gt;$1tn so far this week (CNBC). [OS post books /
+cn15]</li>
+<li><strong>10/16 周五 SGT</strong>: Warsh declined to prejudge October
+→ Kalshi Oct hike ~30%→13–15%; Dec ~76–78% unchanged. [cnw / OS Warsh
+post book]</li>
+<li><strong>10/16 周五 US</strong>: Nasdaq −2.1%, S&amp;P −1.1%, SOX
+−3.83%, VIX +~21% to ~20; Brent touched $110 (first since May, Hormuz);
+CRWV −~12% (&gt;25% for the week). Nasdaq’s worst week since late June.
+[ap / sch / yh]</li>
+</ul>
+<h2 id="event-calibration">3. Event calibration</h2>
+<ul>
+<li>Fed Chair Warsh x IMF Georgieva → neutral: Brier OS 0.38 vs uniform
+0.667 vs base None</li>
+<li>TSM Q3 2026 Earnings → beat: Brier OS 0.755 vs uniform 0.667 vs base
+0.167</li>
+<li>US CPI Sep 2026 → HOT 偏热: Brier OS 0.875 vs uniform 0.667 vs base
+0.349</li>
+<li>US PPI Sep 2026 → hot: Brier OS 0.875 vs uniform 0.667 vs base
+1.261</li>
+<li>US Retail Sales Sep 2026 → strong: Brier OS 1.005 vs uniform 0.667
+vs base 0.724</li>
+</ul>
+<p>We beat uniform on only 1/5 events: outcomes kept landing in tails we
+under-weighted. Fix already live (10/16): regime-aware calibration caps
+the middle scenario at 45% in high-vol regimes; earnings beats split
+into tailwind/headwind playbooks; central-bank pre-books add an ‘other
+officials’ panel.</p>
+<h2 id="themes">4. Themes</h2>
+<p>Weakest 1-week: JP Memory 存储 -25.3%; KR Components 被动元件 -23.2%;
+KR Advanced Packaging 先进封测 -21.3%; KR Memory 存储 -21.0%; KR PCB
+印刷电路板 -20.8%. Strongest: JP Power Grid 电网 +3.1%; KR Battery 电池
++0.5%; KR Defense/Space 国防航天 -0.3%.</p>
+<h2 id="thesis-steelman-falsifier">5. Thesis, steelman, falsifier</h2>
+<p>Our read: a financing-spread, memory-competition and de-crowding
+de-rating, not (yet) a demand break — we saw no evidence of EPS cuts and
+TSMC now sees FY26 USD revenue growth of ~44%. Steelman: financing
+stress at neoclouds becomes a demand problem for GPUs and memory.
+Falsifiers: neocloud capex cuts, falling GPU rental prices, hyperscaler
+capex guide-downs in late-October earnings.</p>
+<h2 id="next-two-weeks">6. Next two weeks</h2>
+<ul>
+<li>2026-10-21: SPCX earnings + call 财报 — TENTATIVE (Yahoo calendar;
+confirm on IR)</li>
+<li>2026-10-22: TSLA earnings + call 财报 — TENTATIVE (Yahoo calendar;
+confirm on IR)</li>
+<li>2026-10-23: MXL earnings + call 财报 — TENTATIVE (Yahoo calendar;
+confirm on IR)</li>
+<li>2026-10-27: GLW earnings + call 财报 — TENTATIVE (Yahoo calendar;
+confirm on IR)</li>
+<li>2026-10-27/28: FOMC decision + Chair Warsh press conference｜FOMC
+利率决议 — CONFIRMED (federalreserve.gov)</li>
+<li>2026-10-29: EME earnings + call 财报 — TENTATIVE (Yahoo calendar;
+confirm on IR)</li>
+<li>2026-10-29: KLAC earnings + call 财报 — TENTATIVE (Yahoo calendar;
+confirm on IR)</li>
+<li>2026-10-29: PWR earnings + call 财报 — TENTATIVE (Yahoo calendar;
+confirm on IR)</li>
+<li>2026-10-29: SIMO earnings + call 财报 — TENTATIVE (Yahoo calendar;
+confirm on IR)</li>
+<li>2026-10-29: US GDP Q3 advance + Sep PCE — TENTATIVE (verify
+bea.gov)</li>
+<li>2026-10-29/30: BOJ MPM + Outlook Report｜日本央行会议 — CONFIRMED
+(boj.or.jp)</li>
+<li>2026-10-30: INTC earnings + call 财报 — TENTATIVE (Yahoo calendar;
+confirm on IR)</li>
+</ul>
+<p>Valuation: no scenario revisions this week (price moves are not
+material information); TSM structure unchanged after earnings. Full
+teaching, source ledger and assumption register: Chinese edition.</p>
+</body>
+</html>

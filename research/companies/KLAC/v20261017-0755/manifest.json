@@ -1,0 +1,106 @@
+{
+ "release": "KLAC_v20261017-0755",
+ "generated": "2026-10-17T07:58:20.488962",
+ "files": [
+  {
+   "path": "KLAC_model_v20261017-0755.xlsx",
+   "bytes": 35989,
+   "sha256": "9b172ea502048221"
+  },
+  {
+   "path": "KLAC_report_v20261017-0755.docx",
+   "bytes": 808831,
+   "sha256": "58a7cf2d43807e91"
+  },
+  {
+   "path": "KLAC_report_v20261017-0755.html",
+   "bytes": 29749,
+   "sha256": "acf0fc04d7b74a0b"
+  },
+  {
+   "path": "KLAC_report_v20261017-0755.md",
+   "bytes": 16623,
+   "sha256": "c004080add697fa8"
+  },
+  {
+   "path": "KLAC_report_v20261017-0755.pdf",
+   "bytes": 1122692,
+   "sha256": "c37f569354efd307"
+  },
+  {
+   "path": "KLAC_teaching_v20261017-0755.docx",
+   "bytes": 193319,
+   "sha256": "8e4be5b3c8c40d9f"
+  },
+  {
+   "path": "KLAC_teaching_v20261017-0755.html",
+   "bytes": 10158,
+   "sha256": "14f3d7f8279078f1"
+  },
+  {
+   "path": "KLAC_teaching_v20261017-0755.md",
+   "bytes": 4379,
+   "sha256": "c5197618fc2cfab5"
+  },
+  {
+   "path": "KLAC_teaching_v20261017-0755.pdf",
+   "bytes": 246838,
+   "sha256": "3c793ae3b76747fe"
+  },
+  {
+   "path": "images/KLAC_1_price_vs_value.jpg",
+   "bytes": 287980,
+   "sha256": "eced99cf6e802ac9"
+  },
+  {
+   "path": "images/KLAC_1_price_vs_value.png",
+   "bytes": 210335,
+   "sha256": "e14a60a148865c28"
+  },
+  {
+   "path": "images/KLAC_2_financials.jpg",
+   "bytes": 257991,
+   "sha256": "16aa6f3a0588a227"
+  },
+  {
+   "path": "images/KLAC_2_financials.png",
+   "bytes": 176514,
+   "sha256": "2081fccaacb6199a"
+  },
+  {
+   "path": "images/KLAC_3_scenarios.jpg",
+   "bytes": 247707,
+   "sha256": "39138311b1be966c"
+  },
+  {
+   "path": "images/KLAC_3_scenarios.png",
+   "bytes": 172397,
+   "sha256": "18245edadaceca14"
+  },
+  {
+   "path": "images/KLAC_4_horizons.jpg",
+   "bytes": 232155,
+   "sha256": "aa6ecdcde923d3b0"
+  },
+  {
+   "path": "images/KLAC_4_horizons.png",
+   "bytes": 165038,
+   "sha256": "0d5a51e0a2a488b6"
+  },
+  {
+   "path": "images/KLAC_5_logic_map.jpg",
+   "bytes": 242016,
+   "sha256": "944e847bb5274cf9"
+  },
+  {
+   "path": "images/KLAC_5_logic_map.png",
+   "bytes": 208055,
+   "sha256": "29b3f7dedf0837e7"
+  },
+  {
+   "path": "summary.json",
+   "bytes": 520,
+   "sha256": "d8fcfafe2ee6324d"
+  }
+ ]
+}

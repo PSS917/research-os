@@ -1,0 +1,46 @@
+{
+ "release": "daily_v20261017-0755",
+ "generated": "2026-10-17T07:59:01.254828",
+ "files": [
+  {
+   "path": "daily_2026-10-17_v20261017-0755.docx",
+   "bytes": 230737,
+   "sha256": "fc61d3105a68bb27"
+  },
+  {
+   "path": "daily_2026-10-17_v20261017-0755.html",
+   "bytes": 12503,
+   "sha256": "02859771bf09b230"
+  },
+  {
+   "path": "daily_2026-10-17_v20261017-0755.md",
+   "bytes": 4559,
+   "sha256": "77248796e4b8df4f"
+  },
+  {
+   "path": "daily_2026-10-17_v20261017-0755.pdf",
+   "bytes": 562106,
+   "sha256": "10dec7447179844f"
+  },
+  {
+   "path": "images/daily_movers.jpg",
+   "bytes": 353306,
+   "sha256": "4451c1c8f8963dff"
+  },
+  {
+   "path": "images/daily_movers.png",
+   "bytes": 137550,
+   "sha256": "278e5f8a2961996d"
+  },
+  {
+   "path": "images/daily_valuation.jpg",
+   "bytes": 284483,
+   "sha256": "5c585571528a550b"
+  },
+  {
+   "path": "images/daily_valuation.png",
+   "bytes": 137859,
+   "sha256": "844c9bf53bd8b39d"
+  }
+ ]
+}

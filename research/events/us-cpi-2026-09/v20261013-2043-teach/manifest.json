@@ -1,0 +1,76 @@
+{
+ "release": "CPI_Sep2026_Teaching_v20261013-2043-teach",
+ "generated": "2026-10-13T20:43:30.366439",
+ "files": [
+  {
+   "path": "CHANGELOG_v20261013-2043-teach.docx",
+   "bytes": 10944,
+   "sha256": "4f82347cb05cdcb8"
+  },
+  {
+   "path": "CHANGELOG_v20261013-2043-teach.html",
+   "bytes": 5455,
+   "sha256": "537e3465927e18c8"
+  },
+  {
+   "path": "CHANGELOG_v20261013-2043-teach.md",
+   "bytes": 344,
+   "sha256": "ac622076762e5c67"
+  },
+  {
+   "path": "CHANGELOG_v20261013-2043-teach.pdf",
+   "bytes": 23896,
+   "sha256": "e0ad69301625d984"
+  },
+  {
+   "path": "CPI_Sep2026_PreEvent_Teaching_v20261013-2043-teach.docx",
+   "bytes": 788245,
+   "sha256": "ecee7f4ea23ee67e"
+  },
+  {
+   "path": "CPI_Sep2026_PreEvent_Teaching_v20261013-2043-teach.html",
+   "bytes": 27150,
+   "sha256": "c7df0b8b35190c41"
+  },
+  {
+   "path": "CPI_Sep2026_PreEvent_Teaching_v20261013-2043-teach.md",
+   "bytes": 17796,
+   "sha256": "1982d1fe69e44eef"
+  },
+  {
+   "path": "CPI_Sep2026_PreEvent_Teaching_v20261013-2043-teach.pdf",
+   "bytes": 902556,
+   "sha256": "cf0457966a006fc0"
+  },
+  {
+   "path": "images/T1_\u6838\u5fc3CPI\u6708\u5ea6_annotated.jpg",
+   "bytes": 464381,
+   "sha256": "7fa350e1b3a3cef0"
+  },
+  {
+   "path": "images/T1_\u6838\u5fc3CPI\u6708\u5ea6_annotated.png",
+   "bytes": 301755,
+   "sha256": "bccfd751c4bf6347"
+  },
+  {
+   "path": "images/T2_\u5229\u7387\u654f\u611f\u5ea6_annotated.jpg",
+   "bytes": 450491,
+   "sha256": "9c29df3952f03b27"
+  },
+  {
+   "path": "images/T2_\u5229\u7387\u654f\u611f\u5ea6_annotated.png",
+   "bytes": 310030,
+   "sha256": "945090d007bf2839"
+  },
+  {
+   "path": "images/T3_\u4e09\u79cd\u5267\u672c.jpg",
+   "bytes": 364197,
+   "sha256": "ab199b4e3c53ea79"
+  },
+  {
+   "path": "images/T3_\u4e09\u79cd\u5267\u672c.png",
+   "bytes": 285584,
+   "sha256": "b3c1e8d58fc3d9fb"
+  }
+ ]
+}

@@ -1,0 +1,519 @@
+{
+ "kind": "weekly",
+ "week": "2026-W42",
+ "ver": "v20261017-0807-2026-W42",
+ "start": "2026-10-12",
+ "end": "2026-10-16",
+ "market": {
+  "^GSPC": -1.9471205024317317,
+  "^IXIC": -4.480483466449192,
+  "^NDX": -5.490377571760696,
+  "^DJI": 0.6726575918767574,
+  "^SOX": -11.414929038466049,
+  "^RUT": -3.0498921929237865,
+  "^VIX": 5.149999618530273,
+  "^TNX": -14.599990844726562,
+  "^FVX": -12.199974060058594,
+  "DX-Y.NYB": -0.4216806180608268,
+  "JPY=X": -0.04808464132535217,
+  "BZ=F": 4.7459904151725185,
+  "CL=F": 7.8279831909110476,
+  "GC=F": -0.7020280991900107,
+  "BTC-USD": -0.49046326167817567,
+  "^N225": -6.670883904156177,
+  "^KS11": -16.174483166978693,
+  "^TWII": -4.752396599526265
+ },
+ "coverage": {
+  "CIEN": -26.022189118882977,
+  "MXL": -25.831946755407653,
+  "COHR": -25.500607766617623,
+  "RKLB": -25.465474270634793,
+  "LITE": -25.306904849300548,
+  "CRWV": -25.207115009746584,
+  "SIMO": -19.931792345585443,
+  "AMAT": -19.27696586000828,
+  "CRWD": -17.324752763234454,
+  "MRVL": -17.236995059575687,
+  "GLW": -15.751850906305853,
+  "KLAC": -15.252850641713955,
+  "MU": -14.579368707282503,
+  "ARM": -14.450953883130524,
+  "INTC": -14.18338108882522,
+  "AMD": -13.048840651208682,
+  "PLTR": -11.011719684286058,
+  "PWR": -10.493809672210109,
+  "SPCX": -10.174078858337943,
+  "AVGO": -9.069535874315438,
+  "TSM": -8.978403300169857,
+  "EME": -8.53790298244812,
+  "TSLA": -7.311209824928133,
+  "NVDA": -6.60764131193301,
+  "QCOM": -1.931623931623927,
+  "CCL": -1.7077798861480198,
+  "AAPL": 2.0259030418250834
+ },
+ "calibration": [
+  {
+   "ev": "fed-warsh-2026-10-15",
+   "ver": "v20261017-0801-post",
+   "name": "Fed Chair Warsh x IMF Georgieva",
+   "cls": "neutral",
+   "probs": {
+    "hawkish": 0.3,
+    "neutral": 0.5,
+    "dovish": 0.2
+   },
+   "os": 0.38,
+   "uni": 0.6666666666666667,
+   "base": null,
+   "mk": 0.9800000000000001
+  },
+  {
+   "ev": "tsm-2026-q3",
+   "ver": "v20261016-0802-post",
+   "name": "TSM Q3 2026 Earnings",
+   "cls": "beat",
+   "probs": {
+    "beat": 0.3,
+    "inline": 0.45,
+    "miss": 0.25
+   },
+   "os": 0.7549999999999999,
+   "uni": 0.6666666666666667,
+   "base": 0.16666666666666669,
+   "mk": null
+  },
+  {
+   "ev": "us-cpi-2026-09",
+   "ver": "v20261015-0800-post",
+   "name": "US CPI Sep 2026",
+   "cls": "HOT 偏热",
+   "probs": null,
+   "os": 0.875,
+   "uni": 0.667,
+   "base": 0.349,
+   "mk": null
+  },
+  {
+   "ev": "us-ppi-2026-09",
+   "ver": "v20261016-0759-post",
+   "name": "US PPI Sep 2026",
+   "cls": "hot",
+   "probs": {
+    "cool": 0.25,
+    "inline": 0.5,
+    "hot": 0.25
+   },
+   "os": 0.875,
+   "uni": 0.6666666666666667,
+   "base": 1.2608024691358024,
+   "mk": null
+  },
+  {
+   "ev": "us-retail-2026-09",
+   "ver": "v20261016-0800-post",
+   "name": "US Retail Sales Sep 2026",
+   "cls": "strong",
+   "probs": {
+    "weak": 0.25,
+    "inline": 0.55,
+    "strong": 0.2
+   },
+   "os": 1.0050000000000001,
+   "uni": 0.6666666666666667,
+   "base": 0.7237654320987654,
+   "mk": null
+  }
+ ],
+ "themes": [
+  {
+   "mkt": "TW",
+   "th": "PCB 印刷电路板",
+   "n": 1,
+   "w1": -3.1,
+   "m1": 22.1,
+   "m3": 23.9,
+   "score": 9.8,
+   "st": "STRONG 强"
+  },
+  {
+   "mkt": "TW",
+   "th": "Thermal 散热",
+   "n": 2,
+   "w1": -4.9,
+   "m1": 4.7,
+   "m3": 53.9,
+   "score": 9.7,
+   "st": "STRONG 强"
+  },
+  {
+   "mkt": "JP",
+   "th": "Power Grid 电网",
+   "n": 1,
+   "w1": 3.1,
+   "m1": 11.5,
+   "m3": 23.0,
+   "score": 9.6,
+   "st": "STRONG 强"
+  },
+  {
+   "mkt": "KR",
+   "th": "Battery 电池",
+   "n": 1,
+   "w1": 0.5,
+   "m1": 11.9,
+   "m3": 22.7,
+   "score": 8.4,
+   "st": "STRONG 强"
+  },
+  {
+   "mkt": "TW",
+   "th": "PCB/ABF Substrate 载板",
+   "n": 2,
+   "w1": -11.2,
+   "m1": 20.4,
+   "m3": 14.9,
+   "score": 3.5,
+   "st": "NEUTRAL 中性"
+  },
+  {
+   "mkt": "TW",
+   "th": "Optical 光通信",
+   "n": 2,
+   "w1": -11.0,
+   "m1": -6.1,
+   "m3": 44.9,
+   "score": 1.6,
+   "st": "NEUTRAL 中性"
+  },
+  {
+   "mkt": "TW",
+   "th": "ASIC/SoC 芯片设计",
+   "n": 3,
+   "w1": -11.7,
+   "m1": 4.2,
+   "m3": 30.7,
+   "score": 1.6,
+   "st": "NEUTRAL 中性"
+  },
+  {
+   "mkt": "TW",
+   "th": "CCL 覆铜板",
+   "n": 2,
+   "w1": -10.6,
+   "m1": 5.6,
+   "m3": 14.3,
+   "score": -0.7,
+   "st": "NEUTRAL 中性"
+  },
+  {
+   "mkt": "JP",
+   "th": "Test 测试",
+   "n": 1,
+   "w1": -15.6,
+   "m1": 8.9,
+   "m3": 19.8,
+   "score": -1.2,
+   "st": "NEUTRAL 中性"
+  },
+  {
+   "mkt": "TW",
+   "th": "Foundry 晶圆代工",
+   "n": 1,
+   "w1": -5.1,
+   "m1": 2.0,
+   "m3": -1.7,
+   "score": -2.3,
+   "st": "WEAK 弱"
+  },
+  {
+   "mkt": "TW",
+   "th": "Advanced Packaging 先进封测",
+   "n": 1,
+   "w1": -9.8,
+   "m1": 9.6,
+   "m3": -1.6,
+   "score": -2.3,
+   "st": "WEAK 弱"
+  },
+  {
+   "mkt": "TW",
+   "th": "Networking 网通",
+   "n": 1,
+   "w1": -4.3,
+   "m1": 5.6,
+   "m3": -14.0,
+   "score": -3.3,
+   "st": "WEAK 弱"
+  },
+  {
+   "mkt": "JP",
+   "th": "Materials 材料",
+   "n": 1,
+   "w1": -2.3,
+   "m1": 4.5,
+   "m3": -18.3,
+   "score": -3.5,
+   "st": "WEAK 弱"
+  },
+  {
+   "mkt": "TW",
+   "th": "AI Server ODM 服务器代工",
+   "n": 4,
+   "w1": -6.0,
+   "m1": -5.7,
+   "m3": 6.1,
+   "score": -3.5,
+   "st": "WEAK 弱"
+  },
+  {
+   "mkt": "JP",
+   "th": "Robotics 机器人",
+   "n": 2,
+   "w1": -4.6,
+   "m1": 3.1,
+   "m3": -20.0,
+   "score": -5.4,
+   "st": "WEAK 弱"
+  },
+  {
+   "mkt": "KR",
+   "th": "Defense/Space 国防航天",
+   "n": 1,
+   "w1": -0.3,
+   "m1": -17.9,
+   "m3": -5.1,
+   "score": -6.6,
+   "st": "WEAK 弱"
+  },
+  {
+   "mkt": "JP",
+   "th": "SPE 半导体设备",
+   "n": 4,
+   "w1": -12.4,
+   "m1": 10.8,
+   "m3": -19.1,
+   "score": -6.8,
+   "st": "WEAK 弱"
+  },
+  {
+   "mkt": "TW",
+   "th": "Memory 存储",
+   "n": 2,
+   "w1": -12.3,
+   "m1": -2.2,
+   "m3": -2.1,
+   "score": -7.2,
+   "st": "WEAK 弱"
+  },
+  {
+   "mkt": "JP",
+   "th": "PCB/ABF Substrate 载板",
+   "n": 1,
+   "w1": -17.3,
+   "m1": -0.0,
+   "m3": 4.6,
+   "score": -7.7,
+   "st": "WEAK 弱"
+  },
+  {
+   "mkt": "JP",
+   "th": "ASIC/SoC 芯片设计",
+   "n": 1,
+   "w1": -10.8,
+   "m1": 5.3,
+   "m3": -27.8,
+   "score": -9.4,
+   "st": "WEAK 弱"
+  },
+  {
+   "mkt": "JP",
+   "th": "Optical 光通信",
+   "n": 2,
+   "w1": -14.9,
+   "m1": -3.1,
+   "m3": -11.8,
+   "score": -10.8,
+   "st": "WEAK 弱"
+  },
+  {
+   "mkt": "TW",
+   "th": "Power 电源",
+   "n": 1,
+   "w1": -16.8,
+   "m1": 0.9,
+   "m3": -14.2,
+   "score": -11.0,
+   "st": "WEAK 弱"
+  },
+  {
+   "mkt": "KR",
+   "th": "Advanced Packaging 先进封测",
+   "n": 1,
+   "w1": -21.3,
+   "m1": -9.1,
+   "m3": 2.2,
+   "score": -13.0,
+   "st": "WEAK 弱"
+  },
+  {
+   "mkt": "KR",
+   "th": "PCB 印刷电路板",
+   "n": 1,
+   "w1": -20.8,
+   "m1": -9.6,
+   "m3": -0.2,
+   "score": -13.3,
+   "st": "WEAK 弱"
+  },
+  {
+   "mkt": "KR",
+   "th": "Autos/Robotics 汽车/机器人",
+   "n": 1,
+   "w1": -3.9,
+   "m1": -18.4,
+   "m3": -29.3,
+   "score": -13.3,
+   "st": "WEAK 弱"
+  },
+  {
+   "mkt": "JP",
+   "th": "Components 被动元件",
+   "n": 1,
+   "w1": -16.5,
+   "m1": -5.7,
+   "m3": -23.6,
+   "score": -14.7,
+   "st": "WEAK 弱"
+  },
+  {
+   "mkt": "KR",
+   "th": "Components 被动元件",
+   "n": 1,
+   "w1": -23.2,
+   "m1": -15.1,
+   "m3": -7.8,
+   "score": -17.7,
+   "st": "WEAK 弱"
+  },
+  {
+   "mkt": "KR",
+   "th": "Power Gen 发电",
+   "n": 1,
+   "w1": -17.2,
+   "m1": -28.9,
+   "m3": -11.7,
+   "score": -19.6,
+   "st": "WEAK 弱"
+  },
+  {
+   "mkt": "JP",
+   "th": "AI Platform/Capital AI 资本",
+   "n": 1,
+   "w1": -18.1,
+   "m1": -24.3,
+   "m3": -22.2,
+   "score": -20.8,
+   "st": "WEAK 弱"
+  },
+  {
+   "mkt": "KR",
+   "th": "Memory 存储",
+   "n": 2,
+   "w1": -21.0,
+   "m1": -23.4,
+   "m3": -23.2,
+   "score": -22.2,
+   "st": "WEAK 弱"
+  },
+  {
+   "mkt": "KR",
+   "th": "Power Grid 电网",
+   "n": 3,
+   "w1": -18.8,
+   "m1": -28.6,
+   "m3": -25.4,
+   "score": -23.1,
+   "st": "WEAK 弱"
+  },
+  {
+   "mkt": "JP",
+   "th": "Memory 存储",
+   "n": 1,
+   "w1": -25.3,
+   "m1": -25.7,
+   "m3": -40.2,
+   "score": -28.4,
+   "st": "WEAK 弱"
+  }
+ ],
+ "upcoming": [
+  [
+   "2026-10-21",
+   "SPCX earnings + call 财报",
+   "TENTATIVE (Yahoo calendar; confirm on IR)"
+  ],
+  [
+   "2026-10-22",
+   "TSLA earnings + call 财报",
+   "TENTATIVE (Yahoo calendar; confirm on IR)"
+  ],
+  [
+   "2026-10-23",
+   "MXL earnings + call 财报",
+   "TENTATIVE (Yahoo calendar; confirm on IR)"
+  ],
+  [
+   "2026-10-27",
+   "GLW earnings + call 财报",
+   "TENTATIVE (Yahoo calendar; confirm on IR)"
+  ],
+  [
+   "2026-10-27/28",
+   "FOMC decision + Chair Warsh press conference｜FOMC 利率决议",
+   "CONFIRMED (federalreserve.gov)"
+  ],
+  [
+   "2026-10-29",
+   "EME earnings + call 财报",
+   "TENTATIVE (Yahoo calendar; confirm on IR)"
+  ],
+  [
+   "2026-10-29",
+   "KLAC earnings + call 财报",
+   "TENTATIVE (Yahoo calendar; confirm on IR)"
+  ],
+  [
+   "2026-10-29",
+   "PWR earnings + call 财报",
+   "TENTATIVE (Yahoo calendar; confirm on IR)"
+  ],
+  [
+   "2026-10-29",
+   "SIMO earnings + call 财报",
+   "TENTATIVE (Yahoo calendar; confirm on IR)"
+  ],
+  [
+   "2026-10-29",
+   "US GDP Q3 advance + Sep PCE",
+   "TENTATIVE (verify bea.gov)"
+  ],
+  [
+   "2026-10-29/30",
+   "BOJ MPM + Outlook Report｜日本央行会议",
+   "CONFIRMED (boj.or.jp)"
+  ],
+  [
+   "2026-10-30",
+   "INTC earnings + call 财报",
+   "TENTATIVE (Yahoo calendar; confirm on IR)"
+  ]
+ ],
+ "log": [
+  "week 2026-10-12→2026-10-16 (base = close on/before 2026-10-09); ^GSPC -1.95, ^IXIC -4.48, ^NDX -5.49, ^DJI +0.67, ^SOX -11.41, ^RUT -3.05, ^VIX +5.15, ^TNX -14.60, ^FVX -12.20, DX-Y.NYB -0.42, JPY=X -0.05, BZ=F +4.75, CL=F +7.83, GC=F -0.70, BTC-USD -0.49, ^N225 -6.67, ^KS11 -16.17, ^TWII -4.75",
+  "27-stock week: median -14.5%, worst ('CIEN', -26.022189118882977), best ('AAPL', 2.0259030418250834)",
+  "calibration events: fed-warsh-2026-10-15 neutral OS 0.38 uni 0.6666666666666667; tsm-2026-q3 beat OS 0.7549999999999999 uni 0.6666666666666667; us-cpi-2026-09 HOT 偏热 OS 0.875 uni 0.667; us-ppi-2026-09 hot OS 0.875 uni 0.6666666666666667; us-retail-2026-09 strong OS 1.0050000000000001 uni 0.6666666666666667",
+  "Excel recalc: coverage median=-14.4509538831305; wins=1; errors=none"
+ ]
+}

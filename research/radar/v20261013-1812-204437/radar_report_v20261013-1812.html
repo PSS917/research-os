@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title> </title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<style>body{font-family:'Noto Sans CJK SC','Noto Sans',sans-serif;max-width:1100px;margin:auto;padding:24px;line-height:1.6;color:#1b1b1b}table{border-collapse:collapse;font-size:13px;margin:8px 0}td,th{border:1px solid #ccd;padding:4px 8px}th{background:#1F3A5F;color:#fff}img{max-width:100%;border:1px solid #ddd}h1{color:#1F3A5F}h2{border-bottom:2px solid #1F3A5F}abbr{text-decoration:underline dotted #2E86C1;cursor:help}.box30{background:linear-gradient(135deg,#eaf2ff,#f5ecff);border:2px solid #5b8cff;border-radius:14px;padding:6px 18px;margin:14px 0;font-size:16px}.readmap{background:#f6f8fb;border:1px solid #d5dbe6;border-radius:12px;padding:4px 16px;margin:12px 0}.howto{background:#fff8e6;border-left:5px solid #f59e0b;border-radius:8px;padding:2px 14px;margin:6px 0 22px}.quiz{background:#effaf3;border:1px solid #9bd8b1;border-radius:12px;padding:4px 16px}details{margin:8px 0}details.l3{background:#f7f7f9;border:1px dashed #b8c0cc;border-radius:10px;padding:6px 14px}summary{cursor:pointer;font-weight:600;color:#1F3A5F}body{font-size:15.5px}blockquote{background:#f3f6fa;border-left:4px solid #2E86C1;margin:0;padding:6px 12px}</style></head>
+<body><div style="background:#fff7ed;border:1px solid #fdba74;padding:8px 12px;margin:8px 0;font-size:13px">历史版本：PDF/Word/图片已归档至 GitHub Release（下载：<a href="https://github.com/PSS917/research-os/releases/download/archive-v20261013-1812-204437/radar_v20261013-1812.zip">ZIP</a>）。Archived version — heavy files live in Release assets.</div>
+<header id="title-block-header">
+<h1 class="title"> </h1>
+</header>
+<h1 id="台日韩题材雷达-twjpkr-theme-radar-v20261013-1812">台日韩题材雷达
+TW/JP/KR Theme Radar v20261013-1812</h1>
+<blockquote>
+<p>快照 20261013-1812；等权篮子；评分 = 0.5×1W + 0.3×1M + 0.2×3M
+(ASSUMPTION)。分类到技术/制程/产品层级(L2)。非投资建议。</p>
+</blockquote>
+<h2 id="题材排名-theme-ranking">1. 题材排名 Theme ranking</h2>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr>
+<th>市场</th>
+<th>题材L1</th>
+<th>成分数</th>
+<th>1W</th>
+<th>1M</th>
+<th>3M</th>
+<th>评分</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KR</td>
+<td>Battery 电池</td>
+<td>1</td>
+<td>+13.7%</td>
+<td>+13.1%</td>
+<td>+23.5%</td>
+<td>+15.5</td>
+<td>STRONG 强</td>
+</tr>
+<tr>
+<td>JP</td>
+<td>Test 测试</td>
+<td>1</td>
+<td>+0.2%</td>
+<td>+19.5%</td>
+<td>+46.7%</td>
+<td>+15.3</td>
+<td>STRONG 强</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>PCB/ABF Substrate 载板</td>
+<td>2</td>
+<td>-5.5%</td>
+<td>+32.1%</td>
+<td>+26.7%</td>
+<td>+12.2</td>
+<td>STRONG 强</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>Thermal 散热</td>
+<td>2</td>
+<td>-3.3%</td>
+<td>+5.0%</td>
+<td>+50.4%</td>
+<td>+9.9</td>
+<td>STRONG 强</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>ASIC/SoC 芯片设计</td>
+<td>3</td>
+<td>+0.1%</td>
+<td>+10.8%</td>
+<td>+33.0%</td>
+<td>+9.9</td>
+<td>STRONG 强</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>Advanced Packaging 先进封测</td>
+<td>1</td>
+<td>+3.8%</td>
+<td>+19.7%</td>
+<td>+9.3%</td>
+<td>+9.7</td>
+<td>STRONG 强</td>
+</tr>
+<tr>
+<td>JP</td>
+<td>Power Grid 电网</td>
+<td>1</td>
+<td>+2.2%</td>
+<td>+11.7%</td>
+<td>+21.3%</td>
+<td>+8.8</td>
+<td>STRONG 强</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>CCL 覆铜板</td>
+<td>2</td>
+<td>+4.6%</td>
+<td>+13.4%</td>
+<td>+5.3%</td>
+<td>+7.4</td>
+<td>STRONG 强</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>PCB 印刷电路板</td>
+<td>1</td>
+<td>+5.9%</td>
+<td>+8.8%</td>
+<td>+8.8%</td>
+<td>+7.4</td>
+<td>STRONG 强</td>
+</tr>
+<tr>
+<td>KR</td>
+<td>PCB 印刷电路板</td>
+<td>1</td>
+<td>-5.0%</td>
+<td>+4.7%</td>
+<td>+19.6%</td>
+<td>+2.8</td>
+<td>NEUTRAL 中性</td>
+</tr>
+<tr>
+<td>JP</td>
+<td>SPE 半导体设备</td>
+<td>4</td>
+<td>-4.9%</td>
+<td>+17.3%</td>
+<td>-5.8%</td>
+<td>+1.6</td>
+<td>NEUTRAL 中性</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>AI Server ODM 服务器代工</td>
+<td>4</td>
+<td>-0.4%</td>
+<td>-3.0%</td>
+<td>+12.6%</td>
+<td>+1.4</td>
+<td>NEUTRAL 中性</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>Optical 光通信</td>
+<td>2</td>
+<td>-7.7%</td>
+<td>-8.2%</td>
+<td>+37.0%</td>
+<td>+1.1</td>
+<td>NEUTRAL 中性</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>Foundry 晶圆代工</td>
+<td>1</td>
+<td>-0.4%</td>
+<td>+1.1%</td>
+<td>+3.4%</td>
+<td>+0.8</td>
+<td>NEUTRAL 中性</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>Networking 网通</td>
+<td>1</td>
+<td>+3.8%</td>
+<td>+4.3%</td>
+<td>-16.8%</td>
+<td>-0.1</td>
+<td>NEUTRAL 中性</td>
+</tr>
+<tr>
+<td>JP</td>
+<td>Materials 材料</td>
+<td>1</td>
+<td>-2.3%</td>
+<td>+6.9%</td>
+<td>-12.0%</td>
+<td>-1.5</td>
+<td>NEUTRAL 中性</td>
+</tr>
+<tr>
+<td>JP</td>
+<td>Robotics 机器人</td>
+<td>2</td>
+<td>-0.9%</td>
+<td>+7.7%</td>
+<td>-17.1%</td>
+<td>-1.5</td>
+<td>NEUTRAL 中性</td>
+</tr>
+<tr>
+<td>JP</td>
+<td>Optical 光通信</td>
+<td>2</td>
+<td>-8.0%</td>
+<td>+5.9%</td>
+<td>+1.7%</td>
+<td>-1.9</td>
+<td>NEUTRAL 中性</td>
+</tr>
+<tr>
+<td>JP</td>
+<td>PCB/ABF Substrate 载板</td>
+<td>1</td>
+<td>-13.4%</td>
+<td>+2.2%</td>
+<td>+11.4%</td>
+<td>-3.8</td>
+<td>WEAK 弱</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>Power 电源</td>
+<td>1</td>
+<td>-5.8%</td>
+<td>-1.7%</td>
+<td>-5.6%</td>
+<td>-4.5</td>
+<td>WEAK 弱</td>
+</tr>
+<tr>
+<td>KR</td>
+<td>Advanced Packaging 先进封测</td>
+<td>1</td>
+<td>-14.7%</td>
+<td>-4.8%</td>
+<td>+8.8%</td>
+<td>-7.0</td>
+<td>WEAK 弱</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>Memory 存储</td>
+<td>2</td>
+<td>-8.5%</td>
+<td>-11.1%</td>
+<td>+1.8%</td>
+<td>-7.2</td>
+<td>WEAK 弱</td>
+</tr>
+<tr>
+<td>JP</td>
+<td>Components 被动元件</td>
+<td>1</td>
+<td>-13.3%</td>
+<td>+8.4%</td>
+<td>-15.6%</td>
+<td>-7.2</td>
+<td>WEAK 弱</td>
+</tr>
+<tr>
+<td>JP</td>
+<td>ASIC/SoC 芯片设计</td>
+<td>1</td>
+<td>-13.0%</td>
+<td>+4.5%</td>
+<td>-23.5%</td>
+<td>-9.8</td>
+<td>WEAK 弱</td>
+</tr>
+<tr>
+<td>KR</td>
+<td>Components 被动元件</td>
+<td>1</td>
+<td>-12.7%</td>
+<td>-6.3%</td>
+<td>-17.3%</td>
+<td>-11.7</td>
+<td>WEAK 弱</td>
+</tr>
+<tr>
+<td>KR</td>
+<td>Power Gen 发电</td>
+<td>1</td>
+<td>-14.5%</td>
+<td>-20.1%</td>
+<td>-14.0%</td>
+<td>-16.1</td>
+<td>WEAK 弱</td>
+</tr>
+<tr>
+<td>JP</td>
+<td>AI Platform/Capital AI 资本</td>
+<td>1</td>
+<td>-18.3%</td>
+<td>-18.9%</td>
+<td>-7.8%</td>
+<td>-16.4</td>
+<td>WEAK 弱</td>
+</tr>
+<tr>
+<td>KR</td>
+<td>Autos/Robotics 汽车/机器人</td>
+<td>1</td>
+<td>-9.7%</td>
+<td>-19.8%</td>
+<td>-33.9%</td>
+<td>-17.6</td>
+<td>WEAK 弱</td>
+</tr>
+<tr>
+<td>KR</td>
+<td>Memory 存储</td>
+<td>2</td>
+<td>-18.6%</td>
+<td>-16.6%</td>
+<td>-28.0%</td>
+<td>-19.9</td>
+<td>WEAK 弱</td>
+</tr>
+<tr>
+<td>KR</td>
+<td>Defense/Space 国防航天</td>
+<td>1</td>
+<td>-18.9%</td>
+<td>-19.2%</td>
+<td>-25.2%</td>
+<td>-20.2</td>
+<td>WEAK 弱</td>
+</tr>
+<tr>
+<td>KR</td>
+<td>Power Grid 电网</td>
+<td>3</td>
+<td>-17.8%</td>
+<td>-22.5%</td>
+<td>-25.5%</td>
+<td>-20.8</td>
+<td>WEAK 弱</td>
+</tr>
+<tr>
+<td>JP</td>
+<td>Memory 存储</td>
+<td>1</td>
+<td>-20.6%</td>
+<td>-20.7%</td>
+<td>-36.6%</td>
+<td>-23.8</td>
+<td>WEAK 弱</td>
+</tr>
+</tbody>
+</table>
+<h2 id="个股明细-技术制程产品-l2">2. 个股明细 (技术/制程/产品 L2)</h2>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr>
+<th>市场</th>
+<th>题材L1</th>
+<th>细分L2</th>
+<th>代码</th>
+<th>1D</th>
+<th>1W</th>
+<th>1M</th>
+<th>3M</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TW</td>
+<td>Foundry 晶圆代工</td>
+<td>N3/N2 先进制程 + CoWoS</td>
+<td>2330.TW</td>
+<td>-2.4%</td>
+<td>-0.4%</td>
+<td>+1.1%</td>
+<td>+3.4%</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>ASIC/SoC 芯片设计</td>
+<td>Custom ASIC / 手机SoC</td>
+<td>2454.TW</td>
+<td>-3.5%</td>
+<td>-8.6%</td>
+<td>-3.9%</td>
+<td>+15.3%</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>ASIC/SoC 芯片设计</td>
+<td>Custom ASIC 设计服务</td>
+<td>3661.TW</td>
+<td>-6.7%</td>
+<td>+6.4%</td>
+<td>+0.6%</td>
+<td>-2.9%</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>ASIC/SoC 芯片设计</td>
+<td>ASIC 设计服务</td>
+<td>3443.TW</td>
+<td>-3.2%</td>
+<td>+2.5%</td>
+<td>+35.8%</td>
+<td>+86.5%</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>AI Server ODM 服务器代工</td>
+<td>GB/VR rack 整机</td>
+<td>2317.TW</td>
+<td>-3.6%</td>
+<td>-4.4%</td>
+<td>-4.6%</td>
+<td>+1.1%</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>AI Server ODM 服务器代工</td>
+<td>L10-L11 rack</td>
+<td>2382.TW</td>
+<td>-0.8%</td>
+<td>-2.7%</td>
+<td>-1.5%</td>
+<td>-9.8%</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>AI Server ODM 服务器代工</td>
+<td>Hyperscaler 白牌</td>
+<td>6669.TW</td>
+<td>-2.0%</td>
+<td>+5.3%</td>
+<td>-6.2%</td>
+<td>+29.9%</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>AI Server ODM 服务器代工</td>
+<td>L6-L10</td>
+<td>3231.TW</td>
+<td>-0.8%</td>
+<td>+0.3%</td>
+<td>+0.3%</td>
+<td>+29.4%</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>Advanced Packaging 先进封测</td>
+<td>OSAT / CoWoS-like</td>
+<td>3711.TW</td>
+<td>-0.5%</td>
+<td>+3.8%</td>
+<td>+19.7%</td>
+<td>+9.3%</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>PCB/ABF Substrate 载板</td>
+<td>ABF 载板</td>
+<td>3037.TW</td>
+<td>-7.1%</td>
+<td>-9.6%</td>
+<td>+23.7%</td>
+<td>+34.9%</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>PCB/ABF Substrate 载板</td>
+<td>ABF 载板</td>
+<td>8046.TW</td>
+<td>-2.4%</td>
+<td>-1.4%</td>
+<td>+40.5%</td>
+<td>+18.5%</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>CCL 覆铜板</td>
+<td>高速 CCL (M8/M9)</td>
+<td>2383.TW</td>
+<td>-7.6%</td>
+<td>+6.9%</td>
+<td>+3.8%</td>
+<td>+5.2%</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>CCL 覆铜板</td>
+<td>高速 CCL</td>
+<td>6274.TWO</td>
+<td>-4.9%</td>
+<td>+2.2%</td>
+<td>+23.0%</td>
+<td>+5.4%</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>PCB 印刷电路板</td>
+<td>AI server PCB/HDI</td>
+<td>2368.TW</td>
+<td>-8.9%</td>
+<td>+5.9%</td>
+<td>+8.8%</td>
+<td>+8.8%</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>Thermal 散热</td>
+<td>液冷 cold plate / 3D VC</td>
+<td>3017.TW</td>
+<td>-4.7%</td>
+<td>-4.7%</td>
+<td>-0.2%</td>
+<td>+40.4%</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>Thermal 散热</td>
+<td>液冷 CDU/manifold</td>
+<td>3324.TWO</td>
+<td>-3.0%</td>
+<td>-2.0%</td>
+<td>+10.1%</td>
+<td>+60.3%</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>Power 电源</td>
+<td>AI rack PSU / HVDC</td>
+<td>2308.TW</td>
+<td>-9.7%</td>
+<td>-5.8%</td>
+<td>-1.7%</td>
+<td>-5.6%</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>Optical 光通信</td>
+<td>InP 磊晶 epi wafer</td>
+<td>3081.TWO</td>
+<td>-7.9%</td>
+<td>-6.8%</td>
+<td>-4.9%</td>
+<td>+49.8%</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>Optical 光通信</td>
+<td>光收发模块/CPO</td>
+<td>4979.TWO</td>
+<td>-5.3%</td>
+<td>-8.5%</td>
+<td>-11.6%</td>
+<td>+24.3%</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>Networking 网通</td>
+<td>800G/1.6T 交换机</td>
+<td>2345.TW</td>
+<td>-1.4%</td>
+<td>+3.8%</td>
+<td>+4.3%</td>
+<td>-16.8%</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>Memory 存储</td>
+<td>DRAM 利基</td>
+<td>2408.TW</td>
+<td>-8.3%</td>
+<td>-7.2%</td>
+<td>-8.1%</td>
+<td>+12.1%</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>Memory 存储</td>
+<td>DRAM/NOR 利基</td>
+<td>2344.TW</td>
+<td>-8.8%</td>
+<td>-9.8%</td>
+<td>-14.1%</td>
+<td>-8.5%</td>
+</tr>
+<tr>
+<td>JP</td>
+<td>SPE 半导体设备</td>
+<td>刻蚀/涂布显影</td>
+<td>8035.T</td>
+<td>-7.2%</td>
+<td>-9.5%</td>
+<td>+10.8%</td>
+<td>-11.2%</td>
+</tr>
+<tr>
+<td>JP</td>
+<td>Test 测试</td>
+<td>SoC/HBM ATE</td>
+<td>6857.T</td>
+<td>-2.9%</td>
+<td>+0.2%</td>
+<td>+19.5%</td>
+<td>+46.7%</td>
+</tr>
+<tr>
+<td>JP</td>
+<td>SPE 半导体设备</td>
+<td>Dicing/Grinding (HBM)</td>
+<td>6146.T</td>
+<td>-4.7%</td>
+<td>-8.1%</td>
+<td>+9.0%</td>
+<td>-13.9%</td>
+</tr>
+<tr>
+<td>JP</td>
+<td>SPE 半导体设备</td>
+<td>EUV mask inspection</td>
+<td>6920.T</td>
+<td>-5.1%</td>
+<td>-0.2%</td>
+<td>+32.0%</td>
+<td>+9.7%</td>
+</tr>
+<tr>
+<td>JP</td>
+<td>SPE 半导体设备</td>
+<td>清洗设备</td>
+<td>7735.T</td>
+<td>-6.3%</td>
+<td>-1.8%</td>
+<td>+17.3%</td>
+<td>-7.8%</td>
+</tr>
+<tr>
+<td>JP</td>
+<td>ASIC/SoC 芯片设计</td>
+<td>Socionext ASIC</td>
+<td>6526.T</td>
+<td>-6.9%</td>
+<td>-13.0%</td>
+<td>+4.5%</td>
+<td>-23.5%</td>
+</tr>
+<tr>
+<td>JP</td>
+<td>PCB/ABF Substrate 载板</td>
+<td>ABF 载板 (Ibiden)</td>
+<td>4062.T</td>
+<td>-7.8%</td>
+<td>-13.4%</td>
+<td>+2.2%</td>
+<td>+11.4%</td>
+</tr>
+<tr>
+<td>JP</td>
+<td>Materials 材料</td>
+<td>硅晶圆/光刻胶</td>
+<td>4063.T</td>
+<td>-0.2%</td>
+<td>-2.3%</td>
+<td>+6.9%</td>
+<td>-12.0%</td>
+</tr>
+<tr>
+<td>JP</td>
+<td>Optical 光通信</td>
+<td>光纤/光缆 (Fujikura)</td>
+<td>5803.T</td>
+<td>-6.3%</td>
+<td>-8.9%</td>
+<td>+0.1%</td>
+<td>+5.5%</td>
+</tr>
+<tr>
+<td>JP</td>
+<td>Optical 光通信</td>
+<td>光纤+电线 (Sumitomo Elec)</td>
+<td>5802.T</td>
+<td>-2.9%</td>
+<td>-7.0%</td>
+<td>+11.7%</td>
+<td>-2.1%</td>
+</tr>
+<tr>
+<td>JP</td>
+<td>Memory 存储</td>
+<td>NAND (Kioxia)</td>
+<td>285A.T</td>
+<td>-13.3%</td>
+<td>-20.6%</td>
+<td>-20.7%</td>
+<td>-36.6%</td>
+</tr>
+<tr>
+<td>JP</td>
+<td>Power Grid 电网</td>
+<td>变压器/电网 (Hitachi)</td>
+<td>6501.T</td>
+<td>+1.7%</td>
+<td>+2.2%</td>
+<td>+11.7%</td>
+<td>+21.3%</td>
+</tr>
+<tr>
+<td>JP</td>
+<td>AI Platform/Capital AI 资本</td>
+<td>SoftBank/ARM/Stargate</td>
+<td>9984.T</td>
+<td>-8.5%</td>
+<td>-18.3%</td>
+<td>-18.9%</td>
+<td>-7.8%</td>
+</tr>
+<tr>
+<td>JP</td>
+<td>Components 被动元件</td>
+<td>MLCC</td>
+<td>6981.T</td>
+<td>-4.9%</td>
+<td>-13.3%</td>
+<td>+8.4%</td>
+<td>-15.6%</td>
+</tr>
+<tr>
+<td>JP</td>
+<td>Robotics 机器人</td>
+<td>Fanuc 工业机器人</td>
+<td>6954.T</td>
+<td>+1.5%</td>
+<td>+0.1%</td>
+<td>+6.8%</td>
+<td>-7.6%</td>
+</tr>
+<tr>
+<td>JP</td>
+<td>Robotics 机器人</td>
+<td>Yaskawa 伺服/机器人</td>
+<td>6506.T</td>
+<td>+1.2%</td>
+<td>-1.8%</td>
+<td>+8.6%</td>
+<td>-26.5%</td>
+</tr>
+<tr>
+<td>KR</td>
+<td>Memory 存储</td>
+<td>DRAM/HBM/Foundry (Samsung)</td>
+<td>005930.KS</td>
+<td>-11.5%</td>
+<td>-15.9%</td>
+<td>-14.1%</td>
+<td>-21.6%</td>
+</tr>
+<tr>
+<td>KR</td>
+<td>Memory 存储</td>
+<td>HBM 领先 (SK hynix)</td>
+<td>000660.KS</td>
+<td>-14.2%</td>
+<td>-21.3%</td>
+<td>-19.1%</td>
+<td>-34.4%</td>
+</tr>
+<tr>
+<td>KR</td>
+<td>Advanced Packaging 先进封测</td>
+<td>TC Bonder (Hanmi)</td>
+<td>042700.KS</td>
+<td>-14.2%</td>
+<td>-14.7%</td>
+<td>-4.8%</td>
+<td>+8.8%</td>
+</tr>
+<tr>
+<td>KR</td>
+<td>Components 被动元件</td>
+<td>MLCC/FC-BGA (SEMCO)</td>
+<td>009150.KS</td>
+<td>-11.8%</td>
+<td>-12.7%</td>
+<td>-6.3%</td>
+<td>-17.3%</td>
+</tr>
+<tr>
+<td>KR</td>
+<td>PCB 印刷电路板</td>
+<td>高多层 PCB (Isu Petasys)</td>
+<td>007660.KS</td>
+<td>-6.6%</td>
+<td>-5.0%</td>
+<td>+4.7%</td>
+<td>+19.6%</td>
+</tr>
+<tr>
+<td>KR</td>
+<td>Power Grid 电网</td>
+<td>变压器 (HD Hyundai Electric)</td>
+<td>267260.KS</td>
+<td>-7.6%</td>
+<td>-16.8%</td>
+<td>-26.6%</td>
+<td>-37.6%</td>
+</tr>
+<tr>
+<td>KR</td>
+<td>Power Grid 电网</td>
+<td>配电 (LS Electric)</td>
+<td>010120.KS</td>
+<td>-8.3%</td>
+<td>-13.0%</td>
+<td>-13.4%</td>
+<td>-13.0%</td>
+</tr>
+<tr>
+<td>KR</td>
+<td>Power Grid 电网</td>
+<td>变压器 (Hyosung Heavy)</td>
+<td>298040.KS</td>
+<td>-13.7%</td>
+<td>-23.7%</td>
+<td>-27.4%</td>
+<td>-25.8%</td>
+</tr>
+<tr>
+<td>KR</td>
+<td>Power Gen 发电</td>
+<td>燃机/核电 (Doosan Enerbility)</td>
+<td>034020.KS</td>
+<td>-10.0%</td>
+<td>-14.5%</td>
+<td>-20.1%</td>
+<td>-14.0%</td>
+</tr>
+<tr>
+<td>KR</td>
+<td>Defense/Space 国防航天</td>
+<td>Hanwha Aerospace</td>
+<td>012450.KS</td>
+<td>-5.8%</td>
+<td>-18.9%</td>
+<td>-19.2%</td>
+<td>-25.2%</td>
+</tr>
+<tr>
+<td>KR</td>
+<td>Autos/Robotics 汽车/机器人</td>
+<td>Hyundai Motor/Boston Dynamics</td>
+<td>005380.KS</td>
+<td>-2.9%</td>
+<td>-9.7%</td>
+<td>-19.8%</td>
+<td>-33.9%</td>
+</tr>
+<tr>
+<td>KR</td>
+<td>Battery 电池</td>
+<td>LGES ESS</td>
+<td>373220.KS</td>
+<td>+2.2%</td>
+<td>+13.7%</td>
+<td>+13.1%</td>
+<td>+23.5%</td>
+</tr>
+</tbody>
+</table>
+<h2 id="美股联动-us-read-across">3. 美股联动 US read-across</h2>
+<ul>
+<li>Memory: MU ↔︎ 000660.KS/005930.KS/285A.T；Foundry: TSM ↔︎
+2330.TW；Optical: LITE/COHR/GLW ↔︎ 5803.T/3081.TWO/4979.TWO；Power grid:
+PWR/EME ↔︎ 267260.KS/6501.T；ASIC: AVGO/MRVL ↔︎ 3661.TW/2454.TW；SPE:
+AMAT/KLAC ↔︎ 8035.T/6857.T/6146.T。 ## 4. 教学 Teaching 题材轮动
+(rotation｜轮动) =
+资金从一个篮子转向另一个。看”1W强但3M弱”=新启动；“3M强但1W弱”=可能拥挤后降温。证伪:
+美股对应龙头财报不及预期而亚洲篮子仍上涨 → 题材脱离基本面。 English:
+rotation = money moving between baskets; strong 1W/weak 3M = new
+leadership; strong 3M/weak 1W = possible crowding unwind. ## Source
+Ledger Yahoo Finance local-exchange daily closes, snapshot
+20261013-1812. Theme mapping = analyst classification
+(pipeline/universe.py).</li>
+</ul>
+<figure>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261013-1812-204437/radar_v20261013-1812.zip" alt="TW" />
+<figcaption aria-hidden="true">TW</figcaption>
+</figure>
+<figure>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261013-1812-204437/radar_v20261013-1812.zip" alt="JP" />
+<figcaption aria-hidden="true">JP</figcaption>
+</figure>
+<figure>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261013-1812-204437/radar_v20261013-1812.zip" alt="KR" />
+<figcaption aria-hidden="true">KR</figcaption>
+</figure>
+</body>
+</html>
