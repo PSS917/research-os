@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title> </title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<style>body{font-family:'Noto Sans CJK SC','Noto Sans',sans-serif;max-width:1100px;margin:auto;padding:24px;line-height:1.6;color:#1b1b1b}table{border-collapse:collapse;font-size:13px;margin:8px 0}td,th{border:1px solid #ccd;padding:4px 8px}th{background:#1F3A5F;color:#fff}img{max-width:100%;border:1px solid #ddd}h1{color:#1F3A5F}h2{border-bottom:2px solid #1F3A5F}abbr{text-decoration:underline dotted #2E86C1;cursor:help}.box30{background:linear-gradient(135deg,#eaf2ff,#f5ecff);border:2px solid #5b8cff;border-radius:14px;padding:6px 18px;margin:14px 0;font-size:16px}.readmap{background:#f6f8fb;border:1px solid #d5dbe6;border-radius:12px;padding:4px 16px;margin:12px 0}.howto{background:#fff8e6;border-left:5px solid #f59e0b;border-radius:8px;padding:2px 14px;margin:6px 0 22px}.quiz{background:#effaf3;border:1px solid #9bd8b1;border-radius:12px;padding:4px 16px}details{margin:8px 0}details.l3{background:#f7f7f9;border:1px dashed #b8c0cc;border-radius:10px;padding:6px 14px}summary{cursor:pointer;font-weight:600;color:#1F3A5F}body{font-size:15.5px}blockquote{background:#f3f6fa;border-left:4px solid #2E86C1;margin:0;padding:6px 12px}</style></head>
+<body>
+<header id="title-block-header">
+<h1 class="title"> </h1>
+</header>
+<h1
+id="宏观与跨资产专题-macro-cross-asset-special-v20261017-0755">宏观与跨资产专题
+Macro &amp; Cross-Asset Special v20261017-0755</h1>
+<blockquote>
+<p>数据快照 20261017-0755 (SGT)。来源: FRED、Yahoo
+Finance。非投资建议。</p>
+</blockquote>
+<h2 id="结论摘要-inference">1. 结论摘要 (INFERENCE)</h2>
+<ul>
+<li>通胀: CPI 同比 +3.7% (2026-09-01)，核心CPI +2.6%，核心PCE +3.0%
+(2026-08-01)——仍高于2%目标。</li>
+<li>政策利率上限 4.0% (2026-10-16)；10Y 5.1%；10Y实际利率 2.78%；2s10s
+0.35%。</li>
+<li>美元净流动性代理 ≈ 5,872 bn USD (WALCL−RRP−TGA)。</li>
+<li>套息压力 Carry Stress: <strong>CALM</strong> (USD/JPY 1个月
++1.3%，VIX 20.0)。</li>
+<li>高收益利差 HY OAS 3.23%；芝加哥金融条件指数 NFCI
+-0.499（负=宽松）。</li>
+</ul>
+<h2 id="传导链-transmission-chain">2. 传导链 Transmission chain</h2>
+<p>通胀/就业 → FOMC 反应函数 → 2Y → 10Y(含期限溢价/财政) → 实际利率 →
+WACC → 成长股估值倍数；BOJ → JGB → USD/JPY 速度 → 套息平仓 →
+全球流动性。</p>
+<h2 id="市场心理与资金-证据要求">3. 市场心理与资金 (证据要求)</h2>
+<ul>
+<li>本版可用证据:
+跨资产价格(见热力图)、VIX、信用利差。CFTC持仓/基金经理调查/期权偏度
+<strong>UNAVAILABLE</strong>（未接入），因此不对”机构定位”作断言。</li>
+<li>反身性观察: 若AI龙头上涨同时HYG下跌 → 脆弱的风险偏好。</li>
+</ul>
+<h2 id="ai-生产率-通胀-fed-专题框架">4. AI 生产率 → 通胀 → Fed
+(专题框架)</h2>
+<p>AI Capex ↑ → 生产率 ↑ → 单位劳动成本 ULC ↓ → 核心通胀 ↓ → Fed 更鸽
+(鸽派路径)；或 AI Capex ↑ → 电力/建设/芯片需求过热 → 通胀 ↑ → Fed 更鹰
+(过热路径)。证据: 11/5 生产率与成本(BLS, CONFIRMED)、ECI 10/30。</p>
+<h2 id="跨资产表-data">5. 跨资产表 (DATA)</h2>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr>
+<th>资产</th>
+<th>代码</th>
+<th>最新</th>
+<th>日期</th>
+<th>1D</th>
+<th>1W</th>
+<th>1M</th>
+<th>1Y</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S&amp;P 500</td>
+<td>^GSPC</td>
+<td>7,659.440</td>
+<td>2026-10-16</td>
+<td>-1.1%</td>
+<td>-1.9%</td>
+<td>+0.3%</td>
+<td>+14.8%</td>
+</tr>
+<tr>
+<td>Nasdaq-100</td>
+<td>^NDX</td>
+<td>29,187.549</td>
+<td>2026-10-16</td>
+<td>-2.5%</td>
+<td>-5.5%</td>
+<td>-0.9%</td>
+<td>+18.0%</td>
+</tr>
+<tr>
+<td>PHLX Semiconductor｜费城半导体</td>
+<td>^SOX</td>
+<td>11,137.287</td>
+<td>2026-10-16</td>
+<td>-3.8%</td>
+<td>-11.4%</td>
+<td>-4.0%</td>
+<td>+64.6%</td>
+</tr>
+<tr>
+<td>VIX 波动率</td>
+<td>^VIX</td>
+<td>19.990</td>
+<td>2026-10-16</td>
+<td>+21.4%</td>
+<td>+34.7%</td>
+<td>+29.5%</td>
+<td>-3.8%</td>
+</tr>
+<tr>
+<td>13W T-Bill</td>
+<td>^IRX</td>
+<td>4.070</td>
+<td>2026-10-16</td>
+<td>-0.4%</td>
+<td>+0.3%</td>
+<td>+2.6%</td>
+<td>+5.5%</td>
+</tr>
+<tr>
+<td>5Y UST</td>
+<td>^FVX</td>
+<td>4.899</td>
+<td>2026-10-16</td>
+<td>+0.0%</td>
+<td>-2.4%</td>
+<td>+2.0%</td>
+<td>+35.0%</td>
+</tr>
+<tr>
+<td>10Y UST 收益率</td>
+<td>^TNX</td>
+<td>5.098</td>
+<td>2026-10-16</td>
+<td>+0.2%</td>
+<td>-2.8%</td>
+<td>+3.1%</td>
+<td>+26.0%</td>
+</tr>
+<tr>
+<td>30Y UST</td>
+<td>^TYX</td>
+<td>5.436</td>
+<td>2026-10-16</td>
+<td>+0.1%</td>
+<td>-2.9%</td>
+<td>+2.6%</td>
+<td>+17.2%</td>
+</tr>
+<tr>
+<td>DXY 美元指数</td>
+<td>DX-Y.NYB</td>
+<td>101.779</td>
+<td>2026-10-16</td>
+<td>-0.2%</td>
+<td>-0.4%</td>
+<td>+1.6%</td>
+<td>+3.0%</td>
+</tr>
+<tr>
+<td>USD/JPY 美元/日元</td>
+<td>JPY=X</td>
+<td>157.987</td>
+<td>2026-10-16</td>
+<td>+0.0%</td>
+<td>-0.0%</td>
+<td>+1.3%</td>
+<td>+3.2%</td>
+</tr>
+<tr>
+<td>EUR/USD</td>
+<td>EURUSD=X</td>
+<td>1.124</td>
+<td>2026-10-16</td>
+<td>+0.4%</td>
+<td>+0.3%</td>
+<td>-2.0%</td>
+<td>-3.3%</td>
+</tr>
+<tr>
+<td>WTI 原油</td>
+<td>CL=F</td>
+<td>99.040</td>
+<td>2026-10-16</td>
+<td>+1.1%</td>
+<td>+7.8%</td>
+<td>-2.8%</td>
+<td>+70.0%</td>
+</tr>
+<tr>
+<td>Gold 黄金</td>
+<td>GC=F</td>
+<td>4,186.700</td>
+<td>2026-10-16</td>
+<td>+0.4%</td>
+<td>-0.7%</td>
+<td>-4.8%</td>
+<td>-0.4%</td>
+</tr>
+<tr>
+<td>Copper 铜</td>
+<td>HG=F</td>
+<td>6.562</td>
+<td>2026-10-16</td>
+<td>+0.8%</td>
+<td>-1.2%</td>
+<td>-0.4%</td>
+<td>+32.0%</td>
+</tr>
+<tr>
+<td>Bitcoin</td>
+<td>BTC-USD</td>
+<td>81,499.219</td>
+<td>2026-10-16</td>
+<td>-0.8%</td>
+<td>-2.6%</td>
+<td>-3.0%</td>
+<td>+15.5%</td>
+</tr>
+<tr>
+<td>Nikkei 225 日经</td>
+<td>^N225</td>
+<td>64,425.949</td>
+<td>2026-10-15</td>
+<td>-4.9%</td>
+<td>-8.0%</td>
+<td>-1.3%</td>
+<td>+43.4%</td>
+</tr>
+<tr>
+<td>TAIEX 台湾加权</td>
+<td>^TWII</td>
+<td>46,969.871</td>
+<td>2026-10-15</td>
+<td>-3.4%</td>
+<td>-5.7%</td>
+<td>+1.7%</td>
+<td>+83.6%</td>
+</tr>
+<tr>
+<td>KOSPI 韩国综合</td>
+<td>^KS11</td>
+<td>5,554.220</td>
+<td>2026-10-15</td>
+<td>-7.6%</td>
+<td>-18.4%</td>
+<td>-21.0%</td>
+<td>+64.0%</td>
+</tr>
+<tr>
+<td>HY Credit ETF 高收益债</td>
+<td>HYG</td>
+<td>76.860</td>
+<td>2026-10-16</td>
+<td>-0.4%</td>
+<td>-0.5%</td>
+<td>-1.9%</td>
+<td>+0.9%</td>
+</tr>
+<tr>
+<td>20Y+ UST ETF</td>
+<td>TLT</td>
+<td>80.050</td>
+<td>2026-10-16</td>
+<td>+0.1%</td>
+<td>+2.7%</td>
+<td>-1.7%</td>
+<td>-7.6%</td>
+</tr>
+<tr>
+<td>Semis ETF</td>
+<td>SMH</td>
+<td>539.790</td>
+<td>2026-10-16</td>
+<td>-3.4%</td>
+<td>-10.5%</td>
+<td>-3.7%</td>
+<td>+58.4%</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fred-宏观表-data">6. FRED 宏观表 (DATA)</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>代码</th>
+<th>最新</th>
+<th>日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPI</td>
+<td>CPIAUCSL</td>
+<td>336.298</td>
+<td>2026-09-01</td>
+</tr>
+<tr>
+<td>Core CPI</td>
+<td>CPILFESL</td>
+<td>338.896</td>
+<td>2026-09-01</td>
+</tr>
+<tr>
+<td>Core PCE</td>
+<td>PCEPILFE</td>
+<td>130.455</td>
+<td>2026-08-01</td>
+</tr>
+<tr>
+<td>PPI Final Demand</td>
+<td>PPIFIS</td>
+<td>159.780</td>
+<td>2026-09-01</td>
+</tr>
+<tr>
+<td>Unemployment Rate</td>
+<td>UNRATE</td>
+<td>4.200</td>
+<td>2026-09-01</td>
+</tr>
+<tr>
+<td>Nonfarm Payrolls</td>
+<td>PAYEMS</td>
+<td>159,044.000</td>
+<td>2026-09-01</td>
+</tr>
+<tr>
+<td>AHE</td>
+<td>CES0500000003</td>
+<td>37.810</td>
+<td>2026-09-01</td>
+</tr>
+<tr>
+<td>Initial Claims</td>
+<td>ICSA</td>
+<td>199,000.000</td>
+<td>2026-10-10</td>
+</tr>
+<tr>
+<td>Real GDP</td>
+<td>GDPC1</td>
+<td>24,408.011</td>
+<td>2026-04-01</td>
+</tr>
+<tr>
+<td>Fed Funds Upper</td>
+<td>DFEDTARU</td>
+<td>4.000</td>
+<td>2026-10-16</td>
+</tr>
+<tr>
+<td>2Y UST</td>
+<td>DGS2</td>
+<td>4.770</td>
+<td>2026-10-15</td>
+</tr>
+<tr>
+<td>10Y UST</td>
+<td>DGS10</td>
+<td>5.100</td>
+<td>2026-10-15</td>
+</tr>
+<tr>
+<td>10Y-2Y</td>
+<td>T10Y2Y</td>
+<td>0.350</td>
+<td>2026-10-16</td>
+</tr>
+<tr>
+<td>10Y Breakeven</td>
+<td>T10YIE</td>
+<td>2.350</td>
+<td>2026-10-16</td>
+</tr>
+<tr>
+<td>10Y Real Yield</td>
+<td>DFII10</td>
+<td>2.780</td>
+<td>2026-10-15</td>
+</tr>
+<tr>
+<td>HY OAS</td>
+<td>BAMLH0A0HYM2</td>
+<td>3.230</td>
+<td>2026-10-15</td>
+</tr>
+<tr>
+<td>Fed Balance Sheet</td>
+<td>WALCL</td>
+<td>6,755,639.000</td>
+<td>2026-10-14</td>
+</tr>
+<tr>
+<td>ON RRP</td>
+<td>RRPONTSYD</td>
+<td>0.100</td>
+<td>2026-10-16</td>
+</tr>
+<tr>
+<td>TGA</td>
+<td>WTREGEN</td>
+<td>883,373.000</td>
+<td>2026-10-14</td>
+</tr>
+<tr>
+<td>Chicago NFCI</td>
+<td>NFCI</td>
+<td>-0.499</td>
+<td>2026-10-09</td>
+</tr>
+<tr>
+<td>Japan 10Y (monthly)</td>
+<td>IRLTLT01JPM156N</td>
+<td>3.050</td>
+<td>2026-09-01</td>
+</tr>
+</tbody>
+</table>
+<h2 id="风险与证伪">7. 风险与证伪</h2>
+<ul>
+<li>若核心PCE连续3个月月率≤0.2% → “高通胀粘性”假设被证伪。</li>
+<li>若USD/JPY在1个月内下跌&gt;5% → 套息压力升级、科技股倍数受压。 ## 8.
+Source Ledger FRED series IDs as listed (latest observation dates in
+table); Yahoo Finance daily closes snapshot 20261017-0755. ## 9.
+Assumption Register Carry rule thresholds (ASSUMPTION); net-liquidity
+proxy definition (METHOD).</li>
+</ul>
+<h2 id="图片报告-image-report">图片报告 Image Report</h2>
+<figure>
+<img src="images/macro_1_rates.png" alt="macro_1_rates" />
+<figcaption aria-hidden="true">macro_1_rates</figcaption>
+</figure>
+<figure>
+<img src="images/macro_2_carry.png" alt="macro_2_carry" />
+<figcaption aria-hidden="true">macro_2_carry</figcaption>
+</figure>
+<figure>
+<img src="images/macro_3_inflation.png" alt="macro_3_inflation" />
+<figcaption aria-hidden="true">macro_3_inflation</figcaption>
+</figure>
+<figure>
+<img src="images/macro_4_liquidity.png" alt="macro_4_liquidity" />
+<figcaption aria-hidden="true">macro_4_liquidity</figcaption>
+</figure>
+<figure>
+<img src="images/macro_5_crossasset.png" alt="macro_5_crossasset" />
+<figcaption aria-hidden="true">macro_5_crossasset</figcaption>
+</figure>
+<hr />
+<h1 id="macro-cross-asset-special-english-v20261017-0755">Macro &amp;
+Cross-Asset Special (English) v20261017-0755</h1>
+<ul>
+<li>Inflation: CPI YoY +3.7%, core CPI +2.6%, core PCE +3.0% — above
+2%.</li>
+<li>Fed funds upper 4.0%; 10Y 5.1%; 10Y real 2.78%; 2s10s 0.35%.</li>
+<li>Net liquidity proxy ≈ 5,872 bn USD. Carry stress:
+<strong>CALM</strong> (USD/JPY 1M +1.3%, VIX 20.0).</li>
+<li>Positioning claims are withheld: CFTC/fund-manager survey/option
+skew feeds are UNAVAILABLE in v1.</li>
+<li>AI productivity → inflation → Fed: two competing paths (dovish
+productivity vs overheating); key evidence Nov 5 Productivity &amp;
+Costs, Oct 30 ECI.</li>
+<li>Falsifiers: core PCE ≤0.2% m/m for 3 months; USD/JPY −5% in a month.
+Tables: see Chinese section (bilingual labels).</li>
+</ul>
+</body>
+</html>

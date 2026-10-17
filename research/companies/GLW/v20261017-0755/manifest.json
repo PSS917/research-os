@@ -1,0 +1,106 @@
+{
+ "release": "GLW_v20261017-0755",
+ "generated": "2026-10-17T07:57:26.773819",
+ "files": [
+  {
+   "path": "GLW_model_v20261017-0755.xlsx",
+   "bytes": 35899,
+   "sha256": "1eaf4ebde4c2c443"
+  },
+  {
+   "path": "GLW_report_v20261017-0755.docx",
+   "bytes": 807238,
+   "sha256": "d0e2eb81bb5f10d5"
+  },
+  {
+   "path": "GLW_report_v20261017-0755.html",
+   "bytes": 30517,
+   "sha256": "0b5edcb0055752c0"
+  },
+  {
+   "path": "GLW_report_v20261017-0755.md",
+   "bytes": 17499,
+   "sha256": "feac7470a70f2a8d"
+  },
+  {
+   "path": "GLW_report_v20261017-0755.pdf",
+   "bytes": 1108300,
+   "sha256": "e6582bbbad1a2aa2"
+  },
+  {
+   "path": "GLW_teaching_v20261017-0755.docx",
+   "bytes": 195359,
+   "sha256": "2e18e3e634495c8d"
+  },
+  {
+   "path": "GLW_teaching_v20261017-0755.html",
+   "bytes": 10451,
+   "sha256": "454612c1e825ee00"
+  },
+  {
+   "path": "GLW_teaching_v20261017-0755.md",
+   "bytes": 4674,
+   "sha256": "59943dce8f36dc94"
+  },
+  {
+   "path": "GLW_teaching_v20261017-0755.pdf",
+   "bytes": 250981,
+   "sha256": "846b50b8def7fb5e"
+  },
+  {
+   "path": "images/GLW_1_price_vs_value.jpg",
+   "bytes": 284199,
+   "sha256": "40262027202c12fd"
+  },
+  {
+   "path": "images/GLW_1_price_vs_value.png",
+   "bytes": 203246,
+   "sha256": "ad242060aef62641"
+  },
+  {
+   "path": "images/GLW_2_financials.jpg",
+   "bytes": 251331,
+   "sha256": "eb6028515932e14b"
+  },
+  {
+   "path": "images/GLW_2_financials.png",
+   "bytes": 185951,
+   "sha256": "bb7cd6dccea800c8"
+  },
+  {
+   "path": "images/GLW_3_scenarios.jpg",
+   "bytes": 238744,
+   "sha256": "702da74293c4ed44"
+  },
+  {
+   "path": "images/GLW_3_scenarios.png",
+   "bytes": 165414,
+   "sha256": "84ca683e11653924"
+  },
+  {
+   "path": "images/GLW_4_horizons.jpg",
+   "bytes": 229141,
+   "sha256": "fd87ce5203534b9e"
+  },
+  {
+   "path": "images/GLW_4_horizons.png",
+   "bytes": 161539,
+   "sha256": "7a3676f18e5eea6e"
+  },
+  {
+   "path": "images/GLW_5_logic_map.jpg",
+   "bytes": 241584,
+   "sha256": "68c1a69fd18a8420"
+  },
+  {
+   "path": "images/GLW_5_logic_map.png",
+   "bytes": 210780,
+   "sha256": "7038919f3bbdbc03"
+  },
+  {
+   "path": "summary.json",
+   "bytes": 529,
+   "sha256": "8783e672f0c37a04"
+  }
+ ]
+}

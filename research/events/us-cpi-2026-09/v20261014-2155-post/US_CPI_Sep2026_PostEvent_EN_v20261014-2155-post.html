@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title> </title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<style>body{font-family:'Noto Sans CJK SC','Noto Sans',sans-serif;max-width:1100px;margin:auto;padding:24px;line-height:1.6;color:#1b1b1b}table{border-collapse:collapse;font-size:13px;margin:8px 0}td,th{border:1px solid #ccd;padding:4px 8px}th{background:#1F3A5F;color:#fff}img{max-width:100%;border:1px solid #ddd}h1{color:#1F3A5F}h2{border-bottom:2px solid #1F3A5F}abbr{text-decoration:underline dotted #2E86C1;cursor:help}.box30{background:linear-gradient(135deg,#eaf2ff,#f5ecff);border:2px solid #5b8cff;border-radius:14px;padding:6px 18px;margin:14px 0;font-size:16px}.readmap{background:#f6f8fb;border:1px solid #d5dbe6;border-radius:12px;padding:4px 16px;margin:12px 0}.howto{background:#fff8e6;border-left:5px solid #f59e0b;border-radius:8px;padding:2px 14px;margin:6px 0 22px}.quiz{background:#effaf3;border:1px solid #9bd8b1;border-radius:12px;padding:4px 16px}details{margin:8px 0}details.l3{background:#f7f7f9;border:1px dashed #b8c0cc;border-radius:10px;padding:6px 14px}summary{cursor:pointer;font-weight:600;color:#1F3A5F}body{font-size:15.5px}blockquote{background:#f3f6fa;border-left:4px solid #2E86C1;margin:0;padding:6px 12px}</style></head>
+<body><div style="background:#fff7ed;border:1px solid #fdba74;padding:8px 12px;margin:8px 0;font-size:13px">历史版本：PDF/Word/图片已归档至 GitHub Release（下载：<a href="https://github.com/PSS917/research-os/releases/download/archive-v20261014-2155-post/US_CPI_Sep2026_PostEvent_v20261014-2155-post.zip">ZIP</a>）。Archived version — heavy files live in Release assets.</div>
+<header id="title-block-header">
+<h1 class="title"> </h1>
+</header>
+<h1
+id="us-cpi-sep-2026-post-event-review-english-v20261014-2155-post">US
+CPI Sep 2026 — Post-Event Review (English) v20261014-2155-post</h1>
+<blockquote>
+<p>INTRADAY market snapshot as of 09:54 ET — close review pending |
+Locked pre-event book: v20261013-1803 (2026-10-13T18:03:00+08:00) |
+Data: BLS API; markets yfinance (session 2026-10-14) | <strong>Not
+investment advice</strong></p>
+</blockquote>
+<h2 id="actual-vs-consensus-vs-our-hypothesis">1. Actual vs consensus vs
+our hypothesis</h2>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Actual</th>
+<th>Consensus (locked)</th>
+<th>OS hypothesis</th>
+<th>Surprise</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>headline_mom</td>
+<td>0.6%</td>
+<td>0.6%</td>
+<td>0.58%</td>
+<td>+0.0pp</td>
+</tr>
+<tr>
+<td>headline_yoy</td>
+<td>3.7%</td>
+<td>3.6%</td>
+<td>3.6%</td>
+<td>+0.1pp</td>
+</tr>
+<tr>
+<td>core_mom</td>
+<td>0.3%</td>
+<td>0.2%</td>
+<td>0.22%</td>
+<td>+0.1pp</td>
+</tr>
+<tr>
+<td>core_yoy</td>
+<td>2.6%</td>
+<td>2.5%</td>
+<td>2.4%</td>
+<td>+0.1pp</td>
+</tr>
+</tbody>
+</table>
+<p>Classification: <strong>HOT</strong>. Prior probabilities
+cool/in-line/hot: 25%/50%/25%.</p>
+<h2 id="market-reaction-intraday-as-of-0954-et">2. Market reaction
+(intraday as of 09:54 ET)</h2>
+<table>
+<thead>
+<tr>
+<th>Asset</th>
+<th>Last</th>
+<th>Prior</th>
+<th>Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10Y</td>
+<td>5.29</td>
+<td>5.22</td>
+<td>+7.4bp</td>
+</tr>
+<tr>
+<td>S&amp;P500</td>
+<td>7,773.86</td>
+<td>7,805.45</td>
+<td>-0.40%</td>
+</tr>
+<tr>
+<td>NDX</td>
+<td>30,357.86</td>
+<td>30,569.48</td>
+<td>-0.69%</td>
+</tr>
+<tr>
+<td>SOX</td>
+<td>11,962.17</td>
+<td>12,208.79</td>
+<td>-2.02%</td>
+</tr>
+<tr>
+<td>USDJPY</td>
+<td>158.90</td>
+<td>158.52</td>
+<td>+0.24%</td>
+</tr>
+<tr>
+<td>VIX</td>
+<td>15.60</td>
+<td>15.27</td>
+<td>+2.16%</td>
+</tr>
+</tbody>
+</table>
+<p>Kalshi (public API, 2026-10-14 21:54 MYT, last trade):
+October-meeting hike 44% (prior day 20%; locked pre-event 20%);
+December-meeting hike 85%.</p>
+<h2 id="rate-sensitivity-prediction-vs-actual">3. Rate-sensitivity
+prediction vs actual</h2>
+<table>
+<thead>
+<tr>
+<th>Ticker</th>
+<th>Sensitivity per +10bp</th>
+<th>Predicted</th>
+<th>Actual</th>
+<th>Error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CCL</td>
+<td>-2.59%</td>
+<td>-1.92%</td>
+<td>-2.15%</td>
+<td>-0.23pp</td>
+</tr>
+<tr>
+<td>ARM</td>
+<td>-2.56%</td>
+<td>-1.89%</td>
+<td>-3.98%</td>
+<td>-2.09pp</td>
+</tr>
+<tr>
+<td>SPCX</td>
+<td>-2.56%</td>
+<td>-1.89%</td>
+<td>-2.05%</td>
+<td>-0.16pp</td>
+</tr>
+<tr>
+<td>MRVL</td>
+<td>-1.84%</td>
+<td>-1.36%</td>
+<td>-3.49%</td>
+<td>-2.13pp</td>
+</tr>
+<tr>
+<td>RKLB</td>
+<td>-1.77%</td>
+<td>-1.31%</td>
+<td>-1.95%</td>
+<td>-0.64pp</td>
+</tr>
+<tr>
+<td>INTC</td>
+<td>-1.53%</td>
+<td>-1.13%</td>
+<td>-1.79%</td>
+<td>-0.66pp</td>
+</tr>
+<tr>
+<td>GLW</td>
+<td>-1.49%</td>
+<td>-1.10%</td>
+<td>-1.75%</td>
+<td>-0.65pp</td>
+</tr>
+<tr>
+<td>KLAC</td>
+<td>-1.21%</td>
+<td>-0.90%</td>
+<td>-1.20%</td>
+<td>-0.31pp</td>
+</tr>
+<tr>
+<td>CIEN</td>
+<td>-1.18%</td>
+<td>-0.87%</td>
+<td>-3.73%</td>
+<td>-2.85pp</td>
+</tr>
+<tr>
+<td>QCOM</td>
+<td>-1.16%</td>
+<td>-0.86%</td>
+<td>-1.61%</td>
+<td>-0.75pp</td>
+</tr>
+<tr>
+<td>AMD</td>
+<td>-1.05%</td>
+<td>-0.78%</td>
+<td>-2.94%</td>
+<td>-2.16pp</td>
+</tr>
+<tr>
+<td>NDX</td>
+<td>-0.67%</td>
+<td>-0.50%</td>
+<td>-0.69%</td>
+<td>-0.20pp</td>
+</tr>
+<tr>
+<td>SOX</td>
+<td>-0.89%</td>
+<td>-0.66%</td>
+<td>-2.02%</td>
+<td>-1.36pp</td>
+</tr>
+</tbody>
+</table>
+<h2 id="probability-calibration-vs-base-rate">4. Probability calibration
+vs base rate</h2>
+<p>Rule: when our/consensus probability differs from the base rate by
+&gt;20pp, shrink toward the base rate by ≥50%. | Scenario | Prior | Base
+rate (36m core m/m) | Calibrated | Outcome | |—|—|—|—|—| | cool | 25% |
+14% | 22% | | | inline | 50% | 33% | 44% | | | hot | 25% | 53% | 34% | ✔
+|</p>
+<h2 id="source-ledger">5. Source ledger</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+<th>Source</th>
+<th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPI 实际（核心/整体 环比、同比）</td>
+<td>{‘headline_mom’: 0.6, ‘headline_yoy’: 3.7, ‘core_mom’: 0.3,
+‘core_yoy’: 2.6}</td>
+<td>BLS API（SA 算环比，NSA 算同比）</td>
+<td>2026-10-14 20:30 SGT</td>
+</tr>
+<tr>
+<td>共识</td>
+<td>核心环比 0.2%、同比 2.5%</td>
+<td>事前书 v20261013-1803（锁定）</td>
+<td>2026-10-13T18:03:00+08:00</td>
+</tr>
+<tr>
+<td>10Y 变动</td>
+<td>+7.4bp</td>
+<td>yfinance ^TNX</td>
+<td>2026-10-14 盘中 09:54 ET</td>
+</tr>
+<tr>
+<td>Kalshi 10 月加息</td>
+<td>0.44</td>
+<td>Kalshi 公开 API KXFEDDECISION-26OCT</td>
+<td>2026-10-14 21:54 MYT</td>
+</tr>
+<tr>
+<td>Kalshi 12 月会议加息</td>
+<td>0.8500000000000001</td>
+<td>Kalshi 公开 API KXFEDDECISION-26DEC</td>
+<td>2026-10-14 21:54 MYT</td>
+</tr>
+<tr>
+<td>利率敏感度</td>
+<td>13 只</td>
+<td>事前书 §利率敏感度（过去一年回归，R² 低）</td>
+<td>2026-10-13T18:03:00+08:00</td>
+</tr>
+<tr>
+<td>基础概率</td>
+<td>偏冷/符合/偏热 14%/33%/53%</td>
+<td>FRED CPILFESL 过去 36 个月</td>
+<td>本次运行</td>
+</tr>
+<tr>
+<td>个股/指数涨跌</td>
+<td>17 项</td>
+<td>yfinance</td>
+<td>2026-10-14</td>
+</tr>
+</tbody>
+</table>
+<h2 id="assumption-register">6. Assumption register</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>#</th>
+<th>Assumption</th>
+<th>Type</th>
+<th>Test / failure condition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>偏热阈值：核心环比 ≥0.25% 或意外 ≥+0.1pp</td>
+<td>ASSUMPTION</td>
+<td>若市场对 0.25% 无反应，阈值需上调</td>
+</tr>
+<tr>
+<td>2</td>
+<td>利率敏感度在事件日仍成立</td>
+<td>HYPOTHESIS</td>
+<td>偏差 MAE &gt; 1.5pp 视为失效（Excel Sensitivity!MAE）</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Kalshi 最新成交价≈市场概率</td>
+<td>ASSUMPTION</td>
+<td>成交稀薄/价差 &gt;5c 时不可靠</td>
+</tr>
+<tr>
+<td>4</td>
+<td>36 个月基础概率代表当前通胀体制</td>
+<td>ASSUMPTION</td>
+<td>若体制切换（如连续加息周期），基础概率需重算</td>
+</tr>
+<tr>
+<td>5</td>
+<td>概率校准规则：差 &gt;20pp 收缩 ≥50%</td>
+<td>RULE (master prompt v2026-10-14)</td>
+<td>累计 Brier 若校准后更差则复核规则</td>
+</tr>
+</tbody>
+</table>
+<h2 id="chain-post-mortem">7. Chain post-mortem</h2>
+<p>The detailed link-by-link reasoning review is in the Chinese edition
+(§4). Summary: core surprise +0.1pp, 10Y +7.4bp.</p>
+</body>
+</html>

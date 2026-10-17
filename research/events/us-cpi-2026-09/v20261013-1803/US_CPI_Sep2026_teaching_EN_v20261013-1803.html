@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title> </title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<style>body{font-family:'Noto Sans CJK SC','Noto Sans',sans-serif;max-width:1100px;margin:auto;padding:24px;line-height:1.6;color:#1b1b1b}table{border-collapse:collapse;font-size:13px;margin:8px 0}td,th{border:1px solid #ccd;padding:4px 8px}th{background:#1F3A5F;color:#fff}img{max-width:100%;border:1px solid #ddd}h1{color:#1F3A5F}h2{border-bottom:2px solid #1F3A5F}blockquote{background:#f3f6fa;border-left:4px solid #2E86C1;margin:0;padding:6px 12px}</style></head>
+<body><div style="background:#fff7ed;border:1px solid #fdba74;padding:8px 12px;margin:8px 0;font-size:13px">历史版本：PDF/Word/图片已归档至 GitHub Release（下载：<a href="https://github.com/PSS917/research-os/releases/download/archive-v20261013-1803/US_CPI_Sep2026_PreEvent_v20261013-1803.zip">ZIP</a>）。Archived version — heavy files live in Release assets.</div>
+<header id="title-block-header">
+<h1 class="title"> </h1>
+</header>
+<h1
+id="beginner-teaching-how-to-read-tomorrow-nights-us-cpi初学者教学版-english">Beginner
+Teaching: How to Read Tomorrow Night’s US CPI｜初学者教学版
+(English)</h1>
+<blockquote>
+<p>Release: <strong>Wed 10/14, 20:30 Singapore time</strong>. Snapshot
+2026-10-13 18:03 SGT (v20261013-1803). Not investment advice.</p>
+</blockquote>
+<h2 id="plain-words-what-is-happening">1. Plain words: what is
+happening?</h2>
+<p>Every month the US Bureau of Labor Statistics reports how much a
+basket of goods and services got more expensive. That’s CPI. Tomorrow’s
+report covers September. Markets care most about <strong>core
+CPI</strong>, which strips out food and energy, because it shows whether
+inflation is sticking around.</p>
+<h2 id="glossary术语表">2. Glossary｜术语表</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>English</th>
+<th>中文</th>
+<th>One-line meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPI (Consumer Price Index)</td>
+<td>消费者价格指数</td>
+<td>a thermometer for consumer prices</td>
+</tr>
+<tr>
+<td>Core CPI</td>
+<td>核心CPI</td>
+<td>excludes food and energy to remove the “weather noise”</td>
+</tr>
+<tr>
+<td>MoM (month-over-month)</td>
+<td>环比</td>
+<td>vs last month</td>
+</tr>
+<tr>
+<td>YoY (year-over-year)</td>
+<td>同比</td>
+<td>vs the same month last year</td>
+</tr>
+<tr>
+<td>Base effect</td>
+<td>基数效应</td>
+<td>last year’s level makes this year’s y/y look higher or lower</td>
+</tr>
+<tr>
+<td>Shelter / OER</td>
+<td>住房 / 业主等价租金</td>
+<td>about a third of CPI; moves slowly</td>
+</tr>
+<tr>
+<td>Supercore</td>
+<td>超级核心</td>
+<td>core services excluding shelter; most wage-linked</td>
+</tr>
+<tr>
+<td>3m annualised</td>
+<td>三个月年化</td>
+<td>the last three months’ pace scaled to a year</td>
+</tr>
+<tr>
+<td>Breakeven inflation</td>
+<td>盈亏平衡通胀率</td>
+<td>the bond market’s bet on future inflation</td>
+</tr>
+<tr>
+<td>Term premium</td>
+<td>期限溢价</td>
+<td>extra pay for lending for longer</td>
+</tr>
+<tr>
+<td>WACC</td>
+<td>加权平均资本成本</td>
+<td>the discount rate applied to future cash flows</td>
+</tr>
+<tr>
+<td>FOMC</td>
+<td>联邦公开市场委员会</td>
+<td>the Fed meeting that sets US rates</td>
+</tr>
+</tbody>
+</table>
+<h2 id="everyday-analogies">3. Everyday analogies</h2>
+<ul>
+<li><strong>Core vs headline</strong>: taking your temperature right
+after a run (an energy spike) reads high; core is like waiting ten
+minutes and measuring again.</li>
+<li><strong>The 2-year Treasury yield</strong>: the whole class voting
+on whether the teacher will add homework (a hike); the vote changes the
+second the data lands.</li>
+<li><strong>Rates and growth stocks</strong>: a seesaw. When rates rise,
+stocks whose profits are far in the future sink, because future money
+gets discounted more.</li>
+</ul>
+<h2 id="cause-and-effect">4. Cause and effect</h2>
+<p>Hot core → Fed hike seen as likelier → 2Y yield up → 10Y up →
+discount rate up → growth valuations down → Nasdaq and semis down. Cool
+core → hike odds down → yields down → valuation pressure eases →
+oversold semis may bounce (memory names have a separate supply
+problem).</p>
+<h2 id="worked-numbers-from-fred-data-and-our-calculations">5. Worked
+numbers (from FRED data and our calculations)</h2>
+<ul>
+<li>Example 1 (y/y): August’s core index is 337.765. At +0.22% m/m,
+September is 337.765 × 1.0022 = 338.51; last September was 330.418, so
+y/y = 338.51 ÷ 330.418 − 1 ≈ <strong>2.45%</strong>. That’s exactly on
+the 2.4%/2.5% rounding line.</li>
+<li>Example 2 (3-month annualised): July, August and September core at
+0.215%, 0.29% and 0.22% give (1.00215 × 1.0029 × 1.0022)^4 − 1 ≈
+<strong>2.9%</strong>, above the 2.4% y/y, which says recent momentum is
+faster.</li>
+<li>Example 3 (a stock): over the past year, each +10bp in the 10Y came
+with an average same-day move of about −2.6% in ARM. If the 10Y rises
+8bp tomorrow night, the rate-driven part is about −2.0%. But R² is only
+0.04, meaning rates explain about 4% of ARM’s daily moves; the rest is
+company and industry news.</li>
+</ul>
+<h2 id="keep-facts-forecasts-and-market-expectations-apart">6. Keep
+facts, forecasts and market expectations apart</h2>
+<ul>
+<li><strong>Facts</strong>: August core m/m 0.29%; September payrolls
++29k; unemployment 4.2%; Fed target range 3.75–4.00%.</li>
+<li><strong>Market expectations</strong>: core m/m 0.2%; October hike
+odds about 20%, December about 73% (Kalshi).</li>
+<li><strong>Our forecast</strong>: core 0.22%; scenario probabilities
+25/50/25.</li>
+</ul>
+<h2 id="three-scenarios">7. Three scenarios</h2>
+<ul>
+<li><strong>Cool (≤0.15%, 25%)</strong>: yields fall; growth stocks and
+semis may bounce.</li>
+<li><strong>In line (0.16–0.24%, 50%)</strong>: attention moves to
+Thursday’s PPI, retail sales and TSMC’s results.</li>
+<li><strong>Hot (≥0.25%, 25%)</strong>: yields and the dollar rise;
+Nasdaq and semis come under pressure; an October hike is back on the
+table.</li>
+</ul>
+<h2 id="counterarguments-and-falsifiers">8. Counterarguments and
+falsifiers</h2>
+<ul>
+<li>Counterpoint: a 10Y above 5.2% is mostly about fiscal supply and
+term premium, so neither a good nor a bad CPI may move it much.</li>
+<li>Falsifier: if core is hot but the 10Y falls, the market is worried
+about growth, and the simple “hot → rates up → stocks down” logic fails
+for the day.</li>
+<li>Self-test: core 0.18%, headline 0.75%, and the 10Y breakeven up 6bp.
+What do you conclude? (Hint: section 6 of the main book on energy
+second-round effects.)</li>
+</ul>
+<figure>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261013-1803/US_CPI_Sep2026_PreEvent_v20261013-1803.zip"
+alt="传导链 Transmission chain" />
+<figcaption aria-hidden="true">传导链 Transmission chain</figcaption>
+</figure>
+<figure>
+<img src="https://github.com/PSS917/research-os/releases/download/archive-v20261013-1803/US_CPI_Sep2026_PreEvent_v20261013-1803.zip"
+alt="情景树 Scenario tree" />
+<figcaption aria-hidden="true">情景树 Scenario tree</figcaption>
+</figure>
+</body>
+</html>

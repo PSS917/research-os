@@ -1,0 +1,106 @@
+{
+ "release": "MRVL_v20261017-0755",
+ "generated": "2026-10-17T07:57:50.454816",
+ "files": [
+  {
+   "path": "MRVL_model_v20261017-0755.xlsx",
+   "bytes": 35916,
+   "sha256": "cc6fa7c0357e83ee"
+  },
+  {
+   "path": "MRVL_report_v20261017-0755.docx",
+   "bytes": 809158,
+   "sha256": "fb06741511ca8bd8"
+  },
+  {
+   "path": "MRVL_report_v20261017-0755.html",
+   "bytes": 30018,
+   "sha256": "0acb0608d25db908"
+  },
+  {
+   "path": "MRVL_report_v20261017-0755.md",
+   "bytes": 16890,
+   "sha256": "388e1afa4f9b1968"
+  },
+  {
+   "path": "MRVL_report_v20261017-0755.pdf",
+   "bytes": 1116487,
+   "sha256": "bb7b44059e58c408"
+  },
+  {
+   "path": "MRVL_teaching_v20261017-0755.docx",
+   "bytes": 195749,
+   "sha256": "25a24f1d7842bce1"
+  },
+  {
+   "path": "MRVL_teaching_v20261017-0755.html",
+   "bytes": 10356,
+   "sha256": "3e2082900ac9578e"
+  },
+  {
+   "path": "MRVL_teaching_v20261017-0755.md",
+   "bytes": 4575,
+   "sha256": "48916a871a5e23e9"
+  },
+  {
+   "path": "MRVL_teaching_v20261017-0755.pdf",
+   "bytes": 251668,
+   "sha256": "b011c2a65d471443"
+  },
+  {
+   "path": "images/MRVL_1_price_vs_value.jpg",
+   "bytes": 279561,
+   "sha256": "61fa77442937c3f9"
+  },
+  {
+   "path": "images/MRVL_1_price_vs_value.png",
+   "bytes": 196663,
+   "sha256": "12ab519faad5aa72"
+  },
+  {
+   "path": "images/MRVL_2_financials.jpg",
+   "bytes": 250089,
+   "sha256": "abfb2351bd78e245"
+  },
+  {
+   "path": "images/MRVL_2_financials.png",
+   "bytes": 188135,
+   "sha256": "5ebe04762c6af7ba"
+  },
+  {
+   "path": "images/MRVL_3_scenarios.jpg",
+   "bytes": 245618,
+   "sha256": "f3ce94db38d601c5"
+  },
+  {
+   "path": "images/MRVL_3_scenarios.png",
+   "bytes": 166240,
+   "sha256": "47114351a9119f08"
+  },
+  {
+   "path": "images/MRVL_4_horizons.jpg",
+   "bytes": 227794,
+   "sha256": "a07d044dff7c1516"
+  },
+  {
+   "path": "images/MRVL_4_horizons.png",
+   "bytes": 170051,
+   "sha256": "60e2c549f42c7821"
+  },
+  {
+   "path": "images/MRVL_5_logic_map.jpg",
+   "bytes": 242043,
+   "sha256": "663445fdd7502b58"
+  },
+  {
+   "path": "images/MRVL_5_logic_map.png",
+   "bytes": 211107,
+   "sha256": "3e8dc78e0c384972"
+  },
+  {
+   "path": "summary.json",
+   "bytes": 522,
+   "sha256": "87bf2900fa68817e"
+  }
+ ]
+}

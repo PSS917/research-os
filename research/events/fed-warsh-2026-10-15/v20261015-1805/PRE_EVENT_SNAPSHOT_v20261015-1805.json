@@ -1,0 +1,76 @@
+{
+ "event": "Fed Chair Warsh fireside chat with IMF MD Georgieva (Bangkok)",
+ "time_et": "2026-10-15 23:30 ET",
+ "time_sgt": "2026-10-16 11:30 SGT",
+ "status": "CONFIRMED",
+ "status_source": "federalreserve.gov/newsevents/2026-october.htm",
+ "snapshot_locked": "2026-10-15T18:05:53.902945+08:00",
+ "version": "v20261015-1805",
+ "market_pricing": {
+  "oct_hike_odds_reported": [
+   {
+    "label": "CPI 前 pre-CPI",
+    "pct": 22.0,
+    "source": "Yahoo/Benzinga 10/14"
+   },
+   {
+    "label": "CPI 后 12:20 ET FedWatch",
+    "pct": 41.5,
+    "source": "Yahoo/Benzinga 10/14"
+   },
+   {
+    "label": "WSJ 引 CME 10/14 晚",
+    "pct": 49.0,
+    "source": "WSJ 10/14"
+   },
+   {
+    "label": "Cboe 收盘 10/14",
+    "pct": 32.7,
+    "source": "Cboe 10/14"
+   }
+  ],
+  "class": "MARKET EXP (reported)"
+ },
+ "os_hypothesis": {
+  "probs_raw": {
+   "hawkish": 0.3,
+   "neutral": 0.5,
+   "dovish": 0.2
+  },
+  "probs": {
+   "hawkish": 0.3,
+   "neutral": 0.5,
+   "dovish": 0.2
+  },
+  "calibration": {
+   "rule": "v2026-10-14 shrink≥50% if gap>20pp",
+   "applied": false,
+   "reason": "base rate unavailable — state it; do not invent",
+   "raw": {
+    "hawkish": 0.3,
+    "neutral": 0.5,
+    "dovish": 0.2
+   }
+  },
+  "conditional_note": "If PPI & retail both hot, neutral wording reads hawkish"
+ },
+ "live_thresholds": {
+  "2y_15m_bp": [
+   -3,
+   3
+  ],
+  "usdjpy_15m": [
+   -0.3,
+   0.3
+  ],
+  "oct_odds_after": [
+   30,
+   55
+  ]
+ },
+ "locked_before": [
+  "US PPI Sep 20:30 SGT 10/15",
+  "US Retail Sales Sep 20:30 SGT 10/15"
+ ],
+ "outdir": "/home/box/investment/production/site/research/events/fed-warsh-2026-10-15/v20261015-1805"
+}

@@ -1,0 +1,46 @@
+{
+ "release": "MASTER_PROMPT_v2026-10-14",
+ "generated": "2026-10-14T22:00:13.741550",
+ "files": [
+  {
+   "path": "CHANGELOG_v2026-10-14.docx",
+   "bytes": 10667,
+   "sha256": "1a995a72c61033d4"
+  },
+  {
+   "path": "CHANGELOG_v2026-10-14.html",
+   "bytes": 5467,
+   "sha256": "4c525c7618f6a760"
+  },
+  {
+   "path": "CHANGELOG_v2026-10-14.md",
+   "bytes": 360,
+   "sha256": "d3a303a24389a004"
+  },
+  {
+   "path": "CHANGELOG_v2026-10-14.pdf",
+   "bytes": 14961,
+   "sha256": "0153a3d357693eb7"
+  },
+  {
+   "path": "MASTER_PROMPT_v2026-10-14.docx",
+   "bytes": 37439,
+   "sha256": "953071366044a37c"
+  },
+  {
+   "path": "MASTER_PROMPT_v2026-10-14.html",
+   "bytes": 54561,
+   "sha256": "88f4876649057b7f"
+  },
+  {
+   "path": "MASTER_PROMPT_v2026-10-14.md",
+   "bytes": 40981,
+   "sha256": "cf3b97283381c2fe"
+  },
+  {
+   "path": "MASTER_PROMPT_v2026-10-14.pdf",
+   "bytes": 579706,
+   "sha256": "18e162c70bca93e3"
+  }
+ ]
+}

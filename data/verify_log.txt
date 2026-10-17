@@ -1,0 +1,36 @@
+{
+ "pdf": {
+  "ok": 498,
+  "fail": 0,
+  "ex": []
+ },
+ "docx": {
+  "ok": 496,
+  "fail": 0,
+  "ex": []
+ },
+ "zip": {
+  "ok": 379,
+  "fail": 0,
+  "ex": []
+ },
+ "html_links": {
+  "ok": 22993,
+  "fail": 0,
+  "ex": []
+ },
+ "xlsx_recalc_match": {
+  "ok": 162,
+  "fail": 0,
+  "ex": []
+ },
+ "png_hd>=2000px": {
+  "ok": 1277,
+  "fail": 119,
+  "ex": [
+   "/home/box/investment/production/site/research/companies/TSLA/v20261013-2108-think/images/T1_\u5229\u6da6\u7387\u5468\u671f_annotated.png(1950, 1050)",
+   "/home/box/investment/production/site/research/companies/TSLA/v20261013-2108-think/images/T3_\u5386\u53f2\u56de\u64a4_annotated.png(1950, 1050)",
+   "/home/box/investment/production/site/research/companies/TSLA/v20261014-0758-think/images/T1_\u5229\u6da6\u7387\u5468\u671f_annotated.png(1950, 1050)"
+  ]
+ }
+}

@@ -1,0 +1,106 @@
+{
+ "release": "TSLA_v20261015-0757",
+ "generated": "2026-10-15T07:58:28.933709",
+ "files": [
+  {
+   "path": "TSLA_model_v20261015-0757.xlsx",
+   "bytes": 35994,
+   "sha256": "b82ad23d30022e78"
+  },
+  {
+   "path": "TSLA_report_v20261015-0757.docx",
+   "bytes": 829807,
+   "sha256": "7438c13add13239c"
+  },
+  {
+   "path": "TSLA_report_v20261015-0757.html",
+   "bytes": 31307,
+   "sha256": "03850ad4d99e9244"
+  },
+  {
+   "path": "TSLA_report_v20261015-0757.md",
+   "bytes": 18187,
+   "sha256": "221b765f66677c4f"
+  },
+  {
+   "path": "TSLA_report_v20261015-0757.pdf",
+   "bytes": 1127928,
+   "sha256": "5fdb5b11939d6a85"
+  },
+  {
+   "path": "TSLA_teaching_v20261015-0757.docx",
+   "bytes": 194081,
+   "sha256": "e8ef5f1cf8ebb41a"
+  },
+  {
+   "path": "TSLA_teaching_v20261015-0757.html",
+   "bytes": 10665,
+   "sha256": "26a08370e5afdeb5"
+  },
+  {
+   "path": "TSLA_teaching_v20261015-0757.md",
+   "bytes": 4884,
+   "sha256": "1caf27fe4851ceed"
+  },
+  {
+   "path": "TSLA_teaching_v20261015-0757.pdf",
+   "bytes": 259143,
+   "sha256": "f77da88ee42276f6"
+  },
+  {
+   "path": "images/TSLA_1_price_vs_value.jpg",
+   "bytes": 311888,
+   "sha256": "2fbf1052c041f5f8"
+  },
+  {
+   "path": "images/TSLA_1_price_vs_value.png",
+   "bytes": 232413,
+   "sha256": "f6a59579c9356cd5"
+  },
+  {
+   "path": "images/TSLA_2_financials.jpg",
+   "bytes": 252386,
+   "sha256": "b48573617f708ccf"
+  },
+  {
+   "path": "images/TSLA_2_financials.png",
+   "bytes": 189157,
+   "sha256": "a6d52dc7dc7893a8"
+  },
+  {
+   "path": "images/TSLA_3_scenarios.jpg",
+   "bytes": 244414,
+   "sha256": "fe74293d8a8bc828"
+  },
+  {
+   "path": "images/TSLA_3_scenarios.png",
+   "bytes": 167447,
+   "sha256": "370b581d515e0f40"
+  },
+  {
+   "path": "images/TSLA_4_horizons.jpg",
+   "bytes": 234355,
+   "sha256": "d87dc1a3d2ca6ea7"
+  },
+  {
+   "path": "images/TSLA_4_horizons.png",
+   "bytes": 152646,
+   "sha256": "845e34e1c3b0d2b6"
+  },
+  {
+   "path": "images/TSLA_5_logic_map.jpg",
+   "bytes": 241493,
+   "sha256": "be64bf2debe60313"
+  },
+  {
+   "path": "images/TSLA_5_logic_map.png",
+   "bytes": 208394,
+   "sha256": "73762adb62f38d0f"
+  },
+  {
+   "path": "summary.json",
+   "bytes": 581,
+   "sha256": "8a327d7496dfabd6"
+  }
+ ]
+}

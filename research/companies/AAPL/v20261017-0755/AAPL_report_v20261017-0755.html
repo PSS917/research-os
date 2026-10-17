@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title> </title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<style>body{font-family:'Noto Sans CJK SC','Noto Sans',sans-serif;max-width:1100px;margin:auto;padding:24px;line-height:1.6;color:#1b1b1b}table{border-collapse:collapse;font-size:13px;margin:8px 0}td,th{border:1px solid #ccd;padding:4px 8px}th{background:#1F3A5F;color:#fff}img{max-width:100%;border:1px solid #ddd}h1{color:#1F3A5F}h2{border-bottom:2px solid #1F3A5F}abbr{text-decoration:underline dotted #2E86C1;cursor:help}.box30{background:linear-gradient(135deg,#eaf2ff,#f5ecff);border:2px solid #5b8cff;border-radius:14px;padding:6px 18px;margin:14px 0;font-size:16px}.readmap{background:#f6f8fb;border:1px solid #d5dbe6;border-radius:12px;padding:4px 16px;margin:12px 0}.howto{background:#fff8e6;border-left:5px solid #f59e0b;border-radius:8px;padding:2px 14px;margin:6px 0 22px}.quiz{background:#effaf3;border:1px solid #9bd8b1;border-radius:12px;padding:4px 16px}details{margin:8px 0}details.l3{background:#f7f7f9;border:1px dashed #b8c0cc;border-radius:10px;padding:6px 14px}summary{cursor:pointer;font-weight:600;color:#1F3A5F}body{font-size:15.5px}blockquote{background:#f3f6fa;border-left:4px solid #2E86C1;margin:0;padding:6px 12px}</style></head>
+<body>
+<header id="title-block-header">
+<h1 class="title"> </h1>
+</header>
+<h1 id="aapl-apple-inc.-个股深度研究-专业中文版-v20261017-0755">AAPL
+Apple Inc. — 个股深度研究 (专业中文版) v20261017-0755</h1>
+<blockquote>
+<p>数据截至 2026-10-17 07:55 SGT｜价格 $343.46｜市值 5,012.5 bn
+USD｜财报货币
+USD｜非投资建议。事实=CONFIRMED/DATA；推断=INFERENCE；假设=ASSUMPTION/HYPOTHESIS。</p>
+</blockquote>
+<h2 id="投资论点-investment-thesis-hypothesis">1. 投资论点 Investment
+Thesis (HYPOTHESIS)</h2>
+<p>苹果是高质量现金流+回购的复利机器；AI(Apple
+Intelligence)换机周期是主要上行变量，存储成本上涨与服务业务监管是主要压力。</p>
+<ul>
+<li><strong>多头驱动</strong>: AI upgrade supercycle; services growth
+sustains; margin holds despite memory
+costs｜AI换机潮；服务持续增长；毛利率扛住存储成本</li>
+<li><strong>空头驱动</strong>: Memory cost squeezes GM; Google TAC
+payment ruling; China share
+loss｜存储成本压毛利；谷歌分成裁决；中国份额流失</li>
+<li><strong>证伪条件 Falsifiers</strong>: iPhone units decline y/y in
+upgrade cycle; services growth &lt;10%; GM guide
+down｜换机年iPhone仍同比下滑；服务增速&lt;10%；毛利指引下调</li>
+</ul>
+<h2 id="产品客户与收入模式">2. 产品、客户与收入模式</h2>
+<ul>
+<li>主题 Theme: Consumer hardware + services ecosystem
+消费电子+服务生态</li>
+<li>业务分部 Segments: iPhone；Services 服务；Mac；iPad；Wearables/Home
+可穿戴</li>
+<li>公司描述 (DATA, Yahoo/公司申报): Apple Inc. designs, manufactures,
+and markets smartphones, personal computers, tablets, wearables, and
+accessories worldwide. The company offers iPhone, a line of smartphones;
+Mac, a line of personal computers; iPad, a line of multi-purpose
+tablets; and wearables, home, and accessories comprising AirPods, Apple
+Vision Pro, Apple TV, Apple Watch, Beats products, and HomePod, as well
+as Apple branded and third-party accessories. It also provides AppleCare
+support and cloud services; and operates various platforms, including
+the App Store that allows customers to discover and download
+applications and digital content, such as books, music, video, games,
+and podcasts, as well as advertising services include third-party
+licensing arrangements and its own advertising platforms. In addition,
+the company offers various subscription-based services, such as Apple
+Arcade, a game subscription servic</li>
+<li>主要客户: Global consumers; carriers;
+enterprises｜全球消费者、运营商、企业</li>
+</ul>
+<h2 id="行业竞争监管与供应链-analyst-framework">3.
+行业、竞争、监管与供应链 (ANALYST FRAMEWORK)</h2>
+<ul>
+<li>供应商/上游: TSMC (A/M chips), Foxconn/Luxshare (assembly),
+Samsung/LG/BOE (displays), Micron/Kioxia (memory), Corning
+(glass)｜台积电、富士康/立讯、面板厂、存储厂、康宁</li>
+<li>竞争者 (含业外): Samsung, Chinese Android OEMs (Huawei, Xiaomi),
+Google｜三星、华为/小米、谷歌</li>
+<li>瓶颈/监管: Memory cost inflation, tariffs/China supply chain, App
+Store regulation (DMA, US antitrust), Google search
+payments｜存储涨价、关税/中国供应链、App Store监管、谷歌搜索分成</li>
+<li>关键KPI: iPhone revenue, Services growth, GM%, buybacks, China
+revenue｜iPhone收入、服务增速、毛利率、回购、大中华区收入</li>
+<li>零部件现货/合约价:
+本版未接入付费价格源(TrendForce/DRAMeXchange等)——标注
+<strong>UNAVAILABLE</strong>，在KPI监控中以定性方式跟踪。</li>
+</ul>
+<h2 id="历史财务与现金流-confirmed-季度-usd">4. 历史财务与现金流
+(CONFIRMED, 季度, USD)</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>季度</th>
+<th>收入</th>
+<th>毛利</th>
+<th>营业利润</th>
+<th>净利润</th>
+<th>FCF</th>
+<th>营业利润率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-06-30</td>
+<td>109.4 bn USD</td>
+<td>54.8 bn USD</td>
+<td>35.7 bn USD</td>
+<td>29.8 bn USD</td>
+<td>31.9 bn USD</td>
+<td>32.6%</td>
+</tr>
+<tr>
+<td>2026-03-31</td>
+<td>111.2 bn USD</td>
+<td>54.8 bn USD</td>
+<td>35.9 bn USD</td>
+<td>29.6 bn USD</td>
+<td>26.7 bn USD</td>
+<td>32.3%</td>
+</tr>
+<tr>
+<td>2025-12-31</td>
+<td>143.8 bn USD</td>
+<td>69.2 bn USD</td>
+<td>50.9 bn USD</td>
+<td>42.1 bn USD</td>
+<td>51.6 bn USD</td>
+<td>35.4%</td>
+</tr>
+<tr>
+<td>2025-09-30</td>
+<td>102.5 bn USD</td>
+<td>48.3 bn USD</td>
+<td>32.4 bn USD</td>
+<td>27.5 bn USD</td>
+<td>26.5 bn USD</td>
+<td>31.6%</td>
+</tr>
+<tr>
+<td>2025-06-30</td>
+<td>94.0 bn USD</td>
+<td>43.7 bn USD</td>
+<td>28.2 bn USD</td>
+<td>23.4 bn USD</td>
+<td>24.4 bn USD</td>
+<td>30.0%</td>
+</tr>
+</tbody>
+</table>
+<p>资产负债: 现金 62.4 bn USD；总负债 84.3 bn USD；净现金 -21.9 bn
+USD。TTM FCF 136.7 bn USD（FCF率 29.3%）。</p>
+<h2 id="最新财报-实际-vs-一致预期-vs-指引">5. 最新财报: 实际 vs 一致预期
+vs 指引</h2>
+<table>
+<thead>
+<tr>
+<th>季度</th>
+<th>EPS实际</th>
+<th>EPS一致预期</th>
+<th>超预期%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-09-30</td>
+<td>1.85</td>
+<td>1.76993</td>
+<td>0.0452</td>
+</tr>
+<tr>
+<td>2025-12-31</td>
+<td>2.84</td>
+<td>2.6708</td>
+<td>0.0634</td>
+</tr>
+<tr>
+<td>2026-03-31</td>
+<td>2.01</td>
+<td>1.94275</td>
+<td>0.0346</td>
+</tr>
+<tr>
+<td>2026-06-30</td>
+<td>2.02</td>
+<td>1.89243</td>
+<td>0.0674</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>管理层指引 Guidance:
+自动数据源不含指引——<strong>UNAVAILABLE（待从公司IR新闻稿录入）</strong>。</li>
+<li>下次财报日 (Yahoo, TENTATIVE 直至公司确认):
+<strong>2026-11-03</strong>；本季EPS一致预期
+1.97842（27位分析师）；收入一致预期 113.6 bn USD。</li>
+</ul>
+<h2 id="未来2468季度驱动与价格合理性">6.
+未来2/4/6/8季度驱动与价格合理性</h2>
+<table>
+<thead>
+<tr>
+<th>期限</th>
+<th>情景</th>
+<th>期限价格现值</th>
+<th>相对现价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2Q</td>
+<td>Bear</td>
+<td>$129.72</td>
+<td>-62.2%</td>
+</tr>
+<tr>
+<td>2Q</td>
+<td>Base</td>
+<td>$248.42</td>
+<td>-27.7%</td>
+</tr>
+<tr>
+<td>2Q</td>
+<td>Bull</td>
+<td>$379.28</td>
+<td>10.4%</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>Bear</td>
+<td>$122.03</td>
+<td>-64.5%</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>Base</td>
+<td>$245.58</td>
+<td>-28.5%</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>Bull</td>
+<td>$386.37</td>
+<td>12.5%</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>Bear</td>
+<td>$114.68</td>
+<td>-66.6%</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>Base</td>
+<td>$242.74</td>
+<td>-29.3%</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>Bull</td>
+<td>$393.58</td>
+<td>14.6%</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>Bear</td>
+<td>$107.64</td>
+<td>-68.7%</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>Base</td>
+<td>$239.89</td>
+<td>-30.2%</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>Bull</td>
+<td>$400.92</td>
+<td>16.7%</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>现价隐含的 EV/NTM-FCF (Base 路径):</th>
+<th>期限</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2Q</td>
+<td>32.8x</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>31.6x</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>30.4x</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>29.3x</td>
+</tr>
+</tbody>
+</table>
+<p>解读:
+如果8季度后Base情景所需倍数仍远高于25x，说明价格依赖更远期的增长。</p>
+<h2 id="三情景-bear-base-bull-hypothesis">7. 三情景 Bear / Base / Bull
+(HYPOTHESIS)</h2>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr>
+<th>情景</th>
+<th>Y1增速</th>
+<th>长期FCF率</th>
+<th>WACC</th>
+<th>永续g</th>
+<th>概率</th>
+<th>每股价值</th>
+<th>相对现价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bear</td>
+<td>5.2%</td>
+<td>20.8%</td>
+<td>11.4%</td>
+<td>2.5%</td>
+<td>25.0%</td>
+<td>$88.19</td>
+<td>-74.3%</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>10.4%</td>
+<td>26.0%</td>
+<td>10.4%</td>
+<td>3.0%</td>
+<td>50.0%</td>
+<td>$155.72</td>
+<td>-54.7%</td>
+</tr>
+<tr>
+<td>Bull</td>
+<td>13.6%</td>
+<td>29.9%</td>
+<td>9.9%</td>
+<td>3.5%</td>
+<td>25.0%</td>
+<td>$229.34</td>
+<td>-33.2%</td>
+</tr>
+</tbody>
+</table>
+<p>概率加权价值 <strong>$157.24</strong>（相对现价 -54.2%）。</p>
+<h2 id="估值-dcf-reverse-dcf-roic-wacc-同业-敏感度">8. 估值: DCF /
+Reverse DCF / ROIC-WACC / 同业 / 敏感度</h2>
+<ul>
+<li><p>DCF Base: EV 2,294.6 bn USD；终值占比 51.8%。</p></li>
+<li><p><strong>Reverse DCF 反向DCF</strong>:
+在Base利润率与WACC下，现价隐含Y1收入增速 ≈
+<strong>31.1%</strong>；一致预期FY+1增速 10.4%。</p></li>
+<li><p>WACC (CAPM) = rf 5.1% + β 1.07 × ERP 5.0% = 10.4%。</p></li>
+<li><p>SOTP segments 分部: iPhone; Services 服务; Mac; iPad;
+Wearables/Home 可穿戴. <strong>Status: framework only</strong> — segment
+revenues are INPUT REQUIRED from the latest 10-K/10-Q segment note (not
+auto-fed, left blank to avoid
+fabrication)｜分部收入需按最新财报手动录入，未自动填充以避免编造。</p></li>
+<li><p>同业比较 Comps (DATA): | Ticker | 市值 | EV/Sales | Fwd P/E |
+收入增速 | 毛利率 | FCF收益率 | |—|—|—|—|—|—|—| | AAPL | 5,012.5 bn USD
+| 10.8x | 35.9x | 16.4% | 48.7% | 2.7% | | MSFT | 3,928.5 bn USD | 12.0x
+| 22.3x | 17.7% | 67.9% | 0.4% | | GOOGL | 4,165.4 bn USD | 9.1x | 22.3x
+| 24.2% | 60.9% | 0.5% | | 005930.KS | 1,403,319.4 bn USD | 2.6x | 3.0x
+| 130.0% | 57.5% | 5.0% |</p></li>
+<li><p>敏感度: 见Excel <code>Sensitivity</code> 表 (WACC ×
+永续增长率)。</p></li>
+</ul>
+<h2 id="风险反方论证与证伪">9. 风险、反方论证与证伪</h2>
+<ul>
+<li>反方观点 Counter-thesis: Memory cost squeezes GM; Google TAC payment
+ruling; China share
+loss｜存储成本压毛利；谷歌分成裁决；中国份额流失</li>
+<li>证伪指标: iPhone units decline y/y in upgrade cycle; services growth
+&lt;10%; GM guide
+down｜换机年iPhone仍同比下滑；服务增速&lt;10%；毛利指引下调</li>
+<li>模型风险:
+长期利润率与WACC为假设；终值占比高时估值对假设极敏感。</li>
+</ul>
+<h2 id="source-ledger-来源账本">10. Source Ledger 来源账本</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+<th>Source/time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Price 股价</td>
+<td>343.5</td>
+<td>Yahoo Finance quote, fetched 2026-10-17T07:55 SGT</td>
+</tr>
+<tr>
+<td>Market cap 市值</td>
+<td>5.013e+12</td>
+<td>Yahoo info.marketCap 2026-10-17T07:55</td>
+</tr>
+<tr>
+<td>Cash 现金</td>
+<td>6.24e+10</td>
+<td>Yahoo info.totalCash (latest filing) 2026-10-17T07:55</td>
+</tr>
+<tr>
+<td>Debt 负债</td>
+<td>8.434e+10</td>
+<td>Yahoo info.totalDebt (latest filing) 2026-10-17T07:55</td>
+</tr>
+<tr>
+<td>Revenue TTM 收入</td>
+<td>4.668e+11</td>
+<td>Yahoo info.totalRevenue (TTM, USD) 2026-10-17T07:55</td>
+</tr>
+<tr>
+<td>FCF TTM 自由现金流</td>
+<td>1.367e+11</td>
+<td>Sum of last 4 quarterly FCF (q_cash); quarters [‘2026-06-30’,
+‘2026-03-31’, ‘2025-12-31’, ‘2025-09-30’] (USD)</td>
+</tr>
+<tr>
+<td>Beta</td>
+<td>1.069</td>
+<td>Yahoo info.beta (5Y monthly)</td>
+</tr>
+<tr>
+<td>Risk-free 10Y 无风险利率</td>
+<td>0.051</td>
+<td>FRED DGS10 2026-10-15</td>
+</tr>
+<tr>
+<td>FX USD per USD</td>
+<td>1</td>
+<td>n/a (USD)</td>
+</tr>
+<tr>
+<td>Consensus rev growth FY0</td>
+<td>0.1491</td>
+<td>Yahoo revenue_estimate 0y</td>
+</tr>
+<tr>
+<td>Consensus rev growth FY+1</td>
+<td>0.1043</td>
+<td>Yahoo revenue_estimate +1y</td>
+</tr>
+</tbody>
+</table>
+<h2 id="assumption-register-假设登记表">11. Assumption Register
+假设登记表</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Assumption</th>
+<th>Value</th>
+<th>Rationale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ERP 股权风险溢价</td>
+<td>0.05</td>
+<td>ASSUMPTION: 5.0% house mature-market ERP</td>
+</tr>
+<tr>
+<td>Beta clamp</td>
+<td>[0.8,1.6] → 1.07</td>
+<td>ASSUMPTION: limit extreme betas</td>
+</tr>
+<tr>
+<td>Tax rate (ROIC)</td>
+<td>0.18</td>
+<td>ASSUMPTION: blended cash tax 18%</td>
+</tr>
+<tr>
+<td>Year-1 growth (Base)</td>
+<td>0.1043</td>
+<td>Consensus FY+1 revenue growth (Yahoo revenue_estimate ‘+1y’); capped
+at 100%</td>
+</tr>
+<tr>
+<td>Growth fade</td>
+<td>linear Y1→terminal by Y10</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>Starting FCF margin</td>
+<td>0.2928</td>
+<td>DATA: FCF TTM / Revenue TTM, floored -50%</td>
+</tr>
+<tr>
+<td>Long-run FCF margin (Base)</td>
+<td>0.26</td>
+<td>ASSUMPTION (analyst framework, reached by Y5; see profile)</td>
+</tr>
+<tr>
+<td>Bear/Bull Y1 growth multiplier</td>
+<td>0.5x / 1.3x</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>Bear/Bull margin multiplier</td>
+<td>0.8x / 1.15x</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>WACC adj Bear/Bull</td>
+<td>+1.0pp / -0.5pp</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>Terminal g Bear/Base/Bull</td>
+<td>2.5% / 3.0% / 3.5%</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>Scenario probabilities</td>
+<td>25% / 50% / 25%</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>Horizon exit EV/NTM-FCF Bear/Base/Bull</td>
+<td>15x / 25x / 35x</td>
+<td>ASSUMPTION</td>
+</tr>
+<tr>
+<td>Per-share conversion</td>
+<td>value × fx ÷ market cap × price</td>
+<td>METHOD: avoids ADR/share-class mismatch</td>
+</tr>
+</tbody>
+</table>
+<h2 id="model-provenance-模型溯源">12. Model Provenance 模型溯源</h2>
+<ul>
+<li>Model file: <code>AAPL_model_v20261017-0755.xlsx</code> (live
+formulas; sheets
+Inputs→Scenarios→DCF→ReverseDCF→Sensitivity→Horizons→SOTP→Comps→ROIC_WACC→History→Sources→Assumptions)</li>
+<li>Engine: <code>production/pipeline/model.py</code> (Python mirror;
+values in this report = Python mirror, verified against LibreOffice
+recalculation of the xlsx)</li>
+<li>Data snapshot: <code>data/snapshots/20261017-0755</code> (immutable)
+| Fetched 2026-10-17 07:55 SGT | Generated 2026-10-17 07:56 SGT</li>
+<li>Version: v20261017-0755. Prior versions are never overwritten (see
+company history page).</li>
+</ul>
+<h2 id="版本与事件时间轴">13. 版本与事件时间轴</h2>
+<ul>
+<li>v20261017-0755: 首版生产系统报告 (27家同步)。下一事件: 财报
+2026-11-03 (TENTATIVE)。</li>
+</ul>
+<h2 id="图片报告-image-report">图片报告 Image Report</h2>
+<figure>
+<img src="images/AAPL_1_price_vs_value.png" alt="1_price_vs_value" />
+<figcaption aria-hidden="true">1_price_vs_value</figcaption>
+</figure>
+<p><em>股价vs三情景价值 Price vs scenario values</em></p>
+<figure>
+<img src="images/AAPL_2_financials.png" alt="2_financials" />
+<figcaption aria-hidden="true">2_financials</figcaption>
+</figure>
+<p><em>季度财务 Quarterly financials</em></p>
+<figure>
+<img src="images/AAPL_3_scenarios.png" alt="3_scenarios" />
+<figcaption aria-hidden="true">3_scenarios</figcaption>
+</figure>
+<p><em>三情景 Scenarios</em></p>
+<figure>
+<img src="images/AAPL_4_horizons.png" alt="4_horizons" />
+<figcaption aria-hidden="true">4_horizons</figcaption>
+</figure>
+<p><em>2/4/6/8季度检验 Horizon check</em></p>
+<figure>
+<img src="images/AAPL_5_logic_map.png" alt="5_logic_map" />
+<figcaption aria-hidden="true">5_logic_map</figcaption>
+</figure>
+<p><em>研究逻辑图 Logic map</em></p>
+<hr />
+<h1
+id="aapl-apple-inc.-equity-deep-dive-professional-english-v20261017-0755">AAPL
+Apple Inc. — Equity Deep Dive (Professional English) v20261017-0755</h1>
+<blockquote>
+<p>Data as of 2026-10-17 07:55 SGT | Price $343.46 | Mkt cap 5,012.5 bn
+USD | Reporting currency USD | Not investment advice.</p>
+</blockquote>
+<h2 id="investment-thesis-hypothesis">1. Investment thesis
+(HYPOTHESIS)</h2>
+<p>Apple is a high-quality cash-flow and buyback compounder; an
+AI-driven upgrade cycle is the main upside variable, while memory-cost
+inflation and services regulation are the main pressures.</p>
+<ul>
+<li><strong>Bull drivers</strong>: AI upgrade supercycle; services
+growth sustains; margin holds despite memory
+costs｜AI换机潮；服务持续增长；毛利率扛住存储成本</li>
+<li><strong>Bear drivers</strong>: Memory cost squeezes GM; Google TAC
+payment ruling; China share
+loss｜存储成本压毛利；谷歌分成裁决；中国份额流失</li>
+<li><strong>Falsifiers</strong>: iPhone units decline y/y in upgrade
+cycle; services growth &lt;10%; GM guide
+down｜换机年iPhone仍同比下滑；服务增速&lt;10%；毛利指引下调</li>
+</ul>
+<h2 id="products-customers-revenue-model">2. Products, customers,
+revenue model</h2>
+<ul>
+<li>Theme: Consumer hardware + services ecosystem 消费电子+服务生态 |
+Segments: iPhone; Services 服务; Mac; iPad; Wearables/Home 可穿戴</li>
+<li>Business description (DATA): Apple Inc. designs, manufactures, and
+markets smartphones, personal computers, tablets, wearables, and
+accessories worldwide. The company offers iPhone, a line of smartphones;
+Mac, a line of personal computers; iPad, a line of multi-purpose
+tablets; and wearables, home, and accessories comprising AirPods, Apple
+Vision Pro, Apple TV, Apple Watch, Beats products, and HomePod, as well
+as Apple branded and third-party accessories. It also provides AppleCare
+support and cloud services; and operates various platforms, including
+the App Store that allows customers to discover and download
+applications and digital content, such as books, music, video, games,
+and podcasts, as well as advertising services include third-party
+licensing arrangements and its own advertising platforms. In addition,
+the company offers various subscription-based services, such as Apple
+Arcade, a game subscription servic</li>
+<li>Customers: Global consumers; carriers;
+enterprises｜全球消费者、运营商、企业</li>
+</ul>
+<h2
+id="industry-competition-regulation-supply-chain-analyst-framework">3.
+Industry, competition, regulation, supply chain (ANALYST FRAMEWORK)</h2>
+<ul>
+<li>Suppliers: TSMC (A/M chips), Foxconn/Luxshare (assembly),
+Samsung/LG/BOE (displays), Micron/Kioxia (memory), Corning
+(glass)｜台积电、富士康/立讯、面板厂、存储厂、康宁</li>
+<li>Competitors: Samsung, Chinese Android OEMs (Huawei, Xiaomi),
+Google｜三星、华为/小米、谷歌</li>
+<li>Bottlenecks/regulation: Memory cost inflation, tariffs/China supply
+chain, App Store regulation (DMA, US antitrust), Google search
+payments｜存储涨价、关税/中国供应链、App Store监管、谷歌搜索分成</li>
+<li>KPIs: iPhone revenue, Services growth, GM%, buybacks, China
+revenue｜iPhone收入、服务增速、毛利率、回购、大中华区收入</li>
+<li>Component spot/contract prices: paid feeds not connected —
+<strong>UNAVAILABLE</strong>, tracked qualitatively.</li>
+</ul>
+<h2 id="historical-financials-cash-flow-confirmed-quarterly-usd">4.
+Historical financials &amp; cash flow (CONFIRMED, quarterly, USD)</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Quarter</th>
+<th>Revenue</th>
+<th>Gross profit</th>
+<th>Op income</th>
+<th>Net income</th>
+<th>FCF</th>
+<th>Op margin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-06-30</td>
+<td>109.4 bn USD</td>
+<td>54.8 bn USD</td>
+<td>35.7 bn USD</td>
+<td>29.8 bn USD</td>
+<td>31.9 bn USD</td>
+<td>32.6%</td>
+</tr>
+<tr>
+<td>2026-03-31</td>
+<td>111.2 bn USD</td>
+<td>54.8 bn USD</td>
+<td>35.9 bn USD</td>
+<td>29.6 bn USD</td>
+<td>26.7 bn USD</td>
+<td>32.3%</td>
+</tr>
+<tr>
+<td>2025-12-31</td>
+<td>143.8 bn USD</td>
+<td>69.2 bn USD</td>
+<td>50.9 bn USD</td>
+<td>42.1 bn USD</td>
+<td>51.6 bn USD</td>
+<td>35.4%</td>
+</tr>
+<tr>
+<td>2025-09-30</td>
+<td>102.5 bn USD</td>
+<td>48.3 bn USD</td>
+<td>32.4 bn USD</td>
+<td>27.5 bn USD</td>
+<td>26.5 bn USD</td>
+<td>31.6%</td>
+</tr>
+<tr>
+<td>2025-06-30</td>
+<td>94.0 bn USD</td>
+<td>43.7 bn USD</td>
+<td>28.2 bn USD</td>
+<td>23.4 bn USD</td>
+<td>24.4 bn USD</td>
+<td>30.0%</td>
+</tr>
+</tbody>
+</table>
+<p>Cash 62.4 bn USD; debt 84.3 bn USD; TTM FCF 136.7 bn USD (FCF margin
+29.3%).</p>
+<h2 id="latest-earnings-actual-vs-consensus-vs-guidance">5. Latest
+earnings: actual vs consensus vs guidance</h2>
+<table>
+<thead>
+<tr>
+<th>Quarter</th>
+<th>EPS actual</th>
+<th>EPS consensus</th>
+<th>Surprise</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-09-30</td>
+<td>1.85</td>
+<td>1.76993</td>
+<td>0.0452</td>
+</tr>
+<tr>
+<td>2025-12-31</td>
+<td>2.84</td>
+<td>2.6708</td>
+<td>0.0634</td>
+</tr>
+<tr>
+<td>2026-03-31</td>
+<td>2.01</td>
+<td>1.94275</td>
+<td>0.0346</td>
+</tr>
+<tr>
+<td>2026-06-30</td>
+<td>2.02</td>
+<td>1.89243</td>
+<td>0.0674</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Management guidance: not in automated feed — <strong>UNAVAILABLE (to
+be entered from IR release)</strong>.</li>
+<li>Next earnings (Yahoo; TENTATIVE until company-confirmed):
+<strong>2026-11-03</strong>; current-quarter EPS consensus 1.97842 (27
+analysts); revenue consensus 113.6 bn USD.</li>
+</ul>
+<h2 id="quarter-drivers-price-reasonableness">6. 2/4/6/8-quarter drivers
+&amp; price reasonableness</h2>
+<table>
+<thead>
+<tr>
+<th>Horizon</th>
+<th>Scenario</th>
+<th>PV of horizon price</th>
+<th>vs current</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2Q</td>
+<td>Bear</td>
+<td>$129.72</td>
+<td>-62.2%</td>
+</tr>
+<tr>
+<td>2Q</td>
+<td>Base</td>
+<td>$248.42</td>
+<td>-27.7%</td>
+</tr>
+<tr>
+<td>2Q</td>
+<td>Bull</td>
+<td>$379.28</td>
+<td>10.4%</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>Bear</td>
+<td>$122.03</td>
+<td>-64.5%</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>Base</td>
+<td>$245.58</td>
+<td>-28.5%</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>Bull</td>
+<td>$386.37</td>
+<td>12.5%</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>Bear</td>
+<td>$114.68</td>
+<td>-66.6%</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>Base</td>
+<td>$242.74</td>
+<td>-29.3%</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>Bull</td>
+<td>$393.58</td>
+<td>14.6%</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>Bear</td>
+<td>$107.64</td>
+<td>-68.7%</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>Base</td>
+<td>$239.89</td>
+<td>-30.2%</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>Bull</td>
+<td>$400.92</td>
+<td>16.7%</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Current-price implied EV/NTM-FCF on Base path:</th>
+<th>Horizon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2Q</td>
+<td>32.8x</td>
+</tr>
+<tr>
+<td>4Q</td>
+<td>31.6x</td>
+</tr>
+<tr>
+<td>6Q</td>
+<td>30.4x</td>
+</tr>
+<tr>
+<td>8Q</td>
+<td>29.3x</td>
+</tr>
+</tbody>
+</table>
+<h2 id="bear-base-bull-hypothesis">7. Bear / Base / Bull
+(HYPOTHESIS)</h2>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Y1 growth</th>
+<th>LR FCF margin</th>
+<th>WACC</th>
+<th>Terminal g</th>
+<th>Prob.</th>
+<th>Value/share</th>
+<th>vs price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bear</td>
+<td>5.2%</td>
+<td>20.8%</td>
+<td>11.4%</td>
+<td>2.5%</td>
+<td>25.0%</td>
+<td>$88.19</td>
+<td>-74.3%</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>10.4%</td>
+<td>26.0%</td>
+<td>10.4%</td>
+<td>3.0%</td>
+<td>50.0%</td>
+<td>$155.72</td>
+<td>-54.7%</td>
+</tr>
+<tr>
+<td>Bull</td>
+<td>13.6%</td>
+<td>29.9%</td>
+<td>9.9%</td>
+<td>3.5%</td>
+<td>25.0%</td>
+<td>$229.34</td>
+<td>-33.2%</td>
+</tr>
+</tbody>
+</table>
+<p>Probability-weighted value <strong>$157.24</strong> (-54.2% vs
+price).</p>
+<h2 id="valuation-dcf-reverse-dcf-roic-wacc-comps-sensitivity">8.
+Valuation: DCF / Reverse DCF / ROIC-WACC / comps / sensitivity</h2>
+<ul>
+<li>Base DCF EV 2,294.6 bn USD; terminal share 51.8%.</li>
+<li><strong>Reverse DCF</strong>: at Base margin/WACC the price implies
+Y1 revenue growth ≈ <strong>31.1%</strong> vs consensus FY+1 10.4%.</li>
+<li>WACC (CAPM) = rf 5.1% + β 1.07 × ERP 5.0% = 10.4%.</li>
+<li>SOTP segments: iPhone; Services 服务; Mac; iPad; Wearables/Home
+可穿戴 — framework only; segment revenue inputs pending from
+filings.</li>
+<li>Comps (DATA): see table in Chinese section / Excel
+<code>Comps</code>.</li>
+<li>Sensitivity: Excel <code>Sensitivity</code> (WACC × terminal
+g).</li>
+</ul>
+<h2 id="risks-counterarguments-falsifiers">9. Risks, counterarguments,
+falsifiers</h2>
+<p>Memory cost squeezes GM; Google TAC payment ruling; China share
+loss｜存储成本压毛利；谷歌分成裁决；中国份额流失 | Falsifiers: iPhone
+units decline y/y in upgrade cycle; services growth &lt;10%; GM guide
+down｜换机年iPhone仍同比下滑；服务增速&lt;10%；毛利指引下调</p>
+<h2 id="source-ledger-assumption-register-model-provenance">10–12.
+Source Ledger / Assumption Register / Model Provenance</h2>
+<p>See tables above (shared, bilingual). - Model file:
+<code>AAPL_model_v20261017-0755.xlsx</code> (live formulas; sheets
+Inputs→Scenarios→DCF→ReverseDCF→Sensitivity→Horizons→SOTP→Comps→ROIC_WACC→History→Sources→Assumptions)
+- Engine: <code>production/pipeline/model.py</code> (Python mirror;
+values in this report = Python mirror, verified against LibreOffice
+recalculation of the xlsx) - Data snapshot:
+<code>data/snapshots/20261017-0755</code> (immutable) | Fetched
+2026-10-17 07:55 SGT | Generated 2026-10-17 07:56 SGT - Version:
+v20261017-0755. Prior versions are never overwritten (see company
+history page).</p>
+</body>
+</html>

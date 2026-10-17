@@ -1,0 +1,111 @@
+{
+ "release": "TSM_v20261014-0758-think",
+ "generated": "2026-10-14T08:03:51.408002",
+ "files": [
+  {
+   "path": "TSM_Thinking_v20261014-0758-think.docx",
+   "bytes": 366439,
+   "sha256": "e74ce78906678c90"
+  },
+  {
+   "path": "TSM_Thinking_v20261014-0758-think.html",
+   "bytes": 19501,
+   "sha256": "c799c20b046c81ff"
+  },
+  {
+   "path": "TSM_Thinking_v20261014-0758-think.md",
+   "bytes": 11047,
+   "sha256": "76826e932aae1af0"
+  },
+  {
+   "path": "TSM_Thinking_v20261014-0758-think.pdf",
+   "bytes": 712736,
+   "sha256": "14e70a2787b326c4"
+  },
+  {
+   "path": "TSM_model_v20261014-0758-think.xlsx",
+   "bytes": 36061,
+   "sha256": "9c2104b875ff6f31"
+  },
+  {
+   "path": "images/T1_\u5229\u6da6\u7387\u5468\u671f_annotated.jpg",
+   "bytes": 163619,
+   "sha256": "5d5a2e28d0c20411"
+  },
+  {
+   "path": "images/T1_\u5229\u6da6\u7387\u5468\u671f_annotated.png",
+   "bytes": 121341,
+   "sha256": "f6489581d48e7131"
+  },
+  {
+   "path": "images/T2_\u53cd\u5411DCF_annotated.jpg",
+   "bytes": 175001,
+   "sha256": "5365a713696b39e4"
+  },
+  {
+   "path": "images/T2_\u53cd\u5411DCF_annotated.png",
+   "bytes": 119931,
+   "sha256": "99fe9bede27d4d1c"
+  },
+  {
+   "path": "images/T3_\u5386\u53f2\u56de\u64a4_annotated.jpg",
+   "bytes": 174347,
+   "sha256": "4b614e51212fe017"
+  },
+  {
+   "path": "images/T3_\u5386\u53f2\u56de\u64a4_annotated.png",
+   "bytes": 160719,
+   "sha256": "3d42f1a4b25c2540"
+  },
+  {
+   "path": "images/TSM_1_price_vs_value.jpg",
+   "bytes": 282797,
+   "sha256": "f7de3566fc970a8a"
+  },
+  {
+   "path": "images/TSM_1_price_vs_value.png",
+   "bytes": 206131,
+   "sha256": "32d701ac78b11f53"
+  },
+  {
+   "path": "images/TSM_2_financials.jpg",
+   "bytes": 253175,
+   "sha256": "3ed3a58b691a971a"
+  },
+  {
+   "path": "images/TSM_2_financials.png",
+   "bytes": 179137,
+   "sha256": "0a516e6894e25c32"
+  },
+  {
+   "path": "images/TSM_3_scenarios.jpg",
+   "bytes": 248072,
+   "sha256": "e115d556fd2046c3"
+  },
+  {
+   "path": "images/TSM_3_scenarios.png",
+   "bytes": 164965,
+   "sha256": "ded5380d7c029e4f"
+  },
+  {
+   "path": "images/TSM_4_horizons.jpg",
+   "bytes": 221944,
+   "sha256": "1497147b8cf5d1e9"
+  },
+  {
+   "path": "images/TSM_4_horizons.png",
+   "bytes": 168953,
+   "sha256": "f58bde5a0fc1d6dc"
+  },
+  {
+   "path": "images/TSM_5_logic_map.jpg",
+   "bytes": 241819,
+   "sha256": "02ad72b7d2d46039"
+  },
+  {
+   "path": "images/TSM_5_logic_map.png",
+   "bytes": 211393,
+   "sha256": "f20552a1cba2dd36"
+  }
+ ]
+}

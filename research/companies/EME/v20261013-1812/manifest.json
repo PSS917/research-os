@@ -1,0 +1,106 @@
+{
+ "release": "EME_v20261013-1812",
+ "generated": "2026-10-13T18:14:24.440952",
+ "files": [
+  {
+   "path": "EME_model_v20261013-1812.xlsx",
+   "bytes": 35963,
+   "sha256": "11ed92d7d530ecdc"
+  },
+  {
+   "path": "EME_report_v20261013-1812.docx",
+   "bytes": 802881,
+   "sha256": "8aeffdc1190339e4"
+  },
+  {
+   "path": "EME_report_v20261013-1812.html",
+   "bytes": 29008,
+   "sha256": "53a0424af6990193"
+  },
+  {
+   "path": "EME_report_v20261013-1812.md",
+   "bytes": 16554,
+   "sha256": "93c9e7bb0f48a756"
+  },
+  {
+   "path": "EME_report_v20261013-1812.pdf",
+   "bytes": 1115650,
+   "sha256": "d6014f2f7cd32d94"
+  },
+  {
+   "path": "EME_teaching_v20261013-1812.docx",
+   "bytes": 190848,
+   "sha256": "3e860fbe6a928afe"
+  },
+  {
+   "path": "EME_teaching_v20261013-1812.html",
+   "bytes": 9583,
+   "sha256": "64572a02b96928cc"
+  },
+  {
+   "path": "EME_teaching_v20261013-1812.md",
+   "bytes": 4484,
+   "sha256": "182ab703fde93047"
+  },
+  {
+   "path": "EME_teaching_v20261013-1812.pdf",
+   "bytes": 247200,
+   "sha256": "06b1ec3ed16949e2"
+  },
+  {
+   "path": "images/EME_1_price_vs_value.jpg",
+   "bytes": 305731,
+   "sha256": "e3c30352cd151520"
+  },
+  {
+   "path": "images/EME_1_price_vs_value.png",
+   "bytes": 222128,
+   "sha256": "20087dbce0256021"
+  },
+  {
+   "path": "images/EME_2_financials.jpg",
+   "bytes": 245778,
+   "sha256": "956e237acb124ab3"
+  },
+  {
+   "path": "images/EME_2_financials.png",
+   "bytes": 172113,
+   "sha256": "c6e5e1466ee9a33d"
+  },
+  {
+   "path": "images/EME_3_scenarios.jpg",
+   "bytes": 259866,
+   "sha256": "1b631d5139b8791a"
+  },
+  {
+   "path": "images/EME_3_scenarios.png",
+   "bytes": 169949,
+   "sha256": "4c43b78a640b3ebd"
+  },
+  {
+   "path": "images/EME_4_horizons.jpg",
+   "bytes": 217131,
+   "sha256": "5fc3189168449714"
+  },
+  {
+   "path": "images/EME_4_horizons.png",
+   "bytes": 152440,
+   "sha256": "df7cee95da38ecc6"
+  },
+  {
+   "path": "images/EME_5_logic_map.jpg",
+   "bytes": 240630,
+   "sha256": "34dbde89bc7d5bb8"
+  },
+  {
+   "path": "images/EME_5_logic_map.png",
+   "bytes": 204877,
+   "sha256": "2a4d8670dc5616e5"
+  },
+  {
+   "path": "summary.json",
+   "bytes": 562,
+   "sha256": "a10bb21f206e387d"
+  }
+ ]
+}

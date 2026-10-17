@@ -1,0 +1,26 @@
+{
+ "release": "review_v20261017-0755",
+ "generated": "2026-10-17T08:01:20.190013",
+ "files": [
+  {
+   "path": "system_review_v20261017-0755.docx",
+   "bytes": 15771,
+   "sha256": "f78a65d63e162739"
+  },
+  {
+   "path": "system_review_v20261017-0755.html",
+   "bytes": 12630,
+   "sha256": "b034c017246ef521"
+  },
+  {
+   "path": "system_review_v20261017-0755.md",
+   "bytes": 5863,
+   "sha256": "6735e9f1d0e8a6e5"
+  },
+  {
+   "path": "system_review_v20261017-0755.pdf",
+   "bytes": 307773,
+   "sha256": "4addbb054a42efeb"
+  }
+ ]
+}

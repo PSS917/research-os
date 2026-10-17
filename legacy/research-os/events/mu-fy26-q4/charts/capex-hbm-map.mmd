@@ -1,0 +1,11 @@
+%%{init: {'theme': 'neutral'}}%%
+flowchart LR
+  CapEx["Micron CapEx<br/>美光资本开支<br/>Q3 net $7.1B CONFIRMED"] --> Fab["Wafer / stack capacity<br/>晶圆/堆叠产能"]
+  Fab --> HBM["HBM3E / HBM4<br/>高带宽内存"]
+  Fab --> DRAM["DDR5 / LPDDR<br/>标准与低功耗DRAM"]
+  Fab --> NAND["QLC SSD / G9 NAND<br/>闪存"]
+  HBM --> AI["AI accelerators<br/>AI加速器客户"]
+  DRAM --> DC["Data center / mobile<br/>数据中心/移动"]
+  NAND --> Stor["Storage / SSD<br/>存储"]
+  AI --> Rev["Cloud Memory + Core DC BU<br/>云内存+核心数据中心"]
+  Competitors["SK hynix / Samsung<br/>竞争份额 RELIABLE"] -.-> HBM

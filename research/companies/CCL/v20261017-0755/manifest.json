@@ -1,0 +1,106 @@
+{
+ "release": "CCL_v20261017-0755",
+ "generated": "2026-10-17T07:58:39.225159",
+ "files": [
+  {
+   "path": "CCL_model_v20261017-0755.xlsx",
+   "bytes": 35722,
+   "sha256": "2edbb6b831d39186"
+  },
+  {
+   "path": "CCL_report_v20261017-0755.docx",
+   "bytes": 819724,
+   "sha256": "f5cad3b45b42be31"
+  },
+  {
+   "path": "CCL_report_v20261017-0755.html",
+   "bytes": 29193,
+   "sha256": "4b9f13d99a9dd60e"
+  },
+  {
+   "path": "CCL_report_v20261017-0755.md",
+   "bytes": 16029,
+   "sha256": "e6381be70601505e"
+  },
+  {
+   "path": "CCL_report_v20261017-0755.pdf",
+   "bytes": 1116025,
+   "sha256": "bd17ef480a7dac09"
+  },
+  {
+   "path": "CCL_teaching_v20261017-0755.docx",
+   "bytes": 192088,
+   "sha256": "4c9649ff49d6ea58"
+  },
+  {
+   "path": "CCL_teaching_v20261017-0755.html",
+   "bytes": 10218,
+   "sha256": "00d080d47afda017"
+  },
+  {
+   "path": "CCL_teaching_v20261017-0755.md",
+   "bytes": 4439,
+   "sha256": "d4d9e248847037f6"
+  },
+  {
+   "path": "CCL_teaching_v20261017-0755.pdf",
+   "bytes": 250365,
+   "sha256": "9547b8be287abbd3"
+  },
+  {
+   "path": "images/CCL_1_price_vs_value.jpg",
+   "bytes": 305079,
+   "sha256": "42d0f8dad2bf9f06"
+  },
+  {
+   "path": "images/CCL_1_price_vs_value.png",
+   "bytes": 221614,
+   "sha256": "ffebbe40ec81b596"
+  },
+  {
+   "path": "images/CCL_2_financials.jpg",
+   "bytes": 256237,
+   "sha256": "8a53e8e40b06813d"
+  },
+  {
+   "path": "images/CCL_2_financials.png",
+   "bytes": 190561,
+   "sha256": "e678e373c68c3c04"
+  },
+  {
+   "path": "images/CCL_3_scenarios.jpg",
+   "bytes": 231720,
+   "sha256": "c91469c172baabbd"
+  },
+  {
+   "path": "images/CCL_3_scenarios.png",
+   "bytes": 160014,
+   "sha256": "fbf29ebff128fab9"
+  },
+  {
+   "path": "images/CCL_4_horizons.jpg",
+   "bytes": 223264,
+   "sha256": "b25b5db4ffd4dc08"
+  },
+  {
+   "path": "images/CCL_4_horizons.png",
+   "bytes": 156973,
+   "sha256": "bcacba5bb4440375"
+  },
+  {
+   "path": "images/CCL_5_logic_map.jpg",
+   "bytes": 240476,
+   "sha256": "f64a205fb7781526"
+  },
+  {
+   "path": "images/CCL_5_logic_map.png",
+   "bytes": 206415,
+   "sha256": "f67f5ee4cb2fc67e"
+  },
+  {
+   "path": "summary.json",
+   "bytes": 522,
+   "sha256": "bf523e3e67ac8850"
+  }
+ ]
+}

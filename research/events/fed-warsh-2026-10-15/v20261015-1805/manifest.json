@@ -1,0 +1,166 @@
+{
+ "release": "Fed_Warsh_20261016_PreEvent_v20261015-1805",
+ "generated": "2026-10-15T18:06:03.081209",
+ "files": [
+  {
+   "path": "CHANGELOG_v20261015-1805.docx",
+   "bytes": 10877,
+   "sha256": "2a89f98fadd63581"
+  },
+  {
+   "path": "CHANGELOG_v20261015-1805.html",
+   "bytes": 5439,
+   "sha256": "644a66ff9a1417aa"
+  },
+  {
+   "path": "CHANGELOG_v20261015-1805.md",
+   "bytes": 286,
+   "sha256": "c2d395f423ee7180"
+  },
+  {
+   "path": "CHANGELOG_v20261015-1805.pdf",
+   "bytes": 18251,
+   "sha256": "cb682d2cd464c6c9"
+  },
+  {
+   "path": "Fed_Warsh_20261016_PreEvent_EN_v20261015-1805.docx",
+   "bytes": 12688,
+   "sha256": "74d5027540ecd8bd"
+  },
+  {
+   "path": "Fed_Warsh_20261016_PreEvent_EN_v20261015-1805.html",
+   "bytes": 8614,
+   "sha256": "9a396783ef488765"
+  },
+  {
+   "path": "Fed_Warsh_20261016_PreEvent_EN_v20261015-1805.md",
+   "bytes": 2612,
+   "sha256": "ec578e14b8b99d86"
+  },
+  {
+   "path": "Fed_Warsh_20261016_PreEvent_EN_v20261015-1805.pdf",
+   "bytes": 81822,
+   "sha256": "6ddb5fea5d0b1b8e"
+  },
+  {
+   "path": "Fed_Warsh_20261016_PreEvent_ZH_v20261015-1805.docx",
+   "bytes": 1331873,
+   "sha256": "13e7a46251ee72a3"
+  },
+  {
+   "path": "Fed_Warsh_20261016_PreEvent_ZH_v20261015-1805.html",
+   "bytes": 24292,
+   "sha256": "47286ff4f948d1dd"
+  },
+  {
+   "path": "Fed_Warsh_20261016_PreEvent_ZH_v20261015-1805.md",
+   "bytes": 14307,
+   "sha256": "924472ca361cf362"
+  },
+  {
+   "path": "Fed_Warsh_20261016_PreEvent_ZH_v20261015-1805.pdf",
+   "bytes": 1131482,
+   "sha256": "4392dacd036b9b06"
+  },
+  {
+   "path": "Fed_Warsh_20261016_PreEvent_model_v20261015-1805.xlsx",
+   "bytes": 10426,
+   "sha256": "6b14c25598400da1"
+  },
+  {
+   "path": "Fed_Warsh_20261016_teaching_ZH_v20261015-1805.docx",
+   "bytes": 606096,
+   "sha256": "b6abe2f4c65a0097"
+  },
+  {
+   "path": "Fed_Warsh_20261016_teaching_ZH_v20261015-1805.html",
+   "bytes": 10003,
+   "sha256": "15e6955e68d26981"
+  },
+  {
+   "path": "Fed_Warsh_20261016_teaching_ZH_v20261015-1805.md",
+   "bytes": 3630,
+   "sha256": "c086173c5199deca"
+  },
+  {
+   "path": "Fed_Warsh_20261016_teaching_ZH_v20261015-1805.pdf",
+   "bytes": 474387,
+   "sha256": "c10ec7738989dcd4"
+  },
+  {
+   "path": "PRE_EVENT_SNAPSHOT_v20261015-1805.json",
+   "bytes": 1634,
+   "sha256": "c700a8c41c4d85a5"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.docx",
+   "bytes": 37440,
+   "sha256": "9c01678155bbaad0"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.html",
+   "bytes": 54561,
+   "sha256": "88f4876649057b7f"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.md",
+   "bytes": 40981,
+   "sha256": "cf3b97283381c2fe"
+  },
+  {
+   "path": "RESEARCH_OS_MASTER_PROMPT.pdf",
+   "bytes": 579706,
+   "sha256": "faf8294bf8c9d537"
+  },
+  {
+   "path": "images/01_transmission_chain.jpg",
+   "bytes": 367612,
+   "sha256": "d1f7a902b103c73e"
+  },
+  {
+   "path": "images/01_transmission_chain.png",
+   "bytes": 300408,
+   "sha256": "8d2791e6d462a560"
+  },
+  {
+   "path": "images/02_market_pricing_gap.jpg",
+   "bytes": 328232,
+   "sha256": "3784f619a99916ec"
+  },
+  {
+   "path": "images/02_market_pricing_gap.png",
+   "bytes": 221218,
+   "sha256": "8b7da2dc40f31da7"
+  },
+  {
+   "path": "images/03_scenarios_reaction_paths.jpg",
+   "bytes": 366605,
+   "sha256": "d21dccd7371149da"
+  },
+  {
+   "path": "images/03_scenarios_reaction_paths.png",
+   "bytes": 324520,
+   "sha256": "187130b7f64e30a4"
+  },
+  {
+   "path": "images/04_policy_rate_yields.jpg",
+   "bytes": 405433,
+   "sha256": "c849838998ffdee7"
+  },
+  {
+   "path": "images/04_policy_rate_yields.png",
+   "bytes": 326727,
+   "sha256": "850fddb8a69e98ad"
+  },
+  {
+   "path": "images/05_phrase_decoder_checklist.jpg",
+   "bytes": 392909,
+   "sha256": "82153e18a8206f76"
+  },
+  {
+   "path": "images/05_phrase_decoder_checklist.png",
+   "bytes": 375261,
+   "sha256": "eadeb82ab9d77689"
+  }
+ ]
+}

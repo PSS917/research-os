@@ -1,0 +1,106 @@
+{
+ "release": "CRWD_v20261017-0755",
+ "generated": "2026-10-17T07:58:05.620751",
+ "files": [
+  {
+   "path": "CRWD_model_v20261017-0755.xlsx",
+   "bytes": 35849,
+   "sha256": "572a20ffb96adfdf"
+  },
+  {
+   "path": "CRWD_report_v20261017-0755.docx",
+   "bytes": 811329,
+   "sha256": "89bcf34a05907625"
+  },
+  {
+   "path": "CRWD_report_v20261017-0755.html",
+   "bytes": 29350,
+   "sha256": "f0e1f7fbbe1aa894"
+  },
+  {
+   "path": "CRWD_report_v20261017-0755.md",
+   "bytes": 16320,
+   "sha256": "6ebc6ac75ff4db01"
+  },
+  {
+   "path": "CRWD_report_v20261017-0755.pdf",
+   "bytes": 1095593,
+   "sha256": "a8fa0522c8a8abb8"
+  },
+  {
+   "path": "CRWD_teaching_v20261017-0755.docx",
+   "bytes": 200209,
+   "sha256": "035d6bc5496c0ae7"
+  },
+  {
+   "path": "CRWD_teaching_v20261017-0755.html",
+   "bytes": 10296,
+   "sha256": "8944becb77048dec"
+  },
+  {
+   "path": "CRWD_teaching_v20261017-0755.md",
+   "bytes": 4515,
+   "sha256": "dc0193dfcf6fe4e4"
+  },
+  {
+   "path": "CRWD_teaching_v20261017-0755.pdf",
+   "bytes": 251633,
+   "sha256": "3f2d92e4e12c1a35"
+  },
+  {
+   "path": "images/CRWD_1_price_vs_value.jpg",
+   "bytes": 281532,
+   "sha256": "18c08ee150a085f0"
+  },
+  {
+   "path": "images/CRWD_1_price_vs_value.png",
+   "bytes": 214528,
+   "sha256": "f36b18355c03cb58"
+  },
+  {
+   "path": "images/CRWD_2_financials.jpg",
+   "bytes": 255703,
+   "sha256": "8b827eaa251f6719"
+  },
+  {
+   "path": "images/CRWD_2_financials.png",
+   "bytes": 182704,
+   "sha256": "b8fa13171d4f93ed"
+  },
+  {
+   "path": "images/CRWD_3_scenarios.jpg",
+   "bytes": 241052,
+   "sha256": "2aa3f348fb6dcdf4"
+  },
+  {
+   "path": "images/CRWD_3_scenarios.png",
+   "bytes": 163280,
+   "sha256": "db4597261e61c574"
+  },
+  {
+   "path": "images/CRWD_4_horizons.jpg",
+   "bytes": 240007,
+   "sha256": "e0dbb831c6d3f0c6"
+  },
+  {
+   "path": "images/CRWD_4_horizons.png",
+   "bytes": 159203,
+   "sha256": "9b9cdbd2b90698ed"
+  },
+  {
+   "path": "images/CRWD_5_logic_map.jpg",
+   "bytes": 243635,
+   "sha256": "f35cc12c75559400"
+  },
+  {
+   "path": "images/CRWD_5_logic_map.png",
+   "bytes": 214360,
+   "sha256": "9b8ed4341c5a02fa"
+  },
+  {
+   "path": "summary.json",
+   "bytes": 524,
+   "sha256": "02d6f1b322c9adab"
+  }
+ ]
+}

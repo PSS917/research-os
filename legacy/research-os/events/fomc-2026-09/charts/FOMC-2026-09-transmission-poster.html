@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FOMC Sep 2026 Transmission｜美联储2026年9月传导链 — Research OS</title>
+<style>
+  :root {
+    --bg-deep: #0a0e17;
+    --text: #e8edf5;
+    --text-muted: #64748b;
+    --border: #243049;
+    --accent: #3b82f6;
+    --cyan: #22d3ee;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+    background: var(--bg-deep);
+    color: var(--text);
+    min-height: 100vh;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(59, 130, 246, 0.08), transparent),
+      radial-gradient(ellipse 40% 30% at 90% 80%, rgba(34, 211, 238, 0.04), transparent);
+  }
+  .shell {
+    max-width: 1960px;
+    margin: 0 auto;
+    padding: 16px 20px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 12px 18px;
+    background: #151d2e;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  .topbar::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent), var(--cyan), #a78bfa);
+  }
+  .brand {
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    background: linear-gradient(90deg, #e8edf5, var(--cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .meta {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    text-align: right;
+  }
+  .stage {
+    background: #0f1623;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 8px;
+    overflow: auto;
+  }
+  .stage object,
+  .stage img,
+  .stage svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+  .caption {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    padding: 0 4px;
+  }
+  .caption strong { color: #94a3b8; font-weight: 650; }
+</style>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand">Research OS · Event Book Poster · External Presentation</div>
+      <div class="meta">
+        FOMC-2026-09 Transmission｜传导链<br>
+        As-of 2026-09-17 (Asia/Singapore) · 1920×1080 · Research not advice
+      </div>
+    </header>
+    <main class="stage">
+      <!-- Inline embed for offline viewing; same asset as sibling .svg -->
+      <object type="image/svg+xml" data="FOMC-2026-09-transmission-poster.svg" width="1920" height="1080" aria-label="FOMC Sep 2026 Transmission Chain poster">
+        <img src="FOMC-2026-09-transmission-poster.svg" width="1920" height="1080" alt="FOMC Sep 2026 Transmission｜美联储2026年9月传导链"/>
+      </object>
+    </main>
+    <p class="caption">
+      <strong>Source｜来源:</strong> Fed statement/SEP; Warsh press PDF; Event Book <code>events/fomc-2026-09/</code>.
+      Export twin: <code>charts/exports/2026-09-17-fomc-transmission-poster.svg</code>.
+      SPCX Nasdaq-listed since 2026-06-12. No invented prices. Claim classes on poster.
+    </p>
+  </div>
+</body>
+</html>

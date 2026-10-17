@@ -1,0 +1,106 @@
+{
+ "release": "LITE_v20261017-0755",
+ "generated": "2026-10-17T07:57:58.085024",
+ "files": [
+  {
+   "path": "LITE_model_v20261017-0755.xlsx",
+   "bytes": 35821,
+   "sha256": "f7d8ae8470f2742b"
+  },
+  {
+   "path": "LITE_report_v20261017-0755.docx",
+   "bytes": 809240,
+   "sha256": "87c9ae4a14127435"
+  },
+  {
+   "path": "LITE_report_v20261017-0755.html",
+   "bytes": 29652,
+   "sha256": "2fbcae780ba565c6"
+  },
+  {
+   "path": "LITE_report_v20261017-0755.md",
+   "bytes": 16516,
+   "sha256": "0ac996ae3fe8f8bd"
+  },
+  {
+   "path": "LITE_report_v20261017-0755.pdf",
+   "bytes": 1110389,
+   "sha256": "d0e21e9712b3c6c9"
+  },
+  {
+   "path": "LITE_teaching_v20261017-0755.docx",
+   "bytes": 193634,
+   "sha256": "1f1ba8a92dad65ae"
+  },
+  {
+   "path": "LITE_teaching_v20261017-0755.html",
+   "bytes": 10339,
+   "sha256": "167c54d93c8a6184"
+  },
+  {
+   "path": "LITE_teaching_v20261017-0755.md",
+   "bytes": 4558,
+   "sha256": "9c992fdd5dc96ef3"
+  },
+  {
+   "path": "LITE_teaching_v20261017-0755.pdf",
+   "bytes": 250512,
+   "sha256": "1a0d688a9d3a4f8b"
+  },
+  {
+   "path": "images/LITE_1_price_vs_value.jpg",
+   "bytes": 287027,
+   "sha256": "45135c51f3953140"
+  },
+  {
+   "path": "images/LITE_1_price_vs_value.png",
+   "bytes": 200179,
+   "sha256": "9a58d96aa0ae3e6f"
+  },
+  {
+   "path": "images/LITE_2_financials.jpg",
+   "bytes": 245566,
+   "sha256": "40a21be67c75cead"
+  },
+  {
+   "path": "images/LITE_2_financials.png",
+   "bytes": 179692,
+   "sha256": "e5164119b78018a2"
+  },
+  {
+   "path": "images/LITE_3_scenarios.jpg",
+   "bytes": 250873,
+   "sha256": "5053172f059aa008"
+  },
+  {
+   "path": "images/LITE_3_scenarios.png",
+   "bytes": 167191,
+   "sha256": "8f4e1398928fa84a"
+  },
+  {
+   "path": "images/LITE_4_horizons.jpg",
+   "bytes": 228367,
+   "sha256": "01d2f5ca2e3fc487"
+  },
+  {
+   "path": "images/LITE_4_horizons.png",
+   "bytes": 174983,
+   "sha256": "ffbefaadaab32c7e"
+  },
+  {
+   "path": "images/LITE_5_logic_map.jpg",
+   "bytes": 241863,
+   "sha256": "838e139ab94f9d13"
+  },
+  {
+   "path": "images/LITE_5_logic_map.png",
+   "bytes": 207737,
+   "sha256": "b428c652cf8eb2cd"
+  },
+  {
+   "path": "summary.json",
+   "bytes": 528,
+   "sha256": "3b53c8a0b37c8564"
+  }
+ ]
+}
